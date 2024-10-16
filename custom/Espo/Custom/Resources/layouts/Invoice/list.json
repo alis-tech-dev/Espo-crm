@@ -1,0 +1,36 @@
+[
+    {
+        "name": "number",
+        "label": "Číslo"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Název"
+    },
+    {
+        "name": "account",
+        "width": 25,
+        "label": "Organizace"
+    },
+    {
+        "name": "status",
+        "width": 15,
+        "label": "Stav"
+    },
+    {
+        "name": "payday",
+        "label": "Datum splatnosti (payday)"
+    },
+    {
+        "name": "createdAt",
+        "width": 12,
+        "label": "Vytvořeno"
+    },
+    {
+        "name": "amount",
+        "width": 12,
+        "align": "right",
+        "label": "Částka"
+    }
+]

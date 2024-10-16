@@ -1,0 +1,52 @@
+{
+    "labels": {
+        "Create Product": "Create Product",
+        "Price": "Price",
+        "Categories": "Categories"
+    },
+    "fields": {
+        "name": "Name",
+        "type": "Type",
+        "ean": "EAN",
+        "url": "URL",
+        "category": "Category",
+        "description": "Description",
+        "attachments": "Attachments",
+        "pricingType": "Pricing Type",
+        "priceMargin": "Price Margin",
+        "priceMarkup": "Price Markup",
+        "costPrice": "Cost Price",
+        "costPriceCurrency": "Cost Price Currency",
+        "costPriceConverted": "Cost Price (Converted)",
+        "costPriceWithTax": "Cost Price with Tax",
+        "costPriceWithTaxCurrency": "Cost Price with Tax Currency",
+        "costPriceWithTaxConverted": "Cost Price with Tax (Converted)",
+        "salesPrice": "Sales Price",
+        "salesPriceCurrency": "Sales Price Currency",
+        "salesPriceConverted": "Sales Price (Converted)",
+        "salesPriceWithTax": "Sales Price with Tax",
+        "salesPriceWithTaxCurrency": "Sales Price with Tax Currency",
+        "salesPriceWithTaxConverted": "Sales Price with Tax (Converted)",
+        "taxClass": "Tax Class",
+        "taxRate": "Tax Rate",
+        "measureUnit": "Measure Unit"
+    },
+    "links": {
+        "category": "Category",
+        "attachments": "Attachments",
+        "taxClass": "Tax Class"
+    },
+    "options": {
+        "type": {
+            "Normal": "Normal",
+            "Service": "Service"
+        },
+        "pricingType": {
+            "No Price": "No Price",
+            "Fixed Sales Price": "Fixed Sales Price",
+            "Markup over Cost": "Markup over Cost",
+            "Profit Margin": "Profit Margin",
+            "Same as Cost Price": "Same as Cost Price"
+        }
+    }
+}

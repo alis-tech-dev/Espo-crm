@@ -1,0 +1,23 @@
+[
+    {
+        "name": "position",
+        "label": "Position"
+    },
+    {
+        "name": "quantityAvailable",
+        "notSortable": true,
+        "label": "Available Quantity"
+    },
+    {
+        "name": "quantityReserved",
+        "notSortable": true,
+        "label": "Reserved Quantity"
+    },
+    {
+        "name": "quantity",
+        "label": "Total Quantity"
+    },
+    {
+        "name": "unit"
+    }
+]

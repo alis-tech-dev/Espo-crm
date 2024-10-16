@@ -1,0 +1,9 @@
+{
+	"fields": {
+		"clientId": "ID klienta",
+		"apiKey": "API klíč"
+	},
+	"help": {
+		"GoogleMaps": "Získejte klíč API [zde](https://developers.google.com/maps/documentation/javascript/get-api-key)."
+	}
+}

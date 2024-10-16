@@ -1,0 +1,9 @@
+{
+    "descriptions": {
+        "recordRecurrence": "Seznam všech naplánovaných opakovaných záznamů."
+    },
+    "labels": {
+        "Records Recurrences": "Opakované záznamy",
+        "Scheduled Recurrences": "Naplánované opakovaní"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "totalReservedQuantity": "Gesamtanzahl reserviert",
+        "totalWarehouseQuantity": "Gesamtanzahl im Lager",
+        "averagePrice": "Durchschnittspreis"
+    },
+    "label": {
+        "Stock Info": "Bestandsinformation"
+    },
+    "presetFilters": {
+        "stockable": "Lagerfähig"
+    },
+    "options": {
+        "type": {
+            "Warehouse Item": "Artikel für das Lager"
+        }
+    },
+    "tooltips": {
+        "type": "**Artikel für das Lager** können in Lagern gelagert werden."
+    }
+}

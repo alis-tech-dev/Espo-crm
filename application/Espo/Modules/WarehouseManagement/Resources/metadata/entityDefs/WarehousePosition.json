@@ -1,0 +1,45 @@
+{
+    "fields": {
+        "capacity": {
+            "type": "float"
+        },
+        "filledCapacity": {
+            "type": "float",
+            "notStorable": true
+        },
+        "name": {
+            "required": true,
+            "type": "varchar"
+        },
+        "warehouse": {
+            "required": true,
+            "type": "link"
+        },
+        "defaultOf": {
+            "type": "linkMultiple"
+        }
+    },
+    "indexes": {
+        "name": {
+            "columns": ["name", "deleted"]
+        }
+    },
+    "links": {
+        "items": {
+            "entity": "WarehouseItem",
+            "foreign": "position",
+            "type": "hasMany"
+        },
+        "warehouse": {
+            "entity": "Warehouse",
+            "foreign": "positions",
+            "type": "belongsTo"
+        },
+        "defaultOf": {
+            "entity": "Product",
+            "foreign": "defaultWarehousePosition",
+            "type": "hasMany"
+        }
+    }
+}
+

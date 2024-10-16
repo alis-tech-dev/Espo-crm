@@ -1,0 +1,16 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "users": {
+        "index": 0
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "layout": "listSmall",
+        "filtersEnabled": false,
+        "index": 1
+    }
+}

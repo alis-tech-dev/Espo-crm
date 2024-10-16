@@ -1,0 +1,6 @@
+{
+	"calendar": "Espo\\Modules\\Autocrm\\Classes\\TemplateHelpers\\Calendar",
+	"electronicSignature": "Espo\\Modules\\Autocrm\\Classes\\TemplateHelpers\\ElectronicSignature",
+	"country": "Espo\\Modules\\Autocrm\\Classes\\TemplateHelpers\\Country",
+	"imgTag": "Espo\\Modules\\Autocrm\\Classes\\TemplateHelpers\\ImgTag"
+}

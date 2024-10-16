@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "status": "Status",
+        "product": "Product",
+        "quantity": "Quantity",
+        "componentWarehouse": "Component Warehouse",
+        "productWarehouse": "Product Warehouse"
+    },
+    "labels": {
+        "Create Production": "Create Production"
+    }
+}

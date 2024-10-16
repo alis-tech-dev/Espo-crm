@@ -1,0 +1,62 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "quantity"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "default"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "operations",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "billOfMaterials",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

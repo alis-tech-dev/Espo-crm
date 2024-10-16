@@ -1,0 +1,15 @@
+[
+    {
+        "name": "productCode"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "align": "left",
+        "label": "Kód produktu"
+    },
+    {
+        "name": "priceListPrice",
+        "label": "priceListPrice"
+    }
+]

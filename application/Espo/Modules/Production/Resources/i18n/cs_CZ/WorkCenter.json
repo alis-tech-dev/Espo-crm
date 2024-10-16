@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "description": "Popis"
+    },
+    "links": {
+        "productionModelOperations": "Operace technologických postupů"
+    },
+    "labels": {
+        "Create WorkCenter": "Vytvořit pracoviště"
+    }
+}

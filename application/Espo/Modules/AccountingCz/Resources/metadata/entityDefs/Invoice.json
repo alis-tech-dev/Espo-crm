@@ -1,0 +1,398 @@
+{
+    "fields": {
+        "dueDate": {
+            "notNull": false,
+            "type": "date",
+            "default": "javascript: return this.dateTime.getDateShiftedFromToday(7, 'days');",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "duzp": {
+            "notNull": false,
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "textBeforeItems": {
+            "type": "text"
+        },
+        "paymentMethod": {
+            "type": "enum",
+            "options": [
+                "bank",
+                "card",
+                "cash",
+                "cod"
+            ],
+            "style": {
+                "bank": null,
+                "card": null,
+                "cash": null,
+                "cod": null
+            },
+            "default": "bank",
+            "tooltip": true
+        },
+        "constantSymbol": {
+            "type": "varchar",
+            "options": [],
+            "tooltip": true,
+            "maxLength": 10
+        },
+        "action": {
+            "type": "text"
+        },
+        "note": {
+            "type": "text",
+            "default": null
+        },
+        "textAfterItems": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": null
+        },
+        "variableSymbol": {
+            "type": "varchar",
+            "trim": true,
+            "maxLength": 10,
+            "options": [],
+            "tooltip": true
+        },
+        "assignedUser": {
+            "required": true
+        },
+        "name": {
+            "required": false,
+            "options": []
+        },
+        "acceptedPayment": {
+            "type": "link"
+        },
+        "formOfPayment": {
+            "type": "enum",
+            "options": [
+                "-",
+                "Transfer",
+                "CashOnDelivery",
+                "Cash"
+            ],
+            "style": {
+                "-": null,
+                "Transfer": null,
+                "CashOnDelivery": null,
+                "Cash": null
+            },
+            "default": "-"
+        },
+        "reverseCharge": {
+            "notNull": true,
+            "type": "bool"
+        },
+        "warehouse": {
+            "type": "link",
+            "required": false
+        },
+        "orderNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": []
+        },
+        "amountCurrency": {
+            "default": "CZK"
+        },
+        "discountAmountCurrency": {
+            "default": "CZK"
+        },
+        "status": {
+            "style": {
+                "Issued": "success",
+                "Sent": "primary",
+                "Partially Paid": "primary",
+                "Paid": "success",
+                "Canceled": "danger"
+            },
+            "options": [
+                "Issued",
+                "Sent",
+                "Partially Paid",
+                "Paid",
+                "Canceled"
+            ],
+            "default": "Issued",
+            "displayAsLabel": true
+        },
+        "datePaid": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true
+        },
+        "partiallyPaidAmount": {
+            "type": "currency",
+            "default": 0
+        },
+        "remainsToPay": {
+            "type": "currency",
+            "default": 0,
+            "readOnly": true
+        },
+        "dateInvoiced": {
+            "notNull": false,
+            "type": "date",
+            "required": false,
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "grandTotalAmountCurrency": {
+            "default": "CZK"
+        },
+        "partiallyPaidAmountCurrency": {
+            "default": "CZK"
+        },
+        "preDiscountedAmountCurrency": {
+            "default": "CZK"
+        },
+        "taxAmountCurrency": {
+            "default": "CZK"
+        },
+        "number": {
+            "tooltip": true
+        },
+        "numberA": {
+            "format": "VF{YYYY}-{number}"
+        },
+        "supplyCode": {
+            "type": "enum",
+            "options": [
+                "",
+                "1",
+                "1a",
+                "3",
+                "3a",
+                "4",
+                "4a",
+                "5",
+                "6",
+                "7",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "foreign",
+                "0eu",
+                "1eu",
+                "2eu",
+                "3eu"
+            ],
+            "style": {
+                "": null,
+                "1": null,
+                "1a": null,
+                "3": null,
+                "3a": null,
+                "4": null,
+                "4a": null,
+                "5": null,
+                "6": null,
+                "7": null,
+                "11": null,
+                "12": null,
+                "13": null,
+                "14": null,
+                "15": null,
+                "16": null,
+                "17": null,
+                "18": null,
+                "19": null,
+                "20": null,
+                "21": null,
+                "foreign": null,
+                "0eu": null,
+                "1eu": null,
+                "2eu": null,
+                "3eu": null
+            },
+            "default": ""
+        },
+        "creditNotes": {
+            "type": "linkMultiple"
+        },
+        "revenueReceipts": {
+            "type": "linkMultiple"
+        },
+        "proformaInvoices": {
+            "type": "linkMultiple"
+        },
+        "partialPayments": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "recordListEnabled": true,
+            "recordListLayout": "listSmall",
+            "defaultSelectFilters": [],
+            "recordListLinkDisabled": true
+        },
+        "amountRound": {
+            "type": "enum",
+            "options": [
+                "dontRound",
+                "upRound",
+                "downRound",
+                "mathRound"
+            ],
+            "style": {
+                "dontRound": null,
+                "upRound": null,
+                "downRound": null,
+                "mathRound": null
+            },
+            "default": "dontRound"
+        },
+        "vatFromRoundedTotal": {
+            "notNull": true,
+            "type": "bool"
+        },
+        "taxRound": {
+            "type": "enum",
+            "options": [
+                "allRound.1",
+                "allRound.5",
+                "allRound1",
+                "itesRound.1",
+                "itesRound.5",
+                "itesRound1",
+                "dontRound"
+            ],
+            "style": {
+                "allRound.1": null,
+                "allRound.5": null,
+                "allRound1": null,
+                "itesRound.1": null,
+                "itesRound.5": null,
+                "itesRound1": null,
+                "dontRound": null
+            },
+            "default": "dontRound"
+        },
+        "amountRoundTo": {
+            "type": "enum",
+            "options": [
+                "decimals",
+                "fifties",
+                "whole"
+            ],
+            "style": {
+                "decimals": null,
+                "fifties": null,
+                "whole": null
+            },
+            "default": "decimals"
+        },
+        "foreignInvoicing": {
+            "type": "bool"
+        },
+        "specificSymbol": {
+            "type": "varchar",
+            "maxLength": 10,
+            "options": [],
+            "tooltip": true
+        },
+        "vatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "sicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "paidAdvances": {
+            "type": "currency",
+            "readOnly": true
+        },
+        "paid": {
+            "type": "currency",
+            "readOnly": true,
+            "default": 0
+        },
+        "remainingToPay": {
+            "type": "currency",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "invoice",
+            "entity": "SummaryVatRates",
+            "audited": false
+        },
+        "creditNotes": {
+            "type": "hasMany",
+            "foreign": "invoices",
+            "entity": "CreditNote",
+            "audited": false
+        },
+        "revenueReceipts": {
+            "type": "hasChildren",
+            "foreign": "invoice",
+            "entity": "RevenueReceipt"
+        },
+        "proformaInvoices": {
+            "type": "hasMany",
+            "foreign": "invoices",
+            "entity": "ProformaInvoice",
+            "audited": false
+        },
+        "partialPayments": {
+            "type": "hasMany",
+            "foreign": "invoice",
+            "entity": "PartialPayments",
+            "layoutRelationshipsDisabled": true
+        },
+        "payments": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "Payment"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

@@ -1,0 +1,232 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "productType"
+				}
+			],
+			[
+				{
+					"name": "productAvailability"
+				},
+				false
+			],
+			[
+				{
+					"name": "manufacturerSerialNumber"
+				},
+				{
+					"name": "contractor12"
+				}
+			],
+			[
+				{
+					"name": "details"
+				},
+				{
+					"name": "acceptanceDate"
+				}
+			],
+			[
+				{
+					"name": "productCode"
+				},
+				{
+					"name": "product12"
+				}
+			],
+			[
+				{
+					"name": "businessProject"
+				},
+				{
+					"name": "components"
+				}
+			],
+			[
+				{
+					"name": "print"
+				},
+				{
+					"name": "print2"
+				}
+			],
+			[
+				{
+					"name": "voltage"
+				},
+				{
+					"name": "current"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "projectorPower"
+				},
+				{
+					"name": "ledChipImage"
+				}
+			],
+			[
+				{
+					"name": "weight"
+				},
+				{
+					"name": "temperatureCheck"
+				}
+			],
+			[
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "equals",
+					"attribute": "productType",
+					"value": "projector"
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "Projektor"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "wristFirmware"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "equals",
+					"attribute": "productType",
+					"value": "wristTag"
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "Wrist tag"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "piType"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "equals",
+					"attribute": "productType",
+					"value": "vehicleTag"
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "VZV tag"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "lensType"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "equals",
+					"attribute": "productType",
+					"value": "Lens"
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "Optika"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "macAddress"
+				},
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "or",
+					"value": [
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "controlUnit"
+						},
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "vehicleTag"
+						},
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "wristTag"
+						}
+					]
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "Mac adresa"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "operationalControl"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "equals",
+					"attribute": "productType",
+					"value": "component"
+				}
+			]
+		},
+		"hidden": false,
+		"customLabel": "Testing"
+	}
+]

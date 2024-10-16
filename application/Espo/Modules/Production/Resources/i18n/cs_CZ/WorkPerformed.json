@@ -1,0 +1,19 @@
+{
+	"fields": {
+		"description": "Popis",
+		"operation": "Operace",
+		"producedAmount": "Vyrobené množství",
+		"productionOrder": "Výrobní příkaz",
+		"workCenter": "Pracoviště",
+		"dateStart": "Datum zahájení",
+		"dateEnd": "Datum ukončení",
+		"duration": "Trvání"
+	},
+	"links": {
+		"operation": "Operace",
+		"workCenter": "Pracoviště"
+	},
+	"labels": {
+		"Create WorkPerformed": "Odvést práci"
+	}
+}

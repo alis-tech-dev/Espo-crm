@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "product": "Produkt",
+        "quantity": "Menge",
+        "parent": "Elternteil",
+        "position": "Position",
+        "price": "Preis",
+        "positionFrom": "Von Position",
+        "positionTo": "Zu Position",
+        "warehouse": "Lager"
+    },
+    "links": {
+        "product": "Produkt",
+        "parent": "Elternteil"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "warehouse": "Lager",
+        "selectedItems": "Ausgewählte Artikel",
+        "items": "Artikel zur Ausgabe",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Prozess",
+        "Create GoodsIssue": "Goods Issue erstellen",
+        "Create GoodsReceipt": "Wareneingang erstellen",
+        "Items": "Artikel",
+        "Reserve": "Reservieren",
+        "Revert Goods Issue": "Goods Issue rückgängig machen",
+        "Goods Issues": "Goods Issues"
+    },
+    "messages": {
+        "reversionName": "Rückgängigmachung von %s"
+    },
+    "tooltips": {
+        "selectedItems": "Ausgewählte Produkte zur Ausgabe.",
+        "items": "Automatisch ausgewählte Lagerartikel zur Ausgabe, basierend auf der Verfügbarkeit der ausgewählten Artikel. Wird nach Reservierung ausgewählt."
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Reserving": "Reservierung",
+            "Reserved": "Reserviert",
+            "Processing": "In Bearbeitung",
+            "Issued": "Ausgegeben",
+            "Canceled": "Abgebrochen"
+        }
+    }
+}

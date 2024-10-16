@@ -1,0 +1,36 @@
+{
+    "fields": {
+        "name": "Betreff",
+        "qty": "Mng",
+        "quantity": "Menge",
+        "quantityInt": "Menge (Int)",
+        "listPrice": "Listenpreis",
+        "unitPrice": "Einzelpreis",
+        "amount": "Betrag",
+        "taxRate": "Steuersatz:",
+        "product": "Produkt",
+        "order": "Zeilennummer",
+        "quote": "Angebot",
+        "weight": "Gewicht",
+        "unitWeight": "Gewicht/Einheit",
+        "description": "Beschreibung",
+        "discount": "Rabatt (%)",
+        "amountConverted": "Betrag (konvertiert)",
+        "unitPriceConverted": "Einzelpreis (konvertiert)",
+        "listPriceConverted": "Listenpreis (konvertiert)",
+        "account": "Firma",
+        "listPriceCurrency": "Listenpreis Währung",
+        "unitPriceCurrency": "Stückpreis Währung",
+        "amountCurrency": "Betrag Währung",
+        "quoteStatus": "Angebots-Status"
+    },
+    "links": {
+        "quote": "Angebot",
+        "product": "Produkt",
+        "account": "Firma"
+    },
+    "labels": {
+        "Quotes": "Angebote",
+        "Create QuoteItem": "Angebotsposition erstellen"
+    }
+}

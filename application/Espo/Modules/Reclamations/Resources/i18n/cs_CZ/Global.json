@@ -1,0 +1,10 @@
+{
+	"scopeNames": {
+		"Reclamation": "Reklamace",
+		"SupplierReclamation": "Reklamace u dodavatele"
+	},
+	"scopeNamesPlural": {
+		"Reclamation": "Reklamace",
+		"SupplierReclamation": "Reklamace u dodavatele"
+	}
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "numberA",
+        "width": 8,
+        "align": "left",
+        "label": "Číslo reklamace"
+    },
+    {
+        "name": "product",
+        "label": "product"
+    },
+    {
+        "name": "reclamationSalesOrder",
+        "label": "reclamationSalesOrder"
+    },
+    {
+        "name": "salesOrder",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "modifiedAt"
+    }
+]

@@ -1,0 +1,26 @@
+{
+	"controller": "controllers/record",
+	"iconClass": "fas fa-hammer",
+	"isWide": true,
+	"dynamicHandlerList": ["production:handlers/production-order/dynamic"],
+	"recordViews": {
+		"detail": "production:views/production-order/detail"
+	},
+	"menu": {
+		"detail": {
+			"buttons": [
+				{
+					"label": "Odvést práci",
+					"name": "performWork",
+					"action": "performWork",
+					"acl": "edit",
+					"style": "warning",
+					"data": {
+						"handler": "production:handlers/production-order/perform-work"
+					},
+					"initFunction": "init"
+				}
+			]
+		}
+	}
+}

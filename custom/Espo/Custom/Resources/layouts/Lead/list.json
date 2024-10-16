@@ -1,0 +1,51 @@
+[
+    {
+        "name": "numberA",
+        "link": true,
+        "align": "left",
+        "label": "Číslo leadu"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "modifiedAt"
+    },
+    {
+        "name": "accountName",
+        "width": 15,
+        "link": true,
+        "align": "left",
+        "label": "Account Name"
+    },
+    {
+        "name": "name",
+        "width": 15,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "leadType",
+        "width": 15,
+        "align": "left",
+        "label": "Typ leadu"
+    },
+    {
+        "name": "status",
+        "width": 10,
+        "align": "left",
+        "label": "Status"
+    },
+    {
+        "name": "assignedUser",
+        "width": 10,
+        "align": "left",
+        "label": "Assigned User"
+    },
+    {
+        "name": "addressCountry",
+        "label": "Country"
+    }
+]

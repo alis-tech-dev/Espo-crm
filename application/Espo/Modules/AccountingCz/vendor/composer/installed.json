@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "cetria/isdoc",
+            "version": "1.3",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/Strambm/isdoc.git",
+                "reference": "72b73747bd5e5f20928bb98732d45125f1e5d6c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Strambm/isdoc/get/72b73747bd5e5f20928bb98732d45125f1e5d6c0.zip",
+                "reference": "72b73747bd5e5f20928bb98732d45125f1e5d6c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "cetria/reflection-helper": "dev-master",
+                "nesbot/carbon": "^2.16",
+                "phpunit/phpunit": "^8.5.8|^9.3.3"
+            },
+            "time": "2022-09-19T10:08:03+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Isdoc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sromdavid",
+                    "email": "davsro@seznam.cz"
+                }
+            ],
+            "description": "PHP library for generating ISDOC files in PHP",
+            "homepage": "https://bitbucket.org/Strambm/isdoc",
+            "support": {
+                "source": "https://bitbucket.org/Strambm/isdoc/src/72b73747bd5e5f20928bb98732d45125f1e5d6c0/?at=1.3"
+            },
+            "install-path": "../cetria/isdoc"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

@@ -1,0 +1,21 @@
+[
+    "assignedUser",
+    "createdBy",
+    "createdAt",
+    "modifiedAt",
+    "billingAddressCountry",
+    "type",
+    "industry",
+    "description",
+    "emailAddress",
+    "phoneNumber",
+    "targetLists",
+    "billingAddress",
+    "shippingAddress",
+    "website",
+    "spolecnosti",
+    "enduser",
+    "partner",
+    "processed",
+    "category"
+]

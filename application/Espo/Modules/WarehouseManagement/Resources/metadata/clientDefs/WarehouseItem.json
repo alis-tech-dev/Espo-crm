@@ -1,0 +1,51 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-box",
+    "color": "#bc9476",
+    "createDisabled": true,
+    "duplicateDisabled": true,
+    "additionalLayouts": {
+        "listGoodsReceiptSimple": {
+            "type": "listSmall"
+        },
+        "listGoodsReceiptPositional": {
+            "type": "listSmall"
+        },
+        "listGoodsIssueSimple": {
+            "type": "listSmall"
+        },
+        "listGoodsIssuePositional": {
+            "type": "listSmall"
+        },
+        "listGoodsIssueSelectedPositional": {
+            "type": "listSmall"
+        },
+        "listGoodsIssueSelectedSimple": {
+            "type": "listSmall"
+        },
+        "listWarehouseTransferSimpleSimple": {
+            "type": "listSmall"
+        },
+        "listWarehouseTransferSimplePositional": {
+            "type": "listSmall"
+        },
+        "listWarehouseTransferPositionalSimple": {
+            "type": "listSmall"
+        },
+        "listWarehouseTransferPositionalPositional": {
+            "type": "listSmall"
+        },
+        "listWarehousePositional": {
+            "type": "listSmall"
+        },
+        "listWarehouseSimple": {
+            "type": "listSmall"
+        },
+        "listProductPositional": {
+            "type": "listSmall"
+        },
+        "listProductSimple": {
+            "type": "listSmall"
+        }
+    }
+}

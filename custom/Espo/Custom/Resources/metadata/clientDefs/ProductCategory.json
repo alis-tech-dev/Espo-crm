@@ -1,0 +1,14 @@
+{
+    "relationshipPanels": {
+        "warehouses": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "name": {
+                "visible": null
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+	"fields": {
+		"manufacturerSerialNumber": "Sériové číslo výrobce",
+		"product": "Product",
+		"product1": "Produkt v2",
+		"contractor": "Dodavatel",
+		"businessProject": "Business Project",
+		"productType": "Typ produktu",
+		"projectorType": "Typ projektoru",
+		"lensType": "Optika",
+		"macAddress": "Mac adresa",
+		"wristFirmware": "Typ firmwaru",
+		"piType": "Typ desky",
+		"acceptanceDate": "Datum naskladnění",
+		"ledChipImage": "Fotka LED čipu",
+		"componentCheck": "Kontrola komponent",
+		"temperatureCheck": "Provozní kontrola",
+		"projectorPower": "Wattáž",
+		"productCode": "Kód produktu",
+		"businessProjects": "Business Projects",
+		"contractor1": "Dodavatel v2",
+		"details": "Poznámky",
+		"products": "Product v3",
+		"product12": "Prodkt v3",
+		"contractor12": "Dodavatel v3",
+		"components": "Komponenta",
+		"productDatabaseParent": "Product Database Parent",
+		"productDatabases": "Product Databases",
+		"productAvailability": "Dostupnost",
+		"operationalControl": "Provozní kontrola komponenty",
+		"isTested": "Otestováno",
+		"print": "Vytisknout Brno",
+		"weight": "Váha",
+		"voltage": "Provozní napětí",
+		"current": "Provozní proud",
+		"print2": "Vytisknout Prostějov"
+	},
+	"links": {
+		"product": "Product",
+		"product1": "Produkt v2",
+		"contractor": "Dodavatel",
+		"businessProject": "Business Project",
+		"businessProjects": "Business Projects",
+		"contractor1": "Dodavatel v2",
+		"products": "Product v3",
+		"product12": "Prodkt v3",
+		"contractor12": "Dodavatel v3",
+		"components": "Komponenta",
+		"productDatabaseParent": "Product Database Parent",
+		"productDatabases": "Product Databases"
+	},
+	"labels": {
+		"Create ProductDatabase": "Create Databáze produktů"
+	},
+	"options": {
+		"productType": {
+			"-": "-",
+			"projector": "Projektor",
+			"wristTag": "Wrist tag",
+			"controlUnit": "Řídící jednotka",
+			"vehicleTag": "Vozíkový tag",
+			"Special": "Special",
+			"Lens": "Optika",
+			"component": "Komponenta",
+			"lens": "Optika",
+			"special": "Special"
+		},
+		"projectorType": {
+			"-": "-",
+			"25-E": "25-E",
+			"22-S": "22-S",
+			"100-S": "100-S",
+			"300-S": "300-S"
+		},
+		"lensType": {
+			"13": "13°",
+			"20": "20°",
+			"25": "25°",
+			"30": "30°",
+			"45": "45°",
+			"47": "47°",
+			"-": "-"
+		},
+		"wristFirmware": {
+			"-": "-",
+			"classic": "Klasický",
+			"onOnly": "Bez možnosti vypnutí",
+			"UT-206-V05-Czech V1.0.2@V1.0.6AK": "UT-206-V05-Czech V1.0.2@V1.0.6AK",
+			" UT-206-Czech_V2.0.01@MMAC_V2.0.01 Alpha": " UT-206-Czech_V2.0.01@MMAC_V2.0.01 Alpha",
+			"UT-206-Czech_V2.0.02_bez_vyp_tlacitkem@MMAC_V2.0.01 Alpha": "UT-206-Czech_V2.0.02_bez_vyp_tlacitkem@MMAC_V2.0.01 Alpha"
+		},
+		"piType": {
+			"-": "-",
+			"rapsberryPi": "Rapsberry Pi",
+			"bananaPi": "Banana Pi"
+		},
+		"projectorPower": {
+			"40": "40",
+			"100": "100 W",
+			"300": "300 W",
+			"-": " ",
+			"Other": "Written in note",
+			"130": "130 W",
+			"320": "320 W",
+			" ": " ",
+			"25": "25 W",
+			"300-I": "300 W",
+			"300 ": "300 W (I)"
+		},
+		"productAvailability": {
+			"sent": "Odesláno",
+			"inStock": "Na skladě Brno",
+			"reserved": "Rezervováno",
+			"unavailable": "Nedostupný",
+			"inStockAledo": "Na skladě Prostějov",
+			"": "Zapůjčeno",
+			"rent": "Zapůjčeno",
+			"stockAledoPv": "Na skladě Aledo"
+		}
+	},
+	"tooltips": {
+		"projectorPower": "Poslední 300 W = 300I"
+	}
+}

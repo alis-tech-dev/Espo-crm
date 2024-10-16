@@ -1,0 +1,83 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": ["onlyMy"],
+    "iconClass": "fas fa-shopping-cart",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Create Goods Receipt",
+                    "name": "createGoodsReceipt",
+                    "action": "createGoodsReceipt",
+                    "style": "default",
+                    "acl": "edit",
+                    "aclScope": "SupplierOrder",
+                    "data": {
+                        "handler": "warehouse-management:handlers/supplier-order/create-goods-receipt"
+                    },
+                    "initFunction": "initCreateGoodsReceipt"
+                },
+                {
+                    "label": "Delivered",
+                    "name": "delivered",
+                    "action": "delivered",
+                    "style": "success",
+                    "acl": "edit",
+                    "aclScope": "SupplierOrder",
+                    "data": {
+                        "handler": "warehouse-management:handlers/supplier-order/delivered"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Export to Excel",
+                    "name": "createXlsx",
+                    "action": "createXlsx",
+                    "style": "danger",
+                    "aclScope": "SupplierOrder",
+                    "data": {
+                        "handler": "warehouse-management:handlers/supplier-order/create-xlsx"
+                    },
+                    "initFunction": "initCreateXlsx"
+                }
+            ]
+        }
+    },
+    "sidePanels": {
+        "detail": [
+            "__APPEND__",
+            {
+                "name": "totalAmount",
+                "label": "Total Amount Panel",
+                "view": "warehouse-management:views/supplier-order/panels/total-amount",
+                "acl": "read",
+                "aclScope": "PermissionsEntity"
+            },
+            {
+                "name": "activities",
+                "label": "Activities",
+                "view": "crm:views/record/panels/activities",
+                "aclScope": "Activities"
+            },
+            {
+                "name": "history",
+                "label": "History",
+                "view": "crm:views/record/panels/history",
+                "aclScope": "Activities"
+            },
+            {
+                "name": "tasks",
+                "label": "Tasks",
+                "view": "crm:views/record/panels/tasks",
+                "aclScope": "Task"
+            }
+        ]
+    },
+    "isWide": true,
+    "kanbanViewMode": false,
+    "color": null
+}
+

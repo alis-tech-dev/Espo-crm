@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "name": "Vat ID",
+        "valid": "Valid",
+        "lastValidCheck": "Last Valid Check"
+    },
+    "links": {},
+    "labels": {
+        "Create VatIdValidation": "Create Vat ID Validation"
+    }
+}

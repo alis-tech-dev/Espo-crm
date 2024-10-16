@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "price": "Preis",
+        "priceCurrency": "Preis (Währung)",
+        "priceConverted": "Preis (umgerechnet)",
+        "batchCount": "Anzahl der Chargen",
+        "batchNumber": "Chargennummer",
+        "product": "Produkt",
+        "quantity": "Menge",
+        "quantityInt": "Menge Int",
+        "warehouse": "Lager"
+    },
+    "labels": {
+        "Create WarehouseItem": "Lagerartikel erstellen"
+    },
+    "links": {
+        "product": "Produkt",
+        "warehouse": "Lager"
+    }
+}

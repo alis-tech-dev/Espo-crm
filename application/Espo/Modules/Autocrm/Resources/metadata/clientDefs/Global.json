@@ -1,0 +1,25 @@
+{
+	"checkAllResultMassActionList": ["__APPEND__", "bulkEmail", "bulkEmailBcc"],
+	"massActionDefs": {
+		"bulkEmail": {
+			"handler": "autocrm:handlers/mass-actions/bulk-email",
+			"initFunction": "checkVisibility"
+		},
+		"bulkEmailBcc": {
+			"handler": "autocrm:handlers/mass-actions/bulk-email",
+			"initFunction": "checkVisibility"
+		},
+		"zipAttachments": {
+			"handler": "autocrm:handlers/mass-actions/zip-attachments",
+			"initFunction": "checkVisibility"
+		}
+	},
+	"massActionList": ["__APPEND__", "bulkEmail", "bulkEmailBcc", "zipAttachments"],
+	"viewSetupHandlers": {
+		"detail": ["__APPEND__", "autocrm:handlers/view-setup/edit-buttons", "autocrm:handlers/view-setup/send-email"],
+		"list": ["__APPEND__", "autocrm:handlers/view-setup/edit-buttons"],
+		"record/grid": ["__APPEND__", "autocrm:handlers/view-setup/record/grid/quick-view-context-menu"],
+		"record/kanban": ["__APPEND__", "autocrm:handlers/view-setup/record/kanban/quick-view-context-menu"],
+		"record/list": ["__APPEND__", "autocrm:handlers/view-setup/record/list/quick-view-context-menu"]
+	}
+}

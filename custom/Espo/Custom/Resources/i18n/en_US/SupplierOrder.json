@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "salesOrder": "Zakázka",
+        "isDelivered": "IsDelivered",
+        "attachment": "Attachments"
+    },
+    "links": {
+        "salesOrder": "Zakázka"
+    }
+}

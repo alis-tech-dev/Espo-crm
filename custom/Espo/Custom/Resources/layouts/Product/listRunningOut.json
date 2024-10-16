@@ -1,0 +1,19 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Kód produktu"
+    },
+    {
+        "name": "productCode"
+    },
+    {
+        "name": "totalWarehouseQuantity",
+        "label": "Total Warehouse Quantity"
+    },
+    {
+        "name": "ordered",
+        "width": 10,
+        "label": "ordered"
+    }
+]

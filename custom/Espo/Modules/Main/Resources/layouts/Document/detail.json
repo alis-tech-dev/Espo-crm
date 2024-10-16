@@ -1,0 +1,62 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "obrazekDokumentu"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Náhled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "file"
+				},
+				false
+			],
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "folder"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "type"
+				},
+				{
+					"name": "publishDate"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "expirationDate"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Details"
+	}
+]

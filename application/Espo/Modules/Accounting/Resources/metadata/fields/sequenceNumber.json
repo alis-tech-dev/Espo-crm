@@ -1,0 +1,50 @@
+{
+    "params": [
+        {
+            "name": "format",
+            "type": "varchar",
+            "maxLength": 64,
+            "tooltip": true,
+            "default": "{YYYY}-{number}"
+        },
+        {
+            "name": "nextNumber",
+            "type": "int",
+            "min": 0,
+            "max": 2147483647,
+            "required": true,
+            "default": 1
+        },
+        {
+            "name": "padLength",
+            "type": "int",
+            "default": 5,
+            "required": true,
+            "min": 1,
+            "max": 20
+        },
+        {
+            "name": "reset",
+            "type": "enum",
+            "options": [
+                "Daily",
+                "Monthly",
+                "Yearly",
+                "Never"
+            ],
+            "default": "Yearly"
+        }
+    ],
+    "filter": true,
+    "fieldDefs": {
+        "type": "varchar",
+        "len": 36,
+        "notNull": false,
+        "unique": false
+    },
+    "hookClassName": "Espo\\Modules\\Accounting\\Tools\\FieldManager\\Hooks\\SequenceNumberType",
+    "textFilter": true,
+    "readOnly": true,
+    "view": "accounting:views/fields/sequence-number"
+}
+

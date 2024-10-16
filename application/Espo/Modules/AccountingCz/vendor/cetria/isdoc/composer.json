@@ -1,0 +1,30 @@
+{
+    "name": "cetria/isdoc",
+    "description": "PHP library for generating ISDOC files in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sromdavid",
+            "email": "davsro@seznam.cz"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Isdoc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "cetria/reflection-helper": "dev-master",
+        "phpunit/phpunit": "^8.5.8|^9.3.3",
+        "nesbot/carbon": "^2.16"
+    }
+}

@@ -1,0 +1,34 @@
+{
+	"labels": {
+		"Create Job": "Vytvořit job"
+	},
+	"links": {
+		"scheduledJob": "Naplánovaný job"
+	},
+	"options": {
+		"status": {
+			"Pending": "Čekající",
+			"Success": "Úspěšně dokončeno",
+			"Running": "V procesu",
+			"Failed": "Selhalo",
+			"Ready": "Připraven"
+		}
+	},
+	"fields": {
+		"targetType": "Typ cíle",
+		"targetId": "Cílové ID",
+		"startedAt": "Zahájeno v",
+		"scheduledJobJob": "Název naplánované úlohy",
+		"scheduledJob": "Plánovaná úloha",
+		"queue": "Fronta",
+		"serviceName": "Servis",
+		"number": "Číslo",
+		"method": "Metoda (deprecated)",
+		"methodName": "Meoda",
+		"failedAttempts": "Neúspěšné pokusy",
+		"job": "Úloha",
+		"executeTime": "Provádět v",
+		"executedAt": "Provedeno v",
+		"attempts": "Zbývající pokusy"
+	}
+}

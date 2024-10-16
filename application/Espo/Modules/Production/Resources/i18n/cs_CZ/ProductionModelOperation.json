@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "operation": "Operace",
+        "preparationTime": "Přípravný čas",
+        "productionTime": "Výrobní čas",
+        "interoperationTime": "Mezioperační čas",
+        "workCenter": "Pracoviště"
+    },
+    "labels": {
+        "Create ProductionModelOperation": "Vytvořit operaci technologického postupu"
+    }
+}

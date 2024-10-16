@@ -1,0 +1,28 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "items": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 0
+    },
+    "_tabBreak_1": {
+        "index": 1,
+        "tabBreak": true,
+        "tabLabel": "Položky"
+    },
+    "accounts": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "layout": "listSmall",
+        "filtersEnabled": false,
+        "index": 2
+    },
+    "stream": {
+        "sticked": true,
+        "index": 3
+    }
+}

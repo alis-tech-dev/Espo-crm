@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "files": "Přílohy",
+        "products": "Products",
+        "kod": "Name",
+        "productDescription": "ProductDescription",
+        "listPrice": "Unit Price",
+        "unitPrice": "List Price",
+        "name": "Kód produktu"
+    },
+    "links": {
+        "products": "Products"
+    }
+}

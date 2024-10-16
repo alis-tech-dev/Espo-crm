@@ -1,0 +1,62 @@
+[
+	{
+		"route": "/SalesOrder/summary/:id",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\SalesOrder\\Summary"
+	},
+	{
+		"route": "/SalesOrder/timeOn/:id",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\SalesOrder\\TimeOn"
+	},
+	{
+		"route": "/SalesOrder/timeOff/:id",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\SalesOrder\\TimeOff"
+	},
+	{
+		"route": "/ProductionOrder/takeFromWarehouse/:id/:quantity/:stock",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\ProductionOrder\\TakeFromWarehouse"
+	},
+	{
+		"route": "/WarehouseItem/takeItems/:id",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\WarehouseItem\\TakeItems"
+	},
+	{
+		"route": "/WarehouseItem/createItems/:productId/:count/:stock",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\WarehouseItem\\CreateItems"
+	},
+	{
+		"route": "/WarehouseItem/updateItems/:id/:quantity",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\WarehouseItem\\UpdateItems"
+	},
+	{
+		"route": "/WarehouseItem/productUpdate/:id/:field/:value",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\WarehouseItem\\ProductUpdate"
+	},
+	{
+		"route": "/ProductionOrder/checkQuantity/:id",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\ProductionOrder\\CheckQuantity"
+	},
+	{
+		"route": "/SalesOrder/updateProductionOrder/:id/:quantity/:stock",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\SalesOrder\\UpdateProductionOrder"
+	},
+	{
+		"route": "/ProductionOrder/updatePerformWork/:id",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\ProductionOrder\\UpdatePerformWork"
+	},
+	{
+		"route": "/Selector/createSelector",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Main\\Tools\\Api\\Selector\\CreateSelector"
+	}
+]

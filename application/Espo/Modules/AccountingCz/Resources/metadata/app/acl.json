@@ -1,0 +1,12 @@
+{
+    "mandatory": {
+        "scopeLevel": {
+            "InvoiceItem": "Invoice",
+            "ProformaInvoiceItem": "ProformaInvoice",
+            "CreditNoteItem": "CreditNote",
+            "IssuedTaxDocumentItem": "IssuedTaxDocument",
+            "ReceivedProformaInvoiceItem": "ReceivedProformaInvoice",
+            "ReceivedTaxDocumentItem": "ReceivedTaxDocument"
+        }
+    }
+}

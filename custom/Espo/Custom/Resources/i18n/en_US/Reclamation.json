@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "type": "Typ",
+        "parent": "Výdejka",
+        "goodsIssue": "Výdejka",
+        "goodsIssues": "Výdejka",
+        "numberA": "Číslo reklamace",
+        "salesOrder1": "Sales Order1"
+    },
+    "options": {
+        "type": {
+            "Reclamation": "Reklamace",
+            "Notice": "Upozornění"
+        }
+    },
+    "links": {
+        "parent": "Výdejka",
+        "goodsIssue": "Výdejka",
+        "goodsIssues": "Výdejka",
+        "salesOrder1": "Sales Order1"
+    }
+}

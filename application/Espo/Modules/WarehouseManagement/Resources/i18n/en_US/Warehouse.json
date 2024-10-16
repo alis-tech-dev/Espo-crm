@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "name": "Name",
+        "description": "Description",
+        "type": "Type",
+        "address": "Address",
+        "attachments": "Attachments",
+        "positions": "Positions",
+        "totalValue": "Total value",
+        "warehouseValueRecords": "Warehouse values"
+    },
+    "links": {
+        "items": "Items",
+        "positions": "Positions",
+        "warehouseValueRecords": "Warehouse values"
+    },
+    "messages": {
+        "itemNotFound": "Product {product} was not found.",
+        "notEnoughQuantity": "Product {productame} does not have enough quantity in stock. Requested quantity: {quantityRequested}, available quantity: {quantityAvaliable}.",
+        "itemHasMissingProduct": "Some items have missing products.",
+        "productIsNotStockable": "Product {productName} is not stockable. You may want to change its type.",
+        "itemHasMissingPosition": "Some items have missing positions.",
+        "itemHasPositionNotInWarehouse": "Product {productName} has a position {positionName} that doesn't belong to warehouse {warehouseName}."
+    },
+    "options": {
+        "type": {
+            "Simple": "Simple",
+            "Positional": "Positional"
+        }
+    }
+}

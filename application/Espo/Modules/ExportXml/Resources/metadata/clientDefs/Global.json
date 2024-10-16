@@ -1,0 +1,8 @@
+{
+    "viewSetupHandlers": {
+        "record/detail": [
+            "__APPEND__",
+            "export-xml:handlers/view-setup/print-xml"
+        ]
+    }
+}

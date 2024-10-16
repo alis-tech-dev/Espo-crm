@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "name": "Popis",
+        "qty": "Počet",
+        "quantity": "Počet",
+        "listPrice": "Katalogová cena",
+        "listPriceWithTax": "Katalogová cena s DPH",
+        "unitPrice": "Cena za MJ",
+        "unitPriceWithTax": "Cena za MJ s DPH",
+        "amount": "Celkem bez DPH",
+        "amountWithTax": "Celkem s DPH",
+        "taxRate": "DPH (%)",
+        "product": "Produkt",
+        "order": "Číslo řádku",
+        "quote": "Nabídka",
+        "weight": "Hmotnost",
+        "unitWeight": "Jednotková hmotnost",
+        "description": "Popis",
+        "discount": "Sleva (%)",
+        "amountConverted": "Částka (převedeno)",
+        "unitPriceConverted": "Cena za MJ (převedeno)",
+        "listPriceConverted": "Katalogová cena (převedeno)",
+        "account": "Organizace",
+        "listPriceCurrency": "Měna katalogové ceny",
+        "unitPriceCurrency": "Měna jednotkové ceny",
+        "amountCurrency": "Částka v měně",
+        "invoiceStatus": "Stav faktury",
+        "withTax": "S",
+        "taxAmount": "DPH"
+    },
+    "links": {
+        "quote": "Nabídka",
+        "product": "Produkt",
+        "account": "Organizace"
+    },
+    "labels": {
+        "Quotes": "Nabídky"
+    }
+}

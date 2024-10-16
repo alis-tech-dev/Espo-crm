@@ -1,0 +1,21 @@
+{
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Open In OnlyOffice",
+                    "name": "openDocument",
+                    "action": "openDocument",
+                    "style": "default",
+                    "acl": "read",
+                    "aclScope": "Document",
+                    "data": {
+                        "handler": "only-office:handlers/actions/document/open"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    }
+}

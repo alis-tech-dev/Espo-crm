@@ -1,0 +1,40 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Projector"
+    },
+    {
+        "name": "lens",
+        "label": "Lens"
+    },
+    {
+        "name": "height",
+        "label": "Height (mm)"
+    },
+    {
+        "name": "illuminance",
+        "label": "Illuminance (LUX)"
+    },
+    {
+        "name": "symbolIlluminance",
+        "label": "Symbol Illuminance (LUX)"
+    },
+    {
+        "name": "price",
+        "label": "Price (EUR)"
+    },
+    {
+        "name": "symbolSize",
+        "widthPx": 250,
+        "align": "left",
+        "label": "SymbolSize"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "createdBy"
+    }
+]

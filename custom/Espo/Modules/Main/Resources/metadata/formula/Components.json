@@ -1,0 +1,3 @@
+{
+	"beforeSaveCustomScript": "ifThenElse(\n\tdefaultEUR == null && defaultUSD == null,\n\ttotal = vPN*defaultCZK; totalCZK = vPN*defaultCZK,\n\tifThenElse(\n\t\tdefaultCZK == null && defaultUSD == null,\n\t\ttotal = vPN*defaultEUR; totalCZK = vPN*defaultEUR*eURtoCZK,\n\t\tifThen(\n\t\t\tdefaultEUR == null && defaultCZK == null,\n\t\t\ttotal = vPN*defaultUSD; totalCZK = vPN*defaultUSD*uSDtoCZK\n\t\t)\n\t)\n);\n$min = minSklad;\n$ted = stock;\nifThen(\n    $min > $ted,\n    entity\\setAttribute(skladem, 'less')\n);\nifThen(\n    $min <= $ted,\n    entity\\setAttribute(skladem, 'more')\n);"
+}

@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "productionModelOperation": "Operace",
+        "availableTools": "Dostupné nářadí"
+    },
+    "links": {
+        "productionModelOperation": "Operace"
+    },
+    "options": {
+        "availableTools": []
+    }
+}

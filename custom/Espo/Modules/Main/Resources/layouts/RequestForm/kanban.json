@@ -1,0 +1,17 @@
+[
+	{
+		"name": "number"
+	},
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "status"
+	},
+	{
+		"name": "assignedUser",
+		"link": true,
+		"align": "left"
+	}
+]

@@ -1,0 +1,10 @@
+[
+    "invoice",
+    "product",
+    "quantity",
+    "listPriceConverted",
+    "unitPriceConverted",
+    "amountConverted",
+    "createdBy",
+    "createdAt"
+]

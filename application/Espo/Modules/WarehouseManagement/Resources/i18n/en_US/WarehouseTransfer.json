@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "warehouseFrom": "From Warehouse",
+        "warehouseTo": "To Warehouse",
+        "items": "Items",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Process",
+        "Create WarehouseTransfer": "Create Warehouse Transfer",
+        "Items": "Items"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "Processing": "Processing",
+            "Transferred": "Transferred",
+            "Canceled": "Canceled"
+        }
+    }
+}

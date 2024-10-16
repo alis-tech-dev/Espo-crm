@@ -1,0 +1,41 @@
+{
+    "name": "vitexsoftware/pohoda-connector",
+    "description": "Stormware's Pohoda mServer client.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-curl": "*",
+        "ext-iconv": "*",
+        "riesenia/pohoda": ">=1.5 || dev-master",
+        "vitexsoftware/ease-core": ">=1.9",
+        "lightools/xml": "v2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mServer\\": "src/mServer/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-core/tests/src/Ease",
+            "Test\\mServer\\": "testing/src/mServer/",
+            "Test\\": "testing/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpstan/phpstan": "^0.12.52"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse --ansi --memory-limit=4G"
+    },
+    "scripts-descriptions": {
+        "phpstan": "PHPStan - PHP Static Analysis Tool - https://github.com/phpstan/phpstan"
+    }    
+}

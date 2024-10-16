@@ -1,0 +1,39 @@
+{
+	"views": {
+		"list": "custom-production:views/sales-order/list"
+	},
+	"recordViews": {
+		"productionKanban": "custom-production:views/sales-order/record/production-kanban"
+	},
+	"listViewModeList": ["list", "kanban", "productionKanban"],
+
+	"menu": {
+		"detail": {
+			"handler": "custom-production:handlers/actions/sales-order/manufacturingDate",
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Vytvořit výrobní příkazy",
+					"name": "createProductionOrders",
+					"action": "createProductionOrders",
+					"style": "default",
+					"data": {
+						"handler": "custom-production:handlers/actions/sales-order/create-production-orders"
+					},
+					"initFunction": "init"
+				},
+				{
+					"label": "ManufacturingDate",
+					"name": "manufacturingDate",
+					"action": "manufacturingDate",
+					"style": "default",
+					"data": {
+						"handler": "custom-production:handlers/actions/sales-order/manufacturingDate"
+					},
+					"initFunction": "init"
+				}
+			]
+		}
+	},
+	"kanbanViewMode": true
+}

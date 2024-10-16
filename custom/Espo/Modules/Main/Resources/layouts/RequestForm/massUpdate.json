@@ -1,0 +1,12 @@
+[
+	"orderStatus",
+	"assignedUser",
+	"teams",
+	"reasonDeclined",
+	"priority",
+	"approved",
+	"disapproved",
+	"druh",
+	"name",
+	"amount"
+]

@@ -1,0 +1,22 @@
+{
+	"fields": {
+		"products": "Produkty",
+		"accounts": "Organizace",
+		"productPrice": "Cena",
+		"status": "Stav",
+		"validUntil": "Platnost do"
+	},
+	"links": {
+		"products": "Produkty",
+		"accounts": "Organizace"
+	},
+	"options": {
+		"status": {
+			"Draft": "Návrh",
+			"Sent": "Odeslaný",
+			"Approved": "Schválený",
+			"Rejected": "Zamítnutý",
+			"Expired": "Vypršelý"
+		}
+	}
+}

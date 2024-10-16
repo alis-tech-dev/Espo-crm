@@ -1,0 +1,7 @@
+{
+    "stream": true,
+    "disabled": false,
+    "statusField": "projectPriority",
+    "kanbanStatusIgnoreList": null,
+    "duplicateCheckFieldList": []
+}

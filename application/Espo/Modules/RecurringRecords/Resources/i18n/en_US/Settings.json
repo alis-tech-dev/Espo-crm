@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "recurrenceBatchSizeLimit": "Single Batch Size Limit",
+        "showListScheduledRecurrencesButton": "Show Scheduled Recurrences Button"
+    },
+    "tooltips": {
+        "recurrenceBatchSizeLimit": "The maximum number of records to be processed in a single batch. Setting high values may cause the system to not function properly.",
+        "showListScheduledRecurrencesButton": "If enabled, the Scheduled Recurrences button will be displayed in every list view with scheduled recurring records."
+    },
+    "labels": {
+        "Record Recurrence": "Record Recurrence"
+    }
+}

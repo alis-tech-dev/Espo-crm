@@ -1,0 +1,13 @@
+{
+	"labels": {
+		"Documents": "Dokumenty"
+	},
+	"fields": {
+		"businessProject": "Zakázka",
+		"children": "Podsložky"
+	},
+	"links": {
+		"businessProject": "Zakázka",
+		"children": "Podsložky"
+	}
+}

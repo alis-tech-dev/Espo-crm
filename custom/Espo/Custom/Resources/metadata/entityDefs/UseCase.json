@@ -1,0 +1,15 @@
+{
+    "collection": {
+        "orderBy": "amount",
+        "order": "asc",
+        "textFilterFields": [
+            "name",
+            "quote.number",
+            "quote.enduser",
+            "quote.name"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

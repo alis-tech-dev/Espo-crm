@@ -1,0 +1,26 @@
+{
+    "labels": {
+        "Warehouse Management Settings": "Nastavení skladů"
+    },
+    "layouts": {
+        "listGoodsReceiptSimple": "Příjemka (Jednoduchý sklad)",
+        "listGoodsReceiptPositional": "Příjemka (sklad s pozicemi)",
+        "listGoodsIssueSimple": "Výdejka (Jednoduchý sklad)",
+        "listGoodsIssuePositional": "Výdejka (Sklad s pozicemi)",
+        "listGoodsIssueSelectedSimple": "Výdejka - požadované položky (Jednoduchý sklad)",
+        "listGoodsIssueSelectedPositional": "Výdejka - požadované položky (Sklad s pozicemi)",
+        "listWarehouseTransferSimpleSimple": "Skladový přesun (Jednoduchý -> Jednoduchý)",
+        "listWarehouseTransferSimplePositional": "Skladový přesun (Jednoduchý -> S pozicemi)",
+        "listWarehouseTransferPositionalSimple": "Skladový přesun (S pozicemi -> Jednoduchý)",
+        "listWarehouseTransferPositionalPositional": "Skladový přesun (S pozicemi -> S pozicemi)",
+        "listWarehouseSimple": "Sklad (Jednoduchý)",
+        "listWarehousePositional": "Sklad (S pozicemi)",
+        "listProductSimple": "Produkt (Jednoduchý sklad)",
+        "listProductPositional": "Produkt (Sklad s pozicemi)",
+        "listRunningOut": "Docházející produkty (dashlet)"
+    },
+    "descriptions": {
+        "warehouseManagement": "Konfigurační parametry pro skladové rozšíření"
+    }
+}
+

@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "sourceEmail": "Quelle: E-Mail"
+    },
+    "links": {
+        "parent": "bezieht sich auf"
+    }
+}

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "number",
+        "width": 5,
+        "link": true,
+        "align": "left",
+        "label": "Číslo"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "name",
+        "width": 25,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "amount",
+        "align": "left",
+        "label": "Celková částka",
+        "isEditable": true
+
+    },
+    {
+        "name": "createdBy",
+        "align": "left",
+        "label": "Created By"
+    },
+    {
+        "name": "druh",
+        "label": "Druh"
+    },
+    {
+        "name": "status",
+        "label": "Stav žádanky"
+    },
+    {
+        "name": "orderStatus",
+        "label": "Stav objednávky"
+    },
+    {
+        "name": "invoice",
+        "label": "Faktura"
+    }
+]

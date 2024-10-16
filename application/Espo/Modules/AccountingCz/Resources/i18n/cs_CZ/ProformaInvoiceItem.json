@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "name": "Popis",
+        "qty": "Počet",
+        "quantity": "Počet",
+        "unitPrice": "Cena za MJ",
+        "amount": "Celkem bez DPH",
+        "unit": "MJ",
+        "taxRate": "DPH (%)",
+        "type": "Typ",
+        "withTax": "S",
+        "amountWithTax": "Částka s DPH",
+        "taxAmount": "DPH",
+        "discount": "Sleva (%)"
+    },
+    "options": {
+        "type": {
+            "normal": "normalní položka",
+            "discount": "sleva"
+        }
+    }
+}

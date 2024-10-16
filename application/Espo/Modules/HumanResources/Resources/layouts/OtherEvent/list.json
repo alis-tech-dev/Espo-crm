@@ -1,0 +1,14 @@
+[
+    {
+        "name": "type"
+    },
+    {
+        "name": "dateOfLastInspection"
+    },
+    {
+        "name": "numberOfYearsForRepetition"
+    },
+    {
+        "name": "dateOfTheNextInspection"
+    }
+]

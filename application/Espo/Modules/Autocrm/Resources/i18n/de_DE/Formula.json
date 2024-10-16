@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "Run": "Läuft"
+    },
+    "fields": {
+        "target": "Ziel",
+        "targetType": "Ziel Typ",
+        "script": "Skript"
+    },
+    "messages": {
+        "runSuccess": "Erfolgreich ausgeführt.",
+        "checkSyntaxSuccess": "Syntax ist korrekt.",
+        "checkSyntaxError": "Syntax Error.",
+        "emptyScript": "Das Skript ist leer."
+    },
+    "tooltips": {
+        "output": "Drucken Sie Werte mit der Funktion `output\\printLine`."
+    }
+}

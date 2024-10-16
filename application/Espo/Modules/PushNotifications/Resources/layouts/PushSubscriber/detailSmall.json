@@ -1,0 +1,10 @@
+[
+  {
+    "label": "",
+    "rows": [
+      [{"name":"subscription", "fullWidth": true}],
+      [{"name":"user", "fullWidth": true}],
+      [{"name":"createdAt", "fullWidth": true}]
+    ]
+  }
+]

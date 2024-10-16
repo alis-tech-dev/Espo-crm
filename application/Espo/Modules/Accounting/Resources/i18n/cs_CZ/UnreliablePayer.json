@@ -1,0 +1,23 @@
+{
+	"fields": {
+		"vatId": "DIČ",
+		"dateOfPublication": "Datum zveřejnění nespolehlivosti"
+	},
+	"options": {
+		"status": {
+			"payerOk": "Spolehlivý plátce DPH",
+			"payerNotOk": "Nespolehlivý plátce DPH",
+			"vatIdOk": "Platné DIČ",
+			"payerIsNotValidate": "Nelze ověřit spolehlivost plátce",
+			"Unknown": "DIČ není platné, nebo patří subjektu mimo EU."
+		},
+		"description": {
+			"payerOk": "Výsledek ověření DIČ: <b>{vatId}</b> k datu <b>{date}</b><br>Spolehlivý plátce DPH",
+			"payerNotOk": "Výsledek ověření DIČ: <b>{vatId}</b> k datu <b>{date}</b><br>Nespolehlivý plátce DPH",
+			"vatIdOk": "vatIdOk",
+			"payerIsNotValidate": "Výsledek ověření DIČ: <b>{vatId}</b> k datu <b>{date}</b><br>Subjekt nenalezen",
+			"Unknown": "Zadali jste správné číslo? Zadané DIČ <b>({vatId})</b> není platné nebo patří subjektu mimo EU."
+			
+		}
+	}
+}

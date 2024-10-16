@@ -1,0 +1,23 @@
+{
+  "fields":{
+    "subscription":{
+      "type":"varchar",
+      "maxLength": 500,
+      "required":true
+    },
+    "user":{
+      "type":"link",
+      "required":true
+    },
+    "createdAt":{
+      "type":"datetime",
+      "readOnly":true
+    }
+  },
+  "links": {
+    "user":{
+      "type":"belongsTo",
+      "entity":"User"
+    }
+  }
+}

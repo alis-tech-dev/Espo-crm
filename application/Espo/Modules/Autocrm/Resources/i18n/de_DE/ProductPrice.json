@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "parent": "zugehörig",
+        "price": "Preis",
+        "priceCurrency": "Preis (Währung)",
+        "priceConverted": "Preis (umgewandelt)"
+    },
+    "links": {
+        "parent": "zugehörig"
+    },
+    "labels": {
+        "Create ProductPrice": "Preis des Produkts erstellen"
+    }
+}

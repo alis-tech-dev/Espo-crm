@@ -1,0 +1,33 @@
+{
+    "collection": {
+        "orderBy": "number",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "type": {
+            "options": [
+                "",
+                "Question",
+                "Incident",
+                "Problem",
+                "Warranty",
+                "Software"
+            ],
+            "style": {
+                "": null,
+                "Question": null,
+                "Incident": null,
+                "Problem": null,
+                "Warranty": null,
+                "Software": null
+            }
+        }
+    }
+}

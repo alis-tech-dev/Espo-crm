@@ -1,0 +1,12 @@
+[
+	{
+		"name": "vatId",
+		"link": true
+	},
+	{
+		"name": "dateOfPublication"
+	},
+	{
+		"name": "status"
+	}
+]

@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "deliveredQuantity": "DeliveredQuantity",
+        "deliveredBefore": "DeliveredBefore",
+        "stockLocation": "StockLocation"
+    },
+    "options": {
+        "stockLocation": {
+            "brno": "Brno",
+            "pv": "Prostějov"
+        }
+    }
+}

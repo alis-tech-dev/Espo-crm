@@ -1,0 +1,23 @@
+[
+	{
+		"name": "number",
+		"width": 17,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"width": 33,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "account",
+		"width": 26,
+		"align": "left"
+	},
+	{
+		"name": "grandTotalAmount",
+		"align": "right"
+	}
+]

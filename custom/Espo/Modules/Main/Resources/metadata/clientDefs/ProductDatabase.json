@@ -1,0 +1,57 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [
+		"onlyMy"
+	],
+	"color": "#0fff86",
+	"iconClass": "fas fa-database",
+	"dynamicLogic": {
+		"fields": {
+			"ledChipImage": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "projector"
+						}
+					]
+				}
+			},
+			"componentCheck": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "projector"
+						}
+					]
+				}
+			},
+			"temperatureCheck": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "projector"
+						}
+					]
+				}
+			},
+			"operationalControl": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "productType",
+							"value": "component"
+						}
+					]
+				}
+			}
+		}
+	},
+	"kanbanViewMode": false
+}

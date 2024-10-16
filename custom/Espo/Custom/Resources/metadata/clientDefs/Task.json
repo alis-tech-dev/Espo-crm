@@ -1,0 +1,56 @@
+{
+    "relationshipPanels": {
+        "parentAnother": {
+            "layout": null
+        },
+        "parent": {
+            "layout": null
+        },
+        "users": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": true,
+    "color": null,
+    "iconClass": "fas fa-tasks",
+    "isWide": false,
+    "gridViewMode": false,
+    "dynamicLogic": {
+        "fields": {
+            "reminders": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "and",
+                            "value": [
+                                {
+                                    "type": "or",
+                                    "value": [
+                                        {
+                                            "type": "isNotEmpty",
+                                            "attribute": "dateEnd"
+                                        },
+                                        {
+                                            "type": "isNotEmpty",
+                                            "attribute": "dateEndDate"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "notEquals",
+                                    "attribute": "status",
+                                    "value": "Completed"
+                                },
+                                {
+                                    "type": "notEquals",
+                                    "attribute": "status",
+                                    "value": "Canceled"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

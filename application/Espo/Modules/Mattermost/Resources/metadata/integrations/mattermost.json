@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "serverUrl": {
+            "type": "url",
+            "maxLength": 255,
+            "required": true
+        },
+        "token": {
+            "type": "varchar",
+            "maxLength": 255,
+            "required": true
+        },
+        "teamId": {
+            "type": "varchar",
+            "maxLength": 255,
+            "required": true
+        }
+    },
+    "allowUserAccounts": false,
+    "view": "views/admin/integrations/edit"
+}

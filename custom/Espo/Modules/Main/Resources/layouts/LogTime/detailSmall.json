@@ -1,0 +1,53 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "businessProject"
+				}
+			],
+			[
+				{
+					"name": "account"
+				},
+				{
+					"name": "contact"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				}
+			],
+			[
+				{
+					"name": "assignedUser"
+				},
+				{
+					"name": "externist"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "attachments"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

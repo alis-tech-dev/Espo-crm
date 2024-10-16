@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "mattermostToken": {
+            "type": "varchar",
+            "readonly": true
+        },
+        "mattermostSyncEnabled": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        }
+    }
+}

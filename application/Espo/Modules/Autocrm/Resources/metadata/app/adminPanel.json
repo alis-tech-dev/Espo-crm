@@ -1,0 +1,16 @@
+{
+	"autocrm": {
+		"label": "AutoCRM",
+		"itemList": [
+			"__APPEND__",
+			{
+				"url": "#Admin/AutocrmSettings",
+				"label": "AutoCRM Settings",
+				"iconClass": "fas fa-cog",
+				"description": "autocrm",
+				"recordView": "autocrm:views/settings/record/edit"
+			}
+		],
+		"order": 1
+	}
+}

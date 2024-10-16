@@ -1,0 +1,69 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "defaultDetailLayout"
+				},
+				{
+					"name": "defaultIsWide"
+				}
+			],
+			[
+				{
+					"name": "emailCheckInterval"
+				},
+				{
+					"name": "notificationsCheckInterval"
+				}
+			],
+			[
+				{
+					"name": "aresEnabled"
+				},
+				{
+					"name": "viesEnabled"
+				}
+			],
+			[
+				{
+					"name": "finstatEnabled"
+				},
+				false
+			],
+			[
+				{
+					"name": "editLayoutEnabled"
+				},
+				{
+					"name": "editEntityEnabled"
+				}
+			],
+			[
+				{
+					"name": "editFiltersEnabled"
+				},
+				{
+					"name": "editLabelsEnabled"
+				}
+			],
+			[
+				{
+					"name": "editNavbarEnabled"
+				},
+				{
+					"name": "refreshEntityEnabled"
+				}
+			],
+			[
+				{
+					"name": "addressCountryAsEnum"
+				},
+				{
+					"name": "disableIntroductoryGuide"
+				}
+			]
+		],
+		"index": 0
+	}
+]

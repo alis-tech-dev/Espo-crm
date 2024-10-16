@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "totalWarehouseQuantity"
+    },
+    {
+        "name": "ordered",
+        "width": 10
+    }
+]
+

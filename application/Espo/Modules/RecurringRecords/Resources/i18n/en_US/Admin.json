@@ -1,0 +1,8 @@
+{
+    "descriptions": {
+        "recordRecurrence": "List of all scheduled recurring records."
+    },
+    "labels": {
+        "Records Recurrences": "Records Recurrences"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "duplicateDisabled": true,
+    "controller": "controllers/record",
+    "additionalLayouts": {
+        "listWarehouse": {
+            "type": "list"
+        }
+    }
+}

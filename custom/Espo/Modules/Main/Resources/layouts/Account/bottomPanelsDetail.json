@@ -1,0 +1,37 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"contacts": {
+		"index": 0
+	},
+	"opportunities": {
+		"index": 1
+	},
+	"quotes": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": null,
+		"index": 2
+	},
+	"invoices": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": {
+			"conditionGroup": [
+				{
+					"type": "isTrue",
+					"attribute": "iscustomer"
+				}
+			]
+		},
+		"index": 4
+	},
+	"documents": {
+		"index": 5
+	},
+	"stream": {
+		"sticked": true,
+		"index": 6
+	}
+}

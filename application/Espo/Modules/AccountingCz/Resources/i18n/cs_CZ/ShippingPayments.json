@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "name": "Popis",
+        "amount": "Cena",
+        "taxRate": "DPH (%)"
+    }
+}

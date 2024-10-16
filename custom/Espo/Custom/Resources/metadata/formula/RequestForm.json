@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(amountConverted <= 400 && assignedUser.isAllowed == true, approved = true);\nifThen(assignedUser.userName == 'miroslav.tobola', approved = true);\nifThen(approved == true, status = 'Schváleno');\nifThen(orderStatus == null, orderStatus = 'Neobjednáno');\nifThen(approved == false, status = 'panding');\nifThen(approved == false, orderStatus = null);\nifThen(disapproved == true, status = 'Neschváleno');",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

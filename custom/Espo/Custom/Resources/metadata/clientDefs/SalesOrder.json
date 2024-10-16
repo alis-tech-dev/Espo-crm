@@ -1,0 +1,85 @@
+{
+    "relationshipPanels": {
+        "salesOrderSummaryItems": {
+            "layout": null
+        },
+        "account": {
+            "layout": null
+        },
+        "opportunity": {
+            "layout": null
+        },
+        "documents": {
+            "layout": null
+        },
+        "supplierInvoices": {
+            "layout": null
+        },
+        "supplierOrders": {
+            "layout": null
+        },
+        "productDatabases": {
+            "layout": null
+        },
+        "reclamations": {
+            "layout": null
+        },
+        "quotes": {
+            "layout": null
+        },
+        "salesOrderItems": {
+            "layout": "listItem"
+        },
+        "priceList1": {
+            "layout": null
+        },
+        "salesOrderItemsView": {
+            "layout": "listItem"
+        },
+        "warehouseItems": {
+            "layout": null
+        },
+        "warehouseItems1": {
+            "layout": null
+        },
+        "wiso": {
+            "layout": null
+        },
+        "wisos": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "onHoldTime": {
+                "visible": null
+            },
+            "items": {
+                "visible": null
+            },
+            "accomodationCost": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "accommodation"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": true,
+    "color": null,
+    "iconClass": "fas fa-store",
+    "isWide": true,
+    "gridViewMode": false,
+    "additionalLayouts": {
+        "listForAccount": {
+            "type": "list"
+        },
+        "listitem": {
+            "type": "list"
+        }
+    }
+}

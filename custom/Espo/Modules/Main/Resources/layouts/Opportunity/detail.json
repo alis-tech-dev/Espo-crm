@@ -1,0 +1,99 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "stage"
+				}
+			],
+			[
+				{
+					"name": "account"
+				},
+				{
+					"name": "enduser"
+				}
+			],
+			[
+				{
+					"name": "salesPerson"
+				},
+				{
+					"name": "leadSource"
+				}
+			],
+			[
+				{
+					"name": "contacts"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "lastContact"
+				},
+				{
+					"name": "closeDate"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "estimation"
+				},
+				{
+					"name": "probability"
+				},
+				{
+					"name": "amount"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "details"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "itemList"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	}
+]

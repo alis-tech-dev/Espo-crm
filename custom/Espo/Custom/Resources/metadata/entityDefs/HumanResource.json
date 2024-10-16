@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "isActual": {
+            "notNull": true,
+            "type": "bool",
+            "default": true,
+            "isCustom": true
+        },
+        "vacationDays": {
+            "default": 160
+        },
+        "vacationTimeCorrection": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true,
+            "tooltip": true
+        },
+        "assignedUser": {
+            "required": true,
+            "defaultSelectFilters": {}
+        },
+        "name": {
+            "required": true,
+            "options": []
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

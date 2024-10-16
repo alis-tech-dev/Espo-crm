@@ -1,0 +1,143 @@
+{
+    "fields": {
+        "serialNumber": {
+            "options": [],
+            "maxLength": 155
+        },
+        "quantityAvailable": {
+            "readOnly": true,
+            "notStorable": false,
+            "default": null
+        },
+        "quantityReserved": {
+            "readOnly": false,
+            "notStorable": false,
+            "default": 1
+        },
+        "isReserved": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "salesOrder": {
+            "type": "link"
+        },
+        "unit": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "unit",
+            "view": "views/fields/foreign-enum",
+            "isCustom": true,
+            "notStorable": true
+        },
+        "salesOrders": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "salesOrdersList": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "salesOrders",
+            "field": "name",
+            "displayAsList": true,
+            "displayAsLinks": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "wisos": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": false,
+            "isCustom": true,
+            "recordListEnabled": true,
+            "recordListLayout": "listSmall",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": {}
+        },
+        "reservedQuantity": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "wisos",
+            "field": "quantity",
+            "displayAsList": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "name": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "wiso": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "wisos",
+            "field": "name",
+            "displayAsList": true,
+            "displayAsLinks": true,
+            "isCustom": true
+        },
+        "stockLocation": {
+            "type": "enum",
+            "options": [
+                "brno",
+                "pv"
+            ],
+            "style": {
+                "brno": null,
+                "pv": null
+            },
+            "default": "pv",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "product.name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "warehouseItems",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrders": {
+            "type": "hasMany",
+            "relationName": "warehouseItemSalesOrder",
+            "foreign": "warehouseItems1",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "wisos": {
+            "type": "hasMany",
+            "foreign": "warehouseItem1",
+            "entity": "Wiso",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

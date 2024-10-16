@@ -1,0 +1,52 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "quote"
+				}
+			],
+			[
+				{
+					"name": "transportOf"
+				}
+			],
+			[
+				{
+					"name": "assignment"
+				}
+			],
+			[
+				{
+					"name": "solution"
+				}
+			],
+			[
+				{
+					"name": "images"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "priceList"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": ""
+	}
+]

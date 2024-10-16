@@ -1,0 +1,1 @@
+"use strict";var s=Object.defineProperty;var t=(a,e,n)=>e in a?s(a,e,{enumerable:!0,configurable:!0,writable:!0,value:n}):a[e]=n;var i=(a,e,n)=>(t(a,typeof e!="symbol"?e+"":e,n),n);define(["autocrm:views/admin/layouts/index"],a=>class extends a{constructor(){super(...arguments);i(this,"navigate",()=>{})}});

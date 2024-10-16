@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "unit": {
+            "type": "varchar",
+            "maxLength": 10
+        },
+        "quantity": {
+            "tooltip": true
+        },
+        "taxRate": {
+            "view": "accounting-cz:views/fields/percentage"
+        }
+    }
+}

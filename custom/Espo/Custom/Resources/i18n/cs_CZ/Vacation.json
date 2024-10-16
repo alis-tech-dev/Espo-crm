@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "type": "Typ",
+        "approved": "Schválení"
+    },
+    "options": {
+        "type": {
+            "Paid": "Dovolená",
+            "NonPaid": "Neplacené volno",
+            "exchange": "Náhradní volno",
+            "medical": "Lékař",
+            "sick": "Sick Day",
+            "illness": "Pracovní neschopnost",
+            "paidAbsence": "Placené volno "
+        },
+        "approved": {
+            "waiting": "Čeká na schválení",
+            "approved": "Schváleno",
+            "declined": "Neschváleno"
+        }
+    }
+}

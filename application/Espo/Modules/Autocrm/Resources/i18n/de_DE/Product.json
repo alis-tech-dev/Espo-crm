@@ -1,0 +1,77 @@
+{
+    "labels": {
+        "Create Product": "Neues Produkt erstellen",
+        "Price": "Preis",
+        "Brands": "Marken",
+        "Categories": "Kategorien"
+    },
+    "fields": {
+        "brand": "Marke",
+        "partNumber": "Nummer des Teils",
+        "category": "Kategorie",
+        "pricingType": "Preistyp",
+        "pricingFactor": "Preisfaktor",
+        "costPrice": "Einkaufspreis",
+        "listPrice": "Listenpreis",
+        "unitPrice": "Einzelpreis",
+        "costPriceCurrency": "Einkaufspreis (Währung)",
+        "listPriceCurrency": "Listenpreis Währung",
+        "unitPriceCurrency": "Einzelpreis (Währung)",
+        "costPriceConverted": "Einkaufspreis (konvertiert)",
+        "listPriceConverted": "Listenpreis (konvertiert)",
+        "unitPriceConverted": "Einzelpreis (konvertiert)",
+        "isTaxFree": "ist Steuerfrei",
+        "weight": "Gewicht",
+        "suppliers": "Lieferanten",
+        "collection": "Kollektion",
+        "layingType": "Verlegemethode",
+        "decorName": "Name des Dekors",
+        "layer": "Schicht (Ebene)",
+        "totalThickness": "Gesamthöhe (Größe)",
+        "decorNumber": "Nummer des Dekors",
+        "reelWidth": "Breite der Rollen",
+        "partSize": "Größe des Teils",
+        "reelLength": "Ungefähre Rollenlänge",
+        "numberOfParts": "Anzahl der Teile im Paket",
+        "packageSize": "Größe der Verpackung",
+        "packageNumber": "Anzahl der Packstücke pro Palette",
+        "width": "Breite",
+        "length": "Länge",
+        "supportPlate": "Trägerplatte",
+        "lockType": "Sperre-Typ",
+        "surfaceTreatment": "Oberflächenbehandlung",
+        "manufacturers": "Hersteller",
+        "integratedPad": "integriertes Polster",
+        "integratedPadType": "integriertes Polster Typ",
+        "integratedPadThickness": "Integrierte Polsterstärke",
+        "layerThickness": "Schichtdicke",
+        "height": "Nicht verwenden",
+        "totalQuantity": "Gesamtmenge",
+        "warehouses": "Lager"
+    },
+    "links": {
+        "brand": "Marke",
+        "category": "Kategorie",
+        "suppliers": "Lieferanten",
+        "manufacturers": "Hersteller",
+        "warehouseItems": "Lagerartikel",
+        "warehouses": "Lager"
+    },
+    "options": {
+        "pricingType": {
+            "Same as List": "Gleich wie Liste",
+            "Fixed": "Fixiert",
+            "Discount from List": "Rabatt vom Listenpreis",
+            "Markup over Cost": "Gewinnaufschlag",
+            "Profit Margin": "Gewinnspanne"
+        },
+        "surfaceTreatment": {
+            "None": "Keine (ohne)",
+            "Paint": "Lack / Farben",
+            "Oil": "Öl"
+        }
+    },
+    "presetFilters": {
+        "available": "Verfügbar"
+    }
+}

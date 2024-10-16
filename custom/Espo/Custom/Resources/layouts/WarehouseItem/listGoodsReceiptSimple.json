@@ -1,0 +1,16 @@
+[
+    {
+        "name": "product",
+        "label": "Produkt"
+    },
+    {
+        "name": "quantity",
+        "width": 15,
+        "label": "Celkové množství"
+    },
+    {
+        "name": "price",
+        "width": 15,
+        "label": "Cena"
+    }
+]

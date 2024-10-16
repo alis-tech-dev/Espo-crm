@@ -1,0 +1,83 @@
+{
+	"fields": {
+		"itemList": {
+			"view": "main:views/use-case/fields/item-list"
+		},
+		"name": {
+			"options": []
+		},
+		"imagesField": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "<div class=\"widthGuide\"><p style=\"font-size: 12pt;\">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p><p>&nbsp;</p></div>\n\n"
+		},
+		"quote": {
+			"readOnly": false
+		},
+		"images": {
+			"sourceList": [],
+			"previewSize": "",
+			"accept": []
+		},
+		"priceList": {
+			"type": "enum",
+			"options": [
+				"C",
+				"B",
+				"A",
+				"E",
+				"R",
+				"Skoda"
+			],
+			"style": {
+				"C": null,
+				"B": null,
+				"A": null,
+				"E": null,
+				"R": null,
+				"Skoda": null
+			},
+			"default": "C",
+			"isCustom": true
+		},
+		"isTemplate": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"filters": {
+			"reportFilter6050b6d6ddd3bb8b1": {
+				"isReportFilter": true,
+				"className": "Espo\\Modules\\Advanced\\Core\\ReportFilter",
+				"id": "6050b6d6ddd3bb8b1"
+			},
+			"reportFilter604646972402d254c": {
+				"isReportFilter": true,
+				"className": "Espo\\Modules\\Advanced\\Core\\ReportFilter",
+				"id": "604646972402d254c"
+			}
+		},
+		"orderBy": "amount",
+		"order": "asc",
+		"textFilterFields": [
+			"name",
+			"quote.number",
+			"quote.enduser",
+			"quote.name"
+		],
+		"fullTextSearch": true,
+		"countDisabled": false
+	},
+	"links": {
+		"images": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		}
+	}
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "parent",
+        "label": "Rodič"
+    },
+    {
+        "name": "dateStart",
+        "label": "Datum zahájení"
+    },
+    {
+        "name": "dateEnd",
+        "label": "Datum ukončení"
+    },
+    {
+        "name": "producedAmount"
+    }
+]

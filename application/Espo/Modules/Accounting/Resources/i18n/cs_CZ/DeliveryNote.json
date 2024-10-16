@@ -1,0 +1,24 @@
+{
+    "labels": {
+        "Create DeliveryNote": "Vytvořit Dodací list"
+    },
+    "fields": {
+        "document": "Dokument",
+        "number": "Č. Dodacího listu",
+        "issueDate": "Datum vystavení",
+        "recieverAddress": "Adresa příjemce",
+        "recieverAddressStreet": "Ulice příjemce",
+        "recieverAddressCity": "Město příjemce",
+        "recieverAddressState": "Stát příjemce",
+        "recieverAddressCountry": "Země příjemce",
+        "recieverAddressPostalCode": "PSČ příjemce",
+        "recieverAddressMap": "Mapa příjemce",
+        "invoice": "Faktura",
+        "supplierInvoice": "Přijatá faktura"
+    },
+    "links": {
+        "document": "Dokument",
+        "invoice": "Faktura",
+        "supplierInvoice": "Přijatá faktura"
+    }
+}

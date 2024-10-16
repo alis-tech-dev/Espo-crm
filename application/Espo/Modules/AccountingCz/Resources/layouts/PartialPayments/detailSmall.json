@@ -1,0 +1,23 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                {
+                    "name": "date"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "humanResource": {
+            "type": "link",
+            "isCustom": false
+        }
+    },
+    "links": {
+        "humanResource": {
+            "type": "belongsTo",
+            "foreign": "user",
+            "entity": "HumanResource",
+            "isCustom": false
+        }
+    }
+}

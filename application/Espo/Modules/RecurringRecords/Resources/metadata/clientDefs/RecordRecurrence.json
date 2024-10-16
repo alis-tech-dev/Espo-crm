@@ -1,0 +1,11 @@
+{
+    "controller": "controllers/record",
+    "views": {
+        "list": "recurring-records:views/record-recurrence/list"
+    },
+    "recordViews": {
+        "editSmall": "recurring-records:views/record-recurrence/record/edit-small"
+    },
+    "createDisabled": true,
+    "dynamicHandler": "recurring-records:handlers/dynamic/record-recurrence"
+}

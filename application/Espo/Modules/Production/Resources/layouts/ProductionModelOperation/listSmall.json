@@ -1,0 +1,19 @@
+[
+	{
+		"name": "order",
+		"link": true,
+		"params": {
+			"readOnly": true
+		},
+		"width": 10
+	},
+	{
+		"name": "operation",
+		"link": true
+	},
+	{
+		"name": "workCenter",
+		"link": true,
+		"width": 20
+	}
+]

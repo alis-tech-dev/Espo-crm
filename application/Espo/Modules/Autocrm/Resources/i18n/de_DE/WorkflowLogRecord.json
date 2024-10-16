@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "Create WorkflowLogRecord": "Workflow-Protokollsatz erstellen"
+    },
+    "fields": {
+        "target": "Ziel"
+    },
+    "links": {
+        "target": "Ziel",
+        "workflow": "Workflow"
+    }
+}

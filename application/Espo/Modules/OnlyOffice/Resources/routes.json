@@ -1,0 +1,12 @@
+[
+    {
+        "route": "OnlyOffice/callback/:key",
+        "method": "post",
+        "params": {
+            "controller": "OnlyOffice",
+            "action": "callback",
+            "key": ":key"
+        },
+        "noAuth": true
+    }
+]

@@ -1,0 +1,35 @@
+{
+	"fields": {
+		"account": "Organizace",
+		"amount": "Částka",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"description": "Popis",
+		"discount": "Sleva (%)",
+		"invoice": "Faktura",
+		"invoiceStatus": "Stav faktury",
+		"listPrice": "Katalogová cena",
+		"listPriceConverted": "Katalogová cena (převedeno)",
+		"listPriceCurrency": "Měna katalogové ceny",
+		"name": "Název",
+		"order": "Číslo řádku",
+		"product": "Produkt",
+		"quantity": "Množství",
+		"qty": "Množství",
+		"taxRate": "Sazba daně",
+		"unitPrice": "Jednotková cena",
+		"unitPriceConverted": "Jednotková cena (převedeno)",
+		"unitPriceCurrency": "Měna jednotkové ceny",
+		"unitWeight": "Jednotková hmotnost",
+		"weight": "Hmotnost"
+	},
+	"labels": {
+		"Create InvoiceItem": "Vytvořit položku faktury",
+		"Invoices": "Faktury"
+	},
+	"links": {
+		"account": "Organizace",
+		"invoice": "Faktura",
+		"product": "Produkt"
+	}
+}

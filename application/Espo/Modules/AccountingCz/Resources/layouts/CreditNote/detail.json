@@ -1,0 +1,195 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "paymentMethod",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "status",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "dateInvoiced",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "variableSymbol",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "duzp",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "constantSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "dueDate",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "specificSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "datePaid",
+                    "css": "col-md-6"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Základní údaje"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "amountRoundTo"
+                },
+                {
+                    "name": "amountRound"
+                }
+            ],
+            [
+                {
+                    "name": "vatFromRoundedTotal"
+                },
+                {
+                    "name": "taxRound"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "zaokrouhlení"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Items"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "amountCurrency"
+                },
+                {
+                    "name": "summaryVatRates",
+                    "noLabel": true
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "taxAmount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Totals"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ],
+            [
+                {
+                    "name": "sicCode",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "vatId",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "shippingContact",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "taxClass"
+                },
+                {
+                    "name": "note",
+                    "css": "col-md-12"
+                }
+            ],
+            [
+                {
+                    "name": "textBeforeItems",
+                    "css": "col-md-12"
+                },
+                {
+                    "name": "textAfterItems",
+                    "css": "col-md-12"
+                }
+            ],
+            [
+                {
+                    "name": "foreignInvoicing"
+                },
+                {
+                    "name": "reverseCharge",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "supplyCode",
+                    "css": "col-md-6"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

@@ -1,0 +1,157 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true,
+            "pattern": "$noBadCharacters"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "warehouse-management:views/supplier-order/fields/items",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["productId"],
+            "recordListCreateDisabled": false,
+            "recordListLinkDisabled": false,
+            "recordListRemoveDisabled": false,
+            "recordListConfirmRemove": true
+        },
+        "account": {
+            "type": "link",
+            "view": "warehouse-management:views/supplier-order/fields/account"
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Draft", "Processing", "Delivered", "Cancelled"],
+            "style": {
+                "Draft": "default",
+                "Processing": "warning",
+                "Delivered": "success",
+                "Cancelled": "danger"
+            },
+            "default": "Draft",
+            "displayAsLabel": true
+        },
+        "goodsReceipt": {
+            "type": "linkOne"
+        },
+        "products": {
+            "type": "linkMultiple"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "SupplierOrderItem",
+            "foreign": "supplierOrder",
+            "layoutRelationshipsDisabled": true,
+            "view": "warehouse-management:views/supplier-order/fields/items"
+        },
+        "account": {
+            "type": "belongsTo",
+            "foreign": "supplierOrders",
+            "entity": "Account",
+            "audited": false
+        },
+        "goodsReceipt": {
+            "type": "hasOne",
+            "foreign": "supplierOrder",
+            "entity": "GoodsReceipt"
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "emails": {
+            "type": "hasChildren",
+            "entity": "Email",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "account.name",
+            "description",
+            "createdBy.userName"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "indexes": {
+        "name": {
+            "columns": ["name", "deleted"]
+        },
+        "assignedUser": {
+            "columns": ["assignedUserId", "deleted"]
+        }
+    },
+    "optimisticConcurrencyControl": false
+}
+

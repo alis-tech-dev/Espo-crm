@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "workCenter": "Pracoviště",
+        "testVykaz": "Test vykaz"
+    },
+    "links": {
+        "workCenter": "Pracoviště"
+    }
+}

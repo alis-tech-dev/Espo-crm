@@ -1,0 +1,21 @@
+{
+	"fields": {
+		"productCode": "Kód Produktu",
+		"unit": "Jednotka",
+		"descriptionENG": "Description",
+		"nameCZ": "Název česky",
+		"guaranteeExtend": "Extended Guarantee",
+		"manufacturing": "Test - Výroba"
+	},
+	"options": {
+		"unit": {
+			"pcs": "pcs",
+			"km": "km",
+			"h": "h",
+			"unit": "unit"
+		}
+	},
+	"links": {
+		"manufacturing": "Test - Výroba"
+	}
+}

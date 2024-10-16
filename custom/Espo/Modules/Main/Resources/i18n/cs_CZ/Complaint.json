@@ -1,0 +1,11 @@
+{
+	"labels": {
+		"Create Complaint": "Vytvořit Reklamace"
+	},
+	"fields": {
+		"businessProject": "Zakázka"
+	},
+	"links": {
+		"businessProject": "Zakázka"
+	}
+}

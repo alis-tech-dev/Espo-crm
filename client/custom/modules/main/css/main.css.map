@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/css/quote.css"],
+  "sourcesContent": [".entry-container .entry {\n\tmargin-bottom: 20px;\n\tpadding-bottom: 10px;\n\tborder-bottom: 1px solid var(--default-border-color);\n}\n\n.navbar-inverse {\n\tbackground-color: #ffffff;\n}\n\n.navbar-inverse .navbar-nav > li > a {\n\tcolor: #000000;\n}\n\n.navbar-inverse .navbar-nav > li > a:hover {\n\tcolor: #000000;\n\ttext-decoration: underline;\n}\n\n.list > table {\n\ttable-layout: auto;\n}\n"],
+  "mappings": "AAAA,CAAC,gBAAgB,CAAC,MACjB,cAAe,KACf,eAAgB,KAChB,cAAe,IAAI,MAAM,IAAI,uBAC9B,CAEA,CAAC,eACA,iBAAkB,IACnB,CAEA,CAJC,eAIe,CAAC,UAAW,CAAE,EAAG,CAAE,EAClC,MAAO,IACR,CAEA,CARC,eAQe,CAJC,UAIW,CAAE,EAAG,CAAE,CAAC,OACnC,MAAO,KACP,gBAAiB,SAClB,CAEA,CAAC,IAAK,CAAE,MACP,aAAc,IACf",
+  "names": []
+}

@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Create HR": "Vytvořit HR"
+    },
+    "links": {
+        "humanResource": "HR"
+    },
+    "fields": {
+        "humanResource": "HR"
+    }
+}

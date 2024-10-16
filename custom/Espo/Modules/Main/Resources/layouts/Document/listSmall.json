@@ -1,0 +1,12 @@
+[
+	{
+		"name": "name",
+		"width": 65,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "folder",
+		"align": "right"
+	}
+]

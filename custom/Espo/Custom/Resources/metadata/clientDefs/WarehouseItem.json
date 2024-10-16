@@ -1,0 +1,24 @@
+{
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        },
+        "salesOrders": {
+            "layout": null
+        },
+        "wiso": {
+            "layout": null
+        },
+        "wisos": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": "#bc9476",
+    "iconClass": "fas fa-box",
+    "isWide": false,
+    "gridViewMode": false
+}

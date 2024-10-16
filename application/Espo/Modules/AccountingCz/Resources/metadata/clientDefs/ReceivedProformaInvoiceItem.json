@@ -1,0 +1,32 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting:acl/invoice-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Received Proforma Invoices",
+                    "link": "#ReceivedProformaInvoice",
+                    "acl": "read",
+                    "aclScope": "Invoice"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        }
+    }
+}

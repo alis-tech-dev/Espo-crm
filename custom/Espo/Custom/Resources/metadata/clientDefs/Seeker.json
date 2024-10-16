@@ -1,0 +1,11 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "kanbanViewMode": false,
+    "color": "#000000",
+    "iconClass": "fas fa-calculator",
+    "isWide": false,
+    "gridViewMode": false
+}

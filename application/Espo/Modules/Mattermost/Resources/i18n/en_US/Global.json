@@ -1,0 +1,17 @@
+{
+    "scopeNames": {
+        "Chat": "Chat"
+    },
+    "scopeNamesPlural": {
+        "Chat": "Chat"
+    },
+    "labels": {
+        "Force Mattermost Sync": "Force Mattermost Sync"
+    },
+    "messages": {
+        "mattermostDisabled": "Mattermost chat is disabled for this user. Ensure that the user has enabled Mattermost sync and that the Mattermost integration is configured in the system administration.",
+        "mattermostRequiresEmail": "Mattermost sync requires you to fill in your email address.",
+        "mattermostRequiresFirstName": "Mattermost sync requires you to fill in your first name.",
+        "mattermostRequiresPassword": "Mattermost sync requires you to fill in your password when creating a new user."
+    }
+}

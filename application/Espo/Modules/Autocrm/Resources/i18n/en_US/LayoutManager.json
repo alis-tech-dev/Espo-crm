@@ -1,0 +1,53 @@
+{
+	"fields": {
+		"isEditable": "Editable",
+		"layout": "Layout",
+		"filtersEnabled": "Enable filters",
+		"screenSize": "Screen Size",
+		"customLabel": "Custom Label",
+		"noLabel": "Hide Label",
+		"color": "Color",
+		"bold": "Bold Text",
+		"css": "Additional CSS Classes",
+		"horizontalLabel": "Horizontal Label"
+	},
+	"options": {
+		"screenSize": {
+			"xs": "Smart Phones",
+			"sm": "Tablets",
+			"md": "Desktop",
+			"lg": "Large Desktop"
+		},
+		"gridLayoutType": {
+			"record": "Default",
+			"tab": "Tabs"
+		},
+		"bottomLayoutType": {
+			"default": "Default",
+			"tab": "Tabs"
+		}
+	},
+	"tooltips": {
+		"isEditable": "Whether the field is editable in the list layout. Bare in mind that not every field can be editable (e.g. read-only or link fields) and that editing in a list might cause missclicks and data-loss."
+	},
+	"messages": {
+		"cannotRemoveLastPanel": "At least one panel must be exist!"
+	},
+	"labels": {
+		"Column": "Column",
+		"New Panel": "New Panel",
+		"Custom Label": "Custom Label",
+		"Width": "Width",
+		"Insert Row": "Insert Row",
+		"Insert New Panel": "Insert New Panel",
+		"Remove Row": "Remove Row",
+		"Add Row": "Add Row",
+		"Edit Panel": "Edit Panel",
+		"Remove Panel": "Remove Panel",
+		"Show Code": "Show Code",
+		"Color": "Color",
+		"Columns Count": "Column Count",
+		"Field": "Field",
+		"Bold": "Bold"
+	}
+}

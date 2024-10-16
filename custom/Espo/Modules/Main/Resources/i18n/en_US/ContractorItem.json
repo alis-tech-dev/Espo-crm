@@ -1,0 +1,17 @@
+{
+	"fields": {
+		"componentss": "Componentss",
+		"contractors": "Contractors",
+		"contractor": "Contractor",
+		"components": "Components"
+	},
+	"links": {
+		"componentss": "Componentss",
+		"contractors": "Contractors",
+		"contractor": "Contractor",
+		"components": "Components"
+	},
+	"labels": {
+		"Create ContractorItem": "Create ContractorItem"
+	}
+}

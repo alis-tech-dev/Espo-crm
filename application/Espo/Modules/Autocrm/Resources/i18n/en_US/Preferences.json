@@ -1,0 +1,11 @@
+{
+	"fields": {
+		"quickViewContextMenu": "Replace context menu with quick view action",
+		"customFiltersAboveList": "Show custom filters above list",
+		"collapsibleDashlets": "Collapsible dashlets",
+		"disableIntroGuide": "Disable intro guide"
+	},
+	"labels": {
+		"AutoCRM": "AutoCRM"
+	}
+}

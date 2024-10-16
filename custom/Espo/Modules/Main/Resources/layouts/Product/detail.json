@@ -1,0 +1,130 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "productCode"
+				}
+			],
+			[
+				{
+					"name": "category"
+				},
+				{
+					"name": "type"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "taxClass"
+				},
+				false
+			],
+			[
+				{
+					"name": "costPrice"
+				},
+				{
+					"name": "costPriceWithTax"
+				}
+			],
+			[
+				{
+					"name": "pricingType",
+					"css": "col-md-6"
+				},
+				{
+					"name": "salesPrice",
+					"css": "col-md-3"
+				},
+				{
+					"name": "salesPriceWithTax",
+					"css": "col-md-3"
+				}
+			],
+			[
+				false,
+				{
+					"name": "priceMarkup"
+				}
+			],
+			[
+				false,
+				{
+					"name": "priceMargin"
+				}
+			],
+			[
+				{
+					"name": "priceA"
+				},
+				{
+					"name": "priceB"
+				},
+				{
+					"name": "priceC"
+				}
+			],
+			[
+				{
+					"name": "priceEndUser"
+				},
+				{
+					"name": "priceRent"
+				},
+				{
+					"name": "priceDamage"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Price"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "measureUnit"
+				},
+				{
+					"name": "minimumStockQuantity"
+				}
+			],
+			[
+				{
+					"name": "ean"
+				},
+				{
+					"name": "alisId"
+				}
+			],
+			[
+				{
+					"name": "url"
+				},
+				false
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "attachments"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Details"
+	}
+]

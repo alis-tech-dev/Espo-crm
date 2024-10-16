@@ -1,0 +1,134 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number",
+                    "css": "col-md-6"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "grandTotalAmount"
+                },
+                {
+                    "name": "amountInWords"
+                }
+            ],
+            [
+                {
+                    "name": "issued",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "dateInvoiced",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "received",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "dateOfReceiving",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "paymentPurpose",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "invoice",
+                    "css": "col-md-6"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Základní údaje"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "supplierLink"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "supplierName"
+                },
+                {
+                    "name": "supplierNote"
+                }
+            ],
+            [
+                {
+                    "name": "supplierBillingAddress"
+                },
+                {
+                    "name": "supplierShippingAddress"
+                }
+            ],
+            [
+                {
+                    "name": "supplierSicCode"
+                },
+                {
+                    "name": "supplierVatId"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Dodavatel"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "subscriberName"
+                },
+                {
+                    "name": "subscriberAddress"
+                }
+            ],
+            [
+                {
+                    "name": "subscriberSicCode"
+                },
+                {
+                    "name": "subscriberVatId"
+                }
+            ],
+            [
+                {
+                    "name": "subscriberWebsite"
+                },
+                {
+                    "name": "subscriberEmail"
+                }
+            ],
+            [
+                {
+                    "name": "subscriberPhone"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Odběratel"
+    }
+]

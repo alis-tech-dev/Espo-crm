@@ -1,0 +1,51 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				false
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "type"
+				}
+			],
+			[
+				{
+					"name": "case"
+				},
+				{
+					"name": "salesOrder"
+				}
+			],
+			[
+				{
+					"name": "product"
+				},
+				{
+					"name": "goodsReceipt"
+				}
+			],
+			[
+				{
+					"name": "reclamationSalesOrder"
+				},
+				{
+					"name": "goodsIssue"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

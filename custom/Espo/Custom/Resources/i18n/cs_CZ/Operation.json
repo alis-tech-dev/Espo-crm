@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "test": "Test",
+        "describePicture": "Popisující obrázek",
+        "productionModel": "Technologický postup"
+    },
+    "links": {
+        "productionModel": "Technologický postup"
+    }
+}

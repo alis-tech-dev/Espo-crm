@@ -1,0 +1,19 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Název"
+    },
+    {
+        "name": "dateStart"
+    },
+    {
+        "name": "duration"
+    },
+    {
+        "name": "dateEnd"
+    },
+    {
+        "name": "assignedUser"
+    }
+]

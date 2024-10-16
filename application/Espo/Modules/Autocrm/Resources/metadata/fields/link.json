@@ -1,0 +1,12 @@
+{
+    "params": [
+        "__APPEND__",
+        {
+            "name": "defaultSelectFilters",
+            "type": "jsonObject",
+            "view": "autocrm:views/admin/field-manager/fields/link-multiple/advanced-filters",
+            "tooltip": true
+        }
+    ],
+	"view": "autocrm:views/fields/link"
+}

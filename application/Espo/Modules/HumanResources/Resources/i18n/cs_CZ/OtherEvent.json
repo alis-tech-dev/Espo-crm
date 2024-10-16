@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Create OtherEvent": "Vytvořit Ostatní událost"
+    },
+    "fields": {
+        "dateOfLastInspection": "Datum posledního události",
+        "numberOfYearsForRepetition": "Počet let pro opakování",
+        "dateOfTheNextInspection": "Termín dalšího události",
+        "type": "Typ události"
+    }
+}

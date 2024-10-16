@@ -1,0 +1,33 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "obrazekDokumentu"
+				}
+			],
+			[
+				{
+					"name": "file"
+				}
+			],
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "folder"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

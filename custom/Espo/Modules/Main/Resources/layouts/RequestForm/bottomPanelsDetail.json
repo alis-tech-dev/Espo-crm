@@ -1,0 +1,11 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"projects": {
+		"index": 0
+	},
+	"businessProjects": {
+		"index": 1
+	}
+}

@@ -1,0 +1,110 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "contacts.opportunities": {
+        "disabled": true
+    },
+    "contacts.cases": {
+        "disabled": true
+    },
+    "contacts.campaignLogRecords": {
+        "disabled": true
+    },
+    "contacts.targetLists": {
+        "disabled": true
+    },
+    "contacts.documents": {
+        "disabled": true
+    },
+    "contacts.quotesBilling": {
+        "disabled": true
+    },
+    "contacts.quotesShipping": {
+        "disabled": true
+    },
+    "contacts.salesOrdersBilling": {
+        "disabled": true
+    },
+    "contacts.salesOrdersShipping": {
+        "disabled": true
+    },
+    "contacts.purchaseOrdersBilling": {
+        "disabled": true
+    },
+    "contacts.invoicesBilling": {
+        "disabled": true
+    },
+    "contacts.invoicesShipping": {
+        "disabled": true
+    },
+    "contacts.orders": {
+        "disabled": true
+    },
+    "contacts.contractors": {
+        "disabled": true
+    },
+    "contacts.installations": {
+        "disabled": true
+    },
+    "documents.accounts": {
+        "disabled": true
+    },
+    "documents.opportunities": {
+        "disabled": true
+    },
+    "documents.leads": {
+        "disabled": true
+    },
+    "documents.contacts": {
+        "disabled": true
+    },
+    "quotes.salesOrders": {
+        "disabled": true
+    },
+    "quotes.invoices": {
+        "disabled": true
+    },
+    "quotes.documents": {
+        "disabled": true
+    },
+    "quotes.quoteEntries": {
+        "disabled": true
+    },
+    "quotes.opportunities": {
+        "disabled": true
+    },
+    "salesOrders.invoices": {
+        "disabled": true
+    },
+    "salesOrders.reclamations": {
+        "disabled": true
+    },
+    "salesOrders.summaryVatRates": {
+        "disabled": true
+    },
+    "salesOrders.productionOrders": {
+        "disabled": true
+    },
+    "salesOrders.salesOrderSummaryItems": {
+        "disabled": true
+    },
+    "quotes": {
+        "index": 0
+    },
+    "salesOrders": {
+        "index": 1
+    },
+    "contacts": {
+        "index": 2
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 3
+    },
+    "documents": {
+        "index": 4
+    }
+}

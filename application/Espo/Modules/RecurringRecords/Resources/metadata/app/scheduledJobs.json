@@ -1,0 +1,8 @@
+{
+    "CheckRecurringRecords": {
+        "preparatorClassName": "Espo\\Modules\\RecurringRecords\\Classes\\JobPreparators\\CheckRecurringRecords",
+        "jobClassName": "Espo\\Modules\\RecurringRecords\\Classes\\Jobs\\CheckRecurringRecords",
+        "scheduling": "* * * * *",
+        "isSystem": true
+    }
+}

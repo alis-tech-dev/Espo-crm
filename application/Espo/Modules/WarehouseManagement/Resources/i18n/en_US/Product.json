@@ -1,0 +1,25 @@
+{
+    "fields": {
+        "totalReservedQuantity": "Total Reserved Quantity",
+        "totalWarehouseQuantity": "Total Warehouse Quantity",
+        "totalAvailableQuantity": "Total Available Quantity",
+        "averagePrice": "Average Items Price",
+        "totalPrice": "Total Items Price"
+    },
+    "label": {
+        "Stock Info": "Stock Info"
+    },
+    "presetFilters": {
+        "stockable": "Stockable"
+    },
+    "options": {
+        "type": {
+            "Warehouse Item": "Warehouse Item"
+        }
+    },
+    "tooltips": {
+        "type": "**Warehouse Items** can be stored in warehouses.",
+        "averagePrice": "The weighted average price of all items.",
+        "totalPrice": "The total price of all items."
+    }
+}

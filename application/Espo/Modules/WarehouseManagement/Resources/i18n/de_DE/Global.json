@@ -1,0 +1,18 @@
+{
+    "scopeNames": {
+        "Warehouse": "Lager",
+        "WarehouseItem": "Artikel im Lager",
+        "WarehousePosition": "Position im Lager",
+        "GoodsReceipt": "Wareneingang",
+        "GoodsIssue": "Warenausgang",
+        "WarehouseValueRecord": "Lagerwert"
+    },
+    "scopeNamesPlural": {
+        "Warehouse": "Lager",
+        "WarehouseItem": "Artikel im Lager",
+        "WarehousePosition": "Positionen im Lager",
+        "GoodsReceipt": "Wareneingänge",
+        "GoodsIssue": "Warenausgänge",
+        "WarehouseValueRecord": "Lagerwerte"
+    }
+}

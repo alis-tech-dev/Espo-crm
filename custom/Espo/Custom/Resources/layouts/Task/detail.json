@@ -1,0 +1,124 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "parentProject"
+                }
+            ],
+            [
+                {
+                    "name": "priority"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "progress"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "datePosEnd"
+                },
+                {
+                    "name": "parent"
+                }
+            ],
+            [
+                {
+                    "name": "email"
+                },
+                {
+                    "name": "reminders"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "attachments"
+                }
+            ],
+            [
+                {
+                    "name": "solution"
+                },
+                {
+                    "name": "solutionAttachement"
+                }
+            ],
+            [
+                {
+                    "name": "dateEnd"
+                },
+                {
+                    "name": "dateCompleted"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Přehled"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "taskParent"
+                },
+                false,
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Hierarchie úkolů"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "isRepeated"
+                },
+                false,
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "tasks"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "repeatUntil"
+                },
+                {
+                    "name": "lastExecuteTime"
+                }
+            ],
+            [
+                {
+                    "name": "repeatFrom"
+                },
+                {
+                    "name": "finished"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Opakované úkoly"
+    }
+]

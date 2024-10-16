@@ -1,0 +1,18 @@
+[
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "description"
+	},
+	{
+		"name": "createdBy"
+	},
+	{
+		"name": "modifiedAt"
+	},
+	{
+		"name": "modifiedBy"
+	}
+]

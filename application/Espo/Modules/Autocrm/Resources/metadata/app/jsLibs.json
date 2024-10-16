@@ -1,0 +1,32 @@
+{
+    "easy-email": {
+        "path": "client/modules/autocrm/lib/easy-email/editor.js",
+        "exportsTo": "window",
+        "exportsAs": "EasyEmailEditor"
+    },
+    "jsignature": {
+        "path": "client/modules/autocrm/lib/jsignature/jSignature.min.js",
+        "exportsTo": "$.fn",
+        "exportsAs": "jSignature"
+    },
+    "zod": {
+        "path": "client/modules/autocrm/lib/zod/index.umd.js",
+        "exportsTo": "window",
+        "exportsAs": "Zod"
+    },
+    "luxon": {
+        "path": "client/modules/autocrm/lib/luxon/luxon.min.js",
+        "exportsTo": "window",
+        "exportsAs": "luxon"
+    },
+	"shepherd": {
+		"path": "client/modules/autocrm/lib/shepherd/shepherd.min.js",
+		"exportsTo": "window",
+		"exportsAs": "Shepherd"
+	},
+    "d3": {
+        "path": "client/modules/autocrm/lib/d3/d3.min.js",
+        "exportsTo": "window",
+        "exportsAs": "d3"
+    }
+}

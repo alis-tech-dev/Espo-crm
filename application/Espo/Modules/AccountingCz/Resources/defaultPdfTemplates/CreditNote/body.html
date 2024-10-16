@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                font-size: 11px;
+            }
+
+            div#canceled {
+                display: flex;
+                justify-content: center;
+                background: red;
+                margin-bottom: 5px;
+            }
+
+            div#canceled h2 {
+                color: white;
+                padding: 5px;
+                margin: 8px 0 0;
+                text-transform: uppercase;
+            }
+
+            div#header {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            div#header .logo {
+                max-height: 80px;
+                max-width: 400px;
+            }
+
+            div#details {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            div#details div h6 {
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+
+            div#details div p {
+                margin: 0 0 2px;
+            }
+
+            div#details .ostatni table {
+                font-size: 11px;
+            }
+
+            div#details .ostatni table tr td:nth-child(2) {
+                font-weight: bold;
+            }
+
+            div#summary {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: center;
+            }
+
+            div#summary div {
+                background: #F1F1F2;
+                flex: 1 1 0;
+                padding: 10px;
+            }
+
+            div#summary div:last-child {
+                background: #222331;
+                color: white;
+            }
+
+            div#summary div p {
+                margin: 0;
+                padding: 0;
+            }
+
+            div#summary div p:last-child {
+                font-size: 12px;
+            }
+
+            table#items {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            table#items tr, table#items th {
+                border-bottom: 1px solid #ccc;
+            }
+
+
+            table#items tr th:first-child {
+                text-align: left;
+            }
+
+            table#items tr td:not(:first-child),
+            table#items tr th:not(:first-child) {
+                text-align: right;
+            }
+
+            div#vatDiv {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            table#vatSummary {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            table#vatSummary tr th:first-child {
+                text-align: left;
+            }
+
+            table#vatSummary tr td:not(:first-child),
+            table#vatSummary tr th:not(:first-child) {
+                text-align: right;
+            }
+
+            div#final-prices {
+                display: flex;
+                flex-direction: column;
+            }
+
+            div#final-prices div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            div#final-prices div p {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        {{#ifEqual status_RAW "Canceled"}}
+        <div id="canceled">
+            <h2>Stornováno</h2>
+        </div>
+        {{/ifEqual}}
+
+        <div id="header">
+            <div>
+                <!--src="{{file '643912579df92a4d6'}}"-->
+                <img class="logo" src="">
+            </div>
+            <div>
+                <span style="font-size: 18px;">
+                    <b>opravný daňový doklad</b> {{number}}
+                </span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="details">
+            <div>
+                <h6>DODAVATEL</h6>
+                <p><b>{{invoiceSettings 'companyName'}}</b></p>
+                <p>{{invoiceSettings 'companyBillingAddressStreet'}}</p>
+                <p>{{invoiceSettings 'companyBillingAddressPostalCode'}} {{invoiceSettings 'companyBillingAddressCity'}}</p>
+                <p>IČO: {{invoiceSettings 'companySicCode'}}</p>
+                <p>DIČ: {{invoiceSettings 'companyVatId'}}</p>
+                <p>Telefon: {{invoiceSettings 'companyPhoneNumber'}}</p>
+                <p>E-mail: {{invoiceSettings 'companyEmail'}}</p>
+                <p><br></p>
+                <p>{{invoiceSettings 'companyRegisteredIn'}}</p>
+                {{#ifEqual (invoiceSettings 'companyVatPayer') '1'}}
+                <p>Jsem plátce DPH</p>
+                {{else}}
+                <p>Nejsem plátce DPH</p>
+                {{/ifEqual}}
+                <p><br></p>
+                {{#each invoices}}
+                <p><b>Opravný doklad k faktuře č.{{name}}</b></p>
+                {{/each}}
+            </div>
+
+            <div>
+                <h6>ODBĚRATEL</h6>
+                <p><b>{{account.name}}</b></p>
+                <p>{{account.addressStreet}}</p>
+                <p>{{account.addressPostalCode}} {{account.addressCity}}</p>
+                <p>Ulice: {{billingAddressStreet}}</p>
+                <p>Město: {{billingAddressCity}}</p>
+                <p>Kraj: {{billingAddressState}}</p>
+                <p>PSČ: {{billingAddressPostalCode}}</p>
+                <p>Země: {{billingAddressCountry}}</p>
+                <p>IČO: {{account.sicCode}}</p>
+                <p>DIČ: {{account.vatId}}</p>
+            </div>
+
+            <div class="ostatni">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Datum vystavení:</td>
+                            <td>{{dateInvoiced}}</td>
+                        </tr>
+                        <tr>
+                            <td>Datum splatnosti:</td>
+                            <td>{{dueDate}}</td>
+                        </tr>
+                        <tr><td colspan="2"></td></tr>
+                        <tr>
+                            <td>Forma úhrady:</td>
+                            <td>{{paymentMethod}}</td>
+                        </tr>
+                        <tr>
+                            <td>Bankovní účet:</td>
+                            <td>{{invoiceSettings 'companyBankAccount'}}</td>
+                        </tr>
+                        <tr>
+                            <td>IBAN:</td>
+                            <td>{{invoiceSettings 'companyIban'}}</td>
+                        </tr>
+                        <tr>
+                            <td>Variabilní symbol:</td>
+                            <td>{{variableSymbol}}</td>
+                        </tr>
+                        <tr>
+                            <td>Konstantní symbol:</td>
+                            <td>{{constantSymbol}}</td>
+                        </tr>
+                        <tr>
+                            <td>Specifický symbol:</td>
+                            <td>{{specificSymbol}}</td>
+                        </tr>
+                        {{#ifEqual (invoiceSettings 'companyVatPayer') '1'}}
+                        <tr>
+                            <td>Datum zdanitelného plnění:</td>
+                            <td>{{duzp}}</td>
+                        </tr>
+                        {{/ifEqual}}
+                        <tr><td colspan="2"></td></tr>
+                        <tr>
+                            <td>Objednávka:</td>
+                            <td>{{salesOrder.number}}</td>
+                        </tr>
+                        <tr>
+                            <td>Datum objednávky:</td>
+                            <td>{{salesOrder.dateOrdered}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="summary">
+            <div>
+                <p>Variabilní symbol</p>
+                <p>{{variableSymbol}}</p>
+            </div>
+            <div>
+                <p>Datum splatnosti</p>
+                <p>{{dueDate}}</p>
+            </div>
+            <div>
+                <p>Suma na úhradu</p>
+                <p>{{grandTotalAmount}}</p>
+            </div>
+        </div>
+
+        <br>
+
+        <p>{{{textBeforeItems}}}</p>
+
+        <table id="items">
+            <thead>
+            <tr>
+                <th>Dodané zboží / služby</th>
+                <th>Počet</th>
+                <th>Cena ks ({{unitPriceCurrencySymbol}})</th>
+                <th>%Sleva</th>
+                <th>%DPH</th>
+                <th>DPH ({{taxAmountCurrencySymbol}})</th>
+                <th>Celkem ({{amountCurrencySymbol}})</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each items}}
+            <tr class="item">
+                <td>{{name}}</td>
+                <td>{{quantity}}</td>
+                <td>{{unitPrice}}</td>
+                <td>{{discount}}</td>
+                <td>{{taxRate}}</td>
+                <td>{{taxAmount}}</td>
+                <td>{{amount}}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        <p><br></p>
+        <div id="vatDiv">
+            <div></div>
+            <div style="width: 50%">
+                <table id="vatSummary">
+                    <thead>
+                        <tr>
+                            <th>Sazba</th>
+                            <th>základ ({{amountCurrencySymbol}})</th>
+                            <th>DPH ({{taxAmountCurrencySymbol}})</th>
+                            <th>Celkem ({{amountCurrencySymbol}})</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each summaryVatRates}}
+                        <tr>
+                            <td>{{numberFormat taxRate_RAW decimals=0}} %</td>
+                            <td>{{basis}}</td>
+                            <td>{{vat}}</td>
+                            <td>{{total}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="final-prices">
+            <div>
+                <p>Suma bez DPH</p>
+                <p>{{amount}}</p>
+            </div>
+            <div>
+                <p>DPH</p>
+                <p>{{taxAmount}}</p>
+            </div>
+            <div>
+                <p><b>Suma celkem</b></p>
+                <p><b>{{grandTotalAmount}}</b></p>
+            </div>
+        </div>
+
+        <p>{{{textAfterItems}}}</p>
+
+    </body>
+</html>

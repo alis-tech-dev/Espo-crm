@@ -1,0 +1,12 @@
+{
+    "messages": {
+        "entityAlreadyApproved": "Entity is already approved or rejected.",
+        "hrNotFound": "HR not found.",
+        "fromDateBeforeToDate": "FROM date must be before TO date.",	
+        "notEnoughVacationDaysLeft": "Not enough vacation days left."
+    },
+    "labels": {
+        "employeeTraining": "Employee training",
+        "employeeMedicalExamination": "Employee medical examination"
+    }
+}

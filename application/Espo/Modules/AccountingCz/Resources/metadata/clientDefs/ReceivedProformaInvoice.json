@@ -1,0 +1,80 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "receivedTaxDocuments": {
+            "layout": "listForAccount",
+            "selectDisabled": true,
+            "createDisabled": true
+        }
+    },
+    "additionalLayouts": {
+        "detailBottomTotal": {
+            "type": "list",
+            "dataAttributeList": [
+                "name",
+                "view",
+                "customLabel"
+            ]
+        },
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "recordViews": {
+        "list": "accounting-cz:views/invoice/list"
+    },
+    "dynamicHandlerList": [
+        "accounting-cz:handlers/invoice/dynamic-handler"
+    ],
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ]
+        },
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Vytvořit výdejní doklad",
+                    "name": "createExpenseReceipt",
+                    "action": "createExpenseReceipt",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/received-invoice/create-expense-receipt"
+                    }
+                },
+                {
+                    "label": "Vytvořit přijatou fakturu",
+                    "name": "createSupplierInvoice",
+                    "action": "createSupplierInvoice",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/received-proforma-invoice/create-supplier-invoice"
+                    }
+                },
+                {
+                    "label": "Vytvořit přijatý daňový doklad k přijaté platbě",
+                    "name": "createReceivedTaxDocument",
+                    "action": "createReceivedTaxDocument",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/received-proforma-invoice/create-received-tax-document"
+                    }
+                }
+            ]
+        }
+    },
+    "iconClass": "fas fa-receipt",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true
+}

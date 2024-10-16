@@ -1,0 +1,34 @@
+{
+    "relationshipPanels": {
+        "salesOrder1": {
+            "layout": null
+        },
+        "salesOrderView": {
+            "layout": null
+        },
+        "salesOrder12": {
+            "layout": null
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        },
+        "listitemsmall": {
+            "type": "list"
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": null,
+    "isWide": false,
+    "gridViewMode": false
+}

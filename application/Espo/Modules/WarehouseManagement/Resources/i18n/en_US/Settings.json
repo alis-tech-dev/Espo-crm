@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "warehouseGroupByFieldList": "Group items based on",
+        "updateProductCostPriceWithAveragePrice": "Continuously update cost price with average product price",
+        "warehouseListToSaveValueOf": "Warehouse list to save value of"
+    }
+}

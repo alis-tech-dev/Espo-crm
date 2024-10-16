@@ -1,0 +1,7 @@
+{
+    "ResetVacationDays": {
+        "jobClassName": "Espo\\Modules\\HumanResources\\Jobs\\ResetVacationDays",
+        "scheduling": "0 0 1 1 *",
+        "isSystem": true
+    }
+}

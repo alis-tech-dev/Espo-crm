@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "parent": "Rodič",
+        "reclamation": "Reclamation",
+        "numberA": "Číslo výdejky",
+        "name": "Popisek"
+    },
+    "links": {
+        "parent": "Rodič",
+        "reclamation": "Reclamation"
+    }
+}

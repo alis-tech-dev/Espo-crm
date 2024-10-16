@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "type": {
+            "type": "enum",
+            "options": [
+                "Reclamation",
+                "Notice"
+            ],
+            "style": {
+                "Reclamation": null,
+                "Notice": null
+            },
+            "default": "Reclamation",
+            "isCustom": true
+        },
+        "status": {
+            "style": {
+                "Draft": "primary",
+                "Processing": "info",
+                "Closed": "warning",
+                "Rejected": "danger"
+            }
+        },
+        "product": {
+            "type": "link",
+            "defaultSelectFilters": []
+        },
+        "salesOrder": {
+            "required": true,
+            "defaultSelectFilters": []
+        },
+        "goodsIssue": {
+            "type": "link",
+            "isCustom": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "{number}",
+            "nextNumber": 1,
+            "padLength": 1,
+            "reset": "Never",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "goodsIssue": {
+            "type": "belongsTo",
+            "foreign": "reclamation",
+            "entity": "GoodsIssue",
+            "isCustom": true
+        }
+    }
+}

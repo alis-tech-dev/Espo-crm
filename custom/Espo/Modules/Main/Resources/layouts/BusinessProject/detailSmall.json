@@ -1,0 +1,59 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "bOnumber"
+				},
+				{
+					"name": "status"
+				}
+			],
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "typeAB"
+				},
+				{
+					"name": "priority"
+				}
+			],
+			[
+				{
+					"name": "orderBanner"
+				},
+				{
+					"name": "specialBanner"
+				}
+			],
+			[
+				{
+					"name": "deadline"
+				},
+				{
+					"name": "expectedInstallationDate"
+				}
+			],
+			[
+				{
+					"name": "internDeadline"
+				},
+				{
+					"name": "rentDeadline"
+				}
+			],
+			[
+				{
+					"name": "progress"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

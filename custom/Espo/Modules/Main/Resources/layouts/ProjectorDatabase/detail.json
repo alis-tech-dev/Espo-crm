@@ -1,0 +1,32 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "projectorType"
+				}
+			],
+			[
+				{
+					"name": "businessProject"
+				},
+				{
+					"name": "manufacturerSerialNumber"
+				}
+			],
+			[
+				{
+					"name": "defects"
+				},
+				{
+					"name": "ledChipImage"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

@@ -1,0 +1,76 @@
+{
+	"labels": {
+		"Create Invoice": "Vytvořit Vydanou fakturu",
+		"Items": "Položky",
+		"Add Item": "Přidat položku",
+		"Invoice Items": "Položky faktury",
+		"Shipping Providers": "Dopravci",
+		"Taxes": "Daně",
+		"Templates": "Šablony"
+	},
+	"fields": {
+		"payday": "Datum splatnosti",
+		"billingAddress": "Fakturační adresa",
+		"billingAddressMap": "Mapa",
+		"billingContact": "Kontakt",
+		"currency": "Měna",
+		"dateInvoiced": "Datum vystavení",
+		"number": "Číslo",
+		"quote": "Nabídka",
+		"status": "Stav",
+		"tax": "Daň",
+		"taxAmount": "Výpočet daně",
+		"account": "Organizace",
+		"amount": "Částka",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"discountAmount": "Částka slevy",
+		"discountAmountConverted": "Částka slevy (převedeno)",
+		"discountAmountCurrency": "Částka slevy v měně",
+		"grandTotalAmount": "Celková cena",
+		"grandTotalAmountConverted": "Celková cena (převedeno)",
+		"grandTotalAmountCurrency": "Celková cena v měně",
+		"itemList": "Seznam položek",
+		"opportunity": "Příležitost",
+		"numberA": "Číslo (auto-incremented)",
+		"preDiscountedAmount": "Částka před slevou",
+		"preDiscountedAmountConverted": "Částka před slevou (převedeno)",
+		"preDiscountedAmountCurrency": "Částka před slevou v měně",
+		"salesOrder": "Proforma faktura",
+		"shippingAddress": "Adresa pro doručení",
+		"shippingContact": "Kontakt pro doručení",
+		"shippingCost": "Dopravné",
+		"shippingCostConverted": "Dopravné (převedeno)",
+		"shippingCostCurrency": "Dopravné v měně",
+		"shippingProvider": "Dopravce",
+		"taxAmountConverted": "Částka daně (převedeno)",
+		"taxAmountCurrency": "Částka daně v měně",
+		"taxRate": "Sazba daně",
+		"weight": "Hmotnost"
+	},
+	"links": {
+		"items": "Položky",
+		"account": "Organizace",
+		"billingContact": "Fakturační kontakt",
+		"opportunity": "Příležitost",
+		"quote": "Nabídka",
+		"salesOrder": "Proforma faktura",
+		"shippingContact": "Kontakt pro doručení",
+		"shippingProvider": "Dopravce",
+		"tax": "Daň"
+	},
+	"options": {
+		"status": {
+			"Draft": "Návrh",
+			"In Review": "V procesu",
+			"Confirmed": "Potvrzeno",
+			"Paid": "Zaplaceno",
+			"Rejected": "Zamítnuto",
+			"Canceled": "Zrušeno"
+		}
+	},
+	"presetFilters": {
+		"actual": "Aktuální",
+		"paid": "Zaplacené"
+	}
+}

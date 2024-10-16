@@ -1,0 +1,13 @@
+{
+	"labels": {
+		"Create ReportCategory": "Vytvořit kategorii",
+		"Manage Categories": "Spravovat kategorie",
+		"Reports": "Reporty"
+	},
+	"fields": {
+		"order": "Pořadí"
+	},
+	"links": {
+		"reports": "Reporty"
+	}
+}

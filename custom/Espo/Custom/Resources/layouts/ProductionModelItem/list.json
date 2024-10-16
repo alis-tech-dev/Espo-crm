@@ -1,0 +1,16 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "name"
+    },
+    {
+        "name": "quantity",
+        "align": "left",
+        "label": "quantity",
+        "isEditable": true
+    },
+    {
+        "name": "stock"
+    }
+]

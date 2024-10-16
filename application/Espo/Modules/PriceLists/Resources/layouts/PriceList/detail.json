@@ -1,0 +1,21 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "accounts"
+				}
+			],
+			[
+				{
+					"name": "products"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

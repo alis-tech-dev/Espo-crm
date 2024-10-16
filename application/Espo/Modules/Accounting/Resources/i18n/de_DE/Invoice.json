@@ -1,0 +1,64 @@
+{
+    "labels": {
+        "Create Invoice": "Ausgestellte Rechnung erstellen",
+        "Tax Classes": "Steuerklassen",
+        "Templates": "Vorlagen",
+        "Email PDF": "Email PDF",
+        "Invoice Items": "Rechnungspositionen",
+        "Items": "Positionen",
+        "Totals": "Zusammenfassung"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Nummer",
+        "numberA": "Nummer (automatisch)",
+        "account": "Organisation",
+        "quote": "Angebot",
+        "salesOrder": "Auftrag",
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "billingContact": "Kontakt",
+        "shippingContact": "Lieferkontakt",
+        "taxClass": "Steuerklasse",
+        "taxRate": "Steuersatz",
+        "shippingCost": "Versandkosten",
+        "taxAmount": "Steuerbetrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Rabatt",
+        "grandTotalAmount": "Gesamtbetrag",
+        "dateInvoiced": "Rechnungsdatum",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "preDiscountedAmountConverted": "Betrag vor Rabatt (umgerechnet)",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "shippingCostCurrency": "Versandkosten in Währung",
+        "taxAmountCurrency": "Steuerbetrag in Währung",
+        "discountAmountCurrency": "Rabattbetrag in Währung",
+        "amountCurrency": "Betrag in Währung",
+        "preDiscountedAmountCurrency": "Betrag vor Rabatt in Währung",
+        "grandTotalAmountCurrency": "Gesamtbetrag in Währung",
+        "currency": "Währung"
+    },
+    "links": {
+        "items": "Positionen",
+        "billingContact": "Kontakt",
+        "shippingContact": "Lieferkontakt",
+        "account": "Organisation",
+        "taxClass": "Steuerklasse",
+        "quote": "Angebot"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Bearbeitung",
+            "Confirmed": "Bestätigt",
+            "Paid": "Bezahlt",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert"
+        }
+    }
+}

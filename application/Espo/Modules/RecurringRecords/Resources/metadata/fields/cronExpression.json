@@ -1,0 +1,24 @@
+{
+    "params": [
+        {
+            "name": "required",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "name": "default",
+            "type": "varchar"
+        },
+        {
+            "name": "readOnly",
+            "type": "bool"
+        }
+    ],
+    "filter": false,
+    "fieldDefs": {
+        "type": "varchar",
+        "maxLength": 30
+    },
+    "notCreatable": true,
+    "view": "recurring-records:views/fields/cron-expression"
+}

@@ -1,0 +1,25 @@
+[
+    {
+        "name": "productionModelOperation",
+        "width": 15,
+        "view": "production:views\/production-model-item\/layout-fields\/list-production-model\/operation",
+        "label": "productionModelOperation"
+    },
+    {
+        "name": "product",
+        "label": "product"
+    },
+    {
+        "name": "quantity",
+        "width": 10,
+        "label": "quantity"
+    },
+    {
+        "name": "stock"
+    },
+    {
+        "name": "independent",
+        "width": 20,
+        "label": "independent"
+    }
+]

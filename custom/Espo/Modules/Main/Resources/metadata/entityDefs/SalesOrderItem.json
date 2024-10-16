@@ -1,0 +1,8 @@
+{
+	"fields": {
+		"entryKey": {
+			"type": "varchar",
+			"layoutDetailDisabled": true
+		}
+	}
+}

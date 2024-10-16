@@ -1,0 +1,8 @@
+{
+    "labels": {
+        "Invoice Settings": "Company address and invoice settings"
+    },
+    "descriptions": {
+        "invoiceSettings": "Settings of default values and other parameters on invoices."
+    }
+}

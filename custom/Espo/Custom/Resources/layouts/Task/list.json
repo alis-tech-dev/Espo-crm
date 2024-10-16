@@ -1,0 +1,28 @@
+[
+    {
+        "name": "name",
+        "width": 30,
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "parentProject",
+        "label": "Nadřazený projekt"
+    },
+    {
+        "name": "status",
+        "label": "Status"
+    },
+    {
+        "name": "priority",
+        "label": "Priority"
+    },
+    {
+        "name": "assignedUser",
+        "label": "Assigned User"
+    },
+    {
+        "name": "reminders",
+        "notSortable": true
+    }
+]

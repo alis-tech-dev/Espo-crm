@@ -1,0 +1,74 @@
+{
+    "fields": {
+        "title": "Titul",
+        "type": "Typ",
+        "portals": "Portály",
+        "portalRoles": "Role portálu",
+        "currentPassword": "Aktuální heslo",
+        "yourPassword": "Vaše aktuální heslo",
+        "isPortalUser": "Je uživatel portálu",
+        "contact": "Kontakt",
+        "sendAccessInfo": "Poslat e-mail s přístupovými informacemi uživateli",
+        "portal": "Portál",
+        "gender": "Pohlaví",
+        "position": "Pozice v týmu",
+        "ipAddress": "IP Adresa",
+        "lastAccess": "Poslední přístup",
+        "secretKey": "Soukromý klíč",
+        "dashboardTemplate": "Dashboard šablona",
+        "acceptanceStatus": "Stav přijetí",
+        "acceptanceStatusMeetings": "Stav přijetí (Schůzky)",
+        "acceptanceStatusCalls": "Stav přijetí (Volání)"
+    },
+    "links": {
+        "defaultTeam": "Výchozí tým",
+        "notes": "Poznámky",
+        "portals": "Portály",
+        "portalRoles": "Role portálu",
+        "contact": "Kontakt",
+        "tasks": "Úkoly",
+        "userData": "Data uživatele",
+        "dashboardTemplate": "Dashboard šabkiba"
+    },
+    "labels": {
+        "Portal": "Portál",
+        "Create Portal User": "Vytvořit uživatele portálu",
+        "Generate New API Key": "Generovat nový API klíč",
+        "Generate New Password": "Generovat nové heslo",
+        "Back to login form": "Zpět na přihlašovací formulář",
+        "Requirements": "Požadavky"
+    },
+    "tooltips": {
+        "defaultTeam": "Všechny záznamy vytvořené tímto uživatelem budou ve výchozím nastavení souviset s tímto týmem.",
+        "isAdmin": "Správce má přístup ke všemu.",
+        "isActive": "Pokud není zaškrtnuto, uživatel se nebude moci přihlásit.",
+        "teams": "Týmy, do kterých tento uživatel patří. Úroveň řízení přístupu se dědí z rolí týmu.",
+        "portalRoles": "Další role portálu. Použijte jej k rozšíření úrovně řízení přístupu výhradně pro tohoto uživatele.",
+        "portals": "Portály, ke kterým má tento uživatel přístup."
+    },
+    "messages": {
+        "passwordRecoverySentIfMatched": "Za předpokladu, že se zadané údaje shodovaly s jakýmkoli uživatelským účtem.",
+        "passwordStrengthLength": "Musí mít alespoň {délku} znaků.",
+        "passwordStrengthLetterCount": "Musí obsahovat alespoň {count} písmen.",
+        "passwordStrengthNumberCount": "Musí obsahovat alespoň {počet} číslic.",
+        "passwordStrengthBothCases": "Musí obsahovat velká i malá písmena.",
+        "setupSmtpBefore": "Abyste mohli systému odesílat heslo e-mailem, musíte nastavit [nastavení SMTP] ({url}).",
+        "userNameExists": "Uživatelské jméno již existuje",
+        "wrongCode": "Špatný kód",
+        "codeIsRequired": "Je vyžadován kód",
+        "enterTotpCode": "Zadejte kód z aplikace ověřovatele.",
+        "verifyTotpCode": "Naskenujte QR kód pomocí aplikace pro mobilní autentizaci. Pokud máte potíže se skenováním, můžete toto tajemství zadat ručně. Poté se ve vaší aplikaci zobrazí šestimístný kód. Zadejte tento kód do pole níže.",
+        "generateAndSendNewPassword": "Bude vygenerováno nové heslo a odesláno na e-mailovou adresu uživatele.",
+        "security2FaResetConfimation": "Opravdu chcete obnovit aktuální nastavení 2FA?",
+        "auth2FARequiredHeader": "Vyžaduje se dvoufaktorové ověření",
+        "auth2FARequired": "Musíte nastavit dvoufaktorové ověřování. Na svém mobilním telefonu použijte aplikaci ověřovatele (např. Google Authenticator)",
+        "ldapUserInEspoNotFound": "Uživatel nebyl nalezen v CRM. Požádejte správce o vytvoření uživatele."
+    },
+    "options": {
+        "gender": {
+            "Male": "Muž",
+            "Female": "Žena",
+            "Neutral": "Neutrální"
+        }
+    }
+}

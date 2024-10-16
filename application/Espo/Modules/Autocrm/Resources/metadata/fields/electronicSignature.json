@@ -1,0 +1,26 @@
+{
+	"params": [
+		{
+			"name": "required",
+			"type": "bool",
+			"default": false
+		},
+		{
+			"name": "readOnly",
+			"type": "bool"
+		},
+		{
+			"name": "lockAfterSigning",
+			"type": "bool",
+			"default": true
+		}
+	],
+	"fieldDefs": {
+		"type": "text"
+	},
+	"notCreatable": false,
+	"filter": false,
+	"view": "autocrm:views/fields/electronic-signature",
+	"textFilter": false,
+	"fullTextSearch": false
+}

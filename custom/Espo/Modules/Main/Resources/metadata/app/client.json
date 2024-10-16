@@ -1,0 +1,17 @@
+{
+	"cssList": ["__APPEND__", "client/custom/modules/main/css/main.css"],
+	"viewExtensions": {
+		"accounting:views/sales-order/record/list": [
+			"__APPEND__",
+			"main:extensions/views/sales-order/record/list"
+		],
+		"warehouse-management:views/product/record/panels/goods-issues": [
+			"__APPEND__",
+			"main:extensions/views/product/record/panels/goods-issues"
+		],
+		"warehouse-management:views/product/record/panels/goods-receipts": [
+			"__APPEND__",
+			"main:extensions/views/product/record/panels/goods-receipts"
+		]
+	}
+}

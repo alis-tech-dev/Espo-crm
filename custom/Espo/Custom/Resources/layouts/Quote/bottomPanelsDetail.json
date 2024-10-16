@@ -1,0 +1,29 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "items": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "layout": "listSmall",
+        "filtersEnabled": false,
+        "index": 0
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "layout": "listSmall",
+        "filtersEnabled": false,
+        "index": 1
+    },
+    "documents": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "layout": "listSmall",
+        "filtersEnabled": false,
+        "index": 2
+    }
+}

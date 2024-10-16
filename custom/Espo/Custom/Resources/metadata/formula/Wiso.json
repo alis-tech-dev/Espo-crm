@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(name == null, name = salesOrder1.name);\nifThen(itemName == null, itemName = warehouseItem1.name);",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

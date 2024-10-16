@@ -1,0 +1,22 @@
+[
+	{
+		"name": "taskNumber"
+	},
+	{
+		"name": "name",
+		"link": true,
+		"align": "left",
+		"isLarge": true
+	},
+	{
+		"name": "priority",
+		"align": "left",
+		"isLarge": true
+	},
+	{
+		"name": "assignedUser"
+	},
+	{
+		"name": "account"
+	}
+]

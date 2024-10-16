@@ -1,0 +1,24 @@
+{
+    "stockDataLoaderClassName": "Espo\\Modules\\WarehouseManagement\\Classes\\Stock\\DataLoaders\\Positional",
+    "stockInformationProviderClassName": "Espo\\Modules\\WarehouseManagement\\Classes\\Stock\\InformationProviders\\Positional",
+    "stockManagerClassName": "Espo\\Modules\\WarehouseManagement\\Classes\\Stock\\Managers\\Positional",
+    "layouts": {
+        "GoodsReceipt": {
+            "items": "listGoodsReceiptPositional"
+        },
+        "GoodsIssue": {
+            "items": "listGoodsIssuePositional",
+            "selectedItems": "listGoodsIssueSelectedPositional"
+        },
+        "WarehouseTransfer": {
+            "items": {
+                "Simple": "listWarehouseTransferPositionalSimple",
+                "Positional": "listWarehouseTransferPositionalPositional"
+            }
+        }
+    },
+    "productInfo": {
+        "view": "warehouse-management:views/product/record/panels/stock-info/positional",
+        "layoutName": "listProductPositional"
+    }
+}

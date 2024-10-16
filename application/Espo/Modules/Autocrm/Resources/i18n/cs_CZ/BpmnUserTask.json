@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "actionType": "Typ akce",
+        "resolution": "Řešení",
+        "target": "Cíl",
+        "process": "Proces",
+        "isResolved": "Je vyřešen",
+        "instructions": "Instrukce",
+        "isCanceled": "Je zrušen"
+    },
+    "links": {
+        "process": "Proces",
+        "target": "Cíl"
+    },
+    "presetFilters": {
+        "actual": "Aktuální",
+        "resolved": "Vyřešeno",
+        "canceled": "Zrušeno"
+    }
+}

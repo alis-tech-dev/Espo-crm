@@ -1,0 +1,8 @@
+{
+   "scopeNames":{
+      "PushSubscriber":"Odběratel notifikací"
+   },
+   "scopeNamesPlural":{
+      "PushSubscriber":"Odběratelé notifikací"
+   }
+}

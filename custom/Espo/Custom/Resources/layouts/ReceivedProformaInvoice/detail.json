@@ -1,0 +1,151 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number"
+                },
+                {
+                    "name": "originalNumber"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "paymentMethod"
+                },
+                {
+                    "name": "datePaid"
+                }
+            ],
+            [
+                {
+                    "name": "dateOfReceiving"
+                },
+                {
+                    "name": "dateInvoiced"
+                }
+            ],
+            [
+                {
+                    "name": "dueDate"
+                },
+                {
+                    "name": "duzp"
+                }
+            ],
+            [
+                {
+                    "name": "variableSymbol"
+                },
+                {
+                    "name": "constantSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "supplierInvoice"
+                },
+                {
+                    "name": "expenseReceipts"
+                }
+            ],
+            [
+                {
+                    "name": "processed"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "billingContact"
+                }
+            ],
+            [
+                {
+                    "name": "taxClass"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "attachments"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "note"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Items"
+    },
+    {
+        "rows": [
+            [
+                false,
+                {
+                    "name": "summaryVatRates",
+                    "noLabel": true
+                }
+            ],
+            [
+                {
+                    "name": "amountCurrency"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "taxAmount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Totals"
+    }
+]

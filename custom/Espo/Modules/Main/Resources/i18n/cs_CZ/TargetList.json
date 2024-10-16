@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"includingActionList": "Zahrnout",
+		"excludingActionList": "Vyloučit",
+		"isOptedOut": "Je odhlášen",
+		"optedOutCount": "Počet odhlášených",
+		"syncWithReportsUnlink": "Není synchronizován",
+		"targetStatus": "Cílový stav"
+	},
+	"labels": {
+		"Cancel Opt-Out": "Zrušit odhlášení",
+		"Opt-Out": "Odhlásit"
+	},
+	"links": {
+		"leads": "Potenciálové",
+		"massEmails": "Hromadný email",
+		"campaignsExcluding": "Vyloučené z kampaní",
+		"massEmailsExcluding": "Vyloučené z hromadných emailů"
+	},
+	"options": {
+		"targetStatus": {
+			"Opted Out": "Odhlášený",
+			"Listed": "Vypsaný"
+		},
+		"type": {
+			"Email": "Email",
+			"Web": "Web",
+			"Television": "Televize",
+			"Radio": "Rádio",
+			"Newsletter": "Novinky"
+		}
+	}
+}

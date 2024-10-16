@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "name": "Name",
+        "qty": "Qty",
+        "quantity": "Quantity",
+        "unitPrice": "Unit Price",
+        "unitPriceWithTax": "Unit Price Tax Inc.",
+        "amount": "Amount",
+        "amountWithTax": "Amount Tax Inc.",
+        "taxRate": "Tax Rate",
+        "product": "Product",
+        "order": "Line Number",
+        "purchaseOrder": "Purchase Order",
+        "weight": "Weight",
+        "unitWeight": "Unit Weight",
+        "description": "Description",
+        "discount": "Discount (%)",
+        "amountConverted": "Amount (Converted)",
+        "unitPriceConverted": "Unit Price (Converted)",
+        "listPriceConverted": "List Price (Converted)",
+        "account": "Account",
+        "listPriceCurrency": "List Price Currency",
+        "unitPriceCurrency": "Unit Price Currency",
+        "amountCurrency": "Amount Currency"
+    },
+    "links": {
+        "purchaseOrder": "Purchase Order",
+        "product": "Product",
+        "account": "Account"
+    },
+    "labels": {
+        "Purchase Orders": "Purchase Orders"
+    }
+}

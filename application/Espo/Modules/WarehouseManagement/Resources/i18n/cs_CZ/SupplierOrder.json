@@ -1,0 +1,31 @@
+{
+    "labels": {
+        "Create SupplierOrder": "Vytvořit objednávku u dodavatele",
+        "Total Amount Panel": "Celkový součet objednávky",
+        "Create Goods Receipt": "Vytvořit Příjemku",
+        "Export to Excel": "Exportovat do Excelu",
+        "Hint Products": "Navhrnout další produkty",
+        "Delivered": "Dodáno"
+    },
+    "fields": {
+        "account": "Dodavatel",
+        "items": "Položky",
+        "status": "Stav",
+        "goodsReceipt": "Příjemka",
+        "supplierInvoices": "Přijaté faktury"
+    },
+    "links": {
+        "account": "Dodavatel",
+        "goodsReceipt": "Příjemka",
+        "supplierInvoices": "Přijaté faktury"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Processing": "Objednáno",
+            "Delivered": "Dodáno",
+            "Cancelled": "Zrušeno"
+        }
+    }
+}
+

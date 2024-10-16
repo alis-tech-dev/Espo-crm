@@ -1,0 +1,17 @@
+{
+    "duplicateDisabled": true,
+    "controller": "controllers/record",
+    "iconClass": "fas fa-warehouse",
+    "color": "#bc9476",
+    "dynamicHandlerList": [
+        "warehouse-management:handlers/warehouse/dynamic"
+    ],
+    "relationshipPanels": {
+        "items": {
+            "selectDisabled": true,
+            "createDisabled": true,
+            "unlinkDisabled": true,
+            "layout": "listWarehouseSimple"
+        }
+    }
+}

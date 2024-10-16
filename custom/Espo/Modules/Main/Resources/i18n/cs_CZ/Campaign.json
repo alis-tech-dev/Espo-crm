@@ -1,0 +1,46 @@
+{
+	"labels": {
+		"Unsubscribe": "Odhlásit se",
+		"Unsubscribe again": "Znovu se odhlásit",
+		"Create Target List": "Vytvořit cílový seznam",
+		"Email Templates": "Šablony emailu",
+		"Generate Mail Merge PDF": "Generování hromadné korespondence PDF",
+		"Mass Emails": "Hromadné e-maily",
+		"Mail Merge": "Sloučení emailů",
+		"Subscribe again": "Přihlásit se znovu"
+	},
+	"fields": {
+		"accountsTemplate": "Šablona organizací",
+		"budget": "Rozpočet",
+		"budgetConverted": "Rozpočet (převeden)",
+		"budgetCurrency": "Měna rozpočtu",
+		"contactsTemplate": "Šablona kontaktů",
+		"excludingTargetLists": "Vyloučené cílové seznamy",
+		"mailMergeOnlyWithAddress": "Přeskočit záznamy bez vyplněné adresy",
+		"leadsTemplate": "Šablona potenciálů",
+		"optedInCount": "Přihlášené",
+		"usersTemplate": "Šablona uživatelů",
+		"leadCreatedCount": "Počet potenciálů",
+		"status": "Stav",
+		"revenueConverted": "Příjem (konvertováno)"
+	},
+	"links": {
+		"accountsTemplate": "Šablona organizací",
+		"contactsTemplate": "Šablona kontaktů",
+		"leadsTemplate": "Šablony Potenciálů",
+		"excludingTargetLists": "Vyloučené cílové seznamy",
+		"usersTemplate": "Šablona uživatelů",
+		"massEmails": "Hromadné emaily",
+		"trackingUrls": "Sledovaná URL",
+		"opportunities": "Příležitosti",
+		"leads": "Potenciály"
+	},
+	"messages": {
+		"subscribedAgain": "Jste znovu přihlášeni k odběru.",
+		"unsubscribed": "Byli jste odhlášeni z našeho seznamu adresátů."
+	},
+	"tooltips": {
+		"excludingTargetLists": "Cíle, které by neměly přijímat zprávy.",
+		"targetLists": "Cíle, které by měly přijímat zprávy."
+	}
+}

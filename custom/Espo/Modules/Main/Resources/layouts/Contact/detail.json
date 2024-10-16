@@ -1,0 +1,78 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "accounts"
+				}
+			],
+			[
+				{
+					"name": "emailAddress"
+				},
+				{
+					"name": "phoneNumber"
+				}
+			],
+			[
+				{
+					"name": "sendMassEmails"
+				},
+				false
+			],
+			[
+				{
+					"name": "address"
+				},
+				{
+					"name": "callAgain"
+				},
+				{
+					"name": "possibleSales"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "crmcontact"
+				}
+			],
+			[
+				{
+					"name": "screenshot"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "partner"
+				},
+				{
+					"name": "endUser"
+				}
+			],
+			[
+				{
+					"name": "category"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Detail Firmy"
+	}
+]

@@ -1,0 +1,28 @@
+{
+    "dashlets": {
+        "RunningOutOfProducts": "Docházející produkty"
+    },
+    "scopeNames": {
+        "Warehouse": "Sklad",
+        "WarehouseItem": "Skladová položka",
+        "WarehousePosition": "Skladová pozice",
+        "GoodsReceipt": "Příjemka",
+        "GoodsIssue": "Výdejka",
+        "WarehouseTransfer": "Skladový přesun",
+        "WarehouseValueRecord": "Skladová hodnota",
+        "SupplierOrder": "Objednávka u dodavatele",
+        "SupplierOrderItem": "Položka objednávky u dodavatele"
+    },
+    "scopeNamesPlural": {
+        "Warehouse": "Sklady",
+        "WarehouseItem": "Skladové položky",
+        "WarehousePosition": "Skladové pozice",
+        "GoodsReceipt": "Příjemky",
+        "GoodsIssue": "Výdejky",
+        "WarehouseTransfer": "Skladové přesuny",
+        "WarehouseValueRecord": "Skladové hodnoty",
+        "SupplierOrder": "Objednávky u dodavatelů",
+        "SupplierOrderItem": "Položky objednávky u dodavatele"
+    }
+}
+

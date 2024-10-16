@@ -1,0 +1,11 @@
+{
+	"labels": {
+		"Create ExternalAccount": "Vytvořit externí účet",
+		"Disconnect": "Odpojit",
+		"Disconnected": "Odpojeno"
+	},
+	"fields": {
+		"isLocked": "Je uzamčen",
+		"enabled": "Povolen"
+	}
+}

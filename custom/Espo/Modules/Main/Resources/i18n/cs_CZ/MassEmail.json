@@ -1,0 +1,57 @@
+{
+	"fields": {
+		"campaign": "Kampaň",
+		"emailTemplate": "Šablona emailu",
+		"excludingTargetLists": "Vyloučené cílové seznamy",
+		"fromAddress": "Z adresy",
+		"fromName": "Jméno",
+		"inboundEmail": "Emailový účet",
+		"optOutEntirely": "Odhlásit se úplně",
+		"replyToAddress": "Adresa pro odpověď",
+		"replyToName": "Jméno pro odpověď",
+		"smtpAccount": "SMTP účet",
+		"startAt": "Datum zahájení",
+		"storeSentEmails": "Uložit odeslané e-maily",
+		"targetLists": "Cílové seznamy",
+		"name": "Název",
+		"status": "Stav"
+	},
+	"labels": {
+		"Create MassEmail": "Vytvořit hromadný email",
+		"group": "skupina",
+		"Send Test": "Poslat test",
+		"system": "systém"
+	},
+	"links": {
+		"campaign": "Kampaň",
+		"emailTemplate": "Šablona e-mailu",
+		"excludingTargetLists": "Vyloučení Cílových seznamů",
+		"inboundEmail": "Emailový účet",
+		"queueItems": "Položky fronty",
+		"targetLists": "Cílové seznamy"
+	},
+	"messages": {
+		"selectAtLeastOneTarget": "Vyberte alespoň jeden cíl.",
+		"testSent": "Testovací e-maily, které mají být odeslány."
+	},
+	"options": {
+		"status": {
+			"Draft": "Návrh",
+			"Pending": "Čekající",
+			"In Process": "V přípravě",
+			"Complete": "Kompletní",
+			"Canceled": "Canceled",
+			"Failed": "Selhalo"
+		}
+	},
+	"presetFilters": {
+		"actual": "Aktuální",
+		"complete": "Kompletní"
+	},
+	"tooltips": {
+		"excludingTargetLists": "Cíle, které by neměly přijímat zprávy.",
+		"optOutEntirely": "E-mailové adresy příjemců, kteří se odhlásili, budou označeni jako odhlášeni a již nebudou dostávat žádné hromadné e-maily.",
+		"storeSentEmails": "E-maily budou uloženy v CRM.",
+		"targetLists": "Cíle, které by měly přijímat zprávy."
+	}
+}

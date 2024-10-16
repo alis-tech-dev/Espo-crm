@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "editEntityEnabled": "Schnelle Entitäts-Bearbeitung aktivieren",
+        "editLayoutEnabled": "Schnelle Layout-Bearbeitung aktivieren",
+        "editFiltersEnabled": "Schnelle Filter-Bearbeitung aktivieren",
+        "editLabelsEnabled": "Schnelle Label-Bearbeitung aktivieren"
+    },
+    "tooltips": {
+        "editEntityEnabled": "Füge den Button \"Entität bearbeiten\" oben rechts hinzu.",
+        "editLayoutEnabled": "Füge den Button \"Layout bearbeiten\" oben rechts hinzu.",
+        "editFiltersEnabled": "Füge den Button \"Filter bearbeiten\" oben rechts hinzu.",
+        "editLabelsEnabled": "Füge den Button \"Label bearbeiten\" oben rechts hinzu."
+    }
+}

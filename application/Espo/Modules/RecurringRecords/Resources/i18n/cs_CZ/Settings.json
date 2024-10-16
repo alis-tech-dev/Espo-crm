@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "recurrenceBatchSizeLimit": "Maximální velikost jedné dávky",
+        "showListScheduledRecurrencesButton": "Zobrazit tlačítko Naplánované opakování"
+    },
+    "tooltips": {
+        "recurrenceBatchSizeLimit": "Maximální počet záznamů, které se zpracovávají v jedné dávce. Větší počet záznamů může zapříčinit nesprávné chování serveru.",
+        "showListScheduledRecurrencesButton": "Zobrazit tlačítko Naplánované opakování v seznamech u entit s naplánovanými opakovanými záznamy."
+    },
+    "labels": {
+        "Record Recurrence": "Opakování záznamu"
+    }
+}

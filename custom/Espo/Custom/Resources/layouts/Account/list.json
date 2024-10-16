@@ -1,0 +1,36 @@
+[
+    {
+        "name": "name",
+        "width": 33,
+        "link": true,
+        "align": "left",
+        "label": "Název"
+    },
+    {
+        "name": "billingAddressCountry",
+        "label": "Země"
+    },
+    {
+        "name": "partner",
+        "label": "Partner"
+    },
+    {
+        "name": "enduser",
+        "label": "End-user"
+    },
+    {
+        "name": "category",
+        "label": "Kategorie"
+    },
+    {
+        "name": "emailAddress",
+        "label": "Email"
+    },
+    {
+        "name": "phoneNumber",
+        "label": "Telefon"
+    },
+    {
+        "name": "processed"
+    }
+]

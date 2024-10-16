@@ -1,0 +1,39 @@
+{
+	"dynamicLogic": {
+		"fields": {
+			"auto": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "has",
+							"attribute": "majetek",
+							"value": "Auto"
+						}
+					]
+				}
+			},
+			"mobil": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "has",
+							"attribute": "majetek",
+							"value": "Mobil"
+						}
+					]
+				}
+			},
+			"notebook": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "has",
+							"attribute": "majetek",
+							"value": "Notebook"
+						}
+					]
+				}
+			}
+		}
+	}
+}

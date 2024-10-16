@@ -1,0 +1,25 @@
+{
+    "fields": {
+        "bodyEasyEmail": "Body"
+    },
+    "labels": {
+        "Default": "Default",
+        "Easy Email Editor": "Easy Email Editor"
+    },
+    "easyEmailEditorLabels": {
+        "Edit": "Edit",
+        "Full Screen": "Full Screen",
+        "Exit Full Screen": "Exit Full Screen",
+        "Export Template": "Export Template",
+        "Import Template": "Import Template"
+    },
+    "messages": {
+        "defaultTypeDescription": "Ideal for simple plaintext or HTML email templates.",
+        "easyEmailTypeDescription": "Ideal for complex HTML email templates with images, links, complex layout and more. Uses fully-featured email editor."
+    },
+    "placeholderTexts": {
+        "viewInBrowserUrl": "URL for viewing email in browser",
+        "viewInBrowserLink": "a link for viewing email in browser",
+        "siteUrl": "Site URL"
+    }
+}

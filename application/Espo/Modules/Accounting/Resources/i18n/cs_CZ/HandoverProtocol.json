@@ -1,0 +1,36 @@
+{
+    "labels": {
+        "Create HandoverProtocol": "Vytvořit Předávací protokol"
+    },
+    "fields": {
+        "senderAddress": "Adresa předávajícího",
+        "senderAddressStreet": "Ulice předávajícího",
+        "senderAddressCity": "Město předávajícího",
+        "senderAddressState": "Stát předávajícího",
+        "senderAddressCountry": "Země předávajícího",
+        "senderAddressPostalCode": "PSČ předávajícího",
+        "senderAddressMap": "Mapa předávajícího",
+        "recieverAddress": "Adresa přebírajícího",
+        "recieverAddressStreet": "Ulice přebírajícího",
+        "recieverAddressCity": "Město přebírajícího",
+        "recieverAddressState": "Stát přebírajícího",
+        "recieverAddressCountry": "Země přebírajícího",
+        "recieverAddressPostalCode": "PSČ přebírajícího",
+        "recieverAddressMap": "Mapa přebírajícího",
+        "printedDate": "Vystaveno",
+        "hasDocumentation": "Dokumentace",
+        "customerRegistrationNumber": "Ev. č. objednatele",
+        "contractorRegistrationNumber": "Ev. č. zhotovitele",
+        "number": "Č. Protokolu",
+        "document": "Dokument",
+        "project": "Zakázka",
+        "invoice": "Faktura",
+        "supplierInvoice": "Přijatá faktura"
+    },
+    "links": {
+        "document": "Document",
+        "project": "Zakázka",
+        "invoice": "Faktura",
+        "supplierInvoice": "Přijatá faktura"
+    }
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"name": "operation"
+	},
+	{
+		"name": "workCenter"
+	},
+	{
+		"name": "producedAmount"
+	},
+	{
+		"name": "dateStart"
+	},
+	{
+		"name": "dateEnd"
+	}
+]

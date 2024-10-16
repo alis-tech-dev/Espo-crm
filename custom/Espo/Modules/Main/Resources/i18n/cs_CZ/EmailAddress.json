@@ -1,0 +1,12 @@
+{
+	"fields": {
+		"invalid": "Neplatný",
+		"optOut": "Odhlášený"
+	},
+	"labels": {
+		"Create EmailAddress": "Vytvořit emailovou adresu"
+	},
+	"presetFilters": {
+		"orphan": "Sirotek"
+	}
+}

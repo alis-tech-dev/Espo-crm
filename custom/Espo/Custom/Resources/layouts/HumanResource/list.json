@@ -1,0 +1,32 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "emailAddress",
+        "width": 20,
+        "align": "left",
+        "label": "Email"
+    },
+    {
+        "name": "job",
+        "width": 15,
+        "align": "left",
+        "label": "Job Position"
+    },
+    {
+        "name": "employmentRelationship",
+        "width": 15,
+        "align": "left",
+        "label": "Employment Relationship"
+    },
+    {
+        "name": "isActual",
+        "widthPx": 75,
+        "align": "left",
+        "isEditable": true
+    }
+]

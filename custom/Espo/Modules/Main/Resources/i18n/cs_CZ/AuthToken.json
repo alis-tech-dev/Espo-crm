@@ -1,0 +1,26 @@
+{
+	"fields": {
+		"hash": "Klíč",
+		"isActive": "Je aktivní",
+		"secret": "Tajný",
+		"token": "Token",
+		"userId": "Uživatelské ID",
+		"portal": "Portál"
+	},
+	"labels": {
+		"Create AuthToken": "Vytvořit Token",
+		"Set Inactive": "Zneplatnit"
+	},
+	"links": {
+		"actionHistoryRecords": "Historie akcí",
+		"portal": "Portál",
+		"user": "Uživatel"
+	},
+	"massActions": {
+		"setInactive": "Nastavit jako neplatný"
+	},
+	"presetFilters": {
+		"active": "Aktivní",
+		"inactive": "Neaktivní"
+	}
+}

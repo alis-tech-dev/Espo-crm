@@ -1,0 +1,253 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true
+        },
+        "number": {
+            "type": "varchar",
+            "maxLength": "100"
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "format": "I{YYYY}-{number}",
+            "reset": "Yearly",
+            "padLength": 5,
+            "disabled": true
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Draft", "Ready", "Active", "Approved", "Completed", "Rejected", "Canceled"],
+            "style": {
+                "Completed": "success",
+                "Rejected": "danger",
+                "Canceled": "danger"
+            },
+            "default": "Draft"
+        },
+        "dateOrdered": {
+            "type": "datetime",
+            "default": "javascript: return this.dateTime.getNow(1);"
+        },
+        "account": {
+            "type": "link"
+        },
+        "description": {
+            "type": "text"
+        },
+        "billingAddress": {
+            "type": "address",
+            "view": "accounting:views/invoice/fields/address"
+        },
+        "billingAddressFirstName": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "billingAddressLastName": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "billingAddressPhoneNumber": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "billingAddressEmail": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "shippingAddress": {
+            "type": "address",
+            "view": "accounting:views/fields/address"
+        },
+        "shippingAddressFirstName": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "shippingAddressLastName": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "shippingAddressPhoneNumber": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "shippingAddressEmail": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "billingContact": {
+            "type": "link",
+            "view": "accounting:views/invoice/fields/contact"
+        },
+        "shippingContact": {
+            "type": "link",
+            "view": "accounting:views/invoice/fields/contact"
+        },
+        "taxClass": {
+            "type": "link",
+            "view": "product-base:views/fields/tax-class"
+        },
+        "taxRate": {
+            "type": "float",
+            "min": 0,
+            "max": 100,
+            "view": "product-base:views/fields/percentage"
+        },
+        "shippingCost": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "view": "product-base:views/fields/currency-amount-only"
+        },
+        "shippingCostTaxRate": {
+            "notNull": false,
+            "type": "float",
+            "view": "product-base:views/fields/percentage"
+        },
+        "taxAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "discountAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "amount": {
+            "type": "currency",
+            "clientReadOnly": true
+        },
+        "preDiscountedAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "weight": {
+            "type": "float",
+            "min": 0,
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "accounting:views/fields/items",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["productId"],
+            "recordListCreateDisabled": false,
+            "recordListLinkDisabled": true,
+            "recordListRemoveDisabled": false,
+            "recordListConfirmRemove": true,
+            "recordListOrderByField": "order"
+        },
+        "quote": {
+            "type": "link",
+            "view": "accounting:views/fields/link-fill-attributes"
+        },
+        "paymentMethod": {
+            "type": "enum",
+            "options": [
+                "bank",
+                "card",
+                "cash",
+                "cod"
+            ],
+            "style": {
+                "bank": null,
+                "card": null,
+                "cash": null,
+                "cod": null
+            },
+            "default": "bank"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "taxClass": {
+            "type": "belongsTo",
+            "entity": "TaxClass"
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "salesOrders"
+        },
+        "quote": {
+            "type": "belongsTo",
+            "entity": "Quote",
+            "foreign": "salesOrders",
+            "audited": true
+        },
+        "invoices": {
+            "type": "hasMany",
+            "entity": "Invoice",
+            "foreign": "salesOrder",
+            "audited": true
+        },
+        "billingContact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "salesOrdersBilling"
+        },
+        "shippingContact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "salesOrdersShipping"
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "SalesOrderItem",
+            "foreign": "salesOrder",
+            "layoutRelationshipsDisabled": true
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false,
+        "textFilterFields": ["name", "number"]
+    }
+}

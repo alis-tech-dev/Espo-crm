@@ -1,0 +1,33 @@
+{
+    "fields": {
+        "portalUser": "Uživatel portálu",
+        "originalLead": "Původní Lead",
+        "acceptanceStatus": "Stav přijetí",
+        "accountIsInactive": "Neaktivní",
+        "acceptanceStatusMeetings": "Stav přijetí (Schůzky)",
+        "acceptanceStatusCalls": "Stav přijetí (Volání)"
+    },
+    "links": {
+        "account": "Organizace (hlavní)",
+        "accounts": "Organizace",
+        "casesPrimary": "Případy (primární)",
+        "tasksPrimary": "Úkoly (rozšířené)",
+        "opportunitiesPrimary": "Příležitosti (hlavní)",
+        "portalUser": "Uživatel portálu",
+        "originalLead": "Originální Lead",
+        "documents": "Documenty",
+        "quotesShipping": "Nabídky (přepravné)",
+        "salesOrdersBilling": "Proforma faktury (vyúčtování)",
+        "salesOrdersShipping": "Proforma faktury (přepravné)",
+        "invoicesBilling": "Faktury (vyúčtování)",
+        "invoicesShipping": "Faktury (přepravné)"
+    },
+    "labels": {
+        "Create Contact": "Vytvořit Kontakt"
+    },
+    "presetFilters": {
+        "portalUsers": "Uživatelé portálu",
+        "notPortalUsers": "Není uživatel portálu",
+        "accountActive": "Aktivní"
+    }
+}

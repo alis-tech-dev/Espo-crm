@@ -1,0 +1,15 @@
+{
+    "readLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\Autocrm\\Classes\\FieldProcessing\\Formula\\ReadLoader",
+        "Espo\\Modules\\Autocrm\\Classes\\FieldProcessing\\LinkMultiple\\Loader"
+    ],
+    "listLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\Autocrm\\Classes\\FieldProcessing\\Formula\\ListLoader"
+    ],
+    "saverClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\Autocrm\\Classes\\FieldProcessing\\Relation\\LinkMultipleSaver"
+    ]
+}

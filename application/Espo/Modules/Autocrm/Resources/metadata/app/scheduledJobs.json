@@ -1,0 +1,5 @@
+{
+    "CNBSync": {
+        "jobClassName": "Espo\\Modules\\Autocrm\\Classes\\Jobs\\CNBSync"
+    }
+}

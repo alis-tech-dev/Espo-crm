@@ -1,0 +1,69 @@
+{
+	"fields": {
+		"crmcontact": "Kontakt k CRM",
+		"screenshot": "Webový Screenshot",
+		"imporFromDB": "Nahrát nový kontakt",
+		"callAgain": "Zavolat znovu",
+		"possibleSales": "Možný obchod",
+		"acceptanceStatus": "Stav přijetí",
+		"acceptanceStatusCalls": "Stav přijetí (Volání)",
+		"acceptanceStatusMeetings": "Stav přijetí (Schůzky)",
+		"accountIsInactive": "Neaktivní",
+		"originalLead": "Původní Lead",
+		"portalUser": "Uživatel portálu",
+		"opportunityRole": "Role příležitosti",
+		"title": "Titul",
+		"companyName": "CompanyName",
+		"www": "Www",
+		"partner": "Partner",
+		"name": "Jméno",
+		"accounts": "Firmy",
+		"account": "Firma",
+		"accountType": "Typ firmy",
+		"contractors": "Dodavatelé",
+		"businessProjects": "Zakázky",
+		"installations": "Instalace",
+		"sendMassEmails": "Zasílat hormadné e-maily?",
+		"firma": "Account",
+		"endUser": "End-User",
+		"category": "Kategorie"
+	},
+	"labels": {
+		"Create Contact": "Vytvořit Kontakt"
+	},
+	"links": {
+		"orders": "Objednávky",
+		"account": "Organizace (hlavní)",
+		"accounts": "Organizace",
+		"casesPrimary": "Případy (primární)",
+		"documents": "Documenty",
+		"invoicesBilling": "Faktury (vyúčtování)",
+		"invoicesShipping": "Faktury (přepravné)",
+		"opportunitiesPrimary": "Příležitosti (hlavní)",
+		"originalLead": "Originální Lead",
+		"portalUser": "Uživatel portálu",
+		"quotesShipping": "Nabídky (přepravné)",
+		"salesOrdersBilling": "Proforma faktury (vyúčtování)",
+		"salesOrdersShipping": "Proforma faktury (přepravné)",
+		"tasksPrimary": "Úkoly (rozšířené)",
+		"cases": "Případy",
+		"opportunities": "Příležitosti",
+		"contractors": "Dodavatelé",
+		"businessProjects": "Zakázky",
+		"installations": "Instalace",
+		"firma": "Account"
+	},
+	"presetFilters": {
+		"accountActive": "Aktivní",
+		"notPortalUsers": "Není uživatel portálu",
+		"portalUsers": "Uživatelé portálu"
+	},
+	"options": {
+		"category": {
+			"-": "-",
+			"A": "A",
+			"B": "B",
+			"C": "C"
+		}
+	}
+}

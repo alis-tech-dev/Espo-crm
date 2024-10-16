@@ -1,0 +1,40 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "parent"
+                }
+            ],
+            [
+                {
+                    "name": "salesOrder"
+                },
+                {
+                    "name": "position"
+                }
+            ],
+            [
+                {
+                    "name": "positionTo"
+                },
+                {
+                    "name": "serialNumber"
+                }
+            ],
+            [
+                {
+                    "name": "unit"
+                },
+                {
+                    "name": "stockLocation"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

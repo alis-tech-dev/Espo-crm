@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "entity": "Entität",
+        "optimisticConcurrencyControl": "Optimistische Steuerung der Gleichzeitigkeit",
+        "loaderCustomScript": "Benutzerdefiniertes Skript Loader"
+    },
+    "tooltips": {
+        "optimisticConcurrencyControl": "Vermeidet Schreibkonflikte."
+    }
+}

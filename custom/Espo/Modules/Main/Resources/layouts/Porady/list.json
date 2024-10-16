@@ -1,0 +1,33 @@
+[
+	{
+		"name": "number",
+		"width": 5,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "dateStart",
+		"width": 10,
+		"align": "left"
+	},
+	{
+		"name": "type",
+		"width": 20,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "upresnujiciNazev"
+	},
+	{
+		"name": "createdBy",
+		"width": 12,
+		"align": "left"
+	},
+	{
+		"name": "teams",
+		"width": 10,
+		"notSortable": true,
+		"align": "left"
+	}
+]

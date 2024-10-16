@@ -1,0 +1,21 @@
+{
+	"items": {
+		"clearBrowserCache": {
+			"view": "autocrm:views/site/navbar/clear-browser-cache",
+			"order": 0,
+			"disabled": false
+		},
+		"clearCache": {
+			"view": "autocrm:views/site/navbar/clear-cache",
+			"order": 1,
+			"disabled": false,
+			"adminOnly": true
+		},
+		"rebuild": {
+			"view": "autocrm:views/site/navbar/rebuild",
+			"order": 2,
+			"disabled": false,
+			"adminOnly": true
+		}
+	}
+}

@@ -1,0 +1,22 @@
+[
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "parent",
+		"width": 28,
+		"align": "left"
+	},
+	{
+		"name": "createdAt"
+	},
+	{
+		"name": "modifiedAt"
+	},
+	{
+		"name": "assignedUser",
+		"width": 11,
+		"align": "left"
+	}
+]

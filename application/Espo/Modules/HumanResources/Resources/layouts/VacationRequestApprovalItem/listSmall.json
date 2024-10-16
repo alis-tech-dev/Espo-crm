@@ -1,0 +1,14 @@
+[
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "description"
+    },
+    {
+        "name": "assignedUser"
+    }
+]

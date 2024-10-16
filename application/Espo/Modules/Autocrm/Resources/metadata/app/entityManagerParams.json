@@ -1,0 +1,17 @@
+{
+	"Global": {
+		"isWide": {
+			"location": "clientDefs",
+			"fieldDefs": {
+				"type": "bool",
+				"tooltip": true
+			}
+		},
+		"gridViewMode": {
+			"location": "clientDefs",
+			"fieldDefs": {
+				"type": "bool"
+			}
+		}
+	}
+}

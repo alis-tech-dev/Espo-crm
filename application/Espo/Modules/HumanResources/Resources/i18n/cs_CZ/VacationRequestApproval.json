@@ -1,0 +1,16 @@
+{
+    "labels": {
+        "Approve": "Schválit",
+        "Reject": "Zamítnout",
+        "Return for completion": "Vrátit k doplnění",
+        "Approved": "Schváleno",
+        "Rejected": "Zamítnuto",
+        "Returned": "Vráceno k doplnění",
+        "Approval process": "Schvalovací proces",
+        "Unknown response": "Neznámá odpověď",
+        "approveVacationRequest": "Schválit žádost o dovolenou"
+    },
+    "fields": {
+        "description": "Poznámka"
+    }
+}

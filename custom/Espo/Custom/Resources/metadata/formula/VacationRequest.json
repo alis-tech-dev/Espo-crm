@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(!humanResources, humanResourcesId = assignedUser.humanResourcesId);\nifThen(statusOfApproval == 'Approved', isApproved = 1);\n",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

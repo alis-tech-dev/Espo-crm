@@ -1,0 +1,28 @@
+[
+	{
+		"name": "taskNumber",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"width": 30,
+		"link": true
+	},
+	{
+		"name": "parentProject"
+	},
+	{
+		"name": "parent",
+		"align": "left"
+	},
+	{
+		"name": "status"
+	},
+	{
+		"name": "priority"
+	},
+	{
+		"name": "assignedUser"
+	}
+]

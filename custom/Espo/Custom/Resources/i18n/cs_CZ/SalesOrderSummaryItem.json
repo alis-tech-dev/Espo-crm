@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "Create SalesOrderSummaryItem": "Vytvořit Položka shrnutí zakázky"
+    },
+    "fields": {
+        "salesOrder": "Zakázka",
+        "quantity": "Požadované množství",
+        "reservedQuantity": "Rezervované množství",
+        "producedQuantity": "Vyrobené množství"
+    },
+    "links": {
+        "salesOrder": "Zakázka"
+    }
+}

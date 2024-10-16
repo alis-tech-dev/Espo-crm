@@ -1,0 +1,29 @@
+[
+	"__APPEND__",
+	{
+		"tabBreak": true,
+		"tabLabel": "$label:AutoCRM",
+		"rows": [
+			[
+				{
+					"name": "quickViewContextMenu"
+				},
+				{
+					"name": "customFiltersAboveList"
+				}
+			],
+			[
+				{
+					"name": "collapsibleDashlets"
+				},
+				false
+			],
+			[
+				{
+					"name": "disableIntroGuide"
+				},
+				false
+			]
+		]
+	}
+]

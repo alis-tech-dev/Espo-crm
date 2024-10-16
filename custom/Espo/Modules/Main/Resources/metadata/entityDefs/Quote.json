@@ -1,0 +1,258 @@
+{
+	"links": {
+		"documents": {
+			"type": "hasMany",
+			"foreign": "quote",
+			"entity": "Document",
+			"audited": false,
+			"isCustom": true
+		},
+		"businessProject": {
+			"type": "belongsToParent",
+			"foreign": "quotesBusiness",
+			"isCustom": true
+		},
+		"quoteEntries": {
+			"type": "hasMany",
+			"foreign": "quote",
+			"entity": "QuoteEntry",
+			"audited": false,
+			"isCustom": true
+		}
+	},
+	"fields": {
+		"quoteEntryData": {
+			"type": "jsonArray",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"layoutListDisabled": true
+		},
+		"items": {
+			"recordListMandatorySelectAttributeList": [
+				"__APPEND__",
+				"entryKey",
+				"processed"
+			]
+		},
+		"validUntil": {
+			"notNull": false,
+			"type": "date",
+			"default": "javascript: return this.dateTime.getDateShiftedFromToday(1, 'months');",
+			"isCustom": true
+		},
+		"number": {
+			"maxLength": 18,
+			"options": [],
+			"default": null,
+			"required": false,
+			"useAutoincrement": true
+		},
+		"alisSolution": {
+			"type": "enum",
+			"required": true,
+			"options": [
+				"ALIS Vizualizace",
+				"ALIS Shield",
+				"ALIS RTLS",
+				"ALIS Medical",
+				"ALIS System"
+			],
+			"style": {
+				"ALIS Vizualizace": null,
+				"ALIS Shield": null,
+				"ALIS RTLS": null,
+				"ALIS Medical": null,
+				"ALIS System": null
+			},
+			"default": "ALIS System",
+			"isCustom": true
+		},
+		"documents": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"name": {
+			"options": [],
+			"required": false,
+			"trim": false
+		},
+		"teams": {
+			"defaultAttributes": {
+				"teamsIds": ["5fb41704304b901dc"],
+				"teamsNames": {
+					"5fb41704304b901dc": "Obchod"
+				}
+			}
+		},
+		"numberA": {
+			"padLength": 5,
+			"nextNumber": 12,
+			"format": "PQ{YY}{number}"
+		},
+		"status": {
+			"style": {
+				"Draft": null,
+				"In Review": null,
+				"Informative": null,
+				"Approved": "success",
+				"Rejected": "warning",
+				"On Hold": null,
+				"Lost": "danger"
+			},
+			"audited": true,
+			"options": [
+				"Draft",
+				"In Review",
+				"Informative",
+				"Approved",
+				"Rejected",
+				"On Hold",
+				"Lost"
+			]
+		},
+		"stavZamitnuta": {
+			"type": "enum",
+			"options": ["Změna zadání", "Přeceněno se slevou"],
+			"style": {
+				"Změna zadání": null,
+				"Přeceněno se slevou": null
+			},
+			"default": "Změna zadání",
+			"isCustom": true
+		},
+		"stavProhrana": {
+			"type": "enum",
+			"options": [
+				"Vysoká cena",
+				"Zákazník zvolil konkurenci",
+				"Chybné technické řešení",
+				"Mimo rozpočet",
+				"Jiné"
+			],
+			"style": {
+				"Vysoká cena": null,
+				"Zákazník zvolil konkurenci": null,
+				"Chybné technické řešení": null,
+				"Mimo rozpočet": null,
+				"Jiné": null
+			},
+			"default": "Vysoká cena",
+			"isCustom": true,
+			"audited": true
+		},
+		"accomodationCost": {
+			"type": "currency",
+			"isCustom": true,
+			"onlyDefaultCurrency": true
+		},
+		"installationRequirements": {
+			"type": "wysiwyg",
+			"default": "         <ol>\n            <li>Arranging a high-lift platform</li>\n            <li>Prepare a forklift and arrange the presence of service technician manufacturer</li>\n            <li>Providing of power supply at the installation spot (pulling the cables to the connection point)</li>\n            <div>\n              <ol type=\"a\">\n                <li>connection of one projector (without function) = 1 socket (better 2 for future expansion)</li>\n                <li>connection of one projector (with function) = 2 sockets (PJ + UNIT)</li>\n              </ol>\n            </div>\n            <li>Arranging a mutually suitable date for installation</li>\n            <li>Providing information about custom consoles (from Alis / from Customer)</li>\n          </ol>\n          <p>Price quotation is valid 30 days</p>",
+			"isCustom": true
+		},
+		"conditions": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": null,
+			"default": "1. In case of work at height arrange a high-lift platform.\n2. In case of an anti-collision system prepare a forklift and arrange the presence of service technician manufacturer.\n3. In case of LED visualization provide a power supply at the installation spot (pulling the cables to the connection point)\n&nbsp;&nbsp;&nbsp;&nbsp;a) connection of one projector (without function) = 1 socket (better 2 for future expansion),\n&nbsp;&nbsp;&nbsp;&nbsp;b) connection of one projector (with function) = 2 sockets (PJ + UNIT).\n4. In case of installation made by ALIS Tech arrange a mutually suitable date for installation.\n5. In case a custom console is needed, provide information about custom consoles (from Alis / from Customer).",
+			"isCustom": true,
+			"seeMoreDisabled": true
+		},
+		"specification": {
+			"type": "text",
+			"required": false,
+			"rowsMin": 2,
+			"cutHeight": 300,
+			"isCustom": true
+		},
+		"solutionGeneral": {
+			"type": "text",
+			"required": false,
+			"rowsMin": 2,
+			"cutHeight": 300,
+			"isCustom": true
+		},
+		"km": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"h": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"hTransport": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"kmTransport": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"grandTotalAmount": {
+			"totalAmountFields": ["amount", "accomodationCost"]
+		},
+		"enduser": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"noConditions": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"accommodation": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"czechConditions": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"conditionsCZ": {
+			"type": "text",
+			"rowsMin": 2,
+			"default": "1. V případě práce ve výškách zajistit plošinu.\n2. V případě instalace anti-kolizního systému je nutné předpřipravot VZV a zajistit přítomnost servisního technika\nvýrobce VZV.\n3. V případě instalace LED vizualizace zajistit přísun energie v místě instalace (přivedení eketrických kabelů na místo)\n&nbsp;&nbsp;&nbsp;&nbsp;a) připojení jednoho LED projektoru (bez funkcionality) = 1 zásuvka (v ideálním případě 2 pro další využití),\n&nbsp;&nbsp;&nbsp;&nbsp;b) připojení jednoho LED projektoru (s funkcionalitouú = 2 zásuvky (projektor + jednotka).\n4. V případě instalace společností ALIS Tech návrh vhodného termínu instalace.\n5. V případě potřeby konzole, informujte kontaktní osobu s podrobnostmi o technických parametrech konzole nebo příp. dodání konzole ze strany ALIS Tech.",
+			"seeMoreDisabled": true,
+			"isCustom": true
+		},
+		"quoteEntries": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"layoutListDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"exportDisabled": true,
+			"customizationDisabled": true,
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": [
+			"name",
+			"number",
+			"description",
+			"enduser",
+			"shippingContact.lastName",
+			"shippingContact.firstName",
+			"billingContact.lastName",
+			"billingContact.firstName",
+			"account.firstname"
+		],
+		"fullTextSearch": true,
+		"countDisabled": false
+	}
+}

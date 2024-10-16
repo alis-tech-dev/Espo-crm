@@ -1,0 +1,17 @@
+[
+    {
+        "name": "product",
+        "label": "Produkt"
+    },
+    {
+        "name": "quantity",
+        "label": "Celkové množství"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "serialNumber",
+        "label": "Sériové číslo"
+    }
+]

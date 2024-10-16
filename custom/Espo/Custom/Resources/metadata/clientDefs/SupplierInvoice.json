@@ -1,0 +1,12 @@
+{
+    "relationshipPanels": {
+        "salesOrder": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-receipt",
+    "isWide": true,
+    "gridViewMode": false
+}

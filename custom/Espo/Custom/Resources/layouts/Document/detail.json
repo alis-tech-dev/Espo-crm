@@ -1,0 +1,53 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "obrazekDokumentu"
+                }
+            ],
+            [
+                {
+                    "name": "files"
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "folder"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "publishDate"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "expirationDate"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

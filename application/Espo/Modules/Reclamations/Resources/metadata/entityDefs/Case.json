@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"reclamation": {
+			"type": "link"
+		}
+	},
+	"links": {
+		"reclamation": {
+			"type": "belongsTo",
+			"entity": "Reclamation",
+			"foreign": "case"
+		}
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"links": {
+		"quoteProject": "Projekty",
+		"parentQuote": "Nabídka",
+		"documents": "Dokumenty",
+		"parent": "Parent",
+		"businessProject": "Parent",
+		"tasks": "Úkol",
+		"quotes": "quotes",
+		"tasksAnother": "Úkoly",
+		"firma": "Firma",
+		"products": "Doprava",
+		"quoteItem": "Doprava",
+		"transportcosts": "Dopravné",
+		"quoteEntries": "Quote Entries"
+	},
+	"fields": {
+		"validUntil": "Platnost nabídky",
+		"parentQuote": "Nabídka",
+		"alisSolution": "ALIS řešení",
+		"documents": "Dokumenty",
+		"parent": "Parent",
+		"businessProject": "Parent",
+		"tasks": "Úkol",
+		"quotes": "quotes",
+		"firma": "Firma",
+		"products": "Doprava",
+		"quoteItem": "Doprava",
+		"stavZamitnuta": "Modifikovaná - důvod",
+		"stavProhrana": "Prohraná - důvod",
+		"transportcosts": "Dopravné",
+		"accomodationCost": "Náklady na ubytování",
+		"accomodationCostCurrency": "Náklady na ubytování (Měna)",
+		"accomodationCostConverted": "Náklady na ubytování (Převedeno)",
+		"installationRequirements": "requirements",
+		"conditions": "Podmínky instalace",
+		"specification": "Obecné zadání",
+		"solutionGeneral": "Obecné řešení",
+		"km": "Počet km",
+		"h": "Počet h",
+		"hTransport": "hTransport",
+		"kmTransport": "kmTransport",
+		"enduser": "End-user",
+		"priceList": "Price List",
+		"noConditions": "Nechci tisknout instalační podmínky",
+		"accommodation": "Ubytování",
+		"czechConditions": "Chci instalační podmínky v češtině",
+		"conditionsCZ": "Podmínky instalace",
+		"quoteEntries": "Quote Entries"
+	},
+	"options": {
+		"alisSolution": {
+			"ALIS Vizualizace": "ALIS Vizualizace",
+			"ALIS Shield": "ALIS Shield",
+			"ALIS RTLS": "ALIS RTLS",
+			"ALIS Medical": "ALIS Medical",
+			"ALIS System": "ALIS System"
+		},
+		"stavZamitnuta": {
+			"Změna zadání": "Změna zadání",
+			"Přeceněno se slevou": "Přeceněno se slevou"
+		},
+		"stavProhrana": {
+			"Vysoká cena": "Vysoká cena",
+			"Zákazník zvolil konkurenci": "Zákazník zvolil konkurenci",
+			"Chybné technické řešení": "Chybné technické řešení",
+			"Mimo rozpočet": "Mimo rozpočet",
+			"Jiné": "Jiné",
+			" ": " "
+		},
+		"priceList": {
+			"C": "Group C",
+			"B": "Group B",
+			"A": "Group A"
+		}
+	}
+}

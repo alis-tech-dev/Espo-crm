@@ -1,0 +1,11 @@
+{
+	"fields": {
+		"invalid": "Neplatný",
+		"numeric": "Číselný",
+		"optOut": "Odhlášeno",
+		"type": "Typ"
+	},
+	"labels": {
+		"Create PhoneNumber": "Vytvořit telefonní číslo"
+	}
+}

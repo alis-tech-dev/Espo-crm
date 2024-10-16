@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create TaxClass": "Create Tax Class"
+    },
+    "fields": {
+        "rate": "Rate",
+        "name": "Name",
+        "description": "Description"
+    }
+}

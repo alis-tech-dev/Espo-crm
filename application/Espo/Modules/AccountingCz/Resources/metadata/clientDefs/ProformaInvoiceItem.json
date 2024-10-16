@@ -1,0 +1,32 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting-cz:acl/proforma-invoice-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Issued Proforma Invoices",
+                    "link": "#ProformaInvoice",
+                    "acl": "read",
+                    "aclScope": "ProformaInvoice"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "category",
+        "align": "left",
+        "label": "Category"
+    },
+    {
+        "name": "productCategory",
+        "align": "left",
+        "label": "productCategory"
+    },
+    {
+        "name": "quantity",
+        "align": "left",
+        "label": "Quantity"
+    },
+    {
+        "name": "availableQuantity",
+        "align": "left",
+        "label": "Available Quantity"
+    }
+]

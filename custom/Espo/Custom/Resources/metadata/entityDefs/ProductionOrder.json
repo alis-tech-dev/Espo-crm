@@ -1,0 +1,119 @@
+{
+    "fields": {
+        "productWarehouse": {
+            "defaultAttributes": null,
+            "defaultSelectFilters": [],
+            "required": false
+        },
+        "materialWarehouse": {
+            "defaultAttributes": null,
+            "defaultSelectFilters": [],
+            "required": false
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "{number}",
+            "nextNumber": 1,
+            "padLength": 5,
+            "reset": "Never",
+            "isCustom": true
+        },
+        "forceMaterialWarehouse": {
+            "tooltip": false
+        },
+        "billOfMaterials": {
+            "recordListLayout": "listSmall",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": {},
+            "recordListLinkDisabled": false
+        },
+        "quantityProduced": {
+            "readOnly": true,
+            "notStorable": false,
+            "default": 0
+        },
+        "itemQuantity": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "billOfMaterials",
+            "field": "quantity",
+            "displayAsList": true,
+            "isCustom": true
+        },
+        "fromWarehouse": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "totalProduced": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true,
+            "notStorable": true
+        },
+        "avaliableQuantity": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "productWarehouse",
+            "field": "availableQuantity",
+            "view": "views/fields/foreign-float",
+            "isCustom": true
+        },
+        "stockQuantity": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "billOfMaterials",
+            "displayAsList": true,
+            "field": "stockQuantity",
+            "isCustom": true
+        },
+        "entryKey": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "isPerform": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "assignedUser": {
+            "required": false,
+            "defaultSelectFilters": {}
+        },
+        "performWorkTime": {
+            "type": "varchar",
+            "maxLength": 30,
+            "readOnly": true,
+            "options": [],
+            "isCustom": true
+        },
+        "name": {
+            "readOnly": true,
+            "options": []
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "billOfMaterials": {
+            "audited": false
+        }
+    }
+}

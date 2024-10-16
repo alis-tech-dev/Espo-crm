@@ -1,0 +1,61 @@
+{
+    "labels": {
+        "Create Quote": "Angebot erstellen",
+        "Tax Classes": "Steuerklassen",
+        "Templates": "Vorlagen",
+        "Items": "Artikel",
+        "Totals": "Zusammenfassung"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Angebotsnummer",
+        "numberA": "Angebotsnummer (automatisch)",
+        "account": "Organisation",
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "billingContact": "Rechnungskontakt",
+        "shippingContact": "Lieferkontakt",
+        "taxClass": "Steuerklasse",
+        "taxRate": "Steuersatz",
+        "shippingCost": "Versandkosten",
+        "taxAmount": "Steuerbetrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Rabatt",
+        "grandTotalAmount": "Gesamtbetrag",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "preDiscountedAmountConverted": "Betrag vor Rabatt (umgerechnet)",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "shippingCostCurrency": "Versandkosten in Währung",
+        "taxAmountCurrency": "Steuerbetrag in Währung",
+        "discountAmountCurrency": "Rabattbetrag in Währung",
+        "amountCurrency": "Betrag in Währung",
+        "preDiscountedAmountCurrency": "Betrag vor Rabatt in Währung",
+        "grandTotalAmountCurrency": "Gesamtbetrag in Währung",
+        "currency": "Währung",
+        "dateQuoted": "Angebotsdatum"
+    },
+    "links": {
+        "items": "Artikel",
+        "billingContact": "Kontakt",
+        "shippingContact": "Lieferkontakt",
+        "account": "Organisation",
+        "taxClass": "Steuerklasse",
+        "invoices": "Ausgestellte Rechnungen",
+        "salesOrders": "Bestellungen"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Prüfung",
+            "Presented": "Vorgelegt",
+            "Approved": "Genehmigt",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert"
+        }
+    }
+}

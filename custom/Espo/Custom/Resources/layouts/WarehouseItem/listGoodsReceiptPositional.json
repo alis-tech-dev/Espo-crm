@@ -1,0 +1,22 @@
+[
+    {
+        "name": "positionTo",
+        "width": 20,
+        "label": "Na pozici"
+    },
+    {
+        "name": "product",
+        "label": "Produkt",
+        "view": "warehouse-management:views/warehouse-item/layout-fields/product"
+    },
+    {
+        "name": "quantity",
+        "width": 15,
+        "label": "Celkové množství"
+    },
+    {
+        "name": "price",
+        "width": 15,
+        "label": "Cena"
+    }
+]

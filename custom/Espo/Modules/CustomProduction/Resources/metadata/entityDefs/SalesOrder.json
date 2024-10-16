@@ -1,0 +1,81 @@
+{
+	"fields": {
+		"productionStatus": {
+			"type": "enum",
+			"options": [
+				"NearLaunch",
+				"Backlog",
+				"OnHold",
+				"ToDo",
+				"HW",
+				"SW",
+				"Testing",
+				"Done",
+				"Archive"
+			],
+			"kanbanOptionsIgnoreList": ["Archive"],
+			"style": {
+				"NearLaunch": "info",
+				"Backlog": "info",
+				"OnHold": null,
+				"ToDo": "primary",
+				"HW": "info",
+				"SW": "info",
+				"Testing": "warning",
+				"Done": "success",
+				"Archive": null
+			},
+			"displayAsLabel": true,
+			"audited": true,
+			"default": "NearLaunch"
+		},
+		"deadline": {
+			"type": "date",
+			"required": true,
+			"audited": true,
+			"default": "javascript: return this.dateTime.getDateShiftedFromToday(2, 'months');"
+		},
+		"internalDeadline": {
+			"type": "date",
+			"audited": true,
+			"default": "javascript: return this.dateTime.getDateShiftedFromToday(2, 'months');"
+		},
+		
+		"status": {
+			"type": "enum",
+			"required": true,
+			"options": [
+				"Submitted",
+				"Not Started",
+				"In Production",
+				"To Install",
+				"Invoice",
+				"Finished",
+				"Returned",
+				"Zapujcka",
+				"Cancelled"
+			],
+			"style": {
+				"Submitted": null,
+				"Not Started": "info",
+				"In Production": "primary",
+				"To Install": null,
+				"Invoice": "warning",
+				"Finished": "success",
+				"Returned": "danger",
+				"Zapujcka": null,
+				"Cancelled": null
+			},
+			"default": "Submitted",
+			"audited": true,
+			"displayAsLabel": true
+		}
+	},
+	"links": {
+		"productionOrders": {
+			"type": "hasMany",
+			"entity": "ProductionOrder",
+			"foreign": "salesOrder"
+		}
+	}
+}

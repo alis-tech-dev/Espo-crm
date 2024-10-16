@@ -1,0 +1,59 @@
+{
+	"bottomPanels": {
+		"edit": [
+			{
+				"name": "items",
+				"label": "Items",
+				"view": "main:views/use-case/record/panels/items",
+				"notRefreshable": true,
+				"sticked": true,
+				"isForm": true
+			}
+		]
+	},
+	"views": {
+		"list": "main:views/use-case/list"
+	},
+	"dynamicLogic": {
+		"fields": {
+			"name": {
+				"readOnly": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "isTransport"
+						}
+					]
+				}
+			},
+			"quote": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isFalse",
+							"attribute": "isTransport"
+						},
+						{
+							"type": "isFalse",
+							"attribute": "isTemplate"
+						}
+					]
+				}
+			}
+		}
+	},
+	"filterList": [
+		"__APPEND__",
+		{
+			"isReportFilter": true,
+			"name": "reportFilter6050b6d6ddd3bb8b1"
+		},
+		{
+			"isReportFilter": true,
+			"name": "reportFilter604646972402d254c"
+		}
+	],
+	"kanbanViewMode": false,
+	"color": null,
+	"iconClass": null
+}

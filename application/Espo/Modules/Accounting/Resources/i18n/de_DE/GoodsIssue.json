@@ -1,0 +1,5 @@
+{
+    "messages": {
+        "goodsIssueIsProcessing": "Verkaufsauftrag kann nicht storniert werden, da eine Warenausgabe in Bearbeitung ist"
+    }
+}

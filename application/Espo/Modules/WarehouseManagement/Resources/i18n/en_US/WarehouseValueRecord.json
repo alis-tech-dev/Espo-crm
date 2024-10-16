@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "Create WarehouseValueRecord": "Create Warehouse Value"
+    },
+    "fields": {
+        "warehouse": "Warehouse",
+        "value": "Value",
+        "valueCurrency": "Value (Currency)",
+        "valueConverted": "Value (Converted)"
+    },
+    "links": {
+        "warehouse": "Warehouse"
+    }
+}

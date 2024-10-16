@@ -1,0 +1,5 @@
+{
+    "convertCurrency": {
+        "implementationClassName": "Espo\\Modules\\Accounting\\Classes\\Actions\\ConvertCurrency"
+    }
+}

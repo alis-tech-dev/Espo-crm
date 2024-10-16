@@ -1,0 +1,7 @@
+{
+	"fields": {
+		"parent": {
+			"entityList": ["Reclamation", "SupplierReclamation"]
+		}
+	}
+}

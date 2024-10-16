@@ -1,0 +1,75 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "quote"
+                },
+                {
+                    "name": "opportunity"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "dateInvoiced"
+                },
+                {
+                    "name": "payday"
+                }
+            ],
+            [
+                {
+                    "name": "number"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "items"
+                }
+            ],
+            [
+                {
+                    "name": "processed"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Přehled"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Detaily"
+    }
+]

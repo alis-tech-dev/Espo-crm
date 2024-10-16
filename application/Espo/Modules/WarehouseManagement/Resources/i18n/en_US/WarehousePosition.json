@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "warehouse": "Warehouse"
+    },
+    "labels": {
+        "Create WarehousePosition": "Create Warehouse Position"
+    },
+    "links": {
+        "warehouse": "Warehouse",
+        "items": "Items"
+    }
+}

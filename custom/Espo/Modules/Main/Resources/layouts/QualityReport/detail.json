@@ -1,0 +1,211 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "number"
+				}
+			],
+			[
+				{
+					"name": "parent"
+				},
+				{
+					"name": "account"
+				}
+			],
+			[
+				{
+					"name": "dateReceived"
+				},
+				{
+					"name": "deliveryNote"
+				}
+			],
+			[
+				{
+					"name": "partName"
+				},
+				{
+					"name": "partNumber"
+				},
+				{
+					"name": "deliveredQty"
+				},
+				{
+					"name": "claimQty"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "user1"
+				},
+				{
+					"name": "team"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D1 Tým pro řešení"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D2 Popis prolému"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "repeat"
+				}
+			],
+			[
+				{
+					"name": "user6"
+				},
+				false,
+				false,
+				false
+			],
+			[
+				{
+					"name": "action"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D3 Okamžité opatření (do 48 hodin)"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "influence"
+				},
+				false,
+				false,
+				false
+			],
+			[
+				{
+					"name": "rootDefectCauses"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D4 Kořenové příčiny problému"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "correctiveActionsDate"
+				},
+				{
+					"name": "user3"
+				},
+				false,
+				false
+			],
+			[
+				{
+					"name": "correctiveActions"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D5 Nápravná opatření"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "implementedActionsDate"
+				},
+				{
+					"name": "efficiency"
+				},
+				{
+					"name": "user5"
+				},
+				false
+			],
+			[
+				{
+					"name": "implementedActions"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D6 Ověření přijatých opatření"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "preventiveActionsDate"
+				},
+				{
+					"name": "user4"
+				},
+				false,
+				false
+			],
+			[
+				{
+					"name": "preventiveActions"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D7 Preventivní opatření"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "closeDate"
+				},
+				{
+					"name": "user2"
+				},
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "D8 Uzavření problému"
+	}
+]

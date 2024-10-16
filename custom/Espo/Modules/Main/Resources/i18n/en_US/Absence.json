@@ -1,0 +1,57 @@
+{
+	"fields": {
+		"parent": "Parent",
+		"dateStart": "Date Start",
+		"dateEnd": "Date End",
+		"duration": "Duration",
+		"status": "Status",
+		"reminders": "Reminders",
+		"dateStartDate": "Date Start (all day)",
+		"dateEndDate": "Date End (all day)",
+		"isAllDay": "Is All-Day",
+		"type": "Typ",
+		"approved": "Schválení",
+		"hours": "Počet hodin",
+		"remainingHrs": "Zbývá hodin"
+	},
+	"links": {
+		"parent": "Parent"
+	},
+	"options": {
+		"status": {
+			"Planned": "Planned",
+			"Held": "Held",
+			"Not Held": "Not Held"
+		},
+		"type": {
+			"Paid": "Dovolená",
+			"NonPaid": "Neplacené volno",
+			"illness": "Pracovní neschopnost",
+			"sick": "Sick Day",
+			"medical": "Lékař",
+			"exchange": "Náhradní volno",
+			"paidAbsence": "Placené volno"
+		},
+		"approved": {
+			"waiting": "Čeká na schválení",
+			"approved": "Schváleno",
+			"declined": "Neschváleno"
+		}
+	},
+	"labels": {
+		"Create Absence": "Create Dovolená",
+		"Schedule Absence": "Schedule Dovolená",
+		"Log Absence": "Log Dovolená",
+		"Set Held": "Set Held",
+		"Set Not Held": "Set Not Held"
+	},
+	"massActions": {
+		"setHeld": "Set Held",
+		"setNotHeld": "Set Not Held"
+	},
+	"presetFilters": {
+		"planned": "Planned",
+		"held": "Held",
+		"todays": "Today's"
+	}
+}

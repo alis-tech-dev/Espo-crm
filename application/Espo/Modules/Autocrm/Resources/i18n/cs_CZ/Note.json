@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "targetType": "Cíl",
+        "teams": "Týmy",
+        "users": "Uživatelé",
+        "portals": "Portály",
+        "type": "Typ",
+        "isGlobal": "Globální",
+        "isInternal": "Interní (pro interní uživatele)",
+        "number": "Číslo"
+    },
+    "filters": {
+        "all": "Vše"
+    },
+    "options": {
+        "targetType": {
+            "self": "sobě",
+            "users": "konkrétnímu uživateli (uživatelům)",
+            "teams": "konkrétnímu týmu (týmům)",
+            "all": "všem interním uživatelům",
+            "portals": "uživatelům portálu"
+        }
+    },
+    "messages": {
+        "writeMessage": "Napište zprávu zde"
+    },
+    "links": {
+        "superParent": "Super rodič"
+    }
+}

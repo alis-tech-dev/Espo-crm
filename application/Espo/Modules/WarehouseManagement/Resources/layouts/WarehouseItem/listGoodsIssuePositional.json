@@ -1,0 +1,13 @@
+[
+    {
+        "name": "positionFrom",
+        "width": 20
+    },
+    {
+        "name": "product"
+    },
+    {
+        "name": "quantity",
+        "width": 15
+    }
+]

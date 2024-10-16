@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "account": "Account",
+        "contact": "Contact",
+        "parent": "Parent",
+        "attachment": "Attachment"
+    },
+    "links": {
+        "account": "Account",
+        "contact": "Contact",
+        "parent": "Parent"
+    },
+    "labels": {
+        "Create ComplaintBook": "Create Complains Book"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "labels": {
+        "Create SalesOrder": "Vytvořit objednávku",
+        "Tax Classes": "Daňové třídy",
+        "Templates": "Šablony",
+        "Items": "Položky",
+        "Totals": "Shrnutí",
+        "ProcessSalesOrder": "Zpracovat objednávku"
+    },
+    "fields": {
+        "status": "Status",
+        "quote": "Nabídka",
+        "number": "Číslo objednávky",
+        "numberA": "Číslo objednávky (automatické)",
+        "account": "Organizace",
+        "billingAddress": "Fakturační adresa",
+        "shippingAddress": "Dodací adresa",
+        "billingContact": "Fakturační kontakt",
+        "shippingContact": "Kontakt pro doručení",
+        "taxClass": "Daňová třída",
+        "taxRate": "Sazba daně",
+        "shippingCost": "Dopravné",
+        "taxAmount": "Výpočet daně",
+        "discountAmount": "Částka slevy",
+        "amount": "Částka",
+        "preDiscountedAmount": "Částka před slevou",
+        "grandTotalAmount": "Celková cena",
+        "weight": "Hmotnost",
+        "amountConverted": "Částka (převedeno)",
+        "taxAmountConverted": "Částka daně (převedeno)",
+        "shippingCostConverted": "Dopravné (převedeno)",
+        "preDiscountedAmountConverted": "Částka před slevou (převedeno)",
+        "discountAmountConverted": "Částka slevy (převedeno)",
+        "grandTotalAmountConverted": "Celková cena (převedeno)",
+        "shippingCostCurrency": "Dopravné v měně",
+        "taxAmountCurrency": "Částka daně v měně",
+        "discountAmountCurrency": "Částka slevy v měně",
+        "amountCurrency": "Částka v měně",
+        "preDiscountedAmountCurrency": "Částka před slevou v měně",
+        "grandTotalAmountCurrency": "Celková cena v měně",
+        "currency": "Měna",
+        "dateOrdered": "Datum objednávky",
+        "paymentMethod": "Způsob úhrady",
+        "shippingCostTaxRate": "Daňová sazba dopravného",
+        "billingAddressFirstName": "Jméno",
+        "billingAddressLastName": "Příjmení",
+        "billingAddressPhoneNumber": "Telefon",
+        "billingAddressEmail": "E-mail",
+        "shippingAddressFirstName": "Jméno",
+        "shippingAddressLastName": "Příjmení",
+        "shippingAddressPhoneNumber": "Telefon",
+        "shippingAddressEmail": "E-mail"
+    },
+    "links": {
+        "items": "Položky",
+        "billingContact": "Kontakt",
+        "shippingContact": "Konktakt pro doručení",
+        "account": "Organizace",
+        "taxClass": "Daňová třída",
+        "invoices": "Vydané faktury",
+        "quote": "Nabídka"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Ready": "Připraveno",
+            "Active": "Aktivní",
+            "Approved": "Schváleno",
+            "Completed": "Dokončeno",
+            "Rejected": "Zamítnuto",
+            "Canceled": "Zrušeno"
+        },
+        "paymentMethod": {
+            "bank": "Převodem",
+            "card": "Kartou",
+            "cash": "Hotově",
+            "cod": "Dobírka"
+        }
+    },
+    "confirmation": {
+        "processSalesOrderConfirmation": "Jste si jisti, že chcete zpracovat tuto objednávku?"
+    },
+    "messages": {
+        "processSalesOrderSuccess": "Objednávka byla úspěšně zpracována.",
+        "processSalesOrderFailed": "Objednávka nemohla být zpracována."
+    }
+}

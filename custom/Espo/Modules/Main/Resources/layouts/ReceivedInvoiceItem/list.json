@@ -1,0 +1,28 @@
+[
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "receivedInvoice",
+		"width": 20
+	},
+	{
+		"name": "orderStatus",
+		"width": 12
+	},
+	{
+		"name": "quantity",
+		"width": 4
+	},
+	{
+		"name": "unitPrice",
+		"align": "right",
+		"width": 16
+	},
+	{
+		"name": "amount",
+		"align": "right",
+		"width": 16
+	}
+]

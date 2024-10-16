@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "name": "Name",
+        "qty": "Menge",
+        "quantity": "Menge",
+        "unitPrice": "Stückpreis",
+        "unitPriceWithTax": "Stückpreis inkl. MwSt.",
+        "amount": "Betrag",
+        "amountWithTax": "Betrag inkl. MwSt.",
+        "taxRate": "Steuersatz",
+        "product": "Produkt",
+        "order": "Bestellnummer",
+        "supplierInvoice": "Eingangsrechnung",
+        "weight": "Gewicht",
+        "unitWeight": "Stückgewicht",
+        "description": "Beschreibung",
+        "amountConverted": "Betrag (umgerechnet)",
+        "unitPriceConverted": "Stückpreis (umgerechnet)",
+        "account": "Organisation",
+        "unitPriceCurrency": "Währung des Stückpreises",
+        "amountCurrency": "Währung des Betrags"
+    },
+    "links": {
+        "supplierInvoice": "Eingangsrechnung",
+        "product": "Produkt",
+        "account": "Organisation"
+    },
+    "labels": {
+        "Supplier Invoices": "Eingangsrechnungen"
+    }
+}

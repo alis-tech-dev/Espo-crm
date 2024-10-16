@@ -1,0 +1,68 @@
+{
+	"fields": {
+		"link": "Odkaz",
+		"panelName": "Název panelu",
+		"style": "Styl",
+		"isLarge": "Velká velikost písma",
+		"hidden": "Skrytý",
+		"dynamicLogicVisible": "Podmínky zviditelnění panelu",
+		"isEditable": "Upravitelné",
+		"layout": "Layout panelu",
+		"filtersEnabled": "Zobrazit filtry",
+		"screenSize": "Velikost obrazovky",
+		"customLabel": "Vlastní název",
+		"noLabel": "Skrýt název",
+		"color": "Barva",
+		"bold": "Tučný text",
+		"css": "Doplňkové CSS třídy",
+		"horizontalLabel": "Horizontální popisek"
+	},
+	"options": {
+		"style": {
+			"default": "Výchozí",
+			"success": "Úspěch",
+			"warning": "Varování",
+			"primary": "Primární"
+		},
+		"screenSize": {
+			"xs": "Mobil",
+			"sm": "Tablet",
+			"lg": "Větší desktop"
+		},
+		"gridLayoutType": {
+			"record": "Výchozí",
+			"tab": "Záložky"
+		},
+		"bottomLayoutType": {
+			"default": "Výchozí",
+			"tab": "Záložky"
+		}
+	},
+	"labels": {
+		"New panel": "Nový panel",
+		"Layout": "Vzhled",
+		"Column": "Sloupec",
+		"New Panel": "Nový panel",
+		"Custom Label": "Vlastní název",
+		"Width": "Šířka",
+		"Insert Row": "Vložit řádek",
+		"Insert New Panel": "Vložit nový panel",
+		"Remove Row": "Odstranit řádek",
+		"Add Row": "Přidat řádek",
+		"Edit Panel": "Upravit panel",
+		"Remove Panel": "Odstranit panel",
+		"Show Code": "Zobrazit kód",
+		"Color": "Barva",
+		"Columns Count": "Počet sloupců",
+		"Field": "Pole",
+		"Bold": "Zvýrazněný (tučný)"
+	},
+	"tooltips": {
+		"hiddenPanel": "Chcete-li zobrazit panel, musíte kliknout na „zobrazit více“.",
+		"link": "Pokud je zaškrtnuto, zobrazí se hodnota pole jako odkaz směřující na detailní pohled na záznam. Obvykle se používá pro pole * Jméno *.",
+		"isEditable": "Zda je pole v rozvržení seznamu editovatelné. Mějte na paměti, že ne každé pole může být editovatelné (např. pole pouze pro čtení nebo pole s odkazy) a že editace v seznamu může způsobit chybné kliknutí a ztrátu dat."
+	},
+	"messages": {
+		"cannotRemoveLastPanel": "Nelze odstranit poslední panel!"
+	}
+}

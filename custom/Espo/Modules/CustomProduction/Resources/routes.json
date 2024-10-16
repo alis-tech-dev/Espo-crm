@@ -1,0 +1,22 @@
+[
+	{
+		"route": "/Kanban/:entityType/:statusField",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\CustomProduction\\Tools\\CustomKanban\\Api\\GetData"
+	},
+	{
+		"route": "/CustomKanban/order",
+		"method": "put",
+		"actionClassName": "Espo\\Modules\\CustomProduction\\Tools\\CustomKanban\\Api\\PutOrder"
+	},
+	{
+		"route": "SalesOrder/createProductionOrders/:id",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\CustomProduction\\Tools\\SalesOrder\\Api\\CreateProductionOrders"
+	},
+	{
+		"route": "Warehouse/changeCategory/:id/:categoryId",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\CustomProduction\\Tools\\Warehouse\\Api\\ChangeCategory"
+	}
+]

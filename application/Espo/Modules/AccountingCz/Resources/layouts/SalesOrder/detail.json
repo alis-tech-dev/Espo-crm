@@ -1,0 +1,33 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [{"name": "number"}, {"name": "quote"}],
+            [{"name": "status"}, {"name": "account"}],
+            [{"name": "dateOrdered"}, {"name": "paymentMethod"}]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [{"name": "items", "fullWidth": true, "noLabel": true}]
+        ]
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [{"name": "amountCurrency"}, {"name": "summaryVatRates", "noLabel": true}],
+            [{"name": "shippingCost"}, {"name": "amount"}],
+            [{"name": "shippingCostTaxRate"}, {"name": "taxAmount"}],
+            [false, {"name": "grandTotalAmount", "css": "col-md-3"}]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [{"name": "billingAddress"}, {"name": "shippingAddress"}],
+            [{"name": "sicCode", "css": "col-md-3"}, {"name": "vatId", "css": "col-md-3"}, {"name": "shippingContact", "css": "col-md-6"}],
+            [{"name": "taxClass"}, { "name": "description", "css": "col-md-12"}]
+        ]
+    }
+]

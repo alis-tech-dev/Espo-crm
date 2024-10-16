@@ -1,0 +1,7 @@
+{
+    "mandatory": {
+        "scopeLevel": {
+            "WarehouseItem": "Warehouse"
+        }
+    }
+}

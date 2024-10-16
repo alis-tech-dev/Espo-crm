@@ -1,0 +1,42 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "isActive",
+        "align": "left",
+        "label": "Is Active",
+        "isEditable": true
+    },
+    {
+        "name": "mattermostSyncEnabled",
+        "align": "left",
+        "label": "Mattermost Sync Enabled",
+        "isEditable": true
+    },
+    {
+        "name": "humanResources",
+        "align": "left",
+        "isEditable": true
+    },
+    {
+        "name": "emailAddress",
+        "width": 20,
+        "label": "Email"
+    },
+    {
+        "name": "phoneNumber",
+        "label": "Phone"
+    },
+    {
+        "name": "teams",
+        "notSortable": true,
+        "label": "Teams"
+    },
+    {
+        "name": "pozice",
+        "label": "Pozice ve firmě"
+    }
+]

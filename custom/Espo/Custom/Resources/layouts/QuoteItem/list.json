@@ -1,0 +1,36 @@
+[
+    {
+        "name": "imageId"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "quote",
+        "width": 20,
+        "label": "Quote"
+    },
+    {
+        "name": "quantity",
+        "width": 4,
+        "label": "Quantity"
+    },
+    {
+        "name": "unitPrice",
+        "width": 16,
+        "align": "right",
+        "label": "Unit Price"
+    },
+    {
+        "name": "amount",
+        "width": 16,
+        "align": "right",
+        "label": "Amount"
+    },
+    {
+        "name": "discount",
+        "label": "Discount (%)"
+    }
+]

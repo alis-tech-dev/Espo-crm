@@ -1,0 +1,40 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "warehouse"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "fullWidth": true,
+                    "noLabel": true
+                }
+            ]
+        ]
+    }
+]

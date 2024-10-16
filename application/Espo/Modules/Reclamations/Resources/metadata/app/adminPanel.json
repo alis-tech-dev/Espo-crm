@@ -1,0 +1,15 @@
+{
+	"autocrm": {
+		"itemList": [
+			"__APPEND__",
+			{
+				"url": "#Admin/ReclamationSettings",
+				"label": "Reclamation Settings",
+				"iconClass": "fas fa-redo",
+				"description": "reclamationSettingsDescription",
+				"recordView": "reclamations:views/admin/reclamation-settings"
+			}
+		],
+		"order": 6
+	}
+}

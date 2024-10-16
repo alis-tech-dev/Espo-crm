@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "product": "Product",
+        "quantity": "Total Quantity",
+        "quantityReserved": "Reserved Quantity",
+        "quantityAvailable": "Available Quantity",
+        "parent": "Parent",
+        "position": "Position",
+        "price": "Price",
+        "priceCurrency": "Price (Currency)",
+        "priceConverted": "Price (Converted)",
+        "positionFrom": "From Position",
+        "positionTo": "To Position",
+        "warehouse": "Warehouse"
+    },
+    "links": {
+        "product": "Product",
+        "parent": "Parent"
+    }
+}

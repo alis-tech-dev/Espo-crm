@@ -1,0 +1,125 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "parentProject"
+				}
+			],
+			[
+				{
+					"name": "priority"
+				},
+				{
+					"name": "status"
+				},
+				{
+					"name": "progress"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "expectedFinish"
+				}
+			],
+			[
+				{
+					"name": "email"
+				},
+				{
+					"name": "reminders"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "attachments"
+				}
+			],
+			[
+				{
+					"name": "solution"
+				}
+			],
+			[
+				{
+					"name": "solutionAttachement"
+				}
+			],
+			[
+				{
+					"name": "dateEnd"
+				},
+				{
+					"name": "dateCompleted"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Přehled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "taskParent"
+				},
+				{
+					"name": "taskList"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Hierarchie úkolů"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "isRepeated"
+				},
+				{
+					"name": "cronTime"
+				}
+			],
+			[
+				{
+					"name": "repeatedTasks"
+				},
+				{
+					"name": "lastExecuteTime"
+				}
+			],
+			[
+				{
+					"name": "repeatUntil"
+				},
+				{
+					"name": "finished"
+				}
+			],
+			[
+				{
+					"name": "repeatFrom"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Opakované úkoly"
+	}
+]

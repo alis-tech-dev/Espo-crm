@@ -1,0 +1,63 @@
+{
+    "labels": {
+        "Templates": "Templates",
+        "Items": "Items",
+        "Totals": "Totals",
+        "Create CreditNote": "Create Credit Note"
+    },
+    "fields": {
+        "status": "Status",
+        "dateInvoiced": "Invoice Date",
+        "amount": "Subtotal",
+        "taxAmount": "Tax Amount",
+        "grandTotalAmount": "Total Amount",
+        "constantSymbol": "Constant Symbol",
+        "datePaid": "Payment Date",
+        "dueDate": "Due Date",
+        "duzp": "Date of Taxable Supply",
+        "variableSymbol": "Variable Symbol",
+        "paymentMethod": "Payment Method",
+        "number": "Invoice Number",
+        "orderNumber": "Order Number",
+        "remainsToPay": "Amount Due",
+        "warehouse": "Warehouse",
+        "note": "Private Note",
+        "contact": "Contact",
+        "accountNumber": "Account Number",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "supplyCode": "Supply Code",
+        "assignedUser": "Assigned User",
+        "subscriberLink": "Subscriber",
+        "supplierLink": "Supplier",
+        "expenseOriginalNumber": "Original Invoice Number",
+        "originalInvoiceFile": "Original Invoice File",
+        "dateOfReceiving": "Date of Receipt"
+    },
+    "options": {
+        "status": {
+            "Received": "Received",
+            "Paid": "Paid",
+            "UnpaidAfterMaturity": "Unpaid After Maturity"
+        },
+        "paymentMethod": {
+            "bank": "Bank Transfer",
+            "card": "Card Payment",
+            "cash": "Cash Payment",
+            "cod": "Cash on Delivery"
+        }
+    },
+    "links": {
+        "supplierLink": "Supplier"
+    },
+    "tooltips": {
+        "number": "Unique identifier used to identify the issued document",
+        "paymentMethod": "Method by which the invoice will be paid (e.g. bank transfer, cash, card payment, etc.)",
+        "dateInvoiced": "Date on which the invoice was issued",
+        "dueDate": "Date by which the invoice must be paid",
+        "constantSymbol": "Unique identifier of the entity in the payment system. Maximum length is 10 characters.",
+        "duzp": "Date on which a taxable service or sale was made for which the invoice was issued.",
+        "variableSymbol": "Variable symbol used to identify the invoice in the banking system. Maximum length is 10 characters.",
+        "proformaInvoice": "An invoice that has been paid by a deposit."
+    }
+}

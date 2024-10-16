@@ -1,0 +1,75 @@
+{
+    "fields": {
+        "quotes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "opportunities": {
+            "type": "link"
+        },
+        "salesOrders": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "O{YY}{number}",
+            "nextNumber": 5,
+            "padLength": 5,
+            "reset": "Never",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "quotes": {
+            "type": "hasMany",
+            "foreign": "opportunity",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        },
+        "opportunities": {
+            "type": "belongsTo",
+            "foreign": "opportunities",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrders": {
+            "type": "hasMany",
+            "foreign": "opportunity",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "enduser",
+            "account.name"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

@@ -1,0 +1,15 @@
+[
+    "__APPEND__",
+    {
+        "rows": [
+            [
+                {
+                    "name": "humanResource"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "HR"
+    }
+]

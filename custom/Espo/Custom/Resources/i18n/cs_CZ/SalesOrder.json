@@ -1,0 +1,62 @@
+{
+    "options": {
+        "status": {
+            "Submitted": "Předloženo",
+            "Not Started": "Nezahájená",
+            "In Production": "Ve výrobě",
+            "To Install": "Ready to go",
+            "OnHold": "OnHold",
+            "Invoice": "Fakturování",
+            "Finished": "Dokončená",
+            "Returned": "V reklamaci",
+            "Zapujcka": "Zápůjčeno",
+            "Cancelled": "Zrušeno",
+            "Draft": "Předloženo"
+        },
+        "priorita": {
+            "-": "-",
+            "Very High": "Very High",
+            "High": "High",
+            "Medium": "Medium",
+            "Low": "Low",
+            "Very low": "Very low"
+        }
+    },
+    "fields": {
+        "salesOrderSummaryItems": "Položka shrnutí zakázky",
+        "opportunity": "Poptávka",
+        "number": "Číslo zakázky",
+        "dateOrdered": "Datum přijetí",
+        "documents": "Dokumenty",
+        "supplierInvoices": "Přijaté faktura",
+        "supplierOrders": "Objednávky od dodavatele",
+        "productDatabases": "Databáze produktů",
+        "reclamations": "Reklamace",
+        "reclamations1": "Reclamations1",
+        "reminder": "Připomínka",
+        "enduser": "Enduser",
+        "intertninazev": "Interní název",
+        "visualization": "Vizualizace",
+        "crane": "Crane",
+        "shield": "ALIS Shield",
+        "attachments": "Přílohy",
+        "orderBanner": "Objednat",
+        "account": "Firma",
+        "internDeadline": "Interní deadline",
+        "quotes": "Nabídky",
+        "reklamace": "Reklamace",
+        "priorita": "Priorita",
+        "testAmount": "TestAmount"
+    },
+    "links": {
+        "salesOrderSummaryItems": "Položka shrnutí zakázky",
+        "opportunity": "Příležitost",
+        "documents": "Dokumenty",
+        "supplierInvoices": "Přijaté faktura",
+        "supplierOrders": "Objednávky od dodavatele",
+        "productDatabases": "Databáze produktů",
+        "reclamations": "Reklamace",
+        "reclamations1": "Reclamations1",
+        "quotes": "Nabídky"
+    }
+}

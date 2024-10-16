@@ -1,0 +1,50 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": ["onlyMy"],
+    "recordViews": {
+        "detail": "accounting:views/invoice-like/record/detail"
+    },
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Discount",
+            "name": "discount",
+            "acl": "read",
+            "data": {
+                "handler": "accounting:handlers/invoice/discount"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ],
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ],
+            "dropdown": [
+                {
+                    "label": "Taxes",
+                    "link": "#Tax",
+                    "acl": "read",
+                    "aclScope": "Tax"
+                }
+            ]
+        }
+    },
+    "isWide": true,
+    "additionalLayouts": {
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "accounting:handlers/invoice/dynamic-handler"
+    ],
+    "iconClass": "fas fa-file-invoice"
+}

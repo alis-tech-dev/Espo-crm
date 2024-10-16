@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"parent": {
+			"type": "linkParent",
+			"entityList": ["__APPEND__", "ProductionOrder"]
+		}
+	},
+	"links": {
+		"parent": {
+			"type": "belongsToParent",
+			"foreign": "goodsIssues"
+		}
+	}
+}

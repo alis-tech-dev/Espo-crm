@@ -1,0 +1,17 @@
+[
+	{
+		"name": "name",
+		"align": "left",
+		"width": 50
+	},
+	{
+		"name": "quantity",
+		"width": "9"
+	},
+	{
+		"name": "unitPrice"
+	},
+	{
+		"name": "amount"
+	}
+]

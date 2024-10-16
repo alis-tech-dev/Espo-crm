@@ -1,0 +1,8 @@
+{
+    "ordererClassNameMap": {
+        "totalQuantity": "Espo\\Modules\\WarehouseManagement\\Classes\\Select\\SupplierOrderItem\\Order\\TotalQuantityOrderer",
+        "recentSales": "Espo\\Modules\\WarehouseManagement\\Classes\\Select\\SupplierOrderItem\\Order\\RecentSales",
+        "orderedQuantity": "Espo\\Modules\\WarehouseManagement\\Classes\\Select\\SupplierOrderItem\\Order\\OrderedQuantity"
+    }
+}
+

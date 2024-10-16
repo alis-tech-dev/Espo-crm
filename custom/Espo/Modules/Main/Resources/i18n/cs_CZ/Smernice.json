@@ -1,0 +1,15 @@
+{
+	"fields": {
+		"smerniceItems": "Jednotlivé směrnice",
+		"smrs": "Směrnice - dokumenty",
+		"children": "Složky"
+	},
+	"links": {
+		"smerniceItems": "Jednotlivé směrnice",
+		"smrs": "Směrnice - dokumenty",
+		"children": "Složky"
+	},
+	"labels": {
+		"Create Smernice": "Vytvořit Směrnice"
+	}
+}

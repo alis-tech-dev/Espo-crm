@@ -1,0 +1,132 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "expenseOriginalNumber",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "dateOfReceiving",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "receivedProformaInvoice",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "supplierLink",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "originalInvoiceFile",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "paymentMethod",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "dateInvoiced",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "dueDate",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "duzp",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "variableSymbol",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "constantSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "status",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "datePaid",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "orderNumber",
+                    "css": "col-md-6"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Základní údaje"
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "billingContact"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "note"
+                }
+            ]
+        ]
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Items"
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [{"name": "amountCurrency"}, {"name": "summaryVatRates", "noLabel": true}],
+            [false, {"name": "amount"}],
+            [false, {"name": "taxAmount"}],
+            [false,{"name": "grandTotalAmount"}]
+        ]
+    }
+]

@@ -1,0 +1,37 @@
+{
+	"controller": "controllers/record",
+	"iconClass": "fas fa-redo",
+	"boolFilterList": ["onlyMy"],
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Create Reclamation Sales Order",
+					"name": "createSalesOrder",
+					"action": "createSalesOrder",
+					"style": "default",
+					"acl": "create",
+					"aclScope": "Quote",
+					"data": {
+						"handler": "reclamations:handlers/reclamation/create-sales-order"
+					},
+					"initFunction": "init"
+				},
+				"__APPEND__",
+				{
+					"label": "Create Supplier Reclamation",
+					"name": "createSupplierReclamation",
+					"action": "createSupplierReclamation",
+					"style": "default",
+					"acl": "create",
+					"aclScope": "SupplierReclamation",
+					"data": {
+						"handler": "reclamations:handlers/reclamation/create-supplier-reclamation"
+					},
+					"initFunction": "init"
+				}
+			]
+		}
+	}
+}

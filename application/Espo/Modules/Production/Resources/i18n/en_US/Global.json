@@ -1,0 +1,16 @@
+{
+    "scopeNames": {
+        "ProductionOrder": "Production Order",
+        "Operation": "Operation",
+        "ProductionModel": "Production Model",
+        "ProductionModelOperation": "Production Model Operation",
+        "ProductionModelItem": "Production Model Item"
+    },
+    "scopeNamesPlural": {
+        "ProductionOrder": "Production Orders",
+        "Operation": "Operations",
+        "ProductionModel": "Production Models",
+        "ProductionModelOperation": "Production Model Operations",
+        "ProductionModelItem": "Production Model Items"
+    }
+}

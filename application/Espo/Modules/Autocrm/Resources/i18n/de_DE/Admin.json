@@ -1,0 +1,81 @@
+{
+    "labels": {
+        "Messaging": "Nachrichtenübermittlung",
+        "Misc": "Sonstiges",
+        "Auth Tokens": "Auth-Tokens",
+        "Configuration Instructions": "Anleitung zur Konfiguration",
+        "Formula Sandbox": "Formel Sandbox",
+        "Add Layout": "Layout hinzufügen",
+        "Show All Layouts": "Alle Layouts anzeigen",
+        "Add Related Field": "Betreffendes Feld hinzufügen",
+        "AutoCRM Settings": "AutomaticERP Einstellungen",
+        "Workflow Manager": "Workflow Manager",
+        "Flowcharts": "Flussdiagramme",
+        "Processes": "Prozesse",
+        "Business Process Management": "Geschäftsprozessmanagement",
+        "Report Filters": "Berichtsfilter",
+        "Report Panels": "Berichtspanel"
+    },
+    "layouts": {
+        "listItem": "Liste (Artikel)",
+        "detailBottomTotal": "Detail Unten Gesamtsumme"
+    },
+    "fields": {
+        "provider": "Anbieter",
+        "prefix": "Vorwahl",
+        "dynamicLogicInvalid": "Bedingungen, die das Feld ungültig machen",
+        "notActualOptions": "Keine aktuellen Optionen",
+        "strip": "Leiste",
+        "conversionDisabled": "Konvertierung deaktivieren",
+        "decimalPlaces": "Dezimalstellen",
+        "notStorable": "Nicht lagerfähig",
+        "recordListEnabled": "Datensatzliste aktivieren",
+        "recordListLayout": "Layout der Liste",
+        "recordListLinkDisabled": "Schaltfläche \"Link\" deaktivieren",
+        "recordListCreateDisabled": "Schaltfläche \"Erstellen\" deaktivieren",
+        "recordListRemoveDisabled": "Datensatzliste entfernen Deaktiviert",
+        "recordListOrderByField": "Feld nach dem sortiert werden soll",
+        "recordListKeepRemoved": "Entfernte Datensätze aufbewahren",
+        "copyFieldList": "Zu kopierende Felder",
+        "displayAsLinks": "Als Links anzeigen"
+    },
+    "fieldTypes": {
+        "foreignMultiple": "Fremdes Feld (Mehrfachbeziehung)"
+    },
+    "messages": {
+        "newAdvancedPackVersionIsAvailable": "Die neue Advanced Pack-Version {neueste Version} ist verfügbar. Es kann im Kundenportal heruntergeladen werden."
+    },
+    "descriptions": {
+        "jobsSettings": "Einstellungen für die Auftragsbearbeitung. Jobs führen Aufgaben im Hintergrund aus",
+        "sms": "SMS Einstellung",
+        "formulaSandbox": "Schreiben und testen Sie Formel-Skripte",
+        "autocrm": "Alle Konfigurationsparameter für AutoERP-bezogene Erweiterungen",
+        "workflowManager": "Workflow Regeln konfigurieren",
+        "bpmnFlowcharts": "Definitionen von Geschäftsprozessen",
+        "bpmnProcesses": "Instanzen von Geschäftsprozessen",
+        "reportFilters": "Benutzerdefinierter Listenansichtsfilter basierend auf Berichten",
+        "reportPanels": "Detailansicht-Panels mit Berichtsergebnissen"
+    },
+    "keywords": {
+        "userInterface": "UI, Thema, Tabs, Logo, Dashboard",
+        "scheduledJob": "geplante Jobs",
+        "integrations": "Google, Karten, Google Maps",
+        "authLog": "Log, Historie",
+        "authTokens": "Historie, Zugriff, Protokoll",
+        "entityManager": "Felder, Beziehungen",
+        "jobs": "Jobs",
+        "bpmnFlowcharts": "bpm Flowcharts",
+        "bpmnProcesses": "bpm Prozesse"
+    },
+    "logicalOperators": {
+        "and": "und",
+        "or": "oder",
+        "not": "nicht"
+    },
+    "templates": {
+        "reportSendingGrid1": "Report Raster-1",
+        "reportSendingGrid2": "Report Raster-2",
+        "reportSendingList": "Report Liste",
+        "salesEmailPdf": "Email PDF (Vertrieb)"
+    }
+}

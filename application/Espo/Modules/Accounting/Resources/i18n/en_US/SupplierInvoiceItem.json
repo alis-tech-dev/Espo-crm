@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "name": "Name",
+        "qty": "Qty",
+        "quantity": "Quantity",
+        "unitPrice": "Unit Price",
+        "unitPriceWithTax": "Unit Price Tax Inc.",
+        "amount": "Amount",
+        "amountWithTax": "Amount Tax Inc.",
+        "taxRate": "Tax Rate",
+        "product": "Product",
+        "order": "Line Number",
+        "supplierInvoice": "Supplier Invoice",
+        "weight": "Weight",
+        "unitWeight": "Unit Weight",
+        "description": "Description",
+        "amountConverted": "Amount (Converted)",
+        "unitPriceConverted": "Unit Price (Converted)",
+        "account": "Account",
+        "unitPriceCurrency": "Unit Price Currency",
+        "amountCurrency": "Amount Currency"
+    },
+    "links": {
+        "supplierInvoice": "Supplier Invoice",
+        "product": "Product",
+        "account": "Account"
+    },
+    "labels": {
+        "Supplier Invoices": "Supplier Invoices"
+    }
+}

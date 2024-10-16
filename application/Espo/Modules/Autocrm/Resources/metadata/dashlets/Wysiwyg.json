@@ -1,0 +1,20 @@
+{
+	"view": "autocrm:views/dashlets/wysiwyg",
+	"options": {
+		"fields": {
+			"title": {
+				"type": "varchar"
+			},
+			"body": {
+				"type": "wysiwyg",
+				"view": "autocrm:views/dashlets/fields/wysiwyg/body"
+			}
+		},
+		"defaults": {},
+		"layout": [
+			{
+				"rows": [[{ "name": "title" }], [{ "name": "body" }]]
+			}
+		]
+	}
+}

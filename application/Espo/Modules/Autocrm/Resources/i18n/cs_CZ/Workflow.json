@@ -1,0 +1,73 @@
+{
+    "fields": {
+        "assignmentRule": "Pravidlo přiřazení",
+        "targetTeam": "Cílový tým",
+        "targetUserPosition": "Cílová pozice uživatele",
+        "linkList": "Propojte s cílovou entitou prostřednictvím vztahů",
+        "linkListShort": "Odkazy",
+        "target": "Cíl",
+        "requestType": "Typ požadavku",
+        "requestContentType": "Typ obsahu",
+        "optOutLink": "Odkaz pro odhlášení",
+        "headers": "Záhlaví"
+    },
+    "tooltips": {
+        "requestHeaders": "Další záhlaví. \nFormát: `` `klíč: hodnota``ʻDostupné zástupné symboly: *` {$ attribute} `* * {$$ variable}`",
+        "requestContent": "Ve formátu JSON. \nDostupné zástupné symboly: * `{$ attribute}` * * {$$ variable} `"
+    },
+    "labels": {
+        "Formula": "Vzorec",
+        "months": "měsíce",
+        "contains": "obsahuje",
+        "notContains": "neobsahuje",
+        "additionalParameters": "Další parametry (JSON format)",
+        "doNotStore": "Neukládat odeslané e-maily",
+        "Entity Type": "Typ entity",
+        "Workflow Rule": "Pravidlo workflow",
+        "Add Condition": "Přidat podmínku",
+        "Add Action": "Přidat akci",
+        "Created": "Vytvořeno",
+        "Field": "Pole",
+        "Process": "Proces"
+    },
+    "emailAddressOptions": {
+        "": "Žádný",
+        "specifiedContacts": "Specifikované kontakty",
+        "system": "Systém"
+    },
+    "options": {
+        "type": {
+            "afterRecordUpdated": "Po aktualizaci záznamu"
+        },
+        "subjectType": {
+            "today": "dnes/nyní"
+        }
+    },
+    "actionTypes": {
+        "relateWithEntity": "Propojit s jiným záznamem",
+        "unrelateFromEntity": "Odpojit od jiného záznamu",
+        "runService": "Spustit servisní akci",
+        "applyAssignmentRule": "Použít pravidlo přiřazení",
+        "updateCreatedEntity": "Aktualizovat vytvořený záznam",
+        "updateProcessEntity": "Aktualizovat záznam procesu",
+        "startBpmnProcess": "Spusťte proces BPM",
+        "sendRequest": "Odeslat požadavek HTTP"
+    },
+    "messages": {
+        "jsonInvalid": "Není platný JSON."
+    },
+    "serviceActions": {
+        "sendEventInvitations": "Poslat pozvánky",
+        "convertCurrency": "Převést měnu",
+        "sendInEmail": "Odeslat e-mailem",
+        "optOut": "Odhlášení",
+        "generateAndSendPassword": "Generovat heslo"
+    },
+    "serviceActionsHelp": {
+        "generateAndSendPassword": "Bude vygenerováno nové heslo a odesláno na e-mailovou adresu uživatele.",
+        "optOut": "Volitelný parametr: targetListId. Pokud není zadán, označí odhlášenou e-mailovou adresu. \n Příklad: `` {\"targetListId\": \"TARGET_LIST_ID\"} `` \"",
+        "convertCurrency": "Volitelný parametr: targetCurrency. Pokud není zadán, převede se na výchozí měnu.",
+        "sendInEmail": "Parametry: \n * templateId - ID šablony PDF * emailTemplateId - ID šablony e-mailu * příjemci (volitelný parametr); ve výchozím nastavení bude odeslána na fakturační kontakt nebo na účet; příklad: `link: account.assignedUserʻExample:` `{\" templateId \":\" TEMPLATE_ID \",\" emailTemplateId \":\" EMAIL_TEMPLATE_ID \",\" to \":\" link: billingContact \"}\" \"",
+        "addSalesOrderItemList": "Příklad: \n``` {\"itemList\": [{\"number\": 1, \"procuctId\": \"productId\", \"name\": \"název produktu\", \"listPrice\": 100, \"unitPrice\": 100}] } ``"
+    }
+}

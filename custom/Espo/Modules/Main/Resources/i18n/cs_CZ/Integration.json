@@ -1,0 +1,13 @@
+{
+	"fields": {
+		"apiKey": "API klíč",
+		"clientId": "ID klienta"
+	},
+	"help": {
+		"Google": "& lt; p & gt; & lt; b & gt; Získejte přihlašovací údaje OAuth 2.0 z konzoly Google Developers Console. & Lt; / b & gt; & lt; / p & gt; & lt; p & gt; Navštivte & lt; a href = \"https://console.developers.google. com / project \"& gt; Google Developers Console & lt; / a & gt; získat přihlašovací údaje OAuth 2.0, jako je ID klienta a Tajné heslo klienta, které jsou známé aplikacím Google i AutoCRM. & lt; / p & gt;",
+		"GoogleMaps": "Získejte klíč API [zde] (https://developers.google.com/maps/documentation/javascript/get-api-key)."
+	},
+	"labels": {
+		"Create Integration": "Vytvořit integraci"
+	}
+}

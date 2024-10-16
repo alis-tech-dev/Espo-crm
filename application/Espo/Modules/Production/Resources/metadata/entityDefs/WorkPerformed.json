@@ -1,0 +1,89 @@
+{
+	"fields": {
+		"name": {
+			"type": "varchar",
+			"trim": true,
+			"pattern": "$noBadCharacters"
+		},
+		"description": {
+			"type": "text"
+		},
+		"assignedUser": {
+			"type": "link",
+			"required": true,
+			"view": "views/fields/assigned-user"
+		},
+		"operation": {
+			"type": "link",
+			"required": true
+		},
+		"workCenter": {
+			"type": "link"
+		},
+		"dateStart": {
+			"type": "datetime",
+			"required": true,
+			"default": "javascript: return this.dateTime.getNow(15);",
+			"audited": true
+		},
+		"dateEnd": {
+			"type": "datetime",
+			"required": true,
+			"view": "crm:views/call/fields/date-end",
+			"after": "dateStart"
+		},
+		"duration": {
+			"type": "duration",
+			"start": "dateStart",
+			"end": "dateEnd",
+			"options": [300, 600, 900, 1800, 2700, 3600, 7200],
+			"default": 300,
+			"notStorable": true,
+			"select": {
+				"select": "TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)"
+			},
+			"order": {
+				"order": [
+					["TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)", "{direction}"]
+				]
+			}
+		},
+		"producedAmount": {
+			"type": "int",
+			"required": true
+		},
+		"productionOrder": {
+			"type": "link",
+			"required": true
+		}
+	},
+	"links": {
+		"assignedUser": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"productionOrder": {
+			"type": "belongsTo",
+			"entity": "ProductionOrder",
+			"foreign": "workPerformed"
+		},
+		"operation": {
+			"type": "belongsTo",
+			"entity": "ProductionModelOperation",
+			"foreign": "workPerformed"
+		},
+		"workCenter": {
+			"type": "belongsTo",
+			"entity": "WorkCenter",
+			"foreign": "workPerformed"
+		}
+	},
+	"indexes": {
+		"name": {
+			"columns": ["name", "deleted"]
+		},
+		"assignedUser": {
+			"columns": ["assignedUserId", "deleted"]
+		}
+	}
+}

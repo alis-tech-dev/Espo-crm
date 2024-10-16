@@ -1,0 +1,22 @@
+{
+	"fields": {
+		"case": "Případ",
+		"status": "Stav",
+		"product": "Produkt",
+		"salesOrder": "Zakázka",
+		"goodsIssue": "Výdejka",
+		"goodsReceipt": "Příjemka",
+		"supplierReclamations": "Reklamace u dodavatele",
+		"reclamationSalesOrder": "Reklamační zakázka"
+	},
+	"links": {
+		"supplierReclamations": "Reklamace u dodavatele"
+	},
+	"labels": {
+		"Create Reclamation Sales Order": "Vytvořit reklamační zakázku",
+		"Create Reclamation": "Vytvořit reklamaci",
+		"Create Supplier Reclamation": "Vytvořit reklamaci u dodavatele",
+		"Supplier reclamation created": "Reklamace u dodavatele vytvořena",
+		"Supplier order created": "Reklamační zakázka vytvořena"
+	}
+}

@@ -1,0 +1,67 @@
+[
+	{
+		"label": "",
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "product"
+				}
+			],
+			[
+				{
+					"name": "order"
+				},
+				{
+					"name": "account"
+				}
+			],
+			[
+				{
+					"name": "quantity"
+				},
+				{
+					"name": "orderStatus"
+				}
+			],
+			[
+				{
+					"name": "listPrice"
+				},
+				{
+					"name": "taxRate"
+				}
+			],
+			[
+				{
+					"name": "unitPrice"
+				},
+				{
+					"name": "discount"
+				}
+			],
+			[
+				{
+					"name": "amount"
+				},
+				false
+			],
+			[
+				{
+					"name": "unitWeight"
+				},
+				{
+					"name": "weight"
+				}
+			],
+			[
+				{
+					"name": "description",
+					"fullWidth": true
+				}
+			]
+		]
+	}
+]

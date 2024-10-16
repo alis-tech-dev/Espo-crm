@@ -1,0 +1,36 @@
+{
+	"links": {
+		"productionOrders": "Výrobní příkazy"
+	},
+	"fields": {
+		"productionStatus": "Stav výroby",
+		"deadline": "Deadline",
+		"internalDeadline": "Interní deadline"
+	},
+	"options": {
+		"status": {
+			"In Production": "Ve výrobě",
+			"Finished": "Dokončená",
+			"Returned": "V reklamaci",
+			"Zapujcka": "Zápůjčeno",
+			"Cancelled": "Zrušeno",
+			"Invoice": "Fakturování",
+			"Not Started": "Nezahájená",
+			"Special": "Special",
+			"Waiting": "On Hold",
+			"To Install": "Ready to go",
+			"Submitted": "Předloženo"
+		},
+		"productionStatus": {
+			"ToDo": "To Do",
+			"OnHold": "On Hold",
+			"HW": "HW",
+			"SW": "FW / SW",
+			"Testing": "Testování",
+			"Done": "Hotovo",
+			"Archive": "Archiv",
+			"NearLaunch": "Před zahájením",
+			"Backlog": "Backlog"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"DownloadUnreliablePayers": {
+		"jobClassName": "Espo\\Modules\\Accounting\\Classes\\Jobs\\DownloadUnreliablePayers",
+		"scheduling": "0 3 * * *",
+		"isSystem": true
+	},
+	"RefreshPayerStatus": {
+		"jobClassName": "Espo\\Modules\\Accounting\\Classes\\Jobs\\RefreshPayerStatus",
+		"scheduling": "0 4 * * *",
+		"isSystem": true
+	}
+}

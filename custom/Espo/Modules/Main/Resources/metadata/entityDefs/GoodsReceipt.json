@@ -1,0 +1,10 @@
+{
+	"fields": {
+		"numberA": {
+			"readOnly": true
+		},
+		"items": {
+			"view": "main:views/goods-receipt/fields/items"
+		}
+	}
+}

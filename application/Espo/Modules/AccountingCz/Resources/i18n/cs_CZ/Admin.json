@@ -1,0 +1,8 @@
+{
+    "labels": {
+        "Invoice Settings": "Adresa firmy a nastavení faktur"
+    },
+    "descriptions": {
+        "invoiceSettings": "Nastavení výchozích hodnot a dalších parametrů na fakturách."
+    }
+}

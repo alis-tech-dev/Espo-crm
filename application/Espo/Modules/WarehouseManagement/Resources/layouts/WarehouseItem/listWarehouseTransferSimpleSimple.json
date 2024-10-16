@@ -1,0 +1,12 @@
+[
+    {
+        "name": "product",
+        "params": {
+            "readOnly": true
+        }
+    },
+    {
+        "name": "quantity",
+        "width": 15
+    }
+]

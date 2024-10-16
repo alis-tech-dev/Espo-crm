@@ -1,0 +1,12 @@
+{
+	"labels": {
+		"Create SmerniceItem": "Vytvořit Položka směrnice"
+	},
+	"fields": {
+		"smerniceSlozka": "Smernice Slozka",
+		"text": "Obsah"
+	},
+	"links": {
+		"smerniceSlozka": "Smernice Slozka"
+	}
+}

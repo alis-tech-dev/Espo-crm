@@ -1,0 +1,19 @@
+[
+    {
+        "name": "number",
+        "link": true,
+        "width": 16
+    },
+    {
+        "name": "account"
+    },
+    {
+        "name": "createdAt",
+        "width": 16
+    },
+    {
+        "name": "grandTotalAmount",
+        "width": 16,
+        "align": "right"
+    }
+]

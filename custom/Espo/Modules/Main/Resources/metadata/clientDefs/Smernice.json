@@ -1,0 +1,43 @@
+{
+	"controller": "controllers/record-tree",
+	"collection": "collections/tree",
+	"menu": {
+		"listTree": {
+			"buttons": [
+				{
+					"label": "List View",
+					"link": "#Smernice/list",
+					"acl": "read",
+					"style": "default"
+				},
+				{
+					"label": "Vytvořit Směrnici",
+					"link": "#SmerniceItem/create",
+					"acl": "read",
+					"style": "default",
+					"aclScope": "Smernice"
+				}
+			]
+		},
+		"list": {
+			"buttons": [
+				{
+					"label": "Tree View",
+					"link": "#Smernice",
+					"acl": "read",
+					"style": "default"
+				},
+				{
+					"label": "Vytvořit Směrnici",
+					"link": "#SmerniceItem/create",
+					"acl": "read",
+					"style": "default",
+					"aclScope": "Smernice"
+				}
+			]
+		}
+	},
+	"iconClass": "fas fa-arrow-circle-right",
+	"kanbanViewMode": false,
+	"color": null
+}

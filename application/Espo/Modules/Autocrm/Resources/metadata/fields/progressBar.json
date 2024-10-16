@@ -1,0 +1,87 @@
+{
+	"params": [
+		{
+			"name": "currentValue",
+			"type": "varchar",
+			"view": "autocrm:views/admin/field-manager/fields/own-field/own-field",
+			"required": true
+		},
+		{
+			"name": "targetValue",
+			"type": "varchar",
+			"view": "autocrm:views/admin/field-manager/fields/own-field/own-field",
+			"required": true
+		},
+		{
+			"name": "labelsEnabled",
+			"type": "bool",
+			"default": true,
+			"required": true
+		},
+		{
+			"name": "labelsFontWidth",
+			"type": "int",
+			"default": 14,
+			"required": true
+		},
+		{
+			"name": "labelsFormat",
+			"type": "enum",
+			"default": "int",
+			"options": ["int", "float"],
+			"required": true
+		},
+		{
+			"name": "startColor",
+			"type": "colorpicker",
+			"default": "#e8e2ca",
+			"required": true
+		},
+		{
+			"name": "endColor",
+			"type": "colorpicker",
+			"default": "#3e6c0a",
+			"required": true
+		},
+		{
+			"name": "labelColor",
+			"type": "colorpicker",
+			"default": "#000000",
+			"required": true
+		},
+		{
+			"name": "backgroundColor",
+			"type": "colorpicker",
+			"default": "#e0e0e0",
+			"required": true
+		},
+		{
+			"name": "height",
+			"type": "int",
+			"default": 100,
+			"required": true
+		},
+		{
+			"name": "width",
+			"type": "int",
+			"default": 500,
+			"required": true
+		}
+	],
+	"fieldTypeList": ["int", "float", "number", "currencyConverted"],
+	"fieldTypeViewMap": {
+		"int": "views/fields/foreign-int",
+		"float": "views/fields/foreign-float",
+		"number": "views/fields/foreign-varchar",
+		"currencyConverted": "views/fields/foreign-currency-converted"
+	},
+	"filter": true,
+	"notCreatable": false,
+	"notStorable": true,
+	"skipOrmDefs": true,
+	"readOnly": true,
+	"fieldDefs": {
+		"readOnly": true
+	},
+	"view": "autocrm:views/fields/progress-bar"
+}

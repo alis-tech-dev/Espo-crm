@@ -1,0 +1,77 @@
+{
+	"fields": {
+		"name": {
+			"type": "varchar"
+		},
+		"operation": {
+			"type": "link",
+			"required": true
+		},
+		"order": {
+			"type": "int",
+			"listLayoutDisabled": true,
+			"detailLayoutDisabled": true
+		},
+		"preparationTime": {
+			"type": "int",
+			"tooltip": true
+		},
+		"productionTime": {
+			"type": "int",
+			"tooltip": true
+		},
+		"interoperationTime": {
+			"type": "int",
+			"tooltip": true
+		},
+		"parent": {
+			"type": "linkParent"
+		},
+		"workCenter": {
+			"type": "link"
+		},
+		"quantityPlanned": {
+			"type": "float",
+			"readOnly": true,
+			"notStorable": true,
+			"detailLayoutDisabled": true
+		},
+		"quantityActual": {
+			"type": "float",
+			"readOnly": true,
+			"notStorable": true,
+			"detailLayoutDisabled": true
+		}
+	},
+	"links": {
+		"operation": {
+			"type": "belongsTo",
+			"entity": "Operation",
+			"foreign": "productionModelOperations"
+		},
+		"productionModelItems": {
+			"type": "hasMany",
+			"entity": "ProductionModelItem",
+			"foreign": "productionModelOperation"
+		},
+		"parent": {
+			"type": "belongsToParent",
+			"foreign": "operations",
+			"entityList": ["ProductionModel", "ProductionOrder"]
+		},
+		"workCenter": {
+			"type": "belongsTo",
+			"entity": "WorkCenter",
+			"foreign": "productionModelOperations"
+		}
+	},
+	"indexes": {
+		"operation": {
+			"columns": ["operationId", "deleted"]
+		}
+	},
+	"collection": {
+		"orderBy": "order",
+		"order": "asc"
+	}
+}

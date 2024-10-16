@@ -1,0 +1,72 @@
+{
+    "kanbanViewMode": false,
+    "color": "#bc9476",
+    "iconClass": "fas fa-warehouse",
+    "isWide": true,
+    "relationshipPanels": {
+        "items": {
+            "layout": "listProductSimple"
+        },
+        "productionOrder": {
+            "layout": null
+        },
+        "productionModelItem": {
+            "layout": null
+        },
+        "product": {
+            "layout": null
+        },
+        "productCategory": {
+            "layout": null
+        },
+        "productionModel": {
+            "layout": null
+        },
+        "accounts": {
+            "layout": null
+        }
+    },
+    "gridViewMode": false,
+    "dynamicLogic": {
+        "fields": {
+            "availableBrno": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isFalse",
+                            "attribute": "isInfinity"
+                        }
+                    ]
+                }
+            },
+            "availablePv": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isFalse",
+                            "attribute": "isInfinity"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "menu": {
+        "detail": {
+            "handler": "main:handlers/actions/warehouse/productUpdate",
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "productUpdate",
+                    "name": "productUpdate",
+                    "action": "productUpdate",
+                    "style": "default",
+                    "data": {
+                        "handler": "main:handlers/actions/warehouse/productUpdate"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "fields": {
+        "listPrice": "List price",
+        "product": "Product",
+        "order": "Order number",
+        "invoice": "Invoice",
+        "weight": "Weight",
+        "unitWeight": "Unit weight",
+        "description": "Description",
+        "discount": "Discount (%)",
+        "amountConverted": "Amount (converted)",
+        "unitPriceConverted": "Unit price (converted)",
+        "listPriceConverted": "List price (converted)",
+        "account": "Organization",
+        "listPriceCurrency": "List price currency",
+        "unitPriceCurrency": "Unit price currency",
+        "amountCurrency": "Amount currency",
+        "invoiceStatus": "Invoice status",
+        "name": "Name",
+        "qty": "Quantity",
+        "quantity": "Quantity",
+        "unitPrice": "Unit price",
+        "amount": "Total amount without VAT",
+        "unit": "Unit",
+        "taxRate": "VAT rate (%)"
+    },
+    "links": {
+        "invoice": "Invoice",
+        "product": "Product",
+        "account": "Organization"
+    },
+    "labels": {
+        "Invoices": "Invoices"
+    }
+}

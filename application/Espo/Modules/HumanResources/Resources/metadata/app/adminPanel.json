@@ -1,0 +1,14 @@
+{
+    "autocrm": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#Admin/HumanResources",
+                "label": "HumanResources Settings",
+                "iconClass": "fas fa-users-cog",
+                "description": "humanResourcesSettings",
+                "recordView": "human-resources:views/settings/record/edit"
+            }
+        ]
+    }
+}

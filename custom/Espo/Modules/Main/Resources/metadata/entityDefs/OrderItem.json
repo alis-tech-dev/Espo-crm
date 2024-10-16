@@ -1,0 +1,17 @@
+{
+	"fields": {
+		"product": {
+			"type": "link",
+			"copyFieldList": []
+		},
+		"code": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"account": {
+			"type": "link",
+			"readOnly": false
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "mattermostToken": "Mattermost Token",
+        "mattermostSyncEnabled": "Mattermost Sync Enabled"
+    },
+    "tooltips": {
+        "mattermostSyncEnabled": "Sync user with Mattermost. (For this to work, ensure that Mattermost integration is enabled and configured)"
+    }
+}

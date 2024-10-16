@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "taxRate": "Sazba",
+        "basis": "Základ",
+        "vat": "DPH",
+        "total": "Celkem"
+    }
+}

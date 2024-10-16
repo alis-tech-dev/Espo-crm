@@ -1,0 +1,23 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "cRMNvod"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

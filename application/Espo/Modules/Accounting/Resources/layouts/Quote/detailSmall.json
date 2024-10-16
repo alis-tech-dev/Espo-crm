@@ -1,0 +1,18 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [{"name": "name"}, {"name": "number"}],
+            [{"name": "status", "fullWidth": true}],
+            [{"name": "account", "fullWidth": true}],
+            [{"name": "dateQuoted", "fullWidth": true}],
+            [{"name": "amount", "fullWidth": true}]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [{"name": "items", "fullWidth": true, "noLabel": true}]
+        ]
+    }
+]

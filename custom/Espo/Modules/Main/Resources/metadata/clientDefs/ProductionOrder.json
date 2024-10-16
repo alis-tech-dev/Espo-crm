@@ -1,0 +1,21 @@
+{
+	"kanbanViewMode": false,
+	"color": null,
+	"iconClass": "fas fa-hammer",
+	"isWide": true,
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Perform Work Main",
+					"name": "performWorkMain",
+					"action": "performWorkMain",
+					"style": "success",
+					"initFunction": "init",
+					"handler": "main:handlers/production-order/perform-work-main"
+				}
+			]
+		}
+	}
+}

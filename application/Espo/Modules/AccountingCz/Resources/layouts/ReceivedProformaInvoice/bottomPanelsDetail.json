@@ -1,0 +1,11 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "receivedTaxDocuments.summaryVatRates": {
+        "disabled": true
+    },
+    "receivedTaxDocuments": {
+        "index": 0
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": false,
+    "acl": true,
+    "aclPortal": "recordAllAccountNo",
+    "module": "AccountingCz",
+    "customizable": true,
+    "importable": false,
+    "notifications": false,
+    "object": true
+}

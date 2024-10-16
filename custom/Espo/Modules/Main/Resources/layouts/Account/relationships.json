@@ -1,0 +1,26 @@
+[
+	{
+		"name": "quotes"
+	},
+	{
+		"name": "invoices"
+	},
+	{
+		"name": "webs"
+	},
+	{
+		"name": "contacts"
+	},
+	{
+		"name": "opportunities"
+	},
+	{
+		"name": "cases"
+	},
+	{
+		"name": "documents"
+	},
+	{
+		"name": "logTimes"
+	}
+]

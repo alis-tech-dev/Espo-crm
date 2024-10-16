@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "Create VacationRequestApprovalItem": "Vytvořit Průběh schvalování"
+    },
+    "fields": {
+        "description": "Poznámka",
+        "status": "Stav",
+        "assignedUser": "Provedl"
+    },
+    "options": {
+        "status": {
+            "Approved": "Schváleno",
+            "Returned": "Vráceno k doplnění",
+            "Rejected": "Zamítnuto"
+        }
+    }
+}

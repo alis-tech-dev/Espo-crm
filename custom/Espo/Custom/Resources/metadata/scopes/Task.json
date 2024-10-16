@@ -1,0 +1,15 @@
+{
+    "stream": true,
+    "disabled": false,
+    "kanbanStatusIgnoreList": [
+        "Canceled",
+        "Archiv",
+        "Ještě fakturujeme"
+    ],
+    "completedStatusList": [
+        "Completed"
+    ],
+    "canceledStatusList": [
+        "Canceled"
+    ]
+}

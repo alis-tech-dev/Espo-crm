@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "fetchData": "Daten abrufen",
+        "imapHandler": "IMAP-Manager",
+        "smtpHandler": "SMTP-Manager"
+    },
+    "links": {
+        "emailFolder": "E-Mail-Ordner"
+    },
+    "options": {
+        "smtpAuthMechanism": {
+            "plain": "Normal",
+            "login": "Login"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "partner"
+				},
+				{
+					"name": "enduser"
+				}
+			],
+			[
+				{
+					"name": "emailAddress"
+				}
+			],
+			[
+				{
+					"name": "phoneNumber"
+				}
+			],
+			[
+				{
+					"name": "website"
+				}
+			],
+			[
+				{
+					"name": "billingAddressCity"
+				},
+				{
+					"name": "billingAddressCountry"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

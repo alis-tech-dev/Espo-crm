@@ -1,0 +1,24 @@
+{
+    "labels": {
+        "Warehouse Management Settings": "Warehouse Management Settings"
+    },
+    "layouts": {
+        "listGoodsReceiptSimple": "Goods Receipt (Simple Warehouse)",
+        "listGoodsReceiptPositional": "Goods Receipt (Positional Warehouse)",
+        "listGoodsIssueSimple": "Goods Issue (Simple Warehouse)",
+        "listGoodsIssuePositional": "Goods Issue (Positional Warehouse)",
+        "listGoodsIssueSelectedSimple": "Goods Issue - Selected Items (Simple Warehouse)",
+        "listGoodsIssueSelectedPositional": "Goods Issue - Selected Items (Positional Warehouse)",
+        "listWarehouseTransferSimpleSimple": "Warehouse Transfer (Simple -> Simple)",
+        "listWarehouseTransferSimplePositional": "Warehouse Transfer (Simple -> Positional)",
+        "listWarehouseTransferPositionalSimple": "Warehouse Transfer (Positional -> Simple)",
+        "listWarehouseTransferPositionalPositional": "Warehouse Transfer (Positional -> Positional)",
+        "listWarehouseSimple": "Warehouse (Simple)",
+        "listWarehousePositional": "Warehouse (Positional)",
+        "listProductSimple": "Product (Simple Warehouse)",
+        "listProductPositional": "Product (Positional Warehouse)"
+    },
+    "descriptions": {
+        "warehouseManagement": "Configuration parameters for the WarehouseManagement Extension"
+    }
+}

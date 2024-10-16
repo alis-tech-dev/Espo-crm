@@ -1,0 +1,12 @@
+{
+    "views": {
+        "list": "autocrm:views/email/list"
+    },
+    "recordViews": {
+        "combined": "autocrm:views/email/record/combined"
+    },
+    "listViewModeList": [
+        "list",
+        "combined"
+    ]
+}

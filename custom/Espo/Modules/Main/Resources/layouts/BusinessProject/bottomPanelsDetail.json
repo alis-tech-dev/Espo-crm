@@ -1,0 +1,38 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"manufacturings": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": null,
+		"index": 0
+	},
+	"quotesBusiness": {
+		"index": 1
+	},
+	"documents": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": null,
+		"index": 2
+	},
+	"logTimes": {
+		"index": 3
+	},
+	"orders": {
+		"index": 6
+	},
+	"productDatabases1": {
+		"index": 7
+	},
+	"componentss": {
+		"index": 8
+	},
+	"stream": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": null,
+		"index": 9
+	}
+}

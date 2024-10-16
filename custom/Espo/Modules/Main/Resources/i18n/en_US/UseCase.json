@@ -1,0 +1,29 @@
+{
+	"fields": {
+		"itemList": "Položky",
+		"imagesField": "Fotografie",
+		"priceList": "Price List",
+		"isTemplate": "Vzor",
+		"manufacturing": "Test - Manufacturing"
+	},
+	"tooltips": {
+		"itemList": "test"
+	},
+	"presetFilters": {
+		"reportFilter604646972402d254c": "Bez Transportu",
+		"reportFilter6050b6d6ddd3bb8b1": "Jen vzorové"
+	},
+	"options": {
+		"priceList": {
+			"C": "Group C",
+			"B": "Group B",
+			"A": "Group A",
+			"E": "End-User",
+			"R": "Rent",
+			"Skoda": "Škoda"
+		}
+	},
+	"links": {
+		"manufacturing": "Test - Manufacturing"
+	}
+}

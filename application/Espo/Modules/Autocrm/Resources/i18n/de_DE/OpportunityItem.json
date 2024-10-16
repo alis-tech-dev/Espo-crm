@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "name": "Betreff",
+        "qty": "Mng",
+        "quantity": "Menge",
+        "quantityInt": "Menge (Int)",
+        "unitPrice": "Stückpreis",
+        "amount": "Betrag",
+        "amountCurrency": "Betrag (Währung)",
+        "unitPriceCurrency": "Stückpreis (Währung)",
+        "product": "Produkt",
+        "order": "Bestellung Zeilennummer",
+        "opportunity": "Verkaufschance",
+        "description": "Beschreibung",
+        "amountConverted": "Betrag (umgerechnet)",
+        "unitPriceConverted": "Stückpreis (umgerechnet)",
+        "opportunityStage": "Verkaufsphase"
+    },
+    "links": {
+        "opportunity": "Verkaufschance",
+        "product": "Produkt"
+    },
+    "labels": {
+        "Opportunities": "Verkaufschancen",
+        "Create OpportunityItem": "Verkaufschance-Position erstellen"
+    }
+}

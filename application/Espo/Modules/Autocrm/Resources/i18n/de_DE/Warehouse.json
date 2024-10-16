@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "stockRecordItems": "Artikel auf Lager",
+        "itemList": "Artikelliste",
+        "totalPrice": "Gesamtpreis",
+        "totalPriceConverted": "Gesamtpreis umgerechnet",
+        "totalPriceCurrency": "Gesamtpreis Währung",
+        "totalQuantity": "Gesamtmenge"
+    },
+    "links": {
+        "stockRecordItems": "Artikel auf Lager",
+        "items": "Artikel"
+    },
+    "labels": {
+        "Create Warehouse": "Lager erstellen"
+    }
+}

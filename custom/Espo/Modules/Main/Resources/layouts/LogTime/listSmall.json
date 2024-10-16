@@ -1,0 +1,21 @@
+[
+	{
+		"name": "dateStart",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser"
+	},
+	{
+		"name": "externist"
+	},
+	{
+		"name": "transport"
+	},
+	{
+		"name": "hours",
+		"link": true,
+		"align": "left"
+	}
+]

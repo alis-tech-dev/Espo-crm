@@ -1,0 +1,33 @@
+[
+    {
+        "name": "number",
+        "width": 16,
+        "align": "left",
+        "label": "Quote Number"
+    },
+    {
+        "name": "name",
+        "width": 29,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "status",
+        "width": 15,
+        "align": "left",
+        "label": "Status"
+    },
+    {
+        "name": "grandTotalAmount",
+        "width": 16,
+        "align": "right",
+        "label": "Grand Total Amount"
+    },
+    {
+        "name": "createdAt",
+        "width": 14,
+        "align": "left",
+        "label": "Created At"
+    }
+]

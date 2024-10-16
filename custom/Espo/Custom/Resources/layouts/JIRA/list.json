@@ -1,0 +1,59 @@
+[
+    {
+        "name": "name",
+        "width": 30,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "cRM",
+        "widthPx": 100,
+        "align": "left",
+        "label": "CRM",
+        "isEditable": true
+    },
+    {
+        "name": "priority",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Priority"
+    },
+    {
+        "name": "queue",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Queue",
+        "isEditable": true
+    },
+    {
+        "name": "status",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Status",
+        "isEditable": true
+    },
+    {
+        "name": "procenta",
+        "widthPx": 80,
+        "align": "left",
+        "label": "Procenta",
+        "isEditable": true
+    },
+    {
+        "name": "createdBy",
+        "width": 12,
+        "align": "left",
+        "label": "Created By"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "assignedUser",
+        "width": 12,
+        "align": "left",
+        "label": "Assigned User"
+    }
+]

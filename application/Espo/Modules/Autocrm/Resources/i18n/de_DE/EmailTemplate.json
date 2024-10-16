@@ -1,0 +1,11 @@
+{
+    "links": {
+        "attachments": "Anhänge",
+        "category": "Kategorie"
+    },
+    "placeholderTexts": {
+        "optOutUrl": "URL für einen Abmeldelink",
+        "viewInBrowserUrl": "URL zum Anzeigen von E-Mails im Browser",
+        "viewInBrowserLink": "ein Link zum Anzeigen von E-Mails im Browser"
+    }
+}

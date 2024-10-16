@@ -1,0 +1,6 @@
+{
+	"psr-4": {
+		"Brinley\\JSignature\\": "application/Espo/Modules/Autocrm/vendor/brinley/jsignature/extras/SignatureDataConversion_PHP/core",
+		"ZipStream\\": "application/Espo/Modules/Autocrm/vendor/maennchen/ZipStream/src"
+	}
+}

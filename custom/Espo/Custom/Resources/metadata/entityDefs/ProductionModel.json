@@ -1,0 +1,46 @@
+{
+    "fields": {
+        "assignedUser": {
+            "required": false,
+            "defaultSelectFilters": []
+        },
+        "operation": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "{number}",
+            "nextNumber": 1,
+            "padLength": 5,
+            "reset": "Yearly",
+            "isCustom": true
+        },
+        "billOfMaterials": {
+            "recordListLayout": "listProductionModel",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": []
+        },
+        "warehouse": {
+            "type": "linkOne",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "operation": {
+            "type": "hasOne",
+            "foreign": "productionModel",
+            "entity": "Operation",
+            "isCustom": true
+        },
+        "warehouse": {
+            "type": "hasOne",
+            "foreign": "productionModel",
+            "entity": "Warehouse",
+            "isCustom": true
+        }
+    }
+}

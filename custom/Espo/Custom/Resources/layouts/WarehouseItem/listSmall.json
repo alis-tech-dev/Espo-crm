@@ -1,0 +1,37 @@
+[
+    {
+        "name": "serialNumber",
+        "link": true,
+        "align": "left",
+        "label": "serialNumber"
+    },
+    {
+        "name": "salesOrder",
+        "align": "left",
+        "label": "Sales Order",
+        "isEditable": true
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "quantity",
+        "label": "Total Quantity"
+    },
+    {
+        "name": "unit",
+        "label": "Unit"
+    },
+    {
+        "name": "isReserved",
+        "label": "IsReserved"
+    },
+    {
+        "name": "position",
+        "label": "Position"
+    },
+    {
+        "name": "stockLocation"
+    }
+]

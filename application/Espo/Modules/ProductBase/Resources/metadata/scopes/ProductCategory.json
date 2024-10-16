@@ -1,0 +1,11 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": false,
+    "acl": "recordAllTeamNo",
+    "module": "ProductBase",
+    "customizable": true,
+    "importable": true,
+    "type": "CategoryTree",
+    "notifications": false
+}

@@ -1,0 +1,34 @@
+{
+    "relationshipPanels": {
+        "quotes": {
+            "layout": null
+        },
+        "opportunities": {
+            "layout": null
+        },
+        "salesOrders": {
+            "layout": "listForAccount"
+        },
+        "account": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": true,
+    "color": "#9fc77e",
+    "iconClass": "fas fa-dollar-sign",
+    "isWide": true,
+    "additionalLayouts": {
+        "detailConvert": {
+            "type": "detail"
+        },
+        "listForAccount": {
+            "type": "listSmall"
+        },
+        "listForContact": {
+            "type": "listSmall"
+        },
+        "test": {
+            "type": "detail"
+        }
+    }
+}

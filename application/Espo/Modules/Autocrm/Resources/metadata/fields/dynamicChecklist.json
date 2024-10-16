@@ -1,0 +1,23 @@
+{
+    "view": "autocrm:views/fields/dynamic-checklist",
+    "params": [
+        {
+            "name": "required",
+            "type": "bool",
+            "default": false
+        }
+    ],
+    "validationList": [
+        "required"
+    ],
+    "filter": true,
+    "notCreatable": false,
+    "notSortable": true,
+    "fieldDefs": {
+        "type": "jsonArray",
+        "storeArrayValues": false
+    },
+    "translatedOptions": true,
+    "dynamicLogicOptions": true,
+    "personalData": false
+}

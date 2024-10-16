@@ -1,0 +1,77 @@
+{
+    "labels": {
+        "Create Only": "Pouze vytvořit",
+        "Create and Update": "Vytvořit a aktualizovat",
+        "Update Only": "Pouze aktualizovat",
+        "Set as Not Duplicate": "Nastavit jako neduplikovat",
+        "File (CSV)": "Soubor (CSV)",
+        "First Row Value": "Hodnota prvního řádku",
+        "Skip": "Přeskočit",
+        "Header Row Value": "Hodnota řádku záhlaví",
+        "Field": "Pole",
+        "What to Import?": "Co importovat?",
+        "Entity Type": "Typ entitiy",
+        "What to do?": "Co dělat?",
+        "Properties": "Vlastnosti",
+        "Header Row": "Řádek záhlaví",
+        "Person Name Format": "Formát jména osoby",
+        "Field Delimiter": "Oddělovač pole",
+        "Date Format": "Formát datumu",
+        "Decimal Mark": "Desetinná značka",
+        "Text Qualifier": "Kvalifikace textu",
+        "Time Format": "Formát času",
+        "Currency": "Měna",
+        "Preview": "Náhled",
+        "Next": "Další",
+        "Step 1": "Krok 1",
+        "Step 2": "Krok 2",
+        "Double Quote": "Dvojitá nabídka",
+        "Single Quote": "Jednotlivá nabídka",
+        "Imported": "Importováno",
+        "Duplicates": "Duplicity",
+        "Skip searching for duplicates": "Přeskočit vyhledávání duplikátů",
+        "Timezone": "Časové pásmo",
+        "Remove Import Log": "Odebrat protokol importu",
+        "New Import": "Nový import",
+        "Import Results": "Výsledky importu",        
+        "Update by" : "Aktualizace podle",
+        "New import with same params" : "Nový import se stejnými parametry",
+        "Silent Mode": "Tichý mód"
+    },
+    "messages": {
+        "Create Only": "Pouze vytvořit",
+        "Create and Update": "Vytvořit a aktualizovat",
+        "Update Only": "Pouze aktualizovat",
+        "Update by" : "Aktualizace podle",
+        "Run Manually" : "Spustit ručně",
+        "inIdle": "Provádět v nečinnosti (pro velká data; přes cron)",
+        "revert": "Tímto trvale odstraníte všechny importované záznamy.",
+        "removeDuplicates": "Tím trvale odstraníte všechny importované záznamy, které byly rozpoznány jako duplikáty.",
+        "confirmRevert": "Tímto trvale odstraníte všechny importované záznamy. Jste si jistí?",
+        "confirmRemoveDuplicates": "Tím trvale odstraníte všechny importované záznamy, které byly rozpoznány jako duplikáty. Jsi si jistá?",
+        "confirmRemoveImportLog": "Tím odstraníte protokol importu. Všechny importované záznamy budou uchovány. Nebudete moci vrátit výsledky importu. Jste si jistí?",
+        "removeImportLog": "Tím odstraníte protokol importu. Všechny importované záznamy budou uchovány. Použijte jej, pokud jste si jisti, že import je v pořádku."
+    },
+    "options": {
+        "status": {
+            "Failed" : "Selhalo",
+            "Standby" : "Standby",
+            "Pending" : "Pending",
+            "In Process" : "V procesu",
+            "Complete" : "Kompletní"
+        },
+        "personNameFormat" :{
+            "f l" : "First Last (Jméno a Příjmení)",
+            "l f" : "Last First (Příjmení a Jméno)",
+            "f m l" : "First Middle Last (Jméno, Druhý jméno, Příjmení)",
+            "l f m" : "Last First Middle (Příjmení Jméno Střední)",
+            "l, f" : "Last, First (Příjmení, Jméno)"
+        }
+    },
+    "strings": {
+        "saveAsDefault": "Uložit jako výchozí"
+    },
+    "tooltips": {
+        "silentMode": "Většina skriptů po uložení bude přeskočena, záznamy ve streamu nebudou vytvořeny. Import bude probíhat rychleji."
+    }
+}

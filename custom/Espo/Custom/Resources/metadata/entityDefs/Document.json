@@ -1,0 +1,41 @@
+{
+    "fields": {
+        "salesOrder": {
+            "type": "link"
+        },
+        "files": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        }
+    },
+    "links": {
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "documents",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "files": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

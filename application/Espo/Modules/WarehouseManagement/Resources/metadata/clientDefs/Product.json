@@ -1,0 +1,40 @@
+{
+    "additionalLayouts": {
+        "listRunningOut": {
+            "type": "list"
+        }
+    },
+    "bottomPanels": {
+        "detail": [
+            "__APPEND__",
+            {
+                "name": "stockInfo",
+                "label": "Stock Info",
+                "view": "warehouse-management:views/product/record/panels/stock-info",
+                "sticked": true,
+                "isForm": true
+            },
+            {
+                "name": "goodsIssues",
+                "label": "Goods Issues",
+                "view": "warehouse-management:views/product/record/panels/goods-issues",
+                "layout": "listProduct",
+                "createDisabled": true,
+                "unlinkDisabled": true,
+                "selectDisabled": true,
+                "viewDisabled": true
+            },
+            {
+                "name": "goodsReceipts",
+                "label": "Goods Receipts",
+                "view": "warehouse-management:views/product/record/panels/goods-receipts",
+                "layout": "listProduct",
+                "createDisabled": true,
+                "unlinkDisabled": true,
+                "selectDisabled": true,
+                "viewDisabled": true
+            }
+        ]
+    }
+}
+

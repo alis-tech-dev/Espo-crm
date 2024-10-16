@@ -1,0 +1,3 @@
+{
+	"beforeSaveCustomScript": "\nparentId = targetEntity\\attribute('parentId');\nparentName = targetEntity\\attribute('parentName');"
+}

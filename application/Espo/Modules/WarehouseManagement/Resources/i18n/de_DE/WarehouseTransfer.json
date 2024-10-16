@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "warehouseFrom": "Von Lager",
+        "warehouseTo": "Nach Lager",
+        "items": "Artikel",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Prozess",
+        "Create WarehouseTransfer": "Lagerübertragung erstellen",
+        "Items": "Artikel"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Processing": "In Bearbeitung",
+            "Transferred": "Übertragen",
+            "Canceled": "Abgebrochen"
+        }
+    }
+}

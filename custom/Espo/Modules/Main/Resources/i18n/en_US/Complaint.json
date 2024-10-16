@@ -1,0 +1,11 @@
+{
+	"fields": {
+		"businessProject": "Zakázka"
+	},
+	"links": {
+		"businessProject": "Zakázka"
+	},
+	"labels": {
+		"Create Complaint": "Create Reklamace"
+	}
+}

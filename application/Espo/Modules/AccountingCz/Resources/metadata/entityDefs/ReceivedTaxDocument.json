@@ -1,0 +1,412 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true,
+            "required": false,
+            "options": []
+        },
+        "number": {
+            "type": "varchar",
+            "maxLength": "100"
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "format": "PPP{YYYY}-{number}",
+            "reset": "Yearly",
+            "padLength": 5,
+            "disabled": true
+        },
+        "expenseOriginalNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": []
+        },
+        "status": {
+            "type": "enum",
+            "style": {
+                "Received": "primary",
+                "Paid": "success",
+                "UnpaidAfterMaturity": "danger"
+            },
+            "options": [
+                "Received",
+                "Paid",
+                "UnpaidAfterMaturity"
+            ],
+            "default": "Received",
+            "displayAsLabel": true
+        },
+        "dateInvoiced": {
+            "type": "date",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "dateOfReceiving": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true
+        },
+        "account": {
+            "type": "link"
+        },
+        "description": {
+            "type": "text"
+        },
+        "billingAddress": {
+            "type": "address"
+        },
+        "billingContact": {
+            "type": "link",
+            "view": "accounting:views/invoice/fields/contact"
+        },
+        "shippingAddress": {
+            "type": "address"
+        },
+        "taxClass": {
+            "type": "link",
+            "view": "product-base:views/fields/tax-class"
+        },
+        "taxRate": {
+            "type": "float",
+            "min": 0,
+            "max": 100
+        },
+        "taxAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "discountAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "amount": {
+            "type": "currency",
+            "readOnly": true
+        },
+        "preDiscountedAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "weight": {
+            "type": "float",
+            "min": 0,
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user",
+            "required": true
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "accounting:views/fields/items",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["productId", "type"],
+            "recordListCreateDisabled": false,
+            "recordListLinkDisabled": true,
+            "recordListRemoveDisabled": false,
+            "recordListConfirmRemove": true
+        },
+        "dueDate": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "duzp": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "textBeforeItems": {
+            "type": "text"
+        },
+        "paymentMethod": {
+            "type": "enum",
+            "options": [
+                "bank",
+                "card",
+                "cash",
+                "cod"
+            ],
+            "style": {
+                "bank": null,
+                "card": null,
+                "cash": null,
+                "cod": null
+            },
+            "default": "bank",
+            "tooltip": true
+        },
+        "constantSymbol": {
+            "type": "varchar",
+            "options": [],
+            "tooltip": true,
+            "maxLength": 10
+        },
+        "action": {
+            "type": "text"
+        },
+        "note": {
+            "type": "text",
+            "default": null
+        },
+        "textAfterItems": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": null
+        },
+        "variableSymbol": {
+            "type": "varchar",
+            "trim": true,
+            "maxLength": 10,
+            "options": [],
+            "tooltip": true
+        },
+        "acceptedPayment": {
+            "type": "link"
+        },
+        "formOfPayment": {
+            "type": "enum",
+            "options": [
+                "-",
+                "Transfer",
+                "CashOnDelivery",
+                "Cash"
+            ],
+            "style": {
+                "-": null,
+                "Transfer": null,
+                "CashOnDelivery": null,
+                "Cash": null
+            },
+            "default": "-"
+        },
+        "warehouse": {
+            "type": "link",
+            "required": false
+        },
+        "orderNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": []
+        },
+        "amountCurrency": {
+            "default": "CZK"
+        },
+        "discountAmountCurrency": {
+            "default": "CZK"
+        },
+        "datePaid": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true
+        },
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "grandTotalAmountCurrency": {
+            "default": "CZK"
+        },
+        "preDiscountedAmountCurrency": {
+            "default": "CZK"
+        },
+        "taxAmountCurrency": {
+            "default": "CZK"
+        },
+        "subscriberName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": []
+        },
+        "subscriberShippingAddress": {
+            "type": "address"
+        },
+        "subscriberShippingAddressPostalCode": {
+            "options": []
+        },
+        "subscriberShippingAddressStreet": {
+        },
+        "subscriberShippingAddressCity": {
+        },
+        "subscriberBillingAddress": {
+            "type": "address"
+        },
+        "subscriberBillingAddressPostalCode": {
+            "options": []
+        },
+        "subscriberBillingAddressStreet": {
+        },
+        "subscriberBillingAddressCity": {
+        },
+        "subscriberSicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "subscriberVatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "subscriberShippingAddressMap": {
+            "notStorable": true
+        },
+        "subscriberBillingAddressMap": {
+            "notStorable": true
+        },
+        "subscriberNote": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "rows": 1
+        },
+        "accountNumber": {
+            "type": "varchar",
+            "maxLength": 30,
+            "options": []
+        },
+        "iban": {
+            "type": "varchar",
+            "maxLength": 30,
+            "options": []
+        },
+        "swift": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "supplierLink": {
+            "type": "linkParent",
+            "entityList": [
+                "Account",
+                "Contact"
+            ]
+        },
+        "originalInvoiceFile": {
+            "type": "file",
+            "sourceList": [],
+            "accept": []
+        },
+        "receivedProformaInvoice": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "receivedTaxDocuments"
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "ReceivedTaxDocumentItem",
+            "foreign": "receivedTaxDocument",
+            "layoutRelationshipsDisabled": true
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "receivedTaxDocument",
+            "entity": "SummaryVatRates",
+            "audited": false
+        },
+        "supplierLink": {
+            "type": "belongsToParent",
+            "foreign": "receivedTaxDocument"
+        },
+        "originalInvoiceFile": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "disabled": true
+        },
+        "receivedProformaInvoice": {
+            "type": "belongsTo",
+            "entity": "ReceivedProformaInvoice"
+        },
+        "billingContact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "receivedTaxDocumentsBilling"
+        },
+        "taxClass": {
+            "type": "belongsTo",
+            "entity": "TaxClass"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

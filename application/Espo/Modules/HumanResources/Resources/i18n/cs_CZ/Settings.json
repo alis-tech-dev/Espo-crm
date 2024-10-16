@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "humanResourceApprovalRole": "Role pro schvalování žádostí o dovolenou",
+        "humanResourceApprovalTeam": "Tým přiřazovaný ke schváleným dovoleným"
+    },
+    "label": {
+        "HumanResources Settings": "Nastavení HR modulu"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "fields": {
+        "datePosEnd": "Předpokládané dokončení",
+        "isRepeated": "Opakovaný úkol",
+        "repeatFrom": "Opakovat od",
+        "repeatUntil": "Opakovat do",
+        "cronTime": "Interval opakování",
+        "lastExecuteTime": "Příští opakování",
+        "finished": "Dokončeno dne",
+        "parentAnother": "Parent Another",
+        "parent": "Zakázka",
+        "taskList": "Seznam podúkolů",
+        "tasks": "Opakované úkoly",
+        "users": "Users"
+    },
+    "links": {
+        "parentAnother": "Parent Another",
+        "users": "Users"
+    },
+    "tooltips": {
+        "name": "Name of the task",
+        "datePosEnd": "Odhadované datum dokončení úkolu",
+        "solution": "Poznámky k postupu řešení",
+        "solutionAttachement": "Dokumenty připojené při komplementaci úkolu",
+        "tasks": "Připojené podúkoly",
+        "isRepeated": "Opakující se úkol ? ",
+        "repeatUntil": "Opakovat úkol do datumu",
+        "lastExecuteTime": "Datum dalšího opakování úkolu",
+        "repeatFrom": "Opakovat od datumu",
+        "finished": "Dokončené opakování úkolu"
+    }
+}

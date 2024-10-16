@@ -1,0 +1,35 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "warehouseFrom"
+                },
+                {
+                    "name": "warehouseTo"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "fullWidth": true,
+                    "noLabel": true
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+{
+   "scopeNames":{
+      "PushSubscriber":"Push Notifications Subscriber"
+   },
+   "scopeNamesPlural":{
+      "PushSubscriber":"Push Notifications Subscribers"
+   }
+}

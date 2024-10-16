@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "files": "Dokumenty",
+        "salesOrder1": "Sales Order1",
+        "salesOrderView": "Sales OrderView",
+        "salesOrder12": "Sales Order12",
+        "listPrice": "Unit Price",
+        "unitPrice": "List Price",
+        "kod": "Kod",
+        "unit": "Jednotka",
+        "productDescription": "ProductDescription"
+    },
+    "links": {
+        "salesOrder1": "Sales Order1",
+        "salesOrderView": "Sales OrderView",
+        "salesOrder12": "Sales Order12"
+    },
+    "options": {
+        "unit": {
+            "pcs": "pcs",
+            "km": "km",
+            "h": "h",
+            "unit": "unit"
+        }
+    }
+}

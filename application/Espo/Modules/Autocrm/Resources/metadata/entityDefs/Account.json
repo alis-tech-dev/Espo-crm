@@ -1,0 +1,27 @@
+{
+	"fields": {
+		"sicCode": {
+			"type": "varchar",
+			"maxLength": 40,
+			"trim": true,
+			"pattern": "$noBadCharacters",
+			"noSpellCheck": true,
+			"view": "autocrm:views/account/fields/sic-code"
+		},
+		"vatId": {
+			"type": "varchar",
+			"maxLength": 40,
+			"trim": true,
+			"pattern": "$noBadCharacters",
+			"noSpellCheck": true
+		},
+		"slovakVatId": {
+			"type": "varchar",
+			"maxLength": 12,
+			"trim": true,
+			"pattern": "$noBadCharacters",
+			"noSpellCheck": true,
+			"tooltip": true
+		}
+	}
+}

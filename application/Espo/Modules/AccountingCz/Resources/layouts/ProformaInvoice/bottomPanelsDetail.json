@@ -1,0 +1,20 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "issuedTaxDocuments.summaryVatRates": {
+        "disabled": true
+    },
+    "payments": {
+        "index": 0
+    },
+    "issuedTaxDocuments": {
+        "index": 1
+    },
+    "invoices": {
+        "index": 2
+    },
+    "revenueReceipts": {
+        "index": 3
+    }
+}

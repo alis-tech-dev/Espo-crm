@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "handoverProtocol": {
+            "type": "link"
+        },
+        "deliveryNote": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "handoverProtocol": {
+            "type": "belongsTo",
+            "foreign": "document",
+            "entity": "HandoverProtocol",
+            "isCustom": true
+        },
+        "deliveryNote": {
+            "type": "belongsTo",
+            "foreign": "document",
+            "entity": "DeliveryNote",
+            "isCustom": true
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "supplierBillingAddress": "Fakturační adresa",
+        "supplierNote": "Poznámka",
+        "supplierShippingAddress": "Dodací adresa",
+        "subscriberWebsite": "Webové stránky",
+        "subscriberEmail": "E-mail",
+        "subscriberPhone": "Telefonní číslo"
+    }
+}

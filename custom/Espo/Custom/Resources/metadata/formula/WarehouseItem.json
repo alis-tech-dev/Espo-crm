@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(name == null, name = product.name);",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

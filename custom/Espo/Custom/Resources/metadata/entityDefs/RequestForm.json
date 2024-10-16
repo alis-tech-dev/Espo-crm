@@ -1,0 +1,58 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "description"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "attachments": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "amount": {
+            "required": true,
+            "default": null,
+            "tooltip": true,
+            "readOnlyAfterCreate": true
+        },
+        "status": {
+            "options": [
+                "Schváleno",
+                "Neschváleno",
+                "panding"
+            ],
+            "style": {
+                "Schváleno": "success",
+                "Neschváleno": "danger",
+                "panding": "primary"
+            },
+            "readOnly": true,
+            "default": "panding",
+            "displayAsLabel": true
+        },
+        "isAllowed": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "attachments": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        }
+    }
+}

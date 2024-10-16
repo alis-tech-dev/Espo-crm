@@ -1,0 +1,52 @@
+{
+    "labels": {
+        "Create SupplierInvoice": "Vytvořit přijatou fakturu",
+        "Tax Classes": "Daňové třídy",
+        "Templates": "Templates",
+        "Items": "Položky",
+        "Supplier Invoice Items": "Položky přijaté faktury"
+    },
+    "fields": {
+        "status": "Stav",
+        "number": "Číslo",
+        "numberA": "Číslo (automatické)",
+        "account": "Dodavatel",
+        "billingAddress": "Fakturační adresa",
+        "billingContact": "Kontakt",
+        "taxClass": "Daňová třída",
+        "taxRate": "Sazba daně",
+        "taxAmount": "Výpočet daně",
+        "amount": "Částka",
+        "grandTotalAmount": "Celková cena",
+        "dateInvoiced": "Datum vystavení",
+        "weight": "Hmotnost",
+        "amountConverted": "Částka (převedeno)",
+        "taxAmountConverted": "Částka daně (převedeno)",
+        "grandTotalAmountConverted": "Celková cena (převedeno)",
+        "taxAmountCurrency": "Částka daně v měně",
+        "amountCurrency": "Částka v měně",
+        "grandTotalAmountCurrency": "Celková cena v měně",
+        "currency": "Měna",
+        "attachments": "Přílohy",
+        "shippingCost": "Dopravné",
+        "shippingCostConverted": "Dopravné (převedeno)",
+        "shippingCostCurrency": "Dopravné v měně",
+        "shippingCostTaxRate": "Daňová sazba dopravy",
+        "purchaseOrder": "Nákupní objednávka"
+    },
+    "links": {
+        "items": "Položky",
+        "billingContact": "Kontakt",
+        "account": "Organizace",
+        "taxClass": "Daňová třída"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "In Review": "V procesu",
+            "Confirmed": "Potvrzeno",
+            "Paid": "Zaplaceno",
+            "Rejected": "Zamítnuto"
+        }
+    }
+}

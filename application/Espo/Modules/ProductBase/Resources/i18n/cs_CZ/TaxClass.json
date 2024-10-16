@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create TaxClass": "Vytvořit daňovou třídu"
+    },
+    "fields": {
+        "rate": "Sazba",
+        "name": "Název",
+        "description": "Popis"
+    }
+}

@@ -1,0 +1,119 @@
+{
+	"fields": {
+		"crmcontact": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"screenshot": {
+			"type": "wysiwyg",
+			"minHeight": 800,
+			"isCustom": true
+		},
+		"imporFromDB": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"callAgain": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"possibleSales": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"companyName": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"www": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"partner": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"lastName": {
+			"required": false,
+			"default": null,
+			"options": []
+		},
+		"contractors": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"importDisabled": true,
+			"noLoad": true,
+			"isCustom": true
+		},
+		"installations": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"sendMassEmails": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"endUser": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"category": {
+			"type": "enum",
+			"options": ["-", "A", "B", "C"],
+			"style": {
+				"-": null,
+				"A": null,
+				"B": null,
+				"C": null
+			},
+			"default": "-",
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": ["name", "emailAddress"],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"links": {
+		"orders": {
+			"type": "hasChildren",
+			"foreign": "parentSupplier",
+			"entity": "Order",
+			"isCustom": true
+		},
+		"contractors": {
+			"type": "hasMany",
+			"relationName": "contractorContact",
+			"foreign": "contacts",
+			"entity": "Contractor",
+			"audited": false,
+			"isCustom": true
+		},
+		"installations": {
+			"type": "hasMany",
+			"foreign": "contact",
+			"entity": "LogTime",
+			"audited": false,
+			"isCustom": true
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+    "labels": {
+        "Create PurchaseOrder": "Vytvořit nákupní objednávku",
+        "Tax Classes": "Daňové třídy",
+        "Templates": "Šablony",
+        "Items": "Položky",
+        "Totals": "Shrnutí"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Číslo objednávky",
+        "numberA": "Číslo objednávky (automatické)",
+        "account": "Organizace",
+        "billingAddress": "Fakturační adresa",
+        "shippingAddress": "Dodací adresa",
+        "billingContact": "Fakturační kontakt",
+        "shippingContact": "Kontakt pro doručení",
+        "taxClass": "Daňová třída",
+        "taxRate": "Sazba daně",
+        "taxAmount": "Výpočet daně",
+        "discountAmount": "Částka slevy",
+        "amount": "Částka",
+        "preDiscountedAmount": "Částka před slevou",
+        "grandTotalAmount": "Celková cena",
+        "weight": "Hmotnost",
+        "amountConverted": "Částka (převedeno)",
+        "taxAmountConverted": "Částka daně (převedeno)",
+        "shippingCostConverted": "Dopravné (převedeno)",
+        "preDiscountedAmountConverted": "Částka před slevou (převedeno)",
+        "discountAmountConverted": "Částka slevy (převedeno)",
+        "grandTotalAmountConverted": "Celková cena (převedeno)",
+        "shippingCostCurrency": "Dopravné v měně",
+        "taxAmountCurrency": "Částka daně v měně",
+        "discountAmountCurrency": "Částka slevy v měně",
+        "amountCurrency": "Částka v měně",
+        "preDiscountedAmountCurrency": "Částka před slevou v měně",
+        "grandTotalAmountCurrency": "Celková cena v měně",
+        "currency": "Měna",
+        "dateOrdered": "Datum objednávky",
+        "paymentMethod": "Způsob úhrady"
+    },
+    "links": {
+        "items": "Položky",
+        "billingContact": "Kontakt",
+        "shippingContact": "Konktakt pro doručení",
+        "account": "Organizace",
+        "taxClass": "Daňová třída",
+        "invoices": "Vydané faktury",
+        "quote": "Nabídka",
+        "supplierInvoices": "Přijaté faktury"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Ready": "Připraveno",
+            "Active": "Aktivní",
+            "Approved": "Schváleno",
+            "Completed": "Dokončeno",
+            "Rejected": "Zamítnuto",
+            "Canceled": "Zrušeno"
+        },
+        "paymentMethod": {
+            "bank": "Převodem",
+            "card": "Kartou",
+            "cash": "Hotově",
+            "cod": "Dobírka"
+        }
+    }
+}

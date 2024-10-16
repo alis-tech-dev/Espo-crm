@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "status": "Stav"
+    },
+    "links": {
+        "leads": "Potenciálové",
+        "contacts": "Kontakty"
+    },
+    "options": {
+        "status": {
+            "Draft": "Rozepsaný"
+        }
+    }
+}

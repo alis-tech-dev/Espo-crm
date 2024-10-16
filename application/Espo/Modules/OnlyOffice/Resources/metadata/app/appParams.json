@@ -1,0 +1,8 @@
+{
+    "onlyOfficeAllowedExtensions": {
+        "className": "Espo\\Modules\\OnlyOffice\\Classes\\AppParams\\OnlyOfficeAllowedExtensions"
+    },
+    "onlyOfficeScriptSrc": {
+        "className": "Espo\\Modules\\OnlyOffice\\Classes\\AppParams\\OnlyOfficeScriptSrc"
+    }
+}

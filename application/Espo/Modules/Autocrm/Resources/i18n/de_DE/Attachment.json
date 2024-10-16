@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "contents": "Inhalt",
+        "global": "weltweit",
+        "storageFilePath": "Speicherung Dateipfad"
+    },
+    "labels": {
+        "Create Attachment": "Anhang erstellen"
+    },
+    "links": {
+        "related": "zugehörig"
+    }
+}

@@ -1,0 +1,235 @@
+{
+	"fields": {
+		"name": {
+			"type": "varchar",
+			"required": true,
+			"trim": true
+		},
+		"status": {
+			"type": "enum",
+			"options": ["Planned", "Held", "Not Held"],
+			"default": "Planned",
+			"style": {
+				"Held": "success"
+			},
+			"audited": true
+		},
+		"dateStart": {
+			"type": "datetimeOptional",
+			"notNull": false,
+			"view": "crm:views/meeting/fields/date-start",
+			"required": true,
+			"default": "javascript: return this.dateTime.getNow(1);",
+			"audited": true,
+			"minuteStep": 30
+		},
+		"dateEnd": {
+			"type": "datetimeOptional",
+			"notNull": false,
+			"view": "crm:views/meeting/fields/date-end",
+			"required": false,
+			"after": "dateStart",
+			"minuteStep": 30,
+			"suppressValidationList": ["required"]
+		},
+		"isAllDay": {
+			"type": "bool",
+			"readOnly": false,
+			"layoutListDisabled": true,
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true
+		},
+		"duration": {
+			"type": "duration",
+			"start": "dateStart",
+			"end": "dateEnd",
+			"options": [300, 600, 900, 1800, 2700, 3600, 7200],
+			"default": 300,
+			"notStorable": true,
+			"select": {
+				"select": "TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)"
+			},
+			"order": {
+				"order": [
+					["TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)", "{direction}"]
+				]
+			}
+		},
+		"parent": {
+			"type": "linkParent",
+			"entityList": ["Account", "Lead", "Contact", "Task"]
+		},
+		"description": {
+			"type": "text",
+			"seeMoreDisabled": true
+		},
+		"reminders": {
+			"type": "jsonArray",
+			"notStorable": true,
+			"view": "crm:views/meeting/fields/reminders",
+			"layoutListDisabled": true
+		},
+		"createdAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"modifiedAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"createdBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"modifiedBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"assignedUser": {
+			"type": "link",
+			"required": false,
+			"view": "views/fields/assigned-user"
+		},
+		"teams": {
+			"type": "linkMultiple",
+			"view": "views/fields/teams"
+		},
+		"task": {
+			"type": "link"
+		},
+		"account": {
+			"type": "link"
+		},
+		"hours": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"additionalCosts": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"transport": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"atWeekend": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"attachments": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"maxFileSize": 50,
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"transportHours": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"acc": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"cost": {
+			"type": "currency",
+			"isCustom": true
+		},
+		"businessProject": {
+			"type": "link"
+		},
+		"externist": {
+			"type": "varchar",
+			"options": ["Víťa", "Pavel", "Fany", "Patrik", "David"],
+			"isCustom": true
+		},
+		"contact": {
+			"type": "link"
+		}
+	},
+	"links": {
+		"parent": {
+			"type": "belongsToParent"
+		},
+		"createdBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"modifiedBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"assignedUser": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"teams": {
+			"type": "hasMany",
+			"entity": "Team",
+			"relationName": "EntityTeam",
+			"layoutRelationshipsDisabled": true
+		},
+		"task": {
+			"type": "belongsTo",
+			"foreign": "logTimes",
+			"entity": "Task",
+			"audited": false,
+			"isCustom": true
+		},
+		"account": {
+			"type": "belongsTo",
+			"foreign": "logTimes",
+			"entity": "Account",
+			"audited": false,
+			"isCustom": true
+		},
+		"attachments": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"contact": {
+			"type": "belongsTo",
+			"foreign": "installations",
+			"entity": "Contact",
+			"audited": false,
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"orderBy": "dateStart",
+		"order": "desc",
+		"textFilterFields": ["name"],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"indexes": {
+		"dateStartStatus": {
+			"columns": ["dateStart", "status"]
+		},
+		"dateStart": {
+			"columns": ["dateStart", "deleted"]
+		},
+		"status": {
+			"columns": ["status", "deleted"]
+		},
+		"assignedUser": {
+			"columns": ["assignedUserId", "deleted"]
+		},
+		"assignedUserStatus": {
+			"columns": ["assignedUserId", "status"]
+		}
+	}
+}

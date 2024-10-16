@@ -1,0 +1,45 @@
+[
+    {
+        "name": "type",
+        "label": "Type"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Purpose of Vacation"
+    },
+    {
+        "name": "dateStart",
+        "label": "Date Start"
+    },
+    {
+        "name": "dateEnd",
+        "label": "Date End"
+    },
+    {
+        "name": "numberOfDays",
+        "label": "Number of hours"
+    },
+    {
+        "name": "statusOfApproval",
+        "align": "left",
+        "label": "Approval Status",
+        "isEditable": true
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "humanResources",
+        "label": "Approved by"
+    },
+    {
+        "name": "assignedUser",
+        "label": "Requested by"
+    },
+    {
+        "name": "createdBy",
+        "label": "Created By"
+    }
+]

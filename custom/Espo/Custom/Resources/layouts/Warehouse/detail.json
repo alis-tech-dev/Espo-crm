@@ -1,0 +1,207 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "nameDE"
+                },
+                {
+                    "name": "productCode"
+                },
+                {
+                    "name": "productName"
+                }
+            ],
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "productCategory"
+                },
+                {
+                    "name": "alisId"
+                },
+                {
+                    "name": "category"
+                }
+            ],
+            [
+                {
+                    "name": "quantity"
+                },
+                {
+                    "name": "availableQuantity"
+                },
+                {
+                    "name": "availableBrno"
+                },
+                {
+                    "name": "availablePv"
+                }
+            ],
+            [
+                {
+                    "name": "position"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "image"
+                },
+                {
+                    "name": "ean"
+                },
+                {
+                    "name": "qrCode"
+                },
+                {
+                    "name": "unit"
+                }
+            ],
+            [
+                {
+                    "name": "isIgnored"
+                },
+                {
+                    "name": "isArchive"
+                },
+                {
+                    "name": "isSerialNumber"
+                },
+                {
+                    "name": "isInvisible"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "descriptionEn"
+                },
+                {
+                    "name": "descriptionDe"
+                },
+                {
+                    "name": "productType"
+                }
+            ],
+            [
+                {
+                    "name": "priceA"
+                },
+                {
+                    "name": "priceB"
+                },
+                {
+                    "name": "priceC"
+                },
+                {
+                    "name": "priceJesenoConverted"
+                }
+            ],
+            [
+                {
+                    "name": "componentsCost"
+                },
+                {
+                    "name": "costPrice"
+                },
+                {
+                    "name": "costPriceWithTax"
+                },
+                {
+                    "name": "taxRate"
+                }
+            ],
+            [
+                {
+                    "name": "salesPrice"
+                },
+                {
+                    "name": "salesPriceWithTax"
+                },
+                {
+                    "name": "priceEndUser"
+                },
+                {
+                    "name": "priceListPrice"
+                }
+            ],
+            [
+                {
+                    "name": "priceMargin"
+                },
+                {
+                    "name": "priceMarkup"
+                },
+                {
+                    "name": "priceDamage"
+                },
+                {
+                    "name": "priceRent"
+                }
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "attachments"
+                },
+                {
+                    "name": "addressCountry"
+                },
+                {
+                    "name": "addressCity"
+                }
+            ],
+            [
+                {
+                    "name": "addressState"
+                },
+                {
+                    "name": "addressStreet"
+                },
+                {
+                    "name": "addressPostalCode"
+                },
+                {
+                    "name": "minimumStockQuantity"
+                }
+            ],
+            [
+                {
+                    "name": "dismantlable"
+                },
+                {
+                    "name": "weight"
+                },
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "url"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Detaily",
+        "hidden": false,
+        "customLabel": "Detaily"
+    }
+]

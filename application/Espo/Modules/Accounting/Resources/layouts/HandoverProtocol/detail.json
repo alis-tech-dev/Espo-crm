@@ -1,0 +1,46 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number"
+                },
+                {
+                    "name": "printedDate"
+                }
+            ],
+            [
+                {
+                    "name": "contractorRegistrationNumber"
+                },
+                {
+                    "name": "customerRegistrationNumber"
+                }
+            ],
+            [
+                {
+                    "name": "senderAddress"
+                },
+                {
+                    "name": "recieverAddress"
+                }
+            ],
+            [
+                {
+                    "name": "hasDocumentation"
+                },
+                {
+                    "name": "document"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

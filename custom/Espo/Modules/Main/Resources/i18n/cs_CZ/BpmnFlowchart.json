@@ -1,0 +1,45 @@
+{
+	"elements": {
+		"eventEnd": "Koncová událost",
+		"eventEndError": "Chyba koncové události",
+		"callActivity": "Událost Volání",
+		"eventEndEscalation": "Eskalace koncové události",
+		"eventEndTerminate": "Ukončit koncovou událost",
+		"eventIntermediateConditionalBoundary": "Podmíněná střední událost (hranice)",
+		"eventIntermediateConditionalCatch": "Podmíněná mezilehlá událost (chytání)",
+		"eventIntermediateErrorBoundary": "Mezilehlá událost chyby (hranice)",
+		"eventIntermediateEscalationBoundary": "Mezistupeň eskalace (hranice)",
+		"eventIntermediateEscalationThrow": "Mezistupeň eskalace (házení)",
+		"eventStart": "Zahájit událost",
+		"eventStartConditional": "Podmíněná počáteční událost",
+		"eventStartConditionalEventSubProcess": "Podmíněná počáteční událost dílčího procesu",
+		"eventStartError": "Chyba při spuštění události",
+		"eventStartEscalation": "Eskalace počáteční události",
+		"eventStartTimer": "Časovač počáteční události",
+		"eventStartTimerEventSubProcess": "Počáteční událost časovače podprocesu",
+		"eventSubProcess": "Události dílčího procesu",
+		"flow": "Sekvenční flow",
+		"gatewayExclusive": "Brána založená na událostech",
+		"gatewayInclusive": "Inkluzivní brána",
+		"gatewayParallel": "Paralelní brána",
+		"subProcess": "Dílčí proces",
+		"task": "Úkol",
+		"taskBusinessRule": "Úkol obchodního pravidla",
+		"taskSendMessage": "Odeslat zprávu",
+		"taskUser": "Úkol uživatele"
+	},
+	"fields": {
+		"hasNoneStartEvent": "Má počáteční událost typu None",
+		"isActive": "Je aktivní",
+		"targetType": "Typ cílové entity"
+	},
+	"links": {
+		"processes": "Procesy",
+		"startWorkflows": "Spustit workflows"
+	},
+	"presetFilters": {
+		"active": "Aktivní",
+		"activeHasNoneStartEvent": "Aktivní s žádnou počáteční událostí",
+		"isManuallyStartable": "Ruční spuštění"
+	}
+}

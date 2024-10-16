@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "mattermostToken": "Mattermost Token",
+        "mattermostSyncEnabled": "Synchronizovat s Mattermost"
+    },
+    "tooltips": {
+        "mattermostSyncEnabled": "Synchronizovat uživatele s Mattermost. (Funguje, pokud je povolena a nakonfigurována Mattermost integrace)"
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "controllers": "mattermost:controllers/chat",
+    "iconClass": "far fa-comment"
+}

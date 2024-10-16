@@ -1,0 +1,66 @@
+{
+	"fields": {
+		"duplicateCount": "Duplicitní počet",
+		"importedCount": "Importovaný počet",
+		"updatedCount": "Aktualizovaný počet"
+	},
+	"labels": {
+		"Create and Update": "Vytvořit a aktualizovat",
+		"Create Only": "Pouze vytvořit",
+		"Currency": "Měna",
+		"Date Format": "Formát datumu",
+		"Decimal Mark": "Desetinná značka",
+		"Double Quote": "Dvojitá nabídka",
+		"Duplicates": "Duplicity",
+		"Entity Type": "Typ entitiy",
+		"Field": "Pole",
+		"Field Delimiter": "Oddělovač pole",
+		"File (CSV)": "Soubor (CSV)",
+		"First Row Value": "Hodnota prvního řádku",
+		"Header Row": "Řádek záhlaví",
+		"Header Row Value": "Hodnota řádku záhlaví",
+		"Import Results": "Výsledky importu",
+		"Imported": "Importováno",
+		"New Import": "Nový import",
+		"Next": "Další",
+		"Person Name Format": "Formát jména osoby",
+		"Properties": "Vlastnosti",
+		"Preview": "Náhled",
+		"Remove Import Log": "Odebrat protokol importu",
+		"Set as Not Duplicate": "Nastavit jako neduplikovat",
+		"Silent Mode": "Tichý mód",
+		"Skip": "Přeskočit",
+		"Single Quote": "Jednotlivá nabídka",
+		"Skip searching for duplicates": "Přeskočit vyhledávání duplikátů",
+		"Step 1": "Krok 1",
+		"Step 2": "Krok 2",
+		"Text Qualifier": "Kvalifikátor textu",
+		"Time Format": "Formát času",
+		"Timezone": "Časové pásmo",
+		"Update Only": "Pouze aktualizovat",
+		"What to do?": "Co dělat?",
+		"What to Import?": "Co importovat?"
+	},
+	"messages": {
+		"confirmRemoveDuplicates": "Tím trvale odstraníte všechny importované záznamy, které byly rozpoznány jako duplikáty. Jsi si jistá?",
+		"confirmRemoveImportLog": "Tím odstraníte protokol importu. Všechny importované záznamy budou uchovány. Nebudete moci vrátit výsledky importu. Jste si jistí?",
+		"confirmRevert": "Tímto trvale odstraníte všechny importované záznamy. Jste si jistí?",
+		"inIdle": "Provádět v nečinnosti (pro velká data; přes cron)",
+		"removeDuplicates": "Tím trvale odstraníte všechny importované záznamy, které byly rozpoznány jako duplikáty.",
+		"removeImportLog": "Tím odstraníte protokol importu. Všechny importované záznamy budou uchovány. Použijte jej, pokud jste si jisti, že import je v pořádku.",
+		"revert": "Tímto trvale odstraníte všechny importované záznamy."
+	},
+	"options": {
+		"status": {
+			"Failed": "Selhalo",
+			"In Process": "V procesu",
+			"Complete": "Kompletní"
+		}
+	},
+	"strings": {
+		"saveAsDefault": "Uložit jako výchozí"
+	},
+	"tooltips": {
+		"silentMode": "Většina skriptů po uložení bude přeskočena, záznamy ve streamu nebudou vytvořeny. Import bude probíhat rychleji."
+	}
+}

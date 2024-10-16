@@ -1,0 +1,22 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "salesOrder1"
+                },
+                {
+                    "name": "warehouseItem1"
+                },
+                {
+                    "name": "quantity"
+                },
+                {
+                    "name": "stockLocation"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

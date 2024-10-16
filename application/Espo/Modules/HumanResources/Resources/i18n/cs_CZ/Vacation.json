@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "Create Vacation": "Vytvořit Dovolenou"
+    },
+    "fields": {
+        "vacationRequests": "Žádosti o dovolenou",
+        "humanResource": "HR",
+        "dateStart": "Datum zahájení",
+        "dateEnd": "Datum ukončení"
+    },
+    "links": {
+        "vacationRequests": "Žádosti o dovolenou",
+        "humanResource": "HR"
+    }
+}

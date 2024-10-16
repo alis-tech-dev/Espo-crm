@@ -1,0 +1,8 @@
+{
+    "massUpdateActionList": [
+        "__APPEND__",
+        "update",
+        "increase",
+        "multiply"
+    ]
+}

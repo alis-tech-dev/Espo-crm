@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "document": "Document",
+        "number": "Number",
+        "issueDate": "Issue Date",
+        "recieverAddress": "Reciever Address",
+        "recieverAddressStreet": "Reciever Street",
+        "recieverAddressCity": "Reciever City",
+        "recieverAddressState": "Reciever State",
+        "recieverAddressCountry": "Reciever Country",
+        "recieverAddressPostalCode": "Reciever Postal Code",
+        "recieverAddressMap": "Reciever Map",
+        "invoice": "Invoice",
+        "supplierInvoice": "Supplier Invoice"
+    },
+    "links": {
+        "document": "Document",
+        "invoice": "Invoice",
+        "supplierInvoice": "Supplier Invoice"
+    },
+    "labels": {
+        "Create DeliveryNote": "Create Delivery Note"
+    }
+}

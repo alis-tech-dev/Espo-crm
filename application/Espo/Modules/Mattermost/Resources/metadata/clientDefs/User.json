@@ -1,0 +1,18 @@
+{
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Force Mattermost Sync",
+            "name": "mattermostSync",
+            "action": "mattermostSync",
+            "data": {
+                "handler": "mattermost:handlers/action/user/mattermost-sync"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ],
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "mattermost:handlers/dynamic/user/enable-sync"
+    ]
+}

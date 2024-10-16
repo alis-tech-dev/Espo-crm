@@ -1,0 +1,7 @@
+{
+   "fields":{
+      "subscription":"Subscription",
+      "user":"User",
+      "createdAt":"Created At"
+   }
+}

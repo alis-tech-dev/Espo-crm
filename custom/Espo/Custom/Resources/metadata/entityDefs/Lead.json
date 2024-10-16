@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "L{YY}{number}",
+            "nextNumber": 8,
+            "padLength": 4,
+            "reset": "Never",
+            "isCustom": true
+        }
+    }
+}

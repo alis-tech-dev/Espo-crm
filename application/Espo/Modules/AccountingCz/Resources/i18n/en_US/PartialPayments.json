@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "invoice": "Invoice",
+        "proformaInvoice": "Proforma Invoice",
+        "amount": "Amount",
+        "amountCurrency": "Amount (Currency)",
+        "amountConverted": "Amount (Converted)",
+        "date": "Date of payment"
+    },
+    "links": {
+        "invoice": "Invoice",
+        "proformaInvoice": "Proforma Invoice"
+    },
+    "labels": {
+        "Create PartialPayments": "Create PartialPayments"
+    }
+}

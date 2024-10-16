@@ -1,0 +1,15 @@
+{
+    "relationshipPanels": {
+        "vacationRequests": {
+            "layout": null
+        },
+        "users": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-user-friends",
+    "isWide": false,
+    "gridViewMode": false
+}

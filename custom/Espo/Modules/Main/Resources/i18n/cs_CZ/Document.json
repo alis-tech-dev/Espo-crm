@@ -1,0 +1,32 @@
+{
+	"links": {
+		"leads": "Potenciálové",
+		"contacts": "Kontakty",
+		"product": "Produkt",
+		"quote": "Nabídka",
+		"accounts1": "Accounts1",
+		"account": "Account",
+		"businessProjects": "Zakázky",
+		"businessProject": "Business Project",
+		"components": "Components"
+	},
+	"options": {
+		"status": {
+			"Active": "Aktivní",
+			"Draft": "Rozepsaný",
+			"Expired": "Expirovaný",
+			"Canceled": "Zrušený"
+		}
+	},
+	"fields": {
+		"status": "Stav",
+		"product": "Produkt",
+		"obrazekDokumentu": "Obrázek",
+		"quote": "Nabídka",
+		"accounts1": "Accounts1",
+		"account": "Account",
+		"businessProjects": "Zakázky",
+		"businessProject": "Business Project",
+		"components": "Components"
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "quotes": "Nabídky",
+        "quotes1": "Quotes1",
+        "salesOrder": "Sales Order",
+        "salesOrders": "Sales Orders"
+    },
+    "links": {
+        "quotes": "Nabídky",
+        "quotes1": "Quotes1",
+        "salesOrder": "Sales Order",
+        "salesOrders": "Sales Orders"
+    }
+}

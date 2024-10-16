@@ -1,0 +1,13 @@
+{
+	"fields": {
+		"productionModelOperation": "Operace",
+		"product": "Produkt",
+		"quantity": "Množství",
+		"independent": "Nezávislé na vyráběném množství",
+		"quantityWithdrawnPlanned": "Vyskladněno plánováno",
+		"quantityWithdrawnActual": "Vyskladněno skutečně"
+	},
+	"labels": {
+		"Create ProductionModelItem": "Vytvořit položku technologického postupu"
+	}
+}

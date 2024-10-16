@@ -1,0 +1,183 @@
+{
+	"fields": {
+		"dic": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"rows": 1,
+			"tooltip": true,
+			"isCustom": true
+		},
+		"logTimes": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"issupplier": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"iscustomer": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"spolecnosti": {
+			"type": "multiEnum",
+			"storeArrayValues": true,
+			"required": false,
+			"options": ["Alis Tech s.r.o.,", "Aledo s.r.o.", "Aledo SK s.r.o."],
+			"style": {
+				"Alis Tech s.r.o.,": null,
+				"Aledo s.r.o.": null,
+				"Aledo SK s.r.o.": null
+			},
+			"isCustom": true
+		},
+		"partner": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"firstname": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"lastname": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"idph": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"category": {
+			"type": "enum",
+			"options": ["-", "A", "B", "C"],
+			"style": {
+				"-": null,
+				"A": null,
+				"B": null,
+				"C": null
+			},
+			"default": "-",
+			"isCustom": true
+		},
+		"language": {
+			"type": "enum",
+			"options": ["EN", "CZ"],
+			"style": {
+				"EN": null,
+				"CZ": null
+			},
+			"default": "EN",
+			"isCustom": true
+		},
+		"enduser": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"qualityReports": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": false,
+			"layoutMassUpdateDisabled": false,
+			"noLoad": false,
+			"importDisabled": false,
+			"isCustom": true
+		},
+		"defaultPriceList": {
+			"type": "enum",
+			"options": ["C", "B", "A", "E", "-"],
+			"style": {
+				"C": null,
+				"B": null,
+				"A": null,
+				"E": null,
+				"-": null
+			},
+			"default": "-",
+			"isCustom": true
+		},
+		"vizualization": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"shield": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"rtls": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"camerasystem": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"priceType": {
+			"type": "enum",
+			"options": ["", "A", "B", "C", "Jeseno"],
+			"default": "",
+			"isCustom": true
+		}
+	},
+	"links": {
+		"invoices": {
+			"audited": true
+		},
+		"logTimes": {
+			"type": "hasMany",
+			"foreign": "account",
+			"entity": "LogTime",
+			"audited": false,
+			"isCustom": true
+		},
+		"orders": {
+			"type": "hasChildren",
+			"foreign": "parentSupplier",
+			"entity": "Order",
+			"isCustom": true
+		},
+		"productsSupplier": {
+			"type": "hasChildren",
+			"foreign": "parentSupplier",
+			"entity": "Product",
+			"isCustom": true
+		},
+		"opportunities": {
+			"audited": false
+		},
+		"quotes": {
+			"audited": false
+		},
+		"qualityReports": {
+			"type": "hasMany",
+			"foreign": "account",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": ["name", "emailAddress"],
+		"fullTextSearch": false,
+		"countDisabled": true
+	}
+}

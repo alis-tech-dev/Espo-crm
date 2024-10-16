@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "Create WarehouseValueRecord": "Lagerwert erstellen" 
+    },
+    "fields": {
+        "warehouse": "Lager",
+        "value": "Wert",
+        "valueCurrency": "Wert (Währung)",
+        "valueConverted": "Wert (umgerechnet)"
+    },
+    "links": {
+        "warehouse": "Lager"
+    }
+}

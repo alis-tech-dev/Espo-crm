@@ -1,0 +1,133 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "salesOrder"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "parentProductionOrder"
+                }
+            ],
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "productionModel"
+                }
+            ],
+            [
+                {
+                    "name": "quantityPlanned"
+                },
+                {
+                    "name": "quantityProduced"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "warehouse"
+                }
+            ],
+            [
+                {
+                    "name": "attachments"
+                }
+            ],
+            [
+                {
+                    "name": "tree",
+                    "customLabel": "Výrobní strom"
+                }
+            ],
+            [
+                {
+                    "name": "productWarehouse"
+                },
+                {
+                    "name": "materialWarehouse"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "forceMaterialWarehouse"
+                }
+            ],
+            [
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Přehled"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "childProductionOrders"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billOfMaterials"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Materiálová rozpiska",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "operations"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Operace",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "progress"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

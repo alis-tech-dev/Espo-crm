@@ -1,0 +1,62 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "quantity"
+				},
+				{
+					"name": "useCase"
+				}
+			],
+			[
+				{
+					"name": "product"
+				},
+				{
+					"name": "account"
+				}
+			],
+			[
+				{
+					"name": "listPrice"
+				},
+				false
+			],
+			[
+				{
+					"name": "unitPrice"
+				},
+				{
+					"name": "discount"
+				}
+			],
+			[
+				{
+					"name": "amount"
+				},
+				false
+			],
+			[
+				{
+					"name": "unitWeight"
+				},
+				{
+					"name": "weight"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

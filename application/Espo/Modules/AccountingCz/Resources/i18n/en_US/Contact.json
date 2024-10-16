@@ -1,0 +1,6 @@
+{
+    "fields": {
+        "vatId": "VAT number",
+        "sicCode": "Company registration number"
+    }
+}

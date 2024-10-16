@@ -1,0 +1,28 @@
+{
+    "labels": {
+        "Create ProductDatabase": "Vytvořit Databáze produktů"
+    },
+    "fields": {
+        "productDatabaseParent": "Dodavatel",
+        "productDatabases": "Databáze produktů",
+        "account": "Dodavatel",
+        "salesOrder": "Zakázka",
+        "product": "Komponent",
+        "firmVersion": "Verze firweru"
+    },
+    "links": {
+        "productDatabaseParent": "Dodavatel",
+        "productDatabases": "Databáze produktů",
+        "account": "Dodavatel",
+        "salesOrder": "Zakázka",
+        "product": "Komponent"
+    },
+    "options": {
+        "firmVersion": {
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "": "1"
+        }
+    }
+}

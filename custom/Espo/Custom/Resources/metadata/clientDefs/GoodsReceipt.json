@@ -1,0 +1,15 @@
+{
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        },
+        "product": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-truck-loading",
+    "isWide": true,
+    "gridViewMode": false
+}

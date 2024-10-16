@@ -1,0 +1,11 @@
+{
+    "scheduler": {
+        "disabled": true
+    },
+    "_delimiter_": {
+        "disabled": true
+    },
+    "vacationRequests": {
+        "index": 0
+    }
+}

@@ -1,0 +1,13 @@
+[
+    "status",
+    "account",
+    "assignedUser",
+    "teams",
+    "createdAt",
+    "createdBy",
+    "dateOrdered",
+    "paymentMethod",
+    "number",
+    "amountConverted",
+    "grandTotalAmountConverted"
+]

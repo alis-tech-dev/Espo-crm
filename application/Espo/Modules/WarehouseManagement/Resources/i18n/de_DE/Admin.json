@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "Warehouse Management Settings": "Einstellungen für Lagerverwaltung"
+    },
+    "layouts": {
+        "listGoodsReceiptSimple": "Wareneingang (Einfaches Lager)",
+        "listGoodsReceiptPositional": "Wareneingang (Positionales Lager)",
+        "listGoodsIssueSimple": "Warenausgabe (Einfaches Lager)",
+        "listGoodsIssuePositional": "Warenausgabe (Positionales Lager)",
+        "listGoodsIssueSelectedSimple": "Warenausgabe - Ausgewählte Positionen (Einfaches Lager)",
+        "listGoodsIssueSelectedPositional": "Warenausgabe - Ausgewählte Positionen (Positionales Lager)",
+        "listWarehouseTransferSimpleSimple": "Lagertransfer (Einfach -> Einfach)",
+        "listWarehouseTransferSimplePositional": "Lagertransfer (Einfach -> Positional)",
+        "listWarehouseTransferPositionalSimple": "Lagertransfer (Positional -> Einfach)",
+        "listWarehouseTransferPositionalPositional": "Lagertransfer (Positional -> Positional)"
+    },
+    "descriptions": {
+        "warehouseManagement": "Konfigurationsparameter für die Lagerverwaltungs-Erweiterung"
+    }
+}

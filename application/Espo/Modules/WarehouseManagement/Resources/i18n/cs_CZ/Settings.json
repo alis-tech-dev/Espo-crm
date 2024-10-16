@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "warehouseGroupByFieldList": "Seskupovat položky na základě",
+        "updateProductCostPriceWithAveragePrice": "Průběžně aktualizovat nákupní cenu průměrnou prodejní cenou",
+        "warehouseListToSaveValueOf": "Ukládat hodnotu u těchto skladů",
+        "warehouseRunningOutMultiplier": "Násobek pro upozornění na nedostatek zásob"
+    }
+}
+

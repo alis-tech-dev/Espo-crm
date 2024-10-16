@@ -1,0 +1,36 @@
+{
+    "labels": {
+        "Create VacationRequest": "Create Vacation Request",
+        "Approve Vacation Request": "Approve Vacation Request"
+    },
+    "fields": {
+        "from": "From",
+        "to": "To",
+        "numberOfDays": "Number of Days",
+        "numberOfDaysLeft": "Number of Remaining Vacation Days for the User After Vacation",
+        "numberOfDaysLeftBefore": "Number of Remaining Vacation Days for the User Before Vacation",
+        "humanResource": "HR",
+        "statusOfApproval": "Approval Status",
+        "vacationRequestApprovalItems": "Approval Process",
+        "name": "Purpose of Vacation",
+        "vacation": "Vacation"
+    },
+    "options": {
+        "statusOfApproval": {
+            "": "Awaiting Approval",
+            "Approved": "Approved",
+            "Rejected": "Rejected",
+            "Returned": "Returned for Completion"
+        }
+
+    },
+    "tooltips": {
+        "numberOfDaysLeft": "Data is taken at the moment of request creation",
+        "numberOfDaysLeftBefore": "Data is taken at the moment of request creation"
+    },
+    "links": {
+        "humanResource": "HR",
+        "vacationRequestApprovalItems": "Approval Process",
+        "vacation": "Vacation"
+    }
+}

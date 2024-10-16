@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "warehouse": "Lager",
+        "items": "Artikel",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Prozess",
+        "Create GoodsReceipt": "Wareneingang erstellen",
+        "Items": "Artikel",
+        "Create Warehouse Transfer": "Lagerübertragung erstellen",
+        "Goods Receipts": "Wareneingänge"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Processing": "In Bearbeitung",
+            "Received": "Empfangen",
+            "Canceled": "Storniert"
+        }
+    }
+}

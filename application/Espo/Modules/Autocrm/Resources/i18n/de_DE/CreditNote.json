@@ -1,0 +1,91 @@
+{
+    "fields": {
+        "paymentMethod": "Zahlungsmethode",
+        "constantSymbol": "Konstantes Symbol",
+        "account": "Konto",
+        "action": "Aktion",
+        "amount": "Betrag",
+        "amountConverted": "Betrag umgerechnet",
+        "amountCurrency": "Betrag Währung",
+        "billingAddress": "Rechnungs Adresse",
+        "billingAddressMap": "Rechnungs Adresse",
+        "billingContact": "Rechnungs Adresse",
+        "dateInvoiced": "Rechnungsdatum",
+        "discountAmount": "Rabatt Betrag",
+        "discountAmountConverted": "Rabatt Betrag umgerechnet",
+        "discountAmountCurrency": "Rabatt Betrag Währung",
+        "dueDate": "Fälligkeitsdatum",
+        "duzp": "DUZP",
+        "fixDescription": "Beschreibung",
+        "fixForInvoiceNumber": "Rechnungsnummer",
+        "grandTotalAmount": "Gesamtbetrag",
+        "grandTotalAmountConverted": "Gesamtbetrag umgerechnet",
+        "grandTotalAmountCurrency": "Gesamtbetrag Währung",
+        "invoice": "Rechnung",
+        "itemList": "Artikelliste",
+        "note": "Notiz",
+        "number": "Nummer",
+        "numberA": "Nummer autom.",
+        "opportunity": "Möglichkeit",
+        "preDiscountedAmount": "vor Abzug des Betrags",
+        "preDiscountedAmountConverted": "vor Abzug des Betrags umgerechnet",
+        "preDiscountedAmountCurrency": "vor Abzug des Betrags Währung",
+        "quote": "Angebot",
+        "salesOrder": "Kundenauftrag",
+        "shippingAddress": "Lieferadresse",
+        "shippingContact": "Lieferadresse",
+        "shippingCost": "Versandkosten",
+        "shippingCostConverted": "Versandkosten umgerechnet",
+        "shippingCostCurrency": "Versandkosten Währung",
+        "shippingProvider": "Versanddienstleister",
+        "status": "Status",
+        "tax": "MwSt.",
+        "taxAmount": "MwSt. Betrag",
+        "taxAmountConverted": "MwSt. Betrag umgerechnet",
+        "taxAmountCurrency": "MwSt. Betrag Währung",
+        "taxRate": "Steuersatz",
+        "textBeforeItems": "Text vor Artikeln",
+        "weight": "Gewicht"
+    },
+    "options": {
+        "paymentMethod": {
+            "Převod": "Überweisung",
+            "Hotově": "Barzahlung",
+            "Karta": "Karte",
+            "Dobírka": "Zahlung per Nachname",
+            "Zápočet": "Kredit"
+        },
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Durchsicht",
+            "Presented": "Uvedený",
+            "Approved": "Schválený",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Abgebrochen",
+            "Confirmed": "Genehmigt",
+            "Paid": "Bezahlt"
+        }
+    },
+    "labels": {
+        "Create CreditNote": "Gutschrift erstellen",
+        "Taxes": "Steuern",
+        "Shipping Providers": "Anbieter",
+        "Add Item": "Artikel / Posten hinzufügen",
+        "Templates": "Vorlagen",
+        "Items": "Artikel / Posten"
+    },
+    "links": {
+        "billingContact": "Rechnungskontakt",
+        "invoice": "Rechnung",
+        "items": "Artikel",
+        "quote": "Angebot",
+        "salesOrder": "Kundenauftrag",
+        "shippingProvider": "Versanddienstleister",
+        "shippingContact": "Versand Kontakt",
+        "tax": "MwSt."
+    },
+    "presetFilters": {
+        "actual": "Aktuell",
+        "approved": "Genehmigt"
+    }
+}

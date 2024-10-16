@@ -1,0 +1,15 @@
+{
+    "additionalLayouts": {
+        "listItem": {
+            "type": "list"
+        }
+    },
+    "controller": "controllers/record",
+    "boolFilterList": ["onlyMy"],
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": null
+}
+

@@ -1,0 +1,6 @@
+{
+    "tooltips": {
+        "format": "Verwenden Sie die folgenden Platzhalter:\n\n**{number}** - Automatisch erhöhte Zahl\n**{YYYY}** - Aktuelles Jahr (4 Ziffern)\n**{YY}** - Aktuelles Jahr (2 Ziffern)\n**{MM}** - Aktueller Monat (2 Ziffern)\n**{DD}** - Aktueller Tag (2 Ziffern)",
+        "validateExistence": "Prüfen Sie die Existenz der USt-IdNr. mit dem VIES-Service"
+    }
+}

@@ -1,0 +1,506 @@
+{
+    "fields": {
+        "status": {
+            "options": [
+                "Draft",
+                "Not Started",
+                "In Production",
+                "Ready To Go",
+                "To Install",
+                "OnHold",
+                "Invoice",
+                "Finished",
+                "Returned",
+                "Zapujcka",
+                "Cancelled"
+            ],
+            "style": {
+                "Draft": "warning",
+                "Not Started": "info",
+                "In Production": "primary",
+                "Ready To Go": "success",
+                "To Install": null,
+                "OnHold": "warning",
+                "Invoice": null,
+                "Finished": "success",
+                "Returned": "danger",
+                "Zapujcka": null,
+                "Cancelled": null
+            },
+            "default": "Draft"
+        },
+        "salesOrderSummaryItems": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "opportunity": {
+            "type": "link",
+            "defaultSelectFilters": []
+        },
+        "number": {
+            "maxLength": 100,
+            "options": [],
+            "readOnly": true
+        },
+        "dateOrdered": {
+            "minuteStep": 30
+        },
+        "documents": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "supplierInvoices": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "supplierOrders": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "productDatabases": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "reminder": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "enduser": {
+            "type": "varchar",
+            "options": [],
+            "isCustom": true
+        },
+        "intertninazev": {
+            "type": "varchar",
+            "options": [],
+            "isCustom": true
+        },
+        "name": {
+            "maxLength": 255,
+            "options": []
+        },
+        "visualization": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "crane": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "shield": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "attachments": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "orderBanner": {
+            "default": null
+        },
+        "account": {
+            "defaultSelectFilters": []
+        },
+        "numberA": {
+            "format": "Z{YYYY}-{number}",
+            "nextNumber": 4064
+        },
+        "internDeadline": {
+            "notNull": false,
+            "type": "date",
+            "default": "javascript: return this.dateTime.getDateShiftedFromToday(2, 'months');",
+            "useNumericFormat": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "quotes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "order": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "items",
+            "field": "name",
+            "isCustom": true
+        },
+        "items": {
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": []
+        },
+        "complexity": {
+            "type": "enum",
+            "options": [
+                "Easy",
+                "Hard"
+            ],
+            "default": "Easy",
+            "style": {
+                "Easy": "success",
+                "Hard": "danger"
+            },
+            "isCustom": true
+        },
+        "priceList1": {
+            "type": "link",
+            "required": true,
+            "defaultSelectFilters": []
+        },
+        "typePrice": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "priceList1",
+            "field": "name",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "priorita": {
+            "type": "enum",
+            "options": [
+                "-",
+                "High",
+                "Medium",
+                "Low"
+            ],
+            "default": "-",
+            "style": {
+                "-": null,
+                "High": "warning",
+                "Medium": "primary",
+                "Low": "success"
+            },
+            "isCustom": true
+        },
+        "predavaciProtokol": {
+            "copyAttachmentsButton": false,
+            "copyAttachmentsEntityList": []
+        },
+        "testAmount": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "quotes",
+            "field": "grandTotalAmountCurrency",
+            "displayAsLinks": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "salesOrderItems": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "saleSorderReclamation": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "salesOrderReclamation",
+            "field": "name",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "startedProduction": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "productionOrders": {
+            "createAsModal": true,
+            "checkboxesEnabled": true,
+            "recordListEnabled": true,
+            "recordListOrderByField": null,
+            "createButton": true,
+            "recordListLayout": "listSmall",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": []
+        },
+        "accommodation": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "accomodationCost": {
+            "type": "currency",
+            "onlyDefaultCurrency": true,
+            "isCustom": true
+        },
+        "warehouseItems": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "warehouseItem": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "warehouseItems",
+            "field": "serialNumber",
+            "displayAsList": true,
+            "displayAsLinks": true,
+            "isCustom": true
+        },
+        "warehouseItems1": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "warehouseItemsList": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "view": "autocrm:views/fields/foreign-multiple",
+            "link": "warehouseItems1",
+            "field": "serialNumber",
+            "displayAsList": true,
+            "displayAsLinks": true,
+            "isCustom": true
+        },
+        "wiso": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "wisos": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "itemsList": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "wisos",
+            "field": "itemName",
+            "displayAsList": true,
+            "displayAsLinks": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "reservedQuantity": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "wisos",
+            "field": "quantity",
+            "displayAsList": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "reservQuantity": {
+            "readOnly": true,
+            "type": "foreignMultiple",
+            "link": "warehouseItems",
+            "field": "quantity",
+            "displayAsList": true,
+            "view": "autocrm:views/fields/foreign-multiple",
+            "isCustom": true
+        },
+        "productionStatus": {
+            "tooltip": true
+        }
+    },
+    "links": {
+        "salesOrderSummaryItems": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "SalesOrderSummaryItem",
+            "audited": false,
+            "isCustom": true
+        },
+        "opportunity": {
+            "type": "belongsTo",
+            "foreign": "salesOrders",
+            "entity": "Opportunity",
+            "audited": false,
+            "isCustom": true
+        },
+        "documents": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "Document",
+            "audited": false,
+            "isCustom": true
+        },
+        "supplierInvoices": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "SupplierInvoice",
+            "audited": false,
+            "isCustom": true
+        },
+        "supplierOrders": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "SupplierOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "productDatabases": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "ProductDatabase",
+            "audited": false,
+            "isCustom": true
+        },
+        "attachments": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "quotes": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        },
+        "priceList1": {
+            "type": "belongsTo",
+            "foreign": "salesOrders",
+            "entity": "PriceList",
+            "audited": false,
+            "isCustom": true
+        },
+        "predavaciProtokol": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "salesOrderItems": {
+            "type": "hasMany",
+            "foreign": "salesOrder12",
+            "entity": "SalesOrderItem",
+            "audited": false,
+            "isCustom": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "Task",
+            "isCustom": true
+        },
+        "complaintBooks": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "ComplaintBook",
+            "isCustom": true
+        },
+        "warehouseItems": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "WarehouseItem",
+            "audited": false,
+            "isCustom": true
+        },
+        "warehouseItems1": {
+            "type": "hasMany",
+            "relationName": "warehouseItemSalesOrder",
+            "foreign": "salesOrders",
+            "entity": "WarehouseItem",
+            "audited": false,
+            "isCustom": true
+        },
+        "wiso": {
+            "type": "hasOne",
+            "foreign": "salesOrder",
+            "entity": "Wiso",
+            "isCustom": true
+        },
+        "wisos": {
+            "type": "hasMany",
+            "foreign": "salesOrder1",
+            "entity": "Wiso",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number",
+            "id",
+            "description",
+            "enduser"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

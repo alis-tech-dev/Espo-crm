@@ -1,0 +1,32 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting-cz:acl/credit-note-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Issued Credit Notes",
+                    "link": "#CreditNote",
+                    "acl": "read",
+                    "aclScope": "CreditNote"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        }
+    }
+}

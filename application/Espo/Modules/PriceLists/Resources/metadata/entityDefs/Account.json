@@ -1,0 +1,15 @@
+{
+	"fields": {
+		"priceLists": {
+			"type": "linkMultiple"
+		}
+	},
+	"links": {
+		"priceLists": {
+			"type": "hasMany",
+			"entity": "PriceList",
+			"relationName": "PriceListAccount",
+			"foreign": "accounts"
+		}
+	}
+}

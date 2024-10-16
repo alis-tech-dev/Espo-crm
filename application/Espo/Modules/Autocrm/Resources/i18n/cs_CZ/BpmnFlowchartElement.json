@@ -1,0 +1,111 @@
+{
+    "fields": {
+        "timer": "Parametry časovače",
+        "defaultFlowId": "Výchozí Flow",
+        "from": "Od/z",
+        "to": "Komu/na",
+        "replyTo": "Odpovědět",
+        "fromEmailAddress": "Z e-mailové adresy",
+        "toEmailAddress": "Na emailovou adresu",
+        "replyToEmailAddress": "Odpovědět na emailovou adresu",
+        "toSpecifiedTeams": "Týmům",
+        "toSpecifiedUsers": "Uživatelům",
+        "toSpecifiedContacts": "Kontaktům",
+        "emailTemplate": "Šablona e-mailu",
+        "doNotStore": "Neukládat odeslané e-maily",
+        "actions": "Akce",
+        "formula": "Vzorec (script)",
+        "actionType": "Typ akcí",
+        "targetUser": "Cílový uživatel",
+        "assignmentType": "Úkol",
+        "targetTeam": "Cílový tým",
+        "targetUserPosition": "Cílová pozice uživatele",
+        "startDirection": "Začít směrem",
+        "targetReport": "Cílový report",
+        "scheduling": "Plánování",
+        "messageType": "Typ zpráv",
+        "canBeFailed": "Může selhat",
+        "target": "Cíl",
+        "callableType": "Volatelný typ",
+        "errorCode": "Chybový kód",
+        "escalationCode": "Eskalační kód",
+        "cancelActivity": "Je přerušováno",
+        "isInterrupting": "Je přerušováno",
+        "targetType": "Typ cílové entity",
+        "flowchartVisualization": "Flowchart Vývojový diagram",
+        "flowchart": "Vývojový diagram",
+        "signal": "Signál",
+        "returnVariableList": "Vrátit proměnné",
+        "repliedTo": "Odpovězeno",
+        "relatedTo": "Související s",
+        "instructions": "Instrukce",
+        "conditionsFormula": "Vzorec podmínek",
+        "optOutLink": "Odkaz pro odhlášení"
+    },
+    "labels": {
+        "Conditions": "Podmínky",
+        "Actions": "Akce",
+        "Field": "Pole",
+        "Flows Conditions": "Podmínky Flows"
+    },
+    "tooltips": {
+        "taskSendMessageEmailAddress": "Dostupné zástupné symboly: \n * `{$$ variable}`",
+        "targetReport": "Záznamy ze seznamu reportu budou předány novému procesu.",
+        "target": "Vyberte, který záznam bude použit jako cíl.",
+        "userTaskName": "Název záznamu uživatelské úlohy, který bude vytvořen. \nDostupné zástupné symboly: * `{$ attribute}` * * {$$ variable} `",
+        "userTaskInstructions": "Pokyny pro uživatele. Markdown je podporován. \nDostupné zástupné symboly: * `{$ attribute}` * * {$$ variable} `",
+        "returnVariableList": "Určete proměnné vzorce, které se zkopírují z dílčího procesu do nadřazeného procesu, jakmile dílčí proces úspěšně skončí.",
+        "scheduling": "Crontabova notace. Definuje frekvenci. Časové pásmo UTC. \n* / 5 * * * * - každých 5 minut 0 * / 2 * * * - každé 2 hodiny 30 1 * * * - v 01:30 jednou denně 0 0 1 * * - první den v měsíci"
+    },
+    "options": {
+        "emailAddress": {
+            "system": "Systém",
+            "currentUser": "Aktuální uživatel",
+            "specifiedEmailAddress": "Zadaná e-mailová adresa",
+            "assignedUser": "Přiřazený uživatel",
+            "followers": "Následovníci",
+            "specifiedContacts": "Specifikované kontakty",
+            "specifiedUsers": "Zadaní uživatelé",
+            "specifiedTeams": "Specifikované týmy",
+            "followersExcludingAssignedUser": "Následovníci kromě přiděleného uživatele",
+            "processAssignedUser": "Uživatel přiřazený k procesu",
+            "targetEntity": "Cílový záznam",
+            "": "Žádný"
+        },
+        "triggerType": {
+            "afterRecordCreated": "Po vytvoření záznamu",
+            "afterRecordSaved": "Po uložení záznamu",
+            "sequential": "Sekvenční"
+        },
+        "timerShiftOperator": {
+            "minus": "mínus"
+        },
+        "timerShiftUnits": {
+            "minutes": "minuty",
+            "hours": "hodiny",
+            "days": "dny",
+            "months": "měsíce",
+            "seconds": "sekundy"
+        },
+        "timerBase": {
+            "moment": "Okamžik, kdy se událost spustila",
+            "formula": "Vypočteno podle vzorce"
+        },
+        "actionType": {
+            "Approve": "Schválit",
+            "Review": "Posoudit"
+        },
+        "assignmentType": {
+            "": "Žádný",
+            "processAssignedUser": "Uživatel přiřazený k procesu",
+            "specifiedUser": "Zadaný uživatel",
+            "rule:Least-Busy": "Nejméně zaneprázdněn"
+        },
+        "startDirection": {
+            "r": "Doprava",
+            "d": "Dolů",
+            "u": "Nahoru",
+            "l": "Doleva"
+        }
+    }
+}

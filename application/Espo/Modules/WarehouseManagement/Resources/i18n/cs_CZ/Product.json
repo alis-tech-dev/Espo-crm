@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "totalReservedQuantity": "Celkové rezervované množství",
+        "totalWarehouseQuantity": "Celkové množství na skladě",
+        "totalAvailableQuantity": "Celkové dostupné množství",
+        "averagePrice": "Průměrná cena zásob",
+        "totalPrice": "Celková cena zásob",
+        "ordered": "Objednáno"
+    },
+    "labels": {
+        "Stock Info": "Skladové zásoby"
+    },
+    "presetFilters": {
+        "stockable": "Naskladnitelné"
+    },
+    "options": {
+        "type": {
+            "Warehouse Item": "Skladová položka"
+        }
+    },
+    "tooltips": {
+        "type": "Na **skladové položky** se vztahuje skladové řízení",
+        "averagePrice": "Vážený průměr mezi všemi zásobami",
+        "totalPrice": "Celková cena zásob"
+    }
+}
+

@@ -1,0 +1,37 @@
+[
+	{
+		"name": "name",
+		"width": 12,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "account",
+		"width": 22,
+		"align": "left"
+	},
+	{
+		"name": "salesPerson",
+		"width": 10,
+		"align": "left"
+	},
+	{
+		"name": "createdAt",
+		"width": 7,
+		"align": "left"
+	},
+	{
+		"name": "amount",
+		"width": 10,
+		"align": "right"
+	},
+	{
+		"name": "stage",
+		"width": 10,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser",
+		"width": 12
+	}
+]

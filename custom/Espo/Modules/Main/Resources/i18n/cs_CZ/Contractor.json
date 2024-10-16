@@ -1,0 +1,30 @@
+{
+	"labels": {
+		"Create Contractor": "Vytvořit dodavatele"
+	},
+	"fields": {
+		"contractorItems": "Položky dodavatele",
+		"billingAddress": "Fakturační adresa",
+		"billingAddressStreet": "Fakturační adresa Ulice",
+		"billingAddressCity": "Fakturační adresa Město",
+		"billingAddressState": "Fakturační adresa Stát",
+		"billingAddressCountry": "Fakturační adresa Země",
+		"billingAddressPostalCode": "Fakturační adresa PSČ",
+		"billingAddressMap": "Fakturační adresa Mapa",
+		"contacts": "Kontakty",
+		"componentss": "Komponenty",
+		"web": "Web",
+		"productDatabase": "Product Database",
+		"productDatabase1": "Databáze produktů",
+		"productDatabases": "Datbáze produktů"
+	},
+	"links": {
+		"contractorItems": "Položky dodavatele",
+		"contacts": "Kontakty",
+		"componentss": "Komponenty",
+		"orders": "Objednávky",
+		"productDatabase": "Product Database",
+		"productDatabase1": "Databáze produktů",
+		"productDatabases": "Datbáze produktů"
+	}
+}

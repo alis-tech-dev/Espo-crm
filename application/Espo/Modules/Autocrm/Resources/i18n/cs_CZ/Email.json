@@ -1,0 +1,103 @@
+{
+	"fields": {
+		"status": "Stav",
+		"replyTo": "Odpovědět na",
+		"personStringData": "Osobní data",
+		"bodyPlain": "Tělo v textu",
+		"replied": "Odpovězeno",
+		"replies": "Odpovíd",
+		"isRead": "Je přečtený",
+		"isNotRead": "Není přečtený",
+		"isImportant": "Je důležitý",
+		"isReplied": "Je zodpovězený",
+		"isNotReplied": "Není odpovězeno",
+		"isUsers": "Je uživatelův",
+		"inTrash": "V koši",
+		"sentBy": "Odesláno",
+		"folder": "Adresář",
+		"inboundEmails": "Skupinové účty",
+		"emailAccounts": "Emailové účty",
+		"hasAttachment": "Má přílohy",
+		"assignedUsers": "Přiřazení uživatelé",
+		"ccEmailAddresses": "Kopie emailová adresa",
+		"bccEmailAddresses": "Skrytá kopie emailová adresa",
+		"messageId": "ID zprávy",
+		"messageIdInternal": "ID zprávy",
+		"folderId": "ID adresáře",
+		"fromName": "Jméno",
+		"fromString": "Jméno",
+		"fromAddress": "Adresa od",
+		"replyToAddress": "Adresa odpovědi",
+		"isSystem": "Je systémový",
+		"takenStatus": "Stav zpracování",
+		"tasks": "Úkoly"
+	},
+	"links": {
+		"replied": "Odpověď na",
+		"replies": "Odeslaná odpověď",
+		"inboundEmails": "Skupinové účty",
+		"emailAccounts": "Osobní účty",
+		"assignedUsers": "Přiřazení uživatelé",
+		"sentBy": "Odesláno od",
+		"attachments": "Přílohy",
+		"fromEmailAddress": "Adresa od",
+		"toEmailAddresses": "Na email",
+		"ccEmailAddresses": "Příjemce",
+		"bccEmailAddresses": "Příjemce na skrytou kopii",
+		"tasks": "Úkoly"
+	},
+	"options": {
+		"status": {
+			"Draft": "Rozepsané",
+			"Sending": "Odesílám",
+			"Sent": "Odesláno",
+			"Archived": "Archivováno",
+			"Failed": "Selhalo"
+		},
+		"takenStatus": {
+			"Accepted": "Přijatý",
+			"BeingHandled": "Vyřizuje se",
+			"Taken": "Zabraný",
+			"Handled": "Vyřízený"
+		}
+	},
+	"labels": {
+		"Compose": "Napsat",
+		"Inbound Emails": "Příchozí emaily",
+		"Email Templates": "Emailové templaty",
+		"Save Draft": "Uložit rozepsaný",
+		"Show Plain Text": "Zobrazit jako text",
+		"Mark as Important": "Označit jako důležité",
+		"Unmark Importance": "Není důležité",
+		"Move to Trash": "Přesunout do koše",
+		"Retrieve from Trash": "Vytáhnout z koše",
+		"Move to Folder": "Přesunout do složky",
+		"Filters": "Filtry",
+		"Folders": "Složky",
+		"No Subject": "Bez předmětu",
+		"View Users": "Zobrazit uživatele",
+		"Create Lead": "Vytvořit akvizici",
+		"Add to Contact": "Přidat ke kontaktu",
+		"Add to Lead": "Přidat k akvizici",
+		"View in Browser": "Zobrazit email v prohlížeči"
+	},
+	"messages": {
+		"sendConfirm": "Odeslat email?",
+		"removeSelectedRecordsConfirmation": "Jste si jisti, že chcete tyto emaly smazat?",
+		"removeRecordConfirmation": "Chcete smazat email?",
+		"confirmInsertTemplate": "Tělo zprávy zmizí. Jste si jisti, že chcete použít template?"
+	},
+	"presetFilters": {
+		"drafts": "Rozepsané",
+		"trash": "V koši",
+		"important": "Důležité"
+	},
+	"massActions": {
+		"markAsNotRead": "Označit jako nepřečtené",
+		"markAsImportant": "Označit jako důležité",
+		"markAsNotImportant": "Označit jako nedůležité",
+		"moveToTrash": "Přesunout do koše",
+		"moveToFolder": "Přesunout do adresáře",
+		"retrieveFromTrash": "Vytáhnout z koše"
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": null,
+    "isWide": false,
+    "gridViewMode": false,
+    "relationshipPanels": {
+        "warehouseItem": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        },
+        "warehouseItem1": {
+            "layout": null
+        },
+        "salesOrder1": {
+            "layout": null
+        }
+    }
+}

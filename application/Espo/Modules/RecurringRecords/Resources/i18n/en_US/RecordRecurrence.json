@@ -1,0 +1,92 @@
+{
+    "fields": {
+        "entityType": "Entity Type",
+        "scheduling": "Scheduling",
+        "infinite": "Infinite",
+        "until": "Recur until",
+        "generateInBatches": "Pre-generate in batches",
+        "generateInAdvance": "Pre-generate in advance for",
+        "status": "Status"
+    },
+    "labels": {
+        "viewMode": "view mode (click to toggle)",
+        "user-friendly": "User-friendly",
+        "advanced": "Advanced",
+        "Create RecordRecurrence": "Create Record Recurrence",
+        "Batching": "Batching",
+        "Recurrence": "Recurrence"
+    },
+    "cronLabels": {
+        "months": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "days": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "periods": [
+            "minute",
+            "hour",
+            "day",
+            "week",
+            "month",
+            "year"
+        ],
+        "unsupported": "Unsupported cron expression. Please use Advanced mode.",
+        "Weekdays": "Weekdays",
+        "Weekends": "Weekends",
+        "Every": "Every",
+        "on the": "on the",
+        "of": "of",
+        "minutes past the hour": "minutes past the hour",
+        "at": "at",
+        "st": "st",
+        "nd": "nd",
+        "rd": "rd",
+        "th": "th"
+    },
+    "options": {
+        "generateInAdvance": {
+            "1_day": "1 day",
+            "2_days": "2 days",
+            "1_week": "1 week",
+            "2_weeks": "2 weeks",
+            "1_month": "1 month",
+            "2_months": "2 months",
+            "3_months": "3 months",
+            "6_months": "6 months",
+            "1_year": "1 year"
+        },
+        "status": {
+            "Draft": "Draft",
+            "Active": "Active",
+            "Completed": "Completed"
+        }
+    },
+    "tooltips": {
+        "scheduling": "Frequency of record recurring\n\n**User-friendly** mode - easy to use, but not as flexible\n\n**Advanced** mode - more flexible, uses cron expression",
+        "generateInAdvance": "Time period for which records will be pre-generated in advance"
+    },
+    "messages": {
+        "missingDateStart": "Record must have a start date.",
+        "cronExprInvalid": "Invalid cron expression",
+        "batchSizeLimitExceeded": "The number of records generated in one batch would exceed the limit set by the administrator. Please set a more frequent batch or reduce recurrence rate.",
+        "invalidSchedulingExpression": "Invalid CRON expression"
+    }
+}

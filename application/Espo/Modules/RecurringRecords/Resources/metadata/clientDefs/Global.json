@@ -1,0 +1,45 @@
+{
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Schedule Recurrence",
+            "name": "scheduleRecurrence",
+            "acl": "edit",
+            "data": {
+                "handler": "recurring-records:handlers/detail-actions/schedule-recurrence"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ],
+    "modalDetailActionList": [
+        "__APPEND__",
+        {
+            "label": "Schedule Recurrence",
+            "name": "scheduleRecurrence",
+            "acl": "edit",
+            "data": {
+                "handler": "recurring-records:handlers/detail-actions/schedule-recurrence"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ],
+    "menu": {
+        "list": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Scheduled Recurrences",
+                    "iconHtml": "<i class=\"fas fa-clock\"></i>",
+                    "name": "listScheduledRecurrences",
+                    "action": "listScheduledRecurrences",
+                    "style": "default",
+                    "acl": "read",
+                    "data": {
+                        "handler": "recurring-records:handlers/actions/list-scheduled-recurrences"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": false,
+    "acl": true,
+    "aclPortal": "recordAllAccountNo",
+    "module": "Sales",
+    "customizable": true,
+    "importable": false,
+    "notifications": false,
+    "object": true
+}

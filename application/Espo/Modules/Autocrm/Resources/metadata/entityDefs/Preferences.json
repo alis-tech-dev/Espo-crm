@@ -1,0 +1,20 @@
+{
+	"fields": {
+		"quickViewContextMenu": {
+			"type": "bool",
+			"default": true
+		},
+		"customFiltersAboveList": {
+			"type": "bool",
+			"default": false
+		},
+		"collapsibleDashlets": {
+			"type": "bool",
+			"default": false
+		},
+		"disableIntroGuide": {
+			"type": "bool",
+			"default": false
+		}
+	}
+}

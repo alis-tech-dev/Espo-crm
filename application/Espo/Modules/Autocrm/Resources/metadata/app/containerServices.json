@@ -1,0 +1,23 @@
+{
+    "clientManager": {
+        "className": "Espo\\Modules\\Autocrm\\Classes\\Utils\\ClientManager"
+    },
+    "layoutProvider": {
+        "className": "Espo\\Modules\\Autocrm\\Tools\\Layout\\ContainerServices\\LayoutProvider"
+    },
+    "layoutUtil": {
+        "className": "Espo\\Modules\\Autocrm\\Tools\\Layout\\ContainerServices\\LayoutUtil"
+    },
+    "fieldManagerTool": {
+        "className": "Espo\\Modules\\Autocrm\\Tools\\FieldManager\\FieldManager"
+    },
+    "templateProcessor": {
+        "className": "Espo\\Modules\\Autocrm\\Tools\\EmailTemplate\\Processor"
+    },
+    "authenticationFactory": {
+        "className": "Espo\\Modules\\Autocrm\\Classes\\Authentication\\AuthenticationFactory"
+    },
+    "valueMapPreparator": {
+        "className": "Espo\\Modules\\Autocrm\\Tools\\MassUpdate\\ValueMapPreparator"
+    }
+}

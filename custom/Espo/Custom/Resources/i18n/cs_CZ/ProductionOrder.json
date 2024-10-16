@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "numberA": "Číslo příkazu"
+    },
+    "tooltips": {
+        "productWarehouse": "Na tento sklad se přesouvá hotový výrobek.",
+        "materialWarehouse": "Z tohoto skladu odebíráme materiál pro vytvoření výrobku."
+    }
+}

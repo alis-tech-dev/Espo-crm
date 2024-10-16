@@ -1,0 +1,15 @@
+{
+    "tooltips": {
+        "notStorable": "Whether the field in not storable in the database. Not storable field can be defined in the loader custom script. It is possible to set this property only when creating the field.",
+        "recordListEnabled": "Show list of related records, similar to relationship panel. This option will be slow for large number of related records.",
+        "recordListKeepRemoved": "Records removed from list will be deleted by default for 1-N relationship. If this option is set to true, removed records will be only unlinked.",
+        "recordListOrderByField": "The field where the position in the record list will be stored. Leave blank if you do not want to enable user sorting.",
+        "defaultSelectFilters": "Default filters for select popup.",
+        "saveCoordinates": "Check this field to save coordinates to the database and have the option of selecting this field in the 'Map' dashlet"
+    },
+    "messages": {
+        "layoutMissingOrInvalid": "Entity '{entityType}' is missing layout '{layout}' or layout does not contain valid JSON.",
+        "orderAttributeMissing": "Entity '{entityType}' is missing '{attribute}' order attribute.",
+        "orderAttributeWrongType": "Entity '{entityType}' order attribute '{attribute}' must be of type 'int'."
+    }
+}

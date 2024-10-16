@@ -1,0 +1,8 @@
+{
+	"fields": {
+		"defaultInvoiceDueDate": "Default invoice due date (in days)"
+	},
+	"messages": {
+		"accountNotFound": "Account not found"
+	}
+}

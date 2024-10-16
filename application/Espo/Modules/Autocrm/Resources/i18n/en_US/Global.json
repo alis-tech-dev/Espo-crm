@@ -1,0 +1,48 @@
+{
+	"aggregationFunctions": {
+		"average": "Average",
+		"max": "Maximum",
+		"min": "Minimum",
+		"sum": "Sum"
+	},
+	"dashlets": {
+		"Kanban": "Kanban",
+		"Map": "Map",
+		"RecordList": "Record List"
+	},
+	"fields": {
+		"label": "Label",
+		"name": "Name",
+		"type": "Type"
+	},
+	"labels": {
+		"Add Aggregation Function": "Add Aggregation Function",
+		"Edit Entity": "Edit Entity",
+		"Edit Filters": "Edit Filters",
+		"Edit Labels": "Edit Labels",
+		"Edit Layout": "Edit Layout",
+		"Edit Navbar": "Edit Navbar",
+		"Google Calendar": "Google calendar",
+		"Increase": "Increase",
+		"Multiply": "Multiply",
+		"Outlook Calendar": "Outlook calendar",
+		"Refresh Entity": "Refresh Entity",
+		"Return to My Account": "Return to My Account",
+		"Send Email": "Send Email",
+		"Undo Last Stroke": "Undo Last Stroke",
+		"View as User": "View as User"
+	},
+	"listViewModes": {
+		"combined": "Combined",
+		"partitioned": "Partitioned"
+	},
+	"massActions": {
+		"bulkEmail": "Bulk Email",
+		"bulkEmailBcc": "Bulk Email (BCC)",
+		"zipAttachments": "Download attachments as ZIP"
+	},
+	"messages": {
+		"foreignMultipleSearchWarning": "You can't filter by this field",
+		"noEmailsInSelect": "Selection does not contain any email addresses."
+	}
+}

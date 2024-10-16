@@ -1,0 +1,96 @@
+{
+	"actionTypes": {
+		"applyAssignmentRule": "Použít pravidlo přiřazení",
+		"relateWithEntity": "Propojit s jiným záznamem",
+		"runService": "Spustit servisní akci",
+		"sendRequest": "Odeslat požadavek HTTP",
+		"startBpmnProcess": "Spusťte proces BPM",
+		"unrelateFromEntity": "Odpojit od jiného záznamu",
+		"updateCreatedEntity": "Aktualizovat vytvořený záznam",
+		"updateEntity": "Aktualizovat subjekt",
+		"updateProcessEntity": "Aktualizovat záznam procesu"
+	},
+	"emailAddressOptions": {
+		"": "Žádný",
+		"specifiedContacts": "Specifikované kontakty",
+		"system": "Systém"
+	},
+	"fields": {
+		"assignmentRule": "Pravidlo přiřazení",
+		"actions": "Akce",
+		"headers": "Záhlaví",
+		"linkList": "Propojte s cílovou entitou prostřednictvím vztahů",
+		"linkListShort": "Odkazy",
+		"optOutLink": "Odkaz pro odhlášení",
+		"requestContentType": "Typ obsahu",
+		"requestType": "Typ požadavku",
+		"targetTeam": "Cílový tým",
+		"target": "Cíl",
+		"targetUserPosition": "Cílová pozice uživatele"
+	},
+	"labels": {
+		"Actions": "Akce",
+		"Add Action": "Přidat akci",
+		"Add Condition": "Přidat podmínku",
+		"additionalParameters": "Další parametry (JSON format)",
+		"contains": "obsahuje",
+		"Created": "Vytvořeno",
+		"doNotStore": "Neukládat odeslané e-maily",
+		"Entity Type": "Typ entity",
+		"Field": "Pole",
+		"Formula": "Vzorec",
+		"months": "měsíce",
+		"notContains": "neobsahuje",
+		"Process": "Proces",
+		"Workflow": "Workflow",
+		"Workflow Rule": "Pravidlo workflow"
+	},
+	"links": {
+		"flowchart": "Vývojový diagram"
+	},
+	"messages": {
+		"jsonInvalid": "Není platný JSON."
+	},
+	"options": {
+		"subjectType": {
+			"value": "Hodnota",
+			"field": "Pole",
+			"today": "dnes/nyní",
+			"typeOf": "type of"
+		},
+		"type": {
+			"afterRecordSaved": "Po nahrátí uložit",
+			"afterRecordCreated": "Po nahrátí vytvořit",
+			"afterRecordUpdated": "Po aktualizaci záznamu",
+			"scheduled": "Naplánováno",
+			"sequential": "Sekvenční",
+			"signal": "Signal"
+		}
+	},
+	"serviceActions": {
+		"addInvoiceItemList": "Přidejte položky faktury",
+		"addQuoteItemList": "Přidat položky nabídky",
+		"addSalesOrderItemList": "Přidejte položky proforma faktury",
+		"convertCurrency": "Převést měnu",
+		"generateAndSendPassword": "Generovat heslo",
+		"optOut": "Odhlášení",
+		"sendEventInvitations": "Poslat pozvánky",
+		"sendInEmail": "Odeslat e-mailem"
+	},
+	"serviceActionsHelp": {
+		"addInvoiceItemList": "Příklad: \\ n``` {\"itemList\": [{\"number\": 1, \"procuctId\": \"productId\", \"name\": \"název produktu\", \"listPrice\": 100, \"unitPrice\": 100}] } ``",
+		"addQuoteItemList": "Příklad: \\ n``` {\"itemList\": [{\"number\": 1, \"procuctId\": \"productId\", \"name\": \"název produktu\", \"listPrice\": 100, \"unitPrice\": 100}] } ``",
+		"addSalesOrderItemList": "Příklad: \\ n``` {\"itemList\": [{\"number\": 1, \"procuctId\": \"productId\", \"name\": \"název produktu\", \"listPrice\": 100, \"unitPrice\": 100}] } ``",
+		"convertCurrency": "Volitelný parametr: targetCurrency. Pokud není zadán, převede se na výchozí měnu.",
+		"generateAndSendPassword": "Bude vygenerováno nové heslo a odesláno na e-mailovou adresu uživatele.",
+		"optOut": "Volitelný parametr: targetListId. Pokud není zadán, označí odhlášenou e-mailovou adresu. \\ N Příklad: `` {\"targetListId\": \"TARGET_LIST_ID\"} `` \"",
+		"sendInEmail": "Parametry: \\ n * templateId - ID šablony PDF * emailTemplateId - ID šablony e-mailu * příjemci (volitelný parametr); ve výchozím nastavení bude odeslána na fakturační kontakt nebo na účet; příklad: `link: account.assignedUserʻExample:` `{\" templateId \":\" TEMPLATE_ID \",\" emailTemplateId \":\" EMAIL_TEMPLATE_ID \",\" to \":\" link: billingContact \"}\" \""
+	},
+	"texts": {
+		"formulaInfo": "Conditions of any complexity in espo-formula language"
+	},
+	"tooltips": {
+		"requestContent": "Ve formátu JSON. \\ NDostupné zástupné symboly: * `{$ attribute}` * * {$$ variable} `",
+		"requestHeaders": "Další záhlaví. \\ NFormát: `` `klíč: hodnota``ʻDostupné zástupné symboly: *` {$ attribute} `* * {$$ variable}`"
+	}
+}

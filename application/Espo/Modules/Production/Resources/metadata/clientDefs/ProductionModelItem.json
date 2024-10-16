@@ -1,0 +1,9 @@
+{
+    "controller": "controllers/record",
+    "createDisabled": true,
+    "additionalLayouts": {
+        "listProductionModel": {
+            "type": "listSmall"
+        }
+    }
+}

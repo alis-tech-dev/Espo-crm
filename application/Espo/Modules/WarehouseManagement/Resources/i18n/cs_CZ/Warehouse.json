@@ -1,0 +1,36 @@
+{
+    "fields": {
+        "name": "Název",
+        "description": "Popis",
+        "type": "Typ",
+        "address": "Adresa",
+        "attachments": "Přílohy",
+        "positions": "Pozice",
+        "totalValue": "Celková hodnota",
+        "warehouseValueRecords": "Skladové hodnoty"
+    },
+    "labels": {
+        "Create Warehouse": "Vytvořit sklad"
+    },
+    "links": {
+        "items": "Položky",
+        "positions": "Pozice",
+        "warehouseValueRecords": "Skladové hodnoty"
+    },
+    "messages": {
+        "itemNotFound": "Položka {product} nebyla nalezena.",
+        "notEnoughQuantity": "Produkt {productName} nemá dostatek množství na skladě. Požadované množství: {quantityRequested}, dostupné množství: {quantityAvailable}.",
+        "itemHasMissingProduct": "Některé položky nemají produkt.",
+        "productIsNotStockable": "Produkt {productName} není skladovatelný. Zkuste změnit jeho typ",
+        "itemHasMissingPosition": "Některé položky nemají vyplněnou pozici.",
+        "itemHasPositionNotInWarehouse": "Produkt {productName} má pozici {positionName}, která nepatří do skladu {warehouseName}.",
+        "notEnoughRoomInPosition": "Pozice {positionName} nemá dostatek místa pro produkt {productName}. Požadované množství: {quantity}, kapacita pozice: {positionFilledCapacity} / {positionCapacity}."
+    },
+    "options": {
+        "type": {
+            "Simple": "Jednoduchý",
+            "Positional": "S pozicemi"
+        }
+    }
+}
+

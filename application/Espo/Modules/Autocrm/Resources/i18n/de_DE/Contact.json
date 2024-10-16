@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "acceptedPayments": "Steuerbeleg für erhaltene Rechnungen",
+        "acceptedPaymentsShipping": "Steuerbeleg für Eingangsrechnungen (Versand)",
+        "accountAnyId": "Firmenbeliebige ID"
+    },
+    "links": {
+        "quotesBilling": "Angebote (Rechnungsadresse)",
+        "quotesShipping": "Angebote (Lieferadresse)",
+        "salesOrdersBilling": "Kundenaufträge (Fakturierung)",
+        "salesOrdersShipping": "Kundenaufträge (Versand)",
+        "invoicesBilling": "Rechnungen",
+        "invoicesShipping": "Rechnungen (Versand)",
+        "acceptedPayments": "Steuerbeleg für erhaltene Rechnungen",
+        "acceptedPaymentsShipping": "Steuerbeleg für Eingangsrechnungen (Versand)"
+    }
+}

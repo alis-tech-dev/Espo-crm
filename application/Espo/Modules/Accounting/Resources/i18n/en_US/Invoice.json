@@ -1,0 +1,65 @@
+{
+    "labels": {
+        "Create Invoice": "Create Invoice",
+        "Tax Classes": "Tax Classes",
+        "Templates": "Templates",
+        "Items": "Items",
+        "Email PDF": "Email PDF",
+        "Invoice Items": "Invoice Items"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Number",
+        "numberA": "Number (auto-incremented)",
+        "account": "Account",
+        "quote": "Quote",
+        "salesOrder": "Sales Order",
+        "billingAddress": "Billing Address",
+        "shippingAddress": "Shipping Address",
+        "billingContact": "Billing Contact",
+        "shippingContact": "Shipping Contact",
+        "taxClass": "Tax Class",
+        "taxRate": "Tax Rate",
+        "shippingCost": "Shipping Cost",
+        "taxAmount": "Tax Amount",
+        "discountAmount": "Discount Amount",
+        "amount": "Amount",
+        "preDiscountedAmount": "Pre-Discount Amount",
+        "grandTotalAmount": "Grand Total Amount",
+        "dateInvoiced": "Date Invoiced",
+        "weight": "Weight",
+        "amountConverted": "Amount (converted)",
+        "taxAmountConverted": "Tax Amount (converted)",
+        "shippingCostConverted": "Shipping Cost (converted)",
+        "preDiscountedAmountConverted": "Pre-Discount Amount (converted)",
+        "discountAmountConverted": "Discount Amount (converted)",
+        "grandTotalAmountConverted": "Grand Total Amount (converted)",
+        "shippingCostCurrency": "Shipping Cost Currency",
+        "taxAmountCurrency": "Tax Amount Currency",
+        "discountAmountCurrency": "Discount Amount Currency",
+        "amountCurrency": "Amount Currency",
+        "preDiscountedAmountCurrency": "Pre-Discount Amount Currency",
+        "grandTotalAmountCurrency": "Grand Total Amount Currency",
+        "currency": "Currency",
+        "discount": "Discount"
+    },
+    "links": {
+        "items": "Items",
+        "billingContact": "Billing Contact",
+        "shippingContact": "Shipping Contact",
+        "account": "Account",
+        "taxClass": "Tax Class",
+        "quote": "Quote",
+        "salesOrder": "Sales Order"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "In Review": "In Review",
+            "Confirmed": "Confirmed",
+            "Paid": "Paid",
+            "Rejected": "Rejected",
+            "Canceled": "Canceled"
+        }
+    }
+}

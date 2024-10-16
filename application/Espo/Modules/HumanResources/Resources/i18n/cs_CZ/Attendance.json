@@ -1,0 +1,29 @@
+{
+    "labels": {
+        "Create Attendance": "Vytvořit Docházka",
+        "Choose attendance type": "Vyberte typ docházky",
+        "Mark departure": "Označit odchod",
+        "Mark arrival": "Označit příchod"
+    },
+    "fields": {
+        "dateStartDate": "Datum zahájení (celý den)",
+        "dateStart": "Datum zahájení",
+        "dateEnd": "Datum konce",
+        "dateEndDate": "Datum konce (celý den)",
+        "duration": "Trvání",
+        "isAllDay": "Celý den",
+        "reminders": "Upomínky",
+        "status": "Typ docházky"
+    },
+    "options": {
+        "status": {
+            "V práci": "V práci",
+            "Dovolená": "Dovolená",
+            "Nemoc": "Nemoc",
+            "Neplacené volno": "Neplacené volno"
+        }
+    },
+    "messages": {
+        "Choose attendance type": "Vyberte typ docházky"
+    }
+}

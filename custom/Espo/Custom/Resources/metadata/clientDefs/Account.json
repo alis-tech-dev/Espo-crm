@@ -1,0 +1,26 @@
+{
+    "relationshipPanels": {
+        "quotes": {
+            "layout": null
+        },
+        "salesOrders": {
+            "layout": null
+        },
+        "opportunities": {
+            "layout": "listForAccount"
+        },
+        "productDatabases": {
+            "layout": null
+        },
+        "complaintBook": {
+            "layout": null
+        },
+        "warehouses": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": "#edc755",
+    "iconClass": "fas fa-building",
+    "isWide": false
+}

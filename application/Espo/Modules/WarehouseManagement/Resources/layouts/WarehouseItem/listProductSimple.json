@@ -1,0 +1,13 @@
+[
+    {
+        "name": "quantityAvailable",
+        "notSortable": true
+    },
+    {
+        "name": "quantityReserved",
+        "notSortable": true
+    },
+    {
+        "name": "quantity"
+    }
+]

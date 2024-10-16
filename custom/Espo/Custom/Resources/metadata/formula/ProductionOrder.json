@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(quantityPlanned > 0, totalProduced = quantityProduced + fromWarehouse);\nifThen(totalProduced == quantityPlanned, status = 'Completed');\n",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

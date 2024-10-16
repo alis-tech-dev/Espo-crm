@@ -1,0 +1,1 @@
+"use strict";define(["views/fields/bool"],i=>class extends i{setup(){super.setup(),this.listenTo(this.model,"change:validateFormat",()=>this.visibility())}afterRender(){super.afterRender(),this.visibility()}visibility(){const t=this.model.get("validateFormat"),e=this.getParentView();t?e.showField("validateExistence"):e.hideField("validateExistence")}});

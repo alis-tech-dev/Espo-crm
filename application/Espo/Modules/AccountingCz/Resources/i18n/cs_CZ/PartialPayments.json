@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "Create PartialPayments": "Vytvořit PartialPayments"
+    },
+    "fields": {
+        "invoice": "Invoice",
+        "proformaInvoice": "Proforma Invoice",
+        "amount": "Částka",
+        "amountCurrency": "Částka (Měna)",
+        "amountConverted": "Částka (Převedeno)",
+        "date": "Datum úhrady"
+    },
+    "links": {
+        "invoice": "Invoice",
+        "proformaInvoice": "Proforma Invoice"
+    }
+}

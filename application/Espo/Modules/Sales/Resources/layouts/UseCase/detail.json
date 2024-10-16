@@ -1,0 +1,38 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "quote"
+                },
+                {
+                    "name": "transportOf",
+                    "readOnly": true
+                }
+            ],
+            [
+                {
+                    "name": "images"
+                }
+            ],
+            [
+                {
+                    "name": "assignment",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "solution",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

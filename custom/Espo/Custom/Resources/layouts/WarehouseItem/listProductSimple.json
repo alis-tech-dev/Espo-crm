@@ -1,0 +1,38 @@
+[
+    {
+        "name": "serialNumber",
+        "link": true,
+        "align": "left",
+        "label": "serialNumber"
+    },
+    {
+        "name": "quantity",
+        "align": "left",
+        "label": "Total Quantity",
+        "isEditable": true
+    },
+    {
+        "name": "unit",
+        "label": "Unit"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "stockLocation",
+        "label": "StockLocation"
+    },
+    {
+        "name": "salesOrder",
+        "align": "left",
+        "label": "Sales Order",
+        "isEditable": true
+    },
+    {
+        "name": "isReserved",
+        "align": "left",
+        "label": "IsReserved",
+        "isEditable": true
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "senderAddress": "Sender Address",
+        "senderAddressStreet": "Sender Street",
+        "senderAddressCity": "Sender City",
+        "senderAddressState": "Sender State",
+        "senderAddressCountry": "Sender Country",
+        "senderAddressPostalCode": "Sender Postal Code",
+        "senderAddressMap": "Sender Map",
+        "recieverAddress": "Reciever Address",
+        "recieverAddressStreet": "Reciever Street",
+        "recieverAddressCity": "Reciever City",
+        "recieverAddressState": "Reciever State",
+        "recieverAddressCountry": "Reciever Country",
+        "recieverAddressPostalCode": "Reciever Postal Code",
+        "recieverAddressMap": "Reciever Map",
+        "printedDate": "Printed Date",
+        "hasDocumentation": "Documentation",
+        "customerRegistrationNumber": "Customer Registration Number",
+        "contractorRegistrationNumber": "Contractor Registration Number",
+        "number": "Number",
+        "document": "Document",
+        "invoice": "Invoice",
+        "supplierInvoice": "Supplier Invoice"
+    },
+    "links": {
+        "document": "Document",
+        "invoice": "Invoice",
+        "supplierInvoice": "Supplier Invoice"
+    },
+    "labels": {
+        "Create HandoverProtocol": "Create Handover Protocol"
+    }
+}

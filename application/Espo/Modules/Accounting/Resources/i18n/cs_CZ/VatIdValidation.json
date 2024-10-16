@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "name": "DIČ",
+        "valid": "Platný",
+        "lastValidCheck": "Poslední kontrola"
+    },
+    "links": {},
+    "labels": {
+        "Create VatIdValidation": "Vytvořit Validaci DIČ"
+    }
+}

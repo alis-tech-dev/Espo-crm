@@ -1,0 +1,84 @@
+{
+    "labels": {
+        "Complex expression": "Komplexní výraz",
+        "Add AND group": "Přidat skupinu AND",
+        "Add OR group": "Přidat skupinu OR",
+        "Add NOT group": "Přidat skupinu NOT",
+        "Add IN group": "Přidat skupinu IN",
+        "Add Complex expression": "Přidat komplexní výraz",
+        "Columns": "Sloupce",
+        "Send Email": "Poslat Email",
+        "Results View": "Zobrazení výsledků"
+    },
+    "fields": {
+        "orderByList": "Seřadit dle",
+        "column": "Sloupec",
+        "exportFormat": "Formát",
+        "category": "Kategorie",
+        "portals": "Portály",
+        "joinedReports": "Dílčí reporty"
+    },
+    "tooltips": {
+        "applyAcl": "Výsledky reportu budou záviset na přístupu uživatele.",
+        "groupBy": "Data budou agregována jednou nebo dvěma skupinami. Pokud jsou prázdné, nebudou data agregována, budou zobrazeny pouze součty. \n[Složité výrazy] (https://www.espocrm.com/documentation/user-guide/complex-expressions/) lze použít.",
+        "columns": "Jaká data se mají zobrazit.",
+        "runtimeFilters": "Další filtry, které budou k dispozici v zobrazení přehledu.",
+        "portals": "Report bude k dispozici pouze na určených portálech."
+    },
+    "functions": {
+        "QUARTER": "Čtvrtletí",
+        "WEEK": "Týden",
+        "YEAR_FISCAL": "Fiskální rok",
+        "QUARTER_FISCAL": "Fiskální čtvrtletí"
+    },
+    "options": {
+        "type": {
+            "Grid": "Mřížka",
+            "List": "Seznam"
+        },
+        "function": {
+            "DATE_NUMBER": "DATUM",
+            "MONTH_NUMBER": "MĚSÍC",
+            "YEAR_NUMBER": "TÝDEN",
+            "QUARTER_NUMBER": "ČTVRTLETÍ",
+            "DAYOFWEEK_NUMBER": "DEN V TÝDNU",
+            "HOUR_NUMBER": "HODINA",
+            "MINUTE_NUMBER": "MINUTA",
+            "LOWER": "DOLNÍ",
+            "UPPER": "HORNÍ",
+            "LENGTH": "DÉLKA",
+            "WEEK_NUMBER_0": "TÝDEN (Neděle)",
+            "WEEK_NUMBER_1": "TÝDEN (Pondělí)",
+            "SUM": "SUMA"
+        },
+        "operator": {
+            "equals": "Rovno",
+            "notEquals": "Nerovná se",
+            "greaterThan": "Větší než",
+            "lessThan": "Méně než",
+            "greaterThanOrEquals": "Větší nebo rovno",
+            "lessThanOrEquals": "Méně než nebo rovno",
+            "isTrue": "Je Pravda",
+            "isNull": "Je nula",
+            "isNotNull": "Není nula"
+        },
+        "layoutAlign": {
+            "left": "Vlevo",
+            "right": "Vpravo"
+        }
+    },
+    "filtersGroupTypes": {
+        "or": "Nebo",
+        "and": "a",
+        "not": "Ne z",
+        "subQueryIn": "V",
+        "having": "Mající"
+    },
+    "layoutFields": {
+        "link": "Odkaz",
+        "width": "Šířka",
+        "notSortable": "Nelze třídit",
+        "exportOnly": "Pouze export",
+        "align": "Zarovnání"
+    }
+}

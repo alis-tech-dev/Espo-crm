@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "data": "Daten",
+        "number": "Nummer"
+    },
+    "labels": {
+        "Create ActionHistoryRecord": "Aktionsprotokoll erstellen"
+    }
+}

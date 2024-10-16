@@ -1,0 +1,12 @@
+[
+    {
+        "route": "/ZipIsdocs",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\AccountingCz\\Api\\ZipIsdocs"
+    },
+    {
+        "route": "/ExportToIsdoc",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\AccountingCz\\Api\\ExportToIsdoc"
+    }
+]

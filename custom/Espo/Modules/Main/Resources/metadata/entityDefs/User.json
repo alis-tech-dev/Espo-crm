@@ -1,0 +1,184 @@
+{
+	"fields": {
+		"mattermostToken": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"mattermostId": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"pozice": {
+			"type": "enum",
+			"options": [
+				"-",
+				"CSO",
+				"Project Manager",
+				"Marketing Manager",
+				"Key Account Manager",
+				"International Account Manager",
+				"Business Director",
+				"Business Developer",
+				"Sales Support",
+				"CFO",
+				"CEO",
+				"CTO",
+				"Installation Technician",
+				"SW Engineer",
+				"FW Engineer",
+				"SW Developer",
+				"Office Manager",
+				"FW HW Developer",
+				"FW Engineer Manager"
+			],
+			"style": {
+				"-": null,
+				"CSO": null,
+				"Project Manager": null,
+				"Marketing Manager": null,
+				"Key Account Manager": null,
+				"International Account Manager": null,
+				"Business Director": null,
+				"Business Developer": null,
+				"Sales Support": null,
+				"CFO": null,
+				"CEO": null,
+				"CTO": null,
+				"Installation Technician": null,
+				"SW Engineer": null,
+				"FW Engineer": null,
+				"SW Developer": null,
+				"Office Manager": null,
+				"FW HW Developer": null,
+				"FW Engineer Manager": null
+			},
+			"default": "-",
+			"isCustom": true
+		},
+		"qualityReports1": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReports2": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReports3": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReports4": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReports5": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReports6": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"qualityReport": {
+			"type": "link"
+		},
+		"alisCardID": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"daysOff": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"timeOnSalesOrder": {
+			"type": "duration",
+			"notStorable": true
+		}
+	},
+	"links": {
+		"qualityReports1": {
+			"type": "hasMany",
+			"foreign": "user1",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReports2": {
+			"type": "hasMany",
+			"foreign": "user2",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReports3": {
+			"type": "hasMany",
+			"foreign": "user3",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReports4": {
+			"type": "hasMany",
+			"foreign": "user4",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReports5": {
+			"type": "hasMany",
+			"foreign": "user5",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReports6": {
+			"type": "hasMany",
+			"foreign": "user6",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"qualityReport": {
+			"type": "belongsTo",
+			"foreign": "users1",
+			"entity": "QualityReport",
+			"audited": false,
+			"isCustom": true
+		},
+		"salesOrders": {
+			"type": "hasMany",
+			"foreign": "users",
+			"entity": "SalesOrder"
+		}
+	}
+}

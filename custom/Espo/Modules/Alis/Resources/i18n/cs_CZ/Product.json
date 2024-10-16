@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "alisId": "Alis ID",
+        "qrCode": "QR kód",
+        "priceA": "Cena A",
+        "priceB": "Cena B",
+        "priceC": "Cena C",
+        "priceEndUser": "Cena koncového zákazníka",
+        "priceRent": "Cena renty/měsíc",
+        "priceDamage": "Cena škody"
+    }
+}

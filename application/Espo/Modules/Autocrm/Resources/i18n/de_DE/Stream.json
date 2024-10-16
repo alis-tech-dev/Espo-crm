@@ -1,0 +1,5 @@
+{
+    "messages": {
+        "couldNotAddFollowerUserHasNoAccessToStream": "Der Benutzer '{Benutzername}' konnte nicht zu den Followern hinzugefügt werden. Der Benutzer hat keinen 'Stream'-Zugriff auf den Datensatz."
+    }
+}

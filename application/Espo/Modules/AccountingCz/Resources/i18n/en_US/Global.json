@@ -1,0 +1,33 @@
+{
+    "scopeNames": {
+        "ProformaInvoice": "Issued proforma invoice",
+        "ProformaInvoiceItem": "Item of issued proforma invoice",
+        "CreditNote": "Credit note",
+        "IssuedTaxDocument": "Tax documents for received payment",
+        "SupplierInvoice": "Received invoice",
+        "ReceivedProformaInvoice": "Received proforma invoice",
+        "ReceivedTaxDocument": "Tax documents for received payment",
+        "RevenueReceipt": "Revenue receipt",
+        "ExpenseReceipt": "Expense receipt"
+    },
+    "scopeNamesPlural": {
+        "ProformaInvoice": "Issued proforma invoices",
+        "ProformaInvoiceItem": "Items of issued proforma invoices",
+        "CreditNote": "Credit notes",
+        "IssuedTaxDocument": "Tax documents for received payments",
+        "SupplierInvoice": "Received invoices",
+        "ReceivedProformaInvoice": "Received proforma invoices",
+        "ReceivedTaxDocument": "Tax documents for received payments",
+        "RevenueReceipt": "Revenue receipts",
+        "ExpenseReceipt": "Expense receipts"
+    },
+    "messages": {
+        "enterAmount": "Enter amount",
+        "theAmountMustBeNumeric": "The amount must be numeric (0.00)",
+        "theAmountMustNotExceedOneTrillion": "The amount must not exceed one trillion"
+    },
+    "labels": {
+        "noVatPayer": "I am not a VAT payer",
+        "vatPayer": "I am a VAT payer"
+    }
+}

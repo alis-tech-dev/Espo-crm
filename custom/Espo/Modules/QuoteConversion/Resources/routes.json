@@ -1,0 +1,7 @@
+[
+	{
+		"route": "/QuoteConversion/salesOrderAttributes/:id",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\QuoteConversion\\Tools\\Api\\GetSalesOrderAttributes"
+	}
+]

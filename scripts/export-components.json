@@ -1,0 +1,3752 @@
+[
+  {
+    "nazev": "ASA-20",
+    "dodavatel": "",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": "ALIS000140"
+  },
+  {
+    "nazev": "ALP-OP-N-20",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": "ALIS000139"
+  },
+  {
+    "nazev": "ELG-300-24A",
+    "dodavatel": "MEAN WELL",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LINE-120W",
+    "dodavatel": "",
+    "sklad": 1,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Měnič SD-25C-5",
+    "dodavatel": "",
+    "sklad": 6,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": 3,
+    "id": "ALIS000136"
+  },
+  {
+    "nazev": "Měnič SD-25B-5",
+    "dodavatel": "",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": 3,
+    "id": "ALIS000135"
+  },
+  {
+    "nazev": "Měnič SD-15C-5",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000134"
+  },
+  {
+    "nazev": "Měnič SD-15B-5",
+    "dodavatel": "",
+    "sklad": 28,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000133"
+  },
+  {
+    "nazev": "Měnič SD-15A-5",
+    "dodavatel": "",
+    "sklad": 27,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000132"
+  },
+  {
+    "nazev": "Měnič SD-15C-24",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000131"
+  },
+  {
+    "nazev": "Měnič SD-15A-24",
+    "dodavatel": "",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000130"
+  },
+  {
+    "nazev": "Měnič SD-25C-24",
+    "dodavatel": "",
+    "sklad": 73,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000129"
+  },
+  {
+    "nazev": "Měnič SD-25B-24",
+    "dodavatel": "",
+    "sklad": 33,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000128"
+  },
+  {
+    "nazev": "Měnič SD-25A-24",
+    "dodavatel": "",
+    "sklad": 68,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "H",
+    "patro": 3,
+    "id": "ALIS000127"
+  },
+  {
+    "nazev": "WAGO svorka 2pin paralel",
+    "dodavatel": "",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Nedostatek",
+    "regal": "F",
+    "patro": 3,
+    "id": "ALIS000126"
+  },
+  {
+    "nazev": "WAGO svorka 2pin",
+    "dodavatel": "",
+    "sklad": 3,
+    "min": 0,
+    "pocet": "Nedostatek",
+    "regal": "F",
+    "patro": 3,
+    "id": "ALIS000125"
+  },
+  {
+    "nazev": "WAGO svorka 3pin",
+    "dodavatel": "",
+    "sklad": 5,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "F",
+    "patro": 3,
+    "id": "ALIS000124"
+  },
+  {
+    "nazev": "WAGO svorka 5pin",
+    "dodavatel": "",
+    "sklad": 1,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "F",
+    "patro": 3,
+    "id": "ALIS000123"
+  },
+  {
+    "nazev": "Síťový adaptér 24V",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 43,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": 2,
+    "id": "ALIS000121"
+  },
+  {
+    "nazev": "HOTRON microwave senzor",
+    "dodavatel": "",
+    "sklad": 35,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "D",
+    "patro": 2,
+    "id": "ALIS000120"
+  },
+  {
+    "nazev": "TAKACHI WP5-7-3C",
+    "dodavatel": "TAKACHI",
+    "sklad": 64,
+    "min": 40,
+    "pocet": "Dostatek",
+    "regal": "D",
+    "patro": 3,
+    "id": "ALIS000119"
+  },
+  {
+    "nazev": "TAKACHI WP11-15-4C",
+    "dodavatel": "TAKACHI",
+    "sklad": 48,
+    "min": 40,
+    "pocet": "Dostatek",
+    "regal": "D",
+    "patro": 3,
+    "id": "ALIS000118"
+  },
+  {
+    "nazev": "TAKACHI WP9-13-4C",
+    "dodavatel": "TAKACHI",
+    "sklad": 56,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "E",
+    "patro": 3,
+    "id": "ALIS000117"
+  },
+  {
+    "nazev": "TAKACHI WP13-18-5C",
+    "dodavatel": "TAKACHI",
+    "sklad": 12,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "E",
+    "patro": 3,
+    "id": "ALIS000116"
+  },
+  {
+    "nazev": "TAKACHI WP15-21-6C",
+    "dodavatel": "TAKACHI",
+    "sklad": 62,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "E",
+    "patro": 3,
+    "id": "ALIS000115"
+  },
+  {
+    "nazev": "TAKACHI WP20-20-7C",
+    "dodavatel": "TAKACHI",
+    "sklad": 9,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "E",
+    "patro": 3,
+    "id": "ALIS000114"
+  },
+  {
+    "nazev": "TAKACHI WP20-28-7C",
+    "dodavatel": "TAKACHI",
+    "sklad": 6,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "E",
+    "patro": 3,
+    "id": "ALIS000113"
+  },
+  {
+    "nazev": "HLG-320H-36AB",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ultrazvukový senzor SICK",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor QS30RQ (receiver)",
+    "dodavatel": "",
+    "sklad": 3,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor QS30EQ (emitter)",
+    "dodavatel": "",
+    "sklad": 1,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Retroreflective target BRT-2x2",
+    "dodavatel": "",
+    "sklad": 16,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor QS18VP6LPQ8",
+    "dodavatel": "",
+    "sklad": 3,
+    "min": 1,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-50B-12 (24V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor M12 - TYP A - MALE",
+    "dodavatel": "",
+    "sklad": 72,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000112"
+  },
+  {
+    "nazev": "Vyrovnávač tlaku",
+    "dodavatel": "",
+    "sklad": 354,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000111"
+  },
+  {
+    "nazev": "Spojka na kabely IP68",
+    "dodavatel": "",
+    "sklad": 88,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000110"
+  },
+  {
+    "nazev": "UniUnit 2 e-LITE pro BPi",
+    "dodavatel": "",
+    "sklad": 79,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000109"
+  },
+  {
+    "nazev": "Pásky k wristu",
+    "dodavatel": "",
+    "sklad": 34,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000108"
+  },
+  {
+    "nazev": "KHADAS VIM3 Pro",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "XLG-200-H-AB",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Banana BPI-M5 4GB DDR4",
+    "dodavatel": "",
+    "sklad": 18,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": ""
+  },
+  {
+    "nazev": "ELG-75-24B 3Y",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 20,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "síťový kabel 2D x 0.75 černý",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Síťový adaptér 5V 6W",
+    "dodavatel": "",
+    "sklad": 46,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": 2,
+    "id": "ALIS000122"
+  },
+  {
+    "nazev": "DC/DC měnič SD-15C-24 (48V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-15A-24 (12V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25B-5 (24V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25A-5 (12V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-100D-5 (100V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-100A-5 (12V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25C-5 (48V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-50C-5 (48V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-50A-5 (12V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SMD rezistor",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Propojovací kabel",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Světlovod",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "E",
+    "patro": 2,
+    "id": ""
+  },
+  {
+    "nazev": "ALP-OP-S-13",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "USB Charger - 50 Ports",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "USB Charger - 20 Ports",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "USB Charger - 10 Ports",
+    "dodavatel": "AliExpress",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-OP-M-13",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LP320WP",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LP100WP",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LP40WP",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LP40PWP",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Hříbek Turck",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabelová spojka 3 PIN k PWM",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor PWM + PJ",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabel 1m Turck",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor M12/5pin male",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor M12 samec na kabel",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabel 5m Turck",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kapacitní tlačítko Turck",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi displej 7",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi 4 napájecí adaptér - 5V/3A",
+    "dodavatel": "RPishop.cz",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi 4 4 GB",
+    "dodavatel": "RPishop.cz",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Mikrovlnný senzor",
+    "dodavatel": "Hotron Ltd.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Štítek dangerous",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25C-24 (48V)",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25B-24 (24V)",
+    "dodavatel": "",
+    "sklad": 26,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-25A-24 (12V)",
+    "dodavatel": "",
+    "sklad": 30,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "I",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič RSD-60H-5 (100V)",
+    "dodavatel": "",
+    "sklad": 32,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": "ALIS000138"
+  },
+  {
+    "nazev": "DC/DC měnič SD-15C-5 (48V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-15B-5 (24V)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-15A-5 (12V)",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "I",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206 SILICON wrist",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206 FIBRE wrist",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Žádný",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "etiketa interní",
+    "dodavatel": "",
+    "sklad": 1000,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "etiketa výrobní CE",
+    "dodavatel": "",
+    "sklad": 5000,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "WIFI dongle BPi",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000107"
+  },
+  {
+    "nazev": "UT-206 H TAG",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000106"
+  },
+  {
+    "nazev": "Solid state relé WEIBA",
+    "dodavatel": "",
+    "sklad": 15,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000105"
+  },
+  {
+    "nazev": "Solid state relé FOTEK",
+    "dodavatel": "",
+    "sklad": 12,
+    "min": 3,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000104"
+  },
+  {
+    "nazev": "Nabíječka na wristy",
+    "dodavatel": "",
+    "sklad": 525,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 0,
+    "id": "ALIS000103"
+  },
+  {
+    "nazev": "Poziční světlo",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 0,
+    "id": "ALIS000102"
+  },
+  {
+    "nazev": "Držáky baterií 18650",
+    "dodavatel": "",
+    "sklad": 7,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000101"
+  },
+  {
+    "nazev": "Baterie 18650",
+    "dodavatel": "",
+    "sklad": 10,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000100"
+  },
+  {
+    "nazev": "Držáky baterií 16340",
+    "dodavatel": "",
+    "sklad": 9,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000099"
+  },
+  {
+    "nazev": "Baterie 16340",
+    "dodavatel": "",
+    "sklad": 52,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000098"
+  },
+  {
+    "nazev": "Baterie AAA",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000097"
+  },
+  {
+    "nazev": "Baterie AA",
+    "dodavatel": "",
+    "sklad": 40,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000096"
+  },
+  {
+    "nazev": "2 PIN konektor UG230",
+    "dodavatel": "",
+    "sklad": 6,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000095"
+  },
+  {
+    "nazev": "5 PIN konektor UG230",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000094"
+  },
+  {
+    "nazev": "6 PIN konektor UG230",
+    "dodavatel": "",
+    "sklad": 59,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 1,
+    "id": "ALIS000093"
+  },
+  {
+    "nazev": "Raspberry Pi 3 model B+",
+    "dodavatel": "",
+    "sklad": 7,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000092"
+  },
+  {
+    "nazev": "Raspberry Pi kamera",
+    "dodavatel": "",
+    "sklad": 5,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000091"
+  },
+  {
+    "nazev": "Coral Dev Board",
+    "dodavatel": "",
+    "sklad": 7,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 1,
+    "id": "ALIS000090"
+  },
+  {
+    "nazev": "Maják - červený",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000089"
+  },
+  {
+    "nazev": "TYP D prům. eth. konektor",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000088"
+  },
+  {
+    "nazev": "Konektor M12 - TYP A - FEMALE",
+    "dodavatel": "",
+    "sklad": 121,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000087"
+  },
+  {
+    "nazev": "Průchodka PG-07 - ŠEDÁ",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 14,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000086"
+  },
+  {
+    "nazev": "Průchodka PG-11 - ŠEDÁ",
+    "dodavatel": "",
+    "sklad": 24,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000085"
+  },
+  {
+    "nazev": "Průchodka PG-09 - ŠEDÁ",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 48,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000084"
+  },
+  {
+    "nazev": "Průchodka M20x1.5 - ŠEDÁ",
+    "dodavatel": "",
+    "sklad": 22,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000083"
+  },
+  {
+    "nazev": "Průchodka M20x1.5",
+    "dodavatel": "",
+    "sklad": 22,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000082"
+  },
+  {
+    "nazev": "Průchodka PG-11",
+    "dodavatel": "",
+    "sklad": 62,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000081"
+  },
+  {
+    "nazev": "Průchodka PG-21",
+    "dodavatel": "",
+    "sklad": 49,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000080"
+  },
+  {
+    "nazev": "Průchodka PG-07",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 113,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000079"
+  },
+  {
+    "nazev": "Průchodka PG-09",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 171,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000078"
+  },
+  {
+    "nazev": "RAW ventilátor 12V",
+    "dodavatel": "",
+    "sklad": 18,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 0,
+    "id": "ALIS000077"
+  },
+  {
+    "nazev": "RAW ventilátor 5V",
+    "dodavatel": "",
+    "sklad": 43,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 0,
+    "id": "ALIS000076"
+  },
+  {
+    "nazev": "6 PIN prům. konektor - VELKÝ",
+    "dodavatel": "",
+    "sklad": 12,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000075"
+  },
+  {
+    "nazev": "7 PIN prům. konektor - FEMALE",
+    "dodavatel": "",
+    "sklad": 90,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000074"
+  },
+  {
+    "nazev": "6 PIN prům. konektor - FEMALE",
+    "dodavatel": "",
+    "sklad": 4,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000073"
+  },
+  {
+    "nazev": "2 PIN prům. konektor - FEMALE",
+    "dodavatel": "",
+    "sklad": 36,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000072"
+  },
+  {
+    "nazev": "7 PIN prům. konektor - MALE",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000071"
+  },
+  {
+    "nazev": "6 PIN prům. konektor - MALE",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000070"
+  },
+  {
+    "nazev": "2 PIN prům. konektor - MALE",
+    "dodavatel": "",
+    "sklad": 19,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000069"
+  },
+  {
+    "nazev": "7 PIN prům. konektor",
+    "dodavatel": "",
+    "sklad": 69,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000068"
+  },
+  {
+    "nazev": "6 PIN prům. konektor",
+    "dodavatel": "",
+    "sklad": 40,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000067"
+  },
+  {
+    "nazev": "2 PIN prům. konektor",
+    "dodavatel": "",
+    "sklad": 40,
+    "min": 40,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000066"
+  },
+  {
+    "nazev": "Převodník USB/microUSB",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000065"
+  },
+  {
+    "nazev": "HDMI kabel (ethernet)",
+    "dodavatel": "",
+    "sklad": 12,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000064"
+  },
+  {
+    "nazev": "M12 kabel - zkrácený",
+    "dodavatel": "",
+    "sklad": 8,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 1,
+    "id": "ALIS000063"
+  },
+  {
+    "nazev": "M12 kabel - úhlový",
+    "dodavatel": "",
+    "sklad": 26,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000062"
+  },
+  {
+    "nazev": "USB 2.0 M-F kabel",
+    "dodavatel": "",
+    "sklad": 2,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000061"
+  },
+  {
+    "nazev": "microUSB M-F kabel",
+    "dodavatel": "",
+    "sklad": 23,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000060"
+  },
+  {
+    "nazev": "USB-microUSB kabel",
+    "dodavatel": "",
+    "sklad": 250,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000059"
+  },
+  {
+    "nazev": "USB nabíjecí stanice",
+    "dodavatel": "",
+    "sklad": 4,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000058"
+  },
+  {
+    "nazev": "HDMI kabel",
+    "dodavatel": "",
+    "sklad": 1,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000057"
+  },
+  {
+    "nazev": "ETHERNET kabel 1m",
+    "dodavatel": "",
+    "sklad": 54,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 0,
+    "id": "ALIS000056"
+  },
+  {
+    "nazev": "Kapacitní tlačítko",
+    "dodavatel": "",
+    "sklad": 28,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000055"
+  },
+  {
+    "nazev": "Poziční světlo (opto-akustické)",
+    "dodavatel": "",
+    "sklad": 27,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000054"
+  },
+  {
+    "nazev": "Převodník USB/USB-C",
+    "dodavatel": "",
+    "sklad": 15,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000053"
+  },
+  {
+    "nazev": "MicroSD adapter",
+    "dodavatel": "",
+    "sklad": 243,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000052"
+  },
+  {
+    "nazev": "MicroSD karta 32GB",
+    "dodavatel": "",
+    "sklad": 42,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000051"
+  },
+  {
+    "nazev": "Banana Pi M5 4GB",
+    "dodavatel": "",
+    "sklad": 79,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000050"
+  },
+  {
+    "nazev": "Raspberry Pi NOIR CAMERA BOARD",
+    "dodavatel": "",
+    "sklad": 25,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000049"
+  },
+  {
+    "nazev": "VESA držák - redukce",
+    "dodavatel": "",
+    "sklad": 24,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 0,
+    "id": "ALIS000048"
+  },
+  {
+    "nazev": "VESA držák",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 0,
+    "id": "ALIS000047"
+  },
+  {
+    "nazev": "Raspberry Pi 3 7\" Touchscreen display",
+    "dodavatel": "",
+    "sklad": 14,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 2,
+    "id": "ALIS000046"
+  },
+  {
+    "nazev": "UT-206 Z WRIST",
+    "dodavatel": "",
+    "sklad": 276,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000045"
+  },
+  {
+    "nazev": "UT-206 WRIST",
+    "dodavatel": "",
+    "sklad": 87,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000044"
+  },
+  {
+    "nazev": "Nabíječka USB 5V",
+    "dodavatel": "",
+    "sklad": 17,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 3,
+    "id": "ALIS000042"
+  },
+  {
+    "nazev": "IR senzor",
+    "dodavatel": "",
+    "sklad": 16,
+    "min": 10,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000041"
+  },
+  {
+    "nazev": "Napájecí konektor 5,5 x 2,1",
+    "dodavatel": "HADEX spol. s r.o.",
+    "sklad": 2010,
+    "min": 100,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000040"
+  },
+  {
+    "nazev": "Miniaturní elektromagnetické RELÉ",
+    "dodavatel": "",
+    "sklad": 15,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 1,
+    "id": "ALIS000039"
+  },
+  {
+    "nazev": "Arduino 2560",
+    "dodavatel": "",
+    "sklad": 4,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 1,
+    "id": "ALIS000038"
+  },
+  {
+    "nazev": "Převodník RS485/USB",
+    "dodavatel": "",
+    "sklad": 46,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000037"
+  },
+  {
+    "nazev": "RTC modul",
+    "dodavatel": "",
+    "sklad": 40,
+    "min": 5,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000036"
+  },
+  {
+    "nazev": "Převodník USB/RS485",
+    "dodavatel": "",
+    "sklad": 43,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000035"
+  },
+  {
+    "nazev": "Pigtail k IQRF",
+    "dodavatel": "",
+    "sklad": 14,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000034"
+  },
+  {
+    "nazev": "Pigtail SMA-SMF/50/1",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 53,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000033"
+  },
+  {
+    "nazev": "Membránová klávesnice",
+    "dodavatel": "",
+    "sklad": 21,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000032"
+  },
+  {
+    "nazev": "Buzzer modul 5V",
+    "dodavatel": "",
+    "sklad": 22,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000031"
+  },
+  {
+    "nazev": "Převodník USB pro magnetický kontakt",
+    "dodavatel": "",
+    "sklad": 29,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 3,
+    "id": "ALIS000030"
+  },
+  {
+    "nazev": "Převodník RS485/UART",
+    "dodavatel": "",
+    "sklad": 59,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000029"
+  },
+  {
+    "nazev": "Nano terminal shield v4",
+    "dodavatel": "",
+    "sklad": 9,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000028"
+  },
+  {
+    "nazev": "IQRF klíčenka",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000027"
+  },
+  {
+    "nazev": "Weiba GTD-W-5A RELÉ",
+    "dodavatel": "",
+    "sklad": 1,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 1,
+    "id": "ALIS000026"
+  },
+  {
+    "nazev": "Anténa mini - IQRF",
+    "dodavatel": "",
+    "sklad": 21,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000025"
+  },
+  {
+    "nazev": "UG-230 CARDTAG",
+    "dodavatel": "",
+    "sklad": 17,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000024"
+  },
+  {
+    "nazev": "UT-206",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000023"
+  },
+  {
+    "nazev": "UniUnit 2 e-LITE",
+    "dodavatel": "",
+    "sklad": 10,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000022"
+  },
+  {
+    "nazev": "Větrák",
+    "dodavatel": "AliExpress",
+    "sklad": 140,
+    "min": 50,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000021"
+  },
+  {
+    "nazev": "Anténa krátká - IQRF GATE",
+    "dodavatel": "",
+    "sklad": 75,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000020"
+  },
+  {
+    "nazev": "Anténa dlouhá - UWB",
+    "dodavatel": "",
+    "sklad": 107,
+    "min": 50,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000019"
+  },
+  {
+    "nazev": "UniUnit 2 LIGHT - MALE",
+    "dodavatel": "",
+    "sklad": 13,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000018"
+  },
+  {
+    "nazev": "UniUnit 2 LIGHT - FEMALE",
+    "dodavatel": "",
+    "sklad": 143,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 3,
+    "id": "ALIS000017"
+  },
+  {
+    "nazev": "8-kanál RELÉ 5V",
+    "dodavatel": "",
+    "sklad": 5,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 0,
+    "id": "ALIS000016"
+  },
+  {
+    "nazev": "4-kanál RELÉ 5V",
+    "dodavatel": "",
+    "sklad": 68,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 0,
+    "id": "ALIS000015"
+  },
+  {
+    "nazev": "Arduino NANO",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 50,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000014"
+  },
+  {
+    "nazev": "STEP-UP 4A",
+    "dodavatel": "",
+    "sklad": 30,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000013"
+  },
+  {
+    "nazev": "STEP-DOWN 5A",
+    "dodavatel": "HADEX spol. s r.o.",
+    "sklad": 35,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000012"
+  },
+  {
+    "nazev": "STEP-UP 2-24V - NAPÁJENÉ",
+    "dodavatel": "",
+    "sklad": 44,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000010"
+  },
+  {
+    "nazev": "1-kanál RELÉ 5V - NENAPÁJENÉ",
+    "dodavatel": "HADEX spol. s r.o.",
+    "sklad": 61,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000009"
+  },
+  {
+    "nazev": "1-kanál RELÉ 5V - NAPÁJENÉ",
+    "dodavatel": "",
+    "sklad": 6,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000008"
+  },
+  {
+    "nazev": "STEP-DOWN 3A - NENAPÁJENÉ",
+    "dodavatel": "",
+    "sklad": 87,
+    "min": 30,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000007"
+  },
+  {
+    "nazev": "STEP-DOWN 3A - NAPÁJENÉ",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000006"
+  },
+  {
+    "nazev": "2-kanál RELÉ 5V s optočlenem",
+    "dodavatel": "",
+    "sklad": 10,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "B",
+    "patro": 0,
+    "id": "ALIS000005"
+  },
+  {
+    "nazev": "2-kanál RELÉ 5V - NENAPÁJENÉ",
+    "dodavatel": "HADEX spol. s r.o.",
+    "sklad": 25,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000004"
+  },
+  {
+    "nazev": "2-kanál RELÉ 5V - NAPÁJENÉ",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 1,
+    "id": "ALIS000003"
+  },
+  {
+    "nazev": "IQRF GW-ETH-02A",
+    "dodavatel": "",
+    "sklad": 32,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "C",
+    "patro": 2,
+    "id": "ALIS000002"
+  },
+  {
+    "nazev": "UniUnit 1",
+    "dodavatel": "WELLPCB TECH CO., LTD.",
+    "sklad": 7,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000001"
+  },
+  {
+    "nazev": "UG-520",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Zásuvková lišta, Zásuvka; kolíkové; PIN: 40; přímý; 2,54mm; THT; 2x20; 3A",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Napájecí kabel vidlice pro PJ 1,5 m",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ASA-21",
+    "dodavatel": "JaP-Jacina trade, s.r.o.",
+    "sklad": 6,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": "ALIS000141"
+  },
+  {
+    "nazev": "Práce FW",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Práce HW",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor M12 5pin male",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabel 5pin F/ 5pin M 5,0 m",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Programovatelné RGB tlačítko do panelu",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Projektor GL80",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor laser,rozsah 0,05-24m,analog 0-10V",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Koncový spínač 3SE5112-0CR01 SIEMENS",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWR-03A",
+    "dodavatel": "",
+    "sklad": 11,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Sirena A100",
+    "dodavatel": "RS COMPONENTS",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Maják - XVR3B05",
+    "dodavatel": "RS COMPONENTS",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "kabel připojovací 4žilový, PUR, M12 přímý RKC4.4T-5/TXL",
+    "dodavatel": "Turck, s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "montážní úchytka SMB18A",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor QS18VP6RQ8",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "optosenzor QS186EQ8",
+    "dodavatel": "Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LTE modem",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 1,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "TS 4.0",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Elektromagnetický zámek 280kg",
+    "dodavatel": "Půhy.cz",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Semafor jednokomorový 24V",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Wago svorky 5 pin",
+    "dodavatel": "ELIMA ELEKTRO s.r.o.",
+    "sklad": 0,
+    "min": 200,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Vodič 1x0,5mm2",
+    "dodavatel": "ELIMA ELEKTRO s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Vodič 7x1mm2 nestíněný",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Vodič 2x1mm2",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Větrák pro FDS, 30cm kabel",
+    "dodavatel": "RPishop.cz",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "VESA držák pro FDS M135B Nexus",
+    "dodavatel": "Alza.cz a.s.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-207H",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206Z",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206P pcb",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206P",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-206",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UT-205",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "převodník USB to RS485 (UG230)",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UNI UNIT v2 eLite",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UNI UNIT v2 light",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UNI UNIT v2",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UNI UNIT v1",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UA-220-O",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UA-220",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "UA-180",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ASA-FOW",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "TAKACHI WP20-28-5C",
+    "dodavatel": "TAKACHI",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "TAKACHI WP20-20-5C",
+    "dodavatel": "TAKACHI",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Step up MT3608 2A DC-DC (2A)",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Step down nastavitelný měnič s LM2596 DC-DC (3A)",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 40,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Mini StepDown 1-17V to 5V (1,8A)",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Spojovací materiál",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-FCO",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-FCD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-BWO",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-BWD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-3CO",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-3CD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-2CO",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-2CD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-1CO",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "SLP-PG-1CD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Síťový adaptér 24V 60W 2,5A",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 3,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Síťový adaptér 18W 5V",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 5,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Senzor ultrazvukový Compact IO-Link RU100U-M18M-AP8X2-H1151",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-100D-24 (72-144V/24V)",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 32,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": 10,
+    "patro": "",
+    "id": "ALIS000137"
+  },
+  {
+    "nazev": "DC/DC měnič SD-100C-24 (36-72V/24V)",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-100B-24 (19-36V/24V)",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC/DC měnič SD-100A-24 (9,5-18V/24V)",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RTC hodiny",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi displej 7",
+    "dodavatel": "Alza.cz a.s.",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi 4 napájecí adaptér - 5V/3A",
+    "dodavatel": "Alza.cz a.s.",
+    "sklad": 0,
+    "min": 2,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "RPi 4 hliníkový chladič",
+    "dodavatel": "Alza.cz a.s.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Raspberry Pi 4 Model B - 4GB RAM",
+    "dodavatel": "Alza.cz a.s.",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Relé SSR 40DA 380V",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Relé 230 V el. mag.",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Relé 2 kanály 5V",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 50,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Relé 1 kanál 5V",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Vodič 2 x 0,35",
+    "dodavatel": "Elektro-Ivičič",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Práce HW-price list",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Práce FW",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Polarizovaný reflexní snímač (optobrána s odrazkou) Q12AB6LPQ",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Pigtail UWB",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Optoakustické upozornění",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Napájecí kabel vidlice 3 m (PEN)",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Napájecí DC zdířka 2,1mm na panel s matkou",
+    "dodavatel": "HADEX spol. s r.o.",
+    "sklad": 0,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "převodník Micro USB TTL-USB",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 5,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Membránové tlačítko",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LPC-60-1750",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ), BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "LED maják na zrcadlo",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Křížová konstrukce zrcadla",
+    "dodavatel": "ALIS",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor RJ45 do panelu",
+    "dodavatel": "TME Czech Republic s.r.o., Banner Engineering Corporation",
+    "sklad": 0,
+    "min": 5,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor ALI/7pin female panel/male cable",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 50,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Konektor M12/5pin female",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabelová spojka 3 pin",
+    "dodavatel": "AliExpress",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Kabelová průchodka / vývodka PG9",
+    "dodavatel": "TME Czech Republic s.r.o.",
+    "sklad": 0,
+    "min": 50,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF TR-72DCT (data controlled transceiver+OS, SIM-fit, 868/916 MHZ, TMP senzor)",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 61,
+    "min": 20,
+    "pocet": "Dostatek",
+    "regal": "A",
+    "patro": 2,
+    "id": "ALIS000043"
+  },
+  {
+    "nazev": "IQRF TR-72DAT (transceiver+OS, SIM-fit, PCB antenna, 868/916 MHz, TMP senzor)",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF RC4-02 dálkový ovladač bílý",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF RC4-01 dálkový ovladač černý",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF GW-USB-06 (ready to use IQRF/USB gateway, FSK, USB stick)",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 5,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF GW-ETH-02A(72D) ethernet gateway",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF CAB-U.FL/SMA-15 (15cm IPEX cable with SMA female and UFL konektor)",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "IQRF AN-07 anténa (TLB-900/1800-2.5E, 27,5mm, SMA/J konektor)",
+    "dodavatel": "IQRF Tech s.r.o.",
+    "sklad": 0,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Hliníkový profil pro AWR-05i",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "HLG-320H-36B",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 10,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Grafické práce",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ELG-75-12B 3Y",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 8,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ELG-240-24B 3Y",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ELG-150-24B 3Y",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 5,
+    "min": 30,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ELG-100-24B 3Y",
+    "dodavatel": "MI6 s.r.o. (ESHOP-MEANWELL.CZ)",
+    "sklad": 0,
+    "min": 5,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Duální 5V větrák, 50x25x13 mm",
+    "dodavatel": "RPishop.cz",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "DC měnič pro VZV LDT151-2400 (12-50V/6-24V)",
+    "dodavatel": "LEDISCON s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Bezpečnostní zrcadlo 80 cm",
+    "dodavatel": "HAPPY END CZ, a.s.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Bezpečnostní zrcadlo 100 cm",
+    "dodavatel": "HAPPY END CZ, a.s.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWS-05",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWS-04",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWS-03",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWS-02",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWS-01",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWR-S02",
+    "dodavatel": "ALIS",
+    "sklad": 11,
+    "min": 10,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "AWG-SET",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ASS-01 RC",
+    "dodavatel": "Hotron Ltd.",
+    "sklad": 0,
+    "min": 1,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ASS-01",
+    "dodavatel": "Hotron Ltd.",
+    "sklad": 2,
+    "min": 20,
+    "pocet": "Nedostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ASA-DU",
+    "dodavatel": "ALIS",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Arduino Nano V3.0",
+    "dodavatel": "ECLIPSERA s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "Anténa AN-5",
+    "dodavatel": "Woxu Wireless Co.,LTD.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-SPOTFB",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-SPOTCR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-SPOTCB",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-LINEFR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-4100HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-4100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-3100HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-3100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-3000",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-2125CHR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-2125C",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-2000",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-1300HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-1300",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-1100HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-1100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-PC-1000C",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-RZL",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-R800",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-R700",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-R100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-G750",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-G700",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-G100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-LA-B1000",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-45",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-4",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-30",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-25",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-20",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-15",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-L-10",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-7000HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-7000",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-3000GB",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-3000E",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-2500Z",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-2500F",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-2000GB",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-1300HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-1300",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-1100HR",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-AC-1100",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 4,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-4DEG-SET",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-45DEG-SET",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-45DEG-ADD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-36DEGHR-SET",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-36DEGHR-ADD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-16DEGHR-SET",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-16DEGHR-ADD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-12DEGHR-SET",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-12DEGHR-ADD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "ALP-04DEG-ADD",
+    "dodavatel": "BelCandor s.r.o.",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "3D tisk (g)",
+    "dodavatel": "",
+    "sklad": 0,
+    "min": 0,
+    "pocet": "Dostatek",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  },
+  {
+    "nazev": "",
+    "dodavatel": "",
+    "sklad": "",
+    "min": "",
+    "pocet": "",
+    "regal": "",
+    "patro": "",
+    "id": ""
+  }
+]

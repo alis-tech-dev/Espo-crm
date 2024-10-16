@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "status": "Stav",
+        "acceptanceStatus": "Stav přijetí"
+    },
+    "options": {
+        "acceptanceStatus": {
+            "None": "Žádný"
+        }
+    }
+}

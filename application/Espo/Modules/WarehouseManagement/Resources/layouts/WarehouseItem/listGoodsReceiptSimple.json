@@ -1,0 +1,13 @@
+[
+    {
+        "name": "product"
+    },
+    {
+        "name": "quantity",
+        "width": 15
+    },
+    {
+        "name": "price",
+        "width": 15
+    }
+]

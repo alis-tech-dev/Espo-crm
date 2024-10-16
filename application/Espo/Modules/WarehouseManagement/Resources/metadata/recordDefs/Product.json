@@ -1,0 +1,14 @@
+{
+    "readLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\Product\\QuantityLoader",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\Product\\PriceLoader",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\Product\\OrderedLoader"
+    ],
+    "listLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\Product\\QuantityLoaderList",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\Product\\OrderedLoader"
+    ]
+}
+

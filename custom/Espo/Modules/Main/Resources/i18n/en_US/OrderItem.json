@@ -1,0 +1,11 @@
+{
+	"fields": {
+		"account1": "Account1",
+		"components": "Components",
+		"code": "Kód"
+	},
+	"links": {
+		"account1": "Account1",
+		"components": "Components"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"documents": {
+		"index": 0
+	},
+	"tasksToLeads": {
+		"index": 1
+	},
+	"stream": {
+		"sticked": true,
+		"index": 2
+	},
+	"targetLists": {
+		"index": 3
+	},
+	"relatedLead": {
+		"index": 4
+	}
+}

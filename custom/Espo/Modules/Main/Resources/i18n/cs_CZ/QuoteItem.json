@@ -1,0 +1,48 @@
+{
+	"fields": {
+		"account": "Organizace",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"colisionPlace": "Kolizní místo",
+		"description": "Popis",
+		"discount": "Sleva (%)",
+		"listPriceConverted": "Katalogová cena (převedeno)",
+		"listPriceCurrency": "Měna katalogové ceny",
+		"name": "Název",
+		"qty": "Množství",
+		"quantity": "Množství",
+		"quote1": "Nabídka",
+		"quoteStatus": "Stav nabídky",
+		"taxRate": "Sazba daně",
+		"unit": "Jednotka",
+		"unitPriceConverted": "Jednotková cena (převedeno)",
+		"unitPriceCurrency": "Měna jednotkové ceny",
+		"unitWeight": "Jednotková hmotnost",
+		"weight": "Hmotnost",
+		"processed": "Z"
+	},
+	"labels": {
+		"Create QuoteItem": "Vytvořit položku nabídky",
+		"Quotes": "Nabídky"
+	},
+	"links": {
+		"account": "Organizace",
+		"product": "Produkt",
+		"quote1": "Nabídka"
+	},
+	"options": {
+		"colisionPlace": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5"
+		},
+		"unit": {
+			"h": "h",
+			"km": "km",
+			"pcs": "pcs",
+			"unit": "unit"
+		}
+	}
+}

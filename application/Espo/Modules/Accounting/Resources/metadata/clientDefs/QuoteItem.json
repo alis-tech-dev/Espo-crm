@@ -1,0 +1,25 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting:acl/invoice-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Quotes",
+                    "link": "#Quote",
+                    "acl": "read",
+                    "aclScope": "Quote"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": ["name", "align", "width", "link", "view", "customLabel"]
+        }
+    }
+}

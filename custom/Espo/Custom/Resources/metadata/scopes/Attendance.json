@@ -1,0 +1,37 @@
+{
+    "stream": true,
+    "disabled": false,
+    "statusField": null,
+    "kanbanStatusIgnoreList": null,
+    "activityStatusList": [
+        "V práci",
+        "Dovolená",
+        "Nemoc",
+        "Neplacené volno",
+        "Home office",
+        "Lékař"
+    ],
+    "historyStatusList": [
+        "V práci",
+        "Dovolená",
+        "Nemoc",
+        "Neplacené volno",
+        "Home office",
+        "Lékař"
+    ],
+    "completedStatusList": [
+        "V práci",
+        "Dovolená",
+        "Nemoc",
+        "Neplacené volno",
+        "Home office",
+        "Lékař"
+    ],
+    "canceledStatusList": [
+        "V práci",
+        "Dovolená",
+        "Nemoc",
+        "Neplacené volno",
+        "Home office"
+    ]
+}

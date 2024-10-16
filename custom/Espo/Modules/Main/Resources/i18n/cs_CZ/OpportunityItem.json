@@ -1,0 +1,21 @@
+{
+	"fields": {
+		"amountConverted": "Částka (převedená)",
+		"amountCurrency": "Částka v měně",
+		"description": "Popis",
+		"opportunityStage": "Fáze",
+		"qty": "Množství",
+		"quantity": "Množství",
+		"unitPriceConverted": "Jednotková cena (Převedená)",
+		"unitPriceCurrency": "Jednotková cena",
+		"opportunity": "Poptávky"
+	},
+	"labels": {
+		"Opportunities": "Příležitosti",
+		"Create OpportunityItem": "Vytvořit Položka poptávky"
+	},
+	"links": {
+		"product": "Produkt",
+		"opportunity": "Poptávky"
+	}
+}

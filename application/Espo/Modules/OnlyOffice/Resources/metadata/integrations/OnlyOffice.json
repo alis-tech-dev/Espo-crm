@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "scriptSrc": {
+            "type": "url"
+        }
+    },
+    "view": "only-office:views/admin/integrations/only-office"
+}

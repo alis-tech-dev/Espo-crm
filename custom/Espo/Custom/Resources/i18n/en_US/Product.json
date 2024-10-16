@@ -1,0 +1,48 @@
+{
+    "fields": {
+        "dismantlable": "Rozebiratelný",
+        "productDatabases": "Databáze produktů",
+        "goodsReceipts": "Příjemky",
+        "descriptionEn": "Popis EN",
+        "descriptionDe": "Popis DE",
+        "nameDE": "Name DE",
+        "image": "Image",
+        "quote": "Quote",
+        "quotes": "Quotes",
+        "quoteItem": "Quote Item",
+        "salesOrders": "Sales Orders",
+        "isModel": "IsModel",
+        "isArchive": "IsArchive",
+        "productCode": "Name",
+        "name": "Kód produktu",
+        "isIgnored": "Is Ignored",
+        "warehouse": "Warehouse",
+        "defaultProductionModel": "Production Model",
+        "warehouseCategory": "WarehouseCategory",
+        "isInvisible": "IsInvisible",
+        "isHidden": "IsHidden"
+    },
+    "links": {
+        "productDatabases": "Databáze produktů",
+        "goodsReceipts": "Příjemky",
+        "quote": "Quote",
+        "quotes": "Quotes",
+        "quoteItem": "Quote Item",
+        "salesOrders": "Sales Orders",
+        "warehouse": "Warehouse"
+    },
+    "options": {
+        "unit": {
+            "km": "km",
+            "m": "m",
+            "h": "h",
+            "day": "day",
+            "pcs": "pcs",
+            "hod": "hod",
+            "ks": "ks",
+            "set": "set",
+            "kg": "kg",
+            "g": "g"
+        }
+    }
+}

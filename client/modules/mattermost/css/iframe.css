@@ -1,0 +1,24 @@
+body.contains-mattermost .navbar-right-container {
+    display: none;
+}
+
+body[data-navbar='side']:not(.minimized).contains-mattermost > #content {
+    padding-left: 200px !important;
+}
+
+body[data-navbar='side'].contains-mattermost > #content {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+}
+
+body.contains-mattermost {
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.mattermost-iframe iframe {
+    width: 100%;
+    border: none;
+    height: 100vh;
+}

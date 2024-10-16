@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create EducationAndTrainingRecord": "Create Education and training record"
+    },
+    "fields": {
+        "dateOfLastInspection": "Date of last inspection",
+        "numberOfYearsForRepetition": "Number of years for repetition",
+        "dateOfTheNextInspection": "Date of the next inspection"
+    }
+}

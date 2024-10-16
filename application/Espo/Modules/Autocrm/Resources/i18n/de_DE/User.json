@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "authLogRecordId": "Auth Log Datensatz-ID",
+        "authTokenId": "Auth Token-ID",
+        "token": "Token",
+        "userData": "Benutzerdaten",
+        "warehouses": "Lager"
+    },
+    "links": {
+        "preferences": "Präferenzen",
+        "reportEmailSending": "Bericht über den E-Mail-Versand",
+        "warehouses": "Lager"
+    },
+    "labels": {
+        "Send Password Change Link": "Link zur Passwortänderung senden",
+        "Send Code": "Code senden"
+    },
+    "messages": {
+        "sendPasswordChangeLinkConfirmation": "Der Nutzer erhält eine E-Mail mit einem eindeutigen Link, über den er sein Passwort ändern kann. Der Link läuft nach einer bestimmten Zeitspanne ab.",
+        "yourAuthenticationCode": "Ihr Authentifizierungscode: {Code}.",
+        "choose2FaSmsPhoneNumber": "Wählen Sie eine Telefonnummer, die für 2FA verwendet werden soll.",
+        "choose2FaEmailAddress": "Wählen Sie eine E-Mail-Adresse, die für 2FA verwendet werden soll. Es wird dringend empfohlen, eine nicht primäre E-Mail-Adresse zu verwenden.",
+        "enterCodeSentInEmail": "Geben Sie den an Ihre E-Mail-Adresse gesendeten Code ein.",
+        "enterCodeSentBySms": "Geben Sie den, per SMS an Ihre Telefonnummer gesendeten, Code ein.",
+        "passwordChangeRequestNotFound": "Der Antrag auf Passwortänderung wurde nicht gefunden. Es könnte abgelaufen sein. Versuchen Sie, ein neues Passwort von der [Login-Seite]({URL}) aus zu beantragen."
+    }
+}

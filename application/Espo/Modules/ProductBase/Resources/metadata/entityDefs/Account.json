@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "products": {
+            "type": "linkMultiple"
+        }
+    },
+    "links": {
+        "products": {
+            "type": "hasMany",
+            "entity": "Product",
+            "foreign": "suppliers",
+            "relationName": "productSuppliers",
+            "midKeys": [
+                "supplierId",
+                "productId"
+            ]
+        }
+    }
+}

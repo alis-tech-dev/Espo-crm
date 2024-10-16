@@ -1,0 +1,20 @@
+body.only-office  {
+    overflow: hidden !important;
+    padding-top: 0 !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+body.only-office > #header > #navbar .navbar-right-container {
+    display: none !important;
+}
+
+body.only-office > #content {
+    max-width: none !important;
+}
+
+body.only-office > #content > #main > iframe {
+    width: 100%;
+    border: none;
+    height: 100vh;
+}

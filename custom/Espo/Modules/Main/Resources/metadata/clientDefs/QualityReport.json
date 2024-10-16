@@ -1,0 +1,9 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [
+		"onlyMy"
+	],
+	"iconClass": "fas fa-clipboard",
+	"kanbanViewMode": false,
+	"color": null
+}

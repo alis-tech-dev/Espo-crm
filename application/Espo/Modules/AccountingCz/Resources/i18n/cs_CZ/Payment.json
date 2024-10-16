@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "Paid Today": "Zaplaceno dnes",
+        "Record Payment Date": "Zaznamenat datum platby",
+        "Paid on Due Date": "Zaplacena v den splatnosti",
+        "Payment Details": "Platební údaje",
+        "Record Payment for Invoice": "Zaznamenat platbu k faktuře",
+        "Create Payment": "Vytvořit platbu"
+    },
+    "fields": {
+        "account": "Odběratel",
+        "grandTotalAmount": "Částka na faktuře",
+        "remainingToPay": "Zbývá zaplatit",
+        "paidOn": "Vyberte datum zaplacení",
+        "amount": "Zaplacená částka",
+        "amountCurrency": "Zaplacená částka v měně",
+        "amountConverted": "Zaplacená částka (převedeno)",
+        "markAsPaid": "Označit fakturu jako zaplacenou",
+        "followupDocument": "S platbou vystavit",
+        "variableSymbol": "Variabilní symbol platby",
+        "date": "Datum platby",
+        "taxDocument": "Daňový doklad k platbě"
+    },
+    "options": {
+        "followupDocument": {
+            "FinalInvoicePaid": "Fakturu zaplacenou",
+            "FinalInvoice": "Fakturu s doplněním",
+            "TaxDocument": "Doklad k platbě",
+            "None": "Nic"
+        }
+    }
+}

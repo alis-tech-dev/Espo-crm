@@ -1,0 +1,5 @@
+{
+    "accessControlFilterClassNameMap": {
+        "onlyTeam": "Espo\\Core\\Select\\AccessControl\\Filters\\ForeignOnlyTeam"
+    }
+}

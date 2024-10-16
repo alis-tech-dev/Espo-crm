@@ -1,0 +1,52 @@
+{
+	"fields": {
+		"product": {
+			"type": "link",
+			"required": true
+		},
+		"quantity": {
+			"type": "float",
+			"required": true,
+			"default": 1
+		},
+		"independent": {
+			"type": "bool",
+			"default": false
+		},
+		"productionModelOperation": {
+			"type": "link"
+		},
+		"quantityWithdrawnPlanned": {
+			"type": "float",
+			"notStorable": true,
+			"readOnly": true
+		},
+		"quantityWithdrawnActual": {
+			"type": "float",
+			"notStorable": true,
+			"readOnly": true
+		}
+	},
+	"links": {
+		"product": {
+			"type": "belongsTo",
+			"entity": "Product",
+			"foreign": "productionModelItems"
+		},
+		"productionModelOperation": {
+			"type": "belongsTo",
+			"entity": "ProductionModelOperation",
+			"foreign": "productionModelItems"
+		},
+		"parent": {
+			"type": "belongsToParent",
+			"foreign": "billOfMaterials",
+			"entityList": ["ProductionModel", "ProductionOrder"]
+		}
+	},
+	"indexes": {
+		"product": {
+			"columns": ["productId", "deleted"]
+		}
+	}
+}

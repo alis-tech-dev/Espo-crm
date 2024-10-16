@@ -1,0 +1,38 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [{"name": "number"}, {"name": "quote"}],
+            [{"name": "status"}, {"name": "account"}],
+            [{"name": "dateOrdered"}, {"name": "paymentMethod"}]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [{"name": "billingAddress"}, {"name": "shippingAddress"}],
+            [{"name": "billingAddressFirstName", "css": "col-md-3"}, {"name": "billingAddressLastName", "css": "col-md-3"}, {"name": "shippingAddressFirstName", "css": "col-md-3"}, {"name": "shippingAddressLastName", "css": "col-md-3"}],
+            [{"name": "billingAddressPhoneNumber"}, {"name": "shippingAddressPhoneNumber"}],
+            [{"name": "billingAddressEmail"}, {"name": "shippingAddressEmail"}],
+            [{"name": "billingContact"}, {"name": "shippingContact"}],
+            [{"name": "taxClass"}, false],
+            [{"name": "description", "fullWidth": true}]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [{"name": "items", "fullWidth": true, "noLabel": true}]
+        ]
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [{"name": "amountCurrency"}, {"name": "preDiscountedAmount"}],
+            [{"name": "shippingCost"}, {"name": "discountAmount"}],
+            [{"name": "shippingCostTaxRate"}, {"name": "amount"}],
+            [false, {"name": "taxAmount"}],
+            [false, {"name": "grandTotalAmount"}]
+        ]
+    }
+]

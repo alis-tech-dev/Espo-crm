@@ -1,0 +1,80 @@
+{
+    "labels": {
+        "Create Quote": "Neues Angebot",
+        "Taxes": "Steuern",
+        "Shipping Providers": "Versender",
+        "Add Item": "Position hinzufügen",
+        "Templates": "Vorlagen",
+        "Items": "Positionen",
+        "Email PDF": "E-Mail PDF",
+        "Quote Items": "Angebotsartikel"
+    },
+    "fields": {
+        "number": "Angebotsnummer:",
+        "numberA": "Angebotsnummer (automatisch hochgezählt)",
+        "invoiceNumber": "Rechnungsnummer",
+        "account": "Firma",
+        "opportunity": "Verkaufschance",
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "billingContact": "Kontakt für Rechnungsadresse",
+        "shippingContact": "Kontakt für Lieferadresse",
+        "tax": "Steuer",
+        "taxRate": "Steuersatz:",
+        "shippingCost": "Versandkosten",
+        "shippingProvider": "Versender",
+        "taxAmount": "Steuerbetrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Rabatt",
+        "grandTotalAmount": "Gesamtbetrag",
+        "itemList": "Positionliste",
+        "dateQuoted": "Angebotsdatum",
+        "dateOrdered": "Datum der Bestellung",
+        "dateInvoiced": "Rechnungsdatum",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (konvertiert)",
+        "taxAmountConverted": "Steuerbetrag (konvertiert)",
+        "shippingCostConverted": "Versandkosten (konvertiert)",
+        "preDiscountedAmountConverted": "Betrag vor Rabatt (konvertiert)",
+        "discountAmountConverted": "Rabattbetrag (konvertiert)",
+        "grandTotalAmountConverted": "Gesamtbetrag (konvertiert)",
+        "shippingCostCurrency": "Währung der Versandkosten",
+        "taxAmountCurrency": "Steuerbetrag Währung",
+        "discountAmountCurrency": "Rabattbetrag Währung",
+        "amountCurrency": "Summe Währung",
+        "preDiscountedAmountCurrency": "Vor-Abschlag Betrag Währung",
+        "grandTotalAmountCurrency": "Gesamtbetrag Währung",
+        "currency": "Währung",
+        "acceptedPayments": "Steuerbeleg für erhaltene Rechnungen",
+        "fromWarehouse": "vom Lager",
+        "productsReserved": "reservierte Produkte"
+    },
+    "links": {
+        "items": "Positionen",
+        "billingContact": "Kontakt für Rechnungsadresse",
+        "shippingContact": "Kontakt für Lieferadresse",
+        "shippingProvider": "Versandanbieter",
+        "opportunity": "Verkaufschance",
+        "account": "Firma",
+        "tax": "Steuer",
+        "salesOrders": "Kundenaufträge",
+        "invoices": "Rechnungen",
+        "acceptedPayments": "akzeptierte Zahlungen",
+        "fromWarehouse": "vom Lager"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Durchsicht",
+            "Presented": "Präsentiert",
+            "Approved": "Genehmigt",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert"
+        }
+    },
+    "presetFilters": {
+        "actual": "Aktuell",
+        "approved": "Genehmigt"
+    }
+}

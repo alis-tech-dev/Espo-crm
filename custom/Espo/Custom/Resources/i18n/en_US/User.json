@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "vacationRequest": "Vacation Request",
+        "tasks1": "Tasks1",
+        "isAllowed": "IsAllowed",
+        "humanResources": "Human Resources",
+        "vacationTime": "VacationTime",
+        "vacationTimePerYear": "VacationTimePerYear",
+        "remainingVacationTime": "RemainingVacationTime",
+        "jIRA": "J IRA"
+    },
+    "links": {
+        "vacationRequest": "Vacation Request",
+        "tasks1": "Tasks1",
+        "humanResources": "Human Resources",
+        "jIRA": "J IRA"
+    }
+}

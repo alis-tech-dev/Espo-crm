@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "parent": "Rodič",
+        "stockLocation": "StockLocation"
+    },
+    "links": {
+        "parent": "Rodič"
+    },
+    "options": {
+        "stockLocation": {
+            "Brno": "Brno",
+            "Prostejov": "Prostějov",
+            "brno": "Brno",
+            "pv": "Prostějov"
+        }
+    }
+}

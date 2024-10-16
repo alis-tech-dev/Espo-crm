@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "enduser": "End-user",
+        "quotes": "Nabídky",
+        "opportunities": "Příležitosti",
+        "salesOrders": "Zakázky",
+        "numberA": "Číslo příležitosti"
+    },
+    "links": {
+        "quotes": "Nabídky",
+        "opportunities": "Příležitosti",
+        "salesOrders": "Zakázky"
+    },
+    "labels": {
+        "Create Opportunity": "Vytvořit Příležitost"
+    }
+}

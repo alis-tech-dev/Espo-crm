@@ -1,0 +1,12 @@
+{
+    "mandatory": {
+        "scopeLevel": {
+            "RecordRecurrence": {
+                "read": "own",
+                "edit": "own",
+                "delete": "own",
+                "create": "yes"
+            }
+        }
+    }
+}

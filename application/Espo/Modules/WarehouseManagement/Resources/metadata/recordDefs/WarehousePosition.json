@@ -1,0 +1,13 @@
+{
+    "duplicateWhereBuilderClassName": "Espo\\Classes\\DuplicateWhereBuilders\\Name",
+    "readLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\WarehousePosition\\FilledCapacityLoader"
+    ],
+    "listLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\WarehousePosition\\FilledCapacityLoader"
+    ],
+    "updateDuplicateCheck": true
+}
+

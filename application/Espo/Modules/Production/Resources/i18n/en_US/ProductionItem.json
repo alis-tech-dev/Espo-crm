@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "parent": "Parent",
+        "item": "Item",
+        "quantity": "Quantity",
+        "done": "Done",
+        "available": "Available"
+    }
+}

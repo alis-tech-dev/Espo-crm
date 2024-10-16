@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "salesOrder": "Zakázka",
+        "files": "Přílohy"
+    },
+    "links": {
+        "salesOrder": "Zakázka"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "fields": {
+    "name": "Název",
+    "quote": "Nabídka",
+    "tax": "Daň",
+    "taxRate": "Daňová sazba",
+    "shippingCost": "Přepravní sazba",
+    "shippingProvider": "Dopravce",
+    "taxAmount": "Výše daní",
+    "discountAmount": "Výše slev",
+    "amount": "Částka",
+    "preDiscountedAmount": "Částka před slevou",
+    "grandTotalAmount": "Výsledná částka",
+    "itemList": "Seznam položek",
+    "images": "Obrázky",
+    "assignment": "Zadání",
+    "solution": "Řešení"
+  },
+  "links": {
+    "items": "Položky",
+    "quote": "Nabídka"
+  }
+}

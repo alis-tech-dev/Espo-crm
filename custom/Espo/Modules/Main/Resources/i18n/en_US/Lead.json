@@ -1,0 +1,70 @@
+{
+	"fields": {
+		"year2015": "Obrat 2015",
+		"year2016": "Obrat 2016",
+		"year2017": "Obrat 2017",
+		"year2018": "Obrat 2018",
+		"year2019": "Obrat 2019",
+		"importdate": "Datum nalití",
+		"employees": "Počet zameěstnanců 2019",
+		"convertedTo": "Konvertován na",
+		"nextContact": "Kontaktovat nejpozději",
+		"details": "Poznámky",
+		"lastContact": "Poslední kontakt",
+		"headoffice": "Head office",
+		"type": "Typ",
+		"alisVisualization": "ALIS Visualization",
+		"alisAnticollision": "ALIS Anti-collision",
+		"alisVisualizationDetails": "ALIS Visualization poznámky",
+		"alisAnticollisionDetails": "ALIS Anti-collision poznámky",
+		"alisAntiCollisionSafetyBar": "ALIS Anti-Collision Safety Bar",
+		"alisAntiCollisionSafetyBarDetails": "ALIS Anti-collision safety bar poznámky",
+		"firstContact": "Slyšel už o nás?",
+		"leadType": "Typ leadu",
+		"relatedLead": "Související lead",
+		"originalLead": "Originální lead",
+		"leadsRight": "Leads Right",
+		"leadsLeft": "Leads Left",
+		"statusPartner": "Status (partner)"
+	},
+	"options": {
+		"convertedTo": {
+			"-": "-",
+			"Partner": "Partner",
+			"Zákazník": "Zákazník"
+		},
+		"type": {
+			"-": "-",
+			"End-User": "End-User",
+			"Partner": "Partner",
+			"Co-Partner": "Co-Partner"
+		},
+		"leadType": {
+			"": "-",
+			"end-userNoPartner": "End-User no partner",
+			"end-userYesPartner": "End-User yes partner",
+			"partnersNewCountry": "Partners (sales) - New country",
+			"partnersExistingPartner": "Partners (sales) - Existing partner",
+			"OEMpartner": "OEM partner",
+			"co-partnerNewCountry": "Co-Partner - New country",
+			"co-partnerExistingCountry": "Co-Partner - Existing country"
+		},
+		"statusPartner": {
+			"-": "-",
+			"New": "P - Not contacted",
+			"Assigned": "P - 0 email",
+			"In process": "P - Communication",
+			"Waiting": "P - Not answering",
+			"PQ": "P - Quoted",
+			"Converted": "P - Win",
+			"Lost": "P - Lost"
+		}
+	},
+	"links": {
+		"tasksToLeads": "Úkoly",
+		"relatedLead": "Související lead",
+		"originalLead": "Originální lead",
+		"leadsRight": "Leads Right",
+		"leadsLeft": "Leads Left"
+	}
+}

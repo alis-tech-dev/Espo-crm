@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "hash": "Hash",
+        "secret": "Geheim",
+        "token": "Token",
+        "userId": "Benutzer ID"
+    },
+    "links": {
+        "portal": "Portal",
+        "user": "Benutzer"
+    },
+    "labels": {
+        "Create AuthToken": "AuthToken erstellen"
+    }
+}

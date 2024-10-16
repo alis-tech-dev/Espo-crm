@@ -1,0 +1,5 @@
+{
+    "psr-4": {
+        "Pnz\\MattermostClient\\": "application/Espo/Modules/Mattermost/vendor/mozkomor05/mattermost-client/src"
+    }
+}

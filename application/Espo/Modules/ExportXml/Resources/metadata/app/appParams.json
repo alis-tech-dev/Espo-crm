@@ -1,0 +1,5 @@
+{
+    "xmlTemplateEntityTypeList": {
+        "className": "Espo\\Modules\\ExportXml\\Classes\\AppParams\\XmlTemplateEntityTypeList"
+    }
+}

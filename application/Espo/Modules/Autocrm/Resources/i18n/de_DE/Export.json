@@ -1,0 +1,14 @@
+{
+    "options": {
+        "status": {
+            "Pending": "Ausstehend",
+            "Running": "Laufend",
+            "Success": "Erfolgreich",
+            "Failed": "Fehlgeschlagen"
+        }
+    },
+    "messages": {
+        "exportProcessed": "Der Export wurde verarbeitet. Laden Sie die [Datei]({URL}) herunter.",
+        "infoText": "Der Export wird im Leerlauf von Cron verarbeitet. Es kann einige Zeit dauern, bis er abgeschlossen ist. Das Schließen dieses modalen Dialogs hat keinen Einfluss auf den Ausführungsprozess."
+    }
+}

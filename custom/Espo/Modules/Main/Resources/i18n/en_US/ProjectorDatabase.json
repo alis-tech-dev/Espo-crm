@@ -1,0 +1,31 @@
+{
+	"fields": {
+		"manufacturerSerialNumber": "Sériové číslo výrobce",
+		"projectorType": "ProjectorType",
+		"ledChipImage": "Fotka LED čipu",
+		"bysinessProjectNumber": "Číslo zakázky",
+		"defects": "Vady/Jiné poznámky",
+		"businessProject": "Zakázka",
+		"businessProject1": "Zakázka",
+		"dateOfAcceptance": "Datum naskladnění",
+		"manufacturer": "Dodavatel",
+		"businessProjects": "Business Projects"
+	},
+	"links": {
+		"businessProject": "Zakázka",
+		"businessProject1": "Zakázka",
+		"businessProjects": "Business Projects"
+	},
+	"labels": {
+		"Create ProjectorDatabase": "Create Databáze projektorů"
+	},
+	"options": {
+		"projectorType": {
+			"-": "-",
+			"25-E": "25-E",
+			"25-S": "25-S",
+			"100-S": "100-S",
+			"300-S": "300-S"
+		}
+	}
+}

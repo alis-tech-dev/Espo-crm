@@ -1,0 +1,48 @@
+{
+	"labels": {
+		"Fill from Contact": "Von Kontakt übernehmen",
+		"Fill from Account": "Von Firma übernehmen"
+	},
+	"scopeNames": {
+		"Product": "Produkt",
+		"ProductCategory": "Produktkategorie",
+		"Quote": "Angebot",
+		"QuoteItem": "Angebotsposition",
+		"Invoice": "Ausgestellte Rechnung",
+		"InvoiceItem": "Ausgestellte Rechnungsposition",
+		"SalesOrder": "Auftrag",
+		"SalesOrderItem": "Auftragsposition",
+		"PurchaseOrder": "Bestellung",
+		"PurchaseOrderItem": "Bestellposition",
+		"SupplierInvoice": "Eingehende Rechnung",
+		"SupplierInvoiceItem": "Eingehende Rechnungsposition",
+		"VatIdValidation": "Umsatzsteuer-ID-Validierung",
+		"HandoverProtocol": "Übergabeprotokoll",
+		"DeliveryNote": "Lieferschein"
+	},
+	"scopeNamesPlural": {
+		"Product": "Produkte",
+		"ProductCategory": "Produktkategorien",
+		"Quote": "Angebote",
+		"QuoteItem": "Angebotspositionen",
+		"Invoice": "Ausgestellte Rechnungen",
+		"InvoiceItem": "Ausgestellte Rechnungspositionen",
+		"SalesOrder": "Aufträge",
+		"SalesOrderItem": "Auftragspositionen",
+		"PurchaseOrder": "Bestellungen",
+		"PurchaseOrderItem": "Bestellpositionen",
+		"SupplierInvoice": "Eingehende Rechnungen",
+		"SupplierInvoiceItem": "Eingehende Rechnungspositionen",
+		"VatIdValidation": "Umsatzsteuer-ID-Validierungen",
+		"HandoverProtocol": "Übergabeprotokolle",
+		"DeliveryNote": "Lieferscheine"
+	},
+	"messages": {
+		"contactInfoTitle": "Kontaktinformationen",
+		"valid": "gültig",
+		"invalid": "ungültig",
+		"verifiedVatId": "Geprüft <b>{vatId}</b> am {vatDate} ist {vatType}",
+		"shortValidVatIdMessage": "Gültige Umsatzsteuer-ID",
+		"shortInvalidVatIdMessage": "Ungültige Umsatzsteuer-Identifikationsnummer oder gehört zu einem Nicht-EU-Unternehmen"
+	}
+}

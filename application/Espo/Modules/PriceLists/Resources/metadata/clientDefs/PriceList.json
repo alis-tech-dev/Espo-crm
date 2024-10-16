@@ -1,0 +1,12 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [],
+	"recordViews": {
+		"detail": "price-lists:views/price-list/record/detail"
+	},
+	"additionalLayouts": {
+		"listProduct": {
+			"type": "list"
+		}
+	}
+}

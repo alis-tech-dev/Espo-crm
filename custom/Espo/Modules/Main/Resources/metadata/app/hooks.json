@@ -1,0 +1,6 @@
+{
+	"suppressClassNameList": [
+		"__APPEND__",
+		"Espo\\Modules\\Production\\Hooks\\WorkPerformed\\CreateGoodsIssue"
+	]
+}

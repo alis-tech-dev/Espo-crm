@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "mattermostTeamId": {
+            "type": "varchar"
+        },
+        "mattermostServerUrl": {
+            "type": "varchar"
+        },
+        "mattermostMasterToken": {
+            "type": "varchar"
+        }
+    }
+}

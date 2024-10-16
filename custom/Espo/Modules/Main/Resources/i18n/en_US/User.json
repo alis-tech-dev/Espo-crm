@@ -1,0 +1,50 @@
+{
+	"fields": {
+		"mattermostToken": "MattermostToken",
+		"mattermostId": "MattermostId",
+		"pozice": "Pozice ve firmě",
+		"qualityReports1": "8D Reporty",
+		"qualityReports2": "8D Report",
+		"qualityReports3": "8D Report",
+		"qualityReports4": "8D Report",
+		"qualityReports5": "8D Report",
+		"qualityReports": "8D Report",
+		"qualityReports6": "8D Report",
+		"qualityReport": "8D Report",
+		"alisCardID": "alisCardID",
+		"daysOff": "Zbývající dovolená (h)"
+	},
+	"options": {
+		"pozice": {
+			"CSO": "CSO",
+			"Project Manager": "Project Manager",
+			"Marketing Manager": "Marketing Manager",
+			"Key Account Manager": "Key Account Manager",
+			"International Account Manager": "International Account Manager",
+			"Business Developer": "Business Developer",
+			"Sales Support": "Sales Support",
+			"-": "-",
+			"CFO": "CFO",
+			"CEO": "CEO",
+			"CTO": "CTO",
+			"Installation Technician": "Installation Technician",
+			"SW Engineer": "SW Engineer",
+			"FW Engineer": "FW Engineer",
+			"SW Developer": "SW Developer",
+			"Office Manager": "Office Manager",
+			"FW HW Developer": "FW HW Developer",
+			"FW Engineer Manager": "FW Engineer Manager",
+			"Business Director": "Business Director"
+		}
+	},
+	"links": {
+		"qualityReports1": "8D Reporty",
+		"qualityReports2": "8D Report",
+		"qualityReports3": "8D Report",
+		"qualityReports4": "8D Report",
+		"qualityReports5": "8D Report",
+		"qualityReports": "8D Report",
+		"qualityReports6": "8D Report",
+		"qualityReport": "8D Report"
+	}
+}

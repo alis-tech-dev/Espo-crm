@@ -1,0 +1,14 @@
+{
+    "collection": {
+        "orderBy": "dateStart",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "assignedUser.lastName",
+            "assignedUser.firstName"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

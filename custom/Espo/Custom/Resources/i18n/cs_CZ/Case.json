@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "Create Case": "Vytvořit Případ"
+    },
+    "options": {
+        "type": {
+            "": "",
+            "Question": "Otázka",
+            "Incident": "Incident",
+            "Problem": "Problém",
+            "Warranty": "Přijatá reklamace",
+            "Software": "Software"
+        }
+    }
+}

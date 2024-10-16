@@ -1,0 +1,95 @@
+{
+    "fields": {
+        "name": {
+            "maxLength": 155,
+            "options": [],
+            "required": false
+        },
+        "type": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Paid",
+                "NonPaid",
+                "exchange",
+                "medical",
+                "sick",
+                "illness",
+                "paidAbsence"
+            ],
+            "default": "Paid",
+            "style": {
+                "Paid": null,
+                "NonPaid": null,
+                "exchange": null,
+                "medical": null,
+                "sick": null,
+                "illness": null,
+                "paidAbsence": null
+            },
+            "isCustom": true
+        },
+        "status": {
+            "style": {
+                "Planned": null,
+                "Held": "success",
+                "Not Held": null
+            }
+        },
+        "approved": {
+            "type": "enum",
+            "options": [
+                "waiting",
+                "approved",
+                "declined"
+            ],
+            "default": "waiting",
+            "audited": true,
+            "style": {
+                "waiting": "primary",
+                "approved": "success",
+                "declined": "danger"
+            },
+            "isCustom": true
+        },
+        "dateStart": {
+            "default": null,
+            "minuteStep": 30,
+            "useNumericFormat": false
+        },
+        "dateEnd": {
+            "minuteStep": 30,
+            "default": "javascript: return this.dateTime.getDateTimeShiftedFromNow(8, 'hours', 15);",
+            "useNumericFormat": true,
+            "audited": true
+        },
+        "humanResource": {
+            "defaultAttributes": {
+                "humanResourceId": "66a365dac7b44ba37",
+                "humanResourceName": "Tereza Kalabisová"
+            },
+            "defaultSelectFilters": {
+                "isActual": {
+                    "type": "isTrue",
+                    "data": {
+                        "type": "isTrue"
+                    }
+                }
+            }
+        },
+        "assignedUser": {
+            "required": true,
+            "defaultSelectFilters": []
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

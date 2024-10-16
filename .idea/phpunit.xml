@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-zendframework-bridge/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/ralouphie/getallheaders/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-ldap/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-ldap/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/slim/slim/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-loader/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-servicemanager/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-stdlib/tests" />
+        <option value="$PROJECT_DIR$/application/Espo/Modules/vokativ/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-validator/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/guzzlehttp/psr7/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/composer/package-versions-deprecated/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-mail/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-zendframework-bridge/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/slim/slim/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/slim/psr7/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-loader/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/spatie/async/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/slim/slim/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/league/flysystem/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-mime/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/spatie/async/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/opis/closure/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-stdlib/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/laminas/laminas-servicemanager/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-mime/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/slim/psr7/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/league/flysystem/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-mail/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/league/mime-type-detection/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/slim/psr7/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/laminas/laminas-validator/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/opis/closure/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/composer/package-versions-deprecated/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/league/mime-type-detection/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/nikic/fast-route/test" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/johngrogg/ics-parser/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/dragonmantank/cron-expression/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/dragonmantank/cron-expression/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/johngrogg/ics-parser/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/dragonmantank/cron-expression/tests" />
+        <option value="$PROJECT_DIR$/application/Espo/Modules/AccountingCz/vendor/cetria/isdoc/Tests" />
+      </list>
+    </option>
+  </component>
+</project>

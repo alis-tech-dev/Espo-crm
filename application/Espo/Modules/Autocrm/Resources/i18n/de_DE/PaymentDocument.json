@@ -1,0 +1,43 @@
+{
+    "fields": {
+        "number": "Dokument-Nummer",
+        "supplier": "Lieferant",
+        "dateInvoiced": "Datum der Ausstellung",
+        "dateAccepted": "Datum der Annahme",
+        "duzp": "Datum der steuerpflichtigen Leistung",
+        "action": "Aktion",
+        "amount": "Gesamtbetrag ohne MwSt.",
+        "amountCurrency": "Gesamtbetrag ohne MwSt. (Währung)",
+        "amountConverted": "Gesamtbetrag ohne MwSt. (umgerechnet)",
+        "variableSymbol": "variables Symbol",
+        "discountAmount": "Rabattbetrag",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "discountAmountCurrency": "Rabattbetrag (Währung)",
+        "grandTotalAmount": "Gesamtbetrag",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "grandTotalAmountCurrency": "Gesamtbetrag (Währung)",
+        "itemList": "Artikel-Liste",
+        "preDiscountedAmount": "vor Abzug des Betrags",
+        "preDiscountedAmountConverted": "vor Abzug des Betrags (umgerechnet)",
+        "preDiscountedAmountCurrency": "vor Abzug des Betrags (Währung)",
+        "receivedInvoice": "empfangene Rechnung",
+        "receivedSalesOrder": "erhaltener Kundenauftrag",
+        "shippingCost": "Versandkosten",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "shippingCostCurrency": "Versandkosten (Währung)",
+        "taxAmount": "Steuerbetrag",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "taxAmountCurrency": "Steuerbetrag (Währung)",
+        "taxRate": "Steuersatz",
+        "weight": "Gewicht"
+    },
+    "links": {
+        "supplier": "Lieferant",
+        "items": "Artikel",
+        "receivedInvoice": "empfangene Rechnung",
+        "receivedSalesOrder": "erhaltener Kundenauftrag"
+    },
+    "labels": {
+        "Create PaymentDocument": "Erstellen eines Steuerdokuments für eine erhaltene Vorschussrechnung"
+    }
+}

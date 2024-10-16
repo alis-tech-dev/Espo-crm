@@ -1,0 +1,100 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "stage"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "enduser"
+                }
+            ],
+            [
+                {
+                    "name": "salesPerson"
+                },
+                {
+                    "name": "leadSource"
+                }
+            ],
+            [
+                {
+                    "name": "contacts"
+                },
+                {
+                    "name": "assignedUser"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "lastContact"
+                },
+                {
+                    "name": "closeDate"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "estimation"
+                },
+                {
+                    "name": "probability"
+                },
+                {
+                    "name": "amount"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "details"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    }
+]

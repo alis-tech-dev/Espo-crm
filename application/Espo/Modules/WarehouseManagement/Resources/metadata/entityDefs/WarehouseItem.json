@@ -1,0 +1,91 @@
+{
+    "fields": {
+        "parent": {
+            "type": "linkParent",
+            "entityList": [
+                "Warehouse",
+                "GoodsReceipt",
+                "GoodsIssue",
+                "WarehouseTransfer"
+            ]
+        },
+        "product": {
+            "type": "link",
+            "required": true,
+            "view": "warehouse-management:views/warehouse-item/fields/product"
+        },
+        "quantity": {
+            "type": "float",
+            "min": 0,
+            "default": 1,
+            "required": true
+        },
+        "quantityAvailable": {
+            "type": "float",
+            "notStorable": true,
+            "readOnly": true,
+            "default": 0
+        },
+        "quantityReserved": {
+            "type": "float",
+            "notStorable": true,
+            "readOnly": true,
+            "default": 0
+        },
+        "position": {
+            "type": "link"
+        },
+        "positionFrom": {
+            "type": "link",
+            "view": "warehouse-management:views/warehouse-item/fields/position-from"
+        },
+        "positionTo": {
+            "type": "link",
+            "view": "warehouse-management:views/warehouse-item/fields/position-to"
+        },
+        "price": {
+            "type": "currency",
+            "min": 0
+        }
+    },
+    "links": {
+        "parent": {
+            "type": "belongsToParent",
+            "foreign": "items",
+            "entityList": [
+                "Warehouse",
+                "GoodsReceipt",
+                "GoodsIssue",
+                "WarehouseTransfer"
+            ]
+        },
+        "product": {
+            "type": "belongsTo",
+            "entity": "Product",
+            "foreign": "warehouseItems"
+        },
+        "position": {
+            "type": "belongsTo",
+            "entity": "WarehousePosition",
+            "foreign": "items"
+        },
+        "positionFrom": {
+            "type": "belongsTo",
+            "entity": "WarehousePosition"
+        },
+        "positionTo": {
+            "type": "belongsTo",
+            "entity": "WarehousePosition"
+        },
+        "goodsIssue": {
+            "type": "belongsTo",
+            "entity": "GoodsIssue",
+            "foreign": "selectedItems"
+        }
+    },
+    "collection": {
+        "textFilterFields": [
+            "product.name"
+        ]
+    }
+}

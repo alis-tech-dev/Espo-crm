@@ -1,0 +1,47 @@
+{
+    "labels": {
+        "Create BpmnProcess": "Prozess starten",
+        "Stop Process": "Prozess stoppen",
+        "User Tasks": "Benutzeraufgaben",
+        "Flowcharts": "Flussdiagramme",
+        "Interrupt": "Unterbrechen",
+        "Reject": "Ablehnen",
+        "Start flow from here": "Start des Flusses von hier aus"
+    },
+    "fields": {
+        "targetType": "Zielentitätstyp",
+        "target": "Ziel",
+        "createdEntitiesData": "Erstellte Entitätsdaten",
+        "flowchartData": "Datenflussdiagramm",
+        "flowchart": "Flussdiagramme",
+        "flowchartVisualization": "Flussdiagramm (Visualisierung)",
+        "flowchartElementsDataHash": "Flussdiagrammelemente",
+        "variables": "Variablen",
+        "endedAt": "endete am",
+        "parentProcess": "auf Prozess bezogen",
+        "parentProcessFlowNode": "zugehöriger Prozess Flow Node"
+    },
+    "links": {
+        "flowchart": "Flussdiagramm",
+        "target": "Ziel",
+        "flowNodes": "Flussprotokoll",
+        "userTasks": "Benutzeraufgaben verarbeiten",
+        "childProcesses": "Prozess-Liste",
+        "parentProcess": "bezieht sich auf Prozess",
+        "parentProcessFlowNode": "bezieht sich auf Prozessflussknoten"
+    },
+    "options": {
+        "status": {
+            "Created": "Erstellt",
+            "Started": "Gestartet",
+            "Ended": "Beendet",
+            "Paused": "Pausiert",
+            "Stopped": "Gestoppt",
+            "Interrupted": "Unterbrochen"
+        }
+    },
+    "presetFilters": {
+        "actual": "Aktuell",
+        "ended": "Beendet"
+    }
+}

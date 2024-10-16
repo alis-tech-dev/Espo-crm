@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "signature": "Signature"
+    },
+    "tooltips": {
+        "signature": "Placeholders like {userName}, {name}, {emailAddress} and {phoneNumber} can be used"
+    }
+}
+

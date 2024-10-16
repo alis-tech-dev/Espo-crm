@@ -1,0 +1,37 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "operation",
+					"view": "production:views/work-performed/layout-fields/detail-small/operation"
+				},
+				{
+					"name": "workCenter"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				}
+			],
+			[
+				{
+					"name": "duration"
+				},
+				{
+					"name": "producedAmount"
+				}
+			],
+			[
+				{
+					"name": "description",
+					"fullWidth": true
+				}
+			]
+		]
+	}
+]

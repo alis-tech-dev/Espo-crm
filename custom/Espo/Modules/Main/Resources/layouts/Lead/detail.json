@@ -1,0 +1,145 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "title"
+				}
+			],
+			[
+				{
+					"name": "emailAddress"
+				},
+				{
+					"name": "type"
+				},
+				{
+					"name": "leadType"
+				}
+			],
+			[
+				{
+					"name": "phoneNumber"
+				},
+				{
+					"name": "headoffice"
+				}
+			],
+			[
+				{
+					"name": "website"
+				},
+				false
+			],
+			[
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "statusPartner"
+				}
+			],
+			[
+				{
+					"name": "accountName"
+				},
+				{
+					"name": "address"
+				}
+			],
+			[
+				{
+					"name": "source"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "lastContact"
+				},
+				{
+					"name": "nextContact"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "opportunityAmount"
+				},
+				{
+					"name": "opportunityAmountConverted"
+				}
+			],
+			[
+				{
+					"name": "details"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": "Details"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "alisVisualization"
+				},
+				{
+					"name": "alisAnticollision"
+				},
+				{
+					"name": "alisAntiCollisionSafetyBar"
+				},
+				{
+					"name": "firstContact"
+				}
+			],
+			[
+				{
+					"name": "alisVisualizationDetails"
+				},
+				{
+					"name": "alisAnticollisionDetails"
+				},
+				{
+					"name": "alisAntiCollisionSafetyBarDetails"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Oblast zájmu"
+	}
+]

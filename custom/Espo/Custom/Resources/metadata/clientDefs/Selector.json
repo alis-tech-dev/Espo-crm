@@ -1,0 +1,27 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "kanbanViewMode": false,
+    "color": "#6ce873",
+    "iconClass": "fas fa-binoculars",
+    "isWide": false,
+    "gridViewMode": false,
+    "menu": {
+        "list": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Selector",
+                    "name": "selector",
+                    "action": "SelectorMain",
+                    "style": "success",
+                    "data": {
+                        "handler": "selector:handlers/selector/selector"
+                    }
+                }
+            ]
+        }
+    }
+}

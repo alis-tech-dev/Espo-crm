@@ -1,0 +1,11 @@
+[
+	{
+		"label": "",
+		"rows": [
+			[{ "name": "name" }, { "name": "reclamation" }],
+			[{ "name": "status" }, { "name": "product" }],
+			[{ "name": "goodsReceipt" }, { "name": "goodsIssue" }],
+			[{ "name": "description" }]
+		]
+	}
+]

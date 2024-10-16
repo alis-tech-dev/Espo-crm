@@ -1,0 +1,4 @@
+{
+    "toIsdocClassName": "Espo\\Modules\\AccountingCz\\Tools\\Isdoc\\Converters\\ToIsdoc",
+    "fromIsdocClassName": "Espo\\Modules\\AccountingCz\\Tools\\Isdoc\\Converters\\FromIsdoc"
+}

@@ -1,0 +1,28 @@
+{
+    "fieldTypes": {
+        "sequenceNumber": "Seriennummer",
+        "vatId": "USt-IdNr."
+    },
+    "fields": {
+        "format": "Nummernformat",
+        "nextNumber": "Nächste Nummer",
+        "padLength": "Mindestanzahl von Ziffern",
+        "reset": "Nummer zurücksetzen",
+        "validateFormat": "Format validieren",
+        "validateExistence": "Existenz validieren"
+    },
+    "descriptions": {
+        "salesOrderSettingsDescription": "Einstellungen des Lagers für automatisierte Bestellabläufe"
+    },
+    "labels": {
+        "Sales Order Settings": "Einstellungen für Bestellungen"
+    },
+    "options": {
+        "reset": {
+            "Daily": "Täglich",
+            "Monthly": "Monatlich",
+            "Yearly": "Jährlich",
+            "Never": "Nie"
+        }
+    }
+}

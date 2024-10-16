@@ -1,0 +1,17 @@
+{
+    "tooltips": {
+        "conversionDisabled": "Die Währungsumrechnung wird nicht auf dieses Feld angewendet.",
+        "notStorable": "Wenn das Feld in der Datenbank nicht speicherbar ist. Ein nicht speicherbares Feld kann im benutzerdefinierten Skript des Loaders definiert werden. Es ist möglich, diese Eigenschaft nur beim Erstellen des Feldes zu setzen.",
+        "recordListEnabled": "Liste der Bezugsdatensätze anzeigen, ähnlich wie im Beziehungsfenster. Diese Option ist bei einer großen Anzahl von Bezugsdatensätzen langsam.",
+        "recordListKeepRemoved": "Aus der Liste entfernte Datensätze werden bei 1-N-Beziehungen standardmäßig gelöscht. Wenn diese Option auf \"richtig\" gesetzt ist, werden die entfernten Datensätze nur entkoppelt.",
+        "recordListOrderByField": "Der Name des Feldes, nach dem die Datensätze in der Liste sortiert werden. Das Feld muss numerisch sein. Wenn das Feld leer ist, werden die Datensätze nicht sortiert."
+    },
+    "fieldInfo": {
+        "linkMultiple": "Eine Gruppe von Datensätzen, die durch eine Mehrfachbeziehung (many-to-many oder one-to-many) verbunden sind. Nicht alle Beziehungen haben ihre Link-Multiple-Felder. Nur diejenigen, bei denen der Parameter Mehrfachverknüpfung aktiviert ist."
+    },
+    "messages": {
+        "layoutMissingOrInvalid": "Entität '{entityType}' fehlt Layout '{layout}' oder Layout enthält kein gültiges JSON.",
+        "orderAttributeMissing": "Der Entität '{entityType}' fehlt das Ordnungsattribut '{attribute}'.",
+        "orderAttributeWrongType": "Das Ordnungsattribut '{attribute}' der Entität '{entityType}' muss vom Typ 'int' sein."
+    }
+}

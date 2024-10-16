@@ -1,0 +1,45 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": ["onlyMy"],
+    "recordViews": {
+        "detail": "accounting:views/invoice-like/record/detail"
+    },
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ],
+            "dropdown": [
+                {
+                    "label": "Taxes",
+                    "link": "#Tax",
+                    "acl": "read",
+                    "aclScope": "Tax"
+                }
+            ]
+        }
+    },
+    "isWide": true,
+    "additionalLayouts": {
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "relationshipPanels": {
+        "supplierInvoices": {
+            "view": "accounting:views/record/panels/create-related",
+            "layout": "listForAccount",
+            "selectDisabled": true
+        }
+    },
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "accounting:handlers/invoice/dynamic-handler"
+    ],
+    "iconClass": "fas fa-shopping-basket"
+}

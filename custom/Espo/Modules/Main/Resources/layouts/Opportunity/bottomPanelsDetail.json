@@ -1,0 +1,23 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"quotes": {
+		"index": 0
+	},
+	"businessProjects": {
+		"index": 1
+	},
+	"contacts": {
+		"index": 2
+	},
+	"stream": {
+		"style": "default",
+		"sticked": false,
+		"dynamicLogicVisible": null,
+		"index": 3
+	},
+	"documents": {
+		"index": 4
+	}
+}

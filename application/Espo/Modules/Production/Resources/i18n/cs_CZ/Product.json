@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"productionComposition": "Výrobní složení",
+		"productionModels": "Technologické postupy"
+	},
+	"options": {
+		"type": {
+			"Product": "Výrobek"
+		}
+	},
+	"links": {
+		"productionModels": "Technologické postupy"
+	}
+}

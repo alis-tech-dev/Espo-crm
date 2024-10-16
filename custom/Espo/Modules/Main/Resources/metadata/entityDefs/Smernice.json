@@ -1,0 +1,138 @@
+{
+	"fields": {
+		"name": {
+			"type": "varchar",
+			"required": true,
+			"trim": true
+		},
+		"order": {
+			"type": "int",
+			"required": true,
+			"default": 1
+		},
+		"description": {
+			"type": "text"
+		},
+		"createdAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"modifiedAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"createdBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"modifiedBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"teams": {
+			"type": "linkMultiple"
+		},
+		"parent": {
+			"type": "link"
+		},
+		"childList": {
+			"type": "jsonArray",
+			"notStorable": true,
+			"disabled": true
+		},
+		"smerniceItems": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"children": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		}
+	},
+	"links": {
+		"createdBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"modifiedBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"teams": {
+			"type": "hasMany",
+			"entity": "Team",
+			"relationName": "EntityTeam",
+			"layoutRelationshipsDisabled": true
+		},
+		"parent": {
+			"type": "belongsTo",
+			"foreign": "children",
+			"entity": "Smernice",
+			"isCustom": true
+		},
+		"children": {
+			"type": "hasMany",
+			"foreign": "parent",
+			"entity": "Smernice",
+			"isCustom": true,
+			"audited": false
+		},
+		"smerniceItems": {
+			"type": "hasMany",
+			"foreign": "smerniceSlozka",
+			"entity": "SmerniceItem",
+			"audited": false,
+			"isCustom": true
+		}
+	},
+	"collection": {
+		"orderBy": "parent",
+		"order": "asc",
+		"textFilterFields": [
+			"name"
+		],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"indexes": {
+		"name": {
+			"columns": [
+				"name",
+				"deleted"
+			]
+		}
+	},
+	"additionalTables": {
+		"SmernicePath": {
+			"fields": {
+				"id": {
+					"type": "id",
+					"dbType": "int",
+					"len": "11",
+					"autoincrement": true,
+					"unique": true
+				},
+				"ascendorId": {
+					"type": "varchar",
+					"len": "100",
+					"index": true
+				},
+				"descendorId": {
+					"type": "varchar",
+					"len": "24",
+					"index": true
+				}
+			}
+		}
+	}
+}

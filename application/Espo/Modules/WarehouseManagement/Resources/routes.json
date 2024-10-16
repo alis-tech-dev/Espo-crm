@@ -1,0 +1,37 @@
+[
+    {
+        "route": "Warehouse/products",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\WarehouseManagement\\Tools\\Warehouse\\Api\\Products"
+    },
+    {
+        "route": "SupplierOrder/hintProducts",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\WarehouseManagement\\Tools\\SupplierOrder\\Api\\HintProducts"
+    },
+    {
+        "route": "Warehouse/items/:id",
+        "method": "get",
+        "params": {
+            "controller": "Warehouse",
+            "action": "items",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "Product/stockInfo/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\WarehouseManagement\\Tools\\Product\\Api\\GetStockInfo"
+    },
+    {
+        "route": "/GoodsReceipt/product/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\WarehouseManagement\\Tools\\Product\\Api\\GetGoodsReceipts"
+    },
+    {
+        "route": "/GoodsIssue/product/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\WarehouseManagement\\Tools\\Product\\Api\\GetGoodsIssues"
+    }
+]
+

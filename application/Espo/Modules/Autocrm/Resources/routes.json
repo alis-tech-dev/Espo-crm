@@ -1,0 +1,64 @@
+[
+	{
+		"route": ":scope/:id/:parentLink/related/:link",
+		"method": "get",
+		"params": {
+			"controller": "RelatedLinkLister",
+			"action": "listRelatedLink",
+			"scope": ":scope",
+			"id": ":id",
+			"parentLink": ":parentLink",
+			"link": ":link"
+		}
+	},
+	{
+		"route": "RecordList/:scope/:id/:link",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\RecordList\\Api\\GetData"
+	},
+	{
+		"route": "Aggregation/:scope",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Aggregation\\Api\\GetData"
+	},
+	{
+		"route": ":entityType/partition/:by",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Partition\\Api\\GetData"
+	},
+	{
+		"route": "/Vies/verifyVatNumber/:countryCode/:vatNumber",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Vies\\Api\\Validate"
+	},
+	{
+		"route": "/Ares/fill/:sicCode",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Ares\\Api\\GetFillData"
+	},
+	{
+		"route": "/Ares/suggest/:companyName",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Ares\\Api\\GetSuggestData"
+	},
+	{
+		"route": "/ClearBrowserCache",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\NavbarAction\\Api\\ClearBrowserCache"
+	},
+	{
+		"route": "/Finstat/fill/:sicCode",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Tools\\Finstat\\Api\\GetFillData"
+	},
+	{
+		"route": "Attachment/action/copy",
+		"method": "post",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Api\\CopyAttachments"
+	},
+	{
+		"route": "Attachment/action/zip",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\Autocrm\\Api\\ZipAttachments"
+	}
+]

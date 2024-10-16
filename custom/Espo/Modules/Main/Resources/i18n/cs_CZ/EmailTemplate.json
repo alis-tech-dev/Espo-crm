@@ -1,0 +1,30 @@
+{
+	"fields": {
+		"category": "Kategorie",
+		"oneOff": "Jednorázový",
+		"status": "Stav"
+	},
+	"labels": {
+		"Available placeholders": "Dostupné zástupné symboly"
+	},
+	"links": {
+		"attachments": "Přílohy",
+		"category": "Kategorie"
+	},
+	"messages": {
+		"infoText": "Dostupné zástupné symboly: \\ n {optOutUrl} & # 8211; URL odkazu pro odhlášení z odběru; {optOutLink} & # 8211; odkaz pro odhlášení."
+	},
+	"placeholderTexts": {
+		"currentYear": "Aktuální rok",
+		"now": "Aktuální datum a čas",
+		"optOutLink": "Odkaz pro odhlášení",
+		"optOutUrl": "URL odkazu pro odhlášení",
+		"today": "Dnešní datum"
+	},
+	"presetFilters": {
+		"actual": "Aktuální"
+	},
+	"tooltips": {
+		"oneOff": "Zkontrolujte, zda tuto šablonu použijete pouze jednou. Např. pro hromadný e-mail."
+	}
+}

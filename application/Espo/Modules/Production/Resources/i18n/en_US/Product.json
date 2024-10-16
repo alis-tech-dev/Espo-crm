@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "productionComposition": "Production Composition"
+    },
+    "options": {
+        "type": {
+            "Product": "Product (Manufactured)"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "mandatory": {
+        "scopeLevel": {
+            "EducationAndTrainingRecord": "HumanResource",
+            "MedicalExamination": "HumanResource",
+            "OtherEvent": "HumanResource",
+            "Password": "HumanResource",
+            "VacationRequestApprovalItem": "VacationRequest"
+        }
+    }
+}

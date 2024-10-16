@@ -1,0 +1,92 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true
+        },
+        "entityType": {
+            "type": "enum",
+            "view": "views/fields/entity-type",
+            "required": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Draft",
+                "Active",
+                "Completed"
+            ],
+            "style": {
+                "Active": "warning",
+                "Completed": "success"
+            },
+            "default": "Draft",
+            "readOnly": true
+        },
+        "scheduling": {
+            "type": "cronExpression",
+            "min": 1,
+            "required": true,
+            "tooltip": true,
+            "default": "0 0 * * *"
+        },
+        "until": {
+            "type": "datetime"
+        },
+        "infinite": {
+            "type": "bool"
+        },
+        "data": {
+            "type": "jsonObject",
+            "required": true
+        },
+        "generateInBatches": {
+            "type": "bool"
+        },
+        "generateInAdvance": {
+            "type": "enum",
+            "tooltip": true,
+            "options": [
+                "1_day",
+                "2_days",
+                "1_week",
+                "2_weeks",
+                "1_month",
+                "2_months",
+                "3_months",
+                "6_months",
+                "1_year"
+            ]
+        },
+        "createdRecords": {
+            "type": "linkMultiple",
+            "readOnly": true
+        },
+        "lastGenerated": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "indexes": {
+        "entityType": {
+            "columns": [
+                "entityType"
+            ]
+        }
+    }
+}

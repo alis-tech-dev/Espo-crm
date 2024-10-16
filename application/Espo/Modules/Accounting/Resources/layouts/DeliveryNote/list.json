@@ -1,0 +1,11 @@
+[
+    {
+        "name": "number"
+    },
+    {
+        "name": "issueDate"
+    },
+    {
+        "name": "assignedUser"
+    }
+]

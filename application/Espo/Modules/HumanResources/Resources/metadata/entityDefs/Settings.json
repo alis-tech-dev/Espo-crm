@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "humanResourceApprovalRole": {
+            "type": "link",
+            "entity": "Role"
+        },
+        "humanResourceApprovalTeam": {
+            "type": "link",
+            "entity": "Team"
+        }
+    }
+}

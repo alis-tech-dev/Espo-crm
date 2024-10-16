@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "product": "Produkt",
+        "status": "Stav",
+        "default": "Výchozí",
+        "quantity": "Množství",
+        "unit": "Jednotka",
+        "description": "Popis",
+        "billOfMaterials": "Materiálová rozpiska",
+        "operations": "Operace",
+        "attachments": "Přílohy"
+    },
+    "links": {
+        "billOfMaterials": "Materiálová rozpiska",
+        "operations": "Operace"
+    },
+    "labels": {
+        "Create ProductionModel": "Vytvořit technologický postup"
+    }
+}

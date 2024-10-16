@@ -1,0 +1,7 @@
+{
+	"stream": true,
+	"statusField": "status",
+	"kanbanStatusIgnoreList": [
+		"Cancelled"
+	]
+}

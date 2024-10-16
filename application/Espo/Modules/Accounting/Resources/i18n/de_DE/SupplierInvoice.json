@@ -1,0 +1,47 @@
+{
+    "labels": {
+        "Create SupplierInvoice": "Lieferantenrechnung erstellen",
+        "Tax Classes": "Steuerklassen",
+        "Templates": "Vorlagen",
+        "Items": "Artikel",
+        "Supplier Invoice Items": "Lieferantenrechnungsartikel"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Nummer",
+        "numberA": "Nummer (automatisch hochgezählt)",
+        "account": "Konto",
+        "billingAddress": "Rechnungsadresse",
+        "billingContact": "Rechnungskontakt",
+        "taxClass": "Steuerklasse",
+        "taxRate": "Steuersatz",
+        "taxAmount": "Steuerbetrag",
+        "amount": "Betrag",
+        "grandTotalAmount": "Gesamtbetrag",
+        "dateInvoiced": "Rechnungsdatum",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "taxAmountCurrency": "Steuerbetrag Währung",
+        "amountCurrency": "Betrag Währung",
+        "grandTotalAmountCurrency": "Gesamtbetrag Währung",
+        "currency": "Währung",
+        "attachments": "Anhänge"
+    },
+    "links": {
+        "items": "Artikel",
+        "billingContact": "Rechnungskontakt",
+        "account": "Konto",
+        "taxClass": "Steuerklasse"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Überprüfung",
+            "Confirmed": "Bestätigt",
+            "Paid": "Bezahlt",
+            "Rejected": "Abgelehnt"
+        }
+    }
+}

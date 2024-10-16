@@ -1,0 +1,35 @@
+{
+	"fields": {
+		"account": "Organizace",
+		"amount": "Částka",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Měna částky",
+		"description": "Popis",
+		"discount": "Sleva (%)",
+		"listPrice": "Katalogová cena",
+		"listPriceConverted": "Katalogová cena (převedeno)",
+		"listPriceCurrency": "Měna katalogové ceny",
+		"name": "Název",
+		"order": "Číslo řádku",
+		"product": "Produkt",
+		"qty": "Množství",
+		"quantity": "Množství",
+		"salesOrder": "Proforma faktura",
+		"salesOrderStatus": "Stav proforma faktury",
+		"taxRate": "Sazba daně",
+		"unitPrice": "Jednotková cena",
+		"unitPriceConverted": "Jednotková cena (převedeno)",
+		"unitPriceCurrency": "Měna jednotkové ceny",
+		"unitWeight": "Jednotková hmotnost",
+		"weight": "Hmotnost"
+	},
+	"labels": {
+		"Sales Orders": "Proforma faktury",
+		"Create SalesOrderItem": "Vytvořit položku proforma faktury"
+	},
+	"links": {
+		"account": "Organizace",
+		"product": "Produkt",
+		"salesOrder": "Proforma faktura"
+	}
+}

@@ -1,0 +1,33 @@
+{
+    "labels": {
+        "Templates": "Templates",
+        "Items": "Items",
+        "Totals": "Totals",
+        "Create IssuedTaxDocument": "Create Credit Note",
+        "Item Text": "Tax invoice for received payment on {date} with variable symbol {variableSymbol} for proforma invoice number {number}"
+    },
+    "fields": {
+        "status": "Status",
+        "dateInvoiced": "Invoice date",
+        "paymentReceivedDate": "Payment received date",
+        "amount": "Subtotal",
+        "taxAmount": "VAT amount",
+        "grandTotalAmount": "Total",
+        "number": "Invoice number",
+        "orderNumber": "Order number",
+        "textBeforeItems": "Reason for correction",
+        "textAfterItems": "Invoice footer",
+        "assignedUser": "Assigned user / Issued by",
+        "account": "Account",
+        "billingAddress": "Billing address",
+        "amountCurrency": "Currency",
+        "vatId": "VAT ID",
+        "sicCode": "SIC code"
+    },
+    "options": {
+        "status": {
+            "Unsettled": "Unsettled",
+            "Settled": "Settled"
+        }
+    }
+}

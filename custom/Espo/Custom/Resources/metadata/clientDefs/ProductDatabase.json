@@ -1,0 +1,20 @@
+{
+    "kanbanViewMode": false,
+    "color": "#11c46c",
+    "iconClass": "fas fa-database",
+    "isWide": false,
+    "relationshipPanels": {
+        "account": {
+            "layout": null
+        },
+        "contractor12": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        },
+        "product": {
+            "layout": null
+        }
+    }
+}

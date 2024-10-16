@@ -1,0 +1,223 @@
+{
+    "fields": {
+        "type": {
+            "stockableTypes": [
+                "__APPEND__",
+                "Normal"
+            ],
+            "style": {
+                "Normal": null,
+                "Service": null,
+                "Warehouse Item": null,
+                "Product": null,
+                "Material": null,
+                "Component": null
+            }
+        },
+        "dismantlable": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true,
+            "default": false
+        },
+        "productDatabases": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "suppliers": {
+            "recordListLayout": "listSmall",
+            "defaultSelectFilters": []
+        },
+        "goodsReceipts": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "defaultWarehousePosition": {
+            "defaultSelectFilters": []
+        },
+        "descriptionEn": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "descriptionDe": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "pricingType": {
+            "style": {
+                "No Price": null,
+                "Fixed Sales Price": null,
+                "Markup over Cost": null,
+                "Profit Margin": null,
+                "Same as Cost Price": null
+            }
+        },
+        "nameDE": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "image": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "quotes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "quoteItem": {
+            "type": "link"
+        },
+        "productCode": {
+            "required": false,
+            "options": []
+        },
+        "name": {
+            "required": true,
+            "options": []
+        },
+        "isModel": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "isArchive": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "isIgnored": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "unit": {
+            "options": [
+                "km",
+                "m",
+                "h",
+                "day",
+                "pcs",
+                "hod",
+                "ks",
+                "set",
+                "kg",
+                "g"
+            ],
+            "style": {
+                "km": null,
+                "m": null,
+                "h": null,
+                "day": null,
+                "pcs": null,
+                "hod": null,
+                "ks": null,
+                "set": null,
+                "kg": null,
+                "g": null
+            },
+            "default": "ks"
+        },
+        "warehouse": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "defaultProductionModel": {
+            "defaultSelectFilters": {}
+        },
+        "minimumStockQuantity": {
+            "default": 10
+        },
+        "isInvisible": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "isHidden": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "productDatabases": {
+            "type": "hasMany",
+            "foreign": "product",
+            "entity": "ProductDatabase",
+            "audited": false,
+            "isCustom": true
+        },
+        "goodsReceipts": {
+            "type": "hasMany",
+            "foreign": "product",
+            "entity": "GoodsReceipt",
+            "audited": false,
+            "isCustom": true
+        },
+        "image": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "quotes": {
+            "type": "hasMany",
+            "foreign": "product",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        },
+        "quoteItem": {
+            "type": "belongsTo",
+            "foreign": "products",
+            "entity": "QuoteItem",
+            "audited": false,
+            "isCustom": true
+        },
+        "warehouse": {
+            "type": "hasOne",
+            "foreign": "product",
+            "entity": "Warehouse",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "name",
+        "order": "asc",
+        "textFilterFields": [
+            "name",
+            "productCode",
+            "alisId"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

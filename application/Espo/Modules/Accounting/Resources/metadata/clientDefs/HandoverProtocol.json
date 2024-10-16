@@ -1,0 +1,27 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-copy",
+    "relationshipPanels": {
+        "document": {
+            "layout": null
+        },
+        "project": {
+            "layout": null
+        },
+        "invoice": {
+            "layout": null
+        },
+        "supplierInvoice": {
+            "layout": null
+        },
+        "proformaInvoice": {
+            "layout": null
+        },
+        "receivedProformaInvoice": {
+            "layout": null
+        }
+    }
+}

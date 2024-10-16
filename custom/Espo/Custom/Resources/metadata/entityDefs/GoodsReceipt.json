@@ -1,0 +1,41 @@
+{
+    "fields": {
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "R{YY}{number}",
+            "nextNumber": 58,
+            "padLength": 5,
+            "reset": "Never",
+            "isCustom": true,
+            "inlineEditDisabled": true
+        },
+        "name": {
+            "options": []
+        },
+        "product": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "product": {
+            "type": "belongsTo",
+            "foreign": "goodsReceipts",
+            "entity": "Product",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

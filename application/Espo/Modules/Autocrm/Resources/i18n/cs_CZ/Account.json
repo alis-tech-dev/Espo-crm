@@ -1,0 +1,70 @@
+{
+	"fields": {
+		"contactIsInactive": "Je neaktivní",
+		"targetLists": "Cílové seznamy",
+		"targetList": "Cílový seznam",
+		"originalLead": "Původní Lead",
+		"sicCode": "IČ",
+		"vatId": "DIČ",
+		"slovakVatId": "IČ DPH"
+	},
+	"links": {
+		"portalUsers": "Uživatelé portálu",
+		"originalLead": "Originální Lead"
+	},
+	"options": {
+		"industry": {
+			"Aerospace": "Letectví a kosmonautika",
+			"Architecture": "Architektura",
+			"Automotive": "Automobilový průmysl",
+			"Building Materials & Equipment": "Stavebnictví",
+			"Construction": "Konstrukce",
+			"Defense": "Obrana",
+			"Creative": "Tvůrčí činnost",
+			"Culture": "Kultura",
+			"Consulting": "Poradenství",
+			"Energy": "Energie",
+			"Healthcare": "Zdravotnictví",
+			"Manufacturing": "Výroba",
+			"Mass Media": "Hromadné sdělovací prostředky",
+			"Mining": "Hornictví",
+			"Music": "Hudba",
+			"Petroleum": "Ropa",
+			"Retail": "Maloobchod",
+			"Shipping": "Přeprava",
+			"Support": "Podpora",
+			"Testing, Inspection & Certification": "Testování, inspekce a certifikace",
+			"Travel": "Cestování",
+			"Wholesale": "Velkoobchod",
+			"Water": "Vodohospodářství"
+		}
+	},
+	"labels": {
+		"Set Primary": "Nastavit jako primární",
+		"Fill Data": "Vyplnit údaje",
+		"Verify VAT Number": "Ověřit DIČ"
+	},
+	"presetFilters": {
+		"recentlyCreated": "Nedávno vytvořeno"
+	},
+	"fillProviders": {
+		"Ares": "Vyplnit z ARES",
+		"Finstat": "Vyplnit z FinStatu"
+	},
+	"messages": {
+		"missingSicCode": "Zadejte IČO",
+		"invalidAresResponse": "Neplatná odpověď z ARESu",
+		"invalidFinstatResponse": "Neplatná odpověď z Finstatu",
+		"couldNotFindCompanyBySicCode": "Nelze najít společnost s IČO \"{sicCode}\"",
+		"couldNotFindCompanyByName": "Nelze najít společnost s názvem \"{name}\"",
+		"errorWhileFetchingFinstat": "Chyba při získávání údajů z Finstatu",
+		"invalidSicCode": "IČO má neplatný formát",
+		"vatNumberIsValid": "DIČ je validní",
+		"vatNumberIsInvalid": "DIČ je neplatné",
+		"vatVerificationFailed": "Ověření DIČ selhalo",
+		"vatIdInvalidformat": "DIČ má neplatný formát"
+	},
+	"tooltips": {
+		"slovakVatId": "IČ DPH je slovenské identifikační číslo pro účely DPH"
+	}
+}

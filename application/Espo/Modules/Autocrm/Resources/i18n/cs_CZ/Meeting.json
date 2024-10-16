@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "status": "Stav",
+        "acceptanceStatus": "Stav přijetí",
+        "dateEndDate": "End Date (all day)",
+        "Acceptance": "Přijetí"
+    },
+    "messages": {
+        "selectAcceptanceStatus": "Nastavit svůj stav přijetí.",
+        "nothingHasBeenSent": "Nic nebylo odesláno"
+    }
+}

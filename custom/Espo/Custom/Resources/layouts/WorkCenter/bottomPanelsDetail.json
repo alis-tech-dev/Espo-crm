@@ -1,0 +1,11 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "productionModelOperation.productionModelItems": {
+        "disabled": true
+    },
+    "productionModelOperation": {
+        "index": 0
+    }
+}

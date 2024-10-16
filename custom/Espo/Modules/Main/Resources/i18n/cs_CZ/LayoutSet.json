@@ -1,0 +1,12 @@
+{
+	"labels": {
+		"Create LayoutSet": "Vytvořit sadu rozvržení (layout)",
+		"Edit Layouts": "Editovat rozvržení (layouty)"
+	},
+	"fields": {
+		"layoutList": "Rozvržení (Layouts)"
+	},
+	"links": {
+		"portals": "Portály"
+	}
+}

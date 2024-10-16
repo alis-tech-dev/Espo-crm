@@ -1,0 +1,32 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting-cz:acl/credit-note-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Issued Tax Documents",
+                    "link": "#IssuedTaxDocument",
+                    "acl": "read",
+                    "aclScope": "IssuedTaxDocument"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        }
+    }
+}

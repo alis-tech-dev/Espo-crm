@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "Create Import": "Import erstellen"
+    },
+    "fields": {
+        "attributeList": "Attribut Liste",
+        "duplicateCount": "Anzahl der Duplikate",
+        "importedCount": "importierte Anzahl",
+        "lastIndex": "letzter Index",
+        "params": "Parameter",
+        "updatedCount": "aktualisierte Anzahl"
+    }
+}

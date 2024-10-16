@@ -1,0 +1,51 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "invoice"
+                }
+            ],
+            [
+                {
+                    "name": "quantity"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "unitPrice"
+                },
+                {
+                    "name": "withTax"
+                }
+            ],
+            [
+                {
+                    "name": "taxRate"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                {
+                    "name": "taxAmount"
+                },
+                {
+                    "name": "amountWithTax"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

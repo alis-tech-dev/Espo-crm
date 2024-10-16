@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "name": "Beschreibung",
+        "qty": "Menge",
+        "quantity": "Menge",
+        "unitPrice": "Preis pro Einheit",
+        "amount": "Gesamt ohne MwSt",
+        "unit": "Einheit",
+        "taxRate": "MwSt (%)"
+    }
+}

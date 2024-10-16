@@ -1,0 +1,22 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-user-tie",
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "human-resources:handlers/human-resource/dynamic-handler"
+    ],
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true,
+    "relationshipPanels": {
+        "vacations": {
+            "createDisabled": true,
+            "selectDisabled": true,
+            "unlinkDisabled": true,
+            "rowActionsView": "views/record/row-actions/relationship-view-only"
+        }
+    }
+}

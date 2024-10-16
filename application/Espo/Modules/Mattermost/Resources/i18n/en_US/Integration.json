@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "serverUrl": "Server URL",
+        "token": "Authentication Token",
+        "teamId": "Team ID"
+    },
+    "titles": {
+        "mattermost": "Mattermost"
+    },
+    "mattermost": {
+        "tokenDescription": "AutoCRM Integration",
+        "projectChannelHeader": "Project's channel"
+    },
+    "help": {
+        "mattermost": "**Configuring Mattermost Integration**\n\n1. Create a new admin user and [generate personal access token](https://docs.mattermost.com/developer/personal-access-tokens.html#creating-a-personal-access-token) for it.\n2. Enable the integration and fill all the fields. It can be quite tricky to obtain the team ID - one way to do it, is to open the team edit page in system console and copy the ID from the URL.\n3. Install and configure the AutoCRM Integration plugin on your Mattermost instance. More details: [https://gitlab.apertia.cz/autocrm/mattermost-autocrm-integration#installation](https://gitlab.apertia.cz/autocrm/mattermost-autocrm-integration#installation)."
+    }
+}

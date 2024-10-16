@@ -1,0 +1,28 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "salesOrder1",
+        "link": true,
+        "align": "left",
+        "label": "Sales Order (salesOrder1)",
+        "isEditable": true
+    },
+    {
+        "name": "warehouseItem1",
+        "link": true,
+        "align": "left",
+        "label": "WarehouseItem"
+    },
+    {
+        "name": "quantity",
+        "label": "Quantity"
+    },
+    {
+        "name": "stockLocation"
+    }
+]

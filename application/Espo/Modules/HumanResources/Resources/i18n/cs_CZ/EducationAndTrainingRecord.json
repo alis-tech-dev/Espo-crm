@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create EducationAndTrainingRecord": "Vytvořit Evidenci vzdělání a školení"
+    },
+    "fields": {
+        "dateOfLastInspection": "Datum posledního školení",
+        "numberOfYearsForRepetition": "Počet let pro opakování",
+        "dateOfTheNextInspection": "Termín dalšího školení"
+    }
+}

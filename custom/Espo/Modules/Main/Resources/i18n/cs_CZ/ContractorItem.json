@@ -1,0 +1,17 @@
+{
+	"labels": {
+		"Create ContractorItem": "Vytvořit položku dodavatele"
+	},
+	"fields": {
+		"componentss": "Komponenty",
+		"contractors": "Dodavatelé",
+		"contractor": "Dodavatel",
+		"components": "Komponenty"
+	},
+	"links": {
+		"componentss": "Componentss",
+		"contractors": "Dodavatelé",
+		"contractor": "Dodavatel",
+		"components": "Komponenty"
+	}
+}

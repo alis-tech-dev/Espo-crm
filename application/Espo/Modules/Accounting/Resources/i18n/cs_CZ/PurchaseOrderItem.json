@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "name": "Popis",
+        "qty": "Počet",
+        "quantity": "Počet",
+        "unitPrice": "Cena za MJ",
+        "amount": "Celkem bez DPH",
+        "amountWithTax": "Částka s DPH",
+        "taxRate": "DPH (%)",
+        "taxAmount": "DPH",
+        "product": "Produkt",
+        "order": "Číslo řádku",
+        "purchaseOrder": "Nákupní objednávka",
+        "weight": "Hmotnost",
+        "unitWeight": "Jednotková hmotnost",
+        "description": "Popis",
+        "discount": "Sleva (%)",
+        "amountConverted": "Částka (převedeno)",
+        "unitPriceConverted": "Jednotková cena (převedeno)",
+        "unitPriceCurrency": "Měna jednotkové ceny",
+        "amountCurrency": "Částka v měně",
+        "unit": "MJ",
+        "type": "Typ",
+        "withTax": "S"
+    },
+    "options": {
+        "type": {
+            "normal": "normalní položka",
+            "discount": "sleva"
+        }
+    },
+    "links": {
+        "purchaseOrder": "Nákupní objednávka",
+        "product": "Produkt"
+    },
+    "labels": {
+        "Purchase Orders": "Nákupní objednávky"
+    }
+}

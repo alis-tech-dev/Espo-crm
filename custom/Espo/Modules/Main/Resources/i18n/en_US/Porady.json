@@ -1,0 +1,149 @@
+{
+	"fields": {
+		"parent": "Parent",
+		"dateStart": "Date Start",
+		"dateEnd": "Date End",
+		"duration": "Duration",
+		"status": "Status",
+		"reminders": "Reminders",
+		"dateStartDate": "Date Start (all day)",
+		"dateEndDate": "Date End (all day)",
+		"isAllDay": "Is All-Day",
+		"number": "Číslo porady",
+		"type": "Typ",
+		"attachement": "Přílohy",
+		"harmonogram": "Harmonogram",
+		"zapisProjektova": "Zápis",
+		"zapisObchodni": "Zápis",
+		"obchodniChecklist": "Přítomni",
+		"nazevObchodni": "Název",
+		"nazevIS": "Název",
+		"nazevManagement": "Název",
+		"nazevRD": "Název",
+		"nazevProjektova": "Název",
+		"nazevISO": "Název",
+		"nazevShareholders": "Název",
+		"nazevKvalita": "Název",
+		"nazevSkoleni": "Název",
+		"nazevVysledky": "Název",
+		"nazevRizeni": "Název",
+		"zapisIS": "Zápis",
+		"zapisManagement": "Zápis",
+		"zapisRD": "Zápis",
+		"rdChecklist": "Přítomni",
+		"qualityChecklist": "Přítomni",
+		"isoChecklist": "Přítomni",
+		"shareholdersChecklist": "Přítomni",
+		"nazevDB": "Název",
+		"nazevCT": "Název",
+		"dbChecklist": "Přítomni",
+		"zapisISO": "Zápis",
+		"isChecklist": "Přítomni",
+		"zapisKvalita": "Zápis",
+		"zapisCT": "Zápis",
+		"zapisShareholders": "Zápis",
+		"zapisSkoleni": "Zápis",
+		"zapisRizeniNakladu": "Zápis",
+		"rizeniNakladuChecklist": "Přítomni",
+		"zapisCR": "Zápis",
+		"zapisDB": "Zápis",
+		"nazevUni": "Název",
+		"zapisUni": "Zápis",
+		"upresnujiciNazev": "Upřesňující název"
+	},
+	"links": {
+		"parent": "Parent"
+	},
+	"options": {
+		"status": {
+			"Planned": "Planned",
+			"Held": "Held",
+			"Not Held": "Not Held"
+		},
+		"type": {
+			"Obchodní": "Obchod",
+			"Provozní": "Routine management",
+			"Vývojářská": "R&D",
+			"Update": "IS realizace",
+			"Projektová": "Projekty / Výroba / Expedice",
+			"ISO": "ISO proces",
+			"Shareholders": "Board Shareholders",
+			"Kvalita": "Kvalita - týdenní vyhodnocení",
+			"Interní sebeškolení": "Interní sebeškolení",
+			"Výsledky společnosti": "Prezentace výsledků společnosti",
+			"Řízení nákladů": "Řízení nákladů",
+			"Directors Board": "Director's Board",
+			"Company Tour": "Company Tour",
+			"Uni": "Univerzální"
+		},
+		"obchodniChecklist": {
+			"Hrabal": "Hrabal",
+			"Valtarová": "Valtarová",
+			"Doležal": "Doležal",
+			"Skoták": "Skoták",
+			"Štencel": "Štencel",
+			"Šikula": "Šikula",
+			"Snížek": "Snížek",
+			"Žochová": "Žochová",
+			"Tobola": "Tobola - dobrovolný",
+			"Vajda": "Vajda"
+		},
+		"rdChecklist": {
+			"Michl Antonín": "Michl ",
+			"Krejčí Miloslav": "Krejčí M.",
+			"Krejčí Jiří": "Krejčí J.",
+			"Junkerová Zuzana": "Junkerová",
+			"Rumian Dominik": "Rumian",
+			"Růžička Michal": "Růžička",
+			"Tobola Miroslav": "Tobola"
+		},
+		"qualityChecklist": {
+			"Doležal": "Doležal",
+			"Valtarová": "Valtarová"
+		},
+		"isoChecklist": {
+			"Michl": "Michl",
+			"Šulc": "Šulc",
+			"doplnit": "doplnit"
+		},
+		"shareholdersChecklist": {
+			"Hrabal": "Hrabal",
+			"Michl": "Michl",
+			"Růžička": "Růžička",
+			"Snížek": "Snížek"
+		},
+		"dbChecklist": {
+			"Hrabal": "Hrabal",
+			"Michl": "Michl",
+			"Růžička": "Růžička",
+			"Snížek": "Snížek"
+		},
+		"isChecklist": {
+			"Junkerová": "Junkerová",
+			"Hrabal": "Hrabal",
+			"Tobola": "Tobola"
+		},
+		"rizeniNakladuChecklist": {
+			"Šulc": "Šulc",
+			"Tobola": "Tobola",
+			"Snížek": "Snížek",
+			"Hrabal": "Hrabal"
+		}
+	},
+	"labels": {
+		"Create Porady": "Create Porada",
+		"Schedule Porady": "Schedule Porada",
+		"Log Porady": "Log Porada",
+		"Set Held": "Set Held",
+		"Set Not Held": "Set Not Held"
+	},
+	"massActions": {
+		"setHeld": "Set Held",
+		"setNotHeld": "Set Not Held"
+	},
+	"presetFilters": {
+		"planned": "Planned",
+		"held": "Held",
+		"todays": "Today's"
+	}
+}

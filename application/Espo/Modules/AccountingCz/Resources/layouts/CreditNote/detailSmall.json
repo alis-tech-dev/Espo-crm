@@ -1,0 +1,35 @@
+[
+    {
+        "label": "General",
+        "rows": [
+            [{ "name": "number"}, false],
+            [{ "name": "paymentMethod"}, { "name": "dateInvoiced"}],
+            [{ "name": "dueDate"}, { "name": "duzp"}],
+            [{ "name": "variableSymbol"}, { "name": "constantSymbol" }],
+            [{ "name": "status"}, { "name": "datePaid"}]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [{ "name": "note"}],
+            [{ "name": "textBeforeItems"}],
+            [{ "name": "textAfterItems"}]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [{ "name": "items", "noLabel": true}]
+        ]
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [ false, { "name": "summaryVatRates", "noLabel": true } ],
+            [ false, { "name": "amount" } ],
+            [ false, { "name": "taxAmount" } ],
+            [ false, { "name": "grandTotalAmount" } ]
+        ]  
+    }
+]

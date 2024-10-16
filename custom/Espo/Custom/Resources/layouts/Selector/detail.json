@@ -1,0 +1,38 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "lens"
+                },
+                {
+                    "name": "symbolSize"
+                }
+            ],
+            [
+                {
+                    "name": "height"
+                },
+                {
+                    "name": "illuminance"
+                },
+                {
+                    "name": "symbolIlluminance"
+                }
+            ],
+            [
+                {
+                    "name": "price"
+                },
+                {
+                    "name": "priceConverted"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

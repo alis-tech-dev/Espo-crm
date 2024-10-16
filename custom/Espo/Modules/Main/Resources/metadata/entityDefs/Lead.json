@@ -1,0 +1,304 @@
+{
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": ["name", "accountName", "emailAddress"],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"fields": {
+		"year2015": {
+			"type": "int",
+			"isCustom": true
+		},
+		"year2016": {
+			"type": "int",
+			"isCustom": true
+		},
+		"year2017": {
+			"type": "int",
+			"isCustom": true
+		},
+		"year2018": {
+			"type": "int",
+			"isCustom": true
+		},
+		"year2019": {
+			"type": "int",
+			"isCustom": true
+		},
+		"importdate": {
+			"notNull": false,
+			"type": "date",
+			"default": "javascript: return this.dateTime.getToday();",
+			"isCustom": true
+		},
+		"employees": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"status": {
+			"options": [
+				"New",
+				"Forwarded",
+				"Assigned",
+				"Sent",
+				"In Process",
+				"ZeroDone",
+				"PQ",
+				"Waiting",
+				"Converted",
+				"Dead"
+			],
+			"style": {
+				"New": null,
+				"Forwarded": "warning",
+				"Assigned": null,
+				"Sent": null,
+				"In Process": null,
+				"ZeroDone": null,
+				"PQ": null,
+				"Waiting": "info",
+				"Converted": "success",
+				"Dead": "danger"
+			},
+			"required": true
+		},
+		"convertedTo": {
+			"type": "enum",
+			"options": ["-", "Partner", "Zákazník"],
+			"style": {
+				"-": null,
+				"Partner": null,
+				"Zákazník": null
+			},
+			"default": "-",
+			"isCustom": true
+		},
+		"source": {
+			"style": {
+				"": null,
+				"SEO": null,
+				"PPC": null,
+				"LinkedIn": null,
+				"Call": null,
+				"Email": null,
+				"Reference": null,
+				"Veletrh": null,
+				"Reklama": null,
+				"Web Site": null,
+				"Veletrh 2021": null
+			},
+			"options": [
+				"",
+				"SEO",
+				"PPC",
+				"LinkedIn",
+				"Call",
+				"Email",
+				"Reference",
+				"Veletrh",
+				"Reklama",
+				"Web Site",
+				"Veletrh 2021"
+			]
+		},
+		"accountName": {
+			"options": []
+		},
+		"nextContact": {
+			"notNull": false,
+			"type": "datetime",
+			"minuteStep": 30,
+			"isCustom": true
+		},
+		"details": {
+			"type": "wysiwyg",
+			"isCustom": true
+		},
+		"lastContact": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"headoffice": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"type": {
+			"type": "enum",
+			"options": ["-", "End-User", "Partner", "Co-Partner"],
+			"style": {
+				"-": null,
+				"End-User": null,
+				"Partner": null,
+				"Co-Partner": null
+			},
+			"default": "-",
+			"isCustom": true,
+			"required": true
+		},
+		"salutationName": {
+			"options": [
+				" ",
+				"Mr.",
+				"Ms.",
+				"Mrs.",
+				"Dr.",
+				"Pan",
+				"Pani",
+				"Slecna"
+			],
+			"style": {
+				" ": null,
+				"Mr.": null,
+				"Ms.": null,
+				"Mrs.": null,
+				"Dr.": null,
+				"Pan": null,
+				"Pani": null,
+				"Slecna": null
+			},
+			"default": " "
+		},
+		"alisVisualization": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"alisAnticollision": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"alisVisualizationDetails": {
+			"type": "varchar",
+			"maxLength": 300,
+			"trim": true,
+			"options": [],
+			"isCustom": true
+		},
+		"alisAnticollisionDetails": {
+			"type": "varchar",
+			"maxLength": 150,
+			"trim": true,
+			"options": [],
+			"isCustom": true
+		},
+		"alisAntiCollisionSafetyBar": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"alisAntiCollisionSafetyBarDetails": {
+			"type": "varchar",
+			"maxLength": 300,
+			"trim": true,
+			"options": [],
+			"isCustom": true
+		},
+		"firstContact": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"leadType": {
+			"type": "enum",
+			"options": [
+				"",
+				"end-userNoPartner",
+				"end-userYesPartner",
+				"partnersNewCountry",
+				"partnersExistingPartner",
+				"OEMpartner",
+				"co-partnerNewCountry",
+				"co-partnerExistingCountry"
+			],
+			"style": {
+				"": null,
+				"end-userNoPartner": null,
+				"end-userYesPartner": null,
+				"partnersNewCountry": null,
+				"partnersExistingPartner": null,
+				"OEMpartner": null,
+				"co-partnerNewCountry": null,
+				"co-partnerExistingCountry": null
+			},
+			"default": "",
+			"isCustom": true
+		},
+		"relatedLead": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"noLoad": true,
+			"importDisabled": true,
+			"isCustom": true
+		},
+		"originalLead": {
+			"type": "link"
+		},
+		"statusPartner": {
+			"type": "enum",
+			"options": [
+				"-",
+				"New",
+				"Assigned",
+				"In process",
+				"Waiting",
+				"PQ",
+				"Converted",
+				"Lost"
+			],
+			"style": {
+				"-": null,
+				"New": null,
+				"Assigned": null,
+				"In process": null,
+				"Waiting": "info",
+				"PQ": "warning",
+				"Converted": "success",
+				"Lost": "danger"
+			},
+			"audited": true,
+			"default": "-",
+			"isCustom": true
+		},
+		"jesenoLead": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"catalogLead": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		}
+	},
+	"links": {
+		"tasksToLeads": {
+			"type": "hasChildren",
+			"foreign": "parentLead",
+			"entity": "Task",
+			"isCustom": true,
+			"audited": false
+		},
+		"relatedLead": {
+			"type": "hasMany",
+			"foreign": "originalLead",
+			"entity": "Lead",
+			"audited": false,
+			"isCustom": true
+		},
+		"originalLead": {
+			"type": "belongsTo",
+			"foreign": "relatedLead",
+			"entity": "Lead",
+			"audited": false,
+			"isCustom": true
+		}
+	}
+}

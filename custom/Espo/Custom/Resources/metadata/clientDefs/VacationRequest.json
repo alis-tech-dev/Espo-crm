@@ -1,0 +1,99 @@
+{
+    "dynamicLogic": {
+        "fields": {
+            "humanResource": {
+                "readOnly": null,
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "notEquals",
+                            "attribute": "humanResourceId",
+                            "data": {
+                                "field": "humanResource",
+                                "values": {
+                                    "humanResourceName": "Josef Hrabal"
+                                }
+                            },
+                            "value": "66a365dac6c4092a8"
+                        }
+                    ]
+                }
+            },
+            "from": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "dateStart": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "to": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "name": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "assignedUser": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "statusOfApproval": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "isApproved"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-sun",
+    "isWide": false,
+    "gridViewMode": false,
+    "relationshipPanels": {
+        "humanResources": {
+            "layout": null
+        }
+    }
+}

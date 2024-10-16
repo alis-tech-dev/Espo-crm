@@ -1,0 +1,64 @@
+{
+    "fields": {
+        "type": {
+            "options": ["__APPEND__", "Warehouse Item"],
+            "stockableTypes": ["Warehouse Item"],
+            "tooltip": true
+        },
+        "minimumStockQuantity": {
+            "notNull": false,
+            "type": "float"
+        },
+        "warehouseItems": {
+            "type": "linkMultiple"
+        },
+        "totalWarehouseQuantity": {
+            "type": "float",
+            "notStorable": true,
+            "readOnly": true
+        },
+        "totalReservedQuantity": {
+            "type": "float",
+            "notStorable": true,
+            "readOnly": true
+        },
+        "totalAvailableQuantity": {
+            "type": "float",
+            "notStorable": true,
+            "readOnly": true
+        },
+        "averagePrice": {
+            "type": "currency",
+            "notStorable": true,
+            "readOnly": true,
+            "tooltip": true
+        },
+        "totalPrice": {
+            "type": "currency",
+            "notStorable": true,
+            "readOnly": true,
+            "tooltip": true
+        },
+        "ordered": {
+            "type": "bool",
+            "notStorable": true,
+            "view": "warehouse-management:views/product/fields/ordered"
+        },
+        "defaultWarehousePosition": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "warehouseItems": {
+            "type": "hasMany",
+            "entity": "WarehouseItem",
+            "foreign": "product"
+        },
+        "defaultWarehousePosition": {
+            "type": "belongsTo",
+            "entity": "WarehousePosition",
+            "foreign": "defaultOf"
+        }
+    }
+}
+

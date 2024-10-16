@@ -1,0 +1,29 @@
+{
+    "tooltips": {
+        "name": "Název úkolu",
+        "taskParent": "Název hlavního úkolu",
+        "priority": "Priorita úkolu",
+        "status": "Aktuální stav úkolu",
+        "dateStart": "Datum zahájení práce na úkolu",
+        "datePosEnd": "Odhadované datum dokončení úkolu",
+        "parent": "Entita které se úkol týká",
+        "description": "Popis zadání úkolu",
+        "attachments": "Podklady a dokumenty k úkolu",
+        "solution": "Poznámky k postupu řešení",
+        "solutionAttachement": "Dokumenty připojené při komplementaci úkolu",
+        "dateEnd": "Datum dokončení celého úkolu",
+        "tasks": "Připojené podúkoly",
+        "isRepeated": "Opakující se úkol ? ",
+        "repeatUntil": "Opakovat úkol do datumu",
+        "lastExecuteTime": "Datum dalšího opakování úkolu",
+        "repeatFrom": "Opakovat od datumu",
+        "finished": "Dokončené opakování úkolu",
+        "reminders": "Připomenout kdy? notifikace/email"
+    },
+    "fields": {
+        "users": "Users"
+    },
+    "links": {
+        "users": "Users"
+    }
+}

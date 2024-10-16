@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "name": "Name",
+    "quote": "Quote"
+  },
+  "links": {
+    "quote": "Quote"
+  }
+}

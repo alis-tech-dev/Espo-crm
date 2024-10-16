@@ -1,0 +1,21 @@
+{
+	"fields": {
+		"product": "Product",
+		"obrazekDokumentu": "Obrázek",
+		"quote": "Nabídka",
+		"accounts1": "Accounts1",
+		"account": "Account",
+		"businessProjects": "Zakázky",
+		"businessProject": "Business Project",
+		"components": "Components"
+	},
+	"links": {
+		"product": "Product",
+		"quote": "Nabídka",
+		"accounts1": "Accounts1",
+		"account": "Account",
+		"businessProjects": "Zakázky",
+		"businessProject": "Business Project",
+		"components": "Components"
+	}
+}

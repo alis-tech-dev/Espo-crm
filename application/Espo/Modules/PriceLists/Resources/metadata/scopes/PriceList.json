@@ -1,0 +1,14 @@
+{
+	"acl": true,
+	"aclPortal": true,
+	"aclPortalLevelList": ["all", "account", "contact", "own", "no"],
+	"customizable": true,
+	"entity": true,
+	"importable": true,
+	"layouts": true,
+	"module": "PriceLists",
+	"notifications": true,
+	"pdfTemplate": true,
+	"tab": true,
+	"type": "Base"
+}

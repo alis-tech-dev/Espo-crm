@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "Create VacationRequestApprovalItem": "Create Approval Process Item"
+    },
+    "fields": {
+        "description": "Note",
+        "status": "Status",
+        "assignedUser": "Processed by"
+    },
+    "options": {
+        "status": {
+            "Approved": "Approved",
+            "Returned": "Returned for Completion",
+            "Rejected": "Rejected"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+	"cssList": [
+		"__APPEND__",
+		"client/modules/autocrm/css/main.css",
+		"client/modules/autocrm/css/easy-email/editor.css"
+	],
+	"viewExtensions": {
+		"views/admin/entity-manager/formula": ["__APPEND__", "autocrm:extensions/views/admin/entity-manager/formula"],
+		"views/admin/entity-manager/record/edit-formula": [
+			"__APPEND__",
+			"autocrm:extensions/views/admin/entity-manager/record/edit-formula"
+		],
+		"views/admin/field-manager/edit": ["__APPEND__", "autocrm:extensions/views/admin/field-manager/edit"],
+		"views/admin/layouts/bottom-panels-detail": [
+			"__APPEND__",
+			"autocrm:extensions/views/admin/layouts/bottom-panels-detail"
+		],
+		"views/admin/layouts/detail": ["__APPEND__", "autocrm:extensions/views/admin/layouts/detail"],
+		"views/admin/layouts/list": ["__APPEND__", "autocrm:extensions/views/admin/layouts/list"],
+		"views/dashboard": ["__APPEND__", "autocrm:extensions/views/dashboard"],
+		"views/dashlet": ["__APPEND__", "autocrm:extensions/views/dashlet"],
+		"views/dashlets/abstract/base": ["__APPEND__", "autocrm:extensions/views/dashlets/abstract/base"],
+		"views/fields/address": ["__APPEND__", "autocrm:extensions/views/fields/address"],
+		"views/fields/address-country": ["__APPEND__", "autocrm:extensions/views/fields/address-country"],
+		"views/fields/attachment-multiple": ["__APPEND__", "autocrm:extensions/views/fields/attachment-multiple"],
+		"views/fields/base": ["__APPEND__", "autocrm:extensions/views/fields/base"],
+		"views/fields/link-multiple-with-primary": [
+			"__APPEND__",
+			"autocrm:extensions/views/fields/link-multiple-with-primary"
+		],
+		"views/list": ["__APPEND__", "autocrm:extensions/views/list"],
+		"views/record/detail": ["__APPEND__", "autocrm:extensions/views/record/detail"],
+		"views/record/detail-bottom": ["__APPEND__", "autocrm:extensions/views/record/detail-bottom"],
+		"views/record/edit": ["__APPEND__", "autocrm:extensions/views/record/edit"],
+		"views/record/list": ["__APPEND__", "autocrm:extensions/views/record/list"],
+		"views/record/panels/relationship": ["__APPEND__", "autocrm:extensions/views/record/panels/relationship"],
+		"views/record/search": ["__APPEND__", "autocrm:extensions/views/record/search"],
+		"views/settings/fields/tab-list": ["__APPEND__", "autocrm:extensions/views/settings/fields/tab-list"],
+		"views/site/navbar": ["__APPEND__", "autocrm:extensions/views/site/navbar"]
+	}
+}

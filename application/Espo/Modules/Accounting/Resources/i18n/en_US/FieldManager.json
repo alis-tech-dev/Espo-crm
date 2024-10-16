@@ -1,0 +1,6 @@
+{
+    "tooltips": {
+        "format": "Use the following placeholders:\n\n**{number}** - The auto-increment number\n**{YYYY}** - The current year (4 digits)\n**{YY}** - The current year (2 digits)\n**{MM}** - The current month (2 digits)\n**{DD}** - The current day (2 digits)",
+        "validateExistence": "Validate existence of VAT ID using VIES service"
+    }
+}

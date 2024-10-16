@@ -1,0 +1,17 @@
+[
+    {
+        "name": "taxRate"
+    },
+    {
+        "name": "basis",
+        "align": "right"
+    },
+    {
+        "name": "vat",
+        "align": "right"
+    },
+    {
+        "name": "total",
+        "align": "right"
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "files": "Přílohy",
+        "priceList": "Ceník",
+        "opportunity": "Příležitost",
+        "opportunities": "Opportunities",
+        "salesOrder": "Zakázka",
+        "product": "Product",
+        "products": "Products",
+        "products1": "Products1",
+        "priceC": "Cena C",
+        "priceCCurrency": "Cena C (Měna)",
+        "priceCConverted": "Cena C (Převedeno)"
+    },
+    "links": {
+        "priceList": "Ceník",
+        "opportunity": "Příležitost",
+        "opportunities": "Opportunities",
+        "salesOrder": "Zakázka",
+        "product": "Product",
+        "products": "Products",
+        "products1": "Products1"
+    }
+}

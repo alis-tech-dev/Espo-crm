@@ -1,0 +1,22 @@
+{
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-user-tie",
+    "isWide": false,
+    "gridViewMode": false,
+    "dynamicLogic": {
+        "fields": {
+            "vacationTimeCorrection": {
+                "invalid": {
+                    "conditionGroup": [
+                        {
+                            "type": "lessThan",
+                            "attribute": "vacationTimeCorrection",
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

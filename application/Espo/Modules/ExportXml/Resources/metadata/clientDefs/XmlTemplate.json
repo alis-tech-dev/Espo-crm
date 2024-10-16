@@ -1,0 +1,8 @@
+{
+    "controller": "controllers/record",
+    "recordViews": {
+        "detail": "export-xml:views/xml-template/record/detail",
+        "edit": "export-xml:views/xml-template/record/edit"
+    },
+    "iconClass": "fas fa-code"
+}

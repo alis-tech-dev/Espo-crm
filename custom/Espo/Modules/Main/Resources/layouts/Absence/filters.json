@@ -1,0 +1,13 @@
+[
+	"assignedUser",
+	"status",
+	"approved",
+	"type",
+	"name",
+	"teams",
+	"dateStart",
+	"dateEnd",
+	"hours",
+	"isAllDay",
+	"createdAt"
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "numberA",
+        "label": "Číslo příležitosti"
+    },
+    {
+        "name": "name",
+        "width": 12,
+        "link": true,
+        "align": "left",
+        "label": "Název"
+    },
+    {
+        "name": "account",
+        "width": 22,
+        "align": "left",
+        "label": "Firma"
+    },
+    {
+        "name": "salesPerson",
+        "width": 10,
+        "align": "left",
+        "label": "Jméno obchodníka"
+    },
+    {
+        "name": "createdAt",
+        "width": 7,
+        "align": "left",
+        "label": "Vytvořeno"
+    },
+    {
+        "name": "amount",
+        "width": 10,
+        "align": "right",
+        "label": "Částka za položky"
+    },
+    {
+        "name": "stage",
+        "width": 10,
+        "align": "left",
+        "label": "Stav"
+    },
+    {
+        "name": "assignedUser",
+        "width": 12,
+        "label": "Přiřazený uživatel"
+    }
+]

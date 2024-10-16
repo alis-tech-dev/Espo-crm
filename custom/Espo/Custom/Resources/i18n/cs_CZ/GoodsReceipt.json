@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "parent": "Rodič",
+        "numberA": "Číslo příjemky",
+        "name": "Popisek",
+        "product": "Product"
+    },
+    "links": {
+        "parent": "Rodič",
+        "product": "Product"
+    }
+}

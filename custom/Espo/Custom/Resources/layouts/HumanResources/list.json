@@ -1,0 +1,28 @@
+[
+    {
+        "name": "name",
+        "width": 25,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "isActive",
+        "align": "left",
+        "label": "IsActive",
+        "isEditable": true
+    },
+    {
+        "name": "pozice",
+        "label": "Pozice"
+    },
+    {
+        "name": "assignedUser",
+        "label": "Assigned User"
+    },
+    {
+        "name": "user",
+        "align": "left",
+        "isEditable": true
+    }
+]

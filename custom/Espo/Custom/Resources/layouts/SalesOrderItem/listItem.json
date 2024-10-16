@@ -1,0 +1,25 @@
+[
+    {
+        "name": "name",
+        "align": "left",
+        "link": true,
+        "width": 30,
+        "view": "main:views\/sales-order\/fields\/name"
+    },
+    {
+        "name": "quantity",
+        "width": 10
+    },
+    {
+        "name": "discount"
+    },
+    {
+        "name": "unitPrice"
+    },
+    {
+        "name": "listPrice"
+    },
+    {
+        "name": "amount"
+    }
+]

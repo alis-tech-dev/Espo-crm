@@ -1,0 +1,26 @@
+{
+    "links": {
+        "productionModelOperation": {
+            "audited": false
+        }
+    },
+    "fields": {
+        "availableTools": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "name",
+        "order": "asc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

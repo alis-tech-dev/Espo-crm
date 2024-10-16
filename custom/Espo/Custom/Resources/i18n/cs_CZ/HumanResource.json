@@ -1,0 +1,6 @@
+{
+    "fields": {
+        "vacationDays": "Počet hodin dovolené na rok",
+        "vacationDaysLeft": "Zbývající počet hodin dovolené"
+    }
+}

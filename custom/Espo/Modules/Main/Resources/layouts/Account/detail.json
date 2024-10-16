@@ -1,0 +1,118 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "website"
+				}
+			],
+			[
+				{
+					"name": "emailAddress"
+				},
+				{
+					"name": "phoneNumber"
+				}
+			],
+			[
+				{
+					"name": "billingAddress"
+				},
+				{
+					"name": "shippingAddress"
+				}
+			],
+			[
+				{
+					"name": "changeIco"
+				},
+				false
+			],
+			[
+				{
+					"name": "sicCode"
+				},
+				{
+					"name": "dic"
+				},
+				{
+					"name": "idph"
+				}
+			],
+			[
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"label": "Přehled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "partner"
+				},
+				{
+					"name": "enduser"
+				},
+				{
+					"name": "issupplier"
+				},
+				false
+			],
+			[
+				{
+					"name": "defaultPriceList"
+				},
+				{
+					"name": "category"
+				},
+				{
+					"name": "language"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": "Detaily"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "vizualization"
+				},
+				{
+					"name": "shield"
+				},
+				{
+					"name": "rtls"
+				},
+				{
+					"name": "camerasystem"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Focus"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Popis"
+	}
+]

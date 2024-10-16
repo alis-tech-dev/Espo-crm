@@ -1,0 +1,229 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true,
+            "required": false,
+            "options": []
+        },
+        "number": {
+            "type": "varchar",
+            "maxLength": "100",
+            "required": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "format": "DDP{YYYY}-{number}",
+            "reset": "Yearly",
+            "padLength": 4,
+            "disabled": true
+        },
+        "status": {
+            "type": "enum",
+            "style": {
+                "Unsettled": "danger",
+                "Settled": "success"
+            },
+            "options": [
+                "Unsettled",
+                "Settled"
+            ],
+            "default": "Unsettled",
+            "displayAsLabel": true,
+            "readOnly": true
+        },
+        "dateInvoiced": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "required": true,
+            "useNumericFormat": true
+        },
+        "account": {
+            "type": "link",
+            "required": true
+        },
+        "billingAddress": {
+            "type": "address",
+            "view": "accounting:views/invoice/fields/address",
+            "required": true
+        },
+        "billingAddressStreet": {
+            "required": true
+        },
+        "billingAddressCity": {
+            "required": true
+        },
+        "billingAddressPostalCode": {
+            "required": true
+        },
+        "taxAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "amount": {
+            "type": "currency",
+            "readOnly": true
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user",
+            "required": true
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "items": {
+            "type": "linkMultiple",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["quantity"],
+            "recordListCreateDisabled": true,
+            "recordListLinkDisabled": true,
+            "recordListRemoveDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "textBeforeItems": {
+            "type": "text"
+        },
+        "textAfterItems": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": null
+        },
+        "orderNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": []
+        },
+        "amountCurrency": {
+            "default": "CZK",
+            "readOnly": false
+        },
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "payment": {
+            "type": "link",
+            "readOnly": true
+        },
+        "paymentReceivedDate": {
+            "type": "date",
+            "readOnly": true,
+            "useNumericFormat": true
+        },
+        "vatId": {
+            "type": "varchar",
+            "maxLength": 20
+        },
+        "sicCode": {
+            "type": "varchar",
+            "maxLength": 20
+        },
+        "variableSymbol": {
+            "type": "varchar",
+            "trim": true,
+            "maxLength": 10,
+            "options": []
+        },
+        "constantSymbol": {
+            "type": "varchar",
+            "maxLength": 10,
+            "options": []
+        },
+        "proformaInvoice": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "issuedTaxDocuments"
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "IssuedTaxDocumentItem",
+            "foreign": "issuedTaxDocument",
+            "layoutRelationshipsDisabled": true
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "issuedTaxDocument",
+            "entity": "SummaryVatRates",
+            "audited": false
+        },
+        "payment": {
+            "type": "belongsTo",
+            "entity": "Payment",
+            "foreign": "taxDocument"
+        },
+        "proformaInvoice": {
+            "type": "belongsTo",
+            "entity": "ProformaInvoice",
+            "foreign": "issuedTaxDocuments"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

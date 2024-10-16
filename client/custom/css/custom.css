@@ -1,0 +1,348 @@
+body {
+	font-size: 16px;
+}
+
+.fc-content {
+	padding: 5px;
+}
+
+
+.panel-body {
+	padding: 25px;
+}
+
+.label-text {
+	font-size: 14px;
+}
+
+textarea:focus, input:focus{
+	    outline: none !Important;
+}
+
+
+
+:focus-visible {
+	outline: none !important;
+}
+
+
+div.detail[data-scope="Email"] div[data-name="subject"] {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+div.detail[data-scope="Email"] div[data-name="subject"] label {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+#navbar .navbar .navbar-brand>img.logo {
+}
+}
+
+@media (max-width: 1023px) {
+#navbar .navbar .navbar-brand>img.logo {
+	margin-top: 8px;
+	margin-left: 5px;
+}
+a[data-name="customizeEntity"] {
+	display: none;
+}c	
+a[data-name="editLayout"] {
+	display: none;
+}	
+.invisible {
+	display: none;
+	}
+.header-buttons {
+	margin-top: -40px;
+}
+button[data-action="reset"] {
+	display: none;
+}
+.view-mode-switcher-buttons-group {
+	display: none;
+}
+}
+
+.minimized .mattermost-iframe {
+	margin-left: -15px !important;
+}
+
+.minimized iframe[name="frameEditor"] {
+	margin-top: -30px;
+	margin-left: -16px;
+	width: 98vw;
+	height: 96vh;
+}
+
+/*
+iframe[src="https://chat.apertia.cz/"] {
+	margin-top: -30px;
+	margin-left: -120px;
+	width: 89vw;
+}
+
+.minimized iframe[src="https://chat.apertia.cz/"] {
+	margin-top: -30px;
+	margin-left: -16px;
+	width: 98vw;
+}*/
+
+#navbar .navbar-header {
+	background-color: #3b4e64; 
+}
+
+.navbar-inverse {
+	background-color: #e7e7e7;
+}
+
+.panel-heading {
+	padding-left: 14px;
+}
+
+:root {
+	--navbar-bg: #f0f0f0;
+	--body-bg: #f0f0f0;
+	--panel-heading-font-size: 18px;
+	--panel-heading-height: 44px;
+	--panel-default-bg: #e7e7e7;
+	--btn-default-bg: #e7e7e7;
+	--link-color: #1a4b87;
+	--default-box-shadow: none;
+	--record-grid-max-width:1920px;
+	--navbar-inverse-link-active-bg: #3b4e64;
+}
+
+body[data-navbar=side].minimized #content {
+	max-width: 100vw;
+}
+
+#content {
+	max-width: 100vw;
+}
+
+body[data-navbar='side']:not(.minimized).contains-mattermost > #content {
+	padding-left: 232px !important;
+}
+
+.subject-container {
+	overflow: hidden;
+}
+
+
+@media (min-width: 992px) {
+	.modal-dialog {
+		width: 55vw;
+	}
+}
+
+.panel.priority-normal{
+	border: 1px solid #d1d5d6;
+
+}
+
+iframe #header-logo {
+	display: none !important;
+}
+
+
+div[data-scope=Email] tr.selected>td {
+	background-color: #cccccc75;
+}
+
+:-internal-direct-focus{
+	outline: none !important;
+}
+
+div[data-name="Kanban"] .dashlet-body .total-count {
+	display: none;
+}
+
+
+.detail:focus { 
+	outline:none !important;
+}
+
+.has-task{
+	border-left: 3px solid #ef990e;
+}
+
+
+.aggregation-function-panel .function {
+	text-align: center;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+body[data-navbar=side].minimized #content {
+
+}
+}
+
+button.btn-danger[data-action="reply"] {
+	background-color: #ffa011;
+	border-color: #ffa011;
+}
+
+.flowchart-container {
+	height: 80vh !important;
+}
+
+div.col-sm-4:has( input[data-name="billingAddressState"], input[data-name="shippingAddressState"] ) {
+	display: none;
+}
+
+.email-combined div[data-scope=Email] .list-row .cell[data-name=combinedCell] .hover-actions {
+	border: 0px;
+	background-color: none;
+}
+
+.hover-actions .fas {
+	color: var(--btn-text-color);
+	font-size: 14px;
+}
+
+button#UpgradeButton {
+	display: none;
+}
+
+.kanban-row div[data-name="priority"] {
+	display: none;
+}
+
+div[data-name="Kanban"] .list-buttons-container {
+	display: none; 
+}
+
+div.list-kanban>div>table td.group-column {
+    height: 100%;
+    border-right: 1px dashed #ccc;
+    padding-right: 10px;
+}
+
+div.list-kanban>div>table td.group-column:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+#main > div > div.page-header.dashboard-header > div > div.col-sm-8.clearfix {
+    width: 100%;
+    text-align: right;
+}
+
+.email-combined .panel-body label.control-label {
+	display: none;
+}
+
+.email-combined div.field {
+	font-size: 14px;
+}
+
+.email-combined .inline-edit-link {
+	display: none;
+}
+
+#main > div.row.email-combined.is-combined span.list-icon-container.pull-right ::before {
+	color: #eda530 !important;
+	margin-right: 10px;
+}
+
+.custom-filter-controls .btn {
+	border-radius: 0px;
+	padding: 2px;
+	font-size: 12px;
+	line-height: 18px;
+	height: 24px;
+}
+
+.custom-filter-controls .custom-filter {
+	padding-right: 10px;
+}
+
+
+#footer .credit {
+	display: none;
+}
+
+
+.kanban-tasks-panel a.link {
+	display: block;
+	max-width: 120px;
+}
+
+.history-tabs {
+	font-size: 13px;
+}
+
+.ui-resizable-disabled .dashlet-body {
+	display: none;	
+}
+
+.truncate {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    #layout ul li {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #layout ul li .left, #layout ul li .right {
+        float: none;
+    }
+}
+
+/*#main {*/
+/*  overflow: hidden;*/
+/*  height: 100vh; */
+
+/*}*/
+
+/*#main:hover {*/
+/*  overflow-y: auto;*/
+/*  height: 100vh;*/
+/*}*/
+
+#takefromwarehouse, #performwork, #performworkfinish{
+    width: 80px;
+    height: auto;
+    padding: 2px;
+    font-size: 12px;
+    background-color: #B1FCA5;
+    text-align: center;
+    line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#performwork {
+    background-color: #FFEA7D;
+}
+
+#performworkfinish {
+    background-color: #7DD9FF;
+	/*background-color: #FF5C5C;*/
+}
+
+.custom-edit-container {
+    border-radius: 10px;
+	margin-left: 10mm;
+}
+
+#SalesOrderModal {
+	max-width: 33%;
+	max-height: 50%;
+	margin-top: 12%;
+	margin-left: 35%;
+}
+

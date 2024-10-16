@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "taxRate": "Steuersatz",
+        "basis": "Basis",
+        "vat": "USt"
+    }
+}

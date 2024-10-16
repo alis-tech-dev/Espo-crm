@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "warehouse": "Warehouse",
+        "items": "Items",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Process",
+        "Create GoodsReceipt": "Create Goods Receipt",
+        "Items": "Items",
+        "Create Warehouse Transfer": "Create Warehouse Transfer",
+        "Goods Receipts": "Goods Receipts"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "Processing": "Processing",
+            "Received": "Received",
+            "Canceled": "Canceled"
+        }
+    }
+}

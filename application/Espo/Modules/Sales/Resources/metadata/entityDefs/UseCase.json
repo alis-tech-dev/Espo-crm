@@ -1,0 +1,134 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true
+        },
+        "account": {
+            "type": "link",
+            "readOnly": true
+        },
+        "quote": {
+            "type": "link",
+            "readOnly": true
+        },
+        "transportOf": {
+            "type": "link"
+        },
+        "quoteStatus": {
+            "type": "foreign",
+            "link": "quote",
+            "field": "status",
+            "readOnly": true,
+            "view": "views/fields/foreign-enum"
+        },
+        "images": {
+            "type": "attachmentMultiple"
+        },
+        "assignment": {
+            "type": "text"
+        },
+        "solution": {
+            "type": "text"
+        },
+        "tax": {
+            "type": "link",
+            "view": "sales:views/quote/fields/tax"
+        },
+        "taxAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "discountAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "amount": {
+            "type": "currency"
+        },
+        "preDiscountedAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "readOnly": true
+        },
+        "itemList": {
+            "type": "jsonArray",
+            "notStorable": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true,
+            "view": "sales:views/use-case/fields/item-list",
+            "templatePlaceholderDisabled": true,
+            "reportDisabled": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "isTransport": {
+            "type": "bool",
+            "default": false
+        }
+    },
+    "links": {
+        "images": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "relationName": "attachments"
+        },
+        "tax": {
+            "type": "belongsTo",
+            "entity": "Tax"
+        },
+        "quote": {
+            "type": "belongsTo",
+            "entity": "Quote",
+            "foreign": "useCases"
+        },
+        "transportOf": {
+            "type": "belongsTo",
+            "entity": "Quote",
+            "foreign": "transport"
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "UseCaseItem",
+            "foreign": "useCase",
+            "layoutRelationshipsDisabled": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "useCaseItems"
+        }
+    }
+}

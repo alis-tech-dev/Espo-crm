@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "complaintBook": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "complaintBook": {
+            "type": "belongsTo",
+            "foreign": "contact",
+            "entity": "ComplaintBook",
+            "isCustom": true
+        }
+    }
+}

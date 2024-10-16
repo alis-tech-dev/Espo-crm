@@ -1,0 +1,128 @@
+{
+    "fields": {
+        "files": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "priceList": {
+            "type": "link",
+            "required": true,
+            "defaultSelectFilters": []
+        },
+        "opportunity": {
+            "type": "link"
+        },
+        "opportunities": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "number": {
+            "readOnly": true
+        },
+        "name": {
+            "required": true
+        },
+        "salesOrder": {
+            "type": "link"
+        },
+        "priceC": {
+            "type": "currency",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "product": {
+            "type": "link"
+        },
+        "account": {
+            "defaultSelectFilters": []
+        },
+        "alisSolution": {
+            "readOnlyAfterCreate": true
+        },
+        "solutionGeneral": {
+            "readOnlyAfterCreate": true
+        },
+        "specification": {
+            "readOnlyAfterCreate": true
+        }
+    },
+    "links": {
+        "files": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "priceList": {
+            "type": "belongsTo",
+            "foreign": "quotes",
+            "entity": "PriceList",
+            "audited": false,
+            "isCustom": true
+        },
+        "opportunity": {
+            "type": "belongsTo",
+            "foreign": "quotes",
+            "entity": "Opportunity",
+            "audited": false,
+            "isCustom": true
+        },
+        "opportunities": {
+            "type": "hasMany",
+            "foreign": "opportunities",
+            "entity": "Opportunity",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "quotes",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "product": {
+            "type": "belongsTo",
+            "foreign": "quotes",
+            "entity": "Product",
+            "audited": false,
+            "isCustom": true
+        },
+        "complaintBooks": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "ComplaintBook",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number",
+            "description",
+            "enduser",
+            "shippingContact.lastName",
+            "shippingContact.firstName",
+            "billingContact.lastName",
+            "billingContact.firstName",
+            "account.firstname"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

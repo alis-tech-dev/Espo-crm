@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create EmailAddress": "E-Mail Adresse erstellen"
+    },
+    "fields": {
+        "optOut": "Abgemeldet",
+        "lower": "Unter",
+        "primary": "Primär"
+    }
+}

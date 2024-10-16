@@ -1,0 +1,25 @@
+{
+	"fields": {
+		"colisionPlace": "Kolizní místo",
+		"unit": "Jednotka",
+		"quote1": "Nabídka"
+	},
+	"options": {
+		"colisionPlace": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5"
+		},
+		"unit": {
+			"pcs": "pcs",
+			"km": "km",
+			"h": "h",
+			"unit": "unit"
+		}
+	},
+	"links": {
+		"quote1": "Nabídka"
+	}
+}

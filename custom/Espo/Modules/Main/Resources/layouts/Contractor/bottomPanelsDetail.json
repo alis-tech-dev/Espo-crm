@@ -1,0 +1,17 @@
+{
+	"_delimiter_": {
+		"disabled": true
+	},
+	"contacts": {
+		"style": "default",
+		"sticked": true,
+		"dynamicLogicVisible": null,
+		"index": 0
+	},
+	"orders": {
+		"index": 1
+	},
+	"contractorItems": {
+		"index": 2
+	}
+}

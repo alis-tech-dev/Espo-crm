@@ -1,0 +1,14 @@
+[
+    {
+        "name": "totalWarehouseQuantity"
+    },
+    {
+        "name": "totalReservedQuantity"
+    },
+    {
+        "name": "averagePrice"
+    },
+    {
+        "name": "totalPrice"
+    }
+]

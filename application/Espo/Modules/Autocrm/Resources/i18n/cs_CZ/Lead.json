@@ -1,0 +1,25 @@
+{
+	"labels": {
+		"Create Lead": "Vytvořit Potenciál"
+	},
+	"fields": {
+		"status": "Stav",
+		"convertedAt": "Převedeno na",
+		"industry": "Druh činnosti",
+		"acceptanceStatus": "Stav přijetí",
+		"opportunityAmountCurrency": "Částka příležitosti v měně",
+		"acceptanceStatusMeetings": "Stav přijetí (Schůzky)",
+		"acceptanceStatusCalls": "Stav přijetí (Volání)",
+		"sicCode": "IČ",
+		"vatId": "DIČ"
+	},
+	"links": {
+		"createdAccount": "Organizace",
+		"createdOpportunity": "Příležitost",
+		"cases": "Případy",
+		"documents": "Dokumenty"
+	},
+	"presetFilters": {
+		"actual": "Aktuální"
+	}
+}

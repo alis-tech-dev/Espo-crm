@@ -1,0 +1,29 @@
+[
+    {
+        "name": "name",
+        "widthPx": 200,
+        "link": true,
+        "align": "left",
+        "label": "Kód produktu"
+    },
+    {
+        "name": "productCode",
+        "align": "left",
+
+        "label": "Name"
+    },
+    {
+        "name": "isModel",
+        "widthPx": 100,
+        "align": "right",
+        "label": "IsModel"
+    },
+    {
+        "name": "isInvisible",
+        "view": "main:views\/product\/record\/link-multiple-with-primary",
+        "widthPx": 1,
+        "noLabel": true,
+        "align": "left",
+        "label": "IsInvisible"
+    }
+]

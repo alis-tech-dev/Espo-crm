@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "name": "Projector",
+        "lens": "Lens",
+        "illuminance": "Illuminance (LUX)",
+        "symbolIlluminance": "Symbol Illuminance (LUX)",
+        "price": "Price (EUR)",
+        "priceCurrency": "Price (Currency)",
+        "priceConverted": "Price (Converted)",
+        "symbolSize": "SymbolSize",
+        "height": "Height (mm)"
+    },
+    "links": [],
+    "labels": {
+        "Create Selector": "Create Selector"
+    }
+}

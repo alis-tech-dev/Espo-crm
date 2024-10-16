@@ -1,0 +1,44 @@
+[
+    {
+        "name": "number",
+        "widthPx": 130,
+        "link": true,
+        "align": "left",
+        "label": "Sales Order Number"
+    },
+    {
+        "name": "createdAt",
+        "widthPx": 130,
+        "align": "left",
+        "label": "Created At"
+    },
+    {
+        "name": "name",
+        "widthPx": 150,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "order",
+        "widthPx": 180,
+        "align": "left",
+        "label": "Order"
+    },
+    {
+        "name": "account",
+        "label": "Organizace"
+    },
+    {
+        "name": "enduser",
+        "label": "Enduser"
+    },
+    {
+        "name": "status",
+        "label": "Status"
+    },
+    {
+        "name": "amount",
+        "label": "Amount"
+    }
+]

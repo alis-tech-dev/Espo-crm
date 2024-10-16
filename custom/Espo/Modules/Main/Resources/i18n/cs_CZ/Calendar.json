@@ -1,0 +1,14 @@
+{
+	"modes": {
+		"timeline": "Časová osa"
+	},
+	"labels": {
+		"View Calendar": "Zobrazit kalendář",
+		"User List": "Seznam uživatelů",
+		"Manage Users": "Spravovat uživatele",
+		"Shared": "Sdílené",
+		"time": "čas",
+		"Add User": "Přidat uživatele",
+		"Create Shared View": "Vytvořit sdílené zobrazení"
+	}
+}

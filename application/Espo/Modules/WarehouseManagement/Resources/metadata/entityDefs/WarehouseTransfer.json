@@ -1,0 +1,134 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true,
+            "required": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Draft",
+                "Processing",
+                "Transferred",
+                "Canceled"
+            ],
+            "style": {
+                "Processing": "info",
+                "Transferred": "success",
+                "Canceled": "danger"
+            },
+            "default": "Draft",
+            "clientReadOnly": true,
+            "duplicateIgnore": true
+        },
+        "warehouseFrom": {
+            "type": "link",
+            "view": "warehouse-management:views/warehouse-transfer/fields/warehouse-from",
+            "required": true
+        },
+        "warehouseFromType": {
+            "type": "foreign",
+            "link": "warehouseFrom",
+            "field": "type",
+            "readOnly": true,
+            "notStorable": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true
+        },
+        "warehouseTo": {
+            "type": "link",
+            "view": "warehouse-management:views/warehouse-transfer/fields/warehouse-to",
+            "required": true
+        },
+        "warehouseToType": {
+            "type": "foreign",
+            "link": "warehouseTo",
+            "field": "type",
+            "readOnly": true,
+            "notStorable": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "warehouse-management:views/warehouse-transfer/fields/items",
+            "required": true,
+            "recordListEnabled": true,
+            "recordListCreateDisabled": true,
+            "recordListLinkDisabled": false
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        }
+    },
+    "links": {
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "warehouseFrom": {
+            "entity": "Warehouse",
+            "type": "belongsTo"
+        },
+        "warehouseTo": {
+            "entity": "Warehouse",
+            "type": "belongsTo"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "items": {
+            "type": "hasChildren",
+            "entity": "WarehouseItem",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        }
+    }
+}

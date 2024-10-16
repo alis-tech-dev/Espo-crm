@@ -1,0 +1,28 @@
+{
+    "fields": {
+        "isReserved": "IsReserved",
+        "salesOrder": "Sales Order",
+        "warehouse": "Warehouse",
+        "unit": "Unit",
+        "salesOrders": "Sales Orders",
+        "salesOrdersList": "SalesOrdersList",
+        "wisos": "Sales orders list",
+        "reservedQuantity": "ReservedQuantity",
+        "name": "Name",
+        "wiso": "SalesOrder List",
+        "stockLocation": "StockLocation"
+    },
+    "links": {
+        "salesOrder": "Sales Order",
+        "warehouse": "Warehouse",
+        "salesOrders": "Sales Orders",
+        "wiso": "Wiso",
+        "wisos": "Sales orders list"
+    },
+    "options": {
+        "stockLocation": {
+            "brno": "Brno",
+            "pv": "Prostějov"
+        }
+    }
+}

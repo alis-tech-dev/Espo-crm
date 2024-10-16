@@ -1,0 +1,42 @@
+{
+	"fields": {
+		"link": "Odkaz",
+		"disabled": "Zakázáno",
+		"textFilterFields": "Pole textového filtru",
+		"audited": "Auditováno",
+		"auditedForeign": "Zahraniční audit",
+		"statusField": "Stavové pole",
+		"beforeSaveCustomScript": "Před uložením vlastního skriptu",
+		"color": "Barva",
+		"kanbanViewMode": "Kanban zobrazení",
+		"kanbanStatusIgnoreList": "Ignorované skupiny v zobrazení Kanban",
+		"iconClass": "Ikona",
+		"countDisabled": "Zakázat počet záznamů",
+		"fullTextSearch": "Fulltextové vyhledávání",
+		"parentEntityTypeList": "Typy nadřazených entit",
+		"foreignLinkEntityTypeList": "Zahraniční odkazy",
+		"loaderCustomScript": "Vlastní skript pro načítání",
+		"isWide": "Široký",
+		"gridViewMode": "Mřižkové zobrazení"
+	},
+	"options": {
+		"type": {
+			"Event": "Událost"
+		}
+	},
+	"messages": {
+		"linkConflict": "Konflikt názvu: odkaz nebo pole se stejným názvem již existuje."
+	},
+	"tooltips": {
+		"statusField": "Aktualizace tohoto pole se zaznamenávají ve streamu.",
+		"textFilterFields": "Pole používaná při textovém vyhledávání.",
+		"stream": "Zda má entita Stream.",
+		"disabled": "Zkontrolujte, zda tuto entitu ve svém systému nepotřebujete.",
+		"linkAudited": "Vytvoření souvisejícího záznamu a propojení s existujícím záznamem bude uloženo ve streamu.",
+		"linkMultipleField": "Pole Více odkazů poskytuje praktický způsob úpravy vztahů. Nepoužívejte jej, pokud máte velký počet souvisejících záznamů.",
+		"entityType": "Base Plus - má panely Aktivity, Historie a Úkoly. \n Událost - k dispozici na panelu Kalendář a Aktivity.",
+		"countDisabled": "Celkový počet se v zobrazení seznamu nezobrazí. Může snížit dobu načítání, když je tabulka DB velká.",
+		"fullTextSearch": "Je nutné spustit Obnovení.",
+		"isWide": "Pokud je zaškrtnuto, zobrazení detailu bude široké a postranní panely budou dole"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"fields": {
+		"parent": {
+			"entityList": [
+				"Account",
+				"Lead",
+				"Contact",
+				"Opportunity",
+				"Case"
+			]
+		},
+		"task": {
+			"type": "link"
+		}
+	},
+	"links": {
+		"task": {
+			"type": "belongsTo",
+			"foreign": "email",
+			"entity": "Task",
+			"isCustom": true
+		}
+	}
+}

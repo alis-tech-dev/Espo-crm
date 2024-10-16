@@ -1,0 +1,274 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "bOnumber"
+				}
+			],
+			[
+				{
+					"name": "approvalDate"
+				},
+				{
+					"name": "deadline"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "internDeadline"
+				}
+			],
+			[
+				{
+					"name": "rentDeadline"
+				},
+				false
+			],
+			[
+				{
+					"name": "qualityReport"
+				},
+				false
+			],
+			[
+				{
+					"name": "orderBanner"
+				},
+				{
+					"name": "alert"
+				}
+			],
+			[
+				{
+					"name": "readyToGoBanner"
+				},
+				false
+			],
+			[
+				{
+					"name": "endDate"
+				},
+				false
+			],
+			[
+				{
+					"name": "account1"
+				},
+				{
+					"name": "enduser"
+				}
+			],
+			[
+				{
+					"name": "responsiblePerson"
+				},
+				{
+					"name": "industrySector"
+				}
+			],
+			[
+				{
+					"name": "billingAdress"
+				},
+				{
+					"name": "toInstall"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": "Přehled",
+		"hidden": false,
+		"customLabel": "Přehled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "cisloObj"
+				},
+				{
+					"name": "orderFile"
+				}
+			],
+			[
+				{
+					"name": "opportunity"
+				},
+				{
+					"name": "orderAmount"
+				}
+			],
+			[
+				false,
+				false
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": "Objednávka",
+		"hidden": false,
+		"customLabel": "Objednávka"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "visualization"
+				},
+				{
+					"name": "crane"
+				},
+				{
+					"name": "shield"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": "Oblast zakázky",
+		"hidden": false,
+		"customLabel": "Oblast zakázky"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "obodovanivyroby"
+				},
+				{
+					"name": "priority"
+				},
+				{
+					"name": "start"
+				},
+				{
+					"name": "typeAB"
+				}
+			],
+			[
+				{
+					"name": "manufacturingReady"
+				},
+				{
+					"name": "expectedInstallationDate"
+				}
+			],
+			[
+				{
+					"name": "progress"
+				},
+				false
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"hidden": false,
+		"customLabel": "Plánování výroby"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "parcelService"
+				},
+				{
+					"name": "parcelServiceProvider"
+				},
+				{
+					"name": "parcelTrackingNumber"
+				},
+				{
+					"name": "parcelSent"
+				}
+			],
+			[
+				{
+					"name": "personalCollection"
+				},
+				{
+					"name": "account2"
+				},
+				{
+					"name": "shippingAddress"
+				},
+				{
+					"name": "contact"
+				}
+			],
+			[
+				{
+					"name": "parcelLabel"
+				},
+				false,
+				false
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": "Doprava",
+		"hidden": false,
+		"customLabel": "Doprava"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "faktura"
+				},
+				{
+					"name": "deliveryNote"
+				},
+				{
+					"name": "predavaciProtokol"
+				}
+			],
+			[
+				{
+					"name": "invoiceNumber"
+				},
+				{
+					"name": "deliveryNoteNumber"
+				},
+				{
+					"name": "deliveryNoteDate"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "vO"
+				},
+				false,
+				false
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"hidden": false,
+		"label": ""
+	}
+]

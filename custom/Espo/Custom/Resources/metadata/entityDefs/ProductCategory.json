@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "warehouses": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "name": {
+            "options": []
+        }
+    },
+    "links": {
+        "warehouses": {
+            "type": "hasMany",
+            "foreign": "productCategory",
+            "entity": "Warehouse",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

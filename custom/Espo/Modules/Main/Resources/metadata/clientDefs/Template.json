@@ -1,0 +1,16 @@
+{
+	"dynamicLogic": {
+		"fields": {
+			"body": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isNotEmpty",
+							"attribute": "entityType"
+						}
+					]
+				}
+			}
+		}
+	}
+}

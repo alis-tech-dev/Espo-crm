@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "warehouse": "Sklad",
+        "items": "Položky",
+        "status": "Stav"
+    },
+    "labels": {
+        "Process": "Zpracovat",
+        "Create GoodsReceipt": "Vytvořit příjemku",
+        "Create Goods Issue": "Vytvořit výdejku",
+        "Items": "Položky",
+        "Create Warehouse Transfer": "Vytvořit skladový přesun",
+        "Goods Receipts": "Příjemky"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Processing": "Zpracovává se",
+            "Received": "Naskladněno",
+            "Canceled": "Zrušeno"
+        }
+    }
+}
+

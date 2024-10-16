@@ -1,0 +1,36 @@
+{
+    "labels": {
+        "Create VacationRequest": "Vytvořit Žádost o dovolenou",
+        "Approve Vacation Request": "Schválit Žádost o dovolenou"
+    },
+    "fields": {
+        "from": "Od",
+        "to": "Do",
+        "numberOfDays": "Počet dnů",
+        "numberOfDaysLeft": "Počet zbývajících dnů dovolené uživatele po dovolené",
+        "numberOfDaysLeftBefore": "Počet zbývajících dnů dovolené uživatele před dovolenou",
+        "humanResource": "HR",
+        "statusOfApproval": "Stav schválení",
+        "vacationRequestApprovalItems": "Průběh schvalování",
+        "name": "Účel dovolené",
+        "vacation": "Dovolená"
+    },
+    "options": {
+        "statusOfApproval": {
+            "": "Čeká na schválení",
+            "Approved": "Schváleno",
+            "Rejected": "Zamítnuto",
+            "Returned": "Vráceno k doplnění"
+        }
+
+    },
+    "tooltips": {
+        "numberOfDaysLeft": "Data se berou v moment vytvoření žádosti",
+        "numberOfDaysLeftBefore": "Data se berou v moment vytvoření žádosti"
+    },
+    "links": {
+        "humanResource": "HR",
+        "vacationRequestApprovalItems": "Průběh schvalování",
+        "vacation": "Dovolená"
+    }
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "name": "image",
+        "label": "Image"
+    },
+    {
+        "name": "name",
+        "width": 30,
+        "link": true,
+        "align": "left",
+        "label": "Kód produktu"
+    },
+    {
+        "name": "unit",
+        "align": "left",
+        "label": "Jednotka",
+        "isEditable": true
+    },
+    {
+        "name": "minimumStockQuantity",
+        "align": "left",
+        "label": "Minimální skladové množství",
+        "isEditable": true
+    },
+    {
+        "name": "isIgnored",
+        "align": "left",
+        "label": "Is Ignored",
+        "isEditable": true
+    },
+    {
+        "name": "isModel",
+        "label": "IsModel"
+    },
+    {
+        "name": "category",
+        "align": "left",
+        "label": "Category",
+        "isEditable": true
+    },
+    {
+        "name": "totalWarehouseQuantity",
+        "label": "Total Warehouse Quantity"
+    },
+    {
+        "name": "isInvisible",
+        "widthPx": 1,
+        "noLabel": true,
+        "align": "left",
+        "view": "main:views\/product\/record\/link-multiple-with-primary",
+        "label": "IsInvisible"
+    }
+]

@@ -1,0 +1,23 @@
+[
+	{
+		"name": "name",
+		"width": 33,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "billingAddressCountry"
+	},
+	{
+		"name": "partner"
+	},
+	{
+		"name": "category"
+	},
+	{
+		"name": "emailAddress"
+	},
+	{
+		"name": "phoneNumber"
+	}
+]

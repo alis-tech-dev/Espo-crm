@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "type": "Typ",
+        "optOut": "Odhlášeno",
+        "invalid": "Neplatný"
+    }
+}

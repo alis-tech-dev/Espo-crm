@@ -1,0 +1,16 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "components"
+				},
+				{
+					"name": "contractor"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

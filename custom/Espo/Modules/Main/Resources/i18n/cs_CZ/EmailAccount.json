@@ -1,0 +1,24 @@
+{
+	"labels": {
+		"Send Test Email": "Odeslat testovací email"
+	},
+	"fields": {
+		"emailFolder": "Vložit do složky",
+		"fetchData": "Načíst data",
+		"keepFetchedEmailsUnread": "Ponechat načtené e-maily jako nepřečtené",
+		"smtpUsername": "SMTP uživatelské jméno",
+		"smtpPassword": "SMTP heslo",
+		"storeSentEmails": "Uložit odeslané e-maily",
+		"useImap": "Načíst e-maily"
+	},
+	"links": {
+		"emailFolder": "Složka",
+		"emails": "Emaily",
+		"filters": "Filtry"
+	},
+	"tooltips": {
+		"emailAddress": "Záznam uživatele (přiřazený uživatel) by měl mít stejnou e-mailovou adresu, aby bylo možné použít tento e-mailový účet k odesílání.",
+		"storeSentEmails": "Odeslané e-maily budou uloženy na serveru IMAP. Pole E-mailová adresa by se mělo shodovat s adresou, ze které budou e-maily zasílány.",
+		"useSmtp": "Možnost odesílat e-maily."
+	}
+}

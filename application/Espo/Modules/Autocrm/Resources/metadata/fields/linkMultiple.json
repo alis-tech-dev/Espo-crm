@@ -1,0 +1,95 @@
+{
+	"params": [
+		"__APPEND__",
+		{
+			"name": "recordListEnabled",
+			"type": "bool",
+			"required": true,
+			"view": "autocrm:views/admin/field-manager/fields/link-multiple/record-list-enabled",
+			"tooltip": true
+		},
+		{
+			"name": "recordListLayout",
+			"type": "enum",
+			"view": "autocrm:views/admin/field-manager/fields/link-multiple/record-list-layout",
+			"required": true
+		},
+		{
+			"name": "recordListButtonsPosition",
+			"type": "enum",
+			"options": ["Top", "Bottom"],
+			"default": "Bottom"
+		},
+		{
+			"name": "recordListCreateDisabled",
+			"type": "bool",
+			"required": true
+		},
+		{
+			"name": "recordListLinkDisabled",
+			"type": "bool",
+			"default": true,
+			"required": true
+		},
+		{
+			"name": "recordListRemoveDisabled",
+			"type": "bool",
+			"required": true
+		},
+		{
+			"name": "recordListConfirmRemove",
+			"type": "bool",
+			"required": true
+		},
+		{
+			"name": "recordListOrderByField",
+			"type": "varchar",
+			"view": "autocrm:views/admin/field-manager/fields/link-multiple/record-list-order-by-field",
+			"required": false,
+			"maxLength": 60,
+			"tooltip": true
+		},
+		{
+			"name": "recordListKeepRemoved",
+			"type": "bool",
+			"required": true,
+			"view": "autocrm:views/admin/field-manager/fields/link-multiple/record-list-keep-removed",
+			"tooltip": true
+		},
+		{
+			"name": "recordListDynamicHandler",
+			"type": "varchar",
+			"hidden": true
+		},
+		{
+			"name": "recordListMandatorySelectAttributeList",
+			"type": "jsonArray",
+			"hidden": true
+		},
+		{
+			"name": "recordListForceSelectAllAttributes",
+			"type": "bool",
+			"hidden": true
+		},
+		{
+			"name": "defaultSelectFilters",
+			"type": "jsonObject",
+			"view": "autocrm:views/admin/field-manager/fields/link-multiple/advanced-filters",
+			"tooltip": true
+		},
+		{
+			"name": "checkboxesEnabled",
+			"type": "bool",
+			"default": false
+		},
+		{
+			"name": "createAsModal",
+			"type": "bool",
+			"default": false
+		}
+	],
+	"actualFields": ["__APPEND__", "recordList"],
+	"validatorClassName": "Espo\\Modules\\Autocrm\\Classes\\FieldValidators\\LinkMultipleType",
+	"converterClassName": "Espo\\Modules\\Autocrm\\Classes\\Utils\\Database\\Orm\\FieldConverters\\LinkMultiple",
+	"view": "autocrm:views/fields/link-multiple"
+}

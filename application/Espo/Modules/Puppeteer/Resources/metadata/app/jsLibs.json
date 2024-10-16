@@ -1,0 +1,7 @@
+{
+    "ace-mode-html": {
+        "path": "client/modules/puppeteer/lib/ace/mode-html.js",
+        "exportsTo": "ace.require.define.modules",
+        "exportsAs": "ace/mode/html"
+    }
+}

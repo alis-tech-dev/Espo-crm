@@ -1,0 +1,21 @@
+[
+	{
+		"name": "operation"
+	},
+	{
+		"name": "workCenter",
+		"width": 20
+	},
+	{
+		"name": "preparationTime",
+		"width": 12
+	},
+	{
+		"name": "productionTime",
+		"width": 12
+	},
+	{
+		"name": "interoperationTime",
+		"width": 12
+	}
+]

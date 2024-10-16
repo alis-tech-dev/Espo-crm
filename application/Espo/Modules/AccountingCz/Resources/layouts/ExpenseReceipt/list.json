@@ -1,0 +1,19 @@
+[
+    {
+        "name": "number",
+        "link": true
+    },
+    {
+        "name": "supplierLink",
+        "width": 16
+    },
+    {
+        "name": "dateInvoiced",
+        "width": 16
+    },
+    {
+        "name": "grandTotalAmount",
+        "width": 16,
+        "align": "right"
+    }
+]

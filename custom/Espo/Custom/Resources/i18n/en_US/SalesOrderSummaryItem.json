@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "salesOrder": "Zakázka",
+        "quantity": "Požadované množství",
+        "reservedQuantity": "Rezervované množství",
+        "producedQuantity": "Vyrobené množství"
+    },
+    "links": {
+        "salesOrder": "Zakázka"
+    },
+    "labels": {
+        "Create SalesOrderSummaryItem": "Create Položka shrnutí zakázky"
+    }
+}

@@ -1,0 +1,184 @@
+/* rajdhani-regular - latin */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rajdhani-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Rajdhani Regular'), local('Rajdhani-Regular'),
+       url('fonts/rajdhani-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/rajdhani-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/rajdhani-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/rajdhani-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/rajdhani-v9-latin-regular.svg#Rajdhani') format('svg'); /* Legacy iOS */
+}
+
+[data-scope="UseCase"] .record .record-grid {
+	grid-template-columns: 100%;
+}
+
+.record .record-grid.record-side-disabled {
+	grid-template-columns: 100%;
+}
+
+.priority-urgent {
+	background-color: #ffe0e0;
+	border: 2px solid #cf605d;
+}
+
+.priority-high {
+	background-color: #ef990e14;
+	border: 2px solid #ef990e;
+}
+
+.wysiwyg-plain-text {
+	padding: 20px;
+	background: #efefef;
+}
+
+.wysiwyg-plain-text p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 400px;
+	font-size: 14px;
+}
+
+.quote-two-buttons button{
+	margin-right: 10px;
+}
+
+.quote-list tr:nth-child(odd), .quote-list tr:nth-child(even) {
+	background: #FFF;
+}
+
+.quote-list tr.section {
+	background: #f8f8f8;
+	border-top: 2px solid black;
+}
+
+.quote-list tr.section  .field [data-action="selectProduct"] {
+	display: none;
+}
+
+.header-buttons>.btn>.fa-plus.fa-sm {
+	color: #fff;
+}
+
+.navbar-inverse {
+	background-color: #333;
+}
+
+.note-editing-area p {
+}
+
+.panel {
+	box-shadow: none;
+	border-width: 1px;	
+	padding: 20px;
+	-webkit-box-shadow: none;
+}
+
+div.list-kanban>div>table .item .panel .form-group .field.field-large {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#navbar .navbar .navbar-right-container input.global-search-input {
+	height: 39px !important;
+	width: 400px;
+}
+
+.navbar-right-container .fas {
+	font-size: 20px;
+}
+
+#footer {
+	display: none;
+}
+
+textarea {
+}
+
+tr:nth-child(even) {
+	background: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+	background: #FFF;
+}
+
+div[data-name="Stream"] li {
+	padding: 15px;	
+	line-height: 26px;
+}
+
+.admin-panel-iframe-container {
+	display: none !important;
+}
+
+.admin-content iframe {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+body #navbar .navbar-right {
+}
+}
+
+
+#navbar .navbar .navbar-right {
+	height: 40px;
+}
+
+.page-header .header-title, h3 .header-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	}
+
+a[data-name="create"] {
+	background-color: red;
+	color: #fff;
+	}
+
+.btn-default>.fas {
+}
+
+@media (min-width: 1024px) {
+body {
+	background-color: #f7f7f7;
+	font-size: 17px;
+	font-family: 'Helvetica';
+	padding-top: 50px;
+}
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
+.kanban-columns tr:nth-child(odd) {
+	background-color: transparent;
+}
+
+.panel.dashlet>.panel-heading>.btn-group {
+	top: -10px;
+}
+
+
+.note-editor.note-frame .note-editing-area .note-codable {
+	min-height: 300px;
+
+}
+
+
+.note-editor.note-frame .note-editing-area .note-editable {
+	min-height: 300px;
+}
+
+
+#tinymce p {
+	font-size: 14px !important;
+}
+
+

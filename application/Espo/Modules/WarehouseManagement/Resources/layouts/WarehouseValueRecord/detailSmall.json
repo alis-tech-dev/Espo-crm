@@ -1,0 +1,16 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "warehouse"
+                },
+                {
+                    "name": "value"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "productionModel"
+                }
+            ],
+            [
+                {
+                    "name": "quantityPlanned"
+                },
+                {
+                    "name": "quantityProduced"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "operations",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "billOfMaterials",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "label": "Plan"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "productWarehouse"
+                },
+                {
+                    "name": "materialWarehouse"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "forceMaterialWarehouse"
+                }
+            ]
+        ],
+        "label": "Configuration"
+    }
+]

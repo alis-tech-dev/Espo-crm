@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "bodyMjml": {
+            "type": "text",
+            "customizationDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "layoutMassUpdateDisabled": true
+        },
+        "type": {
+            "type": "enum",
+            "options": [
+                "Default",
+                "EasyEmail"
+            ],
+            "default": "Default",
+            "required": true
+        }
+    }
+}

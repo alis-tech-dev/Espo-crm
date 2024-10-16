@@ -1,0 +1,24 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "warehouseGroupByFieldList"
+                },
+                {
+                    "name": "updateProductCostPriceWithAveragePrice"
+                }
+            ],
+            [
+                {
+                    "name": "warehouseListToSaveValueOf"
+                },
+                {
+                    "name": "warehouseRunningOutMultiplier"
+                }
+            ]
+        ],
+        "index": 0
+    }
+]
+

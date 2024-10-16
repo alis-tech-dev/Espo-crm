@@ -1,0 +1,38 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "view": "main:views\/supplier-order\/fields\/changeStatus"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "isDelivered"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "attachment"
+                }
+            ],
+            [
+                {
+                    "name": "items"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

@@ -1,0 +1,11 @@
+[
+	{
+		"name": "preDiscountedAmount"
+	},
+	{
+		"name": "discountAmount"
+	},
+	{
+		"name": "grandTotalAmount"
+	}
+]

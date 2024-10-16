@@ -1,0 +1,191 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "productCode"
+                },
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "alisId"
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "isIgnored"
+                }
+            ],
+            [
+                {
+                    "name": "totalWarehouseQuantity"
+                },
+                {
+                    "name": "totalAvailableQuantity"
+                }
+            ],
+            [
+                {
+                    "name": "defaultProductionModel"
+                },
+                {
+                    "name": "minimumStockQuantity"
+                }
+            ],
+            [
+                {
+                    "name": "nameDE"
+                },
+                {
+                    "name": "defaultWarehousePosition"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "descriptionEn"
+                },
+                {
+                    "name": "descriptionDe"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "taxClass"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "costPriceWithTax"
+                },
+                {
+                    "name": "componentsCost"
+                }
+            ],
+            [
+                {
+                    "name": "pricingType",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "salesPrice",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "salesPriceWithTax",
+                    "css": "col-md-3"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMarkup"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMargin"
+                }
+            ],
+            [
+                {
+                    "name": "priceJesenoConverted"
+                },
+                {
+                    "name": "priceA"
+                },
+                {
+                    "name": "priceB"
+                },
+                {
+                    "name": "priceC"
+                }
+            ],
+            [
+                {
+                    "name": "priceEndUser"
+                },
+                {
+                    "name": "priceDamage"
+                },
+                {
+                    "name": "priceRent"
+                }
+            ],
+            [
+                {
+                    "name": "unit"
+                },
+                {
+                    "name": "costPrice"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Ceny",
+        "hidden": false,
+        "customLabel": "Ceny"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "measureUnit"
+                },
+                {
+                    "name": "weight"
+                }
+            ],
+            [
+                {
+                    "name": "ean"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "url"
+                },
+                {
+                    "name": "dismantlable"
+                }
+            ],
+            [
+                {
+                    "name": "suppliers"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "attachments"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Detaily",
+        "hidden": false,
+        "customLabel": "Detaily"
+    }
+]

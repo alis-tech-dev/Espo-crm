@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "headerPosition": {
+            "tooltip": true
+        },
+        "footerPosition": {
+            "tooltip": true
+        },
+        "type": {
+            "type": "enum",
+            "options": [
+                "Default",
+                "Ace",
+                "Raw"
+            ],
+            "default": "Default",
+            "required": true,
+            "clientReadOnly": true
+        },
+        "body": {
+            "view": "puppeteer:views/template/fields/body"
+        },
+        "header": {
+            "view": "puppeteer:views/template/fields/body"
+        },
+        "footer": {
+            "view": "puppeteer:views/template/fields/body"
+        }
+    }
+}

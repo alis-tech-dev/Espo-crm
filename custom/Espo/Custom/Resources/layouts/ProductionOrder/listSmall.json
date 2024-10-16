@@ -1,0 +1,89 @@
+[
+    {
+        "name": "name",
+        "widthPx": 160,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "billOfMaterials",
+        "widthPx": 160,
+        "notSortable": true,
+        "align": "left",
+        "view": "main:views\/production-model-item\/record\/listSmall",
+        "label": "billOfMaterials"
+    },
+    {
+        "name": "itemQuantity",
+        "widthPx": 50,
+        "align": "left",
+        "label": "ItemQuantity"
+    },
+    {
+        "name": "stockQuantity",
+        "widthPx": 50,
+        "align": "left",
+        "label": "StockQuantity"
+    },
+    {
+        "name": "performWorkButton",
+        "widthPx": 95,
+        "noLabel": true,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/perform-work",
+        "label": "performWorkButton"
+    },
+    {
+        "name": "performWorkFinishButton",
+        "widthPx": 95,
+        "noLabel": true,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/perform-work-finish",
+        "label": "performWorkFinishButton"
+    },
+    {
+        "name": "takeFromWarehouseButton",
+        "widthPx": 95,
+        "noLabel": true,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/take-from-warehouse",
+        "label": "takeFromWarehouseButton"
+    },
+    {
+        "name": "performWorkTime",
+        "widthPx": 140,
+        "align": "left",
+        "label": "PerformWorkTime"
+    },
+    {
+        "name": "status",
+        "label": "status"
+    },
+    {
+        "name": "avaliableQuantity",
+        "label": "AvaliableQuantity"
+    },
+    {
+        "name": "quantityPlanned",
+        "label": "Planned"
+    },
+    {
+        "name": "quantityProduced",
+        "label": "Produced"
+    },
+    {
+        "name": "fromWarehouse",
+        "label": "From stock"
+    },
+    {
+        "name": "totalProduced",
+        "label": "Total quantity"
+    },
+    {
+        "name": "isPerform",
+        "align": "left",
+        "label": "IsPerform",
+        "hidden": true
+    }
+]

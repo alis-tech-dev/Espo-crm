@@ -1,0 +1,55 @@
+{
+	"descriptions": {
+		"autocrm": "All config parameters for AutoCRM related extensions."
+	},
+	"fields": {
+		"checkboxesEnabled": "Enable Checkboxes",
+		"recordListButtonsPosition": "Buttons Position",
+		"createAsModal": "Create as modal",
+		"defaultSelectAttributes": "Default Select Attributes",
+		"lockAfterSigning": "Lock after signing",
+		"notStorable": "Not Storable",
+		"recordListConfirmRemove": "Confirm Before Remove",
+		"recordListCreateDisabled": "Disable Create Button",
+		"recordListEnabled": "Enable Record List",
+		"recordListKeepRemoved": "Keep Removed Records",
+		"recordListLayout": "List Layout",
+		"recordListLinkDisabled": "Disable Link Button",
+		"recordListOrderByField": "Order Field",
+		"recordListRemoveDisabled": "Disable Remove Buttons",
+		"saveCoordinates": "Save coordinates",
+		"displayAsLinks": "Display as links",
+		"currentValue": "Current value",
+		"targetValue": "Target Value",
+		"arrowColor": "Arrow color",
+		"labelsEnabled": "Allow label",
+		"labelsFontPercentage": "Font-size of label (%)",
+		"numberLineEnabled": "Allow number line",
+		"numberLineFontPercentage": "Font-size of number line (%)",
+		"labelsFormat": "Caption format",
+		"startColor": "Start color",
+		"endColor": "End color",
+		"align": "Align",
+		"height": "Height (px)",
+		"width": "Width (px)",
+		"labelColor": "Label color",
+		"backgroundColor": "Background color",
+		"labelsFontWidth": "Label font width",
+		"dateWarning": "Color highlight after the date"
+	},
+	"fieldTypes": {
+		"electronicSignature": "Electronic Signature",
+		"foreignMultiple": "Foreign Field (multiple relation)",
+		"speedometerGraph": "Graph (speedometer)",
+		"progressBar": "Progress Bar"
+	},
+	"labels": {
+		"Add Layout": "Add Layout",
+		"Add Related Field": "Add Related Field",
+		"AutoCRM Settings": "AutoCRM Settings",
+		"Show All Layouts": "Show All Layouts"
+	},
+	"layouts": {
+		"aggregationFunctions": "Aggregation Function"
+	}
+}

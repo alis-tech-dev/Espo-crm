@@ -1,0 +1,13 @@
+{
+	"fields": {
+		"operation": {
+			"required": false
+		},
+		"dateEnd": {
+			"required": false
+		},
+		"processed": {
+			"type": "bool"
+		}
+	}
+}

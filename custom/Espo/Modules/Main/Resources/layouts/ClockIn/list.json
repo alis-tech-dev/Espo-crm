@@ -1,0 +1,22 @@
+[
+	{
+		"name": "name",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser",
+		"link": true,
+		"align": "right"
+	},
+	{
+		"name": "type",
+		"width": 5,
+		"align": "right"
+	},
+	{
+		"name": "createdAt",
+		"width": 15,
+		"align": "right"
+	}
+]

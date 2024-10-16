@@ -1,0 +1,5 @@
+{
+    "primaryFilterClassNameMap": {
+        "stockable": "Espo\\Modules\\WarehouseManagement\\Classes\\Select\\Product\\PrimaryFilters\\Stockable"
+    }
+}

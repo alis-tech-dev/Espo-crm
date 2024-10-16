@@ -1,0 +1,6 @@
+{
+    "cssList": [
+        "__APPEND__",
+        "client/modules/mattermost/css/iframe.css"
+    ]
+}

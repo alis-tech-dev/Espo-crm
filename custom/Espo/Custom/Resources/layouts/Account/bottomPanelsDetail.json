@@ -1,0 +1,333 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "contacts.opportunities": {
+        "disabled": true
+    },
+    "contacts.cases": {
+        "disabled": true
+    },
+    "contacts.campaignLogRecords": {
+        "disabled": true
+    },
+    "contacts.targetLists": {
+        "disabled": true
+    },
+    "contacts.documents": {
+        "disabled": true
+    },
+    "contacts.quotesBilling": {
+        "disabled": true
+    },
+    "contacts.quotesShipping": {
+        "disabled": true
+    },
+    "contacts.salesOrdersBilling": {
+        "disabled": true
+    },
+    "contacts.salesOrdersShipping": {
+        "disabled": true
+    },
+    "contacts.purchaseOrdersBilling": {
+        "disabled": true
+    },
+    "contacts.invoicesBilling": {
+        "disabled": true
+    },
+    "contacts.invoicesShipping": {
+        "disabled": true
+    },
+    "contacts.orders": {
+        "disabled": true
+    },
+    "contacts.contractors": {
+        "disabled": true
+    },
+    "contacts.installations": {
+        "disabled": true
+    },
+    "opportunities.contacts": {
+        "disabled": true
+    },
+    "opportunities.documents": {
+        "disabled": true
+    },
+    "opportunities.quotes": {
+        "disabled": true
+    },
+    "opportunities.salesOrders": {
+        "disabled": true
+    },
+    "cases.articles": {
+        "disabled": true
+    },
+    "documents.accounts": {
+        "disabled": true
+    },
+    "documents.opportunities": {
+        "disabled": true
+    },
+    "documents.leads": {
+        "disabled": true
+    },
+    "documents.contacts": {
+        "disabled": true
+    },
+    "targetLists.accounts": {
+        "disabled": true
+    },
+    "targetLists.contacts": {
+        "disabled": true
+    },
+    "targetLists.leads": {
+        "disabled": true
+    },
+    "targetLists.users": {
+        "disabled": true
+    },
+    "portalUsers.workingTimeRanges": {
+        "disabled": true
+    },
+    "portalUsers.meetings": {
+        "disabled": true
+    },
+    "portalUsers.calls": {
+        "disabled": true
+    },
+    "portalUsers.emails": {
+        "disabled": true
+    },
+    "portalUsers.accounts": {
+        "disabled": true
+    },
+    "portalUsers.tasks": {
+        "disabled": true
+    },
+    "portalUsers.targetLists": {
+        "disabled": true
+    },
+    "portalUsers.reportEmailSending": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports1": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports2": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports3": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports4": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports5": {
+        "disabled": true
+    },
+    "portalUsers.qualityReports6": {
+        "disabled": true
+    },
+    "products.attachments": {
+        "disabled": true
+    },
+    "products.suppliers": {
+        "disabled": true
+    },
+    "products.priceLists": {
+        "disabled": true
+    },
+    "products.warehouseItems": {
+        "disabled": true
+    },
+    "products.productionModels": {
+        "disabled": true
+    },
+    "products.productionModelItem": {
+        "disabled": true
+    },
+    "primarySupplierOf.attachments": {
+        "disabled": true
+    },
+    "primarySupplierOf.suppliers": {
+        "disabled": true
+    },
+    "primarySupplierOf.priceLists": {
+        "disabled": true
+    },
+    "primarySupplierOf.warehouseItems": {
+        "disabled": true
+    },
+    "primarySupplierOf.productionModels": {
+        "disabled": true
+    },
+    "primarySupplierOf.productionModelItem": {
+        "disabled": true
+    },
+    "quotes.salesOrders": {
+        "disabled": true
+    },
+    "quotes.invoices": {
+        "disabled": true
+    },
+    "quotes.documents": {
+        "disabled": true
+    },
+    "quotes.quoteEntries": {
+        "disabled": true
+    },
+    "quotes.opportunities": {
+        "disabled": true
+    },
+    "salesOrders.invoices": {
+        "disabled": true
+    },
+    "salesOrders.reclamations": {
+        "disabled": true
+    },
+    "salesOrders.summaryVatRates": {
+        "disabled": true
+    },
+    "salesOrders.productionOrders": {
+        "disabled": true
+    },
+    "salesOrders.salesOrderSummaryItems": {
+        "disabled": true
+    },
+    "salesOrders.documents": {
+        "disabled": true
+    },
+    "salesOrders.supplierInvoices": {
+        "disabled": true
+    },
+    "salesOrders.supplierOrders": {
+        "disabled": true
+    },
+    "purchaseOrders.supplierInvoices": {
+        "disabled": true
+    },
+    "invoices.handoverProtocols": {
+        "disabled": true
+    },
+    "invoices.deliveryNotes": {
+        "disabled": true
+    },
+    "invoices.summaryVatRates": {
+        "disabled": true
+    },
+    "invoices.creditNotes": {
+        "disabled": true
+    },
+    "invoices.revenueReceipts": {
+        "disabled": true
+    },
+    "invoices.proformaInvoices": {
+        "disabled": true
+    },
+    "invoices.payments": {
+        "disabled": true
+    },
+    "priceLists.products": {
+        "disabled": true
+    },
+    "priceLists.accounts": {
+        "disabled": true
+    },
+    "priceLists.quotes": {
+        "disabled": true
+    },
+    "productsSupplier.attachments": {
+        "disabled": true
+    },
+    "productsSupplier.suppliers": {
+        "disabled": true
+    },
+    "productsSupplier.priceLists": {
+        "disabled": true
+    },
+    "productsSupplier.warehouseItems": {
+        "disabled": true
+    },
+    "productsSupplier.productionModels": {
+        "disabled": true
+    },
+    "productsSupplier.productionModelItem": {
+        "disabled": true
+    },
+    "qualityReports.users1": {
+        "disabled": true
+    },
+    "qualityReports.qualityReports": {
+        "disabled": true
+    },
+    "_tabBreak_0": {
+        "index": 0,
+        "tabBreak": true,
+        "tabLabel": "Kontakty"
+    },
+    "contacts": {
+        "index": 1
+    },
+    "_tabBreak_1": {
+        "index": 2,
+        "tabBreak": true,
+        "tabLabel": "Příležitosti"
+    },
+    "opportunities": {
+        "index": 3
+    },
+    "_tabBreak_2": {
+        "index": 4,
+        "tabBreak": true,
+        "tabLabel": "Nabídky"
+    },
+    "quotes": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 5
+    },
+    "_tabBreak_3": {
+        "index": 6,
+        "tabBreak": true,
+        "tabLabel": "Vydané faktury"
+    },
+    "invoices": {
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "iscustomer"
+                }
+            ]
+        },
+        "style": "default",
+        "sticked": false,
+        "index": 7
+    },
+    "_tabBreak_4": {
+        "index": 8,
+        "tabBreak": true,
+        "tabLabel": "Zakázky"
+    },
+    "salesOrders": {
+        "index": 9
+    },
+    "_tabBreak_5": {
+        "index": 10,
+        "tabBreak": true,
+        "tabLabel": "Dokumenty"
+    },
+    "documents": {
+        "index": 11
+    },
+    "_tabBreak_6": {
+        "index": 12,
+        "tabBreak": true,
+        "tabLabel": "Stream"
+    },
+    "stream": {
+        "sticked": true,
+        "index": 13
+    }
+}

@@ -1,0 +1,203 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true,
+            "required": false,
+            "options": []
+        },
+        "number": {
+            "type": "varchar",
+            "maxLength": "100"
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "format": "VD{YYYY}-{number}",
+            "reset": "Yearly",
+            "padLength": 5,
+            "disabled": true
+        },
+        "amountInWords": {
+            "type": "varchar",
+            "view": "accounting-cz:views/fields/amount-in-words",
+            "maxLength": 150,
+            "options": []
+        },
+        "issued": {
+            "type": "link"
+        },
+        "dateInvoiced": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true
+        },
+        "dateOfReceiving": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true
+        },
+        "received": {
+            "type": "link"
+        },
+        "paymentPurpose": {
+            "type": "text"
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views\/fields\/assigned-user",
+            "required": true
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "supplierName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": []
+        },
+        "supplierShippingAddress": {
+            "type": "address"
+        },
+        "supplierBillingAddress": {
+            "type": "address"
+        },
+        "supplierSicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "supplierVatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "supplierNote": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "rows": 1
+        },
+        "subscriberName": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "options": []
+        },
+        "subscriberAddress": {
+            "type": "address"
+        },
+        "subscriberEmail": {
+            "type": "varchar",
+            "maxLength": 50,
+            "options": []
+        },
+        "subscriberPhone": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "subscriberWebsite": {
+            "type": "varchar",
+            "maxLength": 80,
+            "options": []
+        },
+        "subscriberVatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "subscriberSicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": [],
+            "required": true
+        },
+        "supplierLink": {
+            "type": "linkParent",
+            "entityList": [
+                "Account",
+                "Contact"
+            ]
+        },
+        "invoice": {
+            "type": "linkParent",
+            "entityList": [
+                "SupplierInvoice",
+                "ReceivedProformaInvoice"
+            ]
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "received": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "expenseReceipts"
+        },
+        "issued": {
+            "type": "belongsTo",
+            "entity": "User",
+            "foreign": "expenseReceipts"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "supplierLink": {
+            "type": "belongsToParent",
+            "foreign": "expenseReceipt"
+        },
+        "invoice": {
+            "type": "belongsToParent",
+            "foreign": "expenseReceipts"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"type": {
+			"options": ["__APPEND__", "Product", "Material", "Component"],
+			"stockableTypes": ["__APPEND__", "Product", "Material"],
+			"tooltip": true
+		},
+		"defaultProductionModel": {
+			"type": "link"
+		},
+		"productionModels": {
+			"type": "linkMultiple",
+			"view": "production:views/product/fields/production-models"
+		}
+	},
+	"links": {
+		"defaultProductionModel": {
+			"type": "belongsTo",
+			"entity": "ProductionModel",
+			"foreign": "defaultOfProduct"
+		},
+		"productionModels": {
+			"type": "hasMany",
+			"foreign": "product",
+			"entity": "ProductionModel"
+		},
+		"productionModelItem": {
+			"type": "hasMany",
+			"foreign": "product",
+			"entity": "ProductionModelItem"
+		}
+	}
+}

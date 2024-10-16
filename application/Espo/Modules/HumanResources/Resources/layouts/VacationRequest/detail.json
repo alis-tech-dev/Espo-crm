@@ -1,0 +1,40 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "statusOfApproval"
+                }
+            ],
+            [
+                {
+                    "name": "numberOfDaysLeftBefore"
+                },
+                {
+                    "name": "numberOfDaysLeft"
+                }
+            ],
+            [
+                {
+                    "name": "from"
+                },
+                {
+                    "name": "to"
+                },
+                {
+                    "name": "numberOfDays"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

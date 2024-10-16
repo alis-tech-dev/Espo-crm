@@ -1,0 +1,35 @@
+{
+	"labels": {
+		"Create Absence": "Vytvořit Dovolená"
+	},
+	"fields": {
+		"type": "Typ",
+		"dateEnd": "Do",
+		"approved": "Schválení",
+		"dateStart": "Od",
+		"description": "Poznámka",
+		"hours": "Počet hodin",
+		"remainingHrs": "Zbývá hodin"
+	},
+	"options": {
+		"type": {
+			"Paid": "Dovolená",
+			"NonPaid": "Neplacené volno",
+			"illness": "Pracovní neschopnost",
+			"sick": "Sick Day",
+			"medical": "Lékař",
+			"exchange": "Náhradní volno",
+			"paidAbsence": "Placené volno"
+		},
+		"status": {
+			"Planned": "Plánované",
+			"Held": "Proběhlé",
+			"Not Held": "Neproběhlé"
+		},
+		"approved": {
+			"waiting": "Čeká na schválení",
+			"approved": "Schváleno",
+			"declined": "Neschváleno"
+		}
+	}
+}

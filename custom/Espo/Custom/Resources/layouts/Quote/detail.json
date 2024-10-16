@@ -1,0 +1,163 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "number"
+                }
+            ],
+            [
+                {
+                    "name": "enduser"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "assignedUser"
+                },
+                {
+                    "name": "stavZamitnuta"
+                }
+            ],
+            [
+                {
+                    "name": "taxClass"
+                },
+                {
+                    "name": "stavProhrana"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "grandTotalAmount"
+                }
+            ],
+            [
+                {
+                    "name": "dateQuoted"
+                },
+                {
+                    "name": "validUntil"
+                }
+            ],
+            [
+                {
+                    "name": "priceList"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingContact"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "alisSolution"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "specification"
+                }
+            ],
+            [
+                {
+                    "name": "solutionGeneral"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Úvodní strana"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "accommodation"
+                },
+                {
+                    "name": "accomodationCost"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "noConditions"
+                },
+                {
+                    "name": "czechConditions"
+                }
+            ],
+            [
+                {
+                    "name": "conditions"
+                }
+            ],
+            [
+                {
+                    "name": "conditionsCZ"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "transport",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Transport"
+    }
+]

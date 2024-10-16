@@ -1,0 +1,5 @@
+{
+    "accessControlFilterClassNameMap": {
+        "mandatory": "Espo\\Modules\\ExportXml\\Classes\\Select\\XmlTemplate\\AccessControlFilters\\Mandatory"
+    }
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "dateStart",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "dateEnd",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "humanResource",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

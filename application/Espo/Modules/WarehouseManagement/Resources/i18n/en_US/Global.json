@@ -1,0 +1,18 @@
+{
+    "scopeNames": {
+        "Warehouse": "Warehouse",
+        "WarehouseItem": "Warehouse Item",
+        "WarehousePosition": "Warehouse Position",
+        "GoodsReceipt": "Goods Receipt",
+        "GoodsIssue": "Goods Issue",
+        "WarehouseValueRecord": "Warehouse Value"
+    },
+    "scopeNamesPlural": {
+        "Warehouse": "Warehouses",
+        "WarehouseItem": "Warehouse Items",
+        "WarehousePosition": "Warehouse Positions",
+        "GoodsReceipt": "Goods Receipts",
+        "GoodsIssue": "Goods Issues",
+        "WarehouseValueRecord": "Warehouse Values"
+    }
+}

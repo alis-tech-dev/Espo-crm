@@ -1,0 +1,77 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "additionalLayouts": {
+        "detailBottomTotal": {
+            "type": "list",
+            "dataAttributeList": [
+                "name",
+                "view",
+                "customLabel"
+            ]
+        },
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "dynamicHandler": "accounting-cz:handlers/receipts/dynamic-handler",
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "number": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "number"
+                        }
+                    ]
+                }
+            },
+            "opportunity": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "quoteId",
+                                    "data": {
+                                        "field": "quote"
+                                    }
+                                },
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "salesOrderId",
+                                    "data": {
+                                        "field": "salesOrder"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-receipt",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true
+}

@@ -1,0 +1,28 @@
+{
+    "fieldTypes": {
+        "sequenceNumber": "Sequence Number",
+        "vatId": "VAT ID"
+    },
+    "fields": {
+        "format": "Number Format",
+        "nextNumber": "Next Number",
+        "padLength": "Pad Length",
+        "reset": "Reset Number",
+        "validateFormat": "Validate Format",
+        "validateExistence": "Validate Existence"
+    },
+    "descriptions": {
+        "salesOrderSettingsDescription": "Warehouse settings for automatic order workflows"
+    },
+    "labels": {
+        "Sales Order Settings": "Sales Order Settings"
+    },
+    "options": {
+        "reset": {
+            "Daily": "Daily",
+            "Monthly": "Monthly",
+            "Yearly": "Yearly",
+            "Never": "Never"
+        }
+    }
+}

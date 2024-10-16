@@ -1,0 +1,38 @@
+{
+	"fields": {
+		"account": "Firma",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"belongsToSection": "Náleží k sekci",
+		"description": "Popis",
+		"discount": "Sleva (%)",
+		"listPriceConverted": "Katalogová cena (převedeno)",
+		"listPriceCurrency": "Katalogová cena v měně",
+		"qty": "Množství",
+		"quantity": "Qty",
+		"quoteStatus": "Stav nabídky",
+		"taxRate": "Sazba DPH",
+		"unitPriceConverted": "Jednotková cena (převedeno)",
+		"unitPriceCurrency": "Jednotková cena v měně",
+		"unitWeight": "Jednotková váha",
+		"useCase": "Use Case",
+		"weight": "Váha",
+		"productCode": "Kód Produktu",
+		"unit": "Jednotka",
+		"descriptionENG": "Description",
+		"nameCZ": "Název česky",
+		"guaranteeExtend": "Extended Guarantee",
+		"manufacturing": "Test - Výroba"
+	},
+	"options": {
+		"unit": {
+			"pcs": "pcs",
+			"km": "km",
+			"h": "h",
+			"unit": "unit"
+		}
+	},
+	"links": {
+		"manufacturing": "Test - Výroba"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"fields": {
+		"isTest": "Je Test",
+		"queueItem": "Položka fronty",
+		"stringAdditionalData": "string Additional Data"
+	},
+	"labels": {
+		"Create CampaignLogRecord": "Vytvořit záznam protokolu kampaně"
+	},
+	"links": {
+		"campaign": "Kampaň",
+		"parent": "Rodič",
+		"queueItem": "Položka fronty",
+		"object": "Objekt"
+	},
+	"presetFilters": {
+		"bounced": "Odraženo",
+		"clicked": "Kliknuto",
+		"leadCreated": "Lead vytvořen",
+		"opened": "Otevřeno",
+		"optedIn": "Přihlášeno",
+		"optedOut": "Odhlášeno",
+		"sent": "Posláno"
+	},
+	"options": {
+		"action": {
+			"Sent": "Poslané",
+			"Opened": "Otevřené",
+			"Opted Out": "Odhlášené",
+			"Bounced": "Odraženo",
+			"Clicked": "Kliknuté",
+			"Lead Created": "Vytvořen potenciál",
+			"Opted In": "Příhlášené"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"fields": {
+		"entityType": "Typ entity",
+		"event": "Událost",
+		"field": "Pole",
+		"isActive": "Je aktivní",
+		"secretKey": "Soukromý klíč",
+		"user": "API Uživatel"
+	},
+	"labels": {
+		"Create Webhook": "Vytvořit Webhook"
+	},
+	"links": {
+		"user": "Uživatel"
+	}
+}

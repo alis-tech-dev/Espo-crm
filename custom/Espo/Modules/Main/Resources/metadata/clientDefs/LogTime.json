@@ -1,0 +1,50 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [
+		"onlyMy"
+	],
+	"recordViews": {
+		"detail": "views/templates/event/record/detail"
+	},
+	"activityDefs": {
+		"activitiesCreate": true,
+		"historyCreate": true
+	},
+	"filterList": [
+		{
+			"name": "planned"
+		},
+		{
+			"name": "held",
+			"style": "success"
+		},
+		{
+			"name": "todays"
+		}
+	],
+	"dynamicLogic": {
+		"fields": {
+			"duration": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isFalse",
+							"attribute": "isAllDay"
+						}
+					]
+				}
+			}
+		}
+	},
+	"iconClass": "fas fa-clock",
+	"kanbanViewMode": false,
+	"color": null,
+	"forcePatchAttributeDependencyMap": {
+		"dateEnd": [
+			"dateStart"
+		],
+		"dateEndDate": [
+			"dateStartDate"
+		]
+	}
+}

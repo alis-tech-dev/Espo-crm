@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "name": "USt-IdNr.",
+        "valid": "Gültig",
+        "lastValidCheck": "Letzte Prüfung"
+    },
+    "links": {},
+    "labels": {
+        "Create VatIdValidation": "Umsatzsteuer-ID-Validierung erstellen"
+    }
+}

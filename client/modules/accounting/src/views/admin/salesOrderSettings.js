@@ -1,0 +1,1 @@
+"use strict";var a=Object.defineProperty;var d=(s,e,r)=>e in s?a(s,e,{enumerable:!0,configurable:!0,writable:!0,value:r}):s[e]=r;var t=(s,e,r)=>(d(s,typeof e!="symbol"?e+"":e,r),r);define(["views/settings/record/edit"],s=>class extends s{constructor(){super(...arguments);t(this,"detailLayout",[{rows:[[{name:"warehouseRevertGoodsInSalesOrder"},!1]]}])}});

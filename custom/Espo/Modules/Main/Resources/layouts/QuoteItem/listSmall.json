@@ -1,0 +1,30 @@
+[
+	{
+		"name": "colisionPlace",
+		"notSortable": true,
+		"label": "Z",
+		"width": 4
+	},
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "quote",
+		"width": 27
+	},
+	{
+		"name": "quantity",
+		"width": 6
+	},
+	{
+		"name": "unitPrice",
+		"width": 18,
+		"align": "right"
+	},
+	{
+		"name": "amount",
+		"width": 18,
+		"align": "right"
+	}
+]

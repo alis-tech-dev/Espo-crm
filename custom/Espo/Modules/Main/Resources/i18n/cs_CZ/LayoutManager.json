@@ -1,0 +1,28 @@
+{
+	"fields": {
+		"dynamicLogicVisible": "Podmínky zviditelnění panelu",
+		"hidden": "Skrytý",
+		"isLarge": "Velká velikost písma",
+		"link": "Odkaz",
+		"panelName": "Název panelu",
+		"style": "Styl"
+	},
+	"labels": {
+		"New panel": "Nový panel",
+		"Layout": "Vzhled"
+	},
+	"options": {
+		"style": {
+			"default": "Výchozí",
+			"success": "Úspěch",
+			"danger": "Danger",
+			"info": "Info",
+			"warning": "Varování",
+			"primary": "Primární"
+		}
+	},
+	"tooltips": {
+		"hiddenPanel": "Chcete-li zobrazit panel, musíte kliknout na „zobrazit více“.",
+		"link": "Pokud je zaškrtnuto, zobrazí se hodnota pole jako odkaz směřující na detailní pohled na záznam. Obvykle se používá pro pole * Jméno *."
+	}
+}

@@ -1,0 +1,9 @@
+[
+    "purchaseOrder",
+    "product",
+    "quantity",
+    "unitPriceConverted",
+    "amountConverted",
+    "createdBy",
+    "createdAt"
+]

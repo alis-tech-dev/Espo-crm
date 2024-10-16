@@ -1,0 +1,15 @@
+{
+    "autocrm": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#Admin/WarehouseManagementSettings",
+                "label": "Warehouse Management Settings",
+                "iconClass": "fas fa-warehouse",
+                "description": "warehouseManagement",
+                "recordView": "warehouse-management:views/settings/record/edit"
+            }
+        ],
+        "order": 2
+    }
+}

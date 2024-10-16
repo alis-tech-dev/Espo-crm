@@ -1,0 +1,32 @@
+[
+    {
+        "name": "product"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Popis (name)"
+    },
+    {
+        "name": "purchaseOrder",
+        "width": 20,
+        "label": "Nákupní objednávka"
+    },
+    {
+        "name": "quantity",
+        "width": 4,
+        "label": "Počet"
+    },
+    {
+        "name": "unitPrice",
+        "width": 16,
+        "align": "right",
+        "label": "Cena za MJ"
+    },
+    {
+        "name": "amount",
+        "width": 16,
+        "align": "right",
+        "label": "Celkem bez DPH"
+    }
+]

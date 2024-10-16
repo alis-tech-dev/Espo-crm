@@ -1,0 +1,79 @@
+{
+    "labels": {
+        "Create SalesOrder": "Create Sales Order",
+        "Tax Classes": "Tax Classes",
+        "Templates": "Templates",
+        "Items": "Items",
+        "Email PDF": "Email PDF",
+        "Sales Order Items": "Sales Order Items",
+        "ProcessSalesOrder": "Process Sales Order"
+    },
+    "fields": {
+        "status": "Status",
+        "quote": "Quote",
+        "number": "Sales Order Number",
+        "numberA": "Sales Order Number (auto-incremented)",
+        "account": "Account",
+        "billingAddress": "Billing Address",
+        "shippingAddress": "Shipping Address",
+        "billingContact": "Billing Contact",
+        "shippingContact": "Shipping Contact",
+        "taxCLass": "Tax Class",
+        "taxRate": "Tax Rate",
+        "shippingCost": "Shipping Cost",
+        "taxAmount": "Tax Amount",
+        "discountAmount": "Discount Amount",
+        "amount": "Amount",
+        "preDiscountedAmount": "Pre-Discount Amount",
+        "grandTotalAmount": "Grand Total Amount",
+        "dateOrdered": "Date Ordered",
+        "weight": "Weight",
+        "amountConverted": "Amount (converted)",
+        "taxAmountConverted": "Tax Amount (converted)",
+        "shippingCostConverted": "Shipping Cost (converted)",
+        "preDiscountedAmountConverted": "Pre-Discount Amount (converted)",
+        "discountAmountConverted": "Discount Amount (converted)",
+        "grandTotalAmountConverted": "Grand Total Amount (converted)",
+        "shippingCostCurrency": "Shipping Cost Currency",
+        "taxAmountCurrency": "Tax Amount Currency",
+        "discountAmountCurrency": "Discount Amount Currency",
+        "amountCurrency": "Amount Currency",
+        "preDiscountedAmountCurrency": "Pre-Discount Amount Currency",
+        "grandTotalAmountCurrency": "Grand Total Amount Currency",
+        "currency": "Currency",
+        "shippingCostTaxRate": "Shipping Cost Tax Rate"
+    },
+    "links": {
+        "items": "Items",
+        "billingContact": "Billing Contact",
+        "shippingContact": "Shipping Contact",
+        "account": "Account",
+        "taxClass": "Tax Class",
+        "invoices": "Invoices",
+        "quote": "Quote"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "Ready": "Ready",
+            "Active": "Active",
+            "Approved": "Approved",
+            "Completed": "Completed",
+            "Rejected": "Rejected",
+            "Canceled": "Canceled"
+        },
+        "paymentMethod": {
+            "bank": "Bank transfer",
+            "card": "Card",
+            "cash": "Cash",
+            "cod": "Cash on delivery"
+        }
+    },
+    "confirmation": {
+        "processSalesOrderConfirmation": "Are you sure you want to process this sales order?"
+    },
+    "messages": {
+        "processSalesOrderSuccess": "Sales order has been processed successfully.",
+        "processSalesOrderFailed": "Failed to process sales order."
+    }
+}

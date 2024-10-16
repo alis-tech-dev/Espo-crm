@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "quotes": "Nabídky",
+        "salesOrders": "Zakázky",
+        "opportunities": "Příležitosti",
+        "productDatabases": "Databáze produktů",
+        "priceType": "Cena"
+    },
+    "links": {
+        "quotes": "Nabídky",
+        "salesOrders": "Zakázky",
+        "opportunities": "Příležitosti",
+        "productDatabases": "Databáze produktů"
+    },
+    "labels": {
+        "Create Account": "Vytvořit Organizace"
+    },
+    "options": {
+        "priceType": {
+            "": "Žádná",
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "Jeseno": "Jeseno"
+        }
+    }
+}

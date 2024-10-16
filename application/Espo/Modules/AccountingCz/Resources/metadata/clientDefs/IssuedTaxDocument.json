@@ -1,0 +1,114 @@
+{
+    "createDisabled": true,
+    "convertCurrencyDisabled": true,
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "additionalLayouts": {
+        "detailBottomTotal": {
+            "type": "list",
+            "dataAttributeList": [
+                "name",
+                "view",
+                "customLabel"
+            ]
+        },
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "recordViews": {
+        "detail": "accounting:views/invoice-like/record/detail",
+        "list": "accounting-cz:views/invoice/list"
+    },
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "number": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "number"
+                        }
+                    ]
+                }
+            },
+            "opportunity": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "quoteId",
+                                    "data": {
+                                        "field": "quote"
+                                    }
+                                },
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "salesOrderId",
+                                    "data": {
+                                        "field": "salesOrder"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "supplyCode": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "reverseCharge",
+                                    "value": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "datePaid": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Paid"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-receipt",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true
+}

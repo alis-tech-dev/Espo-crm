@@ -1,0 +1,32 @@
+[
+	{
+		"name": "productionModelOperation",
+		"width": 15
+	},
+	{
+		"name": "product"
+	},
+	{
+		"name": "quantity",
+		"width": 10
+	},
+	{
+		"name": "name",
+		"width": 10
+	},
+
+	{
+		"name": "independent",
+		"width": 10
+	},
+	{
+		"name": "quantityWithdrawnPlanned",
+		"width": 12,
+		"notSortable": true
+	},
+	{
+		"name": "quantityWithdrawnActual",
+		"width": 12,
+		"notSortable": true
+	}
+]

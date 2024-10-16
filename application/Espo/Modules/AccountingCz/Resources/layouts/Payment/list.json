@@ -1,0 +1,14 @@
+[
+    {
+        "name": "date",
+        "link": true
+    },
+    {
+        "name": "variableSymbol",
+        "width": 16
+    },
+    {
+        "name": "amount",
+        "width": 16
+    }
+]

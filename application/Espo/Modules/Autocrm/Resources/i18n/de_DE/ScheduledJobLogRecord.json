@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "scheduledJob": "geplanter Auftrag"
+    },
+    "labels": {
+        "Create ScheduledJobLogRecord": "Geplanten Auftragsprotokollsatz erstellen"
+    },
+    "links": {
+        "scheduledJob": "geplanter Auftrag"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "layouts": {
+        "GoodsReceipt": {
+            "items": "listGoodsReceiptSimple"
+        },
+        "GoodsIssue": {
+            "items": "listGoodsIssueSimple",
+            "selectedItems": "listGoodsIssueSelectedSimple"
+        },
+        "WarehouseTransfer": {
+            "items": {
+                "Simple": "listWarehouseTransferSimpleSimple",
+                "Positional": "listWarehouseTransferSimplePositional"
+            }
+        }
+    },
+    "productInfo": {
+        "view": "warehouse-management:views/product/record/panels/stock-info/simple",
+        "layoutName": "listProductSimple"
+    }
+}

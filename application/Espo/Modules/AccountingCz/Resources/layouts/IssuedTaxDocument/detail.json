@@ -1,0 +1,118 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "number",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "dateInvoiced",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "status",
+                    "css": "col-md-6"
+                }
+            ],
+            [
+                {
+                    "name": "paymentReceivedDate",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "orderNumber",
+                    "css": "col-md-6"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": "Základní údaje"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Items"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "amountCurrency"
+                },
+                {
+                    "name": "summaryVatRates",
+                    "noLabel": true
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "taxAmount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Totals"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "sicCode",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "vatId",
+                    "css": "col-md-3"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "textBeforeItems",
+                    "css": "col-md-12"
+                },
+                {
+                    "name": "textAfterItems",
+                    "css": "col-md-12"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

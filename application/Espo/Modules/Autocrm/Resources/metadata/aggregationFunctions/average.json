@@ -1,0 +1,11 @@
+{
+    "databaseFunction": "AVG",
+    "types": [
+        "int",
+        "float",
+        "currency"
+    ],
+    "outputTypeMap": {
+        "int": "float"
+    }
+}

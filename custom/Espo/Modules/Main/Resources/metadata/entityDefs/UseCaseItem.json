@@ -1,0 +1,82 @@
+{
+	"fields": {
+		"product": {
+			"copyFieldList": [
+				"descriptionENG",
+				"unit",
+				"productCode",
+				"nameCZ",
+				"description"
+			]
+		},
+		"productCode": {
+			"type": "varchar",
+			"maxLength": 150,
+			"trim": true,
+			"readOnly": true,
+			"options": [],
+			"isCustom": true
+		},
+		"unit": {
+			"type": "enum",
+			"options": [
+				"pcs",
+				"km",
+				"h",
+				"unit"
+			],
+			"style": {
+				"pcs": null,
+				"km": null,
+				"h": null,
+				"unit": null
+			},
+			"default": "pcs",
+			"isCustom": true,
+			"readOnly": true
+		},
+		"descriptionENG": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"seeMoreDisabled": true,
+			"isCustom": true
+		},
+		"quantity": {
+			"default": 1,
+			"readOnly": false
+		},
+		"listPrice": {
+			"readOnly": false,
+			"onlyDefaultCurrency": true
+		},
+		"unitPrice": {
+			"readOnly": false,
+			"onlyDefaultCurrency": true
+		},
+		"unitPriceCurrency": {
+			"default": "EUR",
+			"inlineEditDisabled": true
+		},
+		"listPriceCurrency": {
+			"default": "EUR",
+			"inlineEditDisabled": true
+		},
+		"discount": {
+			"readOnly": false
+		},
+		"amount": {
+			"onlyDefaultCurrency": true
+		},
+		"nameCZ": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"guaranteeExtend": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		}
+	}
+}

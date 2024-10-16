@@ -1,0 +1,16 @@
+{
+	"fields": {
+		"actualDuration": "Skutečná doba trvání (h)",
+		"dateEnd": "Datum ukončení",
+		"dateStart": "Datum zahájení",
+		"estimatedEffort": "Odhadované úsilí (h)",
+		"name": "Jméno",
+		"project": "Projekt"
+	},
+	"labels": {
+		"Create ProjectTask": "Vytvořit úkol projektu"
+	},
+	"links": {
+		"project": "Projekt"
+	}
+}

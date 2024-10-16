@@ -1,0 +1,12 @@
+{
+	"fields": {
+		"target": "Cíl",
+		"scheduledJob": "Naplánovaná úloha"
+	},
+	"labels": {
+		"Create ScheduledJobLogRecord": "Vytvořit záznam protokolu naplánované úlohy"
+	},
+	"links": {
+		"scheduledJob": "Naplánovaná úloha"
+	}
+}

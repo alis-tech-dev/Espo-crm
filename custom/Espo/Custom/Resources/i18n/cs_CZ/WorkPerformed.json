@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "parent": "Rodič"
+    },
+    "links": {
+        "parent": "Rodič"
+    }
+}

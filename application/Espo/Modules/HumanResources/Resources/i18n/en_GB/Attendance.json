@@ -1,0 +1,26 @@
+{
+    "labels": {
+        "Create Attendance": "Create Attendance",
+        "Choose attendance type": "Choose attendance type",
+        "Mark departure": "Mark departure",
+        "Mark arrival": "Mark arrival"
+    },
+    "fields": {
+        "dateStartDate": "Start Date (Full Day)",
+        "dateStart": "Start Date",
+        "dateEnd": "End Date",
+        "dateEndDate": "End Date (Full Day)",
+        "duration": "Duration",
+        "isAllDay": "All Day",
+        "reminders": "Reminders",
+        "status": "Attendance Type"
+    },
+    "options": {
+        "status": {
+            "V práci": "Working",
+            "Dovolená": "Vacation",
+            "Nemoc": "Sick",
+            "Neplacené volno": "Unpaid Leave"
+        }
+    }
+}

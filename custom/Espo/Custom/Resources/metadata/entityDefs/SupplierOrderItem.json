@@ -1,0 +1,46 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "deliveredQuantity": {
+            "notNull": false,
+            "type": "float",
+            "min": 0,
+            "default": 0,
+            "isCustom": true
+        },
+        "deliveredBefore": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "min": 0,
+            "readOnly": true,
+            "isCustom": true
+        },
+        "quantity": {
+            "default": null,
+            "required": true
+        },
+        "stockLocation": {
+            "type": "enum",
+            "options": [
+                "brno",
+                "pv"
+            ],
+            "style": {
+                "brno": null,
+                "pv": null
+            },
+            "default": "pv",
+            "isCustom": true
+        }
+    }
+}

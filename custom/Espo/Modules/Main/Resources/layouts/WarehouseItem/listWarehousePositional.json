@@ -1,0 +1,23 @@
+[
+	{
+		"name": "position",
+		"params": {
+			"readOnly": true
+		}
+	},
+	{
+		"name": "product",
+		"params": {
+			"readOnly": true
+		}
+	},
+	{
+		"name": "quantity",
+		"params": {
+			"readOnly": true
+		}
+	},
+	{
+		"name": "serialNumber"
+	}
+]

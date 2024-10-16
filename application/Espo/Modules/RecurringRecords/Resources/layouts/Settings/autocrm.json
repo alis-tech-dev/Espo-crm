@@ -1,0 +1,20 @@
+[
+    "__APPEND__",
+    {
+        "label": "Record Recurrence",
+        "rows": [
+            [
+                {
+                    "name": "recurrenceBatchSizeLimit"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "showListScheduledRecurrencesButton"
+                },
+                false
+            ]
+        ]
+    }
+]

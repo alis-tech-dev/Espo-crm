@@ -1,0 +1,110 @@
+{
+    "fields": {
+        "companyName": {
+            "type": "varchar",
+            "maxLength": 255
+        },
+        "companyWebsite": {
+            "type": "url",
+            "strip": true
+        },
+        "companyPhoneNumber": {
+            "type": "phone",
+            "typeList": ["Mobile", "Office", "Home", "Fax", "Other"],
+            "defaultType": "Mobile"
+        },
+        "companyEmail": {
+            "type": "email"
+        },
+        "companyBillingAddress": {
+            "type": "address"
+        },
+        "companyBillingAddressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "companyBillingAddressCity": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyBillingAddressState": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyBillingAddressCountry": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyBillingAddressPostalCode": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyShippingAddress": {
+            "type": "address"
+        },
+        "companyShippingAddressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "companyShippingAddressCity": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyShippingAddressState": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyShippingAddressCountry": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyShippingAddressPostalCode": {
+            "type": "varchar",
+            "trim": true
+        },
+        "companyVatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "noSpellCheck": true,
+            "trim": true,
+            "pattern": "$noBadCharacters"
+        },
+        "companySicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "noSpellCheck": true,
+            "trim": true,
+            "pattern": "$noBadCharacters",
+            "view": "accounting-cz:views/settings/fields/sic-code"
+        },
+        "companyBankAccount": {
+            "type": "varchar",
+            "maxLength": 50,
+            "noSpellCheck": true,
+            "trim": true,
+            "pattern": "$noBadCharacters"
+        },
+        "companyIban": {
+            "type": "varchar",
+            "maxLength": 50,
+            "noSpellCheck": true,
+            "trim": true,
+            "pattern": "$noBadCharacters"
+        },
+        "companyVatPayer": {
+            "type": "bool"
+        },
+        "companyRegisteredIn": {
+            "type": "varchar",
+            "maxLength": 100,
+            "noSpellCheck": true,
+            "trim": true,
+            "pattern": "$noBadCharacters"
+        },
+        "customInvoiceNames": {
+            "type": "bool"
+        }
+    }
+}

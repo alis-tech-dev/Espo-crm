@@ -1,0 +1,77 @@
+{
+    "view": "autocrm:views/dashlets/map",
+    "options": {
+        "fields": {
+            "title": {
+                "type": "varchar",
+                "required": true,
+                "trim": true
+            },
+            "autorefreshInterval": {
+                "type": "enumFloat",
+                "options": [
+                    0,
+                    0.5,
+                    1,
+                    2,
+                    5,
+                    10
+                ]
+            },
+            "entityType": {
+                "type": "enum",
+                "view": "autocrm:views/dashlets/fields/map/entity-type"
+            },
+            "addressField": {
+                "type": "enum",
+                "view": "autocrm:views/dashlets/fields/map/address-field"
+            },
+            "mapCenter": {
+                "type": "enum",
+                "options": [
+                    "Czech Republic",
+                    "Slovakia"
+                ],
+                "default": "Czech Republic"
+            },
+            "displayRecords": {
+                "type": "int",
+                "min": "1"
+            }
+        },
+        "defaults": {
+            "autorefreshInterval": 0.5,
+            "displayRecords": 200
+        },
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {
+                            "name": "title"
+                        },
+                        {
+                            "name": "autorefreshInterval"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "entityType"
+                        },
+                        {
+                            "name": "addressField"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "mapCenter"
+                        },
+                        {
+                            "name": "displayRecords"
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+}

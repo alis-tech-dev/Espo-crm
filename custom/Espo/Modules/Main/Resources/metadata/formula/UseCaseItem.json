@@ -1,0 +1,3 @@
+{
+	"beforeSaveCustomScript": "ifThen(\n\tuseCase.priceList == 'A',\n\tlistPrice = product.priceA\n);\nifThen(\n\tuseCase.priceList == 'B',\n\tlistPrice = product.priceB\n);\nifThen(\n\tuseCase.priceList == 'C',\n\tlistPrice = product.priceC\n);\nifThen(\n\tuseCase.priceList == 'E',\n\tlistPrice = product.priceE\n);\nifThen(\n\tuseCase.priceList == 'R',\n\tlistPrice = product.rentPrice\n);\nifThen(\n\tuseCase.priceList == 'Skoda',\n\tlistPrice = product.priceSkoda\n);\nunitPrice = (listPrice - listPrice*discount/100);\namount = unitPrice*quantity;\nifThen(\n    discount < 0,\n    discount = 0\n)\n\nifThenElse(\n    product.categoryName != 'SERVICE', \n    amount = number\\ceil(amount),\n    amount = amount\n);\nifThen(\n    quantity == 1,\n    quantity == 1\n    )\n"
+}

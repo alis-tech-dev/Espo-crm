@@ -1,0 +1,33 @@
+{
+    "scopeNames": {
+        "SupplierReclamation": "Supplier Reclamation",
+        "ProductDatabase": "Databáze produktů",
+        "ProjectorDatabase": "Projector Database",
+        "RequestForm": "Žádanka na nákup",
+        "RequestItem": "Order request item",
+        "Warehouse": "Warehouse",
+        "SalesOrderSummaryItem": "Položka shrnutí zakázky",
+        "Seeker": "Seeker",
+        "JIRA": "CRM Task",
+        "ComplaintBook": "Complains Book",
+        "Selector": "Selector",
+        "HumanResource": "HR employee",
+        "HumanResources": "HR Manager",
+        "Wiso": "Wiso"
+    },
+    "scopeNamesPlural": {
+        "SupplierReclamation": "Supplier Reclamations",
+        "Warehouse": "Warehouses",
+        "ProductDatabase": "Databáze produktů",
+        "RequestForm": "Žádanky na nákup",
+        "RequestItem": "Request Form Item",
+        "SalesOrderSummaryItem": "Položky shrnutí zakázky",
+        "Seeker": "Projector selector",
+        "JIRA": "CRM bugs",
+        "ComplaintBook": "Complains Book",
+        "Selector": "Projector Selector",
+        "HumanResource": "HR employers",
+        "HumanResources": "HR Managers",
+        "Wiso": "wiso"
+    }
+}

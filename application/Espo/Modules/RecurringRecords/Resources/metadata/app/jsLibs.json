@@ -1,0 +1,8 @@
+{
+    "JQueryCron": {
+        "path": "client/modules/recurring-records/lib/jquery-cron.min.js",
+        "devPath": "client/modules/recurring-records/lib/jquery-cron.js",
+        "exportsTo": "$.fn",
+        "exportsAs": "cron"
+    }
+}

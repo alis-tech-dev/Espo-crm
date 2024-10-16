@@ -1,0 +1,19 @@
+{
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "checkCategory",
+					"name": "checkCategory",
+					"action": "checkCategory",
+					"style": "default",
+					"data": {
+						"handler": "custom-production:handlers/actions/warehouse/checkCategory"
+					},
+					"initFunction": "init"
+				}
+			]
+		}
+	}
+}

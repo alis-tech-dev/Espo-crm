@@ -1,0 +1,16 @@
+[
+    {
+        "route": "VatNumberValidation/validate/:vatId",
+        "method": "get",
+        "params": {
+            "controller": "VatNumberValidation",
+            "action": "checkVatId",
+            "vatId": ":vatId"
+        }
+    },
+    {
+        "route": "/ProcessSalesOrder",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\Accounting\\Classes\\Actions\\ProcessSalesOrder"
+    }
+]

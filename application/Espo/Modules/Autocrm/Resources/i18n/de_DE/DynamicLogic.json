@@ -1,0 +1,9 @@
+{
+    "options": {
+        "operators": {
+            "startsWith": "Startet mit",
+            "endsWith": "Endet mit",
+            "matches": "Übereinstimmungen (reg exp)"
+        }
+    }
+}

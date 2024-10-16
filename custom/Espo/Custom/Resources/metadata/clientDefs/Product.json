@@ -1,0 +1,24 @@
+{
+    "relationshipPanels": {
+        "productDatabases": {
+            "layout": null
+        },
+        "goodsReceipts": {
+            "layout": "listProduct"
+        },
+        "quotes": {
+            "layout": null
+        },
+        "quoteItem": {
+            "layout": null
+        },
+        "warehouse": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-cube",
+    "isWide": false,
+    "gridViewMode": false
+}

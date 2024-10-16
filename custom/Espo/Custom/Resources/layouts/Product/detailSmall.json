@@ -1,0 +1,82 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "productCode"
+                },
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "type"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "costPrice"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "pricingType"
+                },
+                {
+                    "name": "salesPrice"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMarkup"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMargin"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Price"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "ean"
+                }
+            ],
+            [
+                {
+                    "name": "url"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "attachments"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

@@ -1,0 +1,25 @@
+{
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": [
+			"name",
+			"number"
+		],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"fields": {
+		"numberA": {
+			"prefix": "2020",
+			"nextNumber": 83
+		},
+		"payday": {
+			"notNull": false,
+			"type": "date",
+			"required": true,
+			"default": "javascript: return this.dateTime.getDateShiftedFromToday(2, 'weeks');",
+			"isCustom": true
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "name": "Name",
+        "qty": "Menge",
+        "quantity": "Menge",
+        "listPrice": "Listenpreis",
+        "listPriceWithTax": "Listenpreis inklusive Mehrwertsteuer",
+        "unitPrice": "Stückpreis",
+        "unitPriceWithTax": "Stückpreis inklusive Mehrwertsteuer",
+        "amount": "Betrag",
+        "amountWithTax": "Betrag inklusive Mehrwertsteuer",
+        "taxRate": "Steuersatz",
+        "product": "Produkt",
+        "order": "Zeilennummer",
+        "invoice": "Rechnung",
+        "weight": "Gewicht",
+        "unitWeight": "Gewicht pro Einheit",
+        "description": "Beschreibung",
+        "discount": "Rabatt (%)",
+        "amountConverted": "Betrag (umgerechnet)",
+        "unitPriceConverted": "Stückpreis (umgerechnet)",
+        "listPriceConverted": "Listenpreis (umgerechnet)",
+        "account": "Organisation",
+        "listPriceCurrency": "Währung des Listenpreises",
+        "unitPriceCurrency": "Währung des Stückpreises",
+        "amountCurrency": "Betrag in Währung",
+        "invoiceStatus": "Rechnungsstatus"
+    },
+    "links": {
+        "invoice": "Rechnung",
+        "product": "Produkt",
+        "account": "Organisation"
+    },
+    "labels": {
+        "Invoices": "Rechnungen"
+    }
+}

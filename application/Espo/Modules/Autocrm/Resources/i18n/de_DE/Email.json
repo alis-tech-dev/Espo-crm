@@ -1,0 +1,23 @@
+{
+    "fields": {
+        "icsContents": "ICS Inhalte",
+        "icsEventData": "ICS Ereignisdaten",
+        "createdEvent": "Erstelltes Ereignis",
+        "icsEventDateStart": "ICS Ereignisdaten Start",
+        "tasks": "Aufgaben",
+        "addressNameMap": "Anschrift Name Karte",
+        "createEvent": "Ereignis erstellen",
+        "icsEventDateStartDate": "ICS Ereignisdaten Start Datum",
+        "idHash": "ID-Hash",
+        "isBeingImported": "wird importiert",
+        "isJustSent": "wird gerade gesendet",
+        "nameHash": "Name Hash",
+        "typeHash": "Typ Hash"
+    },
+    "links": {
+        "createdEvent": "erstelltes Ereignis"
+    },
+    "labels": {
+        "View in Browser": "E-Mail im Browser anzeigen"
+    }
+}

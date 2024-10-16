@@ -1,0 +1,66 @@
+{
+    "fields": {
+        "companyName": "Firmenname / Vor- und Nachname",
+        "companyBillingAddress": "Rechnungsadresse",
+        "companyShippingAddress": "Lieferadresse",
+        "companySicCode": "Unternehmensidentifikationsnummer",
+        "companyVatId": "USt-IdNr",
+        "companyEmail": "Email",
+        "companyWebsite": "Web",
+        "companyPhoneNumber": "Telefon",
+        "companyBankAccount": "Bankkontonummer",
+        "companyIban": "IBAN",
+        "companyVatPayer": "MwSt.-Zahler",
+        "companyRegisteredIn": "Eingetragen in",
+        "supplierName": "Name / Vor- und Nachname",
+        "supplierAddress": "Adresse",
+        "supplierSicCode": "Unternehmensidentifikationsnummer",
+        "supplierVatId": "USt-IdNr",
+        "supplierVATpayer": "USt-Zahler",
+        "supplierEmail": "Email",
+        "supplierPhone": "Telefon",
+        "supplierWebsite": "Web",
+        "accountNumber": "Kontonummer",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "invoicePrefix": "Ausgestellte Rechnungen",
+        "invoiceYearNumberFormat": "Format der Jahreszahl",
+        "invoiceNumberOfMonth": "Monatszahl",
+        "invoicePerYear": "Anzahl der Rechnungen pro Jahr / Monat",
+        "invoiceDelimiter": "Trennzeichen",
+        "invoiceNumberPreview": "Rechnungsnummervorschau",
+        "proformaInvoicePrefix": "Ausgestellte Anzahlungsrechnungen",
+        "issuedTaxDocumentPrefix": "Steuerdokumente zu erhaltenen Zahlungen",
+        "creditNotePrefix": "Berichtigung von Steuerdokumenten",
+        "supplierInvoicePrefix": "Erhaltene Rechnungen",
+        "receivedProformaInvoicePrefix": "Erhaltene Anzahlungsrechnungen",
+        "receivedTaxDocumentPrefix": "Erhaltene Steuerdokumente zu erhaltenen Zahlungen",
+        "revenueReceiptPrefix": "Einnahmebelege",
+        "expenseReceiptPrefix": "Ausgabenbelege",
+        "customInvoiceNames": "Benutzerdefinierte Rechnungsnamen"
+    },
+    "options": {
+        "supplierVATpayer": {
+            "Non VAT payer": "Kein USt-Zahler",
+            "Identified person": "Identifizierte Person",
+            "VAT payer": "USt-Zahler"
+        },
+        "invoiceNumberOfMonth": {
+            "no": "Nein",
+            "yes": "Ja"
+        },
+        "invoiceDelimiter": {
+            "-": "-",
+            "none": "Keiner"
+        }
+    },
+    "labels": {
+        "Company information": "Unternehmensinformationen",
+        "Others": "Andere",
+        "Billing information": "Rechnungsinformationen",
+        "Contact information": "Kontaktinformationen",
+        "Bank account": "Bankkonto",
+        "Number series of invoices": "Reihenfolge der Rechnungsnummern",
+        "Invoice prefixes": "Rechnungspräfixe"
+    }
+}

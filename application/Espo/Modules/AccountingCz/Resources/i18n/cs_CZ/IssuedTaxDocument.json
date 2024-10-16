@@ -1,0 +1,36 @@
+{
+    "labels": {
+        "Templates": "Šablony",
+        "Items": "Položky",
+        "Totals": "Shrnutí",
+        "Create IssuedTaxDocument": "Vytvořit daňový doklad k přijaté platbě",
+        "Item Text": "Daňový doklad k přijaté platbě ze dne {date} s VS {variableSymbol} pro zálohovou fakturu č. {number}"
+    },
+    "fields": {
+        "status": "Stav",
+        "dateInvoiced": "Datum vystavení",
+        "paymentReceivedDate": "Datum přijetí platby",
+        "amount": "Celkem bez DPH",
+        "taxAmount": "DPH",
+        "grandTotalAmount": "Celkem s DPH",
+        "number": "Číslo faktury",
+        "orderNumber": "Číslo objednávky",
+        "textBeforeItems": "Věta před položkami faktury",
+        "textAfterItems": "Patička faktury",
+        "assignedUser": "Přiřazený uživatel / Vystavil",
+        "account": "Odběratel",
+        "billingAddress": "Fakturační adresa",
+        "amountCurrency": "Měna",
+        "vatId": "DIČ",
+        "sicCode": "IČ",
+        "variableSymbol": "Variabilní symbol",
+        "constantSymbol": "Konstantní symbol",
+        "proformaInvoice": "Zálohová faktura"
+    },
+    "options": {
+        "status": {
+            "Unsettled": "Nevyúčtováno",
+            "Settled": "Vyúčtováno"
+        }
+    }
+}

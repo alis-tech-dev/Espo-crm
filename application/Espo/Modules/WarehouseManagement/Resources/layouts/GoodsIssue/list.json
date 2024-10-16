@@ -1,0 +1,16 @@
+[
+    {
+        "name": "name",
+        "width": 30,
+        "link": true
+    },
+    {
+        "name": "warehouse"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "createdAt"
+    }
+]

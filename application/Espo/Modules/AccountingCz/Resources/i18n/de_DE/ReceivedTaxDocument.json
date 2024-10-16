@@ -1,0 +1,65 @@
+{
+    "labels": {
+        "Templates": "Vorlagen",
+        "Items": "Artikel",
+        "Totals": "Zusammenfassung",
+        "Create ReceivedTaxDocument": "Erstellen Sie empfangenes Steuerdokument für die empfangene Zahlung"
+    },
+    "fields": {
+        "status": "Status",
+        "dateInvoiced": "Rechnungsdatum",
+        "amount": "Gesamt exkl. MwSt",
+        "taxAmount": "MwSt",
+        "grandTotalAmount": "Gesamt inkl. MwSt",
+        "constantSymbol": "Konstantes Symbol",
+        "datePaid": "Zahlungsdatum",
+        "dueDate": "Fälligkeitsdatum",
+        "duzp": "Datum der Steuererfüllung",
+        "variableSymbol": "Variables Symbol",
+        "paymentMethod": "Zahlungsmethode",
+        "number": "Rechnungsnummer",
+        "orderNumber": "Bestellnummer",
+        "remainsToPay": "Zu bezahlen",
+        "warehouse": "Lager",
+        "note": "Private Notiz",
+        "contact": "Kontakt",
+        "accountNumber": "Kontonummer",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "supplyCode": "Liefercode",
+        "assignedUser": "Zugewiesener Benutzer",
+        "subscriberLink": "Abonnent",
+        "supplierLink": "Lieferant",
+        "expenseOriginalNumber": "Ursprüngliche Belegnummer",
+        "originalInvoiceFile": "Ursprüngliche Belegdatei",
+        "dateOfReceiving": "Empfangsdatum",
+        "receivedProformaInvoice": "Erhaltene Proforma-Rechnung",
+        "amountCurrency": "Währung"
+    },
+    "options": {
+        "status": {
+            "Received": "Erhalten",
+            "Paid": "Bezahlt",
+            "UnpaidAfterMaturity": "Nach Fälligkeit unbezahlt"
+        },
+        "paymentMethod": {
+            "bank": "Überweisung",
+            "card": "Karte",
+            "cash": "Bar",
+            "cod": "Nachnahme"
+        }
+    },
+    "links": {
+        "supplierLink": "Lieferant"
+    },
+    "tooltips": {
+        "number": "Ein eindeutiger Identifikator, der zur Identifizierung des ausgestellten Dokuments verwendet wird",
+        "paymentMethod": "Die Art und Weise, wie die Rechnung bezahlt wird (z. B. Überweisung, Bar, Karte usw.)",
+        "dateInvoiced": "Das Datum, an dem die Rechnung ausgestellt wurde",
+        "dueDate": "Das Datum, an dem die Rechnung bezahlt werden muss",
+        "constantSymbol": "Ein eindeutiger Identifikator des Subjekts im gegebenen Zahlungssystem. Die maximale Länge beträgt 10 Zeichen.",
+        "duzp": "Das Datum, an dem die steuerpflichtige Leistung oder der Verkauf, für den die Rechnung ausgestellt wurde, durchgeführt wurde.",
+        "variableSymbol": "Das variable Symbol wird zur Identifizierung der Rechnung im Bankensystem verwendet. Die maximale Länge beträgt 10 Zeichen.",
+        "proformaInvoice": "Rechnung, die durch eine Anzahlung bezahlt wurde."
+    }
+}

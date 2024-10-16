@@ -1,0 +1,31 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "createdBy"
+    },
+    {
+        "name": "account",
+        "width": 25,
+        "label": "Account"
+    },
+    {
+        "name": "status",
+        "width": 15,
+        "label": "Status"
+    },
+    {
+        "name": "createdAt",
+        "width": 12,
+        "label": "Created At"
+    },
+    {
+        "name": "amount",
+        "width": 12,
+        "align": "right",
+        "label": "Amount"
+    }
+]

@@ -1,0 +1,35 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "type"
+				},
+				{
+					"name": "approved"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				},
+				{
+					"name": "hours"
+				},
+				{
+					"name": "status"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

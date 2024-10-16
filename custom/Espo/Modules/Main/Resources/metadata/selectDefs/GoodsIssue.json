@@ -1,0 +1,5 @@
+{
+	"whereItemConverterClassNameMap": {
+		"items_linkedWith": "Espo\\Modules\\Main\\Classes\\Select\\GoodsIssue\\Where\\ItemConverters\\ItemsLinkedWith"
+	}
+}

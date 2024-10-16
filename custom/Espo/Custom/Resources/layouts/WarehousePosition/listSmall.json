@@ -1,0 +1,13 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Název"
+    },
+    {
+        "name": "capacity",
+        "align": "left",
+        "label": "Kapacita",
+        "isEditable": true
+    }
+]

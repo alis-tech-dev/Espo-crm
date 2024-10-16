@@ -1,0 +1,134 @@
+{
+	"fields": {
+		"tasks": {
+			"type": "linkMultiple",
+			"layoutDetailDisabled": false,
+			"layoutMassUpdateDisabled": false,
+			"noLoad": false,
+			"importDisabled": false,
+			"isCustom": true
+		},
+		"taskParent": {
+			"type": "link"
+		},
+		"solution": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"isCustom": true
+		},
+		"solutionAttachement": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"attachments": {
+			"previewSize": "",
+			"accept": []
+		},
+		"parent": {
+			"entityList": ["Account", "Contact", "Lead", "Opportunity", "Case"]
+		},
+		"parentLead": {
+			"type": "linkParent",
+			"entityList": ["Lead"]
+		},
+		"status": {
+			"options": [
+				"Not Started",
+				"Planned",
+				"Work",
+				"Completed",
+				"Canceled",
+				"Deferred",
+				"Archiv",
+				"Ještě fakturujeme"
+			],
+			"style": {
+				"Not Started": "primary",
+				"Planned": "info",
+				"Work": null,
+				"Completed": "success",
+				"Canceled": "danger",
+				"Deferred": null,
+				"Archiv": "info",
+				"Ještě fakturujeme": null
+			}
+		},
+		"teams": {
+			"required": true
+		},
+		"parentManufacturing": {
+			"type": "linkParent",
+			"entityList": ["Manufacturing"]
+		},
+		"dateEnd": {
+			"minuteStep": 30
+		}
+	},
+	"links": {
+		"documents": {
+			"type": "hasMany",
+			"foreign": "task",
+			"entity": "Document",
+			"audited": false,
+			"isCustom": true
+		},
+		"tasks": {
+			"type": "hasMany",
+			"foreign": "taskParent",
+			"entity": "Task",
+			"audited": false,
+			"isCustom": true
+		},
+		"repeatedTasks": {
+			"type": "hasMany",
+			"foreign": "repeatedTaskParent",
+			"entity": "Task",
+			"audited": false,
+			"isCustom": true
+		},
+		"taskParent": {
+			"type": "belongsTo",
+			"foreign": "tasks",
+			"entity": "Task",
+			"audited": false,
+			"isCustom": true
+		},
+		"repeatedTaskParent": {
+			"type": "belongsTo",
+			"foreign": "repeatedTasks",
+			"entity": "Task",
+			"audited": false,
+			"isCustom": true
+		},
+		"solutionAttachement": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"attachments": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"parentLead": {
+			"type": "belongsToParent",
+			"foreign": "tasksToLeads",
+			"isCustom": true
+		},
+		"parentManufacturing": {
+			"type": "belongsToParent",
+			"foreign": "tasksManufacturing",
+			"isCustom": true
+		}
+	}
+}

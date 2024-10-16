@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "enduser": "End-user",
+        "quotes": "Nabídky",
+        "opportunities": "Poptávky",
+        "salesOrders": "Zakázky",
+        "numberA": "Číslo příležitosti"
+    },
+    "links": {
+        "quotes": "Nabídky",
+        "opportunities": "Poptávky",
+        "salesOrders": "Zakázky"
+    }
+}

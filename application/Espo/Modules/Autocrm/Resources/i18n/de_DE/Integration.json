@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "clientId": "Klient ID",
+        "apiKey": "API Schlüssel",
+        "data": "Daten"
+    },
+    "labels": {
+        "Create Integration": "Integration erstellen"
+    }
+}

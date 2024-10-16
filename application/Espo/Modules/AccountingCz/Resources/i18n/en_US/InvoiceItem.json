@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "name": "Description",
+        "qty": "Quantity",
+        "quantity": "Quantity",
+        "unitPrice": "Price per unit",
+        "amount": "Total excl. VAT",
+        "unit": "Unit",
+        "taxRate": "VAT rate (%)"
+    }
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                false
+            ],
+            [
+                {
+                    "name": "opportunity"
+                }
+            ],
+            [
+                {
+                    "name": "dateInvoiced"
+                }
+            ],
+            [
+                {
+                    "name": "amount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

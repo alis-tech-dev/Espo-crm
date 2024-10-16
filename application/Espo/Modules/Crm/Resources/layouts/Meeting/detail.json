@@ -1,0 +1,70 @@
+[
+  {
+    "label": "",
+    "rows": [
+      [
+        {
+          "name": "name"
+        },
+        {
+          "name": "parent"
+        }
+      ],
+      [
+        {
+          "name": "status"
+        },
+        false
+      ],
+      [
+        {
+          "name": "dateStart"
+        },
+        {
+          "name": "dateEnd"
+        }
+      ],
+      [
+        {
+          "name": "duration"
+        },
+        {
+          "name": "reminders"
+        }
+      ],
+      [
+        {
+          "name": "description",
+          "fullWidth": true
+        }
+      ],
+      [
+        {
+          "name": "isRepeated"
+        },
+        false
+      ]
+    ]
+  },
+  {
+    "rows": [
+      [
+        {
+          "name": "repeatInterval"
+        },
+        false
+      ]
+    ],
+    "style": "default",
+    "dynamicLogicVisible": {
+      "conditionGroup": [
+        {
+          "type": "isTrue",
+          "attribute": "isRepeated"
+        }
+      ]
+    },
+    "hidden": false,
+    "customLabel": "Opakované úkoly"
+  }
+]

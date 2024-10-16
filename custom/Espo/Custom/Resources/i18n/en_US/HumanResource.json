@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "isActual": "IsActive",
+        "vacationTimeCorrection": "VacationTimeCorrection",
+        "vacationDays": "Number of Vacation Hours per Year",
+        "vacationDaysLeft": "Remaining Number of Vacation Hours"
+    },
+    "labels": {
+        "Create HumanResource": "Create HR employee"
+    },
+    "tooltips": {
+        "vacationTimeCorrection": "If you want to change value 'Remaining Number of Vacation Hours' , just provide required value and update, after updating remove any value from this field and save again."
+    }
+}

@@ -1,0 +1,31 @@
+{
+	"fields": {
+		"colisionPlace": {
+			"type": "array",
+			"storeArrayValues": true,
+			"options": ["1", "2", "3", "4", "5"],
+			"isCustom": true
+		},
+		"unit": {
+			"type": "enum",
+			"options": ["pcs", "km", "h", "unit"],
+			"style": {
+				"pcs": null,
+				"km": null,
+				"h": null,
+				"unit": null
+			},
+			"default": "pcs",
+			"isCustom": true,
+			"readOnly": true
+		},
+		"entryKey": {
+			"type": "varchar",
+			"layoutDetailDisabled": true
+		},
+		"processed": {
+			"type": "bool",
+			"default": false
+		}
+	}
+}

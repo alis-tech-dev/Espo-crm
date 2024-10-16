@@ -1,0 +1,9 @@
+[
+    {
+        "name": "product"
+    },
+    {
+        "name": "quantity",
+        "width": 15
+    }
+]

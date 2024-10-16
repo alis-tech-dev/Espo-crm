@@ -1,0 +1,16 @@
+{
+	"params": [
+		"__APPEND__",
+		{
+			"name": "copyAttachmentsButton",
+			"type": "bool",
+			"default": false
+		},
+		{
+			"name": "copyAttachmentsEntityList",
+			"type": "multiEnum",
+			"view": "views/admin/field-manager/fields/entity-list",
+			"translation": "Global.scopeNames"
+		}
+	]
+}

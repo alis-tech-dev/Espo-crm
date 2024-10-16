@@ -1,0 +1,46 @@
+{
+	"fields": {
+		"createdEntitiesData": "Data vytvořených entit",
+		"endedAt": "Ukončeno v",
+		"flowchart": "Vývojový diagram",
+		"flowchartData": "Data vývojového diagramu",
+		"flowchartElementsDataHash": "Prvky vývojového diagramu",
+		"flowchartVisualization": "Vývojový diagram (vizualizace)",
+		"parentProcess": "Nadřazený proces",
+		"parentProcessFlowNode": "Uzel toku nadřazeného procesu",
+		"startElementId": "Počáteční prvek",
+		"target": "Cíl",
+		"targetType": "Typ cílové entity",
+		"variables": "Proměnné"
+	},
+	"labels": {
+		"Create BpmnProcess": "Spustit proces",
+		"Flowcharts": "Vývojové diagramy",
+		"Interrupt": "Přerušit",
+		"Reject": "Odmítnout",
+		"Start flow from here": "Začít proces odtud",
+		"Stop Process": "Zastavit proces",
+		"User Tasks": "Uživatelské úlohy"
+	},
+	"links": {
+		"flowchart": "Vývojový diagram",
+		"parentProcess": "Nadřazený proces",
+		"childProcesses": "Podřízené procesy",
+		"userTasks": "Zpracovat uživatelské úlohy",
+		"target": "Cíl"
+	},
+	"options": {
+		"status": {
+			"Created": "Vytvořeno",
+			"Started": "Započato",
+			"Ended": "Ukončeno",
+			"Paused": "Pozastaveno",
+			"Stopped": "Zastaveno",
+			"Interrupted": "Přerušeno"
+		}
+	},
+	"presetFilters": {
+		"actual": "Aktální",
+		"ended": "Ukončené"
+	}
+}

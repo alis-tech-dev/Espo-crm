@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "group": "Gruppe",
+        "className": "Name der Klasse",
+        "targetGroup": "Zielgruppe",
+        "job": "Aufgabe",
+        "pid": "PID"
+    },
+    "options": {
+        "status": {
+            "Ready": "Fertig"
+        }
+    },
+    "labels": {
+        "Create Job": "Aufgabe erstellen"
+    },
+    "links": {
+        "scheduledJob": "geplante Aufgaben"
+    }
+}

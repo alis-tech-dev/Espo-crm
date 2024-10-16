@@ -1,0 +1,26 @@
+{
+    "relationshipPanels": {
+        "salesOrder": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-shopping-cart",
+    "isWide": true,
+    "gridViewMode": false,
+    "dynamicLogic": {
+        "fields": {
+            "status": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "isDelivered"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

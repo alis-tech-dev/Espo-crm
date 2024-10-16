@@ -1,0 +1,13 @@
+{
+    "autocrm": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#RecordRecurrence",
+                "label": "Records Recurrences",
+                "iconClass": "fas fa-clock",
+                "description": "recordRecurrence"
+            }
+        ]
+    }
+}

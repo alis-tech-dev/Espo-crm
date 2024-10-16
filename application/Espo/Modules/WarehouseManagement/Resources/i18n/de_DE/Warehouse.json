@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "name": "Name",
+        "description": "Beschreibung",
+        "type": "Typ",
+        "address": "Adresse",
+        "attachments": "Anlagen",
+        "positions": "Positionen",
+        "warehouseValueRecords": "Lagerwerte"
+    },
+    "links": {
+        "items": "Artikel",
+        "positions": "Positionen",
+        "warehouseValueRecords": "Lagerwerte"
+    },
+    "messages": {
+        "itemNotFound": "Produkt {product} wurde nicht gefunden.",
+        "notEnoughQuantity": "Produkt {productame} hat nicht genügend Menge auf Lager. Angefragte Menge: {quantityRequested}, verfügbare Menge: {quantityAvaliable}.",
+        "itemHasMissingProduct": "Einige Artikel fehlen Produkte.",
+        "productIsNotStockable": "Produkt {productName} kann nicht im Lager geführt werden. Möglicherweise möchten Sie den Typ ändern.",
+        "itemHasMissingPosition": "Einige Artikel haben fehlende Positionen.",
+        "itemHasPositionNotInWarehouse": "Produkt {productName} hat eine Position {positionName}, die nicht zum Lager {warehouseName} gehört."
+    },
+    "options": {
+        "type": {
+            "Simple": "Einfach",
+            "Positional": "Positional"
+        }
+    }
+}
+

@@ -1,0 +1,183 @@
+{
+	"relationshipPanels": {
+		"salesOrderSummaryItems": {
+			"layout": null,
+			"view": "main:views/sales-order/record/panels/summary",
+			"create": false,
+			"select": false
+		}
+	},
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Time On",
+					"name": "timeOn",
+					"action": "timeOn",
+					"style": "success",
+					"initFunction": "init",
+					"handler": "main:handlers/sales-order/time-calculation"
+				},
+				{
+					"label": "Time Off",
+					"name": "timeOff",
+					"action": "timeOff",
+					"style": "warning",
+					"initFunction": "init",
+					"handler": "main:handlers/sales-order/time-calculation"
+				}
+			]
+		}
+	},
+	"dynamicLogic": {
+		"fields": {
+			"endDate": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "or",
+							"value": [
+								{
+									"type": "equals",
+									"attribute": "status",
+									"value": "Finished"
+								},
+								{
+									"type": "equals",
+									"attribute": "status",
+									"value": "Returned"
+								},
+								{
+									"type": "equals",
+									"attribute": "status",
+									"value": "Zapujcka"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parcelServiceProvider": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"parcelTrackingNumber": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"parcelSent": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"parcelLabel": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"shippingAddress": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isNotEmpty",
+							"attribute": "account2Id",
+							"data": {
+								"field": "account2"
+							}
+						}
+					]
+				}
+			},
+			"qualityReport": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "Returned"
+						}
+					]
+				}
+			},
+			"account2": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"contact": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "parcelService"
+						}
+					]
+				}
+			},
+			"ready2goBanner": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "To Install"
+						}
+					]
+				}
+			},
+			"rentDeadline": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "Zapujcka"
+						}
+					]
+				}
+			},
+			"readyToGoBanner": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "To Install"
+						}
+					]
+				}
+			}
+		},
+		"options": {
+			"ready2goBanner": null
+		}
+	}
+}

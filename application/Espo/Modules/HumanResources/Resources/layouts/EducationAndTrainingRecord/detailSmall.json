@@ -1,0 +1,24 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "dateOfLastInspection"
+                },
+                {
+                    "name": "numberOfYearsForRepetition"
+                },
+                {
+                    "name": "dateOfTheNextInspection"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

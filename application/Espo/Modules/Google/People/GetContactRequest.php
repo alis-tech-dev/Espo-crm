@@ -1,0 +1,70 @@
+<?php
+/*********************************************************************************
+ * The contents of this file are subject to the EspoCRM Google Integration
+ * Agreement ("License") which can be viewed at
+ * https://www.espocrm.com/google-integration-agreement.
+ * By installing or using this file, You have unconditionally agreed to the
+ * terms and conditions of the License, and You may not use this file except in
+ * compliance with the License.  Under the terms of the license, You shall not,
+ * sublicense, resell, rent, lease, distribute, or otherwise  transfer rights
+ * or usage to the software.
+ *
+ * Copyright (C) 2015-2023 Letrium Ltd.
+ *
+ * License ID: d222cd5ec22d93ad3eb7a092569d85b3
+ ***********************************************************************************/
+
+namespace Espo\Modules\Google\People;
+
+use RuntimeException;
+
+class GetContactRequest implements Request
+{
+    private $resourceName;
+
+    private $fieldList = [
+        'names',
+        'organizations',
+        'emailAddresses',
+        'phoneNumbers',
+        'memberships',
+    ];
+
+    public function __construct(Contact $contact)
+    {
+        $this->resourceName = $contact->getResourceName();
+
+        if ($this->resourceName === null) {
+            throw new RuntimeException("Contact w/o resource name.");
+        }
+    }
+
+    public static function create(Contact $contact): self
+    {
+        return new self($contact);
+    }
+
+    public function getMethod(): string
+    {
+        return 'GET';
+    }
+
+    public function getUrl(): string
+    {
+        $queryParamsPart = http_build_query([
+            'personFields' => implode(',', $this->fieldList),
+        ]);
+
+        return 'https://people.googleapis.com/v1/' . $this->resourceName . '?' . $queryParamsPart;
+    }
+
+    public function getHeaders(): string
+    {
+        return '';
+    }
+
+    public function getBody(): string
+    {
+        return '';
+    }
+}

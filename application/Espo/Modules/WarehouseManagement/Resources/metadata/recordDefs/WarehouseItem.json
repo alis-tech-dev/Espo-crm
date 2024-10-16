@@ -1,0 +1,6 @@
+{
+    "readLoaderClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\WarehouseManagement\\Classes\\FieldProcessing\\WarehouseItem\\QuantityLoader"
+    ]
+}

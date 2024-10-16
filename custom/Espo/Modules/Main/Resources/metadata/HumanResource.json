@@ -1,0 +1,31 @@
+{
+	"fields": {
+		"majetek": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": ["Auto", "Mobil", "Notebook", "tarif"],
+			"isCustom": true
+		},
+		"auto": {
+			"type": "varchar",
+			"options": [
+				"FORD Transit 2BI0660",
+				"ŠKODA Octavia 1BV8641",
+				"ŠKODA Octavia 5M87502",
+				"ŠKODA Rapid 6M50042",
+				"ŠKODA Octavia ZA727HG"
+			],
+			"isCustom": true
+		},
+		"mobil": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"notebook": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		}
+	}
+}

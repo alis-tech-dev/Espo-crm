@@ -1,0 +1,497 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [
+		"onlyMy"
+	],
+	"recordViews": {
+		"detail": "views/templates/event/record/detail"
+	},
+	"activityDefs": {
+		"activitiesCreate": true,
+		"historyCreate": true
+	},
+	"bottomPanels": {
+		"detail": [
+			{
+				"name": "scheduler",
+				"label": "Scheduler",
+				"view": "crm:views/meeting/record/panels/scheduler",
+				"disabled": true,
+				"order": 3
+			}
+		],
+		"edit": [
+			{
+				"name": "scheduler",
+				"label": "Scheduler",
+				"view": "crm:views/meeting/record/panels/scheduler",
+				"disabled": true,
+				"order": 1
+			}
+		]
+	},
+	"filterList": [
+		{
+			"name": "planned"
+		},
+		{
+			"name": "held",
+			"style": "success"
+		},
+		{
+			"name": "todays"
+		}
+	],
+	"dynamicLogic": {
+		"fields": {
+			"duration": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isFalse",
+							"attribute": "isAllDay"
+						}
+					]
+				}
+			},
+			"harmonogram": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Obchodní"
+						}
+					]
+				}
+			},
+			"zapisProjektova": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Projektová"
+						}
+					]
+				}
+			},
+			"zapisObchodni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Obchodní"
+						}
+					]
+				}
+			},
+			"obchodniChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Obchodní"
+						}
+					]
+				}
+			},
+			"nazevObchodni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Obchodní"
+						}
+					]
+				}
+			},
+			"nazevIS": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Update"
+						}
+					]
+				}
+			},
+			"nazevManagement": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Provozní"
+						}
+					]
+				}
+			},
+			"nazevRD": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Vývojářská"
+						}
+					]
+				}
+			},
+			"nazevProjektova": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Projektová"
+						}
+					]
+				}
+			},
+			"nazevISO": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "ISO"
+						}
+					]
+				}
+			},
+			"nazevShareholders": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Shareholders"
+						}
+					]
+				}
+			},
+			"nazevKvalita": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Kvalita"
+						}
+					]
+				}
+			},
+			"nazevSkoleni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Interní sebeškolení"
+						}
+					]
+				}
+			},
+			"nazevVysledky": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Výsledky společnosti"
+						}
+					]
+				}
+			},
+			"nazevRizeni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Řízení nákladů"
+						}
+					]
+				}
+			},
+			"name": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "inPast",
+							"attribute": "dateStart"
+						},
+						{
+							"type": "isEmpty",
+							"attribute": "createdAt"
+						}
+					]
+				}
+			},
+			"zapisIS": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Update"
+						}
+					]
+				}
+			},
+			"zapisManagement": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Provozní"
+						}
+					]
+				}
+			},
+			"zapisRD": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Vývojářská"
+						}
+					]
+				}
+			},
+			"rdChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Vývojářská"
+						}
+					]
+				}
+			},
+			"qualityChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Kvalita"
+						}
+					]
+				}
+			},
+			"isoChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "ISO"
+						}
+					]
+				}
+			},
+			"shareholdersChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Shareholders"
+						}
+					]
+				}
+			},
+			"nazevDB": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Directors Board"
+						}
+					]
+				}
+			},
+			"nazevCT": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Company Tour"
+						}
+					]
+				}
+			},
+			"dbChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Directors Board"
+						}
+					]
+				}
+			},
+			"zapisISO": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "ISO"
+						}
+					]
+				}
+			},
+			"isChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Update"
+						}
+					]
+				}
+			},
+			"zapisKvalita": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Kvalita"
+						}
+					]
+				}
+			},
+			"zapisCT": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Company Tour"
+						}
+					]
+				}
+			},
+			"zapisShareholders": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Shareholders"
+						}
+					]
+				}
+			},
+			"zapisSkoleni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Interní sebeškolení"
+						}
+					]
+				}
+			},
+			"zapisRizeniNakladu": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Řízení nákladů"
+						}
+					]
+				}
+			},
+			"rizeniNakladuChecklist": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Řízení nákladů"
+						}
+					]
+				}
+			},
+			"zapisCR": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Výsledky společnosti"
+						}
+					]
+				}
+			},
+			"zapisDB": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Directors Board"
+						}
+					]
+				}
+			},
+			"nazevUni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Uni"
+						}
+					]
+				}
+			},
+			"zapisUni": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "type",
+							"value": "Uni"
+						}
+					]
+				}
+			}
+		},
+		"options": {
+			"name": [
+				{
+					"optionList": [],
+					"conditionGroup": null
+				}
+			]
+		}
+	},
+	"iconClass": "fas fa-book-open",
+	"forcePatchAttributeDependencyMap": {
+		"dateEnd": [
+			"dateStart"
+		],
+		"dateEndDate": [
+			"dateStartDate"
+		]
+	}
+}

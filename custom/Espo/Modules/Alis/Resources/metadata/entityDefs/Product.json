@@ -1,0 +1,35 @@
+{
+    "fields": {
+        "productCode": {
+            "type": "varchar",
+            "trim": true
+        },
+        "alisId": {
+            "type": "varchar",
+            "required": false,
+            "trim": true
+        },
+        "qrCode": {
+            "type": "barcode",
+            "codeType": "QRcode"
+        },
+        "priceA": {
+            "type": "currency"
+        },
+        "priceB": {
+            "type": "currency"
+        },
+        "priceC": {
+            "type": "currency"
+        },
+        "priceEndUser": {
+            "type": "currency"
+        },
+        "priceRent": {
+            "type": "currency"
+        },
+        "priceDamage": {
+            "type": "currency"
+        }
+    }
+}

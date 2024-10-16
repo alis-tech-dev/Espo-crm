@@ -1,0 +1,13 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "items": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": true,
+        "layout": "listItem",
+        "filtersEnabled": false,
+        "index": 0
+    }
+}

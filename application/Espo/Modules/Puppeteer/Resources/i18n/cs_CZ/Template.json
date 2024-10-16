@@ -1,0 +1,25 @@
+{
+    "labels": {
+        "Default": "Výchozí editor",
+        "Ace": "Ace editor",
+        "Raw": "Čistý editor"
+    },
+    "messages": {
+        "Default": "Uživatelsky přívětivý WYSIWYG editor, poskytuje základní funkce jako formátování textu, vkladání obrázků, odkazů, tabulek a dalších prvků.",
+        "Ace": "Pokročilý editor, který poskytuje funkce jako zvýrazňování syntaxe, automatické dokončování kódu, zobrazení chyb a další. Určený pro developery.",
+        "Raw": "Editor, bez jakéhokoliv formátování, pouze čistý text. Určený pro pokročilé uživatele."
+    },
+    "tooltips": {
+        "headerPosition": "Nemá žádny vliv při použití PDF enginu Puppeteer. Místo toho použijte stylování pro pozicování záhlaví.",
+        "footerPosition": "Nemá žádny vliv při použití PDF enginu Puppeteer. Místo toho použijte stylování pro pozicování zápatí."
+    },
+    "fields": {
+        "type": "Typ editoru"
+    },
+    "options": {
+        "type": {
+            "Default": "Výchozí editor",
+            "Raw": "Čistý editor"
+        }
+    }
+}

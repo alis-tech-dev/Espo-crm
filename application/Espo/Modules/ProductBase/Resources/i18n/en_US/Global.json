@@ -1,0 +1,12 @@
+{
+    "scopeNames": {
+        "Product": "Product",
+        "ProductCategory": "Product Category",
+        "TaxClass": "Tax Class"
+    },
+    "scopeNamesPlural": {
+        "Product": "Products",
+        "ProductCategory": "Product Categories",
+        "TaxClass": "Tax Classes"
+    }
+}

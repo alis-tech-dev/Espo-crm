@@ -1,0 +1,27 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "quantity"
+                },
+                {
+                    "name": "stock"
+                }
+            ],
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "warehouse"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

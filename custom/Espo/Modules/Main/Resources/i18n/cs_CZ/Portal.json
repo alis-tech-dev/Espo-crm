@@ -1,0 +1,37 @@
+{
+	"fields": {
+		"dateFormat": "Formát datumu",
+		"defaultCurrency": "Výchozí měna",
+		"isActive": "Je aktivní",
+		"isDefault": "Výchozí",
+		"language": "Jazyk",
+		"layoutSet": "Sada layoutu",
+		"name": "Jméno",
+		"portalRoles": "Role",
+		"quickCreateList": "Rychlé vytvoření seznamu",
+		"tabList": "Seznam záložek",
+		"theme": "Téma",
+		"timeFormat": "Formát času",
+		"timeZone": "Časové pásmo",
+		"weekStart": "První den týdne",
+		"dashboardLayout": "Rozvržení Dashboardu"
+	},
+	"labels": {
+		"Create Portal": "Vytvořit portál",
+		"General": "Obecné",
+		"Settings": "Nastavení",
+		"User Interface": "Uživatelské prostředí"
+	},
+	"links": {
+		"articles": "Články znalostní báze",
+		"layoutSet": "Sada layoutu",
+		"notes": "Poznámky",
+		"portalRoles": "Role",
+		"reports": "Reporty",
+		"users": "Uživatelé"
+	},
+	"tooltips": {
+		"layoutSet": "Poskytuje možnost mít rozložení (layouty), která se liší od standardních.",
+		"portalRoles": "Určené role portálu budou použity pro všechny uživatele tohoto portálu."
+	}
+}

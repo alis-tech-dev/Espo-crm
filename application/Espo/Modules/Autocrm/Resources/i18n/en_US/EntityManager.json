@@ -1,0 +1,9 @@
+{
+	"fields": {
+		"loaderCustomScript": "Loader Custom Script",
+		"isWide": "Is Wide"
+	},
+	"tooltips": {
+		"isWide": "If checked, the detail view will be wide and side panels will be at the bottom"
+	}
+}

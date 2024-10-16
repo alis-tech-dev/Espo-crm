@@ -1,0 +1,31 @@
+[
+	{
+		"name": "number",
+		"width": 12,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"width": 25,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "account",
+		"width": 25
+	},
+	{
+		"name": "status",
+		"width": 14,
+		"align": "left"
+	},
+	{
+		"name": "amount",
+		"width": 8,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser"
+	}
+]

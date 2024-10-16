@@ -1,0 +1,58 @@
+{
+	"fields": {
+		"parent": "Parent",
+		"dateStart": "Date Start",
+		"dateEnd": "Date End",
+		"duration": "Duration",
+		"status": "Status",
+		"reminders": "Reminders",
+		"dateStartDate": "Date Start (all day)",
+		"dateEndDate": "Date End (all day)",
+		"isAllDay": "Is All-Day",
+		"task": "Úkol",
+		"account": "Organizace",
+		"hours": "Čas instalace (h)",
+		"additionalCosts": "Další náklady",
+		"transport": "Doprava (km)",
+		"atWeekend": "O víkendu",
+		"attachments": "Přílohy",
+		"transportHours": "Čas dopravy (h)",
+		"acc": "Ubytování",
+		"cost": "Náklady na ubytování",
+		"costCurrency": "Cost (Měna)",
+		"costConverted": "Cost (Převedeno)",
+		"businessProject": "Zakázka",
+		"externist": "Technici",
+		"contact": "Kontaktní osoba"
+	},
+	"links": {
+		"parent": "Parent",
+		"task": "Úkol",
+		"account": "Organizace",
+		"businessProject": "Zakázka",
+		"contact": "Kontaktní osoba"
+	},
+	"options": {
+		"status": {
+			"Planned": "Planned",
+			"Held": "Held",
+			"Not Held": "Not Held"
+		}
+	},
+	"labels": {
+		"Create LogTime": "Create Odpracováno",
+		"Schedule LogTime": "Schedule Odpracováno",
+		"Log LogTime": "Log Odpracováno",
+		"Set Held": "Set Held",
+		"Set Not Held": "Set Not Held"
+	},
+	"massActions": {
+		"setHeld": "Set Held",
+		"setNotHeld": "Set Not Held"
+	},
+	"presetFilters": {
+		"planned": "Planned",
+		"held": "Held",
+		"todays": "Today's"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"items": {
+		"index": 0
+	},
+	"_delimiter_": {
+		"disabled": true
+	},
+	"useCases": {
+		"index": 0
+	},
+	"stream": {
+		"sticked": true,
+		"index": 1
+	},
+	"documents": {
+		"index": 2
+	}
+}

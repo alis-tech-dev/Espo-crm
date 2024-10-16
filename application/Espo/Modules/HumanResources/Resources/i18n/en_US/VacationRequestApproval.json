@@ -1,0 +1,16 @@
+{
+    "labels": {
+        "Approve": "Approve",
+        "Reject": "Reject",
+        "Return for completion": "Return for completion",
+        "Approved": "Approved",
+        "Rejected": "Rejected",
+        "Returned": "Returned",
+        "Approval process": "Approval process",
+        "Unknown response": "Unknown response",
+        "approveVacationRequest": "Approve Vacation Request"
+    },
+    "fields": {
+        "description": "Note"
+    }
+}

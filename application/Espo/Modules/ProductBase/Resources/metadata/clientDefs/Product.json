@@ -1,0 +1,25 @@
+{
+    "controller": "controllers/record",
+    "views": {
+        "list": "product-base:views/product/list"
+    },
+    "modalViews": {
+        "select": "views/modals/select-records-with-categories"
+    },
+    "menu": {
+        "list": {
+            "dropdown": [
+                {
+                    "label": "Categories",
+                    "link": "#ProductCategory",
+                    "acl": "edit",
+                    "aclScope": "ProductCategory"
+                }
+            ]
+        }
+    },
+    "dynamicHandlerList": [
+        "product-base:handlers/product/price-dynamic-handler"
+    ],
+    "iconClass": "fas fa-cube"
+}

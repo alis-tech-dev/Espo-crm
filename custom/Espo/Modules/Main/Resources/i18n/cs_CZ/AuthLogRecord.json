@@ -1,0 +1,39 @@
+{
+	"options": {
+		"denialReason": {
+			"CREDENTIALS": "Nesprávné údaje",
+			"INACTIVE_USER": "Neaktivní uživatel",
+			"IS_PORTAL_USER": "Portálový uživatel",
+			"IS_NOT_PORTAL_USER": "Není portálovým uživatelem",
+			"USER_IS_NOT_IN_PORTAL": "Uživatel není přiřazen k portálu"
+		}
+	},
+	"presetFilters": {
+		"accepted": "Přijato",
+		"denied": "Zamítnuto"
+	},
+	"fields": {
+		"authenticationMethod": "Metoda ověřování",
+		"authToken": "Token ověření vytvořen",
+		"authTokenIsActive": "Ověřovací token je aktivní",
+		"createdAt": "Požadováno v",
+		"denialReason": "Důvod odmítnutí",
+		"ipAddress": "IP Adresa",
+		"isDenied": "Je odmítnuto",
+		"portal": "Portál",
+		"requestMethod": "Způsob vyžádání",
+		"requestTime": "Čas požadavku",
+		"requestUrl": "URL požadavku",
+		"user": "Uživatel",
+		"username": "Uživatelské jméno"
+	},
+	"labels": {
+		"Create AuthLogRecord": "Vytvořit záznam protokolu autentizace"
+	},
+	"links": {
+		"actionHistoryRecords": "Historie akcí",
+		"authToken": "Token ověření vytvořen",
+		"portal": "Portál",
+		"user": "Uživatel"
+	}
+}

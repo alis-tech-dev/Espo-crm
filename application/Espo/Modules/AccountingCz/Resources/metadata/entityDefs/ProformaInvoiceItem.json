@@ -1,0 +1,120 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true
+        },
+        "proformaInvoice": {
+            "type": "link",
+            "readOnly": true
+        },
+        "product": {
+            "type": "link"
+        },
+        "quantity": {
+            "type": "float",
+            "default": 1.0,
+            "required": true
+        },
+        "unitPrice": {
+            "type": "currency",
+            "required": true,
+            "view": "product-base:views/fields/currency-amount-only"
+        },
+        "discount": {
+            "type": "float",
+            "view": "product-base:views/fields/percentage"
+        },
+        "amount": {
+            "type": "currency",
+            "clientReadOnly": true
+        },
+        "taxAmount": {
+            "type": "currency",
+            "clientReadOnly": true
+        },
+        "amountWithTax": {
+            "type": "currency",
+            "clientReadOnly": true
+        },
+        "unitWeight": {
+            "type": "float",
+            "min": 0
+        },
+        "weight": {
+            "type": "float",
+            "min": 0,
+            "readOnly": true
+        },
+        "taxRate": {
+            "type": "float",
+            "min": 0,
+            "max": 100,
+            "default": 0,
+            "view": "product-base:views/fields/percentage"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "type": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "normal",
+                "discount",
+                "advanceDeduction",
+                "shipping"
+            ],
+            "style": {
+                "normal": null,
+                "discount": null,
+                "advanceDeduction": null,
+                "shipping": null
+            },
+            "default": "normal"
+        },
+        "withTax": {
+            "notNull": true,
+            "type": "bool"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "product": {
+            "type": "belongsTo",
+            "entity": "Product"
+        },
+        "proformaInvoice": {
+            "type": "belongsTo",
+            "entity": "ProformaInvoice",
+            "foreign": "items"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false
+    }
+}

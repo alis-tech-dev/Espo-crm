@@ -1,0 +1,81 @@
+{
+    "fields": {
+        "number": "Rechnungsnummer",
+        "account": "Firma",
+        "billingContact": "Rechnungskontakt",
+        "invoices": "Ausgestellte Rechnungen",
+        "salesOrderItems": "Kundenauftrags-Positionen",
+        "opportunity": "Angebot",
+        "shippingContact": "Versand Kontakt",
+        "proformNumber": "Proforma-Rechnungsnummer",
+        "numberA": "Nummer (autoinkrementiert)",
+        "acceptedPaymentItems": "akzeptierte Zahlungspositionen",
+        "action": "Aktion",
+        "amount": "Summe",
+        "amountConverted": "umgerechneter Betrag",
+        "amountCurrency": "Betrag Währung",
+        "constantSymbol": "Konstantes Symbol",
+        "dateInvoiced": "Datum Rechnungsstellung",
+        "discountAmount": "Rabattbetrag",
+        "discountAmountConverted": "Rabatt Umgerechneter Betrag",
+        "discountAmountCurrency": "Rabatt Betrag Währung",
+        "duzp": "Datum der steuerpflichtigen Leistung",
+        "forSalesOrder": "für den Kundenauftrag",
+        "grandTotalAmount": "Gesamtbetrag",
+        "grandTotalAmountConverted": "Gesamter umgerechneter Betrag",
+        "grandTotalAmountCurrency": "Gesamtbetrag Währung",
+        "itemList": "Artikel-Liste",
+        "note": "Notiz",
+        "paymentMethod": "Zahlungsmethode",
+        "preDiscountedAmount": "vor Abzug des Betrags",
+        "preDiscountedAmountConverted": "vor diskontiertem Betrag umgerechnet",
+        "preDiscountedAmountCurrency": "vor diskontiertem Betrag Währung",
+        "salesOrder": "Verkaufsauftrag",
+        "shippingCost": "Versandkosten",
+        "shippingCostConverted": "Versand Kosten umgerechnet",
+        "shippingCostCurrency": "Versandkosten Währung",
+        "shippingProvider": "Versandunternehmen",
+        "status": "Status",
+        "tax": "Steuer",
+        "taxAmount": "Steuerbetrag",
+        "taxAmountConverted": "Steuerbetrag umgerechnet",
+        "taxAmountCurrency": "Steuerbetrag Währung",
+        "taxRate": "Steuersatz",
+        "textBeforeItems": "Text vor Artikeln",
+        "variableSymbol": "Variables Symbol",
+        "weight": "Gewicht"
+    },
+    "links": {
+        "account": "Firma",
+        "billingContact": "Rechnungskontakt",
+        "invoices": "Erstellte Rechnungen",
+        "salesOrderItems": "Verkaufsauftrag Artikel",
+        "opportunity": "Gelegenheit",
+        "shippingContact": "Kontakt für den Versand",
+        "acceptedPaymentItems": "akzeptierte Zahlungspositionen",
+        "items": "Artikel",
+        "salesOrder": "Verkaufsauftrag",
+        "shippingProvider": "Versandanbieter",
+        "tax": "Steuer"
+    },
+    "labels": {
+        "Create AcceptedPayment": "Steuerbeleg für erhaltene Zahlungen erstellen"
+    },
+    "options": {
+        "paymentMethod": {
+            "Převod": "Überweisung",
+            "Hotově": "Barzahlung",
+            "Karta": "Karte",
+            "Dobírka": "Zahlung per Nachnahme",
+            "Zápočet": "Kredit"
+        },
+        "status": {
+            "Draft": "Entwurf",
+            "In Review": "In Durchsicht",
+            "Confirmed": "Bestätigt",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Abgebrochen",
+            "Paid": "Bezahlt"
+        }
+    }
+}

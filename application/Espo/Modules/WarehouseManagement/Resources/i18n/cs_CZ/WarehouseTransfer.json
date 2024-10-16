@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "warehouseFrom": "Ze skladu",
+        "warehouseTo": "Na sklad",
+        "items": "Položky",
+        "status": "Stav"
+    },
+    "labels": {
+        "Process": "Zpracovat",
+        "Create WarehouseTransfer": "Vytvořit skladový přesun",
+        "Items": "Položky"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Processing": "Zpracovává se",
+            "Transferred": "Přesunuto",
+            "Canceled": "Zrušeno"
+        }
+    }
+}

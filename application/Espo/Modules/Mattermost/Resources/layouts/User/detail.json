@@ -1,0 +1,14 @@
+[
+    "__APPEND__",
+    {
+        "label": "Mattermost",
+        "rows": [
+            [
+                {
+                    "name": "mattermostSyncEnabled"
+                },
+                false
+            ]
+        ]
+    }
+]

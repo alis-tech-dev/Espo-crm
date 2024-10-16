@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "numberA": "Číslo příkazu",
+        "itemQuantity": "ItemQuantity",
+        "fromWarehouse": "From stock",
+        "totalProduced": "Total quantity",
+        "quantityPlanned": "Planned",
+        "quantityProduced": "Produced",
+        "avaliableQuantity": "AvaliableQuantity",
+        "stockQuantity": "StockQuantity",
+        "entryKey": "EntryKey",
+        "isPerform": "IsPerform",
+        "performWorkTime": "PerformWorkTime"
+    },
+    "links": {
+        "warehouse": "Warehouse"
+    }
+}

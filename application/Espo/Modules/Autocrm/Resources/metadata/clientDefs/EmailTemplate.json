@@ -1,0 +1,13 @@
+{
+    "controller": "autocrm:controllers/email-template",
+    "views": {
+        "list": "autocrm:views/email-template/list"
+    },
+    "isWide": true,
+    "placeholderList": [
+        "__APPEND__",
+        "viewInBrowserUrl",
+        "viewInBrowserLink"
+    ],
+    "dynamicHandler": "autocrm:handlers/dynamic/email-template"
+}

@@ -1,0 +1,37 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-exchange-alt",
+    "color": "#ffffff",
+    "isWide": true,
+    "dynamicHandler": "warehouse-management:handlers/warehouse-transfer/dynamic",
+    "menu": {
+        "detail": {
+            "buttons": [
+                {
+                    "label": "Process",
+                    "name": "process",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-exchange-alt\"></i>",
+                    "style": "success",
+                    "data": {
+                        "handler": "warehouse-management:handlers/warehouse-transfer/process-action"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Cancel",
+                    "name": "cancel",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-ban\"></i>",
+                    "style": "danger",
+                    "data": {
+                        "handler": "warehouse-management:handlers/warehouse-transfer/cancel-action"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    }
+}

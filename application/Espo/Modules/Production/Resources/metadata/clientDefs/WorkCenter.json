@@ -1,0 +1,9 @@
+{
+	"controller": "controllers/record",
+	"iconClass": "fas fa-industry",
+	"relationshipPanels": {
+		"productionModelOperation": {
+			"layout": "listWorkCenter"
+		}
+	}
+}

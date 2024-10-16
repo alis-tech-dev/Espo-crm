@@ -1,0 +1,60 @@
+{
+    "fields": {
+        "attachments": "Přílohy",
+        "category": "Kategorie",
+        "costPrice": "Cena nákladů",
+        "costPriceConverted": "Cena nákladů (převedená)",
+        "costPriceCurrency": "Měna ceny nákladů",
+        "costPriceWithTax": "Cena nákladů s DPH",
+        "costPriceWithTaxConverted": "Cena nákladů s DPH (převedená)",
+        "costPriceWithTaxCurrency": "Měna ceny nákladů s DPH",
+        "description": "Popis",
+        "ean": "EAN",
+        "measureUnit": "Měrná jednotka",
+        "name": "Název",
+        "priceMargin": "Marže",
+        "priceMarkup": "Přirážka",
+        "pricingType": "Typ cenění",
+        "salesPrice": "Prodejní cena",
+        "salesPriceConverted": "Prodejní cena (převedená)",
+        "salesPriceCurrency": "Měna prodejní ceny",
+        "salesPriceWithTax": "Prodejní cena s DPH",
+        "salesPriceWithTaxConverted": "Prodejní cena s DPH (převedená)",
+        "salesPriceWithTaxCurrency": "Měna prodejní ceny s DPH",
+        "taxClass": "Daňová třída",
+        "taxRate": "Daňová sazba",
+        "type": "Typ",
+        "url": "URL"
+    },
+    "labels": {
+        "Categories": "Kategorie",
+        "Create Product": "Vytvořit produkt",
+        "Price": "Ceny"
+    },
+    "links": {
+        "attachments": "Přílohy",
+        "category": "Kategorie",
+        "taxClass": "Daňová třída"
+    },
+    "messages": {
+        "salesPriceRequiredForFixedSalesPrice": "Prodejní cena je povinná pro typ cenění 'Pevná prodejní cena'.",
+        "markupRequiredForMarkupOverCost": "Přirážka je povinná pro typ cenění 'Obchodní přirážka'.",
+        "costPriceRequiredForMarkupOverCost": "Cena nákladů je povinná pro typ cenění 'Obchodní přirážka'.",
+        "marginRequiredForProfitMargin": "Marže je povinná pro typ cenění 'Marže'.",
+        "costPriceRequiredForProfitMargin": "Cena nákladů je povinná pro typ cenění 'Marže'."
+    },
+    "options": {
+        "pricingType": {
+            "Fixed Sales Price": "Pevná prodejní cena",
+            "Markup over Cost": "Obchodní přirážka",
+            "No Price": "Bez ceny",
+            "Profit Margin": "Marže",
+            "Same as Cost Price": "Stejná jako cena nákladů"
+        },
+        "type": {
+            "Normal": "Běžný",
+            "Service": "Služba"
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+{
+    "fields": {
+        "entityType": "Typ subjektu",
+        "scheduling": "Plánování",
+        "infinite": "Bez datumu ukončení",
+        "until": "Opakovat do",
+        "generateInBatches": "Předgenerovávat v dávkách",
+        "generateInAdvance": "Generovat dopředu na",
+        "status": "Stav"
+    },
+    "labels": {
+        "viewMode": "typ zobrazení (kliknutím přepnout)",
+        "user-friendly": "Uživatelsky přívětivý",
+        "advanced": "Pokročilý",
+        "Create RecordRecurrence": "Vytvořit opakování záznamu",
+        "Batching": "Dávkování",
+        "Recurrence": "Opakování"
+    },
+    "cronLabels": {
+        "months": [
+            "Ledna",
+            "Února",
+            "Března",
+            "Dubna",
+            "Května",
+            "Června",
+            "Července",
+            "Srpna",
+            "Září",
+            "Října",
+            "Listopadu",
+            "Prosince"
+        ],
+        "days": [
+            "Neděli",
+            "Pondělí",
+            "Úterý",
+            "Středu",
+            "Čtvrtek",
+            "Pátek",
+            "Sobotu"
+        ],
+        "periods": [
+            "minutu",
+            "hodinu",
+            "den",
+            "týden",
+            "měsíc",
+            "rok"
+        ],
+        "unsupported": "Nepodporovaný cron výraz. Prosím použijte pokročilý typ zobrazení.",
+        "Weekdays": "Pracovní dny",
+        "Weekends": "Víkendy",
+        "Every": "Každ(ou/ý)",
+        "on the": "na",
+        "of": "",
+        "minutes past the hour": "minut(u/y)",
+        "at": "v",
+        "st": ".",
+        "nd": ".",
+        "rd": ".",
+        "th": "."
+    },
+    "options": {
+        "generateInAdvance": {
+            "1_day": "1 den",
+            "2_days": "2 dny",
+            "1_week": "1 týden",
+            "2_weeks": "2 týdny",
+            "1_month": "1 měsíc",
+            "2_months": "2 měsíce",
+            "3_months": "3 měsíce",
+            "6_months": "6 měsíců",
+            "1_year": "1 rok"
+        },
+        "status": {
+            "Draft": "Koncept",
+            "Active": "Aktivní",
+            "Completed": "Dokončeno"
+        }
+    },
+    "tooltips": {
+        "scheduling": "Frekvence opakování záznamu\n\n**Uživatelsky přívětivý** mód - jednoduchý na použití, méně flexibilní\n\n**Pokročilý** mód - plně flexibilní, používá cron výraz",
+        "generateInAdvance": "Časová perioda, po kterou se záznamy dopředu předgenerují"
+    },
+    "messages": {
+        "missingDateStart": "Opakovaný záznam musí mít vyplněné datum zahájení.",
+        "cronExprInvalid": "Cron výraz není platný.",
+        "batchSizeLimitExceeded": "Počet vygenerovaných záznamů v jedné dávce by překročila limit nastavený administrátorem. Nastavte prosím častější dávkování nebo snižte míru opakování.",
+        "invalidSchedulingExpression": "Neplatný výraz CRON"
+    }
+}

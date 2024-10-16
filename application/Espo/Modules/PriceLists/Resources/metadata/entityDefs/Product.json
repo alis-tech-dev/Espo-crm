@@ -1,0 +1,23 @@
+{
+	"fields": {
+		"priceLists": {
+			"type": "linkMultiple"
+		},
+		"priceListPrice": {
+			"type": "currency",
+			"notStorable": true
+		}
+	},
+	"links": {
+		"priceLists": {
+			"type": "hasMany",
+			"entity": "PriceList",
+			"relationName": "PriceListProduct",
+			"columnAttributeMap": {
+				"price": "priceListPrice"
+			},
+			"foreign": "products",
+			"additionalAttributeList": ["columns"]
+		}
+	}
+}

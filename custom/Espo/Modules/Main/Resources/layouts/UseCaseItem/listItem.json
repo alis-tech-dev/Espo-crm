@@ -1,0 +1,40 @@
+[
+	{
+		"name": "productCode",
+		"align": "left",
+		"width": 12
+	},
+	{
+		"name": "name",
+		"align": "left",
+		"width": 25
+	},
+	{
+		"name": "quantity",
+		"align": "right",
+		"width": 7
+	},
+	{
+		"name": "listPrice",
+		"align": "right"
+	},
+	{
+		"name": "discount",
+		"align": "right",
+		"width": 7
+	},
+	{
+		"name": "unitPrice",
+		"align": "right",
+		"width": 12
+	},
+	{
+		"name": "guaranteeExtend",
+		"align": "right"
+	},
+	{
+		"name": "amount",
+		"align": "right",
+		"width": 8
+	}
+]

@@ -1,0 +1,46 @@
+{
+	"labels": {
+		"Fill from Contact": "Fill from Contact",
+		"Fill from Account": "Fill from Account"
+	},
+	"scopeNames": {
+		"Supplier": "Supplier",
+		"Quote": "Quote",
+		"QuoteItem": "Quote Item",
+		"Invoice": "Issued Invoice",
+		"InvoiceItem": "Issued Invoice Item",
+		"SalesOrder": "Sales Order",
+		"SalesOrderItem": "Sales Order Item",
+		"PurchaseOrder": "Purchase Order",
+		"PurchaseOrderItem": "Purchase Order Item",
+		"SupplierInvoice": "Supplier Invoice",
+		"SupplierInvoiceItem": "Supplier Invoice Item",
+		"VatIdValidation": "VAT ID Validation",
+		"HandoverProtocol": "Handover Protocol",
+		"DeliveryNote": "Delivery Note"
+	},
+	"scopeNamesPlural": {
+		"Supplier": "Suppliers",
+		"Quote": "Quotes",
+		"QuoteItem": "Quote Items",
+		"Invoice": "Issued Invoices",
+		"InvoiceItem": "Issued Invoice Items",
+		"SalesOrder": "Sales Orders",
+		"SalesOrderItem": "Sales Order Items",
+		"PurchaseOrder": "Purchase Orders",
+		"PurchaseOrderItem": "Purchase Order Items",
+		"SupplierInvoice": "Supplier Invoices",
+		"SupplierInvoiceItem": "Supplier Invoice Items",
+		"VatIdValidation": "VAT ID Validations",
+		"HandoverProtocol": "Handover Protocols",
+		"DeliveryNote": "Delivery Notes"
+	},
+	"messages": {
+		"contactInfoTitle": "Contact Info",
+		"valid": "valid",
+		"invalid": "invalid",
+		"verifiedVatId": "Verified <b>{vatId}</b> on {vatDate} is {vatType}",
+		"shortValidVatIdMessage": "Valid VAT ID",
+		"shortInvalidVatIdMessage": "Invalid VAT ID, or belongs to a non-EU entity"
+	}
+}

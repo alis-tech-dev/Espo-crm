@@ -1,0 +1,11 @@
+{
+    "params": [
+        "__APPEND__",
+        {
+            "name": "saveCoordinates",
+            "type": "bool",
+            "tooltip": true
+        }
+    ],
+    "hookClassName": "Espo\\Modules\\Autocrm\\Tools\\FieldManager\\Hooks\\AddressType"
+}

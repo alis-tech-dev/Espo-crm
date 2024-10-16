@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "openButton": {
+            "type": "base",
+            "notStorable": true,
+            "view": "only-office:views/document/fields/open-button"
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "fields": {
+        "files": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "products": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "kod": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "productCode",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "imageId": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "imageId",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "productDescription": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "description",
+            "view": "views/fields/foreign-text",
+            "isCustom": true
+        },
+        "name": {
+            "options": []
+        }
+    },
+    "links": {
+        "files": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "products": {
+            "type": "hasMany",
+            "foreign": "quoteItem",
+            "entity": "Product",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "order",
+        "order": "asc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

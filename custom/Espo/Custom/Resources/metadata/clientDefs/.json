@@ -1,0 +1,19 @@
+{
+    "relationshipPanels": {
+        "reclamations": {
+            "layout": null
+        },
+        "worksPerformed": {
+            "layout": null
+        },
+        "components": {
+            "layout": null
+        },
+        "tasksAnother": {
+            "layout": null
+        },
+        "complaintBooks": {
+            "layout": null
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "dynamicHandlerList": [
+        "accounting-cz:handlers/invoice/dynamic-handler"
+    ],
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Vytvořit vydanou fakturu",
+                    "name": "createInvoice",
+                    "action": "createInvoice",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/sales-order/create-invoice"
+                    }
+                }
+            ]
+        }
+    }
+}

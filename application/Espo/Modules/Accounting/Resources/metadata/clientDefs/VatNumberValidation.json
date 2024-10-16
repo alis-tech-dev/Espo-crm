@@ -1,0 +1,9 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "duplicateDisabled": true,
+    "createDisabled": true,
+    "editDisabled": true
+}

@@ -1,0 +1,51 @@
+{
+	"fields": {
+		"minimumStockQuantity": {
+			"notNull": false,
+			"type": "float",
+			"isCustom": true
+		},
+		"priceJesenoCurrency": {
+			"type": "enum",
+			"options": ["0"],
+			"style": {
+				"0": null
+			},
+			"default": "EUR",
+			"isCustom": true
+		},
+		"priceJesenoConverted": {
+			"type": "currency",
+			"isCustom": true
+		},
+		"componentsCost": {
+			"type": "currency",
+			"onlyDefaultCurrency": true,
+			"isCustom": true
+		},
+		"componentsCostCurrency": {
+			"default": "CZK"
+		},
+		"unit": {
+			"type": "enum",
+			"options": ["km", "unit", "h", "pcs", "day"],
+			"style": {
+				"km": null,
+				"unit": null,
+				"h": null,
+				"pcs": null,
+				"day": null
+			},
+			"default": "pcs",
+			"isCustom": true,
+			"readOnly": false
+		}
+	},
+	"links": {
+		"nextNumbers": {
+			"type": "hasMany",
+			"entity": "NextNumber",
+			"foreign": "product"
+		}
+	}
+}

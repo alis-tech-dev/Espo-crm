@@ -1,0 +1,38 @@
+{
+	"fields": {
+		"status": "Stav",
+		"product": "Produkt",
+		"productionModel": "Technologický postup",
+		"productWarehouse": "Sklad výrobku",
+		"materialWarehouse": "Sklad materiálů",
+		"quantityPlanned": "Množství plánované",
+		"quantityProduced": "Množství vyrobené",
+		"attachments": "Přílohy",
+		"forceMaterialWarehouse": "Vynutit použití skladu u všech materiálů",
+		"operations": "Operace",
+		"billOfMaterials": "Materiálová rozpiska",
+		"parentProductionOrder": "Nadřazený výrobní příkaz",
+		"childProductionOrders": "Podřízené výrobní příkazy"
+	},
+	"links": {
+		"operations": "Operace",
+		"billOfMaterials": "Materiálová rozpiska",
+		"workPerformed": "Odvedené práce",
+		"parentProductionOrder": "Nadřazený výrobní příkaz",
+		"childProductionOrders": "Podřízené výrobní příkazy"
+	},
+	"options": {
+		"status": {
+			"Draft": "Návrh",
+			"Planned": "Naplánováno",
+			"Ongoing": "Probíhající",
+			"Completed": "Dokončeno",
+			"Cancelled": "Zrušeno"
+		}
+	},
+	"labels": {
+		"Create ProductionOrder": "Vytvořit výrobní příkaz",
+		"Configuration": "Konfigurace",
+		"Plan": "Plán"
+	}
+}

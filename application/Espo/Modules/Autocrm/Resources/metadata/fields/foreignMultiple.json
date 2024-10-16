@@ -1,0 +1,37 @@
+{
+    "params": [
+        {
+            "name": "link",
+            "type": "varchar",
+            "view": "autocrm:views/admin/field-manager/fields/foreign-multiple/link",
+            "required": true
+        },
+        {
+            "name": "field",
+            "type": "varchar",
+            "view": "views/admin/field-manager/fields/foreign/field",
+            "required": true
+        },
+        {
+            "name": "displayAsList",
+            "type": "bool",
+            "tooltip": true
+        },
+        {
+            "name": "displayAsLinks",
+            "type": "bool",
+            "tooltip": true
+        },
+        {
+            "name": "view",
+            "type": "varchar",
+            "hidden": false,
+            "default": "autocrm:views/fields/foreign-multiple"
+        }
+    ],
+    "filter": true,
+    "notCreatable": false,
+    "fieldDefs": {
+        "readOnly": true
+    }
+}

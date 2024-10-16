@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "serverUrl": "Adresa serveru",
+        "token": "Autentizační token",
+        "teamId": "ID týmu"
+    },
+    "titles": {
+        "mattermost": "Mattermost"
+    },
+    "mattermost": {
+        "tokenDescription": "AutoCRM Integrace",
+        "projectChannelHeader": "Kanál k projektu"
+    },
+    "help": {
+        "mattermost": "**Konfigurace integrace s Mattermost**\n\n1. Vytvořte nového administrátorského uživatele a [vygenerujte pro něj osobní přístupový token](https://docs.mattermost.com/developer/personal-access-tokens.html#creating-a-personal-access-token).\n2. Povolte integraci a vyplňte všechna pole. Získat ID týmu může být poměrně složité - jedním ze způsobů, jak to udělat, je otevřít stránku pro úpravu týmu v systémové konzoli a zkopírovat ID z adresy URL.\n3. Nainstalujte a nakonfigurujte plugin AutoCRM Integration ve své instanci Mattermost. Další podrobnosti: [https://gitlab.apertia.cz/autocrm/mattermost-autocrm-integration#installation](https://gitlab.apertia.cz/autocrm/mattermost-autocrm-integration#installation)."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "exportPermission": "Oprávnění exportu",
+        "massUpdatePermission": "Oprávnění hromadné aktualizace"
+    },
+    "links": {
+        "users": "Uživatelé"
+    },
+    "tooltips": {
+        "exportPermission": "Definuje, zda uživatelé portálu mají možnost exportovat záznamy.",
+        "massUpdatePermission": "Definuje, zda mají uživatelé portálu možnost provádět hromadnou aktualizaci záznamů."
+    },
+    "labels": {
+        "Access": "Přístup",
+        "Create PortalRole": "Vytvořit portálovou roli",
+        "Field Level": "Úroveň pole"
+    }
+}

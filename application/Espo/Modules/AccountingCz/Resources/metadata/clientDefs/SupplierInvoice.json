@@ -1,0 +1,55 @@
+{
+    "additionalLayouts": {
+        "detailBottomTotal": {
+            "type": "list",
+            "dataAttributeList": [
+                "name",
+                "view",
+                "customLabel"
+            ]
+        }
+    },
+    "recordViews": {
+        "list": "accounting-cz:views/invoice/list"
+    },
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "accounting-cz:handlers/invoice/dynamic-handler"
+    ],
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Vytvořit výdejní doklad",
+                    "name": "createExpenseReceipt",
+                    "action": "createExpenseReceipt",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/received-invoice/create-expense-receipt"
+                    }
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "supplyCode": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "reverseCharge",
+                                    "value": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

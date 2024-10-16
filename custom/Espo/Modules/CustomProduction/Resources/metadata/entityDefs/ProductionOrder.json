@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"salesOrder": {
+			"type": "link"
+		}
+	},
+	"links": {
+		"salesOrder": {
+			"type": "belongsTo",
+			"entity": "SalesOrder",
+			"foreign": "productionOrders"
+		}
+	}
+}

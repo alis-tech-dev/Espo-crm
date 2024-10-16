@@ -1,0 +1,289 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true
+        },
+        "number": {
+            "type": "varchar",
+            "maxLength": "100",
+            "readOnly": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "format": "PZ{YYYY}-{number}",
+            "reset": "Yearly",
+            "padLength": 5,
+            "disabled": true
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Draft", "In Review", "Confirmed", "Paid", "Rejected", "UnpaidAfterMaturity"],
+            "style": {
+                "Paid": "success",
+                "Rejected": "danger",
+                "UnpaidAfterMaturity": "danger"
+            },
+            "default": "Draft",
+            "displayAsLabel": true
+        },
+        "dateInvoiced": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();"
+        },
+        "account": {
+            "type": "link"
+        },
+        "description": {
+            "type": "text"
+        },
+        "billingAddress": {
+            "type": "address"
+        },
+        "billingContact": {
+            "type": "link",
+            "view": "accounting:views/invoice/fields/contact"
+        },
+        "taxClass": {
+            "type": "link",
+            "view": "product-base:views/fields/tax-class"
+        },
+        "taxRate": {
+            "type": "float",
+            "min": 0,
+            "max": 100
+        },
+        "taxAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "amount": {
+            "type": "currency",
+            "clientReadOnly": true
+        },
+        "grandTotalAmount": {
+            "type": "currency",
+            "layoutDetailDisabled": true,
+            "clientReadOnly": true
+        },
+        "weight": {
+            "type": "float",
+            "min": 0,
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "accounting:views/fields/items",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["productId", "type"],
+            "recordListCreateDisabled": false,
+            "recordListLinkDisabled": true,
+            "recordListRemoveDisabled": false,
+            "recordListConfirmRemove": true
+        },
+        "attachments": {
+            "type": "attachmentMultiple"
+        },
+        "supplierInvoice": {
+            "type": "link"
+        },
+        "receivedTaxDocuments": {
+            "type": "linkMultiple"
+        },
+        "originalNumber": {
+            "type": "varchar",
+            "trim": true
+        },
+        "dateOfReceiving": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true
+        },
+        "dueDate": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "duzp": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "paymentMethod": {
+            "type": "enum",
+            "options": [
+                "bank",
+                "card",
+                "cash",
+                "cod"
+            ],
+            "style": {
+                "bank": null,
+                "card": null,
+                "cash": null,
+                "cod": null
+            },
+            "default": "bank",
+            "tooltip": true
+        },
+        "constantSymbol": {
+            "type": "varchar",
+            "options": [],
+            "tooltip": true,
+            "maxLength": 10
+        },
+        "note": {
+            "type": "text",
+            "default": null
+        },
+        "variableSymbol": {
+            "type": "varchar",
+            "trim": true,
+            "maxLength": 10,
+            "options": [],
+            "tooltip": true
+        },
+        "acceptedPayment": {
+            "type": "link"
+        },
+        "datePaid": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true
+        },
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "shippingCostTaxRate": {
+            "notNull": false,
+            "type": "float",
+            "view": "product-base:views/fields/percentage"
+        },
+        "shippingCost": {
+            "type": "currency",
+            "view": "product-base:views/fields/currency-amount-only"
+        },
+        "expenseReceipts": {
+            "type": "linkMultiple",
+            "view": "accounting-cz:views/fields/link-multiple/no-create-link-multiple"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "taxClass": {
+            "type": "belongsTo",
+            "entity": "TaxClass"
+        },
+        "billingContact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "invoicesBilling"
+        },
+        "attachments": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "relationName": "attachments"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "receivedProformaInvoices"
+        },
+        "items": {
+            "type": "hasMany",
+            "entity": "ReceivedProformaInvoiceItem",
+            "foreign": "receivedProformaInvoice",
+            "layoutRelationshipsDisabled": true
+        },
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "receivedProformaInvoice",
+            "entity": "SummaryVatRates",
+            "audited": false
+        },
+        "supplierInvoice": {
+            "type": "hasOne",
+            "entity": "SupplierInvoice",
+            "foreign": "receivedProformaInvoice"
+        },
+        "receivedTaxDocuments": {
+            "type": "hasMany",
+            "foreign": "receivedProformaInvoice",
+            "entity": "ReceivedTaxDocument",
+            "audited": false
+        },
+        "expenseReceipts": {
+            "type": "hasChildren",
+            "foreign": "invoice",
+            "entity": "ExpenseReceipt"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "number"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

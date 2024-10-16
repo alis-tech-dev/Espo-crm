@@ -1,0 +1,44 @@
+{
+	"fields": {
+		"audited": "Auditováno",
+		"auditedForeign": "Zahraniční audit",
+		"beforeSaveCustomScript": "Před uložením vlastního skriptu",
+		"color": "Barva",
+		"countDisabled": "Zakázat počet záznamů",
+		"disabled": "Zakázáno",
+		"foreignLinkEntityTypeList": "Zahraniční odkazy",
+		"fullTextSearch": "Fulltextové vyhledávání",
+		"iconClass": "Ikona",
+		"kanbanStatusIgnoreList": "Ignorované skupiny v zobrazení Kanban",
+		"kanbanViewMode": "Kanban zobrazení",
+		"link": "Odkaz",
+		"parentEntityTypeList": "Typy nadřazených entit",
+		"statusField": "Stavové pole",
+		"textFilterFields": "Pole textového filtru"
+	},
+	"messages": {
+		"linkConflict": "Konflikt názvu: odkaz nebo pole se stejným názvem již existuje."
+	},
+	"tooltips": {
+		"countDisabled": "Celkový počet se v zobrazení seznamu nezobrazí. Může snížit dobu načítání, když je tabulka DB velká.",
+		"disabled": "Zkontrolujte, zda tuto entitu ve svém systému nepotřebujete.",
+		"entityType": "Base Plus - má panely Aktivity, Historie a Úkoly. \\ N Událost - k dispozici na panelu Kalendář a Aktivity.",
+		"fullTextSearch": "Je nutné spustit Obnovení.",
+		"linkAudited": "Vytvoření souvisejícího záznamu a propojení s existujícím záznamem bude uloženo ve streamu.",
+		"linkMultipleField": "Pole Více odkazů poskytuje praktický způsob úpravy vztahů. Nepoužívejte jej, pokud máte velký počet souvisejících záznamů.",
+		"statusField": "Aktualizace tohoto pole se zaznamenávají ve streamu.",
+		"stream": "Zda má entita Stream.",
+		"textFilterFields": "Pole používaná při textovém vyhledávání."
+	},
+	"options": {
+		"type": {
+			"": "",
+			"Base": "Báze",
+			"Person": "Osoba",
+			"CategoryTree": "Strom kategorií",
+			"Event": "Událost",
+			"BasePlus": "Base Plus",
+			"Company": "Company"
+		}
+	}
+}

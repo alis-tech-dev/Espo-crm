@@ -1,0 +1,20 @@
+{
+	"fields": {
+		"dateStart": "Data rozpoczęcia",
+		"dateEnd": "Data zakończenia",
+		"duration": "Czas trwania",
+		"reminders": "Przypomnienia"
+	},
+	"options": {
+		"status": {
+			"Planned": "Planowane"
+		}
+	},
+	"labels": {
+		"Create LogTime": "Utwórz Odpracováno",
+		"Schedule LogTime": "Zaplanuj Odpracováno "
+	},
+	"presetFilters": {
+		"planned": "Planowane"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"fields": {
+		"createdAt": "Datum",
+		"ipAddress": "IP Adresa",
+		"target": "Cíl",
+		"user": "Uživatel",
+		"userType": "Typ uživatele",
+		"action": "Akce",
+		"targetType": "Typ cíle"
+	},
+	"links": {
+		"target": "Cíl",
+		"user": "Uživatel"
+	},
+	"options": {
+		"action": {
+			"read": "Číst",
+			"update": "Aktualizovat",
+			"delete": "Smazat",
+			"create": "Vytořit"
+		}
+	},
+	"presetFilters": {
+		"onlyMy": "Jenom já"
+	}
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "createdBy"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Název"
+    },
+    {
+        "name": "account",
+        "width": 25,
+        "label": "Firma"
+    },
+    {
+        "name": "stage",
+        "width": 20,
+        "label": "Stav"
+    },
+    {
+        "name": "amount",
+        "width": 20,
+        "align": "right",
+        "label": "Částka za položky"
+    }
+]

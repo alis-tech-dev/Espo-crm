@@ -1,0 +1,238 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "type"
+				},
+				{
+					"name": "upresnujiciNazev"
+				}
+			],
+			[
+				{
+					"name": "nazevObchodni"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevIS"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevManagement"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevShareholders"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevSkoleni"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevRizeni"
+				},
+				false
+			],
+			[
+				{
+					"name": "name"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevKvalita"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevVysledky"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevISO"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevRD"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevProjektova"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevDB"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevCT"
+				},
+				false
+			],
+			[
+				{
+					"name": "nazevUni"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				false
+			],
+			[
+				{
+					"name": "harmonogram"
+				}
+			],
+			[
+				{
+					"name": "shareholdersChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "qualityChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "isoChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "isChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "obchodniChecklist"
+				}
+			],
+			[
+				{
+					"name": "rdChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "dbChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "rizeniNakladuChecklist"
+				},
+				false
+			],
+			[
+				{
+					"name": "attachement"
+				}
+			],
+			[
+				{
+					"name": "zapisProjektova"
+				}
+			],
+			[
+				{
+					"name": "zapisObchodni"
+				}
+			],
+			[
+				{
+					"name": "zapisIS"
+				}
+			],
+			[
+				{
+					"name": "zapisManagement"
+				}
+			],
+			[
+				{
+					"name": "zapisRD"
+				}
+			],
+			[
+				{
+					"name": "zapisISO"
+				}
+			],
+			[
+				{
+					"name": "zapisKvalita"
+				}
+			],
+			[
+				{
+					"name": "zapisCT"
+				}
+			],
+			[
+				{
+					"name": "zapisShareholders"
+				}
+			],
+			[
+				{
+					"name": "zapisSkoleni"
+				}
+			],
+			[
+				{
+					"name": "zapisRizeniNakladu"
+				}
+			],
+			[
+				{
+					"name": "zapisCR"
+				}
+			],
+			[
+				{
+					"name": "zapisDB"
+				}
+			],
+			[
+				{
+					"name": "zapisUni"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

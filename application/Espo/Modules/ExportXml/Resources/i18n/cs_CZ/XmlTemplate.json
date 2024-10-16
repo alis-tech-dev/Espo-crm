@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "body": "Tělo",
+        "title": "Název",
+        "entityType": "Typ entity"
+    }
+}

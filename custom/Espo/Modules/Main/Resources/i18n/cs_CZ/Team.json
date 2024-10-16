@@ -1,0 +1,17 @@
+{
+	"fields": {
+		"layoutSet": "Nastavení vzhledu",
+		"userRole": "Uživatelská role"
+	},
+	"links": {
+		"inboundEmails": "Skupinové e-mailové účty",
+		"layoutSet": "Nastavení vzhledu",
+		"notes": "Poznámky",
+		"roles": "Role"
+	},
+	"tooltips": {
+		"layoutSet": "Poskytuje možnost mít rozložení, která se liší od standardních. Sada rozložení bude použita pro uživatele, kteří mají tento tým nastavený jako Výchozí tým.",
+		"positionList": "Dostupné pozice v tomto týmu. Např. Prodavač, manažer.",
+		"roles": "Přístupové role. Uživatelé tohoto týmu získávají úroveň řízení přístupu z vybraných rolí."
+	}
+}

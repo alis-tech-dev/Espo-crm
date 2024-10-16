@@ -1,0 +1,8 @@
+{
+	"readLoaderClassNameList": [
+		"Espo\\Modules\\Main\\Classes\\FieldProcessing\\ProductionOrder\\ActualQuantityLoader"
+	],
+	"listLoaderClassNameList": [
+		"Espo\\Modules\\Main\\Classes\\FieldProcessing\\ProductionOrder\\ActualQuantityLoader"
+	]
+}

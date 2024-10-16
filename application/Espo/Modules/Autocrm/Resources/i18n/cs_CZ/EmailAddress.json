@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "optOut": "Odhlášený",
+        "invalid": "Neplatný"
+    },
+    "presetFilters": {
+        "orphan": "Sirotek"
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "positionTo",
+        "width": 20,
+        "params": {
+            "required": true
+        }
+    },
+    {
+        "name": "product",
+        "view": "warehouse-management:views/warehouse-item/layout-fields/product"
+    },
+    {
+        "name": "quantity",
+        "width": 15
+    },
+    {
+        "name": "price",
+        "width": 15
+    }
+]
+

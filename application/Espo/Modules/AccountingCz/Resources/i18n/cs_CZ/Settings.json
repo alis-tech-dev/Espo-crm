@@ -1,0 +1,66 @@
+{
+    "fields": {
+        "companyName": "Název společnosti / Jméno a příjmení",
+        "companyBillingAddress": "Fakturační adresa",
+        "companyShippingAddress": "Doručovací adresa",
+        "companySicCode": "IČO",
+        "companyVatId": "DIČ",
+        "companyEmail": "Email",
+        "companyWebsite": "Web",
+        "companyPhoneNumber": "Telefon",
+        "companyBankAccount": "Číslo bankovního účtu",
+        "companyIban": "IBAN",
+        "companyVatPayer": "Plátce DPH",
+        "companyRegisteredIn": "Zapsáno v",
+        "supplierName": "Název / Jméno a příjmení",
+        "supplierAddress": "Adresa",
+        "supplierSicCode": "IČO",
+        "supplierVatId": "DIČ",
+        "supplierVATpayer": "Plátce DPH",
+        "supplierEmail": "Email",
+        "supplierPhone": "Telefon",
+        "supplierWebsite": "Web",
+        "accountNumber": "Číslo účtu",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "invoicePrefix": "Vydané faktury",
+        "invoiceYearNumberFormat": "Formát čísla roku",
+        "invoiceNumberOfMonth": "Číslo měsíce",
+        "invoicePerYear": "Počet faktur ročně / měsíčně",
+        "invoiceDelimiter": "Oddělovník",
+        "invoiceNumberPreview": "Náhled čísla faktur",
+        "proformaInvoicePrefix": "Vydané zálohové faktury",
+        "issuedTaxDocumentPrefix": "Daňové doklady k přijatým platbám",
+        "creditNotePrefix": "Opravné daňové doklady",
+        "supplierInvoicePrefix": "Přijaté faktury",
+        "receivedProformaInvoicePrefix": "Přijaté zálohové faktury",
+        "receivedTaxDocumentPrefix": "Přijaté daňové doklady k přijatým platbám",
+        "revenueReceiptPrefix": "Příjmové doklady",
+        "expenseReceiptPrefix": "Výdejní doklady",
+        "customInvoiceNames": "Vlastní názvy faktur"
+    },
+    "options": {
+        "supplierVATpayer": {
+            "Non VAT payer": "Neplátce DPH",
+            "Identified person": "Identifikovaná osoba",
+            "VAT payer": "Plátce DPH"
+        },
+        "invoiceNumberOfMonth": {
+            "no": "Ne",
+            "yes": "Ano"
+        },
+        "invoiceDelimiter": {
+            "-": "-",
+            "none": "Žádný"
+        }
+    },
+    "labels": {
+        "Company information": "Informace o společnosti",
+        "Others": "Ostatní",
+        "Billing information": "Fakturační údaje",
+        "Contact information": "Kontaktní informace",
+        "Bank account": "Bankovní účet",
+        "Number series of invoices": "Číselná řada faktur",
+        "Invoice prefixes": "Prefixy faktur"
+    }
+}

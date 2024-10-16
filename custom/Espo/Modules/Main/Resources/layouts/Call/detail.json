@@ -1,0 +1,66 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "parent"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "direction"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				}
+			],
+			[
+				{
+					"name": "duration"
+				},
+				{
+					"name": "reminders"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "recordedcall"
+				},
+				{
+					"name": "speechtotext"
+				}
+			],
+			[
+				{
+					"name": "sendmrkemail"
+				},
+				{
+					"name": "account"
+				}
+			],
+			[
+				{
+					"name": "calltranscribe"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

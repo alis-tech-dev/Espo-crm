@@ -1,0 +1,47 @@
+{
+    "labels": {
+        "Create SupplierInvoice": "Create Supplier Invoice",
+        "Tax Classes": "Tax Classes",
+        "Templates": "Templates",
+        "Items": "Items",
+        "Supplier Invoice Items": "Supplier Invoice Items"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Number",
+        "numberA": "Number (auto-incremented)",
+        "account": "Account",
+        "billingAddress": "Billing Address",
+        "billingContact": "Billing Contact",
+        "taxClass": "Tax Class",
+        "taxRate": "Tax Rate",
+        "taxAmount": "Tax Amount",
+        "amount": "Amount",
+        "grandTotalAmount": "Grand Total Amount",
+        "dateInvoiced": "Date Invoiced",
+        "weight": "Weight",
+        "amountConverted": "Amount (converted)",
+        "taxAmountConverted": "Tax Amount (converted)",
+        "grandTotalAmountConverted": "Grand Total Amount (converted)",
+        "taxAmountCurrency": "Tax Amount Currency",
+        "amountCurrency": "Amount Currency",
+        "grandTotalAmountCurrency": "Grand Total Amount Currency",
+        "currency": "Currency",
+        "attachments": "Attachments"
+    },
+    "links": {
+        "items": "Items",
+        "billingContact": "Billing Contact",
+        "account": "Account",
+        "taxClass": "Tax Class"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "In Review": "In Review",
+            "Confirmed": "Confirmed",
+            "Paid": "Paid",
+            "Rejected": "Rejected"
+        }
+    }
+}

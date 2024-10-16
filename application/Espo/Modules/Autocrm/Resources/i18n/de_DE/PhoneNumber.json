@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "optOut": "Abgemeldet",
+        "numeric": "nummerisch",
+        "primary": "primär"
+    },
+    "labels": {
+        "Create PhoneNumber": "Telefonnummer erstellen"
+    }
+}

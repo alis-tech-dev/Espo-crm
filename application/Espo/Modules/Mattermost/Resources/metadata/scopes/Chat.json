@@ -1,0 +1,7 @@
+{
+    "entity": false,
+    "tab": true,
+    "acl": "boolean",
+    "module": "Mattermost",
+    "customizable": false
+}

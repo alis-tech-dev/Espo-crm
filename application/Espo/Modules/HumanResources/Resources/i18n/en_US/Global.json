@@ -1,0 +1,22 @@
+{
+    "scopeNames": {
+        "EducationAndTrainingRecord": "Education and Training Record",
+        "MedicalExamination": "Medical Examination",
+        "OtherEvents": "Other Event",
+        "Password": "Login Credentials Record",
+        "VacationRequest": "Vacation Request",
+        "HumanResource": "HR",
+        "Vacation": "Vacation",
+        "Attendance": "Attendance"
+    },
+    "scopeNamesPlural": {
+        "EducationAndTrainingRecord": "Education and Training Records",
+        "MedicalExamination": "Medical Examinations",
+        "OtherEvents": "Other Events",
+        "Password": "Login Credentials Records",
+        "VacationRequest": "Vacation Requests",
+        "HumanResource": "HR",
+        "Vacation": "Vacations",
+        "Attendance": "Attendances"
+    }
+}

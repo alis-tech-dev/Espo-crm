@@ -1,0 +1,23 @@
+[
+    {
+        "name": "number"
+    },
+    {
+        "name": "printedDate"
+    },
+    {
+        "name": "customerRegistrationNumber"
+    },
+    {
+        "name": "contractorRegistrationNumber"
+    },
+    {
+        "name": "hasDocumentation"
+    },
+    {
+        "name": "document"
+    },
+    {
+        "name": "assignedUser"
+    }
+]

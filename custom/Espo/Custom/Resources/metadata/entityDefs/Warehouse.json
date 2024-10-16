@@ -1,0 +1,394 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "items": {
+            "audited": false
+        },
+        "productionOrder": {
+            "type": "hasOne",
+            "foreign": "warehouse",
+            "entity": "ProductionOrder",
+            "isCustom": true
+        },
+        "productionModelItem": {
+            "type": "hasOne",
+            "foreign": "warehouse",
+            "entity": "ProductionModelItem",
+            "isCustom": true
+        },
+        "product": {
+            "type": "belongsTo",
+            "foreign": "warehouse",
+            "entity": "Product",
+            "isCustom": true
+        },
+        "productCategory": {
+            "type": "belongsTo",
+            "foreign": "warehouses",
+            "entity": "ProductCategory",
+            "audited": false,
+            "isCustom": true
+        },
+        "productionModel": {
+            "type": "belongsTo",
+            "foreign": "warehouse",
+            "entity": "ProductionModel",
+            "isCustom": true
+        },
+        "image": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "accounts": {
+            "type": "hasMany",
+            "relationName": "warehouseAccount",
+            "foreign": "warehouses",
+            "entity": "Account",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "fields": {
+        "quantity": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true
+        },
+        "category": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Product",
+                "Semi-product",
+                "Component"
+            ],
+            "default": "Product",
+            "displayAsLabel": true,
+            "style": {
+                "Product": "success",
+                "Semi-product": "warning",
+                "Component": "primary"
+            },
+            "isCustom": true
+        },
+        "availableQuantity": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "position": {
+            "type": "varchar",
+            "maxLength": 10,
+            "options": [],
+            "isCustom": true
+        },
+        "productionOrder": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "productionModelItem": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "product": {
+            "type": "link",
+            "isCustom": true
+        },
+        "productCategory": {
+            "type": "link",
+            "defaultSelectFilters": []
+        },
+        "isSerialNumber": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "availableBrno": {
+            "notNull": false,
+            "type": "float",
+            "min": null,
+            "isCustom": true,
+            "default": 0
+        },
+        "availablePv": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true,
+            "min": null,
+            "default": 0
+        },
+        "alisId": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "componentsCost": {
+            "type": "currency",
+            "onlyDefaultCurrency": true,
+            "isCustom": true
+        },
+        "costPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "costPriceWithTax": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "productionModel": {
+            "type": "link",
+            "isCustom": true
+        },
+        "descriptionDe": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "descriptionEn": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "dismantlable": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "ean": {
+            "type": "barcode",
+            "len": 255,
+            "codeType": "CODE128",
+            "isCustom": true
+        },
+        "image": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "isArchive": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "isIgnored": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "isModel": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "minimumStockQuantity": {
+            "notNull": false,
+            "type": "float",
+            "default": 10,
+            "isCustom": true
+        },
+        "nameDE": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "ordered": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "priceA": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceB": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceC": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceDamage": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceEndUser": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceJesenoConverted": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceListPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceMargin": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "min": 0,
+            "max": 100,
+            "isCustom": true
+        },
+        "priceMarkup": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "priceRent": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "pricingType": {
+            "type": "enum",
+            "options": [
+                "No Price",
+                "Fixed Sales Price",
+                "Markup over Cost",
+                "Profit Margin",
+                "Same as Cost Price"
+            ],
+            "style": {
+                "No Price": null,
+                "Fixed Sales Price": null,
+                "Markup over Cost": null,
+                "Profit Margin": null,
+                "Same as Cost Price": null
+            },
+            "default": "Fixed Sales Price",
+            "isCustom": true
+        },
+        "productCode": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "qrCode": {
+            "type": "barcode",
+            "len": 255,
+            "codeType": "QRcode",
+            "isCustom": true
+        },
+        "salesPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "salesPriceWithTax": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "accounts": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "taxRate": {
+            "notNull": false,
+            "type": "float",
+            "min": 0,
+            "max": 100,
+            "isCustom": true
+        },
+        "totalPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "productType": {
+            "type": "enum",
+            "options": [
+                "Normal",
+                "Service",
+                "Warehouse Item",
+                "Product (Manufactured)",
+                "Material",
+                "Component"
+            ],
+            "default": "Normal",
+            "style": {
+                "Normal": null,
+                "Service": null,
+                "Warehouse Item": null,
+                "Product (Manufactured)": null,
+                "Material": null,
+                "Component": null
+            },
+            "isCustom": true
+        },
+        "unit": {
+            "type": "enum",
+            "options": [
+                "km",
+                "m",
+                "h",
+                "day",
+                "pcs",
+                "hod",
+                "ks",
+                "set",
+                "kg",
+                "g"
+            ],
+            "default": "ks",
+            "style": {
+                "km": null,
+                "m": null,
+                "h": null,
+                "day": null,
+                "pcs": null,
+                "hod": null,
+                "ks": null,
+                "set": null,
+                "kg": null,
+                "g": null
+            },
+            "isCustom": true
+        },
+        "url": {
+            "type": "url",
+            "isCustom": true
+        },
+        "weight": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "productName": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "isInvisible": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        }
+    }
+}

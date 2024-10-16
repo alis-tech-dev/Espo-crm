@@ -1,0 +1,12 @@
+{
+  "viewExtensions": {
+    "views/site/navbar": [
+      "__APPEND__",
+      "human-resources:extensions/site/navbar"
+    ]
+  },
+  "cssList": [
+    "__APPEND__",
+    "client/modules/human-resources/css/bundled.min.css"
+  ]
+}

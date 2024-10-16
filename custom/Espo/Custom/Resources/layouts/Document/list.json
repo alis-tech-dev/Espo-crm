@@ -1,0 +1,29 @@
+[
+    { "name": "openButton", "width": 5 },
+    {
+        "name": "name",
+        "width": 45,
+        "link": true,
+        "align": "left",
+        "label": "Název"
+    },
+    {
+        "name": "files",
+        "notSortable": true,
+        "label": "Přílohy"
+    },
+    {
+        "name": "status",
+        "label": "Stav"
+    },
+    {
+        "name": "createdAt",
+        "label": "Vytvořeno"
+    },
+    {
+        "name": "obrazekDokumentu",
+        "notSortable": true,
+        "align": "left",
+        "label": "Obrázek"
+    }
+]

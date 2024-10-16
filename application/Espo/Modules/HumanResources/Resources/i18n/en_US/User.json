@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Create HR": "Create HR"
+    },
+    "links": {
+        "humanResource": "HR"
+    },
+    "fields": {
+        "humanResource": "HR"
+    }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "label": "",
+    "rows": [
+      [
+        {
+          "name": "name",
+          "fullWidth": true
+        }
+      ],
+      [
+        {
+          "name": "quote",
+          "fullWidth": true
+        }
+      ],
+      [
+        {
+          "name": "transportOf",
+          "fullWidth": true,
+          "readOnly": true
+        }
+      ],
+      [
+        {
+          "name": "assignment",
+          "fullWidth": true
+        }
+      ]
+    ]
+  }
+]

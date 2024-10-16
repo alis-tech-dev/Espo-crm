@@ -1,0 +1,112 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				false
+			],
+			[
+				{
+					"name": "status"
+				},
+				false
+			],
+			[
+				{
+					"name": "product"
+				},
+				{
+					"name": "productionModel"
+				}
+			],
+			[
+				{
+					"name": "quantityPlanned"
+				},
+				{
+					"name": "quantityProduced"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "attachments"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": null,
+		"hidden": false,
+		"customLabel": "Přehled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "operations"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"tabBreak": true,
+		"tabLabel": null,
+		"hidden": false,
+		"customLabel": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "billOfMaterials"
+				}
+			],
+			[
+				{
+					"name": "tree",
+					"view": "production:views/production-order/fields/production-tree"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"dynamicLogicStyled": null,
+		"tabBreak": true,
+		"tabLabel": null,
+		"hidden": false,
+		"customLabel": "Plán"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "productWarehouse"
+				},
+				{
+					"name": "materialWarehouse"
+				}
+			],
+			[
+				false,
+				{
+					"name": "forceMaterialWarehouse"
+				}
+			]
+		],
+		"dynamicLogicVisible": null,
+		"style": "default",
+		"dynamicLogicStyled": null,
+		"tabBreak": true,
+		"tabLabel": null,
+		"hidden": false,
+		"customLabel": "Konfigurace"
+	}
+]

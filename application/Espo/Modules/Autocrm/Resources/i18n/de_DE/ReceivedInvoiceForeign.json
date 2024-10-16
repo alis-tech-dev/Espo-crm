@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "action": "Aktion",
+        "constantSymbol": "konstantes Symbol",
+        "dateAccepted": "Datum der Annahme",
+        "dateInvoiced": "Datum der Ausstellung",
+        "dueDate": "Fälligkeitsdatum",
+        "duzp": "Datum der steuerpflichtigen Leistung",
+        "number": "Rechnungsnr.",
+        "paymentMethod": "Zahlungsmethode",
+        "specificSymbol": "spezifisches Symbol",
+        "taxRate": "Steuersatz",
+        "taxSelect": "Steuerauswahl",
+        "variableSymbol": "variables Symbol",
+        "account": "Firma",
+        "supplier": "Lieferant"
+    },
+    "links": {
+        "account": "Firma",
+        "supplier": "Lieferant"
+    },
+    "labels": {
+        "Create ReceivedInvoiceForeign": "Rechnung (aus dem Ausland erhalten) erstellen"
+    },
+    "options": {
+        "paymentMethod": {
+            "Převod": "Überweisung",
+            "Hotově": "Barzahlung",
+            "Karta": "Karte",
+            "Dobírka": "Zahlung per Nachnahme",
+            "Zápočet": "Kredit"
+        },
+        "taxRate": {
+            "10%": "5%",
+            "15%": "7%",
+            "5%": "16%",
+            "7%": "19%",
+            "16%": "5%",
+            "19%": "7%"
+        },
+        "taxSelect": {
+            "s daní": "mit MwSt.",
+            "bez daně": "ohne MwSt.",
+            "jen základ": "nur die Grundlagen"
+        }
+    }
+}

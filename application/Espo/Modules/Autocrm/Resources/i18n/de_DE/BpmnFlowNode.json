@@ -1,0 +1,40 @@
+{
+    "labels": {
+        "Reset": "Zurücksetzen",
+        "Create BpmnFlowNode": "Bpmn-Flow-Knotenpunkt erstellen"
+    },
+    "fields": {
+        "processedAt": "verarbeitet von",
+        "elementType": "Elementtyp",
+        "data": "Daten",
+        "deferredAt": "zurückgestellt am",
+        "elementData": "Daten Element",
+        "elementId": "Element ID",
+        "isDeferred": "ist zurückgestellt",
+        "isLocked": "ist gesperrt",
+        "previousFlowNodeElementType": "vorheriger Flussknoten Elementtyp",
+        "number": "Nummer",
+        "proceedAt": "verarbeitet von",
+        "subProcessId": "SUB Prozess-ID",
+        "target": "Ziel",
+        "userTaskId": "Benutzer Aufgaben-ID"
+    },
+    "options": {
+        "status": {
+            "Created": "Erstellt",
+            "Pending": "Schwebend ",
+            "In Process": "In Arbeit",
+            "Processed": "Verarbeitet",
+            "Rejected": "Abgelehnt",
+            "Failed": "Fehlgeschlagen ",
+            "Interrupted": "Unterbrochen"
+        }
+    },
+    "links": {
+        "divergentFlowNode": "divergenter Flussknotenpunkt",
+        "flowchart": "Flussdiagramm",
+        "previousFlowNode": "vorheriger Flussknoten",
+        "process": "Prozess",
+        "target": "Ziel"
+    }
+}

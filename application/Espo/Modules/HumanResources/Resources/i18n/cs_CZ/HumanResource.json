@@ -1,0 +1,82 @@
+{
+    "labels": {
+        "Create HumanResource": "Vytvořit HR"
+    },
+    "fields": {
+        "educationAndTrainingRecords": "Evidence vzdělání a školení",
+        "medicalExaminations": "Zdravotní prohlídky",
+        "otherEvents": "Ostatní události",
+        "passwords": "Záznamy přihlašovacích údajů",
+        "amountOfBasicSalary": "Výše základní mzdy",
+        "variableSalary": "Variabilní mzda",
+        "note": "Poznámky",
+        "listOfCompetencesAndJobDuties": "Seznam kompetencí a pracovních povinností",
+        "employmentRelationship": "Pracovní poměr",
+        "job": "Pracovní funkce",
+        "employmentContract": "Smlouvy + dodatky",
+        "birthdate": "Datum narození",
+        "permanentResidence": "Trvalé bydliště",
+        "permanentResidenceStreet": "Trvalé bydliště Ulice",
+        "permanentResidenceCity": "Trvalé bydliště Město",
+        "permanentResidenceState": "Trvalé bydliště Stát",
+        "permanentResidenceCountry": "Trvalé bydliště Země",
+        "permanentResidencePostalCode": "Trvalé bydliště PSČ",
+        "permanentResidenceMap": "Trvalé bydliště Mapa",
+        "bankAccountNumber": "Bankovní účet",
+        "birthplace": "Místo narození",
+        "birthCertificateNumber": "Rodné číslo",
+        "citizenship": "Státní občanství",
+        "healthInsuranceCompany": "Zdravotní pojišťovna",
+        "workStartDate": "Den nástupu do práce",
+        "employmentPeriod": "Pracovního poměr na dobu (neurčitou / určitou do  xx yy zzzz)",
+        "contractDate": "Datum smlouvy",
+        "testtime": "Zkušební doba (počet měsíců)",
+        "guaranteedSalary": "Skupina zaručené mzdy",
+        "vacationRequests": "Žádosti o dovolenou",
+        "vacationDays": "Počet dnů dovolené na rok",
+        "vacationDaysLeft": "Zbývající počet dnů dovolené",
+        "vacations": "Dovolené",
+        "user": "Uživatel",
+        "phoneNumber": "Telefon",
+        "emailAddress": "Email"
+    },
+    "links": {
+        "educationAndTrainingRecords": "Evidence vzdělání a školení",
+        "medicalExaminations": "Zdravotní prohlídky",
+        "otherEvents": "Ostatní události",
+        "passwords": "Záznamy přihlašovacích údajů",
+        "vacationRequests": "Žádosti o dovolenou",
+        "vacations": "Dovolené",
+        "user": "Uživatel"
+    },
+    "options": {
+        "employmentRelationship": {
+            "full-time": "Zaměstnanec",
+            "part-time": "Brigáda",
+            "gainfully employed person": "OSVČ"
+        },
+	"job": {
+            "Managing Director": "Jednatel",
+            "Administrative Worker": "Administrativní pracovník",
+            "Technician": "Technik",
+            "Salesperson": "Obchodník"
+        },
+        "testtime": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "-": "-"
+        },
+        "guaranteedSalary": {
+            "------": "------",
+            "1.": "1.",
+            "2.": "2.",
+            "3.": "3.",
+            "4.": "4.",
+            "5.": "5.",
+            "6.": "6.",
+            "7.": "7.",
+            "8.": "8."
+        }
+    }
+}

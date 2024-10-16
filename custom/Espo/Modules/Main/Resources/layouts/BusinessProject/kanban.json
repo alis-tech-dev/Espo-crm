@@ -1,0 +1,32 @@
+[
+	{
+		"name": "bOnumber",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "rentDeadline"
+	},
+	{
+		"name": "orderBanner"
+	},
+	{
+		"name": "specialBanner"
+	},
+	{
+		"name": "readyToGoBanner"
+	},
+	{
+		"name": "deadline"
+	},
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "account1"
+	},
+	{
+		"name": "alert"
+	}
+]

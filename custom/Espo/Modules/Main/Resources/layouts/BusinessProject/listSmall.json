@@ -1,0 +1,30 @@
+[
+	{
+		"name": "bOnumber",
+		"width": 12,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "approvalDate",
+		"width": 13,
+		"align": "left"
+	},
+	{
+		"name": "internDeadline",
+		"width": 13,
+		"align": "left"
+	},
+	{
+		"name": "status",
+		"width": 15,
+		"align": "left"
+	},
+	{
+		"name": "progress"
+	}
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "numberA"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Název"
+    },
+    {
+        "name": "warehouseFrom",
+        "label": "Ze skladu"
+    },
+    {
+        "name": "warehouseTo",
+        "label": "Na sklad"
+    },
+    {
+        "name": "status",
+        "label": "Stav"
+    },
+    {
+        "name": "createdAt",
+        "label": "Vytvořeno"
+    }
+]

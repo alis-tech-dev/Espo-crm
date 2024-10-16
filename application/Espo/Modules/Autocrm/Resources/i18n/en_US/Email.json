@@ -1,0 +1,13 @@
+{
+    "takenStatus": "Taken Status",
+    "labels": {
+        "View in Browser": "View email in Browser"
+    },
+    "options": {
+        "takenStatus": {
+            "Accepted": "Accepted",
+            "BeingHandled": "Being handled",
+            "Taken": "Taken"
+        }
+    }
+}

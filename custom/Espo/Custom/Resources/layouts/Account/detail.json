@@ -1,0 +1,129 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "website"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ],
+            [
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "sicCode"
+                },
+                {
+                    "name": "dic"
+                },
+                {
+                    "name": "idph"
+                }
+            ],
+            [
+                {
+                    "name": "partner"
+                },
+                {
+                    "name": "enduser"
+                },
+                {
+                    "name": "processed"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Přehled"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "priceType"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "defaultPriceList"
+                },
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "issupplier"
+                },
+                {
+                    "name": "language"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Detaily",
+        "hidden": false,
+        "customLabel": "Detaily"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "vizualization"
+                },
+                {
+                    "name": "shield"
+                },
+                {
+                    "name": "rtls"
+                },
+                {
+                    "name": "camerasystem"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Focus"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Popis"
+    }
+]

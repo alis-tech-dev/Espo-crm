@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "product": "Produkt",
+        "quantity": "Celkové množství",
+        "quantityReserved": "Rezervované množství",
+        "quantityAvailable": "Dostupné množství",
+        "parent": "Rodič",
+        "position": "Pozice",
+        "price": "Cena",
+        "priceCurrency": "Cena (měna)",
+        "priceConverted": "Cena (konvertováno)",
+        "positionFrom": "Z pozice",
+        "positionTo": "Na pozici",
+        "warehouse": "Sklad"
+    },
+    "links": {
+        "product": "Produkt",
+        "parent": "Rodič"
+    }
+}

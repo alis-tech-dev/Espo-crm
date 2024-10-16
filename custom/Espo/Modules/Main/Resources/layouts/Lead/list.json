@@ -1,0 +1,35 @@
+[
+	{
+		"name": "createdAt"
+	},
+	{
+		"name": "accountName",
+		"width": 15,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"width": 15,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "leadType",
+		"width": 15,
+		"align": "left"
+	},
+	{
+		"name": "status",
+		"width": 10,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser",
+		"width": 10,
+		"align": "left"
+	},
+	{
+		"name": "addressCountry"
+	}
+]

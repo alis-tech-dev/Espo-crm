@@ -1,0 +1,149 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "title"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "leadType"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "headoffice"
+                }
+            ],
+            [
+                {
+                    "name": "website"
+                },
+                {
+                    "name": "catalogLead"
+                }
+            ],
+            [
+                {
+                    "name": "jesenoLead"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "statusPartner"
+                }
+            ],
+            [
+                {
+                    "name": "accountName"
+                },
+                {
+                    "name": "address"
+                }
+            ],
+            [
+                {
+                    "name": "source"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "lastContact"
+                },
+                {
+                    "name": "nextContact"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "opportunityAmount"
+                },
+                {
+                    "name": "opportunityAmountConverted"
+                }
+            ],
+            [
+                {
+                    "name": "details"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "alisVisualization"
+                },
+                {
+                    "name": "alisAnticollision"
+                },
+                {
+                    "name": "alisAntiCollisionSafetyBar"
+                },
+                {
+                    "name": "firstContact"
+                }
+            ],
+            [
+                {
+                    "name": "alisVisualizationDetails"
+                },
+                {
+                    "name": "alisAnticollisionDetails"
+                },
+                {
+                    "name": "alisAntiCollisionSafetyBarDetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Oblast zájmu"
+    }
+]

@@ -1,0 +1,68 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			],
+			[
+				{
+					"name": "quote"
+				},
+				{
+					"name": "transportOf"
+				},
+				{
+					"name": "isTemplate"
+				}
+			],
+			[
+				{
+					"name": "images"
+				}
+			],
+			[
+				{
+					"name": "assignment"
+				}
+			],
+			[
+				{
+					"name": "solution"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "imagesField"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Vložení fotografií - Typ II"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "priceList"
+				},
+				false,
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": ""
+	}
+]

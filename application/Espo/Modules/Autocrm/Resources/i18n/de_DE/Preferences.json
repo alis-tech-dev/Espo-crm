@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "calendarViewDataList": "Kalender Datenliste anzeigen",
+        "dashletsOptions": "Dashlets-Optionen",
+        "importParams": "Parameter importieren",
+        "isPortalUser": "ist Portal Benutzer",
+        "presetFilters": "voreingestellte Filter",
+        "sharedCalendarUserList": "Gemeinsame Kalender-Benutzerliste",
+        "quickViewContextMenu": "Ersetzen des Kontextmenüs durch eine Schnellansicht-Aktion",
+        "disableIntroGuide": "Deaktivieren Sie den Einführungsassistenten"
+    },
+    "labels": {
+        "Create Preferences": "Favoriten erstellen",
+        "AutoCRM": "AutoCRM"
+    }
+}

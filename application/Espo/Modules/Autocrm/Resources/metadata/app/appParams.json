@@ -1,0 +1,5 @@
+{
+	"userList": {
+		"className": "Espo\\Modules\\Autocrm\\Classes\\AppParams\\UserList"
+	}
+}

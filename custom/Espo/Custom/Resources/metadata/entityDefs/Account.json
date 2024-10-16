@@ -1,0 +1,82 @@
+{
+    "links": {
+        "quotes": {
+            "audited": false
+        },
+        "salesOrders": {
+            "audited": true
+        },
+        "opportunities": {
+            "audited": false
+        },
+        "productDatabases": {
+            "type": "hasMany",
+            "foreign": "account",
+            "entity": "ProductDatabase",
+            "audited": false,
+            "isCustom": true
+        },
+        "complaintBook": {
+            "type": "belongsTo",
+            "foreign": "account",
+            "entity": "ComplaintBook",
+            "isCustom": true
+        },
+        "warehouses": {
+            "type": "hasMany",
+            "relationName": "warehouseAccount",
+            "foreign": "accounts",
+            "entity": "Warehouse",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "productDatabases": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "priceType": {
+            "default": null,
+            "style": {
+                "": null,
+                "A": null,
+                "B": null,
+                "C": null,
+                "Jeseno": null
+            }
+        },
+        "complaintBook": {
+            "type": "link"
+        },
+        "warehouses": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        }
+    }
+}

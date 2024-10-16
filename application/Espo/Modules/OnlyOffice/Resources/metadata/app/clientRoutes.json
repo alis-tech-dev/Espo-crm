@@ -1,0 +1,9 @@
+{
+    "Document/onlyOffice/:id": {
+        "params": {
+            "controller": "OnlyOffice",
+            "action": "openDocument"
+        },
+        "order": 1
+    }
+}

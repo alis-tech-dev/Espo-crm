@@ -1,0 +1,11 @@
+[
+	"status",
+	"assignedUser",
+	"teams",
+	"approved",
+	"type",
+	"name",
+	"dateStart",
+	"dateEnd",
+	"hours"
+]

@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"companyId": "Firmen ID",
+		"receivedInvoices": "Empfangene Rechnungen",
+		"receivedInvoiceForeigns": "Empfangene Rechnung (Fremd)",
+		"acceptedPayments": "Steuerbeleg für empfangene Rechnungen"
+	},
+	"links": {
+		"contactsPrimary": "Kontakte (primär)",
+		"quotes": "Angebote",
+		"quoteItems": "Angebote Artikel",
+		"salesOrders": "Kundenauftrag",
+		"salesOrderItems": "Artikel des Kundenauftrags",
+		"invoices": "Rechnungen",
+		"invoiceItems": "Rechnungsartikel",
+		"receivedInvoices": "Empfangene Rechnungen",
+		"receivedInvoiceForeigns": "Empfangene Rechnung (Fremd)",
+		"acceptedPayments": "Steuerbeleg für empfangene Rechnungen"
+	},
+	"labels": {
+		"Fill From ARES": "Ausfüllen von ARES",
+		"Verify VAT Number": "USt-IdNr. überprüfen"
+	},
+	"messages": {
+		"missingCompanyId": "Bitte geben Sie Ihre Firmen-ID ein",
+		"couldNotFindCompanyBySicCode": "Unternehmen mit der ID \"{sicCode}\" konnte nicht gefunden werden.",
+		"couldNotFindCompanyByName": "Unternehmen mit dem Namen \"{name}\" konnte nicht gefunden werden.",
+		"vatNumberIsValid": "USt-IdNr. ist gültig",
+		"vatNumberIsInvalid": "USt-IdNr. ist ungültig",
+		"vatVerificationFailed": "USt-IdNr. konnte nicht überprüft werden",
+		"vatIdInvalidformat": "USt-IdNr. hat ein ungültiges Format"
+	}
+}

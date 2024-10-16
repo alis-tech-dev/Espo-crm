@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/css/main.css"],
+  "sourcesContent": [".quote-conversion-modal .entry-label {\n\tfont-weight: bold;\n}\n\n.quote-conversion-modal .entry-items {\n\tmargin-left: 20px;\n}\n"],
+  "mappings": "AAAA,CAAC,uBAAuB,CAAC,YACxB,YAAa,GACd,CAEA,CAJC,uBAIuB,CAAC,YACxB,YAAa,IACd",
+  "names": []
+}

@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "parent": "bezieht sich auf"
+    },
+    "links": {
+        "emailFolder": "E-Mail Ordner"
+    }
+}

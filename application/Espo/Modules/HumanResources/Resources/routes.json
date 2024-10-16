@@ -1,0 +1,12 @@
+[
+    {
+      "route": "/Attendance/action/createOrUpdate",
+      "method": "post",
+      "actionClassName": "Espo\\Modules\\HumanResources\\Api\\Attendance\\AttendanceEndPoint"
+    },
+    {
+        "route": "/HumanResources/Attendance/:entityType/:id",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\HumanResources\\Api\\VacationRequestApproval\\Handle"
+    }
+]

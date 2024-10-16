@@ -1,0 +1,24 @@
+[
+    {
+        "name": "name",
+        "view": "main:views\/supplier-order-item\/fields\/name",
+        "label": "Name"
+    },
+    {
+        "name": "stockLocation",
+        "align": "left",
+        "isEditable": true
+    },
+    {
+        "name": "quantity",
+        "label": "quantity"
+    },
+    {
+        "name": "deliveredQuantity",
+        "label": "DeliveredQuantity"
+    },
+    {
+        "name": "deliveredBefore",
+        "label": "DeliveredBefore"
+    }
+]

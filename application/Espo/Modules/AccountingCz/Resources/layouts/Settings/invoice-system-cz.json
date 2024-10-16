@@ -1,0 +1,68 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "companyName"
+                },
+                {
+                    "name": "companyWebsite"
+                }
+            ],
+            [
+                {
+                    "name": "companyEmail"
+                },
+                {
+                    "name": "companyPhoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "companyBillingAddress"
+                },
+                {
+                    "name": "companyShippingAddress"
+                }
+            ],
+            [
+                {
+                    "name": "companySicCode"
+                },
+                {
+                    "name": "companyVatId"
+                }
+            ],
+            [
+                {
+                    "name": "companyBankAccount"
+                },
+                {
+                    "name": "companyIban"
+                }
+            ],
+            [
+                {
+                    "name": "companyRegisteredIn"
+                },
+                {
+                    "name": "companyVatPayer"
+                }
+            ]
+        ],
+        "index": 1,
+        "label": "Company information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "customInvoiceNames"
+                },
+                false
+            ]
+        ],
+        "index": 2,
+        "label": "Others"
+    }
+]

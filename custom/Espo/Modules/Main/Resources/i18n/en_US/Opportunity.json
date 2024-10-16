@@ -1,0 +1,19 @@
+{
+	"fields": {
+		"businessProjects": "Zakázka",
+		"account1": "Firma",
+		"salesPerson": "Jméno obchodníka",
+		"enduser": "End-user",
+		"estimation": "Odhad ceny",
+		"estimationCurrency": "Odhad ceny (Měna)",
+		"estimationConverted": "Odhad ceny (Převedeno)",
+		"deadline": "Deadline",
+		"lastContacted": "Poslední kontakt",
+		"details": "Poznámky",
+		"lastContact": "Poslední kontakt"
+	},
+	"links": {
+		"businessProjects": "Zakázka",
+		"account1": "Firma"
+	}
+}

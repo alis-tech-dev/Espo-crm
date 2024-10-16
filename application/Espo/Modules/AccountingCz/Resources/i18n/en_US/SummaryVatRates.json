@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "taxRate": "Rate",
+        "basis": "Base",
+        "vat": "VAT"
+    }
+}

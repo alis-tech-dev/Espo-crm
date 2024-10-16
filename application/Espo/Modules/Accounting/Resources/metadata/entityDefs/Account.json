@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"defaultInvoiceDueDate": {
+			"type": "int"
+		}
+	},
+	"links": {
+		"quotes": {
+			"type": "hasMany",
+			"entity": "Quote",
+			"foreign": "account",
+			"audited": true
+		},
+		"salesOrders": {
+			"type": "hasMany",
+			"entity": "SalesOrder",
+			"foreign": "account",
+			"audited": true
+		},
+		"purchaseOrders": {
+			"type": "hasMany",
+			"entity": "PurchaseOrder",
+			"foreign": "account",
+			"audited": true
+		},
+		"invoices": {
+			"type": "hasMany",
+			"entity": "Invoice",
+			"foreign": "account",
+			"audited": true
+		}
+	}
+}

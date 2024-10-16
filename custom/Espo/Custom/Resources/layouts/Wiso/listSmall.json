@@ -1,0 +1,20 @@
+[
+    {
+        "name": "salesOrder1",
+        "label": "Sales Order (salesOrder1)"
+    },
+    {
+        "name": "warehouseItem1",
+        "label": "WarehouseItem"
+    },
+    {
+        "name": "quantity",
+        "align": "left",
+        "label": "Quantity",
+        "isEditable": true
+    },
+    {
+        "name": "stockLocation",
+        "label": "StockLocation"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "Create SupplierOrderItem": "Vytvořit Položka objednávky u dodavatele"
+    },
+    "fields": {
+        "quantity": "Množství",
+        "catalogNumber": "Kód produktu",
+        "minimalQuantity": "Minimální zásoba v ks",
+        "totalQuantity": "Počet na skladě",
+        "recentSales": "Prodeje za 90 dní",
+        "orderedQuantity": "Objednané množství"
+    }
+}

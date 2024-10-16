@@ -1,0 +1,103 @@
+{
+	"views": {
+		"list": "crm:views/task/list",
+		"detail": "crm:views/task/detail"
+	},
+	"dynamicLogic": {
+		"fields": {
+			"stavProhrana": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "Lost"
+						}
+					]
+				}
+			},
+			"stavZamitnuta": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "Rejected"
+						}
+					]
+				}
+			},
+			"conditions": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isFalse",
+							"attribute": "noConditions"
+						},
+						{
+							"type": "isFalse",
+							"attribute": "czechConditions"
+						}
+					]
+				}
+			},
+			"accomodationCost": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "accommodation"
+						}
+					]
+				}
+			},
+			"czechConditions": {
+				"visible": null
+			},
+			"conditionsCZ": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isFalse",
+							"attribute": "noConditions"
+						},
+						{
+							"type": "isTrue",
+							"attribute": "czechConditions"
+						}
+					]
+				}
+			}
+		}
+	},
+	"bottomPanels": {
+		"detail": [
+			"__APPEND__",
+			{
+				"name": "items",
+				"label": "Zadání",
+				"view": "main:views/quote/record/panels/items",
+				"notRefreshable": true,
+				"sticked": true,
+				"isForm": true
+			}
+		],
+		"edit": [
+			"__APPEND__",
+			{
+				"name": "items",
+				"label": "Zadání",
+				"view": "main:views/quote/record/panels/items",
+				"notRefreshable": true,
+				"sticked": true,
+				"isForm": true
+			}
+		]
+	},
+	"kanbanViewMode": false,
+	"color": null,
+	"iconClass": "fas fa-file-invoice-dollar",
+	"gridLayoutType": "record",
+	"bottomLayoutType": "default",
+	"isWide": true
+}

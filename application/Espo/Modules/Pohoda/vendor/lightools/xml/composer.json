@@ -1,0 +1,15 @@
+{
+    "name": "lightools/xml",
+    "description": "Simple and safe parsing of XML and HTML sources.",
+    "license": ["MIT"],
+    "require": {
+        "php": ">=7.1",
+        "ext-dom": "*"
+    },
+    "require-dev": {
+        "nette/tester": "1.*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}

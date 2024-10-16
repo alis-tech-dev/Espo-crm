@@ -1,0 +1,14 @@
+{
+	"labels": {
+		"Create Warehouse": "Vytvořit Sklad"
+	},
+	"fields": {
+		"products": "Produkty",
+		"count": "Počet",
+		"product": "Produkt"
+	},
+	"links": {
+		"products": "Produkty",
+		"product": "Produkt"
+	}
+}

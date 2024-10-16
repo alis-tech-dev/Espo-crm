@@ -1,0 +1,68 @@
+{
+    "labels": {
+        "Create PurchaseOrder": "Bestellung erstellen",
+        "Tax Classes": "Steuerklassen",
+        "Templates": "Vorlagen",
+        "Items": "Artikel",
+        "Totals": "Summen"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Bestellnummer",
+        "numberA": "Bestellnummer (automatisch)",
+        "account": "Organisation",
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "billingContact": "Rechnungskontakt",
+        "shippingContact": "Lieferkontakt",
+        "taxClass": "Steuerklasse",
+        "taxRate": "Steuersatz",
+        "taxAmount": "Steuerbetrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Rabatt",
+        "grandTotalAmount": "Gesamtbetrag",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "preDiscountedAmountConverted": "Betrag vor Rabatt (umgerechnet)",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "shippingCostCurrency": "Währung der Versandkosten",
+        "taxAmountCurrency": "Währung des Steuerbetrags",
+        "discountAmountCurrency": "Währung des Rabattbetrags",
+        "amountCurrency": "Währung des Betrags",
+        "preDiscountedAmountCurrency": "Währung des Betrags vor Rabatt",
+        "grandTotalAmountCurrency": "Währung des Gesamtbetrags",
+        "currency": "Währung",
+        "dateOrdered": "Bestelldatum"
+    },
+    "links": {
+        "items": "Artikel",
+        "billingContact": "Kontakt",
+        "shippingContact": "Lieferkontakt",
+        "account": "Organisation",
+        "taxClass": "Steuerklasse",
+        "invoices": "Ausgestellte Rechnungen",
+        "quote": "Angebot",
+        "supplierInvoices": "Eingegangene Rechnungen"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Ready": "Bereit",
+            "Active": "Aktiv",
+            "Approved": "Genehmigt",
+            "Completed": "Abgeschlossen",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert"
+        },
+        "paymentMethod": {
+            "bank": "Banküberweisung",
+            "card": "Karte",
+            "cash": "Bargeld",
+            "cod": "Nachnahme"
+        }
+    }
+}

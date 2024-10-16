@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "Create RequestForm": "Vytvořit Žádanka na nákup"
+    },
+    "fields": {
+        "attachments": "Přílohy",
+        "isAllowed": "Is allowed"
+    },
+    "options": {
+        "status": {
+            "Čeká na schválení": "Čeká na schváleni",
+            "Schváleno": "Schváleno",
+            "Neschváleno": "Neschváleno",
+            "approved": "Schváleno",
+            "disapproved": "Neschváleno",
+            "pending": "Čeká na schválení",
+            "panding": "Čeká na schválení"
+        }
+    },
+    "tooltips": {
+        "amount": "If the amount is less than 10,000 CZK, the request  will be approved automatically."
+    }
+}

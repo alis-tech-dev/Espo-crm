@@ -1,0 +1,94 @@
+{
+	"actualFields": [""],
+	"notActualFields": ["isValid", "status", "description", "date"],
+	"fieldDefs": {
+		"type": "varchar",
+		"len": 16,
+		"notNull": false,
+		"unique": false,
+		"binary": true
+	},
+	"fields": {
+		"isValid": {
+			"type": "bool"
+		},
+		"status": {
+			"type": "enum",
+			"options": ["payerOk", "payerNotOk", "vatIdOk", "primary", "Unknown"],
+			"style": {
+				"payerOk": "success",
+				"payerNotOk": "danger",
+				"notFound": "info",
+				"Unknown": "warning"
+			}
+		},
+		"description": {
+			"type": "enum",
+			"options": ["payerOk", "payerNotOk", "vatIdOk", "primary", "Unknown"]
+		},
+		"date": {
+			"type": "date"
+		}
+	},
+	"params": [
+		{
+			"name": "required",
+			"type": "bool",
+			"default": false
+		},
+		{
+			"name": "default",
+			"type": "varchar"
+		},
+		{
+			"name": "options",
+			"type": "multiEnum",
+			"tooltip": "optionsVarchar"
+		},
+		{
+			"name": "copyToClipboard",
+			"type": "bool",
+			"default": false
+		},
+		{
+			"name": "audited",
+			"type": "bool",
+			"tooltip": true
+		},
+		{
+			"name": "readOnly",
+			"type": "bool"
+		},
+		{
+			"name": "validateFormat",
+			"type": "bool",
+			"default": true,
+			"view": "accounting:views/admin/field-manager/fields/vat-id/validate-format"
+		},
+		{
+			"name": "validateExistence",
+			"type": "bool",
+			"default": false,
+			"tooltip": true
+		},
+		{
+			"name": "optionsPath",
+			"type": "varchar",
+			"hidden": true
+		}
+	],
+	"validationList": ["required", "valid"],
+	"mandatoryValidationList": ["maxLength"],
+	"validatorClassNameMap": {
+		"required": "Espo\\Modules\\Accounting\\Classes\\FieldValidators\\VatId\\Required",
+		"maxLength": "Espo\\Modules\\Accounting\\Classes\\FieldValidators\\VatId\\MaxLength",
+		"valid": "Espo\\Modules\\Accounting\\Classes\\FieldValidators\\VatId\\Valid"
+	},
+	"filter": true,
+	"personalData": true,
+	"textFilter": true,
+	"textFilterForeign": true,
+	"dynamicLogicOptions": true,
+	"fullTextSearch": true,
+	"view": "accounting:views/fields/vat-id"
+}

@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "productDatabases": "Databáze produktů",
+        "priceType": "Cena",
+        "complaintBook": "Complaint Book",
+        "warehouses": "Warehouses"
+    },
+    "links": {
+        "productDatabases": "Databáze produktů",
+        "complaintBook": "Complaint Book",
+        "warehouses": "Warehouses"
+    },
+    "options": {
+        "priceType": {
+            "": "Žádná",
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "Jeseno": "Jeseno"
+        }
+    }
+}

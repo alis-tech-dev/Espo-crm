@@ -1,0 +1,17 @@
+{
+    "scopeNames": {
+        "Chat": "Chat"
+    },
+    "scopeNamesPlural": {
+        "Chat": "Chat"
+    },
+    "labels": {
+        "Force Mattermost Sync": "Vynutit synchronizaci s Mattermost"
+    },
+    "messages": {
+        "mattermostDisabled": "Chat Mattermost je pro tohoto uživatele zakázán. Ujistěte se, že má uživatel povolenou synchronizaci Mattermost a že je integrace Mattermost nakonfigurována v systémové administraci.",
+        "mattermostRequiresEmail": "Synchronizace s Mattermost vyžaduje nastavenou e-mailovou adresu. Prosím, vyplňte e-mailovou adresu a zkuste to znovu.",
+        "mattermostRequiresFirstName": "Synchronizace s Mattermost vyžaduje nastavené křestní jméno. Prosím, vyplňte křestní jméno a zkuste to znovu.",
+        "mattermostRequiresPassword": "Synchronizace s Mattermost vyžaduje vyplněné heslo při zakládání nového uživatele. Prosím, vyplňte heslo a zkuste to znovu."
+    }
+}

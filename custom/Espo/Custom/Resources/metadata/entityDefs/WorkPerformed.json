@@ -1,0 +1,57 @@
+{
+    "fields": {
+        "parent": {
+            "type": "linkParent",
+            "entityList": [
+                "ProductionOrder",
+                "SalesOrder"
+            ]
+        },
+        "producedAmount": {
+            "required": false,
+            "min": null
+        },
+        "productionOrder": {
+            "required": false,
+            "defaultSelectFilters": []
+        },
+        "dateStart": {
+            "default": "javascript: return this.dateTime.getNow(1);",
+            "minuteStep": 30
+        },
+        "assignedUser": {
+            "required": false,
+            "defaultSelectFilters": {}
+        },
+        "stockLocation": {
+            "type": "enum",
+            "options": [
+                "brno",
+                "pv"
+            ],
+            "style": {
+                "brno": null,
+                "pv": null
+            },
+            "default": "pv",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "parent": {
+            "type": "belongsToParent",
+            "foreign": "worksPerformed",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "dateEnd",
+        "order": "asc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

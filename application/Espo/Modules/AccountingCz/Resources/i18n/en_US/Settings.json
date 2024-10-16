@@ -1,0 +1,66 @@
+{
+    "fields": {
+        "companyName": "Company name / First and Last Name",
+        "companyBillingAddress": "Billing address",
+        "companyShippingAddress": "Shipping address",
+        "companySicCode": "Company registration number",
+        "companyVatId": "VAT number",
+        "companyEmail": "Email",
+        "companyWebsite": "Web",
+        "companyPhoneNumber": "Phone",
+        "companyBankAccount": "Bank account number",
+        "companyIban": "IBAN",
+        "companyVatPayer": "Vat payer",
+        "companyRegisteredIn": "Registered in",
+        "supplierName": "Name / First and Last Name",
+        "supplierAddress": "Address",
+        "supplierSicCode": "Company ID",
+        "supplierVatId": "VAT ID",
+        "supplierVATpayer": "VAT payer",
+        "supplierEmail": "Email",
+        "supplierPhone": "Phone",
+        "supplierWebsite": "Website",
+        "accountNumber": "Account Number",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "invoicePrefix": "Issued invoices",
+        "invoiceYearNumberFormat": "Year number format",
+        "invoiceNumberOfMonth": "Month number",
+        "invoicePerYear": "Number of invoices per year / month",
+        "invoiceDelimiter": "Delimiter",
+        "invoiceNumberPreview": "Invoice number preview",
+        "proformaInvoicePrefix": "Issued proforma invoices",
+        "issuedTaxDocumentPrefix": "Tax documents for received payments",
+        "creditNotePrefix": "Credit notes",
+        "supplierInvoicePrefix": "Received invoices",
+        "receivedProformaPrefix": "Received proforma invoices",
+        "receivedTaxDocumentPrefix": "Tax documents for received payments",
+        "revenueReceiptPrefix": "Revenue receipts",
+        "expenseReceiptPrefix": "Expense receipts",
+        "customInvoiceNames": "Custom invoice names"
+    },
+    "options": {
+        "supplierVATpayer": {
+            "Non VAT payer": "Non-VAT payer",
+            "Identified person": "Identified person",
+            "VAT payer": "VAT payer"
+        },
+        "invoiceNumberOfMonth": {
+            "no": "No",
+            "yes": "Yes"
+        },
+        "invoiceDelimiter": {
+            "-": "-",
+            "none": "None"
+        }
+    },
+    "labels": {
+        "Company information": "Company information",
+        "Others": "Others",
+        "Billing information": "Billing information",
+        "Contact information": "Contact information",
+        "Bank account": "Bank account",
+        "Number series of invoices": "Number series of invoices",
+        "Invoice prefixes": "Invoice prefixes"
+    }
+}

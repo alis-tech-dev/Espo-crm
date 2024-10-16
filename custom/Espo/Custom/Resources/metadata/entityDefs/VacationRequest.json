@@ -1,0 +1,165 @@
+{
+    "fields": {
+        "humanResource": {
+            "defaultSelectFilters": {
+                "isActual": {
+                    "type": "isTrue",
+                    "data": {
+                        "type": "isTrue"
+                    }
+                }
+            },
+            "defaultAttributes": {
+                "humanResourceId": "66a365dac6c4092a8",
+                "humanResourceName": "Josef Hrabal"
+            },
+            "required": false,
+            "readOnlyAfterCreate": false,
+            "readOnly": true
+        },
+        "statusOfApproval": {
+            "readOnly": false,
+            "style": {
+                "AwaitingApproval": "primary",
+                "Approved": "success",
+                "Rejected": "danger",
+                "Returned": "warning"
+            },
+            "options": [
+                "AwaitingApproval",
+                "Approved",
+                "Rejected",
+                "Returned"
+            ],
+            "default": "AwaitingApproval",
+            "tooltip": true
+        },
+        "type": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Paid",
+                "NonPaid",
+                "Exchange",
+                "Medical",
+                "Sick",
+                "Illness",
+                "PaidAbsence"
+            ],
+            "style": {
+                "Paid": null,
+                "NonPaid": null,
+                "Exchange": null,
+                "Medical": null,
+                "Sick": null,
+                "Illness": null,
+                "PaidAbsence": null
+            },
+            "default": "Paid",
+            "isCustom": true
+        },
+        "dateStart": {
+            "notNull": false,
+            "type": "datetime",
+            "required": true,
+            "minuteStep": 30,
+            "isCustom": true,
+            "useNumericFormat": true,
+            "after": null
+        },
+        "from": {
+            "required": false
+        },
+        "dateEnd": {
+            "notNull": false,
+            "type": "datetime",
+            "required": true,
+            "after": "dateStart",
+            "useNumericFormat": true,
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "to": {
+            "required": false
+        },
+        "name": {
+            "required": true,
+            "options": []
+        },
+        "assignedUser": {
+            "defaultSelectFilters": {
+                "isActive": {
+                    "type": "isTrue",
+                    "data": {
+                        "type": "isTrue"
+                    }
+                }
+            }
+        },
+        "humanResources": {
+            "type": "link",
+            "defaultSelectFilters": {
+                "isActive": {
+                    "type": "isTrue",
+                    "data": {
+                        "type": "isTrue"
+                    }
+                }
+            },
+            "required": false,
+            "defaultAttributes": null,
+            "tooltip": true
+        },
+        "timeBeforeVacation": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "assignedUser",
+            "field": "daysOff",
+            "view": "views/fields/foreign-float",
+            "isCustom": true
+        },
+        "timeAfterVacation": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "timeVacation": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "vacationDays": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "readOnly": true,
+            "isCustom": true
+        },
+        "isApproved": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "humanResources": {
+            "type": "belongsTo",
+            "foreign": "vacationRequests",
+            "entity": "HumanResources",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

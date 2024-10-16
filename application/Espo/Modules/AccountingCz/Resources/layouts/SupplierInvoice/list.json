@@ -1,0 +1,25 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "number"
+    },
+    {
+        "name": "originalNumber"
+    },
+    {
+        "name": "account"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "dueDate"
+    },
+    {
+        "name": "grandTotalAmount",
+        "align": "right"
+    }
+]

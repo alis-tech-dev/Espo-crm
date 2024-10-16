@@ -1,0 +1,20 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "creditNotes.summaryVatRates": {
+        "disabled": true
+    },
+    "payments": {
+        "index": 0
+    },
+    "proformaInvoices": {
+        "index": 1
+    },
+    "revenueReceipts": {
+        "index": 2
+    },
+    "creditNotes": {
+        "index": 3
+    }
+}

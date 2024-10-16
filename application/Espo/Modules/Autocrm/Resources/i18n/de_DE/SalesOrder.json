@@ -1,0 +1,89 @@
+{
+    "labels": {
+        "Taxes": "Steuern",
+        "Shipping Providers": "Versanddienstleister",
+        "Add Item": "Artikel hinzufügen",
+        "Templates": "Vorlagen",
+        "Items": "Artilek",
+        "Email PDF": "E-Mail PDF",
+        "Sales Order Items": "Kundenauftrags-Positionen"
+    },
+    "fields": {
+        "number": "Nummer",
+        "numberA": "Nummer (automatisch hochgezählt)",
+        "account": "Firma",
+        "opportunity": "Verkaufschance",
+        "billingAddress": "Rechnungsadresse",
+        "billingContact": "Rechnungs-Kontakt",
+        "shippingContact": "Versand Kontakt",
+        "tax": "MwSt.",
+        "taxRate": "Steuersatz",
+        "shippingCost": "Versandkosten",
+        "shippingProvider": "Versanddienstleister",
+        "taxAmount": "MwSt. Betrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Abzug",
+        "grandTotalAmount": "Gesamtbetrag",
+        "itemList": "Artikelliste",
+        "dateOrdered": "Datum der Bestellung",
+        "dateInvoiced": "Rechnungsdatum",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "preDiscountedAmountConverted": "Betrag vor Abzug (umgerechnet)",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "shippingCostCurrency": "Versandkosten Währung",
+        "taxAmountCurrency": "Steuerbetrag Währung",
+        "discountAmountCurrency": "Rabattbetrag Währung",
+        "amountCurrency": "Betrag Währung",
+        "preDiscountedAmountCurrency": "Betrag vor Abzug Währung",
+        "grandTotalAmountCurrency": "umgerechnet Währung",
+        "currency": "Währung",
+        "acceptedPayment": "akzeptierte Zahlung",
+        "action": "Aktion",
+        "bankAccount": "Bankverbindung",
+        "constantSymbol": "konstantes Symbol",
+        "dueDate": "Fälligkeitsdatum",
+        "duzp": "DUZP",
+        "note": "Notiz",
+        "paymentMethod": "Zahlungsmethode",
+        "textAfterItems": "Text nach Artikeln",
+        "textBeforeItems": "Text vor Artikeln",
+        "variableSymbol": "variables Symbol"
+    },
+    "links": {
+        "items": "Artikel",
+        "billingContact": "Rechnungs-Kontakt",
+        "shippingContact": "Versand Kontakt",
+        "shippingProvider": "Versanddienstleister",
+        "opportunity": "Verkaufschance",
+        "account": "Firma",
+        "tax": "Steuer",
+        "invoices": "Rechnungen",
+        "acceptedPayment": "akzeptierte Zahlung"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert",
+            "Confirmed": "Bestätigt",
+            "In Review": "In Durchsicht",
+            "Paid": "Bezahlt"
+        },
+        "paymentMethod": {
+            "Převod": "Převod",
+            "Hotově": "Hotově",
+            "Karta": "Karta",
+            "Dobírka": "Dobírka",
+            "Zápočet": "Zápočet"
+        }
+    },
+    "presetFilters": {
+        "actual": "Aktuell",
+        "completed": "Abgeschlossen"
+    }
+}

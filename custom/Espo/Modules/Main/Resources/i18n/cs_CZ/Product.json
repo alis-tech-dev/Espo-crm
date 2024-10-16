@@ -1,0 +1,29 @@
+{
+	"fields": {
+		"minimumStockQuantity": "Minimální skladové množství",
+		"priceJesenoCurrency": "Price Jeseno",
+		"priceJesenoConverted": "Price Jeseno",
+		"priceJesenoConvertedCurrency": "Price Jeseno (Měna)",
+		"priceJesenoConvertedConverted": "Price Jeseno (Převedeno)",
+		"componentsCost": "Cena komponent",
+		"componentsCostCurrency": "Cena komponent (Měna)",
+		"componentsCostConverted": "Cena komponent (Převedeno)",
+		"unit": "Jednotka"
+	},
+	"options": {
+		"pricingType": {
+			"Same as List": "Totožný s ceníkem",
+			"Fixed": "Stálý",
+			"Discount from List": "Sleva z ceníku",
+			"Markup over Cost": "Nákladová přirážka",
+			"Profit Margin": "Marže"
+		},
+		"unit": {
+			"pcs": "pcs",
+			"km": "km",
+			"h": "h",
+			"unit": "unit",
+			"day": "day"
+		}
+	}
+}

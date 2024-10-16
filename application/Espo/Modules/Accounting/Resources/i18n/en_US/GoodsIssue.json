@@ -1,0 +1,5 @@
+{
+    "messages": {
+        "goodsIssueIsProcessing": "Cannot cancel Sales Order, because there is some processing Goods Issue"
+    }
+}

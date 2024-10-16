@@ -1,0 +1,17 @@
+{
+	"labels": {
+		"Create RequestItem": "Vytvořit Položka žádanky na nákup"
+	},
+	"fields": {
+		"requestForms": "Žádanky na nákup",
+		"requestForm": "Žádanka na nákup",
+		"products": "Položky",
+		"product": "Položky"
+	},
+	"links": {
+		"requestForms": "Žádanky na nákup",
+		"requestForm": "Žádanka na nákup",
+		"products": "Položky",
+		"product": "Položky"
+	}
+}

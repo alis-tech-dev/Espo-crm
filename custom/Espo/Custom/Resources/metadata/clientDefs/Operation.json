@@ -1,0 +1,12 @@
+{
+    "relationshipPanels": {
+        "productionModel": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": "#000000",
+    "iconClass": "fas fa-wrench",
+    "isWide": false,
+    "gridViewMode": false
+}

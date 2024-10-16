@@ -1,0 +1,7 @@
+<?php
+
+namespace Espo\Modules\AccountingCz\Controllers;
+
+class ProformaInvoice extends \Espo\Modules\Accounting\Classes\Abstract\Controllers\InvoiceLike
+{
+}

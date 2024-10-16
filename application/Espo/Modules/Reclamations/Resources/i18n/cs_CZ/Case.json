@@ -1,0 +1,9 @@
+{
+	"fields": {
+		"reclamation": "Reklamace"
+	},
+	"labels": {
+		"Create Reclamation": "Vytvořit reklamaci",
+		"Reclamation created": "Reklamace vytvořena"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create MedicalExamination": "Create Medical Examination"
+    },
+    "fields": {
+        "dateOfLastInspection": "Date of Last Inspection",
+        "numberOfYearsForRepetition": "Number of Years for Repetition",
+        "dateOfTheNextInspection": "Date of the Next Inspection"
+    }
+}

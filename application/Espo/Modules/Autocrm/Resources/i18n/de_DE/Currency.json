@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "rate": "Kurs"
+    },
+    "labels": {
+        "Create Currency": "Währung erstellen"
+    }
+}

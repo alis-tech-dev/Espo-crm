@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "humanResourceApprovalRole": "Role for Vacation Request Approval",
+        "humanResourceApprovalTeam": "Team Assigned to Approved Vacations"
+    },
+    "label": {
+        "HumanResources Settings": "HR Module Settings"
+    }
+}

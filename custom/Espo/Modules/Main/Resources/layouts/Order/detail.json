@@ -1,0 +1,51 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "number"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "parentSupplier"
+				}
+			],
+			[
+				{
+					"name": "dateOrderd"
+				},
+				{
+					"name": "validTill"
+				}
+			],
+			[
+				{
+					"name": "businessProject1"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "attached"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": ""
+	}
+]

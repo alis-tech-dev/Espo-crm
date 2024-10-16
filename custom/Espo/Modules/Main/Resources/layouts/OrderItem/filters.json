@@ -1,0 +1,12 @@
+[
+	"account",
+	"order",
+	"product",
+	"orderStatus",
+	"quantity",
+	"listPriceConverted",
+	"unitPriceConverted",
+	"amountConverted",
+	"createdBy",
+	"createdAt"
+]

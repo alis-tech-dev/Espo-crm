@@ -1,0 +1,135 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "number"
+				}
+			],
+			[
+				{
+					"name": "account"
+				},
+				{
+					"name": "quote"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "productionStatus"
+				}
+			],
+			[
+				{
+					"name": "dateOrdered"
+				},
+				{
+					"name": "deadline"
+				}
+			],
+			[
+				false,
+				{
+					"name": "internalDeadline"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "billingAddress"
+				},
+				{
+					"name": "shippingAddress"
+				}
+			],
+			[
+				{
+					"name": "billingContact"
+				},
+				{
+					"name": "shippingContact"
+				}
+			],
+			[
+				{
+					"name": "taxClass"
+				},
+				false
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Details"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "items",
+					"noLabel": true
+				}
+			]
+		],
+		"style": "default",
+		"label": "Items"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "amountCurrency"
+				},
+				{
+					"name": "preDiscountedAmount"
+				}
+			],
+			[
+				false,
+				{
+					"name": "discountAmount"
+				}
+			],
+			[
+				false,
+				{
+					"name": "amount"
+				}
+			],
+			[
+				false,
+				{
+					"name": "taxAmount"
+				}
+			],
+			[
+				false,
+				{
+					"name": "shippingCost"
+				}
+			],
+			[
+				false,
+				{
+					"name": "grandTotalAmount"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Totals"
+	}
+]

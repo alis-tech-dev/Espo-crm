@@ -1,0 +1,124 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "suppliers.contacts": {
+        "disabled": true
+    },
+    "suppliers.opportunities": {
+        "disabled": true
+    },
+    "suppliers.cases": {
+        "disabled": true
+    },
+    "suppliers.documents": {
+        "disabled": true
+    },
+    "suppliers.campaignLogRecords": {
+        "disabled": true
+    },
+    "suppliers.targetLists": {
+        "disabled": true
+    },
+    "suppliers.portalUsers": {
+        "disabled": true
+    },
+    "suppliers.products": {
+        "disabled": true
+    },
+    "suppliers.quotes": {
+        "disabled": true
+    },
+    "suppliers.salesOrders": {
+        "disabled": true
+    },
+    "suppliers.purchaseOrders": {
+        "disabled": true
+    },
+    "suppliers.invoices": {
+        "disabled": true
+    },
+    "suppliers.priceLists": {
+        "disabled": true
+    },
+    "suppliers.logTimes": {
+        "disabled": true
+    },
+    "suppliers.orders": {
+        "disabled": true
+    },
+    "suppliers.productsSupplier": {
+        "disabled": true
+    },
+    "suppliers.qualityReports": {
+        "disabled": true
+    },
+    "suppliers.productDatabases": {
+        "disabled": true
+    },
+    "priceLists.products": {
+        "disabled": true
+    },
+    "priceLists.accounts": {
+        "disabled": true
+    },
+    "priceLists.quotes": {
+        "disabled": true
+    },
+    "productionModels.attachments": {
+        "disabled": true
+    },
+    "productionModels.billOfMaterials": {
+        "disabled": true
+    },
+    "productionModels.operations": {
+        "disabled": true
+    },
+    "_tabBreak_0": {
+        "index": 0,
+        "tabBreak": true,
+        "tabLabel": "Sklady"
+    },
+    "stockInfo": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 1
+    },
+    "priceLists": {
+        "index": 2
+    },
+    "_tabBreak_1": {
+        "index": 3,
+        "tabBreak": true,
+        "tabLabel": "Výdejky"
+    },
+    "goodsIssues": {
+        "index": 4
+    },
+    "_tabBreak_2": {
+        "index": 5,
+        "tabBreak": true,
+        "tabLabel": "Příjemky"
+    },
+    "goodsReceipts": {
+        "index": 7
+    },
+    "_tabBreak_3": {
+        "index": 8,
+        "tabBreak": true,
+        "tabLabel": "TPV"
+    },
+    "productionModels": {
+        "index": 9
+    },
+    "_tabBreak_4": {
+        "index": 10,
+        "tabBreak": true,
+        "tabLabel": "Stream"
+    },
+    "stream": {
+        "sticked": true,
+        "index": 11
+    }
+}

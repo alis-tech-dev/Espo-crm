@@ -1,0 +1,52 @@
+{
+	"fields": {
+		"account": "Firma",
+		"amount": "Částka",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"assignment": "Zadání",
+		"discountAmount": "Sleva",
+		"discountAmountConverted": "Sleva (převedeno)",
+		"discountAmountCurrency": "Sleva v měně",
+		"grandTotalAmount": "Celková částka",
+		"grandTotalAmountConverted": "Celková částka (převedeno)",
+		"grandTotalAmountCurrency": "Celková částka v měně",
+		"images": "Vložení fotografií - Typ I",
+		"itemList": "Položky test",
+		"preDiscountedAmount": "Částka před slevou",
+		"preDiscountedAmountConverted": "Částka před slevou (převedeno)",
+		"preDiscountedAmountCurrency": "Částka před slevou v měně",
+		"quoteStatus": "Stav nabídky",
+		"solution": "Řešení",
+		"tax": "Sazba DPH",
+		"taxAmount": "Částka DPH",
+		"taxAmountConverted": "Částka DPH (převedeno)",
+		"taxAmountCurrency": "Částka DPH v měně",
+		"imagesField": "Fotografie",
+		"priceList": "Price List",
+		"isTemplate": "Vzor",
+		"manufacturing": "Test - Manufacturing"
+	},
+	"labels": {
+		"Create UseCase": "Vytvořit Use Case"
+	},
+	"links": {
+		"images": "Obrázky",
+		"items": "Položky",
+		"tax": "Sazba DPH",
+		"manufacturing": "Test - Manufacturing"
+	},
+	"tooltips": {
+		"itemList": "test"
+	},
+	"options": {
+		"priceList": {
+			"C": "Group C",
+			"B": "Group B",
+			"A": "Group A",
+			"E": "End-User",
+			"R": "Rent",
+			"Skoda": "Škoda"
+		}
+	}
+}

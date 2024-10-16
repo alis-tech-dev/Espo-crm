@@ -1,0 +1,21 @@
+{
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Convert to Sales Order",
+					"name": "convertToSalesOrder",
+					"action": "convertToSalesOrder",
+					"style": "warning",
+					"acl": "create",
+					"aclScope": "SalesOrder",
+					"initFunction": "init",
+					"data": {
+						"handler": "quote-conversion:handlers/quote/convert-to-sales-order"
+					}
+				}
+			]
+		}
+	}
+}

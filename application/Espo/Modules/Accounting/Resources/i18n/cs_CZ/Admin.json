@@ -1,0 +1,28 @@
+{
+    "fieldTypes": {
+        "sequenceNumber": "Číslo řady",
+		"vatId": "DIČ"
+    },
+    "fields": {
+        "format": "Formát čísla",
+		"nextNumber": "Další číslo",
+		"padLength": "Minimální počet číslic",
+		"reset": "Resetovat číslo",
+		"validateFormat": "Validovat formát",
+		"validateExistence": "Validovat existenci"
+    },
+    "descriptions": {
+        "salesOrderSettingsDescription": "Nastavení skladu pro automatické workflow objednávek"
+    },
+    "labels": {
+        "Sales Order Settings": "Nastavení objednávek"
+    },
+    "options": {
+        "reset": {
+            "Daily": "Denně",
+            "Monthly": "Měsíčně",
+            "Yearly": "Ročně",
+            "Never": "Nikdy"
+        }
+    }
+}

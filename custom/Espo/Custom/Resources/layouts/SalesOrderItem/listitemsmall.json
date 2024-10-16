@@ -1,0 +1,11 @@
+[
+    {
+        "name": "name",
+        "label": "Name"
+    },
+    {
+        "name": "quantity",
+        "width": 4,
+        "label": "Quantity"
+    }
+]

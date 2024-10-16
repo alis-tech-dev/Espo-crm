@@ -1,0 +1,34 @@
+{
+	"fields": {
+		"addAllTeamUsers": "Pro všechny uživatele týmu",
+		"emailAddress": "Emailová adresa",
+		"fetchSince": "Načíst od",
+		"fetchData": "Načíst data",
+		"fromName": "Od jména",
+		"keepFetchedEmailsUnread": "Nechat načtené e-maily jako nepřečtené",
+		"sentFolder": "Odeslaná složka",
+		"smtpIsForMassEmail": "SMTP pro hromadný e-mail",
+		"smtpIsShared": "SMTP je sdíleno",
+		"smtpPassword": "SMTP heslo",
+		"smtpUsername": "SMTP uživatelské jméno",
+		"status": "Stav",
+		"storeSentEmails": "Uložit odeslané e-maily",
+		"teams": "Týmy",
+		"useImap": "Načíst e-maily",
+		"useSmtp": "Použít SMTP"
+	},
+	"links": {
+		"assignToUser": "Přiřadit uživateli",
+		"emails": "Emaily",
+		"filters": "Filtry"
+	},
+	"tooltips": {
+		"addAllTeamUsers": "E-maily se budou zobrazovat ve složce Doručená pošta všech uživatelů určených týmů.",
+		"monitoredFolders": "Více složek by mělo být odděleno čárkou.",
+		"smtpIsForMassEmail": "Pokud je zaškrtnuto, pak bude SMTP k dispozici pro hromadný e-mail.",
+		"smtpIsShared": "Je-li toto políčko zaškrtnuto, uživatelé budou moci odesílat e-maily pomocí tohoto protokolu SMTP. Dostupnost je kontrolována rolemi prostřednictvím oprávnění skupinového e-mailového účtu.",
+		"storeSentEmails": "Odeslané e-maily budou uloženy na serveru IMAP.",
+		"teams": "E-maily týmů budou přiřazeny.",
+		"useSmtp": "Možnost odesílat e-maily."
+	}
+}

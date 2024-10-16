@@ -1,0 +1,1 @@
+"use strict";var n=Object.defineProperty;var a=(s,e,r)=>e in s?n(s,e,{enumerable:!0,configurable:!0,writable:!0,value:r}):s[e]=r;var t=(s,e,r)=>(a(s,typeof e!="symbol"?e+"":e,r),r);define(["views/settings/record/edit"],s=>class extends s{constructor(){super(...arguments);t(this,"layoutName","human-resource")}});

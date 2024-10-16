@@ -1,0 +1,54 @@
+{
+	"labels": {
+		"Create RequestForm": "Vytvořit Žádanka na nákup"
+	},
+	"fields": {
+		"druh": "Druh",
+		"projects": "Projekty",
+		"businessProjects": "Zakázky",
+		"purpose": "Účel nákupu",
+		"description": "Poznámka",
+		"priority": "Priorita",
+		"requestItems": "Položka žádanky na nákup",
+		"status": "Stav žádanky",
+		"reasonDeclined": "Důvod zamítnutí",
+		"approved": "Schváleno",
+		"disapproved": "Zamítnuto",
+		"amount": "Celková částka",
+		"amountCurrency": "Celková částka (Měna)",
+		"amountConverted": "Celková částka (Převedeno)",
+		"orderStatus": "Stav objednávky",
+		"invoice": "Faktura",
+		"number": "Číslo"
+	},
+	"options": {
+		"druh": {
+			"-": "-",
+			"Výroba": "Materiál do výroby",
+			"Vývoj": "Materiál na vývoj",
+			"Režijní": "Režijní materiál",
+			"Ostatní": "Ostatní"
+		},
+		"priority": {
+			"Nízká": "Nízká",
+			"Střední": "Střední",
+			"Vysoká": "Vysoká"
+		},
+		"status": {
+			"Čeká na schválení": "Čeká na schválení",
+			"Schváleno": "Schváleno",
+			"Neschváleno": "Neschváleno"
+		},
+		"orderStatus": {
+			"Not ordered": "Neobjednáno",
+			"Ordered": "Objednáno",
+			"Done": "Dokončeno",
+			"Archive": "Archív"
+		}
+	},
+	"links": {
+		"projects": "Projekty",
+		"businessProjects": "Zakázky",
+		"requestItems": "Položka žádanky na nákup"
+	}
+}

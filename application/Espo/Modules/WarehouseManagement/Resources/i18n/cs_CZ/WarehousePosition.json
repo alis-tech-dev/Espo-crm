@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "warehouse": "Sklad"
+    },
+    "labels": {
+        "Create WarehousePosition": "Vytvořit skladovou pozici"
+    },
+    "links": {
+        "warehouse": "Sklad",
+        "items": "Položky"
+    }
+}

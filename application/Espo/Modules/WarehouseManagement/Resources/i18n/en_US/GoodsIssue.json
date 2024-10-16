@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "warehouse": "Warehouse",
+        "selectedItems": "Selected Items",
+        "items": "Items to issue",
+        "status": "Status"
+    },
+    "labels": {
+        "Process": "Process",
+        "Create GoodsIssue": "Create Goods Issue",
+        "Create GoodsReceipt": "Create Goods Receipt",
+        "Items": "Items",
+        "Reserve": "Reserve",
+        "Revert Goods Issue": "Revert Goods Issue",
+        "Goods Issues": "Goods Issues"
+    },
+    "messages": {
+        "reversionName": "Reversion of %s"
+    },
+    "tooltips": {
+        "selectedItems": "Selected products to issue.",
+        "items": "Automatically chosen warehouse items to issue based on availability of selected items. Will be selected after reservation."
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "Reserving": "Reserving",
+            "Reserved": "Reserved",
+            "Processing": "Processing",
+            "Issued": "Issued",
+            "Canceled": "Canceled"
+        }
+    }
+}

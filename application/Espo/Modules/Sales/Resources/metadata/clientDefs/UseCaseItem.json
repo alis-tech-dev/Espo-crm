@@ -1,0 +1,29 @@
+{
+    "controller": "controllers/record",
+    "acl": "sales:acl/use-case-item",
+    "views": {
+        "list": "sales:views/use-case-item/list"
+    },
+    "recordViews": {
+        "list": "sales:views/use-case-item/record/list"
+    },
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Use Cases",
+                    "link": "#UseCase",
+                    "acl": "read",
+                    "aclScope": "UseCase"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": ["name", "align", "width", "link", "view", "customLabel"]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "messages": {
+        "infoMention": "Zadejte ** @ uživatelské jméno ** a uveďte uživatele v příspěvku.",
+        "infoSyntax": "K dispozici syntaxe markdown"
+    },
+    "syntaxItems": {
+        "code": "kód",
+        "multilineCode": "víceřádkový kód",
+        "emphasizedText": "zvýrazněný text",
+        "deletedText": "smazaný text",
+        "link": "odkaz"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "fields": {
+        "status": "Stav",
+        "contacts": "Kontakty",
+        "inboundEmail": "Skupinový e-mailový účet",
+        "lead": "Potenciál",
+        "attachments": "Přílohy"
+    },
+    "links": {
+        "inboundEmail": "Skupinový e-mailový účet",
+        "account": "Organizace",
+        "contact": "Kontakt (primární)",
+        "Contacts": "Kontakty",
+        "meetings": "Schůzky",
+        "calls": "Volání",
+        "tasks": "Úlohy",
+        "emails": "Emaily",
+        "articles": "Články znalostní báze",
+        "lead": "Potenciál",
+        "attachments": "Přílohy"
+    },
+    "labels": {
+        "Close": "Uzavřít",
+        "Reject": "Odmítnout",
+        "Closed": "Uzavřeno",
+        "Rejected": "Odmítnuto"
+    }
+}

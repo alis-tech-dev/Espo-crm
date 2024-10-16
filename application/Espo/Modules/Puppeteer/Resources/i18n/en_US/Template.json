@@ -1,0 +1,25 @@
+{
+    "labels": {
+        "Default": "Default Editor",
+        "Ace": "Ace Editor",
+        "Raw": "Raw Editor"
+    },
+    "messages": {
+        "Default": "User-friendly WYSIWYG editor, provides basic features like text formatting, inserting images, links, tables and more.",
+        "Ace": "Advanced editor with syntax highlighting, code folding, auto-completion and more, made for developers.",
+        "Raw": "Editor without any formatting. For advanced users only, that want to write HTML code directly."
+    },
+    "tooltips": {
+        "headerPosition": "Has no effect in Puppeteer PDF engine. Instead, use styling to position the header.",
+        "footerPosition": "Has no effect in Puppeteer PDF engine. Instead, use styling to position the footer."
+    },
+    "fields": {
+        "type": "Editor Type"
+    },
+    "options": {
+        "type": {
+            "Default": "Default Editor",
+            "Raw": "Raw Editor"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "kanbanViewMode": true,
+    "color": "#ff0000",
+    "iconClass": "fas fa-bomb",
+    "isWide": false,
+    "gridViewMode": true,
+    "relationshipPanels": {
+        "users": {
+            "layout": null
+        }
+    }
+}

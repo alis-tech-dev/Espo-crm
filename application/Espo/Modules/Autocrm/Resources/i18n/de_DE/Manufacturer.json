@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "website": "Webseite",
+        "products": "Produkte"
+    },
+    "links": {
+        "calls": "Anrufe",
+        "tasks": "Aufgaben",
+        "products": "Produkte"
+    },
+    "labels": {
+        "Create Manufacturer": "Hersteller anlegen"
+    }
+}

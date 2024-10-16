@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "price": "Preis",
+        "priceCurrency": "Preis (Währung)",
+        "priceConverted": "Preis (umgerechnet)",
+        "warehouse": "Lager",
+        "batchNumber": "Chargennummer",
+        "product": "Produkt",
+        "quantity": "Menge",
+        "quantityInt": "Menge Int",
+        "stockRecord": "Bestandsaufnahme"
+    },
+    "links": {
+        "warehouse": "Lager",
+        "product": "Produkt",
+        "stockRecord": "Lagerbestand aufnehmen"
+    },
+    "labels": {
+        "Create StockRecordItem": "Artikelbestand erstellen"
+    }
+}

@@ -1,0 +1,3 @@
+{
+	"beforeSaveCustomScript": "$codeOrig = entity\\attributeFetched('product.origName');\ncode = '$codeOrig';\nentity\\setAttribute('code', $codeOrig);"
+}

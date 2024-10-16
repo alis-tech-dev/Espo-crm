@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create ExternalAccount": "Externes Konto erstellen"
+    },
+    "fields": {
+        "data": "Daten",
+        "enabled": "aktiviert",
+        "isLocked": "ist gesperrt"
+    }
+}

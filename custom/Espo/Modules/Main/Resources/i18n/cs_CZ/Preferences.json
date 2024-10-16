@@ -1,0 +1,39 @@
+{
+	"fields": {
+		"assignmentEmailNotificationsIgnoreEntityTypeList": "Oznámení o přiřazení e-mailu",
+		"assignmentNotificationsIgnoreEntityTypeList": "Oznámení o přiřazení v aplikaci",
+		"autoFollowEntityTypeList": "Automatické sledování",
+		"doNotFillAssignedUserIfNotRequired": "Při vytváření záznamu předem nevyplňujte přiřazeného uživatele",
+		"emailReplyForceHtml": "Odpovědět emailem v HTML",
+		"emailReplyToAllByDefault": "Odpovědět všem jako výchozí",
+		"emailUseExternalClient": "Použít externího emailového klienta",
+		"exportDelimiter": "Exportovat oddělovač",
+		"followCreatedEntities": "Automaticky sledovat vytvořené záznamy",
+		"followCreatedEntityTypeList": "Automaticky sledovat vytvořené záznamy konkrétních typů entit",
+		"followEntityOnStreamPost": "Automaticky sledovat záznam po zveřejnění ve streamu",
+		"presetFilters": "Přednastavné filtry",
+		"isPortalUser": "Uživatel portálu",
+		"sharedCalendarUserList": "Sdílený seznam uživatelů kalendáře",
+		"tabColorsDisabled": "Zakázat barvy záložek",
+		"tabList": "Seznam záložek",
+		"useCustomTabList": "Seznam vlastních záložek",
+		"smtpUsername": "Uživatelské jméno",
+		"theme": "Téma",
+		"dashboardLayout": "Rozvržení Dashboardu",
+		"scopeColorsDisabled": "Zakázat barvy rozsahu",
+		"receiveStreamEmailNotifications": "Emailová upozornění na příspěvky a aktualizace stavu",
+		"receiveMentionEmailNotifications": "Emailová oznámení o zmínkách v příspěvcích"
+	},
+	"labels": {
+		"Create Preferences": "Vytvořit předvolby",
+		"Misc": "Různé",
+		"Reset Dashboard to Default": "Nastavit Dashboard na Výchozí",
+		"User Interface": "Uživatelské prostředí",
+		"Locale": "Lokální nastavení"
+	},
+	"tooltips": {
+		"doNotFillAssignedUserIfNotRequired": "Při vytvoření záznamu nebude přiřazený uživatel vyplněn vlastním uživatelem, pokud není toto pole povinné.",
+		"followCreatedEntities": "Při vytváření nových záznamů budou automaticky sledovány, i když budou přiřazeny jinému uživateli.",
+		"followCreatedEntityTypeList": "Při vytváření nových záznamů vybraných typů entit budou automaticky sledovány, i když budou přiřazeny jinému uživateli."
+	}
+}

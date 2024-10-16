@@ -1,0 +1,13 @@
+[
+	"status",
+	"assignedUser",
+	"createdAt",
+	"name",
+	"projectPriority",
+	"details",
+	"description",
+	"predictedStart",
+	"predictedEnd",
+	"dateStart",
+	"dateEnd"
+]

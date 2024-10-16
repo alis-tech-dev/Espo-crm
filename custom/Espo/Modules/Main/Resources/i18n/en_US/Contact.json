@@ -1,0 +1,34 @@
+{
+	"fields": {
+		"crmcontact": "Kontakt k CRM",
+		"screenshot": "Webový Screenshot",
+		"imporFromDB": "Nalitý nový kontakt",
+		"callAgain": "Zavolat znovu",
+		"possibleSales": "Možný obchod",
+		"companyName": "CompanyName",
+		"www": "Www",
+		"partner": "Partner",
+		"contractors": "Dodavatelé",
+		"businessProjects": "Zakázky",
+		"installations": "Instalace",
+		"sendMassEmails": "Zasílat hormadné e-maily?",
+		"firma": "Account",
+		"endUser": "End-User",
+		"category": "Kategorie"
+	},
+	"links": {
+		"orders": "Objednávky",
+		"contractors": "Dodavatelé",
+		"businessProjects": "Zakázky",
+		"installations": "Instalace",
+		"firma": "Account"
+	},
+	"options": {
+		"category": {
+			"-": "-",
+			"A": "A",
+			"B": "B",
+			"C": "C"
+		}
+	}
+}

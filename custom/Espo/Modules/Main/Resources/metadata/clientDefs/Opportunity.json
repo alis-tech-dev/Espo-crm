@@ -1,0 +1,24 @@
+{
+	"kanbanViewMode": true,
+	"color": "#9fc77e",
+	"iconClass": "fas fa-dollar-sign",
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Convert to Quote",
+					"name": "convertToQuote",
+					"action": "convertToQuote",
+					"style": "warning",
+					"acl": "create",
+					"aclScope": "Quote",
+					"data": {
+						"handler": "main:handlers/opportunity/convert-to-quote"
+					},
+					"init": "initFunction"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-hammer",
+    "isWide": true,
+    "relationshipPanels": {
+        "billOfMaterials": {
+            "layout": null
+        },
+        "warehouse": {
+            "layout": null
+        }
+    }
+}

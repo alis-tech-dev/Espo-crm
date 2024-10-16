@@ -1,0 +1,12 @@
+{
+    "relationshipPanels": {
+        "salesOrder": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "far fa-file-alt",
+    "isWide": false,
+    "gridViewMode": false
+}

@@ -1,0 +1,22 @@
+{
+    "scopeNames": {
+        "EducationAndTrainingRecord": "Evidence vzdělání a školení",
+        "MedicalExamination": "Zdravotní prohlídka",
+        "OtherEvents": "Ostatní událost",
+        "Password": "Záznam přihlašovacích údajů",
+        "VacationRequest": "Žádost o dovolenou",
+        "HumanResource": "HR",
+        "Vacation": "Dovolená",
+        "Attendance": "Docházka"
+    },
+    "scopeNamesPlural": {
+        "EducationAndTrainingRecord": "Evidence vzdělání a školení",
+        "MedicalExamination": "Zdravotní prohlídky",
+        "OtherEvents": "Ostatní události",
+        "Password": "Záznamy přihlašovacích údajů",
+        "VacationRequest": "Žádosti o dovolené",
+        "HumanResource": "HR",
+        "Vacation": "Dovolené",
+        "Attendance": "Docházka"
+    }
+}

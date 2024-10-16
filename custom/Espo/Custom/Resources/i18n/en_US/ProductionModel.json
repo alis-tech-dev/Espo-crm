@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "operation": "Operace",
+        "numberA": "Číslo postupu",
+        "warehouse": "defaultOfWarehouse"
+    },
+    "links": {
+        "operation": "Operace",
+        "warehouse": "defaultOfWarehouse"
+    }
+}

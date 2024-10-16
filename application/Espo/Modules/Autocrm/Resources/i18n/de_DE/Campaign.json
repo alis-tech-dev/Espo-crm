@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "bouncedPercentage": "geplatzt Prozentsatz",
+        "clickedPercentage": "angeklickter Prozentsatz",
+        "openedPercentage": "geöffneter Prozentsatz",
+        "optedOutPercentage": "Ausgewählter Prozentsatz",
+        "revenueCurrency": "Umsatz (Währung)"
+    },
+    "links": {
+        "trackingUrls": "Tracking URL's"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "warehouse": "Sklad",
+        "items": "Položky",
+        "status": "Stav",
+        "selectedItems": "Požadované položky"
+    },
+    "labels": {
+        "Process": "Zpracovat",
+        "Create GoodsIssue": "Vytvořit výdejku",
+        "Create GoodsReceipt": "Vytvořit příjemku",
+        "Items": "Položky",
+        "Reserve": "Rezervovat",
+        "Revert Goods Issue": "Vrátit výdejku",
+        "Goods Issues": "Výdejky"
+    },
+    "messages": {
+        "reversionName": "Vrácení výdejky %s"
+    },
+    "tooltips": {
+        "selectedItems": "Vybrané produkty k vyskladnění.",
+        "items": "Automaticky vybrané skladové položky podle dostupnosti vybraných položek. Vybere se po rezervaci."
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "Reserving": "Rezervování",
+            "Reserved": "Rezervováno",
+            "Processing": "Zpracovává se",
+            "Issued": "Vyskladněno",
+            "Canceled": "Zrušeno"
+        }
+    }
+}

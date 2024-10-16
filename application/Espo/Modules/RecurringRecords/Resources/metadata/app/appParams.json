@@ -1,0 +1,5 @@
+{
+    "recurringRecordsEntityList": {
+        "className": "Espo\\Modules\\RecurringRecords\\Classes\\AppParams\\RecurringRecordsEntityList"
+    }
+}

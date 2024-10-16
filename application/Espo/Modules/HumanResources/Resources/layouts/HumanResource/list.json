@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "emailAddress",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "job",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "employmentRelationship",
+        "width": 15,
+        "align": "left"
+    }
+]

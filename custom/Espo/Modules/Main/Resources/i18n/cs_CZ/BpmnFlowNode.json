@@ -1,0 +1,26 @@
+{
+	"options": {
+		"status": {
+			"Created": "Vytvořeno",
+			"Pending": "Čekající",
+			"In Process": "V procesu",
+			"Standby": "Pohotovostní",
+			"Processed": "Zpracováno",
+			"Rejected": "Odmítnuto",
+			"Failed": "Selhalo",
+			"Interrupted": "Přerušeno"
+		}
+	},
+	"links": {
+		"target": "Cíl",
+		"process": "Proces",
+		"flowchart": "Vývojový diagram",
+		"previousFlowNode": "předchozí Flow Node"
+	},
+	"fields": {
+		"target": "Cíl",
+		"isLocked": "Je zamčeno",
+		"proceedAt": "Pokračovat v",
+		"processedAt": "Zpracováno v"
+	}
+}

@@ -1,0 +1,67 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-truck-loading",
+    "isWide": true,
+    "dynamicHandler": "warehouse-management:handlers/goods-receipt/dynamic",
+    "menu": {
+        "detail": {
+            "buttons": [
+                {
+                    "label": "Create Goods Issue",
+                    "name": "createGoodsIssue",
+                    "action": "createGoodsIssue",
+                    "acl": "create",
+                    "aclScope": "GoodsIssue",
+                    "style": "success",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-receipt/create-goods-issue"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Process",
+                    "name": "process",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-truck-loading\"></i>",
+                    "style": "success",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-receipt/process-action"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Cancel",
+                    "name": "cancel",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-ban\"></i>",
+                    "style": "danger",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-receipt/cancel-action"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listProduct": {
+            "type": "listSmall"
+        }
+    },
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Create Warehouse Transfer",
+            "name": "createWarehouseTransfer",
+            "action": "createWarehouseTransfer",
+            "acl": "edit",
+            "data": {
+                "handler": "warehouse-management:handlers/goods-receipt/create-warehouse-transfer-action"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ]
+}
+

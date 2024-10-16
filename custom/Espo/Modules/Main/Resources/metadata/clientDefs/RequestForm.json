@@ -1,0 +1,56 @@
+{
+	"controller": "controllers/record",
+	"boolFilterList": [
+		"onlyMy"
+	],
+	"iconClass": "fas fa-cart-arrow-down",
+	"dynamicLogic": {
+		"fields": {
+			"reasonDeclined": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "disapproved"
+						}
+					]
+				}
+			},
+			"approved": {
+				"readOnly": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "disapproved"
+						}
+					]
+				},
+				"visible": null
+			},
+			"disapproved": {
+				"readOnly": {
+					"conditionGroup": [
+						{
+							"type": "isTrue",
+							"attribute": "approved"
+						}
+					]
+				},
+				"visible": null
+			},
+			"orderStatus": {
+				"visible": {
+					"conditionGroup": [
+						{
+							"type": "equals",
+							"attribute": "status",
+							"value": "Schváleno"
+						}
+					]
+				}
+			}
+		}
+	},
+	"kanbanViewMode": true,
+	"color": null
+}

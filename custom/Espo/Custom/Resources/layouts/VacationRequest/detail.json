@@ -1,0 +1,52 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "statusOfApproval"
+                },
+                {
+                    "name": "humanResources"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "numberOfDaysLeftBefore"
+                },
+                {
+                    "name": "numberOfDaysLeft"
+                },
+                {
+                    "name": "numberOfDays"
+                },
+                {
+                    "name": "vacationDays"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "humanResource"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

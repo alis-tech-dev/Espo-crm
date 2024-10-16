@@ -1,0 +1,11 @@
+{
+	"labels": {
+		"Create DashboardTemplate": "Vytvořit šablonu",
+		"Deploy to Team": "Přiřadit do týmu",
+		"Deploy to Users": "Přiřadit uživateli"
+	},
+	"fields": {
+		"layout": "Vzhled",
+		"append": "Připojit"
+	}
+}

@@ -1,0 +1,21 @@
+[
+	{
+		"name": "name",
+		"link": true
+
+	},
+	{
+		"name": "emailAddress",
+		"width": 20
+	},
+	{
+		"name": "phoneNumber"
+	},
+	{
+		"name": "teams",
+		"notSortable": true
+	},
+	{
+		"name": "pozice"
+	}
+]

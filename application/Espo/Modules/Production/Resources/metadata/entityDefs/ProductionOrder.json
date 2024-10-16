@@ -1,0 +1,192 @@
+{
+	"fields": {
+		"assignedUser": {
+			"required": true,
+			"type": "link",
+			"view": "views/fields/assigned-user"
+		},
+		"attachments": {
+			"type": "attachmentMultiple"
+		},
+		"billOfMaterials": {
+			"recordListCreateDisabled": false,
+			"recordListDynamicHandler": "production:handlers/production-order/bill-of-materials-dynamic-handler",
+			"recordListEnabled": true,
+			"recordListLayout": "listProductionOrder",
+			"recordListLinkDisabled": true,
+			"type": "linkMultiple"
+		},
+		"createdAt": {
+			"readOnly": true,
+			"type": "datetime"
+		},
+		"createdBy": {
+			"readOnly": true,
+			"type": "link"
+		},
+		"description": {
+			"type": "text"
+		},
+		"forceMaterialWarehouse": {
+			"default": false,
+			"tooltip": true,
+			"type": "bool"
+		},
+		"materialWarehouse": {
+			"required": true,
+			"tooltip": true,
+			"type": "link"
+		},
+		"modifiedAt": {
+			"readOnly": true,
+			"type": "datetime"
+		},
+		"modifiedBy": {
+			"readOnly": true,
+			"type": "link"
+		},
+		"name": {
+			"pattern": "$noBadCharacters",
+			"trim": true,
+			"type": "varchar"
+		},
+		"operations": {
+			"recordListCreateDisabled": false,
+			"recordListEnabled": true,
+			"recordListLayout": "listProductionOrder",
+			"recordListLinkDisabled": true,
+			"recordListOrderByField": "order",
+			"type": "linkMultiple"
+		},
+		"product": {
+			"required": true,
+			"type": "link"
+		},
+		"productionModel": {
+			"type": "link",
+			"view": "production:views/production-order/fields/production-model"
+		},
+		"productWarehouse": {
+			"required": true,
+			"tooltip": true,
+			"type": "link"
+		},
+		"progress": {
+			"default": 0,
+			"notStorable": true,
+			"readOnly": true,
+			"type": "float",
+			"view": "product-base:views/fields/percentage"
+		},
+		"quantityPlanned": {
+			"required": true,
+			"type": "float"
+		},
+		"quantityProduced": {
+			"notStorable": true,
+			"readOnly": true,
+			"type": "float"
+		},
+		"status": {
+			"default": "Draft",
+			"options": [
+				"Draft",
+				"Planned",
+				"Ongoing",
+				"Completed",
+				"Cancelled"
+			],
+			"style": {
+				"Cancelled": "danger",
+				"Completed": "success",
+				"Ongoing": "warning",
+				"Planned": "info"
+			},
+			"type": "enum"
+		},
+		"parentProductionOrder": {
+			"type": "link"
+		},
+		"childProductionOrders": {
+			"type": "linkMultiple"
+		},
+		"teams": {
+			"type": "linkMultiple",
+			"view": "views/fields/teams"
+		}
+	},
+	"links": {
+		"assignedUser": {
+			"entity": "User",
+			"type": "belongsTo"
+		},
+		"attachments": {
+			"entity": "Attachment",
+			"foreign": "parent",
+			"relationName": "attachments",
+			"type": "hasChildren"
+		},
+		"billOfMaterials": {
+			"entity": "ProductionModelItem",
+			"foreign": "parent",
+			"type": "hasChildren"
+		},
+		"cooperations": {
+			"entity": "Cooperation",
+			"foreign": "productionOrder",
+			"type": "hasMany"
+		},
+		"createdBy": {
+			"entity": "User",
+			"type": "belongsTo"
+		},
+		"materialWarehouse": {
+			"entity": "Warehouse",
+			"type": "belongsTo"
+		},
+		"modifiedBy": {
+			"entity": "User",
+			"type": "belongsTo"
+		},
+		"operations": {
+			"entity": "ProductionModelOperation",
+			"foreign": "parent",
+			"type": "hasChildren"
+		},
+		"product": {
+			"entity": "Product",
+			"foreign": "productions",
+			"type": "belongsTo"
+		},
+		"productionModel": {
+			"entity": "ProductionModel",
+			"foreign": "productions",
+			"type": "belongsTo"
+		},
+		"productWarehouse": {
+			"entity": "Warehouse",
+			"type": "belongsTo"
+		},
+		"teams": {
+			"entity": "Team",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "EntityTeam",
+			"type": "hasMany"
+		},
+		"workPerformed": {
+			"entity": "WorkPerformed",
+			"foreign": "productionOrder",
+			"type": "hasMany"
+		},
+		"parentProductionOrder": {
+			"entity": "ProductionOrder",
+			"type": "belongsTo",
+			"foreign": "childProductionOrders"
+		},
+		"childProductionOrders": {
+			"entity": "ProductionOrder",
+			"type": "hasMany",
+			"foreign": "parentProductionOrder"
+		}
+	}
+}

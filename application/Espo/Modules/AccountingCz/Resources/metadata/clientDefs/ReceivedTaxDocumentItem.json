@@ -1,0 +1,32 @@
+{
+    "controller": "controllers/record",
+    "acl": "accounting-cz:acl/received-tax-document-item",
+    "createDisabled": true,
+    "removeDisabled": true,
+    "convertCurrencyDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Received Tax Documents",
+                    "link": "#ReceivedTaxDocument",
+                    "acl": "read",
+                    "aclScope": "ReceivedTaxDocument"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listItem": {
+            "type": "listSmall",
+            "dataAttributeList": [
+                "name",
+                "align",
+                "width",
+                "link",
+                "view",
+                "customLabel"
+            ]
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "warehouseRevertGoodsInSalesOrder": "Sklad pro vrácení zboží"
+    },
+    "tooltips": {
+        "warehouseRevertGoodsInSalesOrder": "Určuje sklad, na který se zboží bude vracet z prodejní objednávky, pokud se objednávka změní/zruší a zboží se má naskladnit zpět do skladu."
+    }
+}

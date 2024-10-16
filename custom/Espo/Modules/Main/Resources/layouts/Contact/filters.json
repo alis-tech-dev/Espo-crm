@@ -1,0 +1,21 @@
+[
+	"address",
+	"targetLists",
+	"emailAddress",
+	"endUser",
+	"account",
+	"category",
+	"assignedUser",
+	"teams",
+	"createdAt",
+	"createdBy",
+	"modifiedAt",
+	"phoneNumber",
+	"title",
+	"crmcontact",
+	"possibleSales",
+	"callAgain",
+	"sendMassEmails",
+	"imporFromDB",
+	"partner"
+]

@@ -1,0 +1,25 @@
+[
+	{
+		"name": "number",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "parentSupplier"
+	},
+	{
+		"name": "businessProject1"
+	},
+	{
+		"name": "status",
+		"width": 15
+	},
+	{
+		"name": "createdAt",
+		"width": 12
+	}
+]

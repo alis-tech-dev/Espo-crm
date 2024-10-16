@@ -1,0 +1,50 @@
+{
+	"labels": {
+		"Create LogTime": "Vytvořit Instalace"
+	},
+	"fields": {
+		"task": "Úkol",
+		"account": "Firma",
+		"hours": "Čas instalace (h)",
+		"additionalCosts": "Další náklady",
+		"dateEnd": "Datum ukončení",
+		"dateEndDate": "Datum ukončení (celý den)",
+		"dateStartDate": "Datum zahájení (celý den)",
+		"dateStart": "Datum zahájení",
+		"duration": "Doba trvání",
+		"parent": "Rodič",
+		"reminders": "Připomenutí",
+		"transport": "Doprava (km)",
+		"atWeekend": "O víkendu",
+		"attachments": "Přílohy",
+		"transportHours": "Čas dopravy (h)",
+		"acc": "Ubytování",
+		"cost": "Náklady na ubytování",
+		"costCurrency": "Cost (Měna)",
+		"costConverted": "Cost (Převedeno)",
+		"description": "Popis",
+		"businessProject": "Zakázka",
+		"externist": "Technici",
+		"contact": "Kontaktní osoba"
+	},
+	"links": {
+		"task": "Úkol",
+		"account": "Organizace",
+		"parent": "Rodič",
+		"businessProject": "Zakázka",
+		"contact": "Kontaktní osoba"
+	},
+	"massActions": {
+		"setHeld": "Set Held"
+	},
+	"options": {
+		"status": {
+			"Planned": "Plánováho",
+			"Held": "Held",
+			"Not Held": "Not Held"
+		}
+	},
+	"presetFilters": {
+		"planned": "Plánovaný"
+	}
+}

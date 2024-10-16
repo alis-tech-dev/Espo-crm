@@ -1,0 +1,60 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "druh"
+				},
+				{
+					"name": "priority"
+				}
+			],
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "amount"
+
+				}
+			],
+			[
+				{
+					"name": "orderStatus"
+				},
+				{
+					"name": "invoice"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "approved"
+				},
+				{
+					"name": "disapproved"
+				}
+			],
+			[
+				false,
+				{
+					"name": "reasonDeclined"
+				}
+			],
+			[
+				{
+					"name": "purpose"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	}
+]

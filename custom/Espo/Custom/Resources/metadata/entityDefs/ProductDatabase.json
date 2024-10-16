@@ -1,0 +1,76 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "account": {
+            "type": "link"
+        },
+        "salesOrder": {
+            "type": "link"
+        },
+        "product": {
+            "type": "link",
+            "defaultSelectFilters": {
+                "type": {
+                    "type": "in",
+                    "value": [
+                        "Component"
+                    ],
+                    "data": {
+                        "type": "anyOf",
+                        "valueList": [
+                            "Component"
+                        ]
+                    }
+                }
+            }
+        },
+        "acceptanceDate": {
+            "default": "javascript: return this.dateTime.getToday();"
+        },
+        "firmVersion": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "options": [
+                "",
+                "2",
+                "3",
+                "4"
+            ],
+            "isCustom": true
+        }
+    },
+    "links": {
+        "account": {
+            "type": "belongsTo",
+            "foreign": "productDatabases",
+            "entity": "Account",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "productDatabases",
+            "entity": "SalesOrder",
+            "audited": true,
+            "isCustom": true
+        },
+        "product": {
+            "type": "belongsTo",
+            "foreign": "productDatabases",
+            "entity": "Product",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"fields": {
+		"target": "Cíl"
+	},
+	"labels": {
+		"Create WorkflowLogRecord": "Vytvořit záznam protokolu workflow"
+	},
+	"links": {
+		"target": "Cíl",
+		"workflow": "Workflow"
+	}
+}

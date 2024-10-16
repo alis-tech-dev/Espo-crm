@@ -1,0 +1,74 @@
+{
+    "fields": {
+        "tasks1": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "isAllowed": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "vacationTime": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "vacationTimePerYear": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "humanResource",
+            "field": "vacationDays",
+            "view": "views/fields/foreign-int",
+            "isCustom": true,
+            "notStorable": true
+        },
+        "remainingVacationTime": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "humanResource",
+            "field": "vacationDaysLeft",
+            "view": "views/fields/foreign-int",
+            "isCustom": true,
+            "notStorable": true
+        },
+        "jIRA": {
+            "type": "link"
+        },
+        "humanResources": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "tasks1": {
+            "type": "hasMany",
+            "relationName": "taskUser",
+            "foreign": "users",
+            "entity": "Task",
+            "audited": true,
+            "isCustom": true
+        },
+        "jIRA": {
+            "type": "belongsTo",
+            "foreign": "users",
+            "entity": "JIRA",
+            "audited": false,
+            "isCustom": true
+        },
+        "humanResources": {
+            "type": "belongsTo",
+            "foreign": "users",
+            "entity": "HumanResources",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

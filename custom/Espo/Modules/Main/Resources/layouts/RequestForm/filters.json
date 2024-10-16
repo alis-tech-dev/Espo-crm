@@ -1,0 +1,16 @@
+[
+	"druh",
+	"status",
+	"orderStatus",
+	"assignedUser",
+	"priority",
+	"modifiedBy",
+	"businessProjects",
+	"projects",
+	"name",
+	"description",
+	"amount",
+	"amountConverted",
+	"approved",
+	"disapproved"
+]

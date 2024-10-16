@@ -1,0 +1,37 @@
+[
+	{
+		"name": "name",
+		"link": true,
+		"label": "Název"
+	},
+	{
+		"name": "performWorkButton",
+		"label": " ",
+		"view": "main:views/production-order/fields/perform-work"
+	},
+	{
+		"name": "performRemainingWorkButton",
+		"label": " ",
+		"view": "main:views/production-order/fields/perform-remaining-work"
+	},
+	{
+		"name": "takeFromWarehouseButton",
+		"label": " ",
+		"view": "main:views/production-order/fields/take-from-warehouse"
+	},
+	{
+		"name": "status",
+		"label": "Stav"
+	},
+	{
+		"name": "salesOrder"
+	},
+	{
+		"name": "quantityPlanned",
+		"label": "Množství plánované"
+	},
+	{
+		"name": "quantityProduced",
+		"label": "Množství vyrobené"
+	}
+]

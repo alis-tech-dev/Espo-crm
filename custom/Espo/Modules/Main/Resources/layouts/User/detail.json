@@ -1,0 +1,82 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "userName"
+				},
+				{
+					"name": "gender"
+				}
+			],
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "title"
+				}
+			],
+			[
+				{
+					"name": "emailAddress"
+				},
+				{
+					"name": "phoneNumber"
+				}
+			],
+			[
+				{
+					"name": "mattermostId"
+				},
+				{
+					"name": "mattermostToken"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "pozice"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Firemní struktura"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "alisCardID"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Docházka"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "daysOff"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	}
+]

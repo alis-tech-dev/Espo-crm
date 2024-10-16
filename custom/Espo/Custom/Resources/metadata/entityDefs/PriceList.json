@@ -1,0 +1,57 @@
+{
+    "fields": {
+        "quotes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "products": {
+            "recordListEnabled": true,
+            "recordListLayout": "list",
+            "defaultSelectFilters": []
+        },
+        "salesOrders": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "quotes": {
+            "type": "hasMany",
+            "foreign": "priceList",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrders": {
+            "type": "hasMany",
+            "foreign": "priceList1",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

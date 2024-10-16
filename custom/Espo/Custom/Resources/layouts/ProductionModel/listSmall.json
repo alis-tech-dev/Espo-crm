@@ -1,0 +1,15 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "product",
+        "label": "product"
+    },
+    {
+        "name": "status",
+        "label": "status"
+    }
+]

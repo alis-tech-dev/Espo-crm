@@ -1,0 +1,15 @@
+{
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        },
+        "warehouse": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": null,
+    "isWide": false,
+    "gridViewMode": false
+}

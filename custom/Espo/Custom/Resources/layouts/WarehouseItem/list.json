@@ -1,0 +1,32 @@
+[
+    {
+        "name": "product",
+        "link": true,
+        "label": "Product"
+    },
+    {
+        "name": "salesOrder",
+        "align": "left",
+        "label": "Sales Order",
+        "isEditable": true
+    },
+    {
+        "name": "parent",
+        "label": "Parent"
+    },
+    {
+        "name": "quantity",
+        "label": "Total Quantity"
+    },
+    {
+        "name": "quantityAvailable",
+        "label": "Available Quantity"
+    },
+    {
+        "name": "unit",
+        "label": "Unit"
+    },
+    {
+        "name": "stockLocation"
+    }
+]

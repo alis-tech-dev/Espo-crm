@@ -1,0 +1,21 @@
+{
+    "scopeNames": {
+        "Case": "Případ",
+        "Opportunity": "Příležitost",
+        "Account": "Organizace",
+        "ProductDatabase": "Databáze produktů",
+        "RequestForm": "Žádanka na nákup",
+        "Product": "Katalog komponent",
+        "SupplierInvoiceItem": "Položka přijaté faktury",
+        "ReceivedProformaInvoiceItem": "Položka přijaté zálohové faktury"
+    },
+    "scopeNamesPlural": {
+        "Case": "Případy",
+        "Opportunity": "Příležitosti",
+        "Account": "Organizace",
+        "ProductDatabase": "Databáze produktů",
+        "RequestForm": "Žádanky na nákup",
+        "Product": "Katalog komponent",
+        "JIRA": "CRM bugs"
+    }
+}

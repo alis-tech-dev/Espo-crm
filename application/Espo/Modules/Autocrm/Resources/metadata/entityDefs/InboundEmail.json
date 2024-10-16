@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "signature": {
+            "type": "wysiwyg",
+            "view": "views/preferences/fields/signature",
+            "default": "",
+            "tooltip": true
+        }
+    }
+}

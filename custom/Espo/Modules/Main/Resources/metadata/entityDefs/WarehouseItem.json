@@ -1,0 +1,15 @@
+{
+	"fields": {
+		"serialNumber": {
+			"type": "varchar"
+		},
+		"createdAt": {
+			"type": "datetime",
+			"readOnly": true
+		}
+	},
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc"
+	}
+}

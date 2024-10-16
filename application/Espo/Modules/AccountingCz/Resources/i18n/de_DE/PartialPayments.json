@@ -1,0 +1,6 @@
+{
+    "fields": {
+        "amount": "Betrag",
+        "date": "Datum der Zahlung"
+    }
+}

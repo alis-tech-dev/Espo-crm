@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "Create ReportFilter": "Vytvořit filtr",
+        "Rebuild Filters": "Přestavět filtr"
+    },
+    "fields": {
+        "order": "Pořadí",
+        "report": "FIltr",
+        "entityType": "Typ entity",
+        "isActive": "Je povoleno"
+    },
+    "links": {
+        "report": "Filtr"
+    },
+    "tooltips": {
+        "teams": "Týmy, pro které bude filtr k dispozici. Pokud není zadán žádný tým, nebude aplikováno žádné omezení ze strany týmu.",
+        "report": "Filtry které budou použity pro report"
+    }
+}

@@ -1,0 +1,58 @@
+{
+	"fields": {
+		"product": {
+			"type": "link"
+		},
+		"obrazekDokumentu": {
+			"type": "image",
+			"previewSize": "large",
+			"listPreviewSize": "small",
+			"isCustom": true
+		},
+		"quote": {
+			"type": "link"
+		},
+		"file": {
+			"required": false,
+			"sourceList": [],
+			"accept": []
+		},
+		"status": {
+			"style": {
+				"Active": null,
+				"Draft": null,
+				"Expired": "danger",
+				"Canceled": "danger"
+			},
+			"default": "Active"
+		}
+	},
+	"links": {
+		"product": {
+			"type": "belongsTo",
+			"foreign": "documents",
+			"entity": "Product",
+			"audited": false,
+			"isCustom": true
+		},
+		"obrazekDokumentu": {
+			"type": "belongsTo",
+			"entity": "Attachment",
+			"skipOrmDefs": true,
+			"disabled": true
+		},
+		"quote": {
+			"type": "belongsTo",
+			"foreign": "documents",
+			"entity": "Quote",
+			"audited": false,
+			"isCustom": true
+		},
+		"file": {
+			"type": "belongsTo",
+			"entity": "Attachment",
+			"skipOrmDefs": true,
+			"disabled": true
+		}
+	}
+}

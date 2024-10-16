@@ -1,0 +1,97 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "type"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Price",
+        "rows": [
+            [
+                {
+                    "name": "taxClass"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "costPrice"
+                },
+                {
+                    "name": "costPriceWithTax"
+                }
+            ],
+            [
+                {
+                    "name": "pricingType",
+                    "css": "col-md-6"
+                },
+                {
+                    "name": "salesPrice",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "salesPriceWithTax",
+                    "css": "col-md-3"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMarkup"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMargin"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "ean"
+                },
+                {
+                    "name": "measureUnit"
+                }
+            ],
+            [
+                {
+                    "name": "url"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

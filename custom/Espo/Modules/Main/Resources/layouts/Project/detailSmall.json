@@ -1,0 +1,32 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "projectPriority"
+				}
+			],
+			[
+				{
+					"name": "status"
+				},
+				{
+					"name": "projectProcent"
+				}
+			],
+			[
+				{
+					"name": "description"
+				},
+				{
+					"name": "account"
+				}
+			]
+		],
+		"style": "default",
+		"label": ""
+	}
+]

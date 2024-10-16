@@ -1,0 +1,18 @@
+{
+	"entity": true,
+	"layouts": false,
+	"tab": false,
+	"acl": false,
+	"aclPortal": false,
+	"customizable": false,
+	"importable": false,
+	"notifications": false,
+	"stream": false,
+	"disabled": true,
+	"type": "Base",
+	"module": "Main",
+	"object": false,
+	"isCustom": true,
+	"statusField": null,
+	"duplicateCheckFieldList": []
+}

@@ -1,0 +1,6 @@
+{
+    "controller": "puppeteer:controllers/template",
+    "views": {
+        "list": "puppeteer:views/template/list"
+    }
+}

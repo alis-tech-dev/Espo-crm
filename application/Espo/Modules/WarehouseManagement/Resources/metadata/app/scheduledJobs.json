@@ -1,0 +1,6 @@
+{
+    "SaveWarehouseValue": {
+        "jobClassName": "Espo\\Modules\\WarehouseManagement\\Classes\\Jobs\\SaveWarehouseValue",
+        "isSystem": false
+    }
+}

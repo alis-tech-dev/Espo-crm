@@ -1,0 +1,6 @@
+{
+    "fieldDefs": {
+        "notStorable": true
+    },
+    "readOnly": true
+}

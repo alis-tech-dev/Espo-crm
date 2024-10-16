@@ -1,0 +1,110 @@
+{
+	"fields": {
+		"data": "Data",
+		"depth": "Hloubka",
+		"column": "Sloupec",
+		"category": "Kategorie",
+		"emailSendingLastDateSent": "Poslední datum odeslání",
+		"chartColors": "Barvy diagramu",
+		"chartColorList": "Seznam barev diagramu",
+		"isInternal": "Interní",
+		"joinedReports": "Dílčí reporty",
+		"orderBy": "Seřadit dle",
+		"exportFormat": "Formát",
+		"portals": "Portály",
+		"orderByList": "Seřadit dle"
+	},
+	"filtersGroupTypes": {
+		"and": "a",
+		"having": "Mající",
+		"not": "Ne z",
+		"or": "Nebo",
+		"subQueryIn": "V"
+	},
+	"functions": {
+		"QUARTER": "Čtvrtletí",
+		"QUARTER_FISCAL": "Fiskální čtvrtletí",
+		"WEEK": "Týden",
+		"YEAR_FISCAL": "Fiskální rok"
+	},
+	"labels": {
+		"Add AND group": "Přidat skupinu AND",
+		"Add Complex expression": "Přidat komplexní výraz",
+		"Add IN group": "Přidat skupinu IN",
+		"Add NOT group": "Přidat skupinu NOT",
+		"Add OR group": "Přidat skupinu OR",
+		"Columns": "Sloupce",
+		"Complex expression": "Komplexní výraz",
+		"Send Email": "Poslat Email",
+		"Results View": "Zobrazení výsledků",
+		"View Report": "Předváděcí report",
+		"List Report": "Seznam reportů"
+	},
+	"layoutFields": {
+		"exportOnly": "Pouze export",
+		"notSortable": "Nelze třídit",
+		"width": "Šířka",
+		"link": "Odkaz",
+		"align": "Zarovnání"
+	},
+	"links": {
+		"category": "Kategorie",
+		"portals": "Portály"
+	},
+	"options": {
+		"layoutAlign": {
+			"left": "Vlevo",
+			"right": "Vpravo"
+		},
+		"operator": {
+			"equals": "Rovno",
+			"notEquals": "Nerovná se",
+			"greaterThan": "Větší než",
+			"lessThan": "Méně než",
+			"greaterThanOrEquals": "Větší nebo rovno",
+			"lessThanOrEquals": "Méně než nebo rovno",
+			"in": "In",
+			"notIn": "Not In",
+			"isTrue": "Je Pravda",
+			"isFalse": "Is False",
+			"isNull": "Je nula",
+			"isNotNull": "Není nula",
+			"like": "Like"
+		},
+		"type": {
+			"Grid": "Mřížka",
+			"List": "Seznam",
+			"JointGrid": "Joint Grid"
+		},
+		"function": {
+			"": "No Function",
+			"custom": "Expression",
+			"customWithOperator": "Expression w/ Operator",
+			"DATE_NUMBER": "DATUM",
+			"MONTH_NUMBER": "MĚSÍC",
+			"YEAR_NUMBER": "TÝDEN",
+			"QUARTER_NUMBER": "ČTVRTLETÍ",
+			"DAYOFWEEK_NUMBER": "DEN V TÝDNU",
+			"HOUR_NUMBER": "HODINA",
+			"MINUTE_NUMBER": "MINUTA",
+			"LOWER": "DOLNÍ",
+			"UPPER": "HORNÍ",
+			"TRIM": "TRIM",
+			"LENGTH": "DÉLKA",
+			"WEEK_NUMBER_0": "TÝDEN (Neděle)",
+			"WEEK_NUMBER_1": "TÝDEN (Pondělí)",
+			"COUNT": "COUNT",
+			"SUM": "SUMA",
+			"AVG": "AVG",
+			"MAX": "MAX",
+			"MIN": "MIN"
+		}
+	},
+	"tooltips": {
+		"applyAcl": "Výsledky reportu budou záviset na přístupu uživatele.",
+		"columns": "Jaká data se mají zobrazit.",
+		"groupBy": "Data budou agregována jednou nebo dvěma skupinami. Pokud jsou prázdné, nebudou data agregována, budou zobrazeny pouze součty. \\ N [Složité výrazy] (https://www.espocrm.com/documentation/user-guide/complex-expressions/) lze použít.",
+		"portals": "Report bude k dispozici pouze na určených portálech.",
+		"runtimeFilters": "Další filtry, které budou k dispozici v zobrazení přehledu."
+	}
+}

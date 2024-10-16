@@ -1,0 +1,20 @@
+{
+	"fields": {
+		"dateStart": "Data rozpoczęcia",
+		"dateEnd": "Data zakończenia",
+		"duration": "Czas trwania",
+		"reminders": "Przypomnienia"
+	},
+	"options": {
+		"status": {
+			"Planned": "Planowane"
+		}
+	},
+	"labels": {
+		"Create Porady": "Utwórz Porada",
+		"Schedule Porady": "Zaplanuj Porada "
+	},
+	"presetFilters": {
+		"planned": "Planowane"
+	}
+}

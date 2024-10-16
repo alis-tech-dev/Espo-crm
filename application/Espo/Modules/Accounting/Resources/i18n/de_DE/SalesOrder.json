@@ -1,0 +1,77 @@
+{
+    "labels": {
+        "Create SalesOrder": "Verkaufsauftrag erstellen",
+        "Tax Classes": "Steuerklassen",
+        "Templates": "Vorlagen",
+        "Items": "Artikel",
+        "Totals": "Gesamtsummen",
+        "ProcessSalesOrder": "Verkaufsauftrag bearbeiten"
+    },
+    "fields": {
+        "status": "Status",
+        "quote": "Angebot",
+        "number": "Auftragsnummer",
+        "numberA": "Auftragsnummer (automatisch)",
+        "account": "Organisation",
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "billingContact": "Rechnungskontakt",
+        "shippingContact": "Lieferkontakt",
+        "taxClass": "Steuerklasse",
+        "taxRate": "Steuersatz",
+        "shippingCost": "Versandkosten",
+        "taxAmount": "Steuerbetrag",
+        "discountAmount": "Rabattbetrag",
+        "amount": "Betrag",
+        "preDiscountedAmount": "Betrag vor Rabatt",
+        "grandTotalAmount": "Gesamtbetrag",
+        "weight": "Gewicht",
+        "amountConverted": "Betrag (umgerechnet)",
+        "taxAmountConverted": "Steuerbetrag (umgerechnet)",
+        "shippingCostConverted": "Versandkosten (umgerechnet)",
+        "preDiscountedAmountConverted": "Betrag vor Rabatt (umgerechnet)",
+        "discountAmountConverted": "Rabattbetrag (umgerechnet)",
+        "grandTotalAmountConverted": "Gesamtbetrag (umgerechnet)",
+        "shippingCostCurrency": "Währung der Versandkosten",
+        "taxAmountCurrency": "Währung des Steuerbetrags",
+        "discountAmountCurrency": "Währung des Rabattbetrags",
+        "amountCurrency": "Währung des Betrags",
+        "preDiscountedAmountCurrency": "Währung des Betrags vor Rabatt",
+        "grandTotalAmountCurrency": "Währung des Gesamtbetrags",
+        "currency": "Währung",
+        "dateOrdered": "Bestelldatum"
+    },
+    "links": {
+        "items": "Artikel",
+        "billingContact": "Kontakt",
+        "shippingContact": "Lieferkontakt",
+        "account": "Organisation",
+        "taxClass": "Steuerklasse",
+        "invoices": "Rechnungen",
+        "quote": "Angebot"
+    },
+    "options": {
+        "status": {
+            "Draft": "Entwurf",
+            "Ready": "Bereit",
+            "Active": "Aktiv",
+            "Approved": "Genehmigt",
+            "Completed": "Abgeschlossen",
+            "Rejected": "Abgelehnt",
+            "Canceled": "Storniert"
+        },
+        "paymentMethod": {
+            "bank": "Banküberweisung",
+            "card": "Karte",
+            "cash": "Bargeld",
+            "cod": "Nachnahme"
+        }
+    },
+    "confirmation": {
+        "processSalesOrderConfirmation": "Sind Sie sicher, dass Sie diesen Verkaufsauftrag bearbeiten möchten?"
+    },
+    "messages": {
+        "processSalesOrderSuccess": "Verkaufsauftrag erfolgreich bearbeitet.",
+        "processSalesOrderFailed": "Verkaufsauftrag konnte nicht bearbeitet werden."
+    }
+}

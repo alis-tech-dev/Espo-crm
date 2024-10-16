@@ -1,0 +1,62 @@
+{
+    "labels": {
+        "Create Quote": "Vytvořit nabídku",
+        "Tax Classes": "Daňové třídy",
+        "Templates": "Šablony",
+        "Items": "Položky",
+        "Totals": "Shrnutí"
+    },
+    "fields": {
+        "status": "Status",
+        "number": "Číslo nabídky",
+        "numberA": "Číslo nabídky (automatické)",
+        "account": "Organizace",
+        "billingAddress": "Fakturační adresa",
+        "shippingAddress": "Dodací adresa",
+        "billingContact": "Fakturační kontakt",
+        "shippingContact": "Kontakt pro doručení",
+        "taxClass": "Daňová třída",
+        "taxRate": "Sazba daně",
+        "shippingCost": "Dopravné",
+        "taxAmount": "Výpočet daně",
+        "discountAmount": "Částka slevy",
+        "amount": "Částka",
+        "preDiscountedAmount": "Částka před slevou",
+        "grandTotalAmount": "Celková cena",
+        "weight": "Hmotnost",
+        "amountConverted": "Částka (převedeno)",
+        "taxAmountConverted": "Částka daně (převedeno)",
+        "shippingCostConverted": "Dopravné (převedeno)",
+        "preDiscountedAmountConverted": "Částka před slevou (převedeno)",
+        "discountAmountConverted": "Částka slevy (převedeno)",
+        "grandTotalAmountConverted": "Celková cena (převedeno)",
+        "shippingCostCurrency": "Dopravné v měně",
+        "taxAmountCurrency": "Částka daně v měně",
+        "discountAmountCurrency": "Částka slevy v měně",
+        "amountCurrency": "Částka v měně",
+        "preDiscountedAmountCurrency": "Částka před slevou v měně",
+        "grandTotalAmountCurrency": "Celková cena v měně",
+        "currency": "Měna",
+        "dateQuoted": "Datum nabídky",
+        "shippingCostTaxRate": "Daňová sazba dopravného"
+    },
+    "links": {
+        "items": "Položky",
+        "billingContact": "Kontakt",
+        "shippingContact": "Konktakt pro doručení",
+        "account": "Organizace",
+        "taxClass": "Daňová třída",
+        "invoices": "Vydané faktury",
+        "salesOrders": "Objednávky"
+    },
+    "options": {
+        "status": {
+            "Draft": "Návrh",
+            "In Review": "V posudku",
+            "Presented": "Uvedený",
+            "Approved": "Schválený",
+            "Rejected": "Zamítnutý",
+            "Canceled": "Zrušený"
+        }
+    }
+}

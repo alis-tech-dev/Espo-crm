@@ -1,0 +1,74 @@
+{
+    "controller": "controllers/record",
+    "dynamicHandler": "warehouse-management:handlers/goods-issue/dynamic",
+    "iconClass": "fas fa-truck-loading",
+    "menu": {
+        "detail": {
+            "buttons": [
+                {
+                    "label": "Create GoodsReceipt",
+                    "name": "createGoodsReceipt",
+                    "action": "createGoodsReceipt",
+                    "acl": "edit",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-issue/create-goods-receipt-action"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Process",
+                    "name": "process",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-truck-loading\"></i>",
+                    "style": "success",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-issue/process-action"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Reserve",
+                    "name": "reserve",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-ticket-alt\"></i>",
+                    "style": "warning",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-issue/reserve-action"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Cancel",
+                    "name": "cancel",
+                    "action": "process",
+                    "acl": "edit",
+                    "iconHtml": "<i class=\"fas fa-ban\"></i>",
+                    "style": "danger",
+                    "data": {
+                        "handler": "warehouse-management:handlers/goods-issue/cancel-action"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    },
+    "additionalLayouts": {
+        "listProduct": {
+            "type": "listSmall"
+        }
+    },
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Revert Goods Issue",
+            "name": "revertGoodsIssue",
+            "acl": "read",
+            "data": {
+                "handler": "warehouse-management:handlers/goods-issue/revert-goods-issue-action"
+            },
+            "checkVisibilityFunction": "checkVisibility"
+        }
+    ]
+}

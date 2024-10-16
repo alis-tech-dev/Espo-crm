@@ -1,0 +1,9 @@
+{
+    "Puppeteer": {
+        "implementationClassNameMap": {
+            "entity": "Espo\\Modules\\Puppeteer\\Tools\\Pdf\\Puppeteer\\EntityPrinter",
+            "collection": "Espo\\Modules\\Puppeteer\\Tools\\Pdf\\Puppeteer\\CollectionPrinter"
+        },
+        "fontFaceList": []
+    }
+}

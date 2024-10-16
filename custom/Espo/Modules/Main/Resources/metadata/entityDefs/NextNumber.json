@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"product": {
+			"type": "link"
+		}
+	},
+	"links": {
+		"product": {
+			"type": "belongsTo",
+			"entity": "Product",
+			"foreign": "nextNumbers"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "producedAmount": {
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-clock",
+    "isWide": false,
+    "gridViewMode": false
+}

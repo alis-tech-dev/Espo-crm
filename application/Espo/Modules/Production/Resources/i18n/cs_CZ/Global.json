@@ -1,0 +1,22 @@
+{
+	"scopeNames": {
+		"Cooperation": "Kooperace",
+		"Operation": "Operace",
+		"ProductionModel": "Technologický postup",
+		"ProductionModelItem": "Položka technologického postupu",
+		"ProductionModelOperation": "Operace technologického postupu",
+		"ProductionOrder": "Výrobní příkaz",
+		"WorkCenter": "Pracoviště",
+		"WorkPerformed": "Odvedená práce"
+	},
+	"scopeNamesPlural": {
+		"Cooperation": "Kooperace",
+		"Operation": "Operace",
+		"ProductionModel": "Technologické postupy",
+		"ProductionModelItem": "Položky technologického postupu",
+		"ProductionModelOperation": "Operace technologického postupu",
+		"ProductionOrder": "Výrobní příkazy",
+		"WorkCenter": "Pracoviště",
+		"WorkPerformed": "Odvedené práce"
+	}
+}

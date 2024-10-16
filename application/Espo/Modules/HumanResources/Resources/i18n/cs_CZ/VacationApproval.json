@@ -1,0 +1,12 @@
+{
+    "messages": {
+        "entityAlreadyApproved": "Záznam již byl schválen nebo zamítnut.",
+        "hrNotFound": "HR nenalezeno.",
+        "fromDateBeforeToDate": "Datum OD musí být před datom DO.",
+        "notEnoughVacationDaysLeft": "Nemáte dostatek zbývajících dnů dovolené."
+    },
+    "labels": {
+        "employeeTraining": "Školení zaměstnance",
+        "employeeMedicalExamination": "Zdravotní prohlídka zaměstnance"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "dynamicLogicStyled": "Bedingungen für die Anwendung des Stils",
+        "isEditable": "Editierbar",
+        "filtersEnabled": "Filter aktivieren",
+        "screenSize": "Bildschirmgröße",
+        "isWide": "Ist Breit",
+        "gridLayoutType": "Layout Typ"
+    },
+    "options": {
+        "screenSize": {
+            "xs": "Desktopgröße XS",
+            "sm": "Desktopgröße S",
+            "md": "Desktopgröße M",
+            "lg": "Großer Desktop L"
+        },
+        "gridLayoutType": {
+            "record": "Original-Aufzeichnung",
+            "grid": "Raster",
+            "tab": "Tabs (Registerkarten)"
+        },
+        "bottomLayoutType": {
+            "default": "Standard",
+            "tab": "Tabs (Registerkarten)"
+        }
+    },
+    "labels": {
+        "Column": "Spalte",
+        "New Panel": "Neues Panel",
+        "Custom Label": "Kundenspezifisches Etikett",
+        "Width": "Länge",
+        "Insert Row": "Zeile einfügen",
+        "Insert New Panel": "Neues Panel einfügen",
+        "Remove Row": "Zeile entfernen",
+        "Add Row": "Zeile hinzufügen",
+        "Edit Panel": "Panel bearbeiten",
+        "Remove Panel": "Panel entfernen",
+        "Show Code": "Code anzeigen",
+        "Color": "Farbe",
+        "Columns Count": "Anzahl der Spalten",
+        "Field": "Feld",
+        "Bold": "Fettdruck"
+    },
+    "messages": {
+        "cantBeEmpty": "Das Layout darf nicht leer sein.",
+        "fieldsIncompatible": "Felder können nicht zusammen im Layout sein: {Felder}.",
+        "cannotRemoveLastPanel": "Mindestens ein Panel muss vorhanden sein!"
+    },
+    "tooltips": {
+        "sticked": "Die Paneele werden an die darüber liegende Paneele angeheftet. Keine Lücke zwischen den Paneelen.",
+        "panelStyle": "Eine Farbe des Panels.",
+        "dynamicLogicVisible": "Wenn diese Option gesetzt ist, wird das Panel ausgeblendet, wenn die Bedingung nicht erfüllt ist.",
+        "dynamicLogicStyled": "Eine Farbe wird angewendet, wenn eine bestimmte Bedingung erfüllt ist. Die Farbe wird durch den Parameter *Style* definiert.",
+        "isEditable": "Ob das Feld im Listenlayout editierbar ist. Beachten Sie, dass nicht jedes Feld editierbar sein kann (z. B. schreibgeschützte oder Link-Felder) und dass die Bearbeitung in einer Liste zu Fehlklicks und Datenverlusten führen kann."
+    }
+}

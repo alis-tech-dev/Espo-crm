@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "Create WarehouseValueRecord": "Vytvořit skladovou hodnotu"
+    },
+    "fields": {
+        "warehouse": "Sklad",
+        "value": "Hodnota",
+        "valueCurrency": "Hodnota (Měna)",
+        "valueConverted": "Hodnota (Převedeno)"
+    },
+    "links": {
+        "warehouse": "Sklad"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "fields": {
+        "name": "Popis",
+        "qty": "Počet",
+        "quantity": "Počet",
+        "unitPrice": "Cena za MJ",
+        "amount": "Celkem bez DPH",
+        "amountWithTax": "Částka s DPH",
+        "taxRate": "DPH (%)",
+        "taxAmount": "DPH",
+        "product": "Produkt",
+        "order": "Číslo řádku",
+        "supplierInvoice": "Přijatá faktura",
+        "weight": "Hmotnost",
+        "unitWeight": "Jednotková hmotnost",
+        "description": "Popis",
+        "discount": "Sleva (%)",
+        "amountConverted": "Částka (převedeno)",
+        "unitPriceConverted": "Jednotková cena (převedeno)",
+        "unitPriceCurrency": "Měna jednotkové ceny",
+        "amountCurrency": "Částka v měně",
+        "unit": "MJ",
+        "type": "Typ",
+        "withTax": "S"
+    },
+    "options": {
+        "type": {
+            "normal": "normalní položka",
+            "discount": "sleva",
+            "advanceDeduction": "odpočet zálohy"
+        }
+    },
+    "links": {
+        "supplierInvoice": "Přijatá faktura",
+        "product": "Produkt"
+    },
+    "labels": {
+        "Supplier Invoices": "Přijaté faktury"
+    }
+}

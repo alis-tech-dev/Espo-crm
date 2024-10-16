@@ -1,0 +1,13 @@
+{
+    "vacationRequests.approvalItems": {
+        "disabled": true
+    },
+    "vacations.vacationRequests": {
+        "disabled": true
+    },
+    "vacations": {
+        "index": 0,
+        "layout": "list",
+        "filtersEnabled": true
+    }
+}

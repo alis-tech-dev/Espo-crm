@@ -1,0 +1,47 @@
+{
+  "view": "crm:views/dashlets/tasksKanban",
+  "aclScope": "Task",
+  "entityType": "Task",
+  "options": {
+    "fields": {
+      "title": {
+        "type": "varchar",
+        "required": true,
+        "trim": true
+      },
+      "autorefreshInterval": {
+        "type": "enumFloat",
+        "options": [
+          0,
+          0.5,
+          1,
+          2,
+          5,
+          10
+        ]
+      },
+      "displayRecords": {
+        "type": "enumInt",
+        "options": [
+          3,
+          4,
+          5,
+          7,
+          10,
+          15,
+          20
+        ]
+      },
+      "tasksFrom": {
+        "type": "link",
+        "entity": "User",
+        "view": "views/fields/assigned-users"
+      }
+    },
+    "defaults": {
+      "displayRecords": 10,
+      "autorefreshInterval": 0.5,
+      "onlyMy": true
+    }
+  }
+}

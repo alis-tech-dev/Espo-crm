@@ -1,0 +1,15 @@
+{
+	"fields": {
+		"type": "Typ"
+	},
+	"links": [],
+	"labels": {
+		"Create ClockIn": "Create ClockIn"
+	},
+	"options": {
+		"type": {
+			"IN": "IN",
+			"OUT": "OUT"
+		}
+	}
+}

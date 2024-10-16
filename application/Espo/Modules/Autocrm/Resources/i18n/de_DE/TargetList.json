@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "syncWithReports": "Berichte",
+        "syncWithReportsEnabled": "Aktiv",
+        "syncWithReportsUnlink": "Link entfernen"
+    },
+    "links": {
+        "syncWithReports": "Synchronisation mit Berichten",
+        "campaignsExcluding": "von Kampagnen ausgenommen",
+        "massEmailsExcluding": "von Massen E-Mails ausgenommen"
+    },
+    "labels": {
+        "Opt-Out": "Abmeldung",
+        "Sync with Reports": "Synchronisation mit Berichten"
+    },
+    "tooltips": {
+        "syncWithReportsEnabled": "Aktivieren Sie die automatische Synchronisierung mit einem Listenbericht.",
+        "syncWithReportsUnlink": "Datensätze die nicht im Bericht enthalten sind werden aus der Kontaktliste entfernt",
+        "syncWithReports": "Kontaktliste wird mit den Resultaten des gewählten Berichts synchronisiert"
+    }
+}

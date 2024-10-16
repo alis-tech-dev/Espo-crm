@@ -1,0 +1,36 @@
+[
+    {
+        "name": "type",
+        "link": true,
+        "align": "left",
+        "label": "Typ"
+    },
+    {
+        "name": "name",
+        "label": "Name"
+    },
+    {
+        "name": "assignedUser",
+        "label": "Assigned User"
+    },
+    {
+        "name": "createdAt",
+        "align": "left",
+        "label": "Created At"
+    },
+    {
+        "name": "dateStart",
+        "align": "left",
+        "label": "Date Start"
+    },
+    {
+        "name": "dateEnd",
+        "label": "Date End"
+    },
+    {
+        "name": "approved",
+        "align": "left",
+        "label": "Schválení",
+        "isEditable": true
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "warehouseRevertGoodsInSalesOrder": {
+            "type": "link",
+            "view": "warehouse-management:views/goods-issue/fields/warehouse",
+            "tooltip": true
+        }
+    },
+    "links": {
+        "warehouseRevertGoodsInSalesOrder": {
+            "type": "belongsTo",
+            "entity": "Warehouse"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Purpose of Vacation"
+    },
+    {
+        "name": "type"
+    },
+    {
+        "name": "dateStart"
+    },
+    {
+        "name": "dateEnd"
+    },
+    {
+        "name": "statusOfApproval"
+    },
+    {
+        "name": "numberOfDays"
+    },
+    {
+        "name": "vacationDays"
+    }
+]

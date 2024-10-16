@@ -1,0 +1,94 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [{"name": "number"}, {"name": "originalNumber"}],
+            [{"name": "status"}, {"name": "account"}],
+            [{"name": "paymentMethod"}, {"name": "datePaid"}],
+            [{"name": "dateOfReceiving"}, {"name": "dateInvoiced"}],
+            [{"name": "dueDate"}, {"name": "duzp"}],
+            [{"name": "variableSymbol"}, {"name": "constantSymbol"}],
+            [{"name": "supplierInvoice"}, {"name": "expenseReceipts"}]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "billingContact"
+                }
+            ],
+            [
+                {
+                    "name": "taxClass"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "attachments"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "note"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "fullWidth": true,
+                    "noLabel": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [
+                false,
+                {
+                    "name": "summaryVatRates",
+                    "noLabel": true
+                }
+            ],
+            [
+                {
+                    "name": "amountCurrency"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "taxAmount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ]
+    }
+]

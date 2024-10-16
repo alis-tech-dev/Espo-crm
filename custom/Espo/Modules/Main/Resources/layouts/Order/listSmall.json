@@ -1,0 +1,11 @@
+[
+	{
+		"name": "number",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "createdAt",
+		"width": 16
+	}
+]

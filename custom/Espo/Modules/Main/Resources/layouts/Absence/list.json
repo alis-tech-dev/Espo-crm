@@ -1,0 +1,29 @@
+[
+	{
+		"name": "type",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "dateStart"
+	},
+	{
+		"name": "dateEnd"
+	},
+	{
+		"name": "createdAt"
+	},
+	{
+		"name": "approved"
+	},
+	{
+		"name": "hours",
+		"width": 5,
+		"align": "left"
+	}
+]

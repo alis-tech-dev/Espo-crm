@@ -1,0 +1,12 @@
+{
+    "scopeNames": {
+        "Product": "Produkt",
+        "ProductCategory": "Kategorie produktu",
+        "TaxClass": "Daňová třída"
+    },
+    "scopeNamesPlural": {
+        "Product": "Produkty",
+        "ProductCategory": "Kategorie produktů",
+        "TaxClass": "Daňové třídy"
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "numberA",
+        "width": 8,
+        "link": true,
+        "align": "left",
+        "label": "Číslo výdejky"
+    },
+    {
+        "name": "name",
+        "width": 30,
+        "link": true,
+        "label": "Popisek"
+    },
+    {
+        "name": "warehouse",
+        "label": "Sklad"
+    },
+    {
+        "name": "status",
+        "label": "Stav"
+    },
+    {
+        "name": "createdAt",
+        "label": "Vytvořeno"
+    }
+]

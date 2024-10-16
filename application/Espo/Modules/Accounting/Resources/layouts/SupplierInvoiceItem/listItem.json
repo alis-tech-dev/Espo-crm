@@ -1,0 +1,10 @@
+[
+    {"name": "name", "view": "accounting:views\/invoice-item\/fields\/name"},
+    {"name": "quantity", "width": 9},
+    {"name": "unitPrice", "width": 10},
+    {"name": "withTax", "width": 4},
+    {"name": "taxRate", "width": 6},
+    {"name": "amount", "align": "right", "width": 9},
+    {"name": "taxAmount", "align": "right", "width": 9},
+    {"name": "amountWithTax", "align": "right", "width": 9}
+]

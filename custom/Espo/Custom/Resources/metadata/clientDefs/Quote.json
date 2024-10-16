@@ -1,0 +1,27 @@
+{
+    "relationshipPanels": {
+        "priceList": {
+            "layout": null
+        },
+        "opportunity": {
+            "layout": null
+        },
+        "opportunities": {
+            "layout": null
+        },
+        "account": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        },
+        "product": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-file-invoice-dollar",
+    "isWide": true,
+    "gridViewMode": false
+}

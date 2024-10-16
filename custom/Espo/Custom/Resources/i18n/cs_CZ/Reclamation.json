@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "type": "Typ",
+        "parent": "Výdejka",
+        "goodsIssue": "Výdejka",
+        "goodsIssues": "Výdejka",
+        "numberA": "Číslo reklamace",
+        "salesOrder": "Zakázka",
+        "salesOrder1": "Sales Order1"
+    },
+    "options": {
+        "type": {
+            "Reclamation": "Reklamace",
+            "Notice": "Upozornění"
+        },
+        "status": {
+            "Draft": "Návrh",
+            "Processing": "Zpracovává se",
+            "Closed": "Uzavřeno",
+            "Rejected": "Zamítnuto"
+        }
+    },
+    "links": {
+        "parent": "Výdejka",
+        "goodsIssue": "Výdejka",
+        "goodsIssues": "Výdejka",
+        "salesOrder": "Zakázka",
+        "salesOrder1": "Sales Order1"
+    }
+}

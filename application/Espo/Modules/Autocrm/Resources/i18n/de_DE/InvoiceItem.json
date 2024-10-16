@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "qty": "Mng.",
+        "quantity": "Menge",
+        "quantityInt": "Menge (Int)",
+        "listPrice": "Listen-Preis",
+        "unitPrice": "Stückpreis",
+        "amount": "Betrag",
+        "taxRate": "Steuersatz",
+        "product": "Produkt",
+        "order": "Bestellnummer",
+        "invoice": "Rechnung",
+        "weight": "Gewicht",
+        "unitWeight": "Gewicht pro Einheit",
+        "description": "Beschreibung",
+        "discount": "Rabatt (%)",
+        "amountConverted": "Betrag (umgerechnet)",
+        "unitPriceConverted": "Stückpreis (umgerechnet)",
+        "listPriceConverted": "Listen-Preis (umgerechnet)",
+        "account": "Firma",
+        "listPriceCurrency": "Listen-Preis (Währung)",
+        "unitPriceCurrency": "Stückpreis (Währung)",
+        "amountCurrency": "Betrag (Währung)",
+        "invoiceStatus": "Rechnungsstatus",
+        "formula": "Formel",
+        "measurementUnit": "Maßeinheit",
+        "withTax": "mit MwSt.",
+        "withTaxConverted": "mit MwSt. (umgerechnet)",
+        "withTaxCurrency": "mit MwSt. (Währung)"
+    },
+    "links": {
+        "invoice": "Rechnung",
+        "product": "Produkt",
+        "account": "Firma"
+    },
+    "labels": {
+        "Invoices": "Rechnungen",
+        "Create InvoiceItem": "Rechnungsposition erstellen"
+    },
+    "options": {
+        "formula": {
+            "s daní": "mit MwSt.",
+            "bez daně": "ohne MwSt.",
+            "jen základ": "nur die Grundlagen"
+        }
+    }
+}

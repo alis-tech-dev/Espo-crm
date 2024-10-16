@@ -1,0 +1,29 @@
+{
+    "scopeNames": {
+        "ProformaInvoice": "Ausgestellte Anzahlungsrechnung",
+        "ProformaInvoiceItem": "Position der ausgestellten Anzahlungsrechnung",
+        "CreditNote": "Korrektursteuerdokument",
+        "IssuedTaxDocument": "Steuerdokumente für erhaltene Zahlungen",
+        "SupplierInvoice": "Erhaltene Rechnung",
+        "ReceivedProformaInvoice": "Erhaltene Anzahlungsrechnung",
+        "ReceivedTaxDocument": "Erhaltene Steuerdokumente für erhaltene Zahlungen",
+        "RevenueReceipt": "Eingangsbeleg",
+        "ExpenseReceipt": "Ausgabebeleg"
+    },
+    "scopeNamesPlural": {
+        "ProformaInvoice": "Ausgestellte Anzahlungsrechnungen",
+        "ProformaInvoiceItem": "Positionen der ausgestellten Anzahlungsrechnungen",
+        "CreditNote": "Korrektursteuerdokumente",
+        "IssuedTaxDocument": "Steuerdokumente für erhaltene Zahlungen",
+        "SupplierInvoice": "Erhaltene Rechnungen",
+        "ReceivedProformaInvoice": "Erhaltene Anzahlungsrechnungen",
+        "ReceivedTaxDocument": "Erhaltene Steuerdokumente für erhaltene Zahlungen",
+        "RevenueReceipt": "Eingangsbelege",
+        "ExpenseReceipt": "Ausgabebelege"
+    },
+    "messages": {
+        "enterAmount": "Geben Sie den Betrag ein",
+        "theAmountMustBeNumeric": "Der Betrag muss numerisch sein (0,00)",
+        "theAmountMustNotExceedOneTrillion": "Der Betrag darf nicht mehr als eine Billion betragen"
+    }
+}

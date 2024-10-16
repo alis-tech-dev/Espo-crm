@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "warehouseGroupByFieldList": {
+            "type": "multiEnum",
+            "view": "warehouse-management:views/settings/fields/group-by-field-list"
+        },
+        "warehouseStockDeterminationStrategyList": {
+            "type": "jsonArray",
+            "view": "warehouse-management:views/settings/fields/stock-determination-strategy"
+        },
+        "updateProductCostPriceWithAveragePrice": {
+            "type": "bool"
+        },
+        "warehouseListToSaveValueOf": {
+            "type": "linkMultiple",
+            "entity": "Warehouse"
+        },
+        "warehouseRunningOutMultiplier": {
+            "type": "float",
+            "min": 1.0
+        }
+    }
+}
+

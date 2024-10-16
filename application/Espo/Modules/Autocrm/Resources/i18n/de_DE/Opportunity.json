@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "itemList": "Artikelliste",
+        "acceptedPayments": "Steuerbeleg für erhaltene Rechnungen",
+        "fromWarehouse": "vom Lager",
+        "productsReserved": "Produkte Reserviert"
+    },
+    "links": {
+        "quotes": "Angebote",
+        "salesOrders": "Kundenaufträge",
+        "invoices": "Rechnungen",
+        "items": "Artikel",
+        "acceptedPayments": "Steuerbeleg für erhaltene Rechnungen",
+        "fromWarehouse": "vom Lager"
+    },
+    "labels": {
+        "Items": "Positionen",
+        "Select Product": "Produkt auswählen",
+        "Add Item": "Position hinzufügen"
+    }
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "reservedQuantity"
+    },
+    {
+        "name": "createdAt",
+        "width": 16,
+        "label": "Created At"
+    }
+]

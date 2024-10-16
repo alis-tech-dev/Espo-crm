@@ -1,0 +1,8 @@
+{
+	"fields": {
+		"shippingProviderTestItem": "TestItem"
+	},
+	"links": {
+		"shippingProviderTestItem": "TestItem"
+	}
+}

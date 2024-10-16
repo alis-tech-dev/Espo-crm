@@ -1,0 +1,31 @@
+{
+    "name": "riesenia/pohoda",
+    "description": "Pohoda XML communication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomas Saghy",
+            "email": "segy@riesenia.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "symfony/options-resolver": "^4.0 || ^5.0 || ^6.0"
+    },
+    "require-dev": {
+        "friends-of-phpspec/phpspec-expect": "*",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpspec/phpspec": "^5.0 || ^6.0 || ^7.0",
+        "rshop/php-cs-fixer-config": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riesenia\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-old": "1.x-dev"
+        }
+    }
+}

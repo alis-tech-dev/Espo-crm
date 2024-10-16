@@ -1,0 +1,42 @@
+{
+	"scopeNames": {
+		"LogTime": "Odpracováno",
+		"Warehouse": "Sklad",
+		"EspoCRMnvody": "EspoCRM . návod",
+		"BusinessProject": "Zakázka",
+		"Porady": "Porada",
+		"InternalAgenda": "Interní dokument",
+		"Smernice": "Směrnice",
+		"RequestForm": "Žádanka na nákup",
+		"SmerniceItem": "Směrnice",
+		"RequestItem": "Položka žádanky na nákup",
+		"Complaint": "Reklamace",
+		"QualityReport": "QualityReport",
+		"HumanResources": "HR",
+		"Absence": "Dovolená",
+		"ClockIn": "ClockIn",
+		"CompetetionBase": "CompetetionBase",
+		"ProjectorDatabase": "Databáze projektorů",
+		"ProductDatabase": "Databáze produktů"
+	},
+	"scopeNamesPlural": {
+		"LogTime": "Odpracováno",
+		"Warehouse": "Sklady",
+		"EspoCRMnvody": "EspoCRM . návodiy",
+		"BusinessProject": "Zakázky",
+		"Porady": "Porady",
+		"InternalAgenda": "Interní dokumenty",
+		"Smernice": "Směrnice",
+		"RequestForm": "Žádanky na nákup",
+		"SmerniceItem": "Směrnice",
+		"RequestItem": "Položky žádanky na nákup",
+		"Complaint": "Reklamace",
+		"QualityReport": "QualityReports",
+		"HumanResources": "HR",
+		"Absence": "Dovolená",
+		"ClockIn": "ClockIns",
+		"CompetetionBase": "CompetetionBases",
+		"ProjectorDatabase": "Databáze projektorů",
+		"ProductDatabase": "Databáze produktů"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"fields": {
+		"fileList": "Seznam souborů",
+		"checkVersionUrl": "URL pro kontrolu nových verzí"
+	},
+	"labels": {
+		"Create Extension": "Vytvořit Rozšíření"
+	}
+}

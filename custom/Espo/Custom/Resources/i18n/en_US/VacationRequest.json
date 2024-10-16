@@ -1,0 +1,44 @@
+{
+    "fields": {
+        "type": "Type",
+        "dateStart": "Date Start",
+        "dateEnd": "Date End",
+        "user": "User",
+        "humanResource": "Human Resource",
+        "assignedUser": "Requested by",
+        "humanResources": "Approved by",
+        "timeBeforeVacation": "TimeBeforeVacation",
+        "timeAfterVacation": "TimeAfterVacation",
+        "timeVacation": "TimeVacation",
+        "vacationDays": "Vacation Days",
+        "numberOfDaysLeft": "Number of Remaining Vacation Hours for the User After Vacation",
+        "numberOfDaysLeftBefore": "Number of Remaining Vacation hours for the User Before Vacation",
+        "numberOfDays": "Number of hours",
+        "isApproved": "IsApproved"
+    },
+    "options": {
+        "type": {
+            "Paid": "Dovolená",
+            "NonPaid": "Neplacené volno",
+            "Exchange": "Náhradní volno",
+            "Medical": "Lékař",
+            "Sick": "Sick Day",
+            "Illness": "Pracovní neschopnost",
+            "PaidAbsence": "Placené volno "
+        },
+        "statusOfApproval": {
+            "AwaitingApproval": "Čeká na schválení",
+            "Approved": "Schváleno",
+            "Rejected": "Neschváleno",
+            "Returned": "Vráceno k doplnění"
+        }
+    },
+    "links": {
+        "user": "User",
+        "humanResources": "Human Resources"
+    },
+    "tooltips": {
+        "humanResources": "Your line manager will be set as default if no other approver is selected.",
+        "statusOfApproval": "If status \"Schváleno\", status can't be changed."
+    }
+}

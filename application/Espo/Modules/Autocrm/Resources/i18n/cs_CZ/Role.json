@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "portalPermission": "Práva portálu",
+        "groupEmailAccountPermission": "Práva skupinového e-mailového účtu",
+        "exportPermission": "Práva exportu",
+        "massUpdatePermission": "Práva hromadné aktualizace",
+        "dataPrivacyPermission": "Práva k ochraně osobních údajů"
+    },
+    "tooltips": {
+        "portalPermission": "Definuje přístup k informacím o portálu, schopnost posílat zprávy uživatelům portálu.",
+        "groupEmailAccountPermission": "Definuje přístup ke skupinovým e-mailovým účtům, schopnost odesílat e-maily ze skupinového SMTP.",
+        "exportPermission": "Definuje, zda mají uživatelé možnost exportovat záznamy.",
+        "massUpdatePermission": "Definuje, zda mají uživatelé možnost provádět hromadnou aktualizaci záznamů.",
+        "dataPrivacyPermission": "Umožňuje prohlížet a mazat osobní údaje."
+    },
+    "labels": {
+        "Field Level": "Úroveň pole"
+    },
+    "options": {
+        "levelList": {
+            "account": "účet",
+            "contact": "kontakt",
+            "yes": "ano"
+        }
+    },
+    "actions": {
+        "create": "Vytvořit"
+    }
+}

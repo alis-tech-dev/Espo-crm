@@ -1,0 +1,14 @@
+{
+    "autocrm": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#Admin/InvoiceSettings",
+                "label": "Invoice Settings",
+                "iconClass": "fas fa-file-invoice",
+                "description": "invoiceSettings",
+                "recordView": "accounting-cz:views/settings/record/edit"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"labels": {
+		"Create ClockIn": "Vytvořit Docházka"
+	},
+	"fields": {
+		"type": "Typ"
+	},
+	"options": {
+		"type": {
+			"IN": "IN",
+			"OUT": "OUT"
+		}
+	}
+}

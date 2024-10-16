@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "operation": "Operace",
+        "numberA": "Číslo postupu"
+    },
+    "links": {
+        "operation": "Operace"
+    },
+    "tooltips": {
+        "quantity": "Počet produktů vyrobeno tímto technologickým postupem.",
+        "default": "Zaškrtnutím této možnosti nastavíme technologický postup jako primární. Tzn., že se u výrobních příkazů tohoto produktu automaticky nastaví tento postup."
+    }
+}

@@ -1,0 +1,46 @@
+{
+	"labels": {
+		"Create CompetetionBase": "Vytvořit Seznam Konkurence"
+	},
+	"fields": {
+		"name": "Název firmy",
+		"pedestrianAvoidance": "Avoidance collision with pedestrian/employe",
+		"hmeAvoidance": "Avoidance collision with material handling equipment",
+		"propertyAvoidance": "Avoidance collision with company property",
+		"personalTagTypes": "Types of personal tags",
+		"iotLED": "IoT - LED visualization",
+		"iotRTLS": "IoT - RTLS module",
+		"iotOtherDevices": "IoT - activation of el. devices",
+		"uwb": "Technology - UWB",
+		"neuralNetwork": "Technology - neural network",
+		"otherTechnology": "Technology - other (BLE, WiFi,...)",
+		"pedestrianAlert": "Active alert of pedestrian",
+		"alertOfForklift": "Active alert of forklift driver",
+		"alertOf3rdParts": "Active alert of 3rd parts",
+		"vibrationAlert": "Vibration",
+		"accousticAlert": "Accoustic",
+		"optoaccousticAlert": "Opto-accoustic",
+		"elTruck": "Installation on el. truck",
+		"crane": "Installation on crane",
+		"allHME": "Installation on all handling material equipment",
+		"visualizationInHMECabin": "Visualization of pedestrian position inside the HME cabin",
+		"oneZone": "One zone",
+		"moreZones": "More zones",
+		"indoor": "Indoor",
+		"outdoor": "Outdoor",
+		"atexCertification": "ATEX certification",
+		"multifunctionTag": "Multifunction personal tag",
+		"diagnosticForTag": "Diagnostic tool for personal tag",
+		"pressetingOption": "Option for user friendly custom presseting"
+	},
+	"options": {
+		"personalTagTypes": {
+			"card": "Card",
+			"wristBand": "Wrist band",
+			"helmetTag": "Helmet tag",
+			"beltTag": "Belt tag",
+			"safetyVest": "Safety vest",
+			"-": "-"
+		}
+	}
+}

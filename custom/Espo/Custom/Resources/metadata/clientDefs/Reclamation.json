@@ -1,0 +1,20 @@
+{
+    "dynamicLogic": {
+        "fields": {
+            "product": {
+                "visible": null
+            }
+        }
+    },
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        },
+        "goodsIssue": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "labels": {
+        "HumanResources Settings": "Nastavení HR modulu"
+    },
+    "descriptions": {
+        "humanResourcesSettings": "Nastavení výchozích hodnot HR modulu."
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "testVykaz": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 5,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "order",
+        "order": "asc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

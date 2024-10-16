@@ -1,0 +1,93 @@
+{
+	"fields": {
+		"accountParent": "Account Parent",
+		"accounts": "Accounts",
+		"businessProject": "Zakázka",
+		"businessProjects": "Zakázky",
+		"businessProjects1": "Business Projects1",
+		"camerasystem": "Camera system",
+		"category": "Kategorie",
+		"defaultPriceList": "Price List",
+		"dic": "DIČ",
+		"document": "Document",
+		"documents1": "Documents1",
+		"enduser": "End-user",
+		"firstname": "Jméno",
+		"idph": "IČ DPH",
+		"iscustomer": "Odběratel",
+		"issupplier": "Dodavatel",
+		"kontakt": "Contacts",
+		"language": "Jazyk",
+		"lastname": "Příjmení",
+		"logTimes": "Hodiny",
+		"opportunities1": "Poptávka",
+		"orderItems": "Order Items",
+		"orders": "Orders",
+		"partner": "Partner",
+		"priceType": "Price Type",
+		"qualityReports": "8D Report",
+		"rtls": "RTLS",
+		"shield": "Shield",
+		"spolecnosti": "Společnosti",
+		"vizualization": "Vizualization",
+		"web": "Weby",
+		"webs": "Webs"
+	},
+	"links": {
+		"accountParent": "Account Parent",
+		"accounts": "Accounts",
+		"businessProject": "Zakázka",
+		"businessProjects": "Zakázky",
+		"businessProjects1": "Business Projects1",
+		"businessProjectsOgranization": "Zakázky",
+		"document": "Document",
+		"documents1": "Documents1",
+		"kontakt": "Contacts",
+		"logTimes": "Hodiny",
+		"opportunities1": "Poptávka",
+		"orderItems": "Order Items",
+		"orders": "Objednávky",
+		"productsSupplier": "Produkty",
+		"qualityReports": "8D Report",
+		"supplier": "Komponenty",
+		"web": "Weby",
+		"webs": "Webs"
+	},
+	"options": {
+		"category": {
+			"-": "-",
+			"A": "A",
+			"B": "B",
+			"C": "C"
+		},
+		"defaultPriceList": {
+			"-": "-",
+			"A": "Group A",
+			"B": "Group B",
+			"C": "Group C",
+			"E": "End User",
+			"Group A": "Group A",
+			"Group B": "Group B",
+			"Group C": "Group C"
+		},
+		"language": {
+			"CZ": "CZ",
+			"EN": "EN"
+		},
+		"priceType": {
+			"": "None",
+			"A": "A",
+			"B": "B",
+			"C": "C",
+			"Jeseno": "Jeseno"
+		},
+		"spolecnosti": {
+			"Aledo s.r.o.": "Aledo s.r.o.",
+			"Aledo SK s.r.o.": "Aledo SK s.r.o.",
+			"Alis Tech s.r.o.,": "Alis Tech s.r.o.,"
+		}
+	},
+	"tooltips": {
+		"dic": "Daňové identifikační číslo"
+	}
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "warehouse",
+        "link": true
+    },
+    {
+        "name": "value"
+    },
+    {
+        "name": "createdAt"
+    }
+]

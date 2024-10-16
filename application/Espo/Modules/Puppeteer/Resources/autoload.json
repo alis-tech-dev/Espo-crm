@@ -1,0 +1,6 @@
+{
+    "psr-4": {
+        "Spatie\\Browsershot\\": "application/Espo/Modules/Puppeteer/vendor/spatie/browsershot/src",
+        "Jurosh\\PDFMerge\\PDFMerger\\": "application/Espo/Modules/Puppeteer/vendor/jurosh/pdf-merge/src/Jurosh/PDFMerge"
+    }
+}

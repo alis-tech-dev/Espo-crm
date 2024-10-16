@@ -1,0 +1,14 @@
+{
+	"fields": {
+		"products": "Products",
+		"count": "Počet",
+		"product": "Product"
+	},
+	"links": {
+		"products": "Products",
+		"product": "Product"
+	},
+	"labels": {
+		"Create Warehouse": "Create Sklad"
+	}
+}

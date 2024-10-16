@@ -1,0 +1,51 @@
+{
+	"labels": {
+		"Fill from Contact": "Vyplnit z kontaktu",
+		"Fill from Account": "Vyplnit z organizace",
+		"Email PDF": "Odeslat PDF"
+	},
+	"scopeNames": {
+		"Product": "Produkt",
+		"ProductCategory": "Kategorie produktu",
+		"Quote": "Nabídka",
+		"QuoteItem": "Položka nabídky",
+		"Invoice": "Vydaná faktura",
+		"InvoiceItem": "Položka vydané faktury",
+		"SalesOrder": "Objednávka",
+		"SalesOrderItem": "Položka objednávky",
+		"PurchaseOrder": "Nákupní objednávka",
+		"PurchaseOrderItem": "Položka nákupní objednávky",
+		"SupplierInvoice": "Přijatá faktura",
+		"SupplierInvoiceItem": "Položka přijaté faktury",
+		"VatIdValidation": "Validace DIČ",
+		"AdvanceDeductionItem": "Položka odpočtu zálohy",
+		"HandoverProtocol": "Předávací protokol",
+		"DeliveryNote": "Dodací list"
+	},
+	"scopeNamesPlural": {
+		"Product": "Produkty",
+		"ProductCategory": "Kategorie produktů",
+		"Quote": "Nabídky",
+		"QuoteItem": "Položky nabídky",
+		"Invoice": "Vydané faktury",
+		"InvoiceItem": "Položky vydané faktury",
+		"SalesOrder": "Objednávky",
+		"SalesOrderItem": "Položky objednávky",
+		"PurchaseOrder": "Nákupní objednávky",
+		"PurchaseOrderItem": "Položky nákupní objednávky",
+		"SupplierInvoice": "Přijaté faktury",
+		"SupplierInvoiceItem": "Položky přijaté faktury",
+		"VatIdValidation": "Validace DIČ",
+		"HandoverProtocol": "Předávací protokoly",
+		"DeliveryNote": "Dodací listy",
+		"AdvanceDeductionItem": "Položky odpočtů záloh"
+	},
+	"messages": {
+		"contactInfoTitle": "Informace o kontaktu",
+		"valid": "platné",
+		"invalid": "neplatné",
+		"verifiedVatId": "Ověřené <b>{vatId}</b> k datu {vatDate} je {vatType}",
+		"shortValidVatIdMessage": "Platné DIČ",
+		"shortInvalidVatIdMessage": "DIČ není platné, nebo patří subjektu mimo EU"
+	}
+}

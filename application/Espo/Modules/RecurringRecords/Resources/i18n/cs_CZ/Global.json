@@ -1,0 +1,12 @@
+{
+    "scopeNames": {
+        "RecordRecurrence": "Opakování záznamu"
+    },
+    "scopeNamesPlural": {
+        "RecordRecurrence": "Opakované záznamy"
+    },
+    "labels": {
+        "Schedule Recurrence": "Naplánovat opakování",
+        "Scheduled Recurrences": "Naplánované opakování"
+    }
+}

@@ -1,0 +1,5 @@
+[
+  {"name":"createdAt", "view": "views/fields/datetime-short" },
+  {"name":"subscription", "notSortable": true},
+  {"name":"user", "link":true, "notSortable": true}
+]

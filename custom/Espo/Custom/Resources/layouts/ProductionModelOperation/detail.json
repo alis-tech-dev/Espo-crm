@@ -1,0 +1,32 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "workCenter"
+                }
+            ],
+            [
+                {
+                    "name": "operation"
+                },
+                {
+                    "name": "order"
+                }
+            ],
+            [
+                {
+                    "name": "quantityActual"
+                },
+                {
+                    "name": "quantityPlanned"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

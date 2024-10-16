@@ -1,0 +1,9 @@
+{
+	"fields": {
+		"recordedcall": "Recorded call",
+		"speechtotext": "Speechtotext",
+		"sendmrkemail": "Send marketing email info",
+		"calltranscribe": "Přepis hovoru",
+		"isEditing": "IsEditing"
+	}
+}

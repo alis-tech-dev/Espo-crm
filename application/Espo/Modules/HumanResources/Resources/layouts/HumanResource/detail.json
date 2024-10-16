@@ -1,0 +1,169 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "employmentContract"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "note"
+                }
+            ],
+            [
+                {
+                    "name": "listOfCompetencesAndJobDuties"
+                }
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "birthCertificateNumber"
+                },
+                {
+                    "name": "citizenship"
+                }
+            ],
+            [
+                {
+                    "name": "birthdate"
+                },
+                {
+                    "name": "birthplace"
+                }
+            ],
+            [
+                {
+                    "name": "permanentResidence"
+                },
+                {
+                    "name": "bankAccountNumber"
+                }
+            ],
+            [
+                {
+                    "name": "job"
+                },
+                {
+                    "name": "employmentRelationship"
+                }
+            ],
+            [
+                {
+                    "name": "amountOfBasicSalary"
+                },
+                {
+                    "name": "variableSalary"
+                }
+            ],
+            [
+                {
+                    "name": "guaranteedSalary"
+                },
+                {
+                    "name": "healthInsuranceCompany"
+                }
+            ],
+            [
+                {
+                    "name": "contractDate"
+                },
+                {
+                    "name": "workStartDate"
+                }
+            ],
+            [
+                {
+                    "name": "employmentPeriod"
+                },
+                {
+                    "name": "testtime"
+                }
+            ],
+            [
+                {
+                    "name": "vacationDays"
+                },
+                {
+                    "name": "vacationDaysLeft"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Údaje do smlouvy"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "passwords"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "educationAndTrainingRecords"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "medicalExaminations"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "otherEvents"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

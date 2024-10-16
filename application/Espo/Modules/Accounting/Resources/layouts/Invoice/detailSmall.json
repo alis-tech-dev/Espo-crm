@@ -1,0 +1,19 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [{"name": "name"}, {"name": "number"}],
+            [{"name": "status", "fullWidth": true}],
+            [{"name": "account", "fullWidth": true}],
+            [{"name": "salesOrder"}, {"name": "quote"}],
+            [{"name": "dateInvoiced", "fullWidth": true}],
+            [{"name": "amount", "fullWidth": true}]
+        ]
+    },
+    {
+        "label": "Items",
+        "rows": [
+            [{"name": "items", "fullWidth": true, "noLabel": true}]
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "Create MedicalExamination": "Vytvořit Zdravotní prohlídku"
+    },
+    "fields": {
+        "dateOfLastInspection": "Datum posledního kontroly",
+        "numberOfYearsForRepetition": "Počet let pro opakování",
+        "dateOfTheNextInspection": "Termín dalšího kontroly"
+    }
+}

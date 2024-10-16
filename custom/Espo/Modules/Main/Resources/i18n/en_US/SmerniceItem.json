@@ -1,0 +1,12 @@
+{
+	"fields": {
+		"smerniceSlozka": "Smernice Slozka",
+		"text": "Obsah"
+	},
+	"links": {
+		"smerniceSlozka": "Smernice Slozka"
+	},
+	"labels": {
+		"Create SmerniceItem": "Create Směrnice"
+	}
+}

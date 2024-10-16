@@ -1,0 +1,15 @@
+[
+	"taskNumber",
+	"dateCompleted",
+	"dateEnd",
+	"dateStart",
+	"parentLead",
+	"priority",
+	"assignedUser",
+	"parent",
+	"status",
+	"teams",
+	"modifiedAt",
+	"createdBy",
+	"createdAt"
+]

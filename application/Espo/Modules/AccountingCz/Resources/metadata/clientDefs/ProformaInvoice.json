@@ -1,0 +1,199 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "payments": {
+            "layout": "proformaInvoiceListItem",
+            "selectDisabled": true,
+            "createDisabled": true,
+            "unlinkDisabled": true,
+            "readOnly": true
+        },
+        "issuedTaxDocuments": {
+            "view": "accounting:views/record/panels/create-related",
+            "layout": "listForAccount",
+            "selectDisabled": true,
+            "createDisabled": true
+        },
+        "revenueReceipts": {
+            "view": "accounting:views/record/panels/create-related",
+            "layout": "listForAccount",
+            "selectDisabled": true,
+            "createDisabled": true
+        },
+        "invoices": {
+            "view": "accounting:views/record/panels/create-related",
+            "layout": "listForAccount",
+            "selectDisabled": true,
+            "createDisabled": true
+        }
+    },
+    "additionalLayouts": {
+        "detailBottomTotal": {
+            "type": "list",
+            "dataAttributeList": [
+                "name",
+                "view",
+                "customLabel"
+            ]
+        },
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "recordViews": {
+        "detail": "accounting:views/invoice-like/record/detail",
+        "list": "accounting-cz:views/invoice/list"
+    },
+    "dynamicHandlerList": [
+        "accounting-cz:handlers/invoice/dynamic-handler"
+    ],
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ]
+        },
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Record Payment",
+                    "name": "newPayment",
+                    "action": "newPayment",
+                    "style": "success",
+                    "iconHtml": "<span class='fas fa-money-bill-wave small new-payment-icon'></span>",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice-like/new-payment"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Vytvořit příjmový doklad",
+                    "name": "createRevenueReceipt",
+                    "action": "createRevenueReceipt",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice/create-revenue-receipt"
+                    }
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "number": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "number"
+                        }
+                    ]
+                }
+            },
+            "opportunity": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "quoteId",
+                                    "data": {
+                                        "field": "quote"
+                                    }
+                                },
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "salesOrderId",
+                                    "data": {
+                                        "field": "salesOrder"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "partiallyPaidAmount": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Partially Paid"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "supplyCode": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "reverseCharge",
+                                    "value": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "datePaid": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Paid"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Partially Paid"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "remainsToPay": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Partially Paid"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-receipt",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true
+}

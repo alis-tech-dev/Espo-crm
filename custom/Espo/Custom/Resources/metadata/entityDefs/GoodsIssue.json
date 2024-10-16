@@ -1,0 +1,54 @@
+{
+    "fields": {
+        "parent": {
+            "type": "linkParent",
+            "entityList": [
+                "__APPEND__",
+                "GoodsReceipt"
+            ]
+        },
+        "reclamation": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "numberA": {
+            "type": "sequenceNumber",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "format": "D{YY}{number}",
+            "nextNumber": 5,
+            "padLength": 5,
+            "reset": "Never",
+            "isCustom": true,
+            "inlineEditDisabled": true
+        },
+        "name": {
+            "required": false,
+            "options": []
+        }
+    },
+    "links": {
+        "parent": {
+            "type": "belongsToParent",
+            "foreign": "goodsIssues",
+            "isCustom": true
+        },
+        "reclamation": {
+            "type": "hasOne",
+            "foreign": "goodsIssue",
+            "entity": "Reclamation",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

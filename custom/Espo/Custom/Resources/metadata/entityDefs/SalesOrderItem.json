@@ -1,0 +1,117 @@
+{
+    "fields": {
+        "salesOrder": {
+            "defaultSelectFilters": []
+        },
+        "files": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "name": {
+            "maxLength": 155,
+            "options": []
+        },
+        "salesOrder1": {
+            "type": "link"
+        },
+        "product": {
+            "defaultSelectFilters": {}
+        },
+        "salesOrderView": {
+            "type": "link"
+        },
+        "salesOrder12": {
+            "type": "link"
+        },
+        "kod": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "productCode",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "imageId": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "imageId",
+            "view": "views/fields/foreign-varchar",
+            "isCustom": true
+        },
+        "unit": {
+            "type": "enum",
+            "options": [
+                "pcs",
+                "km",
+                "h",
+                "unit"
+            ],
+            "style": {
+                "pcs": null,
+                "km": null,
+                "h": null,
+                "unit": null
+            },
+            "default": "pcs",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "productDescription": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "product",
+            "field": "description",
+            "view": "views/fields/foreign-text",
+            "isCustom": true
+        },
+        "quantity": {
+            "default": 1,
+            "min": 0
+        }
+    },
+    "links": {
+        "files": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "salesOrder1": {
+            "type": "belongsTo",
+            "foreign": "salesOrderItems",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrderView": {
+            "type": "belongsTo",
+            "foreign": "salesOrderItemsView",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "salesOrder12": {
+            "type": "belongsTo",
+            "foreign": "salesOrderItems",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "order",
+        "order": "asc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

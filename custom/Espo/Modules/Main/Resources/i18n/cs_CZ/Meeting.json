@@ -1,0 +1,19 @@
+{
+	"fields": {
+		"Acceptance": "Přijetí",
+		"acceptanceStatus": "Stav přijetí",
+		"dateEndDate": "End Date (all day)",
+		"status": "Stav"
+	},
+	"messages": {
+		"nothingHasBeenSent": "Nic nebylo odesláno",
+		"selectAcceptanceStatus": "Nastavit svůj stav přijetí."
+	},
+	"options": {
+		"status": {
+			"Planned": "Planovaná",
+			"Held": "Uskutečněná",
+			"Not Held": "Neuskutečněná"
+		}
+	}
+}

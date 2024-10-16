@@ -1,0 +1,12 @@
+[
+    "status",
+    "account",
+    "assignedUser",
+    "teams",
+    "createdAt",
+    "createdBy",
+    "dateInvoiced",
+    "number",
+    "amountConverted",
+    "grandTotalAmountConverted"
+]

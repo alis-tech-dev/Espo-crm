@@ -1,0 +1,168 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "originalNumber"
+                },
+                {
+                    "name": "number"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "billingContact"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "sicCode",
+                    "css": "col-md-3"
+                },
+                {
+                    "name": "vatId",
+                    "css": "col-md-3"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "attachments"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "paymentMethod"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "dateInvoiced"
+                },
+                {
+                    "name": "variableSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "duzp"
+                },
+                {
+                    "name": "constantSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "dueDate"
+                },
+                {
+                    "name": "specificSymbol"
+                }
+            ],
+            [
+                {
+                    "name": "datePaid"
+                },
+                {
+                    "name": "purchaseOrder"
+                }
+            ],
+            [
+                {
+                    "name": "dateOfReceiving"
+                },
+                {
+                    "name": "expenseReceipts"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "receivedProformaInvoice"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Items"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "amountCurrency"
+                },
+                {
+                    "name": "summaryVatRates",
+                    "noLabel": true
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "taxAmount"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Totals"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "taxClass"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "note"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

@@ -1,0 +1,416 @@
+{
+	"fields": {
+		"lastSwitchToOnHold": {
+			"type": "datetime"
+		},
+		"onHoldTime": {
+			"type": "int",
+			"readonly": true,
+			"view": "main:views/sales-order/fields/on-hold-time"
+		},
+		"productionOrders": {
+			"type": "linkMultiple"
+		},
+		"items": {
+			"view": "main:views/sales-order/fields/entries",
+			"recordListMandatorySelectAttributeList": ["__APPEND__", "entryKey"]
+		},
+		"salesOrderEntryData": {
+			"type": "jsonArray",
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true,
+			"layoutListDisabled": true
+		},
+		"users": {
+			"type": "linkMultiple",
+			"recordListEnabled": true,
+			"recordListLayout": "listSalesOrder",
+			"columns": {
+				"time": "timeOnSalesOrder"
+			},
+			"additionalAttributeList": ["columns"]
+		},
+		"userTime": {
+			"type": "duration",
+			"notStorable": true
+		},
+		"orderBanner": {
+			"type": "enum",
+			"options": [
+				"",
+				"order",
+				"Edison ordered",
+				"Doručeno",
+				"Ze skladu",
+				"Edison laser",
+				"PV design & Edison laser",
+				"PV design & PV laser"
+			],
+			"style": {
+				"": null,
+				"order": "warning",
+				"Edison ordered": "info",
+				"Doručeno": "success",
+				"Ze skladu": "primary",
+				"Edison laser": null,
+				"PV design & Edison laser": null,
+				"PV design & PV laser": null
+			},
+			"displayAsLabel": true,
+			"default": "",
+			"isCustom": true,
+			"audited": true
+		},
+		"alert": {
+			"type": "multiEnum",
+			"storeArrayValues": true,
+			"options": ["Returned", "Special", "Rent", "To Install"],
+			"style": {
+				"Returned": "danger",
+				"Special": "info",
+				"Rent": "warning",
+				"To Install": "success"
+			},
+			"allowCustomOptions": true,
+			"displayAsLabel": true,
+			"isCustom": true,
+			"displayAsList": true
+		},
+		"responsiblePerson": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"maxLength": 50,
+			"rows": 2,
+			"isCustom": true
+		},
+		"industrySector": {
+			"type": "enum",
+			"options": [
+				"-",
+				"automotive",
+				"heavy",
+				"food",
+				"chemical",
+				"logistic",
+				"warehousing",
+				"minning",
+				"energy",
+				"transport",
+				"other"
+			],
+			"style": {
+				"-": null,
+				"automotive": null,
+				"heavy": null,
+				"food": null,
+				"chemical": null,
+				"logistic": null,
+				"warehousing": null,
+				"minning": null,
+				"energy": null,
+				"transport": null,
+				"other": null
+			},
+			"default": "-",
+			"isCustom": true
+		},
+		"toInstall": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"orderFile": {
+			"type": "attachmentMultiple",
+			"previewSize": "small",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"cisloObj": {
+			"type": "varchar",
+			"maxLength": 100,
+			"options": [],
+			"isCustom": true
+		},
+		"orderAmount": {
+			"type": "currency",
+			"onlyDefaultCurrency": false,
+			"isCustom": true
+		},
+		"obodovanivyroby": {
+			"type": "enum",
+			"options": ["1", "2", "3", "5", "8", "13", "21", "-"],
+			"style": {
+				"1": "success",
+				"2": "primary",
+				"3": "primary",
+				"5": "warning",
+				"8": "warning",
+				"13": "danger",
+				"21": "danger",
+				"-": null
+			},
+			"default": "-",
+			"displayAsLabel": true,
+			"isCustom": true
+		},
+		"priority": {
+			"type": "int",
+			"isCustom": true,
+			"default": 3,
+			"min": 1,
+			"max": 3,
+			"audited": true
+		},
+		"start": {
+			"notNull": false,
+			"type": "date",
+			"isCustom": true,
+			"useNumericFormat": true,
+			"audited": true
+		},
+		"typeAB": {
+			"type": "enum",
+			"options": ["undefined", "A", "B"],
+			"style": {
+				"undefined": null,
+				"A": null,
+				"B": null
+			},
+			"default": "undefined",
+			"isCustom": true
+		},
+		"manufacturingReady": {
+			"notNull": false,
+			"type": "date",
+			"after": "approvalDate",
+			"isCustom": true
+		},
+		"expectedInstallationDate": {
+			"notNull": false,
+			"type": "date",
+			"isCustom": true,
+			"useNumericFormat": true,
+			"audited": true
+		},
+		"progress": {
+			"type": "enum",
+			"options": [
+				"0",
+				"10",
+				"20",
+				"25",
+				"30",
+				"40",
+				"50",
+				"60",
+				"70",
+				"75",
+				"80",
+				"90",
+				"95",
+				"100"
+			],
+			"style": {
+				"0": null,
+				"10": null,
+				"20": null,
+				"25": null,
+				"30": null,
+				"40": null,
+				"50": null,
+				"60": null,
+				"70": null,
+				"75": null,
+				"80": null,
+				"90": null,
+				"95": null,
+				"100": null
+			},
+			"audited": true,
+			"default": "0",
+			"isCustom": true
+		},
+		"parcelService": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"parcelServiceProvider": {
+			"type": "enum",
+			"options": [
+				"GLS",
+				"DBSchenker",
+				"DHLexpress",
+				"JOPPAlogistics",
+				"TNT",
+				"DPD",
+				"UPS",
+				"jiné"
+			],
+			"style": {
+				"GLS": null,
+				"DBSchenker": null,
+				"DHLexpress": null,
+				"JOPPAlogistics": null,
+				"TNT": null,
+				"DPD": null,
+				"UPS": null,
+				"jiné": null
+			},
+			"default": "GLS",
+			"isCustom": true
+		},
+		"parcelTrackingNumber": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"parcelSent": {
+			"notNull": false,
+			"type": "date",
+			"isCustom": true,
+			"default": "javascript: return this.dateTime.getToday();",
+			"useNumericFormat": true
+		},
+		"parcelLabel": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"personalCollection": {
+			"notNull": true,
+			"type": "bool",
+			"isCustom": true
+		},
+		"account2": {
+			"type": "link"
+		},
+		"contact": {
+			"type": "link"
+		},
+		"faktura": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"deliveryNote": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"predavaciProtokol": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"invoiceNumber": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true
+		},
+		"deliveryNoteNumber": {
+			"type": "varchar",
+			"maxLength": 150,
+			"options": [],
+			"isCustom": true
+		},
+		"deliveryNoteDate": {
+			"notNull": false,
+			"type": "date",
+			"default": null,
+			"isCustom": true,
+			"useNumericFormat": true,
+			"required": false
+		},
+		"vO": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		}
+	},
+	"links": {
+		"orderFile": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"users": {
+			"type": "hasMany",
+			"foreign": "salesOrders",
+			"entity": "User",
+			"additionalColumns": {
+				"time": {
+					"type": "int"
+				}
+			}
+		},
+		"deliveryNote": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"account2": {
+			"type": "belongsTo",
+			"foreign": "businessProjects",
+			"entity": "Account",
+			"audited": false,
+			"isCustom": true
+		},
+		"contact": {
+			"type": "belongsTo",
+			"foreign": "businessProjects",
+			"entity": "Contact",
+			"audited": false,
+			"isCustom": true
+		},
+		"faktura": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"predavaciProtokol": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		},
+		"vO": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		}
+	},
+	"collection": {
+		"orderBy": "createdAt",
+		"order": "desc",
+		"textFilterFields": ["name", "number"],
+		"fullTextSearch": false,
+		"countDisabled": false
+	}
+}

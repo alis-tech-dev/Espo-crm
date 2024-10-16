@@ -1,0 +1,10 @@
+{
+    "duplicateDisabled": true,
+    "createDisabled": true,
+    "editDisabled": true,
+    "convertCurrencyDisabled": true,
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ]
+}

@@ -1,0 +1,27 @@
+[
+	{
+		"name": "name",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "productType"
+	},
+	{
+		"name": "businessProject",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "temperatureCheck"
+	},
+	{
+		"name": "productAvailability"
+	},
+	{
+		"name": "macAddress"
+	},
+	{
+		"name": "createdAt"
+	}
+]

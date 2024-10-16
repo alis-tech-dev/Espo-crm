@@ -1,0 +1,36 @@
+{
+    "scopeNames": {
+        "ProformaInvoice": "Vydaná zálohová faktura",
+        "ProformaInvoiceItem": "Položka vydané zálohové faktury",
+        "CreditNote": "Opravný daňový doklad",
+        "IssuedTaxDocument": "Vydaný daňový doklad k platbě",
+        "SupplierInvoice": "Přijatá faktura",
+        "ReceivedProformaInvoice": "Přijatá zálohová faktura",
+        "ReceivedTaxDocument": "Přijatý daňový doklad k platbě",
+        "RevenueReceipt": "Příjmový doklad",
+        "ExpenseReceipt": "Výdejní doklad",
+        "Payment": "Platba"
+    },
+    "scopeNamesPlural": {
+        "ProformaInvoice": "Vydané zálohové faktury",
+        "ProformaInvoiceItem": "Položky vydaných zalohových faktur",
+        "CreditNote": "Opravné daňové doklady",
+        "IssuedTaxDocument": "Vydané daňové doklady k platbám",
+        "SupplierInvoice": "Přijaté faktury",
+        "ReceivedProformaInvoice": "Přijaté zálohové faktury",
+        "ReceivedTaxDocument": "Přijaté daňové doklady k platbám",
+        "RevenueReceipt": "Příjmové doklady",
+        "ExpenseReceipt": "Výdejní doklady",
+        "Payment": "Platby"
+    },
+    "messages": {
+        "reverseChargeText": "Faktura je v režimu přenesené daňové povinnosti. Daň odvede zákazník.",
+        "issuedTaxDocumentItemText": "Daňový doklad k přijaté platbě zálohové faktury s VS:",
+        "enterAmount": "Zadejte částku",
+        "theAmountMustBeNumeric": "Částka musí být číselná (0,00)",
+        "theAmountMustNotExceedOneTrillion": "Částka nesmí být větší než tisíc miliard"
+    },
+    "units": {
+        "pcs": "ks"
+    }
+}

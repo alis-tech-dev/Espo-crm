@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "warehouseItem": "Warehouse Item",
+        "salesOrder": "Sales Order",
+        "quantity": "Quantity",
+        "warehouseItem1": "WarehouseItem",
+        "salesOrder1": "Sales Order",
+        "itemName": "ItemName",
+        "entryKey": "EntryKey",
+        "stockLocation": "StockLocation"
+    },
+    "links": {
+        "warehouseItem": "Warehouse Item",
+        "salesOrder": "Sales Order",
+        "warehouseItem1": "Warehouse Item1",
+        "salesOrder1": "Sales Order1"
+    },
+    "labels": {
+        "Create Wiso": "Create Wiso"
+    },
+    "options": {
+        "stockLocation": {
+            "brno": "Brno",
+            "pv": "Prostějov"
+        }
+    }
+}

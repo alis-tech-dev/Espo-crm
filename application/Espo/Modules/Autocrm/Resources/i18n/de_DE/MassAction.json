@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "processedCount": "Zu Verarbeitende Anzahl"
+    },
+    "options": {
+        "status": {
+            "Pending": "Ausstehend",
+            "Running": "Läuft",
+            "Success": "Erfolgreich",
+            "Failed": "Fehlgeschlagen"
+        }
+    },
+    "messages": {
+        "infoText": "Die Massenaktion wird im Leerlauf von Cron verarbeitet. Es kann einige Zeit dauern, bis sie abgeschlossen ist. Das Schließen dieses Modal-Dialogs hat keinen Einfluss auf den Ausführungsprozess."
+    }
+}

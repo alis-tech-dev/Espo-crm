@@ -1,0 +1,15 @@
+{
+    "autocrm": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#Admin/SalesOrderSettings",
+                "label": "Sales Order Settings",
+                "iconClass": "fas fa-shopping-basket",
+                "description": "salesOrderSettingsDescription",
+                "recordView": "accounting:views/admin/salesOrderSettings"
+            }
+        ],
+        "order": 6
+    }
+}

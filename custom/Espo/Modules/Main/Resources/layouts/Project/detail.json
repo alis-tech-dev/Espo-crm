@@ -1,0 +1,59 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "status"
+				},
+				{
+					"name": "projectPriority"
+				}
+			],
+			[
+				{
+					"name": "predictedStart"
+				},
+				{
+					"name": "predictedEnd"
+				},
+				{
+					"name": "projectProcent"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				}
+			],
+			[
+				{
+					"name": "description"
+				}
+			],
+			[
+				{
+					"name": "details"
+				}
+			]
+		],
+		"style": "default",
+		"label": "Overview"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "projectid"
+				}
+			]
+		],
+		"style": "default",
+		"customLabel": "Nový panel"
+	}
+]

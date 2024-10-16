@@ -1,0 +1,7 @@
+{
+  "fields": {
+    "coverPage": "Titulní strana",
+    "printCoverPage": "Tisknout titulní stranu",
+    "disableDefaultTemplate": "Zakázat výchozí šablonu (úprava čistého HTML)"
+  }
+}

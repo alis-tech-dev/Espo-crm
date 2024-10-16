@@ -1,0 +1,8 @@
+{
+	"fields": {
+		"defaultInvoiceDueDate": "Výchozí splatnost faktur (ve dnech)"
+	},
+	"messages": {
+		"accountNotFound": "Organizace nenalezena"
+	}
+}

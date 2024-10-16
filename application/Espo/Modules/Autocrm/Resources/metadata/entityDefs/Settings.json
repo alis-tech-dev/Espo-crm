@@ -1,0 +1,68 @@
+{
+	"fields": {
+		"addressCountryAsEnum": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"addressCountryList": {
+			"view": "autocrm:views/settings/fields/address-country-list"
+		},
+		"aresEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"defaultDetailLayout": {
+			"default": "record",
+			"options": ["record", "tab"],
+			"type": "enum"
+		},
+		"defaultIsWide": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"disableIntroductoryGuide": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"editEntityEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"editFiltersEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"editLabelsEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"editLayoutEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"editNavbarEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"refreshEntityEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"emailCheckInterval": {
+			"tooltip": true,
+			"type": "int"
+		},
+		"finstatEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		},
+		"notificationsCheckInterval": {
+			"tooltip": true,
+			"type": "int"
+		},
+		"viesEnabled": {
+			"tooltip": true,
+			"type": "bool"
+		}
+	}
+}

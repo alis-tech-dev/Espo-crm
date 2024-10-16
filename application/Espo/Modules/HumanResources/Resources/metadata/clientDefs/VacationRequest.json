@@ -1,0 +1,91 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-sun",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "recordViews": {
+        "detail": "human-resources:views/vacation-request/record/detail"
+    },
+    "dynamicLogic": {
+        "fields": {
+            "from": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "to": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "description": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "name": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "humanResource": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            },
+            "assignedUser": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "relationshipPanels": {
+        "vacationRequestApprovalItems": {
+            "createDisabled": true,
+            "selectDisabled": true,
+            "unlinkDisabled": true,
+            "rowActionsView": "views/record/row-actions/relationship-view-only"
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+{
+    "labels": {
+        "Create SupplierReclamation": "Create Supplier Reclamation"
+    },
+    "fields": {
+        "numberA": "Číslo reklamace"
+    }
+}

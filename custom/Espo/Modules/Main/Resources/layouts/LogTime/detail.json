@@ -1,0 +1,127 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				},
+				{
+					"name": "businessProject"
+				}
+			],
+			[
+				{
+					"name": "account"
+				},
+				{
+					"name": "contact"
+				}
+			],
+			[
+				{
+					"name": "dateStart"
+				},
+				{
+					"name": "dateEnd"
+				}
+			],
+			[
+				{
+					"name": "transport"
+				},
+				false,
+				false
+			]
+		],
+		"style": "default",
+		"label": "Přehled"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "assignedUser"
+				},
+				false
+			],
+			[
+				{
+					"name": "hours"
+				},
+				{
+					"name": "transportHours"
+				},
+				{
+					"name": "atWeekend"
+				}
+			],
+			[
+				{
+					"name": "acc"
+				},
+				{
+					"name": "cost"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Technik"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "externist"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Další pracovníci"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "attachments"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Přílohy"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "description"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Poznámka"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "task"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Úkol"
+	}
+]

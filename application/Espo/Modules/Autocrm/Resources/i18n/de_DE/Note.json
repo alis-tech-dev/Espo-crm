@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "notifiedUserIdList": "gemeldete Benutzer-ID-Liste",
+        "parent": "bezieht sich auf"
+    },
+    "links": {
+        "attachments": "Anhänge",
+        "parent": "bezieht sich auf",
+        "portals": "Portale"
+    },
+    "labels": {
+        "Create Note": "Notiz erstellen"
+    }
+}

@@ -1,0 +1,3 @@
+{
+	"beforeSaveCustomScript": "ifThen(approved == true, status = 'Schváleno');\nifThen(disapproved == true, status = 'Neschváleno');"
+}

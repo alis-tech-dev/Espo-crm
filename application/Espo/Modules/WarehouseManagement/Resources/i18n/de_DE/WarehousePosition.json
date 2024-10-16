@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "warehouse": "Lagerhaus"
+    },
+    "labels": {
+        "Create WarehousePosition": "Lagerposition anlegen"
+    },
+    "links": {
+        "warehouse": "Lagerhaus",
+        "items": "Artikel"
+    }
+}

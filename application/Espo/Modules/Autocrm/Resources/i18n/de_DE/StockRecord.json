@@ -1,0 +1,32 @@
+{
+    "fields": {
+        "receivedInvoice": "erhaltene Rechnung",
+        "supplier": "Lieferant",
+        "itemList": "Artikelliste",
+        "status": "Status",
+        "transfer": "Transfer",
+        "warehouse": "Lager"
+    },
+    "options": {
+        "type": {
+            "Restock": "Aufstocken der Bestände",
+            "Unstock": "Nicht auf Lager"
+        },
+        "status": {
+            "Restocked": "Vorrätig (auf Lager)",
+            "Stocking": "Lieferung",
+            "Unstocked": "Abgefragt von",
+            "Waiting": "Wartezeit"
+        }
+    },
+    "links": {
+        "receivedInvoice": "erhaltene Rechnung",
+        "supplier": "Lieferant",
+        "items": "Artikel",
+        "transfer": "Transfer",
+        "warehouse": "Lager"
+    },
+    "labels": {
+        "Create StockRecord": "Bestandsprotokoll erstellen"
+    }
+}

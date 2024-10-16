@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name",
+        "view": "main:views\/supplire-order-item\/fields\/name"
+    },
+    {
+        "name": "quantity"
+    },
+    {
+        "name": "deliveredQuantity"
+    }
+]

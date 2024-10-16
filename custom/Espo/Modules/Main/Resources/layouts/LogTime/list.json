@@ -1,0 +1,22 @@
+[
+	{
+		"name": "dateStart",
+		"width": 13,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "assignedUser",
+		"width": 15,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "name",
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "businessProject"
+	}
+]

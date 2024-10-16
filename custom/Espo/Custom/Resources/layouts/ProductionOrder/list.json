@@ -1,0 +1,66 @@
+[
+    {
+        "name": "name",
+        "widthPx": 150,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "billOfMaterials",
+        "widthPx": 250,
+        "notSortable": true,
+        "align": "left",
+        "label": "billOfMaterials"
+    },
+    {
+        "name": "itemQuantity",
+        "label": "ItemQuantity"
+    },
+    {
+        "name": "stockQuantity"
+    },
+    {
+        "name": "performWorkButton",
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/perform-work",
+        "label": "performWorkButton",
+        "hidden": true
+    },
+    {
+        "name": "description",
+        "label": "Description"
+    },
+    {
+        "name": "status",
+        "label": "status"
+    },
+    {
+        "name": "salesOrder",
+        "label": "salesOrder"
+    },
+    {
+        "name": "avaliableQuantity",
+        "label": "AvaliableQuantity"
+    },
+    {
+        "name": "quantityPlanned",
+        "label": "Planned"
+    },
+    {
+        "name": "quantityProduced",
+        "label": "Produced"
+    },
+    {
+        "name": "fromWarehouse",
+        "label": "From stock"
+    },
+    {
+        "name": "totalProduced",
+        "label": "Total quantity"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    }
+]

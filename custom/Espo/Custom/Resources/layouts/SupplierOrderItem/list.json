@@ -1,0 +1,16 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "supplierOrder"
+    },
+    {
+        "name": "quantity"
+    },
+    {
+        "name": "deliveredQuantity"
+    }
+]

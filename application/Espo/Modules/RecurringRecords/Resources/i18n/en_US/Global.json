@@ -1,0 +1,12 @@
+{
+    "scopeNames": {
+        "RecordRecurrence": "Record Recurrence"
+    },
+    "scopeNamesPlural": {
+        "RecordRecurrence": "Records Recurrences"
+    },
+    "labels": {
+        "Schedule Recurrence": "Schedule Recurrence",
+        "Scheduled Recurrences": "Scheduled Recurrences"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Create OtherEvent": "Create Other Event"
+    },
+    "fields": {
+        "dateOfLastInspection": "Date of Last Event",
+        "numberOfYearsForRepetition": "Number of Years for Repetition",
+        "dateOfTheNextInspection": "Date of the Next Event",
+        "type": "Type of Event"
+    }
+}

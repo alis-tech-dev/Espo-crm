@@ -1,0 +1,15 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "assignedUser.alisCardID",
+            "assignedUser.lastName",
+            "assignedUser.firstName"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

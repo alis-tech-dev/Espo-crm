@@ -1,0 +1,21 @@
+{
+	"menu": {
+		"detail": {
+			"buttons": [
+				"__APPEND__",
+				{
+					"label": "Create Reclamation",
+					"name": "createReclamation",
+					"action": "createReclamation",
+					"style": "default",
+					"acl": "create",
+					"aclScope": "Reclamation",
+					"data": {
+						"handler": "reclamations:handlers/case/create-reclamation"
+					},
+					"initFunction": "init"
+				}
+			]
+		}
+	}
+}

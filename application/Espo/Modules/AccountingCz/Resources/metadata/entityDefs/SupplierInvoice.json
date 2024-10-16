@@ -1,0 +1,208 @@
+{
+    "fields": {
+        "number": {
+            "readOnly": true,
+            "tooltip": true
+        },
+        "numberA": {
+            "format": "PF{YYYY}-{number}"
+        },
+        "name": {
+            "required": false
+        },
+        "originalNumber": {
+            "type": "varchar",
+            "trim": true
+        },
+        "status": {
+            "style": {
+                "UnpaidAfterMaturity": "danger"
+            },
+            "options": [
+                "__APPEND__",
+                "UnpaidAfterMaturity"
+            ],
+            "displayAsLabel": true
+        },
+        "dateOfReceiving": {
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "notNull": false,
+            "required": false,
+            "useNumericFormat": true
+        },
+        "items": {
+            "type": "linkMultiple",
+            "view": "accounting:views/fields/items",
+            "recordListEnabled": true,
+            "recordListLayout": "listItem",
+            "recordListMandatorySelectAttributeList": ["productId", "type"],
+            "recordListCreateDisabled": false,
+            "recordListLinkDisabled": true,
+            "recordListRemoveDisabled": false,
+            "recordListConfirmRemove": true
+        },
+        "dueDate": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "duzp": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true,
+            "tooltip": true
+        },
+        "paymentMethod": {
+            "type": "enum",
+            "options": [
+                "bank",
+                "card",
+                "cash",
+                "cod",
+                "collection"
+            ],
+            "style": {
+                "bank": null,
+                "card": null,
+                "cash": null,
+                "cod": null,
+                "collection": null
+            },
+            "default": "bank",
+            "tooltip": true
+        },
+        "constantSymbol": {
+            "type": "varchar",
+            "options": [],
+            "tooltip": true,
+            "maxLength": 10
+        },
+        "note": {
+            "type": "text",
+            "default": null
+        },
+        "variableSymbol": {
+            "type": "varchar",
+            "trim": true,
+            "maxLength": 10,
+            "options": [],
+            "tooltip": true
+        },
+        "acceptedPayment": {
+            "type": "link"
+        },
+        "datePaid": {
+            "notNull": false,
+            "type": "date",
+            "useNumericFormat": true
+        },
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        },
+        "expenseReceipts": {
+            "type": "linkMultiple",
+            "view": "accounting-cz:views/fields/link-multiple/no-create-link-multiple"
+        },
+        "receivedProformaInvoice": {
+            "type": "link"
+        },
+        "supplyCode": {
+            "type": "enum",
+            "options": [
+                "",
+                "1",
+                "1a",
+                "3",
+                "3a",
+                "4",
+                "4a",
+                "5",
+                "6",
+                "7",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21"
+            ],
+            "style": {
+                "": null,
+                "1": null,
+                "1a": null,
+                "3": null,
+                "3a": null,
+                "4": null,
+                "4a": null,
+                "5": null,
+                "6": null,
+                "7": null,
+                "11": null,
+                "12": null,
+                "13": null,
+                "14": null,
+                "15": null,
+                "16": null,
+                "17": null,
+                "18": null,
+                "19": null,
+                "20": null,
+                "21": null
+            },
+            "default": ""
+        },
+        "reverseCharge": {
+            "notNull": true,
+            "type": "bool"
+        },
+        "foreignInvoicing": {
+            "type": "bool"
+        },
+        "vatId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        },
+        "sicCode": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": []
+        }
+    },
+    "links": {
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "supplierInvoice",
+            "entity": "SummaryVatRates",
+            "audited": false
+        },
+        "expenseReceipts": {
+            "type": "hasChildren",
+            "foreign": "invoice",
+            "entity": "ExpenseReceipt"
+        },
+        "receivedProformaInvoice": {
+            "type": "belongsTo",
+            "foreign": "supplierinvoice",
+            "entity": "ReceivedProformaInvoice",
+            "audited": false
+        }
+    }
+}

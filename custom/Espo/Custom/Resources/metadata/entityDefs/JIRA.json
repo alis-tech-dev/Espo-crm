@@ -1,0 +1,297 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": true,
+            "view": "views/fields/assigned-user",
+            "defaultSelectFilters": [],
+            "defaultAttributes": {
+                "assignedUserId": "6672b81d428f963aa",
+                "assignedUserName": "Andrii Malovany"
+            }
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "priority": {
+            "type": "enum",
+            "options": [
+                "-",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "default": "3",
+            "style": {
+                "1": "danger",
+                "2": "warning",
+                "3": "primary",
+                "4": "success",
+                "5": "info",
+                "-": null
+            },
+            "isCustom": true,
+            "required": true
+        },
+        "predictedStart": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "predictedEnd": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "procenta": {
+            "type": "enum",
+            "options": [
+                "0%",
+                "10%",
+                "20%",
+                "30%",
+                "40%",
+                "50%",
+                "60%",
+                "70%",
+                "80%",
+                "90%",
+                "100%"
+            ],
+            "default": "0%",
+            "displayAsLabel": true,
+            "audited": true,
+            "style": {
+                "0%": null,
+                "10%": null,
+                "20%": null,
+                "30%": null,
+                "40%": null,
+                "50%": null,
+                "60%": null,
+                "70%": null,
+                "80%": null,
+                "90%": null,
+                "100%": null
+            },
+            "isCustom": true
+        },
+        "image": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Created",
+                "In Progress",
+                "Testing",
+                "Partially",
+                "Done",
+                "On hold",
+                "Canceled"
+            ],
+            "default": "Created",
+            "style": {
+                "Created": "danger",
+                "In Progress": "primary",
+                "Testing": "warning",
+                "Partially": "info",
+                "Done": "success",
+                "On hold": "warning",
+                "Canceled": "danger"
+            },
+            "isCustom": true,
+            "audited": true
+        },
+        "screenshot": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "small",
+            "accept": [],
+            "copyAttachmentsEntityList": [],
+            "isCustom": true
+        },
+        "cRM": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "crm.alis-is",
+                "alis-is",
+                "aledo-de.alis-is",
+                "aledo-holding.alis-is"
+            ],
+            "style": {
+                "crm.alis-is": "success",
+                "alis-is": "primary",
+                "aledo-de.alis-is": "warning",
+                "aledo-holding.alis-is": "danger"
+            },
+            "default": "crm.alis-is",
+            "isCustom": true
+        },
+        "queue": {
+            "type": "enum",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "style": {
+                "1": "danger",
+                "2": "danger",
+                "3": "danger",
+                "4": "warning",
+                "5": "warning",
+                "6": "warning",
+                "7": "primary",
+                "8": "primary",
+                "9": "success",
+                "10": "success"
+            },
+            "default": "5",
+            "isCustom": true,
+            "audited": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "toAll": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true,
+            "tooltip": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "image": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "screenshot": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "users": {
+            "type": "hasMany",
+            "foreign": "jIRA",
+            "entity": "User",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "assignedUser.lastName",
+            "assignedUser.firstName",
+            "assignedUser.userName",
+            "createdBy.firstName",
+            "createdBy.lastName",
+            "createdBy.userName"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    },
+    "optimisticConcurrencyControl": false
+}

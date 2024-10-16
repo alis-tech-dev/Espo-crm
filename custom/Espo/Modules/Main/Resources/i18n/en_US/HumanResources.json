@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"pracPomer": "Druh pracovního poměru",
+		"employeeId": "Číslo zaměstnance",
+		"documentation": "Soubory",
+		"pozice": "Pozice",
+		"majetek": "Majetek",
+		"auto": "Auto",
+		"mobil": "Mobil",
+		"notebook": "Notebook",
+		"notes": "Poznámky",
+		"pomer": "Druh pracovního poměru",
+		"cP": "Color Picker"
+	},
+	"links": [],
+	"labels": {
+		"Create HumanResources": "Create HR"
+	},
+	"options": {
+		"pracPomer": {
+			"HPP": "HPP",
+			"VPP": "VPP",
+			"DPP": "DPP",
+			"DPC": "DPČ"
+		},
+		"majetek": {
+			"Auto": "Auto",
+			"Mobil": "Mobil",
+			"Notebook": "Notebook",
+			"tarif": "Tarif"
+		}
+	}
+}

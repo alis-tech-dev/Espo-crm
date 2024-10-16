@@ -1,0 +1,121 @@
+{
+  "controller": "controllers/record",
+  "views": {
+    "list": "sales:views/use-case/list"
+  },
+  "recordViews": {
+    "list": "sales:views/use-case/record/list"
+  },
+  "detailSmall": [
+    {
+      "name": "items",
+      "label": "Items",
+      "view": "sales:views/use-case/record/panels/items",
+      "notRefreshable": true,
+      "sticked": true,
+      "isForm": true
+    }
+  ],
+  "bottomPanels": {
+    "detail": [
+      "__APPEND__",
+      {
+        "name": "items",
+        "label": "Items",
+        "view": "sales:views/use-case/record/panels/items",
+        "notRefreshable": true,
+        "sticked": true,
+        "isForm": true
+      }
+    ],
+    "editSmall": [
+      {
+        "name": "items",
+        "label": "Items",
+        "view": "sales:views/use-case/record/panels/items",
+        "notRefreshable": true,
+        "sticked": true,
+        "bottomPanel": true,
+        "isForm": true
+      }
+    ],
+    "edit": [
+      "__APPEND__",
+      {
+        "name": "items",
+        "label": "Items",
+        "view": "sales:views/use-case/record/panels/items",
+        "notRefreshable": true,
+        "sticked": true,
+        "isForm": true
+      }
+    ]
+  },
+  "dynamicLogic": {
+    "fields": {
+      "name": {
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isTrue",
+              "attribute": "isTransport"
+            }
+          ]
+        }
+      },
+      "assignment": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isFalse",
+              "attribute": "isTransport"
+            }
+          ]
+        }
+      },
+      "quote": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isFalse",
+              "attribute": "isTransport"
+            }
+          ]
+        }
+      },
+      "transportOf": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isTrue",
+              "attribute": "isTransport"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "additionalLayouts": {
+    "detailBottomTotal": {
+      "type": "list",
+      "dataAttributeList": [
+        "name",
+        "view",
+        "customLabel"
+      ]
+    }
+  },
+  "menu": {
+    "list": {
+      "buttons": [
+        {
+          "label": "Quotes",
+          "link": "#Quote",
+          "acl": "read",
+          "aclScope": "Quote"
+        }
+      ]
+    }
+  },
+  "calculationHandler": "sales:quote-calculation-handler"
+}

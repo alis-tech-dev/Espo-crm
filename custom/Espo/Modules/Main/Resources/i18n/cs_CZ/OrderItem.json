@@ -1,0 +1,33 @@
+{
+	"fields": {
+		"account1": "Account1",
+		"account": "Firma",
+		"amount": "Částka",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"discount": "Sleva",
+		"listPrice": "Katalogová cena",
+		"listPriceConverted": "Katalogová cena (převedeno)",
+		"listPriceCurrency": "Katalogová cena v měně",
+		"orderStatus": "Stav",
+		"product": "Produkt",
+		"quantity": "Množství",
+		"taxRate": "Sazba daně",
+		"unitPrice": "Jednotková cena",
+		"unitPriceConverted": "Jednotková cena (převedeno)",
+		"unitPriceCurrency": "Jednotková cena v měně",
+		"unitWeight": "Jednotková hmotnost",
+		"weight": "Hmotnost",
+		"components": "Components",
+		"code": "Kód"
+	},
+	"links": {
+		"account1": "Account1",
+		"order": "Objednávka",
+		"product": "Produkt",
+		"components": "Components"
+	},
+	"labels": {
+		"Create OrderItem": "Vytvořit položku objednávky"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "fetchData": "Daten abrufen",
+        "imapHandler": "Imap-Bearbeiter",
+        "smtpHandler": "SMTP-Bearbeiter"
+    },
+    "links": {
+        "replyEmailTemplate": "Antwort E-Mail Vorlage"
+    }
+}

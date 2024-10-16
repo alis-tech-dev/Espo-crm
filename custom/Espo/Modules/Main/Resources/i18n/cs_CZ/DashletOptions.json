@@ -1,0 +1,35 @@
+{
+	"fields": {
+		"boolFilterList": "Další filtry",
+		"dateFilter": "Filtr datumů",
+		"displayOnlyCount": "Zobrazit pouze celkem",
+		"displayTotal": "Zobrazit celkem",
+		"enabledScopeList": "Co má být zobrazeno",
+		"entityType": "Typ entity",
+		"expandedLayout": "Vzhled",
+		"futureDays": "Dalších X dní",
+		"primaryFilter": "Základní filtr",
+		"skipOwn": "Nezobrazovat záznamy",
+		"sortBy": "Pořadí podle",
+		"sortDirection": "Typ řazení",
+		"team": "Tým",
+		"useLastStage": "Seskupit podle",
+		"users": "Uživatelé"
+	},
+	"messages": {
+		"selectEntityType": "Vyberte typ entity v dashletu"
+	},
+	"options": {
+		"mode": {
+			"agendaWeek": "Týden (agenda)",
+			"basicWeek": "Týden",
+			"month": "Měsíc",
+			"basicDay": "Den",
+			"agendaDay": "Den (agenda)",
+			"timeline": "Časová osa"
+		}
+	},
+	"tooltips": {
+		"skipOwn": "Nezobrazovat moje akce"
+	}
+}

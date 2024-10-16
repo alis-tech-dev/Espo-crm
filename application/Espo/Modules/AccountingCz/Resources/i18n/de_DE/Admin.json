@@ -1,0 +1,8 @@
+{
+    "labels": {
+        "Invoice Settings": "Firmenadresse und Rechnungseinstellungen"
+    },
+    "descriptions": {
+        "invoiceSettings": "Einstellungen von Standardwerten und weiteren Parametern auf Rechnungen."
+    }
+}

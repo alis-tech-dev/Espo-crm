@@ -1,0 +1,10 @@
+{
+    "psr-4": {
+        "Defr\\QRPlatba\\": "application/Espo/Modules/Accounting/vendor/dfridrich/qr-platba/src",
+        "Ibericode\\Vat\\": "application/Espo/Modules/Accounting/vendor/ibericode/vat/src"
+    },
+    "files": [
+        "application/Espo/Modules/Accounting/vendor/dfridrich/qr-platba/src/bcmod.php"
+    ]
+}
+

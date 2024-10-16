@@ -1,0 +1,494 @@
+{
+	"fields": {
+		"name": {
+			"type": "varchar",
+			"required": false,
+			"trim": false,
+			"options": [],
+			"default": "Porada"
+		},
+		"status": {
+			"type": "enum",
+			"options": [
+				"Planned",
+				"Held",
+				"Not Held"
+			],
+			"default": "Planned",
+			"style": {
+				"Held": "success"
+			},
+			"audited": true
+		},
+		"dateStart": {
+			"type": "datetimeOptional",
+			"notNull": false,
+			"view": "crm:views/meeting/fields/date-start",
+			"required": false,
+			"default": "javascript: return this.dateTime.getNow(15);",
+			"audited": false,
+			"minuteStep": 30
+		},
+		"dateEnd": {
+			"type": "datetimeOptional",
+			"notNull": false,
+			"view": "crm:views/meeting/fields/date-end",
+			"required": false,
+			"after": "dateStart",
+			"minuteStep": 30,
+			"suppressValidationList": [
+				"required"
+			]
+		},
+		"isAllDay": {
+			"type": "bool",
+			"readOnly": false,
+			"layoutListDisabled": true,
+			"layoutDetailDisabled": true,
+			"layoutMassUpdateDisabled": true
+		},
+		"duration": {
+			"type": "duration",
+			"start": "dateStart",
+			"end": "dateEnd",
+			"options": [
+				300,
+				600,
+				900,
+				1800,
+				2700,
+				3600,
+				7200
+			],
+			"default": 300,
+			"notStorable": true,
+			"select": {
+				"select": "TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)"
+			},
+			"order": {
+				"order": [
+					[
+						"TIMESTAMPDIFF_SECOND:(dateStart, dateEnd)",
+						"{direction}"
+					]
+				]
+			}
+		},
+		"parent": {
+			"type": "linkParent",
+			"entityList": [
+				"Account",
+				"Lead",
+				"Contact"
+			]
+		},
+		"description": {
+			"type": "text"
+		},
+		"reminders": {
+			"type": "jsonArray",
+			"notStorable": true,
+			"view": "crm:views/meeting/fields/reminders",
+			"layoutListDisabled": true
+		},
+		"createdAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"modifiedAt": {
+			"type": "datetime",
+			"readOnly": true
+		},
+		"createdBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"modifiedBy": {
+			"type": "link",
+			"readOnly": true,
+			"view": "views/fields/user"
+		},
+		"assignedUser": {
+			"type": "link",
+			"required": false,
+			"view": "views/fields/assigned-user"
+		},
+		"teams": {
+			"type": "linkMultiple",
+			"view": "views/fields/teams"
+		},
+		"number": {
+			"type": "autoincrement",
+			"autoincrement": true,
+			"unique": true,
+			"inlineEditDisabled": false,
+			"isCustom": true
+		},
+		"type": {
+			"type": "enum",
+			"options": [
+				"Projektová",
+				"Obchodní",
+				"Provozní",
+				"Vývojářská",
+				"Update",
+				"ISO",
+				"Shareholders",
+				"Kvalita",
+				"Interní sebeškolení",
+				"Výsledky společnosti",
+				"Řízení nákladů",
+				"Directors Board",
+				"Company Tour",
+				"Uni"
+			],
+			"style": {
+				"Projektová": null,
+				"Obchodní": null,
+				"Provozní": null,
+				"Vývojářská": null,
+				"Update": null,
+				"ISO": null,
+				"Shareholders": null,
+				"Kvalita": null,
+				"Interní sebeškolení": null,
+				"Výsledky společnosti": null,
+				"Řízení nákladů": null,
+				"Directors Board": null,
+				"Company Tour": null,
+				"Uni": null
+			},
+			"displayAsLabel": true,
+			"default": "Projektová",
+			"isCustom": true,
+			"required": true
+		},
+		"dateStartDate": {
+			"required": true,
+			"default": "javascript: return this.dateTime.getToday();",
+			"useNumericFormat": true
+		},
+		"attachement": {
+			"type": "attachmentMultiple",
+			"previewSize": "medium",
+			"sourceList": [],
+			"accept": [],
+			"isCustom": true
+		},
+		"harmonogram": {
+			"type": "text",
+			"rowsMin": 2,
+			"cutHeight": 200,
+			"default": "14:00 - Zahájení obchodní porady (kontrola všech přítomných)\n14:05 - Projití úkolů z minulé porady (dokončeno/v progresu/čeká na něco/nezačalo se)\n14:30 - Sdílení klíčových událostí minulého týdne (každý obchodník cca 5 minut)\n14:50 - Vyřešení konkrétního prioritního téma/problému\n15:00 - Shrnutí a zaznamenání nových úkolů",
+			"seeMoreDisabled": true,
+			"rows": 10,
+			"readOnly": true,
+			"isCustom": true,
+			"displayRawText": true
+		},
+		"zapisProjektova": {
+			"type": "wysiwyg",
+			"default": "    <p><span style=\"font-weight: bold;\">Účastníci:</span>Michl, Krejčí J, Krejčím M., Valtarová, Junkerová, Skoták, Štencel,  Reithar, Bartošík, Vajda, Rybníček</p>\n    <p><span style=\"font-weight: bold;\">Neúčastníci:</span></p>\n    <p>&nbsp;</p>\n    <p><span style=\"font-weight: bold;\">Dokončené:</span></p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <p><span style=\"font-weight: bold;\">Aktuální projekty:</span></p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <p><span style=\"font-weight: bold;\">Nabídky:</span></p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <p><span style=\"font-weight: bold;\">Ostatní:</span></p>\n",
+			"isCustom": true
+		},
+		"zapisObchodni": {
+			"type": "wysiwyg",
+			"default": "<div style=\"font-size: 14pt; font-weight: bold; color: #1a9dd9; text-align: center;\">Obchodn&iacute; porada</div>\n<ul>\n<li>Kontrola stavu minul&yacute;ch &uacute;kolů (z&aacute;pis důležit&yacute;ch v&yacute;sledků)</li>\n<ul>\n<li>&nbsp;</li>\n</ul>\n</ul>\n<p>&nbsp;</p>\n<ul>\n<li>Shrnut&iacute; minul&eacute;ho t&yacute;dne</li>\n</ul>\n<table class=\"table \" style=\"width: 100%; border: 1px solid black; text-align: center; height: 100px;\" border=\"\" cellpadding=\"7\">\n<tbody>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px; border: 2px solid black;\" colspan=\"2\"><strong>Barča</strong></td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Obrat</td>\n<td style=\"height: 20px; text-align: left; padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Popt&aacute;vky/CN</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Probl&eacute;my</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Požadavky/n&aacute;pady</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<table class=\"table \" style=\"width: 100%; border: 1px solid black; text-align: center; height: 100px;\" border=\"\" cellpadding=\"7\">\n<tbody>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px; border: 2px solid black;\" colspan=\"2\"><strong>Filip</strong></td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Obrat</td>\n<td style=\"height: 20px; text-align: left; padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Popt&aacute;vky/CN</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Probl&eacute;my</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Požadavky/n&aacute;pady</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<table class=\"table \" style=\"width: 100%; border: 1px solid black; text-align: center; height: 100px;\" border=\"\" cellpadding=\"7\">\n<tbody>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px; border: 2px solid black;\" colspan=\"2\"><strong>Jirka</strong></td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Obrat</td>\n<td style=\"height: 20px; text-align: left; padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Popt&aacute;vky/CN</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\"> </td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Probl&eacute;my</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n<tr style=\"height: 20px;\">\n<td style=\"height: 20px;\" width=\"20%\">Požadavky/n&aacute;pady</td>\n<td style=\"height: 20px; text-align: left;padding-left: 20px;\" width=\"80%\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<ul>\n<li>Vyře&scaron;en&iacute; konktr&eacute;tn&iacute;ho prioritn&iacute;ho t&eacute;matu/probl&eacute;mu</li>\n<ul>\n<li>&nbsp;</li>\n</ul>\n</ul>\n<p>&nbsp;</p>\n<ul>\n<li>Shrnut&iacute; a zaznamen&aacute;n&iacute; nov&yacute;ch &uacute;kolů</li>\n</ul>\n<table class=\"table \" style=\"width: 100%; border: 1px solid black; text-align: center;\" border=\"\">\n<tbody>\n<tr>\n<th width=\"6%\">#</th>\n<th width=\"50%\">&Uacute;KOL</th>\n<th width=\"24%\">KDO</th>\n<th width=\"20%\">DO KDY</th>\n</tr>\n<tr>\n<td>1</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+			"isCustom": true
+		},
+		"obchodniChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Hrabal",
+				"Valtarová",
+				"Žochová"
+			],
+			"isCustom": true,
+			"isSorted": false
+		},
+		"nazevObchodni": {
+			"type": "varchar",
+			"default": "Obchod",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevIS": {
+			"type": "varchar",
+			"default": "IS realizace",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevManagement": {
+			"type": "varchar",
+			"default": "Routine management",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevRD": {
+			"type": "varchar",
+			"default": "R&D",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevProjektova": {
+			"type": "varchar",
+			"default": "Projekty / Výroba / Expedice",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevISO": {
+			"type": "varchar",
+			"default": "ISO proces",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevShareholders": {
+			"type": "varchar",
+			"default": "Board Shareholders",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevKvalita": {
+			"type": "varchar",
+			"default": "Kvalita",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevSkoleni": {
+			"type": "varchar",
+			"default": "Interní školení",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevVysledky": {
+			"type": "varchar",
+			"default": "Prezentace výsledků společnosti",
+			"options": [],
+			"isCustom": true
+		},
+		"nazevRizeni": {
+			"type": "varchar",
+			"default": "Řízení nákladů",
+			"options": [],
+			"isCustom": true
+		},
+		"zapisIS": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "    <p><span style=\"font-weight: bold;\">Porada:</span> Realizace informačního systému</p>\n    <p><span style=\"font-weight: bold;\">Datum:</span> </p>\n    <p><span style=\"font-weight: bold;\" Př&iacute;tomni:></span> Junkerov&aacute;, Hrabal, Tobola</p>\n    <hr>\n    <p>&nbsp;</p>\n    <p>Z minula:</p>\n    <div style=\"margin: 20px;\">\n        <p>&nbsp;</p>\n        <p>&nbsp;</p>\n    </div>\n    <p>Na čem se pracovalo:&nbsp;</p>\n    <div style=\"margin: 20px;\">\n        <p>&nbsp;</p>\n        <p>&nbsp;</p>\n    </div>\n    <p>Co se bude ře&scaron;it dál:</p>\n    <div style=\"margin: 20px;\">\n        <p>&nbsp;</p>\n        <p>&nbsp;</p>\n    </div>"
+		},
+		"zapisManagement": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": " <p><span style=\"text-decoration: underline;\">Porada:</span> Routine Management</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span>  </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n</ol>        <p>&nbsp;</p>\n<ol start=\"2\">\n        <li style=\"margin-left: 40px;\">Náměty</li>\n        <ul><li><p>&nbsp;</p></li></ul></ol><ol start=\"3\">\n        <li>Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Středa ... v 14:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne </p>\n    <div style=\"text-align: center;width: 100%;\"><p>------ Konec zápisu ------</p></div>\n</body>"
+		},
+		"zapisRD": {
+			"type": "wysiwyg",
+			"isCustom": true
+		},
+		"rdChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Krejčí Miloslav",
+				"Krejčí Jiří"
+			],
+			"isCustom": true
+		},
+		"qualityChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Valtarová"
+			],
+			"isCustom": true
+		},
+		"isoChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"doplnit"
+			],
+			"isCustom": true
+		},
+		"shareholdersChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Hrabal",
+				"Michl",
+				"Růžička",
+				"Snížek"
+			],
+			"isCustom": true
+		},
+		"nazevDB": {
+			"type": "varchar",
+			"options": [],
+			"isCustom": true,
+			"default": "Director's Board"
+		},
+		"nazevCT": {
+			"type": "varchar",
+			"default": "Company Tour",
+			"options": [],
+			"isCustom": true
+		},
+		"dbChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Hrabal",
+				"Michl",
+				"Růžička",
+				"Snížek"
+			],
+			"isCustom": true
+		},
+		"zapisISO": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "<p><span style=\"text-decoration: underline;\">Porada:</span> ISO PROCES</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>\n    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr>\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>\n                    <p>1&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n    </ol>\n    <p>&nbsp;</p>\n    <ol start=\"2\">\n        <li style=\"margin-left: 40px;font-weight: bold;\">Diskuze EMS</li>\n        <ul>\n            <li>\n                <p>&nbsp;</p>\n            </li>\n        </ul>\n    </ol>\n    <ol start=\"3\">\n        <li style=\"margin-left: 40px;font-weight: bold;\">Diskuze BOZP</li>\n        <ul>\n            <li>\n                <p>&nbsp;</p>\n            </li>\n        </ul>\n    </ol>\n    <ol start=\"4\">\n        <li style=\"margin-left: 40px;font-weight: bold;\">Diskuze obecná</li>\n        <ul>\n            <li>\n                <p>&nbsp;</p>\n            </li>\n        </ul>\n    </ol>\n    <ol start=\"5\">\n        <li style=\"margin-left: 40px;font-weight: bold;\">Náměty</li>\n        <ul>\n            <li>\n                <p>&nbsp;</p>\n            </li>\n        </ul>\n    </ol>\n    <ol start=\"6\">\n        <li>Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr>\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>\n                    <p>1&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Úterý ... v 14:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne </p>\n    <div style=\"text-align: center;width: 100%;\">\n        <p>------ Konec zápisu ------</p>\n    </div>"
+		},
+		"isChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Hrabal"
+			],
+			"isCustom": true
+		},
+		"zapisKvalita": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": " <p><span style=\"text-decoration: underline;\">Porada:</span> Quality – weekly evaluation</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span>  </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n</ol>        <p>&nbsp;</p>\n<ol start=\"2\">\n        <li style=\"margin-left: 40px;\">Náměty</li>\n        <ul><li><p>&nbsp;</p></li></ul></ol><ol start=\"3\">\n        <li>Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Čtvrtek ... v 10:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne  </p>\n    <div style=\"text-align: center;width: 100%;\"><p>------ Konec zápisu ------</p></div>\n</body>"
+		},
+		"zapisCT": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": " <p><span style=\"text-decoration: underline;\">Porada:</span> \n  Company Tour</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span>  </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n</ol>        <p>&nbsp;</p>\n<ol start=\"2\">\n        <li style=\"margin-left: 40px;\">Náměty</li>\n        <ul><li><p>&nbsp;</p></li></ul></ol><ol start=\"3\">\n        <li>Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Úterý ... v 10:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne  </p>\n    <div style=\"text-align: center;width: 100%;\"><p>------ Konec zápisu ------</p></div>\n</body>"
+		},
+		"zapisShareholders": {
+			"type": "wysiwyg",
+			"default": "<p><span style=\"text-decoration: underline;\">Porada:</span> SHAREHOLDERS BOARD</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span> </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> Snížek, Michl, Růžička, Hrabal</p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>\n    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr>\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>\n                    <p>1&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n    </ol>\n    <p>&nbsp;</p>\n    <ol start=\"2\">\n        <li style=\"margin-left: 40px;\">Náměty</li>\n        <ul>\n            <li>\n                <p>&nbsp;</p>\n            </li>\n        </ul>\n    </ol>\n    <ol start=\"3\">\n        <li >Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr>\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>\n                    <p>1&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n                <td>\n                    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Středa ... v 10:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne </p>\n    <div style=\"text-align: center;width: 100%;\">\n        <p>------ Konec zápisu ------</p>\n    </div>",
+			"isCustom": true
+		},
+		"zapisSkoleni": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "    <p><span style=\"font-weight: bold;\">Porada:</span> Interní sebeškolení</p>\n    <p><span style=\"font-weight: bold;\">Datum:</span> </p>\n    <p><span style=\"font-weight: bold;\">Vedoucí porady:</span> Miloslav Krejčí</p>\n    <p>&nbsp;</p>\n    <p><span style=\"font-weight: bold;\">Účastníci školení:</span> </p>\n    <p>&nbsp;</p>\n    <h2>Téma</h2>\n    <ul>\n        <li><p>&nbsp;</p></li>\n    </ul>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>"
+		},
+		"zapisRizeniNakladu": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "    <p><span style=\"font-weight: bold;\">Porada:</span> Řízení nákladů</p>\n    <p><span style=\"font-weight: bold;\">Datum:</span> </p>\n    <p><span style=\"font-weight: bold;\">Moderátor:</span> Petr Šulc</p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <h2>Téma:</h2>\n    <ul>\n        <li><p>Shrnutí nákladů za měsíc </p></li>\n    </ul>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>"
+		},
+		"rizeniNakladuChecklist": {
+			"type": "checklist",
+			"storeArrayValues": true,
+			"options": [
+				"Snížek",
+				"Hrabal"
+			],
+			"isCustom": true
+		},
+		"zapisCR": {
+			"type": "wysiwyg",
+			"isCustom": true,
+			"default": "    <p><span style=\"text-decoration: underline;\">Porada:</span> Company results</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span>  </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> všichni</p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <p>Prezentace probíhá formou prezentace, která se ukládá do Skynetu.</p>\n    <p>&nbsp;</p>\n    <p>&nbsp;</p>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Středa ... v 10:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne  </p>\n    <div style=\"text-align: center;width: 100%;\"><p>------ Konec zápisu ------</p></div>"
+		},
+		"zapisDB": {
+			"type": "wysiwyg",
+			"default": "<p><span style=\"text-decoration: underline;\">Porada:</span> DIRECTOR'S BOARD</p>\n    <p><span style=\"text-decoration: underline;\">Datum:</span>  </p>\n    <p><span style=\"text-decoration: underline;\">Vedoucí porady:</span> MT</p>\n    <p>&nbsp;</p>\n    <p><span style=\"text-decoration: underline;\">Přítomni:</span> Snížek, Michl, Růžička, Hrabal</p>\n    <p><span style=\"text-decoration: underline;\">Nepřítomni:</span> </p>\n    <p>&nbsp;</p>    <ol>\n        <li>Kontrola úkolů z minulé porady</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n</ol>        <p>&nbsp;</p>\n<ol start=\"2\">\n        <li style=\"margin-left: 40px;\">Náměty</li>\n        <ul><li><p>&nbsp;</p></li></ul></ol><ol start=\"3\">\n        <li>Nové úkoly</li>\n        <table class=\"table \" border=\"\" style=\"width: 100%;border: 1px solid black;text-align: center;\">\n            <tr >\n                <th width=\"6%\">#</td>\n                <th width=\"50%\">ÚKOL</td>\n                <th width=\"24%\">KDO</td>\n                <th width=\"20%\">DO KDY</td>\n            </tr>\n            <tr>\n                <td>    <p>1&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n                <td>    <p>&nbsp;</p>\n                </td>\n            </tr>\n        </table>\n        <p>&nbsp;</p>\n    </ol>\n    <p style=\"font-weight: bold;\">Další porada:</p>\n    <p>Středa ... v 12:00 ve společnosti ALIS Tech</p>\n    <p style=\"font-weight: bold;\">Zapsal:</p>\n    <p>Tobola dne  </p>\n    <div style=\"text-align: center;width: 100%;\"><p>------ Konec zápisu ------</p></div>",
+			"isCustom": true
+		},
+		"nazevUni": {
+			"type": "varchar",
+			"maxLength": 150,
+			"options": [],
+			"isCustom": true,
+			"default": "Porada"
+		},
+		"zapisUni": {
+			"type": "wysiwyg",
+			"isCustom": true
+		},
+		"upresnujiciNazev": {
+			"type": "varchar",
+			"maxLength": 150,
+			"trim": true,
+			"options": [],
+			"isCustom": true
+		}
+	},
+	"links": {
+		"parent": {
+			"type": "belongsToParent",
+			"foreign": "poradyChildren"
+		},
+		"createdBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"modifiedBy": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"assignedUser": {
+			"type": "belongsTo",
+			"entity": "User"
+		},
+		"teams": {
+			"type": "hasMany",
+			"entity": "Team",
+			"relationName": "EntityTeam",
+			"layoutRelationshipsDisabled": true
+		},
+		"attachement": {
+			"type": "hasChildren",
+			"entity": "Attachment",
+			"foreign": "parent",
+			"layoutRelationshipsDisabled": true,
+			"relationName": "attachments",
+			"disabled": true
+		}
+	},
+	"collection": {
+		"orderBy": "dateStart",
+		"order": "desc"
+	},
+	"indexes": {
+		"dateStartStatus": {
+			"columns": [
+				"dateStart",
+				"status"
+			]
+		},
+		"dateStart": {
+			"columns": [
+				"dateStart",
+				"deleted"
+			]
+		},
+		"status": {
+			"columns": [
+				"status",
+				"deleted"
+			]
+		},
+		"assignedUser": {
+			"columns": [
+				"assignedUserId",
+				"deleted"
+			]
+		},
+		"assignedUserStatus": {
+			"columns": [
+				"assignedUserId",
+				"status"
+			]
+		}
+	}
+}

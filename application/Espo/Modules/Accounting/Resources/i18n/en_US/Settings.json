@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "warehouseRevertGoodsInSalesOrder": "Warehouse for Returning Goods"
+    },
+    "tooltips": {
+        "warehouseRevertGoodsInSalesOrder": "Specifies the warehouse to which goods will be returned from the sales order if the order is changed/cancelled and the goods are to be restocked back into the warehouse."
+    }
+}

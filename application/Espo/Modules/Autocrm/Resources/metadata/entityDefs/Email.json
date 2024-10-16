@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "takenStatus": {
+            "type": "enum",
+            "options": [
+                "Accepted",
+                "BeingHandled",
+                "Taken",
+                "Handled"
+            ],
+            "style": {
+                "Accepted": null,
+                "BeingHandled": "primary",
+                "Taken": "danger",
+                "Handled": "success"
+            },
+            "default": "Accepted",
+            "displayAsLabel": true
+        }
+    }
+}

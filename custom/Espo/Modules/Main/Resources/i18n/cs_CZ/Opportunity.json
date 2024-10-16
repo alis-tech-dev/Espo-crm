@@ -1,0 +1,60 @@
+{
+	"options": {
+		"stage": {
+			"Qualification": "Příprava",
+			"Proposal": "Poptáno",
+			"Negotiation": "Vyjednávání",
+			"Closed Won": "Vytvoření nabídky",
+			"Closed Lost": "Prohraná",
+			"Prospecting": "Prospecting",
+			"Needs Analysis": "Needs Analysis",
+			"Value Proposition": "Value Proposition",
+			"Id. Decision Makers": "Id. Decision Makers",
+			"Perception Analysis": "Perception Analysis",
+			"Proposal/Price Quote": "Proposal/Price Quote",
+			"Negotiation/Review": "Negotiation/Review"
+		}
+	},
+	"labels": {
+		"Create Opportunity": "Vytvořit Poptávku",
+		"Convert to Quote": "Vytvořit Nabídku",
+		"Quote Created": "Nabídka vytvořena"
+	},
+	"fields": {
+		"closeDate": "Kontaktovat nejpozději",
+		"amountConverted": "Částka (převedeno)",
+		"amountCurrency": "Částka v měně",
+		"amountWeightedConverted": "Amount weighted (converted)",
+		"contact": "Primární kontakt",
+		"contactRole": "Role kontaktu",
+		"lastStage": "Poslední fáze",
+		"leadSource": "Zdroj",
+		"originalLead": "Původní Potenciál",
+		"account": "Firma",
+		"businessProjects": "Zakázka",
+		"account1": "Firma",
+		"salesPerson": "Jméno obchodníka",
+		"amount": "Částka za položky",
+		"enduser": "End-user",
+		"probability": "Pravděpodobnost (%)",
+		"estimation": "Odhad ceny",
+		"estimationCurrency": "Odhad ceny (Měna)",
+		"estimationConverted": "Odhad ceny (Převedeno)",
+		"deadline": "Deadline",
+		"lastContacted": "Poslední kontakt",
+		"details": "Poznámky",
+		"lastContact": "Poslední kontakt"
+	},
+	"links": {
+		"contact": "Primární kontakt",
+		"invoices": "Faktury",
+		"items": "Položky",
+		"originalLead": "Originální Potenciál",
+		"salesOrders": "Proforma faktury",
+		"businessProjects": "Zakázka",
+		"account1": "Firma"
+	},
+	"presetFilters": {
+		"lost": "Ztracený"
+	}
+}

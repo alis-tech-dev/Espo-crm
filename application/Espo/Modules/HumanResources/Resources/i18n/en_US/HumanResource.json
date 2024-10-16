@@ -1,0 +1,82 @@
+{
+    "labels": {
+        "Create HumanResource": "Create HR"
+    },
+    "fields": {
+        "educationAndTrainingRecords": "Education and Training Records",
+        "medicalExaminations": "Medical Examinations",
+        "otherEvents": "Other Events",
+        "passwords": "Login Credentials Records",
+        "amountOfBasicSalary": "Amount of Basic Salary",
+        "variableSalary": "Variable Salary",
+        "note": "Notes",
+        "listOfCompetencesAndJobDuties": "List of Competences and Job Duties",
+        "employmentRelationship": "Employment Relationship",
+        "job": "Job Position",
+        "employmentContract": "Contracts + Amendments",
+        "birthdate": "Date of Birth",
+        "permanentResidence": "Permanent Residence",
+        "permanentResidenceStreet": "Permanent Residence Street",
+        "permanentResidenceCity": "Permanent Residence City",
+        "permanentResidenceState": "Permanent Residence State",
+        "permanentResidenceCountry": "Permanent Residence Country",
+        "permanentResidencePostalCode": "Permanent Residence ZIP Code",
+        "permanentResidenceMap": "Permanent Residence Map",
+        "bankAccountNumber": "Bank Account",
+        "birthplace": "Place of Birth",
+        "birthCertificateNumber": "Social Security Number",
+        "citizenship": "Citizenship",
+        "healthInsuranceCompany": "Health Insurance Company",
+        "workStartDate": "Work Start Date",
+        "employmentPeriod": "Employment Period (indefinite/fixed-term until xx yy zzzz)",
+        "contractDate": "Contract Date",
+        "testtime": "Employee's probationary (Number of months)",
+        "guaranteedSalary": "Guaranteed Salary Group",
+        "vacationRequests": "Vacation Requests",
+        "vacationDays": "Number of Vacation Days per Year",
+        "vacationDaysLeft": "Remaining Number of Vacation Days",
+        "vacations": "Vacations",
+        "user": "User",
+        "phoneNumber": "Phone",
+        "emailAddress": "Email"
+    },
+    "links": {
+        "educationAndTrainingRecords": "Education and Training Records",
+        "medicalExaminations": "Medical Examinations",
+        "otherEvents": "Other Events",
+        "passwords": "Login Credentials Records",
+        "vacationRequests": "Vacation Requests",
+        "vacations": "Vacations",
+        "user": "User"
+    },
+    "options": {
+        "employmentRelationship": {
+            "full-time": "Employee",
+            "part-time": "Part-time",
+            "gainfully employed person": "Self-Employed"
+        },
+	"job": {
+            "Managing Director": "Managing Director",
+            "Administrative Worker": "Administrative Worker",
+            "Technician": "Technician",
+            "Salesperson": "Salesperson"
+        },
+        "testtime": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "-": "-"
+        },
+        "guaranteedSalary": {
+            "------": "------",
+            "1.": "1.",
+            "2.": "2.",
+            "3.": "3.",
+            "4.": "4.",
+            "5.": "5.",
+            "6.": "6.",
+            "7.": "7.",
+            "8.": "8."
+        }
+    }
+}

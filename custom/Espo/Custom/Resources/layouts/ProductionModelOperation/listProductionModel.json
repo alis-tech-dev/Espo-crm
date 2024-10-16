@@ -1,0 +1,34 @@
+[
+    {
+        "name": "order",
+        "width": 7,
+        "label": "Pořadí"
+    },
+    {
+        "name": "operation",
+        "label": "Operace"
+    },
+    {
+        "name": "workCenter",
+        "width": 20,
+        "label": "Pracoviště"
+    },
+    {
+        "name": "preparationTime",
+        "width": 12,
+        "label": "Přípravný čas"
+    },
+    {
+        "name": "productionTime",
+        "width": 12,
+        "label": "Výrobní čas"
+    },
+    {
+        "name": "interoperationTime",
+        "width": 12,
+        "label": "Mezioperační čas"
+    },
+    {
+        "name": "testVykaz"
+    }
+]

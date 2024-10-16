@@ -1,0 +1,79 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "type"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Price",
+        "rows": [
+            [
+                {
+                    "name": "costPrice"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "pricingType"
+                },
+                {
+                    "name": "salesPrice"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMarkup"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "priceMargin"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "ean"
+                }
+            ],
+            [
+                {
+                    "name": "url"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

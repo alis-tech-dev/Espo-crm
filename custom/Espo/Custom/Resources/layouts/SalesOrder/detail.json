@@ -1,0 +1,340 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "number"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "quote"
+                }
+            ],
+            [
+                {
+                    "name": "complexity"
+                },
+                {
+                    "name": "orderBanner"
+                },
+                {
+                    "name": "productionStatus"
+                },
+                {
+                    "name": "opportunity"
+                }
+            ],
+            [
+                {
+                    "name": "dateOrdered"
+                },
+                {
+                    "name": "deadline"
+                },
+                {
+                    "name": "internDeadline"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "responsiblePerson"
+                },
+                {
+                    "name": "industrySector"
+                },
+                {
+                    "name": "enduser"
+                },
+                {
+                    "name": "expectedInstallationDate"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                },
+                {
+                    "name": "toInstall"
+                },
+                {
+                    "name": "manufacturingReady"
+                }
+            ],
+            [
+                {
+                    "name": "reminder"
+                },
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "priceList1"
+                },
+                {
+                    "name": "alert"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": "Zakázka",
+        "hidden": false,
+        "customLabel": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "cisloObj"
+                },
+                {
+                    "name": "orderFile"
+                }
+            ],
+            [
+                {
+                    "name": "amount"
+                },
+                {
+                    "name": "discountAmount"
+                },
+                {
+                    "name": "taxAmount"
+                },
+                {
+                    "name": "grandTotalAmount"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Order"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Input"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "visualization"
+                },
+                {
+                    "name": "crane"
+                },
+                {
+                    "name": "shield"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Project Area"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "documents",
+                    "noLabel": true
+                },
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Dokumenty"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "priorita"
+                },
+                {
+                    "name": "start"
+                },
+                {
+                    "name": "progress"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Výroba",
+        "hidden": false,
+        "customLabel": "Production Planning"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "productionOrders"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Production Orders"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "itemsList"
+                },
+                {
+                    "name": "reservedQuantity"
+                },
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "warehouseItem",
+                    "noLabel": true
+                },
+                {
+                    "name": "reservQuantity",
+                    "noLabel": true
+                },
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Warehouse items"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "parcelService"
+                },
+                {
+                    "name": "parcelServiceProvider"
+                },
+                {
+                    "name": "parcelTrackingNumber"
+                },
+                {
+                    "name": "parcelSent"
+                }
+            ],
+            [
+                {
+                    "name": "parcelLabel"
+                },
+                {
+                    "name": "contact"
+                },
+                {
+                    "name": "account2"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ],
+            [
+                {
+                    "name": "personalCollection"
+                },
+                false,
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Doprava a Faktury",
+        "hidden": false,
+        "customLabel": "Shipping"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "deliveryNote"
+                },
+                {
+                    "name": "deliveryNoteNumber"
+                },
+                {
+                    "name": "deliveryNoteDate"
+                },
+                {
+                    "name": "handoverProtocol"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Delivery note"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "invoice"
+                },
+                {
+                    "name": "invoiceNumber"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "faktura"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Invoices"
+    }
+]

@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "from": "Od",
+        "to": "Příjemce",
+        "subject": "Předmět",
+        "bodyContains": "Tělo obsahuje",
+        "action": "Akce",
+        "isGlobal": "Globální",
+        "emailFolder": "Složka"
+    },
+    "labels": {
+        "Create EmailFilter": "Vytvořit emailový filter",
+        "Emails": "Emaily"
+    },
+    "options": {
+        "action": {
+            "Skip": "Ignorovat",
+            "Move to Folder": "Přesunout do složky"
+        }
+    },
+    "tooltips": {
+        "name": "Popište filtr",
+        "subject": "Můžete používat zástupný znak *",
+        "bodyContains": "Tělo zprávy obsahuje některé ze slov",
+        "from": "Email je poslán z této adresy",
+        "to": "Komu je email poslán",
+        "isGlobal": "Platí pro všechny"
+    }
+}

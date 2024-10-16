@@ -1,0 +1,27 @@
+[
+	{
+		"name": "name",
+		"link": true
+	},
+	{
+		"name": "useCase",
+		"width": 20
+	},
+	{
+		"name": "listPrice"
+	},
+	{
+		"name": "quantity",
+		"width": 4
+	},
+	{
+		"name": "unitPrice",
+		"width": 16,
+		"align": "right"
+	},
+	{
+		"name": "amount",
+		"width": 16,
+		"align": "right"
+	}
+]

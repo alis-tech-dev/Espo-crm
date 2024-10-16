@@ -1,0 +1,39 @@
+{
+	"fields": {
+		"smtpUsername": "Uživatelské jméno",
+		"exportDelimiter": "Exportovat oddělovač",
+		"receiveMentionEmailNotifications": "Emailová oznámení o zmínkách v příspěvcích",
+		"receiveStreamEmailNotifications": "Emailová upozornění na příspěvky a aktualizace stavu",
+		"assignmentNotificationsIgnoreEntityTypeList": "Oznámení o přiřazení v aplikaci",
+		"assignmentEmailNotificationsIgnoreEntityTypeList": "Oznámení o přiřazení e-mailu",
+		"theme": "Téma",
+		"useCustomTabList": "Seznam vlastních záložek",
+		"tabList": "Seznam záložek",
+		"emailReplyToAllByDefault": "Odpovědět všem jako výchozí",
+		"dashboardLayout": "Rozvržení Dashboardu",
+		"emailReplyForceHtml": "Odpovědět emailem v HTML",
+		"doNotFillAssignedUserIfNotRequired": "Při vytváření záznamu předem nevyplňujte přiřazeného uživatele",
+		"followEntityOnStreamPost": "Automaticky sledovat záznam po zveřejnění ve streamu",
+		"followCreatedEntities": "Automaticky sledovat vytvořené záznamy",
+		"followCreatedEntityTypeList": "Automaticky sledovat vytvořené záznamy konkrétních typů entit",
+		"emailUseExternalClient": "Použít externího emailového klienta",
+		"scopeColorsDisabled": "Zakázat barvy rozsahu",
+		"tabColorsDisabled": "Zakázat barvy záložek",
+		"quickViewContextMenu": "Nahradit kontextové menu akcí zobrazení",
+		"customFiltersAboveList": "Zobrazit vlastní filtry nad seznamem",
+		"collapsibleDashlets": "Schovávání dashletů",
+		"disableIntroGuide": "Zakázat úvodního průvodce"
+	},
+	"labels": {
+		"User Interface": "Uživatelské prostředí",
+		"Misc": "Různé",
+		"Locale": "Lokální nastavení",
+		"Reset Dashboard to Default": "Nastavit Dashboard na Výchozí",
+		"AutoCRM": "AutoCRM"
+	},
+	"tooltips": {
+		"doNotFillAssignedUserIfNotRequired": "Při vytvoření záznamu nebude přiřazený uživatel vyplněn vlastním uživatelem, pokud není toto pole povinné.",
+		"followCreatedEntities": "Při vytváření nových záznamů budou automaticky sledovány, i když budou přiřazeny jinému uživateli.",
+		"followCreatedEntityTypeList": "Při vytváření nových záznamů vybraných typů entit budou automaticky sledovány, i když budou přiřazeny jinému uživateli."
+	}
+}

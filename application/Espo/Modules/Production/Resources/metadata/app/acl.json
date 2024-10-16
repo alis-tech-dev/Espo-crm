@@ -1,0 +1,8 @@
+{
+    "mandatory": {
+        "scopeLevel": {
+            "ProductionModelItem": "ProductionModel",
+            "ProductionModelOperation": "ProductionModel"
+        }
+    }
+}

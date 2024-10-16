@@ -1,0 +1,50 @@
+{
+    "fields": {
+        "salesOrder": {
+            "type": "link"
+        },
+        "isDelivered": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "attachment": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "copyAttachmentsEntityList": [],
+            "isCustom": true
+        }
+    },
+    "links": {
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "supplierOrders",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "attachment": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "account.name",
+            "description",
+            "createdBy.userName"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
+}

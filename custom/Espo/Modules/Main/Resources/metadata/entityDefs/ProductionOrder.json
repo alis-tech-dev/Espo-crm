@@ -1,0 +1,10 @@
+{
+	"collection": {
+		"textFilterFields": [
+			"name"
+		],
+		"fullTextSearch": false,
+		"countDisabled": false
+	},
+	"optimisticConcurrencyControl": false
+}

@@ -1,0 +1,15 @@
+{
+	"fields": {},
+	"links": {
+		"reclamations": {
+			"type": "hasMany",
+			"entity": "Reclamation",
+			"foreign": "salesOrder"
+		},
+		"salesOrderReclamation": {
+			"type": "hasOne",
+			"entity": "Reclamation",
+			"foreign": "reclamationSalesOrder"
+		}
+	}
+}

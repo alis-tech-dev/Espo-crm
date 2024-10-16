@@ -1,0 +1,153 @@
+{
+    "recordViews": {
+        "list": "accounting-cz:views/invoice/list"
+    },
+    "dynamicHandlerList": [
+        "accounting-cz:handlers/invoice/dynamic-handler"
+    ],
+    "relationshipPanels": {
+        "payments": {
+            "layout": "invoiceListItem",
+            "selectDisabled": true,
+            "createDisabled": true,
+            "unlinkDisabled": true,
+            "readOnly": true
+        },
+        "proformaInvoices": {
+            "createDisabled": true,
+            "layout": "listForAccount",
+            "selectDisabled": true
+        },
+        "creditNotes": {
+            "createDisabled": true,
+            "layout": "listForInvoice",
+            "selectDisabled": true
+        },
+        "revenueReceipts": {
+            "createDisabled": true,
+            "selectDisabled": true
+        }
+    },
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Record Payment",
+                    "name": "newPayment",
+                    "action": "newPayment",
+                    "style": "success",
+                    "iconHtml": "<span class='fas fa-money-bill-wave small new-payment-icon'></span>",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice-like/new-payment"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Vytvořit opravný daňový doklad",
+                    "name": "createCreditNote",
+                    "action": "createCreditNote",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice/create-credit-note"
+                    }
+                },
+                {
+                    "label": "Vytvořit příjmový doklad",
+                    "name": "createRevenueReceipt",
+                    "action": "createRevenueReceipt",
+                    "style": "default",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice/create-revenue-receipt"
+                    }
+                }
+            ]
+        }
+    },
+    "detailActionList": [
+        "__APPEND__",
+        {
+            "label": "Export to ISDOC",
+            "name": "exportToIsdoc",
+            "acl": "read",
+            "data": {
+                "handler": "accounting-cz:handlers/invoice/export-to-isdoc"
+            }
+        }
+    ],
+    "dynamicLogic": {
+        "fields": {
+            "number": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "number"
+                        }
+                    ]
+                }
+            },
+            "opportunity": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "quoteId",
+                                    "data": {
+                                        "field": "quote"
+                                    }
+                                },
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "salesOrderId",
+                                    "data": {
+                                        "field": "salesOrder"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "supplyCode": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "reverseCharge",
+                                    "value": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "massActionList": [
+        "__APPEND__",
+        "zipIsdocs"
+    ],
+    "checkAllResultMassActionList": [
+        "__APPEND__",
+        "zipIsdocs"
+    ],
+    "massActionDefs": {
+        "zipIsdocs": {
+            "handler": "accounting-cz:handlers/invoice/zip-isdocs"
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-receipt",
+    "gridLayoutType": "record",
+    "bottomLayoutType": "default",
+    "isWide": true,
+    "calculationHandler": "accounting-cz:handlers/invoice-like-calculation-handler"
+}

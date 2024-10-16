@@ -1,0 +1,14 @@
+{
+	"saverClassNameList": [
+		"__APPEND__",
+		"Espo\\Modules\\Accounting\\Classes\\FieldProcessing\\VatId\\Saver"
+	],
+	"readLoaderClassNameList": [
+		"__APPEND__",
+		"Espo\\Modules\\Accounting\\Classes\\FieldProcessing\\VatId\\Loader"
+	],
+	"listLoaderClassNameList": [
+		"__APPEND__",
+		"Espo\\Modules\\Accounting\\Classes\\FieldProcessing\\VatId\\Loader"
+	]
+}

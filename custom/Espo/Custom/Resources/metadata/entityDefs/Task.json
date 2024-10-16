@@ -1,0 +1,229 @@
+{
+    "fields": {
+        "name": {
+            "maxLength": 255,
+            "options": [],
+            "tooltip": true
+        },
+        "datePosEnd": {
+            "notNull": false,
+            "type": "datetime",
+            "after": "dateStart",
+            "minuteStep": 30,
+            "isCustom": true,
+            "tooltip": true
+        },
+        "isRepeated": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true,
+            "tooltip": true
+        },
+        "repeatFrom": {
+            "notNull": false,
+            "type": "date",
+            "default": "javascript: return this.dateTime.getToday();",
+            "dateWarning": true,
+            "isCustom": true,
+            "tooltip": true
+        },
+        "repeatUntil": {
+            "notNull": false,
+            "type": "date",
+            "default": "javascript: return this.dateTime.getDateShiftedFromToday(6, 'months');",
+            "dateWarning": true,
+            "isCustom": true,
+            "tooltip": true
+        },
+        "cronTime": {
+            "type": "cronselect",
+            "notStorable": false,
+            "dynamicLogicVisible": null,
+            "dynamicLogicReadOnly": null,
+            "dynamicLogicInvalid": null,
+            "name": "cronTime",
+            "label": "Interval opakování",
+            "inlineEditDisabled": false,
+            "tooltipText": null,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "lastExecuteTime": {
+            "notNull": false,
+            "type": "date",
+            "dateWarning": true,
+            "isCustom": true,
+            "tooltip": true
+        },
+        "finished": {
+            "notNull": false,
+            "type": "date",
+            "dateWarning": true,
+            "isCustom": true,
+            "tooltip": true
+        },
+        "parent": {
+            "entityList": [
+                "Account",
+                "Contact",
+                "Lead",
+                "Opportunity",
+                "Case",
+                "SalesOrder"
+            ],
+            "tooltip": true
+        },
+        "taskList": {
+            "type": "taskchecklist",
+            "notStorable": true,
+            "dynamicLogicVisible": null,
+            "dynamicLogicReadOnly": null,
+            "dynamicLogicInvalid": null,
+            "name": "taskList",
+            "label": "Seznam podúkolů",
+            "inlineEditDisabled": false,
+            "tooltipText": null,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "tasks": {
+            "recordListLayout": "listSmall",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": {},
+            "tooltip": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "taskParent": {
+            "defaultSelectFilters": {},
+            "tooltip": true
+        },
+        "priority": {
+            "style": {
+                "Low": null,
+                "Normal": null,
+                "High": "warning",
+                "Urgent": "danger"
+            },
+            "tooltip": true
+        },
+        "status": {
+            "tooltip": true
+        },
+        "dateStart": {
+            "minuteStep": 30,
+            "tooltip": true
+        },
+        "description": {
+            "tooltip": true
+        },
+        "attachments": {
+            "previewSize": null,
+            "copyAttachmentsEntityList": [],
+            "tooltip": true
+        },
+        "solution": {
+            "tooltip": true
+        },
+        "solutionAttachement": {
+            "copyAttachmentsEntityList": [],
+            "tooltip": true
+        },
+        "dateEnd": {
+            "tooltip": true
+        },
+        "reminders": {
+            "name": "reminders",
+            "type": "jsonArray",
+            "notStorable": true,
+            "view": "crm:views/meeting/fields/reminders",
+            "dateField": "dateEnd",
+            "validatorClassNameList": [
+                "Espo\\Modules\\Crm\\Classes\\FieldValidators\\Event\\Reminders\\Valid",
+                "Espo\\Modules\\Crm\\Classes\\FieldValidators\\Event\\Reminders\\MaxCount"
+            ],
+            "dynamicLogicVisible": {
+                "conditionGroup": [
+                    {
+                        "type": "and",
+                        "value": [
+                            {
+                                "type": "or",
+                                "value": [
+                                    {
+                                        "type": "isNotEmpty",
+                                        "attribute": "dateEnd"
+                                    },
+                                    {
+                                        "type": "isNotEmpty",
+                                        "attribute": "dateEndDate"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "notEquals",
+                                "attribute": "status",
+                                "value": "Completed"
+                            },
+                            {
+                                "type": "notEquals",
+                                "attribute": "status",
+                                "value": "Canceled"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "dynamicLogicReadOnly": null,
+            "dynamicLogicInvalid": null,
+            "tooltipText": "Připomenout kdy? notifikace/email",
+            "inlineEditDisabled": false,
+            "tooltip": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "users": {
+            "type": "hasMany",
+            "relationName": "taskUser",
+            "foreign": "tasks1",
+            "entity": "User",
+            "audited": false,
+            "isCustom": true
+        },
+        "attachments": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "solutionAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "fields": {
+        "summaryVatRates": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "recordListEnabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "readOnly": true,
+            "inlineEditDisabled": true,
+            "view": "accounting-cz:views/fields/no-action-record-list"
+        }
+    },
+    "links": {
+        "summaryVatRates": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "SummaryVatRates",
+            "audited": false
+        }
+    }
+}

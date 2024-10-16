@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "billingAddress": "Rechnungsadresse",
+        "shippingAddress": "Lieferadresse",
+        "website": "Webseite",
+        "products": "Produkte",
+        "stockRecords": "Lagerbestände",
+        "paymentDocuments": "Steuerbeleg für empfangene Proforma-Rechnungen",
+        "receivedInvoices": "Empfangene Rechnung",
+        "receivedInvoiceForeigns": "Empfangene Rechnung (Fremd)"
+    },
+    "links": {
+        "calls": "Anrufe",
+        "tasks": "Aufgaben",
+        "products": "Produkte",
+        "stockRecords": "Lagerbestände",
+        "paymentDocuments": "Steuerbeleg für empfangene Proforma-Rechnungen",
+        "receivedInvoices": "Empfangene Rechnung",
+        "receivedInvoiceForeigns": "Empfangene Rechnung (Fremd)"
+    },
+    "labels": {
+        "Create Supplier": "Lieferant erstellen"
+    }
+}

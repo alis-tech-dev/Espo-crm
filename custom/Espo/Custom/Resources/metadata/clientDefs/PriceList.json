@@ -1,0 +1,17 @@
+{
+    "relationshipPanels": {
+        "quotes": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        },
+        "salesOrders": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "fas fa-money-check-alt",
+    "isWide": false
+}

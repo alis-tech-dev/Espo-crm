@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "salesOrder": "Zakázka"
+    },
+    "links": {
+        "salesOrder": "Zakázka"
+    }
+}

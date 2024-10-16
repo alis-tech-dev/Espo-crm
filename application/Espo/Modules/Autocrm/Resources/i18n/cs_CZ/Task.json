@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "status": "Stav",
+        "reminders": "Připomenutí",
+        "contact": "Kontakt"
+    },
+    "links": {
+        "account": "Organizace",
+        "contact": "Kontakt"
+    },
+    "labels": {
+        "overdue": "Po termínu"
+    },
+    "presetFilters": {
+        "deferred": "Odložený"
+    }
+}

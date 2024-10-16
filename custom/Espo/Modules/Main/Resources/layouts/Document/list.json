@@ -1,0 +1,24 @@
+[
+	{
+		"name": "name",
+		"width": 45,
+		"link": true,
+		"align": "left"
+	},
+	{
+		"name": "file",
+		"width": 10,
+		"notSortable": true
+	},
+	{
+		"name": "status"
+	},
+	{
+		"name": "createdAt"
+	},
+	{
+		"name": "obrazekDokumentu",
+		"notSortable": true,
+		"align": "left"
+	}
+]

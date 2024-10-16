@@ -1,0 +1,86 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "userName"
+                },
+                {
+                    "name": "gender"
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "title"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "mattermostSyncEnabled"
+                },
+                {
+                    "name": "isAllowed"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "pozice"
+                },
+                {
+                    "name": "humanResources"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Firemní struktura"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "alisCardID"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Docházka"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "vacationTimePerYear"
+                },
+                {
+                    "name": "remainingVacationTime"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    }
+]

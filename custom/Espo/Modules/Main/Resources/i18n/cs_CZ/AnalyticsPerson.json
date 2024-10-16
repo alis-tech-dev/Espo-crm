@@ -1,0 +1,11 @@
+{
+	"labels": {
+		"Create AnalyticsPerson": "Vytvořit Analytika"
+	},
+	"fields": {
+		"ip": "Ip",
+		"visitorId": "VisitorId",
+		"visitTime": "VisitTime",
+		"siteId": "SiteId"
+	}
+}

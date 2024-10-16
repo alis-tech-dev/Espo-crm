@@ -1,0 +1,21 @@
+{
+	"fields": {
+		"recordedcall": "Nahraný hovor",
+		"speechtotext": "Hovor do textu",
+		"sendmrkemail": "Odesílat marketingové emailové informace",
+		"calltranscribe": "Přepis hovoru",
+		"acceptanceStatus": "Stav přijetí",
+		"status": "Stav"
+	},
+	"links": {
+		"recordedcall": "Nahraný hovor"
+	},
+	"options": {
+		"acceptanceStatus": {
+			"None": "Žádný",
+			"Accepted": "Přijatý",
+			"Declined": "Odmítnutý",
+			"Tentative": "Předběžný"
+		}
+	}
+}

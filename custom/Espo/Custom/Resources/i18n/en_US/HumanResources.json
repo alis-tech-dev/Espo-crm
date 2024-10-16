@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "vacationRequests": "Vacation Requests",
+        "isActive": "IsActive",
+        "user": "User",
+        "users": "Users"
+    },
+    "links": {
+        "vacationRequests": "Vacation Requests",
+        "user": "User",
+        "users": "Users"
+    },
+    "labels": {
+        "Create HumanResources": "Create HR Manager"
+    }
+}

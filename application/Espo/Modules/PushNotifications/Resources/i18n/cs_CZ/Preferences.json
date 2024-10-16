@@ -1,0 +1,6 @@
+{
+  "fields":{
+    "receivePushNotifications":"Odebírat notifikace na plochu",
+    "ignoreEmailNotifications":"Nedostávat notifikace o emailech"
+  }
+}

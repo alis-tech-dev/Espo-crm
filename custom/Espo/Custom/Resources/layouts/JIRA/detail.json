@@ -1,0 +1,46 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "screenshot"
+                },
+                {
+                    "name": "cRM"
+                }
+            ],
+            [
+                {
+                    "name": "priority"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "procenta"
+                },
+                {
+                    "name": "toAll"
+                }
+            ],
+            [
+                {
+                    "name": "predictedStart"
+                },
+                {
+                    "name": "predictedEnd"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

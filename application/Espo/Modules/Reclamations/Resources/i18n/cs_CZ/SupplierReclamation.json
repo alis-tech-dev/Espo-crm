@@ -1,0 +1,22 @@
+{
+	"fields": {
+		"case": "Případ",
+		"status": "Stav",
+		"product": "Produkt",
+		"salesOrder": "Zakázka",
+		"goodsIssue": "Výdejka",
+		"goodsReceipt": "Příjemka",
+		"reclamation": "Reklamace"
+	},
+	"labels": {
+		"Create SupplierReclamation": "Vytvořit reklamaci u dodavatele"
+	},
+	"options": {
+		"status": {
+			"Draft": "Návrh",
+			"Processing": "Zpracovává se",
+			"Closed": "Uzavřeno",
+			"Rejected": "Zamítnuto"
+		}
+	}
+}

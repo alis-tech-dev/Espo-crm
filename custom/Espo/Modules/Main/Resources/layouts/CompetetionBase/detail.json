@@ -1,0 +1,219 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"name": "name"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"label": ""
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "pedestrianAvoidance"
+				},
+				{
+					"name": "propertyAvoidance"
+				}
+			],
+			[
+				{
+					"name": "hmeAvoidance"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Avoidance collision with"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "personalTagTypes"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Personal tag types"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "iotLED"
+				},
+				{
+					"name": "iotOtherDevices"
+				}
+			],
+			[
+				{
+					"name": "iotRTLS"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "IoT"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "neuralNetwork"
+				},
+				{
+					"name": "uwb"
+				}
+			],
+			[
+				{
+					"name": "otherTechnology"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Technology"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "alertOfForklift"
+				},
+				{
+					"name": "pedestrianAlert"
+				}
+			],
+			[
+				{
+					"name": "alertOf3rdParts"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Active alert"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "accousticAlert"
+				},
+				{
+					"name": "optoaccousticAlert"
+				}
+			],
+			[
+				{
+					"name": "vibrationAlert"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Type of alert"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "elTruck"
+				},
+				{
+					"name": "crane"
+				}
+			],
+			[
+				{
+					"name": "allHME"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Possible installation on "
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "oneZone"
+				},
+				{
+					"name": "moreZones"
+				}
+			],
+			[
+				{
+					"name": "indoor"
+				},
+				{
+					"name": "outdoor"
+				}
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Zoning"
+	},
+	{
+		"rows": [
+			[
+				{
+					"name": "atexCertification"
+				},
+				false
+			],
+			[
+				{
+					"name": "diagnosticForTag"
+				},
+				{
+					"name": "multifunctionTag"
+				}
+			],
+			[
+				{
+					"name": "pressetingOption"
+				},
+				false
+			],
+			[
+				{
+					"name": "visualizationInHMECabin"
+				},
+				false
+			]
+		],
+		"style": "default",
+		"dynamicLogicVisible": null,
+		"hidden": false,
+		"customLabel": "Other"
+	}
+]

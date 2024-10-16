@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "warehouseRevertGoodsInSalesOrder": "Lager für die Rückgabe von Waren"
+    },
+    "tooltips": {
+        "warehouseRevertGoodsInSalesOrder": "Bestimmt das Lager, zu dem die Ware aus der Verkaufsbestellung zurückgesendet wird, falls die Bestellung geändert/storniert wird und die Ware wieder ins Lager eingelagert werden soll."
+    }
+}

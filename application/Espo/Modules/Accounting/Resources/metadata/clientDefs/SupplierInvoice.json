@@ -1,0 +1,35 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": ["onlyMy"],
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Templates",
+                    "link": "#Template",
+                    "acl": "read",
+                    "aclScope": "Template"
+                }
+            ],
+            "dropdown": [
+                {
+                    "label": "Taxes",
+                    "link": "#Tax",
+                    "acl": "read",
+                    "aclScope": "Tax"
+                }
+            ]
+        }
+    },
+    "isWide": true,
+    "additionalLayouts": {
+        "listForAccount": {
+            "type": "list"
+        }
+    },
+    "dynamicHandlerList": [
+        "__APPEND__",
+        "accounting:handlers/invoice/dynamic-handler"
+    ],
+    "iconClass": "fas fa-receipt"
+}

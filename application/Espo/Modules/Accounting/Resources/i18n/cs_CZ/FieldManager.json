@@ -1,0 +1,6 @@
+{
+    "tooltips": {
+        "format": "Použijte následující zástupné znaky:\n\n**{number}** - Automaticky inkrementované číslo\n**{YYYY}** - Aktuální rok (4 číslice)\n**{YY}** - Aktuální rok (2 číslice)\n**{MM}** - Aktuální měsíc (2 číslice)\n**{DD}** - Aktuální den (2 číslice)",
+        "validateExistence": "Ověřit existenci DIČ pomocí služby VIES"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "recurrenceBatchSizeLimit": {
+            "type": "int",
+            "tooltip": true,
+            "min": 0,
+            "max": 10000
+        },
+        "showListScheduledRecurrencesButton": {
+            "type": "bool",
+            "tooltip": true
+        }
+    }
+}

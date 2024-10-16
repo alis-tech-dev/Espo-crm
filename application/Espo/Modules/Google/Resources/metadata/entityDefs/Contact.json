@@ -1,0 +1,10 @@
+{
+    "links": {
+        "googleContacts": {
+            "type": "hasChildren",
+            "entity": "GoogleContactsPair",
+            "foreign": "parent",
+            "disabled": true
+        }
+    }
+}

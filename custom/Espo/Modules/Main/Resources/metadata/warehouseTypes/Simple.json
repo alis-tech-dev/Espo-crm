@@ -1,0 +1,3 @@
+{
+	"stockManagerClassName": "Espo\\Modules\\Main\\Classes\\Stock\\Managers\\Simple"
+}

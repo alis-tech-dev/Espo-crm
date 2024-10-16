@@ -1,0 +1,42 @@
+{
+    "labels": {
+        "Resolve": "Lösen",
+        "Create BpmnUserTask": "Bpmn-Benutzeraufgabe erstellen"
+    },
+    "fields": {
+        "actionType": "Aktionstyp",
+        "resolution": "Lösung",
+        "target": "Ziel",
+        "process": "Prozesse",
+        "isResolved": "ist gelöst",
+        "resolutionNote": "Lösungshinweis",
+        "instructions": "Anleitungen",
+        "isCanceled": "ist storniert"
+    },
+    "links": {
+        "process": "Prozesse",
+        "target": "Ziel",
+        "flowNode": "Flussknoten"
+    },
+    "options": {
+        "actionType": {
+            "Approve": "Genehmigen",
+            "Review": "Überprüfen",
+            "Accomplish": "Erreichen"
+        },
+        "resolution": {
+            "": "Kein(e)",
+            "Approved": "Genehmigt",
+            "Rejected": "Abgelehnt",
+            "Reviewed": "Überprüft",
+            "Completed": "Abgeschlossen",
+            "Canceled": "Storniert",
+            "Failed": "Fehlgeschlagen"
+        }
+    },
+    "presetFilters": {
+        "actual": "Aktuell",
+        "resolved": "Gelöst",
+        "canceled": "Storniert"
+    }
+}

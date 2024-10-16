@@ -1,0 +1,84 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "employeeId"
+                }
+            ],
+            [
+                {
+                    "name": "pozice"
+                },
+                {
+                    "name": "pomer"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "documentation"
+                },
+                {
+                    "name": "isActive"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Dokumenty"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "majetek"
+                }
+            ],
+            [
+                {
+                    "name": "auto"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "mobil"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "notebook"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "customLabel": "Evidence firemního majetku"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "notes"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "hidden": false,
+        "label": ""
+    }
+]

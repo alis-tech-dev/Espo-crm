@@ -1,0 +1,32 @@
+{
+	"fields": {
+		"apiKey": "API klíč",
+		"campaign": "Kampaň",
+		"createLeadBeforeOptInConfirmation": "Před potvrzením vytvořte zájemce",
+		"duplicateCheck": "Duplicitní kontrola",
+		"exampleRequestMethod": "Metoda",
+		"inboundEmail": "Skupinový e-mailový účet",
+		"isActive": "Je aktivní",
+		"targetList": "Cílový seznam",
+		"targetTeam": "Cílový tým",
+		"optInConfirmationSuccessMessage": "Text, který se zobrazí po potvrzení přihlášení",
+		"skipOptInConfirmationIfSubscribed": "Přeskočte potvrzení, pokud je Potenciál již v seznamu cílů"
+	},
+	"labels": {
+		"Confirm Opt-In": "Potvrďte přihlášení",
+		"Create LeadCapture": "Vytvořit vstupní bod",
+		"Generate New API Key": "Generovat nový klíč API",
+		"Request": "Požadavek"
+	},
+	"links": {
+		"campaign": "Kampaň",
+		"inboundEmail": "Skupinový emailový účet",
+		"targetList": "Cílový seznam",
+		"targetTeam": "Cílový tým"
+	},
+	"messages": {
+		"generateApiKey": "Vytvořit nový klíč API",
+		"optInConfirmationExpired": "Platnost odkazu pro potvrzení přihlášení vypršela.",
+		"optInIsConfirmed": "Přihlášení je potvrzeno."
+	}
+}

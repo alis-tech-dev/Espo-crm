@@ -1,0 +1,35 @@
+{
+    "fields": {
+        "dismantlable": "Rozebiratelný",
+        "productDatabases": "Databáze produktů",
+        "suppliers": "Dodavatelé",
+        "goodsReceipts": "Příjemky",
+        "defaultWarehousePosition": "Výchozí skladová pozice",
+        "descriptionEn": "Popis EN",
+        "descriptionDe": "Popis DE",
+        "pricingType": "Ceník",
+        "nameDE": "Name DE",
+        "image": "Obrázek",
+        "quote": "Quote",
+        "quotes": "Quotes"
+    },
+    "options": {
+        "type": {
+            "Normal": "Běžný",
+            "Service": "Služba",
+            "Warehouse Item": "Skladová položka",
+            "Product": "Výrobek",
+            "Material": "Material",
+            "Component": "Komponent"
+        }
+    },
+    "links": {
+        "productDatabases": "Databáze produktů",
+        "goodsReceipts": "Příjemky",
+        "quote": "Quote",
+        "quotes": "Quotes"
+    },
+    "labels": {
+        "Create Product": "Vytvořit Katalog komponent"
+    }
+}

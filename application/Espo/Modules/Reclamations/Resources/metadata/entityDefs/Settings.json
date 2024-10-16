@@ -1,0 +1,15 @@
+{
+	"fields": {
+		"reclamationDefaultWarehouse": {
+			"type": "link",
+			"tooltip": true,
+			"view": "views/fields/link"
+		}
+	},
+	"links": {
+		"reclamationDefaultWarehouse": {
+			"type": "belongsTo",
+			"entity": "Warehouse"
+		}
+	}
+}
