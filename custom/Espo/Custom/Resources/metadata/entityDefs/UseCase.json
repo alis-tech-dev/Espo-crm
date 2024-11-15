@@ -11,5 +11,19 @@
         "fullTextSearch": true,
         "countDisabled": false
     },
-    "optimisticConcurrencyControl": false
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "quote1": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "quote1": {
+            "type": "belongsTo",
+            "foreign": "useCases",
+            "entity": "Quote",
+            "audited": false,
+            "isCustom": true
+        }
+    }
 }

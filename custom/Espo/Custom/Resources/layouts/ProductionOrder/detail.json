@@ -27,21 +27,18 @@
             ],
             [
                 {
-                    "name": "quantityPlanned"
+                    "name": "quantityPlanned",
+                    "label": "Quantity Planned"
                 },
                 {
-                    "name": "quantityProduced"
+                    "name": "quantityProduced",
+                    "label": "Quantity Produced"
                 }
             ],
             [
                 {
                     "name": "description"
                 },
-                {
-                    "name": "warehouse"
-                }
-            ],
-            [
                 {
                     "name": "attachments"
                 }

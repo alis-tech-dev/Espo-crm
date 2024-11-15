@@ -3,9 +3,6 @@
         "rows": [
             [
                 {
-                    "name": "name"
-                },
-                {
                     "name": "type"
                 },
                 {
@@ -21,20 +18,9 @@
                 },
                 {
                     "name": "dateEnd"
-                }
-            ],
-            [
-                {
-                    "name": "numberOfDaysLeftBefore"
-                },
-                {
-                    "name": "numberOfDaysLeft"
                 },
                 {
                     "name": "numberOfDays"
-                },
-                {
-                    "name": "vacationDays"
                 }
             ],
             [

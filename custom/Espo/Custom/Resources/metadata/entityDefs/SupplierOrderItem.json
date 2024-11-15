@@ -23,7 +23,8 @@
             "default": 0,
             "min": 0,
             "readOnly": true,
-            "isCustom": true
+            "isCustom": true,
+            "tooltip": true
         },
         "quantity": {
             "default": null,

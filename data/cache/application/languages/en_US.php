@@ -1807,7 +1807,11 @@ It will also disable the ability to create a related record from relationship pa
       'JIRA' => 'CRM Task',
       'ComplaintBook' => 'Complains Book',
       'Selector' => 'Selector',
-      'Wiso' => 'Wiso'
+      'Wiso' => 'Wiso',
+      'ItTask' => 'IT Marketing Task',
+      'Tax' => 'Tax',
+      'Manufacturing' => 'Manufacturing',
+      'Prospect' => 'Prospect'
     ],
     'scopeNamesPlural' => [
       'Note' => 'Notes',
@@ -1963,7 +1967,11 @@ It will also disable the ability to create a related record from relationship pa
       'JIRA' => 'CRM bugs',
       'ComplaintBook' => 'Complains Book',
       'Selector' => 'Projector Selector',
-      'Wiso' => 'wiso'
+      'Wiso' => 'wiso',
+      'ItTask' => 'IT Marketing task',
+      'Tax' => 'Tax',
+      'Manufacturing' => 'Manufacturing',
+      'Prospect' => 'Prospects'
     ],
     'labels' => [
       'Sort' => 'Sort',
@@ -4613,7 +4621,9 @@ Available placeholders:
       'vacationTime' => 'VacationTime',
       'vacationTimePerYear' => 'VacationTimePerYear',
       'remainingVacationTime' => 'RemainingVacationTime',
-      'jIRA' => 'J IRA'
+      'jIRA' => 'J IRA',
+      'itTasks' => 'It Tasks',
+      'isInvisible' => 'IsInvisible'
     ],
     'links' => [
       'defaultTeam' => 'Default Team',
@@ -4644,7 +4654,8 @@ Available placeholders:
       'vacationRequest' => 'Vacation Request',
       'tasks1' => 'Tasks1',
       'humanResources' => 'Human Resources',
-      'jIRA' => 'J IRA'
+      'jIRA' => 'J IRA',
+      'itTasks' => 'It Tasks'
     ],
     'labels' => [
       'Create User' => 'Create User',
@@ -5409,7 +5420,8 @@ Available placeholders:
       'firma' => 'Account',
       'endUser' => 'End-User',
       'category' => 'Kategorie',
-      'complaintBook' => 'Complaint Book'
+      'complaintBook' => 'Complaint Book',
+      'padName' => 'PadName'
     ],
     'links' => [
       'opportunities' => 'Opportunities',
@@ -5688,7 +5700,10 @@ Available placeholders:
       'leadsLeft' => 'Leads Left',
       'statusPartner' => 'Status (partner)',
       'numberA' => 'Číslo leadu',
-      'jesenoLead' => 'JesenoLead'
+      'jesenoLead' => 'JesenoLead',
+      'noEmail' => 'NoEmail',
+      'statusPriority' => 'StatusPriority',
+      'lastContacted' => 'LastContacted'
     ],
     'links' => [
       'targetLists' => 'Target Lists',
@@ -5754,6 +5769,11 @@ Available placeholders:
         'PQ' => 'P - Quoted',
         'Converted' => 'P - Win',
         'Lost' => 'P - Lost'
+      ],
+      'statusPriority' => [
+        'Priority 1' => '1',
+        'Priority 2' => '2',
+        'Priority 3' => '3'
       ]
     ],
     'presetFilters' => [
@@ -5983,7 +6003,8 @@ Available placeholders:
       'isOptedOut' => 'Is Opted Out',
       'syncWithReports' => 'Reports',
       'syncWithReportsEnabled' => 'Enabled',
-      'syncWithReportsUnlink' => 'Unlink'
+      'syncWithReportsUnlink' => 'Unlink',
+      'prospects' => 'Prospects'
     ],
     'links' => [
       'accounts' => 'Accounts',
@@ -5991,7 +6012,8 @@ Available placeholders:
       'leads' => 'Leads',
       'campaigns' => 'Campaigns',
       'massEmails' => 'Mass Emails',
-      'syncWithReports' => 'Sync with Reports'
+      'syncWithReports' => 'Sync with Reports',
+      'prospects' => 'Prospects'
     ],
     'options' => [
       'type' => [
@@ -6294,11 +6316,13 @@ Available placeholders:
       'imagesField' => 'Fotografie',
       'priceList' => 'Price List',
       'isTemplate' => 'Vzor',
-      'manufacturing' => 'Test - Manufacturing'
+      'manufacturing' => 'Test - Manufacturing',
+      'quote1' => 'Quote1'
     ],
     'links' => [
       'quote' => 'Quote',
-      'manufacturing' => 'Test - Manufacturing'
+      'manufacturing' => 'Test - Manufacturing',
+      'quote1' => 'Quote1'
     ],
     'tooltips' => [
       'itemList' => 'test'
@@ -7500,7 +7524,14 @@ Example:
       'defaultProductionModel' => 'Production Model',
       'warehouseCategory' => 'WarehouseCategory',
       'isInvisible' => 'IsInvisible',
-      'isHidden' => 'IsHidden'
+      'isHidden' => 'IsHidden',
+      'defaultWarehouseId' => 'DefaultWarehouseId',
+      'listPrice' => 'List Price',
+      'listPriceCurrency' => 'List Price (Currency)',
+      'listPriceConverted' => 'List Price (Converted)',
+      'unitPrice' => 'Unit Price',
+      'unitPriceCurrency' => 'Unit Price (Currency)',
+      'unitPriceConverted' => 'Unit Price (Converted)'
     ],
     'links' => [
       'category' => 'Category',
@@ -7551,7 +7582,8 @@ Example:
         'set' => 'set',
         'kg' => 'kg',
         'g' => 'g'
-      ]
+      ],
+      'priceJesenoCurrency' => []
     ],
     'label' => [
       'Stock Info' => 'Stock Info'
@@ -8167,7 +8199,8 @@ Example:
       'priceC' => 'Cena C',
       'priceCCurrency' => 'Cena C (Měna)',
       'priceCConverted' => 'Cena C (Převedeno)',
-      'priceLists' => 'Price Lists'
+      'priceLists' => 'Price Lists',
+      'useCases' => 'Use Cases'
     ],
     'links' => [
       'items' => 'Items',
@@ -8197,7 +8230,9 @@ Example:
       'product' => 'Product',
       'products1' => 'Products1',
       'priceLists' => 'Price Lists',
-      'complaintBooks' => 'Complaint Books'
+      'complaintBooks' => 'Complaint Books',
+      'useCases' => 'Use Cases',
+      'manufacturings' => 'Manufacturing'
     ],
     'options' => [
       'status' => [
@@ -8383,7 +8418,8 @@ Example:
       'wisos' => 'Wisos',
       'itemsList' => 'Warehouse Items',
       'reservedQuantity' => 'ReservedQuantity',
-      'reservQuantity' => 'Reserved Quantity'
+      'reservQuantity' => 'Reserved Quantity',
+      'manufacturings' => 'Manufacturings'
     ],
     'links' => [
       'items' => 'Items',
@@ -8412,7 +8448,8 @@ Example:
       'warehouseItems' => 'Warehouse Items',
       'warehouseItems1' => 'Warehouse Items1',
       'wiso' => 'Wiso',
-      'wisos' => 'Wisos'
+      'wisos' => 'Wisos',
+      'manufacturings' => 'Manufacturings'
     ],
     'options' => [
       'status' => [
@@ -8442,7 +8479,10 @@ Example:
       ],
       'complexity' => [
         'Easy' => 'Easy',
-        'Hard' => 'Hard'
+        'Hard' => 'Hard',
+        '' => '',
+        'Very Hard' => 'Very Hard',
+        'Costom' => 'Costom'
       ],
       'priorita' => [
         '-' => '-',
@@ -8461,7 +8501,10 @@ Example:
       'processSalesOrderFailed' => 'Failed to process sales order.'
     ],
     'tooltips' => [
-      'productionStatus' => 'hello'
+      'productionStatus' => 'hello',
+      'complexity' => 'Easy - 2 weeks for internal and deadline
+Hard - 4 weeks for internal and external deadline
+Very Hard - internal and external deadline must be set manually'
     ]
   ],
   'SalesOrderItem' => [
@@ -8690,7 +8733,7 @@ Example:
       'phoneNumber' => 'Phone',
       'emailAddress' => 'Email',
       'isActual' => 'IsActive',
-      'vacationTimeCorrection' => 'VacationTimeCorrection'
+      'vacationTimeCorrection' => 'Úprava zůstatku dovolené'
     ],
     'links' => [
       'educationAndTrainingRecords' => 'Education and Training Records',
@@ -8864,7 +8907,7 @@ Example:
       'timeBeforeVacation' => 'TimeBeforeVacation',
       'timeAfterVacation' => 'TimeAfterVacation',
       'timeVacation' => 'TimeVacation',
-      'vacationDays' => 'Vacation Days',
+      'vacationDays' => 'Počet dní',
       'isApproved' => 'IsApproved'
     ],
     'options' => [
@@ -8889,7 +8932,8 @@ Example:
       'numberOfDaysLeft' => 'Data is taken at the moment of request creation',
       'numberOfDaysLeftBefore' => 'Data is taken at the moment of request creation',
       'humanResources' => 'Your line manager will be set as default if no other approver is selected.',
-      'statusOfApproval' => 'If status "Schváleno", status can\'t be changed.'
+      'statusOfApproval' => 'If status "Schváleno", status can\'t be changed.',
+      'numberOfDays' => 'Must be set manually'
     ],
     'links' => [
       'humanResource' => 'HR',
@@ -9305,7 +9349,13 @@ Example:
       'url' => 'URL',
       'weight' => 'Weight',
       'productName' => 'Product  Code',
-      'isInvisible' => 'IsInvisible'
+      'isInvisible' => 'IsInvisible',
+      'listPrice' => 'List Price',
+      'listPriceCurrency' => 'List Price (Currency)',
+      'listPriceConverted' => 'List Price (Converted)',
+      'unitPrice' => 'Unit Price',
+      'unitPriceCurrency' => 'Unit Price (Currency)',
+      'unitPriceConverted' => 'Unit Price (Converted)'
     ],
     'links' => [
       'items' => 'Items',
@@ -9368,6 +9418,11 @@ Example:
     ],
     'labels' => [
       'Create Warehouse' => 'Create Sklad'
+    ],
+    'tooltips' => [
+      'availableQuantity' => 'Available quantity at the current date and time.',
+      'quantity' => 'Total produced or stocked quantity during the time.',
+      'productCategory' => 'When the products has the prefix A, it means Archive. In the folder tree is main folder Archive and inside it subfolders for each product folders as A_Projecotors.'
     ]
   ],
   'WarehouseItem' => [
@@ -11013,6 +11068,45 @@ Example:
       'Create ComplaintBook' => 'Create Complains Book'
     ]
   ],
+  'ItTask' => [
+    'fields' => [
+      'status' => 'Status',
+      'start' => 'Start',
+      'finish' => 'Finish',
+      'url' => 'Url',
+      'attachment' => 'Attachment',
+      'priority' => 'Priority',
+      'solution' => 'Solution',
+      'users' => 'Users'
+    ],
+    'links' => [
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'users' => 'Users'
+    ],
+    'labels' => [
+      'Create ItTask' => 'Create IT Marketing Task'
+    ],
+    'options' => [
+      'status' => [
+        'Created' => 'Created',
+        'In Progress' => 'In Progress',
+        'Testing' => 'Testing',
+        'Partially' => 'Partially',
+        'Done' => 'Done',
+        'On hold' => 'On hold',
+        'Canceled' => 'Canceled'
+      ],
+      'priority' => [
+        1 => 'Very High',
+        2 => 'High',
+        3 => 'Medium',
+        4 => 'Low',
+        5 => 'Very low'
+      ]
+    ]
+  ],
   'JIRA' => [
     'fields' => [
       'priority' => 'Priority',
@@ -11088,6 +11182,84 @@ Example:
       'toAll' => 'Email notification will be sent to all users when this task is completed.'
     ]
   ],
+  'Manufacturing' => [
+    'fields' => [
+      'parent' => 'ParentQuote',
+      'salesOrder' => 'Sales Order',
+      'bPname' => 'Název zakázky',
+      'bPnumber' => 'Číslo zakázky',
+      'complaintBanner' => 'Upozornění',
+      'complaintProtocol' => 'Reklamační protokol',
+      'deadline' => 'Deadline Výroby',
+      'glassPicture' => 'Sklíčko 1',
+      'glassPicture2' => 'Sklíčko 2',
+      'glassPicture3' => 'Sklíčko 3',
+      'isComplaint' => 'Reklamace zakázky',
+      'manufacturingBanner' => 'Důvod On Hold',
+      'manufacturingFinished' => 'Výroba dokončena',
+      'nace' => 'Obodování',
+      'progress' => 'Procento dokončení',
+      'quoteProducts' => 'Produkty z nabídky',
+      'status' => 'Stav'
+    ],
+    'links' => [
+      'parent' => 'Parent',
+      'salesOrder' => 'Sales Order'
+    ],
+    'labels' => [
+      'Create Manufacturing' => 'Create Manufacturing'
+    ],
+    'options' => [
+      'complaintBanner' => [
+        '-' => '-',
+        'Complaint' => 'Reklamace',
+        'Special' => 'Special'
+      ],
+      'manufacturingBanner' => [
+        '-' => '-',
+        'Materiál' => 'Materiál',
+        'Informace' => 'Informace',
+        'Komponenta' => 'Komponenta'
+      ],
+      'nace' => [
+        1 => '1',
+        2 => '2',
+        3 => '3',
+        5 => '5',
+        8 => '8',
+        13 => '13',
+        21 => '21',
+        '-' => '-'
+      ],
+      'progress' => [
+        0 => '0 %',
+        10 => '10 %',
+        20 => '20 %',
+        25 => '25 %',
+        30 => '30 %',
+        40 => '40 %',
+        50 => '50 %',
+        60 => '60 %',
+        70 => '70 %',
+        75 => '75 %',
+        80 => '80 %',
+        90 => '90 %',
+        95 => '95 %',
+        100 => '100 %'
+      ],
+      'status' => [
+        'NearLaunch' => 'Před zahájením',
+        'Backlog' => 'Backlog',
+        'OnHold' => 'On Hold',
+        'ToDo' => 'To Do',
+        'HW' => 'HW',
+        'SW' => 'FW / SW',
+        'Testing' => 'Testování',
+        'Done' => 'Hotovo',
+        'Archive' => 'Archiv'
+      ]
+    ]
+  ],
   'Operation' => [
     'fields' => [
       'test' => 'Test',
@@ -11147,14 +11319,52 @@ Example:
       'totalProduced' => 'Total quantity',
       'quantityPlanned' => 'Planned',
       'quantityProduced' => 'Produced',
-      'avaliableQuantity' => 'AvaliableQuantity',
       'stockQuantity' => 'StockQuantity',
       'entryKey' => 'EntryKey',
       'isPerform' => 'IsPerform',
-      'performWorkTime' => 'PerformWorkTime'
+      'performWorkTime' => 'PerformWorkTime',
+      'availableBrno' => 'In Brno',
+      'availablePv' => 'In Prostějov'
     ],
     'links' => [
-      'warehouse' => 'Warehouse'
+      'warehouse' => 'Warehouse',
+      'worksPerformed' => 'WorkPerformed'
+    ]
+  ],
+  'Prospect' => [
+    'fields' => [
+      'url' => 'URL',
+      'linkedIn' => 'LinkedIn',
+      'company' => 'Company',
+      'position' => 'Position',
+      'email' => 'Email',
+      'phoneNumber' => 'PhoneNumber',
+      'country' => 'Country',
+      'fromHunter' => 'FromHunter',
+      'targetLists' => 'Target Lists',
+      'emailAddress' => 'Email',
+      'targetListIsOptedOut' => 'Target List (Is Opted Out)',
+      'status' => 'Status'
+    ],
+    'links' => [
+      'targetLists' => 'Target Lists'
+    ],
+    'labels' => [
+      'Create Prospect' => 'Create Prospect'
+    ],
+    'options' => [
+      'status' => [
+        'New' => 'New',
+        'Contacted' => 'Contacted',
+        'Forwarded' => 'Forwarded',
+        'In communication' => 'In communication',
+        'Quoted' => 'Quoted',
+        'Waitning' => 'Waitning',
+        'Converted' => 'Converted',
+        'Lost' => 'Lost',
+        'First contact' => 'First contact',
+        'Second contact' => 'Second contact'
+      ]
     ]
   ],
   'Reclamation' => [
@@ -11238,6 +11448,9 @@ Example:
         'brno' => 'Brno',
         'pv' => 'Prostějov'
       ]
+    ],
+    'tooltips' => [
+      'deliveredBefore' => 'If ordered 100 pcs of item A. We get partial 20 pcs. I must choose the correct stock. Next time we get another 20 pcs, choose the stock. In the field Delivered before is 20 pcs and in the Delivered quantity you must write 40 pcs as a new stock amount.'
     ]
   ],
   'SupplierReclamation' => [
@@ -11246,6 +11459,13 @@ Example:
     ],
     'fields' => [
       'numberA' => 'Číslo reklamace'
+    ]
+  ],
+  'Tax' => [
+    'fields' => [],
+    'links' => [],
+    'labels' => [
+      'Create Tax' => 'Create Tax'
     ]
   ],
   'Wiso' => [

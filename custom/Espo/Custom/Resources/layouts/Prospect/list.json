@@ -1,0 +1,51 @@
+[
+    {
+        "name": "name",
+        "widthPx": 180,
+        "link": true,
+        "align": "left",
+        "label": "Name"
+    },
+    {
+        "name": "status",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Status"
+    },
+    {
+        "name": "position",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Position"
+    },
+    {
+        "name": "emailAddress",
+        "widthPx": 200,
+        "align": "left",
+        "label": "Email"
+    },
+    {
+        "name": "company",
+        "widthPx": 100,
+        "align": "left",
+        "label": "Company"
+    },
+    {
+        "name": "url",
+        "widthPx": 150,
+        "align": "left",
+        "label": "URL"
+    },
+    {
+        "name": "country",
+        "widthPx": 90,
+        "align": "left",
+        "label": "Country"
+    },
+    {
+        "name": "createdAt",
+        "widthPx": 90,
+        "align": "left",
+        "label": "Created At"
+    }
+]

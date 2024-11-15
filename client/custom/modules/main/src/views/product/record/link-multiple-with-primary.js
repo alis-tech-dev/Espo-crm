@@ -1,7 +1,6 @@
 define(['views/fields/link-multiple-with-primary'], Dep => {
 	return class extends Dep {
-		recolorRows() {
-			console.log('model; ', this.model)
+		hideRows() {
 			const isInvisible = this.model.get('isInvisible');
 			const id = this.model.id;
 			if (isInvisible === true) {
@@ -13,7 +12,7 @@ define(['views/fields/link-multiple-with-primary'], Dep => {
 		}
 
 		afterRender() {
-			this.recolorRows();
+			this.hideRows();
 			super.afterRender();
 		}
 	};

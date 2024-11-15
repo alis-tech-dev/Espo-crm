@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "status": "Status",
+        "start": "Start",
+        "finish": "Finish",
+        "url": "Url",
+        "attachment": "Attachment",
+        "priority": "Priority",
+        "solution": "Solution",
+        "users": "Users"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "users": "Users"
+    },
+    "labels": {
+        "Create ItTask": "Create IT Marketing Task"
+    },
+    "options": {
+        "status": {
+            "Created": "Created",
+            "In Progress": "In Progress",
+            "Testing": "Testing",
+            "Partially": "Partially",
+            "Done": "Done",
+            "On hold": "On hold",
+            "Canceled": "Canceled"
+        },
+        "priority": {
+            "1": "Very High",
+            "2": "High",
+            "3": "Medium",
+            "4": "Low",
+            "5": "Very low"
+        }
+    }
+}

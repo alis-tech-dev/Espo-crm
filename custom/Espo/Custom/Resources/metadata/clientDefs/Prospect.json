@@ -1,0 +1,13 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "color": "#1ece99",
+    "iconClass": "fas fa-person-booth",
+    "relationshipPanels": {
+        "targetLists": {
+            "layout": null
+        }
+    }
+}

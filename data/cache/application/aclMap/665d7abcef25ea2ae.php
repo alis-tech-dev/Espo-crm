@@ -628,7 +628,7 @@ return (object) [
       'stream' => 'no',
       'edit' => 'no',
       'delete' => 'no',
-      'create' => 'no'
+      'create' => 'yes'
     ],
     'InternalAgenda' => (object) [
       'read' => 'all',
@@ -706,6 +706,7 @@ return (object) [
       'delete' => 'own',
       'create' => 'yes'
     ],
+    'ItTask' => false,
     'JIRA' => (object) [
       'read' => 'all',
       'stream' => 'all',
@@ -713,6 +714,8 @@ return (object) [
       'delete' => 'no',
       'create' => 'yes'
     ],
+    'Manufacturing' => false,
+    'Prospect' => false,
     'SalesOrderSummaryItem' => false,
     'Seeker' => (object) [
       'read' => 'all',
@@ -728,6 +731,7 @@ return (object) [
       'delete' => 'no',
       'create' => 'yes'
     ],
+    'Tax' => false,
     'Wiso' => false
   ],
   'fieldTable' => (object) [
@@ -992,10 +996,14 @@ return (object) [
     'Smernice' => (object) [],
     'SmerniceItem' => (object) [],
     'ComplaintBook' => (object) [],
+    'ItTask' => (object) [],
     'JIRA' => (object) [],
+    'Manufacturing' => (object) [],
+    'Prospect' => (object) [],
     'SalesOrderSummaryItem' => (object) [],
     'Seeker' => (object) [],
     'Selector' => (object) [],
+    'Tax' => (object) [],
     'Wiso' => (object) []
   ],
   'assignmentPermission' => 'all',
@@ -5050,7 +5058,73 @@ return (object) [
         ]
       ]
     ],
+    'ItTask' => (object) [
+      'attributes' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ],
+      'fields' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ]
+    ],
     'JIRA' => (object) [
+      'attributes' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ],
+      'fields' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ]
+    ],
+    'Manufacturing' => (object) [
+      'attributes' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ],
+      'fields' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ]
+    ],
+    'Prospect' => (object) [
       'attributes' => (object) [
         'read' => (object) [
           'yes' => [],
@@ -5117,6 +5191,28 @@ return (object) [
       ]
     ],
     'Selector' => (object) [
+      'attributes' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ],
+      'fields' => (object) [
+        'read' => (object) [
+          'yes' => [],
+          'no' => []
+        ],
+        'edit' => (object) [
+          'yes' => [],
+          'no' => []
+        ]
+      ]
+    ],
+    'Tax' => (object) [
       'attributes' => (object) [
         'read' => (object) [
           'yes' => [],

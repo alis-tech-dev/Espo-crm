@@ -151,7 +151,7 @@
         "internDeadline": {
             "notNull": false,
             "type": "date",
-            "default": "javascript: return this.dateTime.getDateShiftedFromToday(2, 'months');",
+            "default": "javascript: return this.dateTime.getToday();",
             "useNumericFormat": true,
             "audited": true,
             "isCustom": true
@@ -183,14 +183,19 @@
             "type": "enum",
             "options": [
                 "Easy",
-                "Hard"
+                "Hard",
+                "Very Hard"
             ],
             "default": "Easy",
             "style": {
                 "Easy": "success",
-                "Hard": "danger"
+                "Hard": "warning",
+                "Very Hard": "danger"
             },
-            "isCustom": true
+            "isCustom": true,
+            "required": true,
+            "tooltip": true,
+            "displayAsLabel": true
         },
         "priceList1": {
             "type": "link",
@@ -366,6 +371,22 @@
         },
         "productionStatus": {
             "tooltip": true
+        },
+        "deadline": {
+            "default": "javascript: return this.dateTime.getToday();",
+            "useNumericFormat": true,
+            "required": false
+        },
+        "manufacturings": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -485,6 +506,13 @@
             "type": "hasMany",
             "foreign": "salesOrder1",
             "entity": "Wiso",
+            "audited": false,
+            "isCustom": true
+        },
+        "manufacturings": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "Manufacturing",
             "audited": false,
             "isCustom": true
         }

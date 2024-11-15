@@ -83,6 +83,17 @@
                         }
                     ]
                 }
+            },
+            "numberOfDays": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "statusOfApproval",
+                            "value": "Approved"
+                        }
+                    ]
+                }
             }
         }
     },

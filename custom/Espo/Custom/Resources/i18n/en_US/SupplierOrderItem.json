@@ -9,5 +9,8 @@
             "brno": "Brno",
             "pv": "Prostějov"
         }
+    },
+    "tooltips": {
+        "deliveredBefore": "If ordered 100 pcs of item A. We get partial 20 pcs. I must choose the correct stock. Next time we get another 20 pcs, choose the stock. In the field Delivered before is 20 pcs and in the Delivered quantity you must write 40 pcs as a new stock amount."
     }
 }

@@ -1895,6 +1895,10 @@ It will also disable the ability to create a related record from relationship pa
       'ComplaintBook' => 'Complains Book',
       'Selector' => 'Selector',
       'Wiso' => 'Wiso',
+      'ItTask' => 'IT Marketing Task',
+      'Tax' => 'Daň',
+      'Manufacturing' => 'Manufacturing',
+      'Prospect' => 'Prospect',
       'AnalyticsPerson' => 'Analytika',
       'AdvanceDeductionItem' => 'Položka odpočtu zálohy',
       'PriceList' => 'Ceník',
@@ -1904,7 +1908,6 @@ It will also disable the ability to create a related record from relationship pa
       'SupplierOrderItem' => 'Položka objednávky u dodavatele',
       'Payment' => 'Platba',
       'ProductBrand' => 'Označení produktu',
-      'Tax' => 'Daň',
       'ShippingProvider' => 'Přepravce',
       'OpportunityItem' => 'Položka poptávky',
       'Cooperation' => 'Kooperace',
@@ -2080,6 +2083,10 @@ It will also disable the ability to create a related record from relationship pa
       'ComplaintBook' => 'Complains Book',
       'Selector' => 'Projector Selector',
       'Wiso' => 'wiso',
+      'ItTask' => 'IT Marketing task',
+      'Tax' => 'Daně',
+      'Manufacturing' => 'Manufacturing',
+      'Prospect' => 'Prospects',
       'AnalyticsPerson' => 'Analytiky',
       'AdvanceDeductionItem' => 'Položky odpočtů záloh',
       'PriceList' => 'Ceníky',
@@ -2088,7 +2095,6 @@ It will also disable the ability to create a related record from relationship pa
       'SupplierOrder' => 'Objednávky u dodavatelů',
       'SupplierOrderItem' => 'Položky objednávky u dodavatele',
       'Payment' => 'Platby',
-      'Tax' => 'Daně',
       'ShippingProvider' => 'Dodavatelé',
       'OpportunityItem' => 'Položky poptávky',
       'ProductBrand' => 'Označení produktu',
@@ -2851,12 +2857,12 @@ Dostupná syntaxe:
         'isEmpty' => 'Je prázdné',
         'isNotEmpty' => 'Není prázdné',
         'isOneOf' => 'Jeden z',
-        'isFromTeams' => 'Je z týmu',
+        'isFromTeams' => 'Je z týmů',
         'isNot' => 'Není',
-        'isNotOneOf' => 'dný z',
+        'isNotOneOf' => 'Není jeden z',
         'anyOf' => 'Kterýkoli z vybraných',
         'allOf' => 'Všechny z',
-        'noneOf' => 'dný z',
+        'noneOf' => 'Žádný z',
         'any' => 'Kterýkoli'
       ],
       'varcharSearchRanges' => [
@@ -4849,7 +4855,9 @@ Available placeholders:
       'vacationTime' => 'VacationTime',
       'vacationTimePerYear' => 'VacationTimePerYear',
       'remainingVacationTime' => 'RemainingVacationTime',
-      'jIRA' => 'J IRA'
+      'jIRA' => 'J IRA',
+      'itTasks' => 'It Tasks',
+      'isInvisible' => 'IsInvisible'
     ],
     'links' => [
       'defaultTeam' => 'Výchozí tým',
@@ -4881,6 +4889,7 @@ Available placeholders:
       'tasks1' => 'Tasks1',
       'humanResources' => 'Human Resources',
       'jIRA' => 'J IRA',
+      'itTasks' => 'It Tasks',
       'preferences' => 'Předvolby',
       'timeOnSalesOrder' => 'Čas na zakázce'
     ],
@@ -5671,7 +5680,8 @@ Available placeholders:
       'firma' => 'Account',
       'endUser' => 'End-User',
       'category' => 'Kategorie',
-      'complaintBook' => 'Complaint Book'
+      'complaintBook' => 'Complaint Book',
+      'padName' => 'PadName'
     ],
     'links' => [
       'opportunities' => 'Příležitosti',
@@ -5965,6 +5975,9 @@ Available placeholders:
       'statusPartner' => 'Status (partner)',
       'numberA' => 'Číslo leadu',
       'jesenoLead' => 'JesenoLead',
+      'noEmail' => 'NoEmail',
+      'statusPriority' => 'StatusPriority',
+      'lastContacted' => 'LastContacted',
       'tasksToLeads' => 'Úkoly'
     ],
     'links' => [
@@ -6046,6 +6059,11 @@ Available placeholders:
         'PQ' => 'P - Quoted',
         'Converted' => 'P - Win',
         'Lost' => 'P - Lost'
+      ],
+      'statusPriority' => [
+        'Priority 1' => '1',
+        'Priority 2' => '2',
+        'Priority 3' => '3'
       ],
       'salutationName' => [
         ' ' => ' ',
@@ -6292,7 +6310,8 @@ Available placeholders:
       'isOptedOut' => 'Je odhlášen',
       'syncWithReports' => 'Záznamy',
       'syncWithReportsEnabled' => 'Povolený',
-      'syncWithReportsUnlink' => 'Není synchronizován'
+      'syncWithReportsUnlink' => 'Není synchronizován',
+      'prospects' => 'Prospects'
     ],
     'links' => [
       'accounts' => 'Organizace',
@@ -6301,6 +6320,7 @@ Available placeholders:
       'campaigns' => 'Kampaně',
       'massEmails' => 'Hromadný email',
       'syncWithReports' => 'Synchronizace se záznamy',
+      'prospects' => 'Prospects',
       'campaignsExcluding' => 'Vyloučené z kampaní',
       'massEmailsExcluding' => 'Vyloučené z hromadných emailů'
     ],
@@ -6641,6 +6661,7 @@ Available placeholders:
       'priceList' => 'Price List',
       'isTemplate' => 'Vzor',
       'manufacturing' => 'Test - Manufacturing',
+      'quote1' => 'Quote1',
       'tax' => 'Sazba DPH',
       'taxRate' => 'Daňová sazba',
       'shippingCost' => 'Přepravní sazba',
@@ -6669,6 +6690,7 @@ Available placeholders:
     'links' => [
       'quote' => 'Nabídka',
       'manufacturing' => 'Test - Manufacturing',
+      'quote1' => 'Quote1',
       'items' => 'Položky',
       'images' => 'Obrázky',
       'tax' => 'Sazba DPH'
@@ -7836,6 +7858,13 @@ Available placeholders:
       'warehouseCategory' => 'WarehouseCategory',
       'isInvisible' => 'IsInvisible',
       'isHidden' => 'IsHidden',
+      'defaultWarehouseId' => 'DefaultWarehouseId',
+      'listPrice' => 'List Price',
+      'listPriceCurrency' => 'List Price (Currency)',
+      'listPriceConverted' => 'List Price (Converted)',
+      'unitPrice' => 'Unit Price',
+      'unitPriceCurrency' => 'Unit Price (Currency)',
+      'unitPriceConverted' => 'Unit Price (Converted)',
       'alisId' => 'Alis ID',
       'qrCode' => 'QR kód',
       'priceEndUser' => 'Cena koncového zákazníka',
@@ -7907,7 +7936,8 @@ Available placeholders:
         'set' => 'set',
         'kg' => 'kg',
         'g' => 'g'
-      ]
+      ],
+      'priceJesenoCurrency' => []
     ],
     'label' => [
       'Stock Info' => 'Stock Info'
@@ -8629,6 +8659,7 @@ Available placeholders:
       'priceCCurrency' => 'Cena C (Měna)',
       'priceCConverted' => 'Cena C (Převedeno)',
       'priceLists' => 'Price Lists',
+      'useCases' => 'Use Cases',
       'taxClass' => 'Daňová třída',
       'shippingCostTaxRate' => 'Daňová sazba dopravného',
       'billingAddressMap' => 'Mapa',
@@ -8664,8 +8695,9 @@ Available placeholders:
       'products1' => 'Products1',
       'priceLists' => 'Price Lists',
       'complaintBooks' => 'Complaint Books',
-      'shippingProvider' => 'Dopravce',
-      'useCases' => 'Use case + produkty'
+      'useCases' => 'Use case + produkty',
+      'manufacturings' => 'Manufacturing',
+      'shippingProvider' => 'Dopravce'
     ],
     'options' => [
       'status' => [
@@ -8867,6 +8899,7 @@ Available placeholders:
       'itemsList' => 'Warehouse Items',
       'reservedQuantity' => 'ReservedQuantity',
       'reservQuantity' => 'Reserved Quantity',
+      'manufacturings' => 'Výroba',
       'taxClass' => 'Daňová třída',
       'paymentMethod' => 'Způsob úhrady',
       'billingAddressFirstName' => 'Jméno',
@@ -8937,7 +8970,6 @@ Available placeholders:
       'orderAmount' => 'Částka objednávky',
       'orderAmountCurrency' => 'Částka objednávky (Měna)',
       'orderAmountConverted' => 'Částka objednávky (Převedeno)',
-      'manufacturings' => 'Výroba',
       'ready2goBanner' => 'Budeme instalovat',
       'manufacturingReady' => 'Dokončení výroby',
       'rentDeadline' => 'Vrácení zápůjčky',
@@ -8991,6 +9023,7 @@ Available placeholders:
       'warehouseItems1' => 'Warehouse Items1',
       'wiso' => 'Wiso',
       'wisos' => 'Wisos',
+      'manufacturings' => 'Manufacturings',
       'productionOrders' => 'Výrobní příkazy',
       'reclamations' => 'Reklamace'
     ],
@@ -9025,7 +9058,10 @@ Available placeholders:
       ],
       'complexity' => [
         'Easy' => 'Easy',
-        'Hard' => 'Hard'
+        'Hard' => 'Hard',
+        '' => '',
+        'Very Hard' => 'Very Hard',
+        'Costom' => 'Costom'
       ],
       'priorita' => [
         '-' => '-',
@@ -9132,7 +9168,10 @@ Available placeholders:
       'processSalesOrderFailed' => 'Objednávka nemohla být zpracována.'
     ],
     'tooltips' => [
-      'productionStatus' => 'hello'
+      'productionStatus' => 'hello',
+      'complexity' => 'Easy - 2 weeks for internal and deadline
+Hard - 4 weeks for internal and external deadline
+Very Hard - internal and external deadline must be set manually'
     ]
   ],
   'SalesOrderItem' => [
@@ -9473,7 +9512,7 @@ Available placeholders:
       'phoneNumber' => 'Telefon',
       'emailAddress' => 'Email',
       'isActual' => 'IsActive',
-      'vacationTimeCorrection' => 'VacationTimeCorrection',
+      'vacationTimeCorrection' => 'Úprava zůstatku dovolené',
       'name' => 'Jméno a příjmení',
       'pracPomer' => 'Druh pracovního poměru',
       'employeeId' => 'Číslo zaměstnance',
@@ -9671,7 +9710,7 @@ Available placeholders:
       'timeBeforeVacation' => 'TimeBeforeVacation',
       'timeAfterVacation' => 'TimeAfterVacation',
       'timeVacation' => 'TimeVacation',
-      'vacationDays' => 'Vacation Days',
+      'vacationDays' => 'Počet dní',
       'isApproved' => 'IsApproved'
     ],
     'options' => [
@@ -9696,7 +9735,8 @@ Available placeholders:
       'numberOfDaysLeft' => 'Data se berou v moment vytvoření žádosti',
       'numberOfDaysLeftBefore' => 'Data se berou v moment vytvoření žádosti',
       'humanResources' => 'Your line manager will be set as default if no other approver is selected.',
-      'statusOfApproval' => 'If status "Schváleno", status can\'t be changed.'
+      'statusOfApproval' => 'If status "Schváleno", status can\'t be changed.',
+      'numberOfDays' => 'Must be set manually'
     ],
     'links' => [
       'humanResource' => 'HR',
@@ -10188,7 +10228,13 @@ Available placeholders:
       'url' => 'URL',
       'weight' => 'Weight',
       'productName' => 'Product  Code',
-      'isInvisible' => 'IsInvisible'
+      'isInvisible' => 'IsInvisible',
+      'listPrice' => 'List Price',
+      'listPriceCurrency' => 'List Price (Currency)',
+      'listPriceConverted' => 'List Price (Converted)',
+      'unitPrice' => 'Unit Price',
+      'unitPriceCurrency' => 'Unit Price (Currency)',
+      'unitPriceConverted' => 'Unit Price (Converted)'
     ],
     'links' => [
       'items' => 'Položky',
@@ -10252,6 +10298,11 @@ Available placeholders:
     ],
     'labels' => [
       'Create Warehouse' => 'Vytvořit Sklad'
+    ],
+    'tooltips' => [
+      'availableQuantity' => 'Available quantity at the current date and time.',
+      'quantity' => 'Total produced or stocked quantity during the time.',
+      'productCategory' => 'When the products has the prefix A, it means Archive. In the folder tree is main folder Archive and inside it subfolders for each product folders as A_Projecotors.'
     ]
   ],
   'WarehouseItem' => [
@@ -12016,6 +12067,45 @@ Available placeholders:
       'Create ComplaintBook' => 'Vytvořit Complaint Book'
     ]
   ],
+  'ItTask' => [
+    'fields' => [
+      'status' => 'Status',
+      'start' => 'Start',
+      'finish' => 'Finish',
+      'url' => 'Url',
+      'attachment' => 'Attachment',
+      'priority' => 'Priority',
+      'solution' => 'Solution',
+      'users' => 'Users'
+    ],
+    'links' => [
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'users' => 'Users'
+    ],
+    'labels' => [
+      'Create ItTask' => 'Vytvořit ItTask'
+    ],
+    'options' => [
+      'status' => [
+        'Created' => 'Created',
+        'In Progress' => 'In Progress',
+        'Testing' => 'Testing',
+        'Partially' => 'Partially',
+        'Done' => 'Done',
+        'On hold' => 'On hold',
+        'Canceled' => 'Canceled'
+      ],
+      'priority' => [
+        1 => 'Very High',
+        2 => 'High',
+        3 => 'Medium',
+        4 => 'Low',
+        5 => 'Very low'
+      ]
+    ]
+  ],
   'JIRA' => [
     'fields' => [
       'priority' => 'Priority',
@@ -12093,6 +12183,84 @@ Available placeholders:
     ],
     'tooltips' => [
       'toAll' => 'Email notification will be sent to all users when this task is completed.'
+    ]
+  ],
+  'Manufacturing' => [
+    'fields' => [
+      'parent' => 'ParentQuote',
+      'salesOrder' => 'Sales Order',
+      'bPname' => 'Název zakázky',
+      'bPnumber' => 'Číslo zakázky',
+      'complaintBanner' => 'Upozornění',
+      'complaintProtocol' => 'Reklamační protokol',
+      'deadline' => 'Deadline Výroby',
+      'glassPicture' => 'Sklíčko 1',
+      'glassPicture2' => 'Sklíčko 2',
+      'glassPicture3' => 'Sklíčko 3',
+      'isComplaint' => 'Reklamace zakázky',
+      'manufacturingBanner' => 'Důvod On Hold',
+      'manufacturingFinished' => 'Výroba dokončena',
+      'nace' => 'Obodování',
+      'progress' => 'Procento dokončení',
+      'quoteProducts' => 'Produkty z nabídky',
+      'status' => 'Stav'
+    ],
+    'links' => [
+      'parent' => 'Parent',
+      'salesOrder' => 'Sales Order'
+    ],
+    'labels' => [
+      'Create Manufacturing' => 'Vytvořit Manufacturing'
+    ],
+    'options' => [
+      'complaintBanner' => [
+        '-' => '-',
+        'Complaint' => 'Reklamace',
+        'Special' => 'Special'
+      ],
+      'manufacturingBanner' => [
+        '-' => '-',
+        'Materiál' => 'Materiál',
+        'Informace' => 'Informace',
+        'Komponenta' => 'Komponenta'
+      ],
+      'nace' => [
+        1 => '1',
+        2 => '2',
+        3 => '3',
+        5 => '5',
+        8 => '8',
+        13 => '13',
+        21 => '21',
+        '-' => '-'
+      ],
+      'progress' => [
+        0 => '0 %',
+        10 => '10 %',
+        20 => '20 %',
+        25 => '25 %',
+        30 => '30 %',
+        40 => '40 %',
+        50 => '50 %',
+        60 => '60 %',
+        70 => '70 %',
+        75 => '75 %',
+        80 => '80 %',
+        90 => '90 %',
+        95 => '95 %',
+        100 => '100 %'
+      ],
+      'status' => [
+        'NearLaunch' => 'Před zahájením',
+        'Backlog' => 'Backlog',
+        'OnHold' => 'On Hold',
+        'ToDo' => 'To Do',
+        'HW' => 'HW',
+        'SW' => 'FW / SW',
+        'Testing' => 'Testování',
+        'Done' => 'Hotovo',
+        'Archive' => 'Archiv'
+      ]
     ]
   ],
   'Operation' => [
@@ -12211,11 +12379,12 @@ Available placeholders:
       'totalProduced' => 'Total quantity',
       'quantityPlanned' => 'Množství plánované',
       'quantityProduced' => 'Množství vyrobené',
-      'avaliableQuantity' => 'AvaliableQuantity',
       'stockQuantity' => 'StockQuantity',
       'entryKey' => 'EntryKey',
       'isPerform' => 'IsPerform',
       'performWorkTime' => 'PerformWorkTime',
+      'availableBrno' => 'In Brno',
+      'availablePv' => 'In Prostějov',
       'status' => 'Stav',
       'product' => 'Produkt',
       'productionModel' => 'Technologický postup',
@@ -12231,6 +12400,7 @@ Available placeholders:
     ],
     'links' => [
       'warehouse' => 'Warehouse',
+      'worksPerformed' => 'WorkPerformed',
       'operations' => 'Operace',
       'billOfMaterials' => 'Materiálová rozpiska',
       'workPerformed' => 'Odvedené práce',
@@ -12258,6 +12428,42 @@ Available placeholders:
     'tooltips' => [
       'productWarehouse' => 'Na tento sklad se přesouvá hotový výrobek.',
       'materialWarehouse' => 'Z tohoto skladu odebíráme materiál pro vytvoření výrobku.'
+    ]
+  ],
+  'Prospect' => [
+    'fields' => [
+      'url' => 'URL',
+      'linkedIn' => 'LinkedIn',
+      'company' => 'Company',
+      'position' => 'Position',
+      'email' => 'Email',
+      'phoneNumber' => 'PhoneNumber',
+      'country' => 'Country',
+      'fromHunter' => 'FromHunter',
+      'targetLists' => 'Target Lists',
+      'emailAddress' => 'Email',
+      'targetListIsOptedOut' => 'Target List (Is Opted Out)',
+      'status' => 'Status'
+    ],
+    'links' => [
+      'targetLists' => 'Target Lists'
+    ],
+    'labels' => [
+      'Create Prospect' => 'Vytvořit Prospect'
+    ],
+    'options' => [
+      'status' => [
+        'New' => 'New',
+        'Contacted' => 'Contacted',
+        'Forwarded' => 'Forwarded',
+        'In communication' => 'In communication',
+        'Quoted' => 'Quoted',
+        'Waitning' => 'Waitning',
+        'Converted' => 'Converted',
+        'Lost' => 'Lost',
+        'First contact' => 'First contact',
+        'Second contact' => 'Second contact'
+      ]
     ]
   ],
   'Reclamation' => [
@@ -12394,6 +12600,9 @@ Available placeholders:
         'pv' => 'Prostějov'
       ]
     ],
+    'tooltips' => [
+      'deliveredBefore' => 'If ordered 100 pcs of item A. We get partial 20 pcs. I must choose the correct stock. Next time we get another 20 pcs, choose the stock. In the field Delivered before is 20 pcs and in the Delivered quantity you must write 40 pcs as a new stock amount.'
+    ],
     'labels' => [
       'Create SupplierOrderItem' => 'Vytvořit Položka objednávky u dodavatele'
     ]
@@ -12419,6 +12628,13 @@ Available placeholders:
         'Closed' => 'Uzavřeno',
         'Rejected' => 'Zamítnuto'
       ]
+    ]
+  ],
+  'Tax' => [
+    'fields' => [],
+    'links' => [],
+    'labels' => [
+      'Create Tax' => 'Vytvořit Tax'
     ]
   ],
   'Wiso' => [

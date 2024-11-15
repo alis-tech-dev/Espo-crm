@@ -11,6 +11,7 @@
         "widthPx": 250,
         "notSortable": true,
         "align": "left",
+        "view": "main:views\/production-model-item\/record\/listSmall",
         "label": "billOfMaterials"
     },
     {
@@ -18,30 +19,42 @@
         "label": "ItemQuantity"
     },
     {
-        "name": "stockQuantity"
+        "name": "stockQuantity",
+        "label": "StockQuantity"
     },
     {
         "name": "performWorkButton",
+        "widthPx": 100,
+        "noLabel": true,
         "align": "left",
         "view": "main:views\/production-order\/fields\/perform-work",
-        "label": "performWorkButton",
-        "hidden": true
+        "label": "performWorkButton"
     },
     {
-        "name": "description",
-        "label": "Description"
+        "name": "performWorkFinishButton",
+        "widthPx": 100,
+        "noLabel": true,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/perform-work-list-finish",
+        "label": "performWorkFinishButton"
+    },
+    {
+        "name": "performWorkTime",
+        "widthPx": 140,
+        "align": "left",
+        "label": "PerformWorkTime"
+    },
+    {
+        "name": "availableBrno",
+        "label": "In Brno"
+    },
+    {
+        "name": "availablePv",
+        "label": "In Prostějov"
     },
     {
         "name": "status",
         "label": "status"
-    },
-    {
-        "name": "salesOrder",
-        "label": "salesOrder"
-    },
-    {
-        "name": "avaliableQuantity",
-        "label": "AvaliableQuantity"
     },
     {
         "name": "quantityPlanned",
@@ -60,7 +73,9 @@
         "label": "Total quantity"
     },
     {
-        "name": "createdAt",
-        "label": "Created At"
+        "name": "isPerform",
+        "widthPx": 1,
+        "align": "left",
+        "label": "IsPerform"
     }
 ]

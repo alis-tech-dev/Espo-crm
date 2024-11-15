@@ -1,6 +1,16 @@
 {
     "fields": {
         "numberA": "Číslo leadu",
-        "jesenoLead": "JesenoLead"
+        "jesenoLead": "JesenoLead",
+        "noEmail": "NoEmail",
+        "statusPriority": "StatusPriority",
+        "lastContacted": "LastContacted"
+    },
+    "options": {
+        "statusPriority": {
+            "Priority 1": "1",
+            "Priority 2": "2",
+            "Priority 3": "3"
+        }
     }
 }

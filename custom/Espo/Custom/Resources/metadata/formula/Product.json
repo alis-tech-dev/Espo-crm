@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(warehouseId != null, defaultWarehouseId = warehouseId);",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

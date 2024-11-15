@@ -5,6 +5,6 @@
     "acl": false,
     "notifications": false,
     "object": false,
-    "customizable": false,
+    "customizable": true,
     "module": "Crm"
 }

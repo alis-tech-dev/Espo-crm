@@ -3,5 +3,10 @@
     "color": null,
     "iconClass": "fas fa-crosshairs",
     "isWide": false,
-    "gridViewMode": false
+    "gridViewMode": false,
+    "relationshipPanels": {
+        "prospects": {
+            "layout": null
+        }
+    }
 }

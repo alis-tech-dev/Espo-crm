@@ -20,7 +20,7 @@ return [
     'printTrace' => true
   ],
   'passwordSalt' => '475745ccff475b59',
-  'microtimeInternal' => 1725709969.374972,
+  'microtimeInternal' => 1730879701.248617,
   'webSocketMessager' => 'ZeroMQ',
   'webSocketPort' => '22335',
   'webSocketZeroMQSubscriberDsn' => 'tcp://127.0.0.1:22336',
@@ -29,7 +29,7 @@ return [
   'clientCspDisabled' => false,
   'clientCspScriptSourceList' => [
     0 => 'https://maps.googleapis.com',
-    1 => 'https://office.alis-is.com'
+    1 => 'https://office.alis-is.com:9443'
   ],
   'actualDatabaseVersion' => '10.11.9',
   'defaultPermissions' => [
@@ -38,5 +38,6 @@ return [
   ],
   'instanceId' => '0824420a-e85d-4594-8590-8afbb34ef8b1',
   'adminUpgradeDisabled' => false,
-  'authMaxFailedAttemptNumber' => 100
+  'authMaxFailedAttemptNumber' => 100,
+  'smtpPassword' => '12345678987654321'
 ];

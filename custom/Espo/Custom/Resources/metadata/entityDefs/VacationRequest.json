@@ -62,7 +62,7 @@
             "notNull": false,
             "type": "datetime",
             "required": true,
-            "minuteStep": 30,
+            "minuteStep": 60,
             "isCustom": true,
             "useNumericFormat": true,
             "after": null
@@ -76,14 +76,14 @@
             "required": true,
             "after": "dateStart",
             "useNumericFormat": true,
-            "minuteStep": 30,
+            "minuteStep": 60,
             "isCustom": true
         },
         "to": {
             "required": false
         },
         "name": {
-            "required": true,
+            "required": false,
             "options": []
         },
         "assignedUser": {
@@ -141,6 +141,11 @@
             "notNull": true,
             "type": "bool",
             "isCustom": true
+        },
+        "numberOfDays": {
+            "required": true,
+            "readOnly": false,
+            "tooltip": true
         }
     },
     "collection": {

@@ -69,6 +69,12 @@ define(['views/fields/base'], Dep => {
 					    modalView.model.set('dateEnd', null);
 					}
 					modalView.render();
+					modalView.once('after:render', () => {
+						const date = document.querySelector('div[data-name="dateEnd"]');
+						if (date) {
+							date.hidden = true;
+						}
+					});
 					modalView.on('before:save', (view, options) => {
 						const items = this.model.get('billOfMaterialsRecordList');
 						const isValid = this.validateProducedAmount(modalView.model, items);

@@ -7,12 +7,15 @@
         "vacationTime": "VacationTime",
         "vacationTimePerYear": "VacationTimePerYear",
         "remainingVacationTime": "RemainingVacationTime",
-        "jIRA": "J IRA"
+        "jIRA": "J IRA",
+        "itTasks": "It Tasks",
+        "isInvisible": "IsInvisible"
     },
     "links": {
         "vacationRequest": "Vacation Request",
         "tasks1": "Tasks1",
         "humanResources": "Human Resources",
-        "jIRA": "J IRA"
+        "jIRA": "J IRA",
+        "itTasks": "It Tasks"
     }
 }

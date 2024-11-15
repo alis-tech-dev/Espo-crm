@@ -45,6 +45,22 @@
         },
         "humanResources": {
             "type": "link"
+        },
+        "itTasks": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "isInvisible": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
         }
     },
     "links": {
@@ -67,6 +83,14 @@
             "type": "belongsTo",
             "foreign": "users",
             "entity": "HumanResources",
+            "audited": false,
+            "isCustom": true
+        },
+        "itTasks": {
+            "type": "hasMany",
+            "relationName": "itTaskUser",
+            "foreign": "users",
+            "entity": "ItTask",
             "audited": false,
             "isCustom": true
         }

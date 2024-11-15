@@ -6122,7 +6122,12 @@ return (object) [
       'kanbanViewMode' => false,
       'color' => '#bd64af',
       'isWide' => false,
-      'gridViewMode' => false
+      'gridViewMode' => false,
+      'relationshipPanels' => (object) [
+        'parent' => (object) [
+          'layout' => NULL
+        ]
+      ]
     ],
     'EmailAccount' => (object) [
       'controller' => 'controllers/record',
@@ -7469,6 +7474,9 @@ return (object) [
           'layout' => NULL
         ],
         'humanResources' => (object) [
+          'layout' => NULL
+        ],
+        'itTasks' => (object) [
           'layout' => NULL
         ]
       ],
@@ -9595,6 +9603,9 @@ return (object) [
         ],
         'syncWithReports' => (object) [
           'createDisabled' => true
+        ],
+        'prospects' => (object) [
+          'layout' => NULL
         ]
       ],
       'dynamicLogic' => (object) [
@@ -10037,7 +10048,12 @@ return (object) [
       'color' => NULL,
       'iconClass' => NULL,
       'isWide' => false,
-      'gridViewMode' => false
+      'gridViewMode' => false,
+      'relationshipPanels' => (object) [
+        'quote1' => (object) [
+          'layout' => NULL
+        ]
+      ]
     ],
     'UseCaseItem' => (object) [
       'controller' => 'controllers/record',
@@ -14508,6 +14524,9 @@ return (object) [
         ],
         'product' => (object) [
           'layout' => NULL
+        ],
+        'useCases' => (object) [
+          'layout' => NULL
         ]
       ],
       'dynamicHandlerList' => [
@@ -14800,6 +14819,9 @@ return (object) [
         ],
         'wisos' => (object) [
           'layout' => NULL
+        ],
+        'manufacturings' => (object) [
+          'layout' => NULL
         ]
       ],
       'dynamicHandlerList' => [
@@ -14972,6 +14994,51 @@ return (object) [
                 0 => (object) [
                   'type' => 'isTrue',
                   'attribute' => 'accommodation'
+                ]
+              ]
+            ]
+          ],
+          'deadline' => (object) [
+            'readOnly' => (object) [
+              'conditionGroup' => [
+                0 => (object) [
+                  'type' => 'or',
+                  'value' => [
+                    0 => (object) [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Easy'
+                    ],
+                    1 => (object) [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Hard'
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          'complexity' => (object) [
+            'readOnly' => NULL
+          ],
+          'internDeadline' => (object) [
+            'readOnly' => (object) [
+              'conditionGroup' => [
+                0 => (object) [
+                  'type' => 'or',
+                  'value' => [
+                    0 => (object) [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Easy'
+                    ],
+                    1 => (object) [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Hard'
+                    ]
+                  ]
                 ]
               ]
             ]
@@ -15557,6 +15624,17 @@ return (object) [
                 0 => (object) [
                   'type' => 'isTrue',
                   'attribute' => 'isApproved'
+                ]
+              ]
+            ]
+          ],
+          'numberOfDays' => (object) [
+            'readOnly' => (object) [
+              'conditionGroup' => [
+                0 => (object) [
+                  'type' => 'equals',
+                  'attribute' => 'statusOfApproval',
+                  'value' => 'Approved'
                 ]
               ]
             ]
@@ -17265,7 +17343,7 @@ return (object) [
       'iconClass' => 'fas fa-hammer',
       'isWide' => true,
       'dynamicHandlerList' => [
-        0 => 'production:handlers/production-order/dynamic'
+        0 => 'custom-production:handlers/production-order/dynamic-name'
       ],
       'recordViews' => (object) [
         'detail' => 'production:views/production-order/detail'
@@ -17303,6 +17381,13 @@ return (object) [
         ],
         'warehouse' => (object) [
           'layout' => NULL
+        ]
+      ],
+      'dynamicLogic' => (object) [
+        'fields' => (object) [
+          'name' => (object) [
+            'visible' => NULL
+          ]
         ]
       ]
     ],
@@ -18363,6 +18448,9 @@ return (object) [
         ],
         'complaintBooks' => (object) [
           'layout' => NULL
+        ],
+        'manufacturings' => (object) [
+          'layout' => NULL
         ]
       ]
     ],
@@ -18388,6 +18476,44 @@ return (object) [
       'isWide' => false,
       'gridViewMode' => false
     ],
+    'ItTask' => (object) [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'sidePanels' => (object) [
+        'detail' => [
+          0 => (object) [
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities'
+          ],
+          1 => (object) [
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities'
+          ],
+          2 => (object) [
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task'
+          ]
+        ]
+      ],
+      'color' => '#4aa7e8',
+      'iconClass' => 'fas fa-laptop-code',
+      'kanbanViewMode' => true,
+      'isWide' => false,
+      'gridViewMode' => false,
+      'relationshipPanels' => (object) [
+        'users' => (object) [
+          'layout' => NULL
+        ]
+      ]
+    ],
     'JIRA' => (object) [
       'controller' => 'controllers/record',
       'boolFilterList' => [
@@ -18404,12 +18530,54 @@ return (object) [
         ]
       ]
     ],
+    'Manufacturing' => (object) [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'relationshipPanels' => (object) [
+        'parent' => (object) [
+          'layout' => NULL
+        ],
+        'salesOrder' => (object) [
+          'layout' => NULL
+        ]
+      ],
+      'dynamicLogic' => (object) [
+        'fields' => (object) [
+          'complaintProtocol' => (object) [
+            'visible' => (object) [
+              'conditionGroup' => [
+                0 => (object) [
+                  'type' => 'equals',
+                  'attribute' => 'complaintBanner',
+                  'value' => 'Complaint'
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
     'OrderItem' => (object) [
       'kanbanViewMode' => false,
       'color' => NULL,
       'iconClass' => NULL,
       'isWide' => false,
       'gridViewMode' => false
+    ],
+    'Prospect' => (object) [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'color' => '#1ece99',
+      'iconClass' => 'fas fa-person-booth',
+      'relationshipPanels' => (object) [
+        'targetLists' => (object) [
+          'layout' => NULL
+        ]
+      ]
     ],
     'ReceivedInvoiceItem' => (object) [
       'kanbanViewMode' => false,
@@ -18469,6 +18637,12 @@ return (object) [
             ]
           ]
         ]
+      ]
+    ],
+    'Tax' => (object) [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
       ]
     ],
     'Wiso' => (object) [
@@ -21887,7 +22061,9 @@ return (object) [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask',
+            6 => 'Prospect'
           ]
         ],
         'dateSent' => (object) [
@@ -28198,6 +28374,22 @@ return (object) [
         'humanResources' => (object) [
           'type' => 'link'
         ],
+        'itTasks' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
+        ],
+        'isInvisible' => (object) [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
         'middleName' => (object) [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -28453,6 +28645,14 @@ return (object) [
           'type' => 'belongsTo',
           'foreign' => 'users',
           'entity' => 'HumanResources',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'itTasks' => (object) [
+          'type' => 'hasMany',
+          'relationName' => 'itTaskUser',
+          'foreign' => 'users',
+          'entity' => 'ItTask',
           'audited' => false,
           'isCustom' => true
         ]
@@ -29833,7 +30033,8 @@ return (object) [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask'
           ]
         ],
         'account' => (object) [
@@ -31864,6 +32065,12 @@ return (object) [
         'complaintBook' => (object) [
           'type' => 'link'
         ],
+        'padName' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
         'middleName' => (object) [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -33398,6 +33605,32 @@ return (object) [
           'reset' => 'Never',
           'isCustom' => true
         ],
+        'noEmail' => (object) [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'statusPriority' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => 'Priority 1',
+            1 => 'Priority 2',
+            2 => 'Priority 3'
+          ],
+          'style' => (object) [
+            'Priority 1' => NULL,
+            'Priority 2' => NULL,
+            'Priority 3' => NULL
+          ],
+          'default' => 'Priority 3',
+          'isCustom' => true
+        ],
+        'lastContacted' => (object) [
+          'notNull' => false,
+          'type' => 'date',
+          'dateWarning' => true,
+          'isCustom' => true
+        ],
         'middleName' => (object) [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -33904,7 +34137,8 @@ return (object) [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask'
           ]
         ],
         'account' => (object) [
@@ -35346,6 +35580,17 @@ return (object) [
           'type' => 'bool',
           'layoutAvailabilityList' => [],
           'tooltip' => true
+        ],
+        'prospects' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
         ]
       ],
       'links' => (object) [
@@ -35449,6 +35694,14 @@ return (object) [
           'foreign' => 'syncTargetLists',
           'utility' => true,
           'layoutRelationshipsDisabled' => true
+        ],
+        'prospects' => (object) [
+          'type' => 'hasMany',
+          'relationName' => 'targetListProspect',
+          'foreign' => 'targetLists',
+          'entity' => 'Prospect',
+          'audited' => false,
+          'isCustom' => true
         ]
       ],
       'collection' => (object) [
@@ -35635,7 +35888,8 @@ return (object) [
             2 => 'Lead',
             3 => 'Opportunity',
             4 => 'Case',
-            5 => 'SalesOrder'
+            5 => 'SalesOrder',
+            6 => 'ItTask'
           ],
           'tooltip' => true
         ],
@@ -35702,12 +35956,12 @@ return (object) [
           'isCustom' => true,
           'recordListLayout' => 'listSmall',
           'recordListButtonsPosition' => 'Top',
-          'defaultSelectFilters' => (object) [],
+          'defaultSelectFilters' => [],
           'tooltip' => true
         ],
         'taskParent' => (object) [
           'type' => 'link',
-          'defaultSelectFilters' => (object) [],
+          'defaultSelectFilters' => [],
           'tooltip' => true
         ],
         'solution' => (object) [
@@ -36522,6 +36776,9 @@ return (object) [
           'type' => 'bool',
           'isCustom' => true
         ],
+        'quote1' => (object) [
+          'type' => 'link'
+        ],
         'taxAmountCurrency' => (object) [
           'layoutDetailDisabled' => true,
           'readOnly' => true,
@@ -36692,6 +36949,13 @@ return (object) [
           'type' => 'belongsTo',
           'entity' => 'Account',
           'foreign' => 'useCaseItems'
+        ],
+        'quote1' => (object) [
+          'type' => 'belongsTo',
+          'foreign' => 'useCases',
+          'entity' => 'Quote',
+          'audited' => false,
+          'isCustom' => true
         ]
       ],
       'collection' => (object) [
@@ -37219,7 +37483,7 @@ return (object) [
         ],
         'defaultProductionModel' => (object) [
           'type' => 'link',
-          'defaultSelectFilters' => (object) []
+          'defaultSelectFilters' => []
         ],
         'productionModels' => (object) [
           'type' => 'linkMultiple',
@@ -37227,13 +37491,11 @@ return (object) [
         ],
         'priceJesenoCurrency' => (object) [
           'type' => 'enum',
-          'options' => [
-            0 => '0'
-          ],
+          'options' => NULL,
           'style' => (object) [
             0 => NULL
           ],
-          'default' => 'EUR',
+          'default' => NULL,
           'isCustom' => true
         ],
         'priceJesenoConverted' => (object) [
@@ -37387,6 +37649,20 @@ return (object) [
         'isHidden' => (object) [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'defaultWarehouseId' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 20,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'listPrice' => (object) [
+          'type' => 'currency',
+          'isCustom' => true
+        ],
+        'unitPrice' => (object) [
+          'type' => 'currency',
           'isCustom' => true
         ],
         'priceACurrency' => (object) [
@@ -37734,6 +38010,54 @@ return (object) [
           'customizationInlineEditDisabledDisabled' => true
         ],
         'componentsCostConverted' => (object) [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'listPriceCurrency' => (object) [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'listPriceConverted' => (object) [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'unitPriceCurrency' => (object) [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'unitPriceConverted' => (object) [
           'type' => 'currencyConverted',
           'readOnly' => true,
           'importDisabled' => true,
@@ -42973,6 +43297,17 @@ výrobce VZV.
         'product' => (object) [
           'type' => 'link'
         ],
+        'useCases' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
+        ],
         'billingAddressStreet' => (object) [
           'type' => 'text',
           'maxLength' => 255,
@@ -43375,6 +43710,19 @@ výrobce VZV.
           'type' => 'hasChildren',
           'foreign' => 'parent',
           'entity' => 'ComplaintBook',
+          'isCustom' => true
+        ],
+        'useCases' => (object) [
+          'type' => 'hasMany',
+          'foreign' => 'quote1',
+          'entity' => 'UseCase',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'manufacturings' => (object) [
+          'type' => 'hasChildren',
+          'foreign' => 'parent',
+          'entity' => 'Manufacturing',
           'isCustom' => true
         ]
       ],
@@ -44052,9 +44400,10 @@ výrobce VZV.
         ],
         'deadline' => (object) [
           'type' => 'date',
-          'required' => true,
+          'required' => false,
           'audited' => true,
-          'default' => 'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');'
+          'default' => 'javascript: return this.dateTime.getToday();',
+          'useNumericFormat' => true
         ],
         'internalDeadline' => (object) [
           'type' => 'date',
@@ -44526,7 +44875,7 @@ výrobce VZV.
         'internDeadline' => (object) [
           'notNull' => false,
           'type' => 'date',
-          'default' => 'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');',
+          'default' => 'javascript: return this.dateTime.getToday();',
           'useNumericFormat' => true,
           'audited' => true,
           'isCustom' => true
@@ -44554,14 +44903,19 @@ výrobce VZV.
           'type' => 'enum',
           'options' => [
             0 => 'Easy',
-            1 => 'Hard'
+            1 => 'Hard',
+            2 => 'Very Hard'
           ],
           'default' => 'Easy',
           'style' => (object) [
             'Easy' => 'success',
-            'Hard' => 'danger'
+            'Hard' => 'warning',
+            'Very Hard' => 'danger'
           ],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true,
+          'tooltip' => true,
+          'displayAsLabel' => true
         ],
         'priceList1' => (object) [
           'type' => 'link',
@@ -44719,6 +45073,17 @@ výrobce VZV.
           'field' => 'quantity',
           'displayAsList' => true,
           'view' => 'autocrm:views/fields/foreign-multiple',
+          'isCustom' => true
+        ],
+        'manufacturings' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
           'isCustom' => true
         ],
         'billingAddressStreet' => (object) [
@@ -45251,6 +45616,13 @@ výrobce VZV.
           'type' => 'hasMany',
           'foreign' => 'salesOrder1',
           'entity' => 'Wiso',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'manufacturings' => (object) [
+          'type' => 'hasMany',
+          'foreign' => 'salesOrder',
+          'entity' => 'Manufacturing',
           'audited' => false,
           'isCustom' => true
         ]
@@ -48192,7 +48564,7 @@ výrobce VZV.
       'fields' => (object) [
         'name' => (object) [
           'type' => 'varchar',
-          'required' => true,
+          'required' => false,
           'pattern' => '$noBadCharacters',
           'options' => []
         ],
@@ -48251,8 +48623,9 @@ výrobce VZV.
         'numberOfDays' => (object) [
           'type' => 'int',
           'isCustom' => false,
-          'required' => false,
-          'readOnly' => true
+          'required' => true,
+          'readOnly' => false,
+          'tooltip' => true
         ],
         'numberOfDaysLeft' => (object) [
           'type' => 'int',
@@ -48351,7 +48724,7 @@ výrobce VZV.
           'notNull' => false,
           'type' => 'datetime',
           'required' => true,
-          'minuteStep' => 30,
+          'minuteStep' => 60,
           'isCustom' => true,
           'useNumericFormat' => true,
           'after' => NULL
@@ -48362,7 +48735,7 @@ výrobce VZV.
           'required' => true,
           'after' => 'dateStart',
           'useNumericFormat' => true,
-          'minuteStep' => 30,
+          'minuteStep' => 60,
           'isCustom' => true
         ],
         'humanResources' => (object) [
@@ -51107,7 +51480,8 @@ výrobce VZV.
           'default' => 0,
           'min' => 0,
           'readOnly' => true,
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'stockLocation' => (object) [
           'type' => 'enum',
@@ -51184,7 +51558,8 @@ výrobce VZV.
         'name' => (object) [
           'type' => 'varchar',
           'required' => true,
-          'trim' => true
+          'trim' => true,
+          'options' => []
         ],
         'description' => (object) [
           'type' => 'text'
@@ -51242,7 +51617,8 @@ výrobce VZV.
         'quantity' => (object) [
           'notNull' => false,
           'type' => 'float',
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'category' => (object) [
           'type' => 'enum',
@@ -51265,7 +51641,8 @@ výrobce VZV.
           'notNull' => false,
           'type' => 'float',
           'isCustom' => true,
-          'readOnly' => true
+          'readOnly' => true,
+          'tooltip' => true
         ],
         'position' => (object) [
           'type' => 'varchar',
@@ -51287,7 +51664,8 @@ výrobce VZV.
         ],
         'productCategory' => (object) [
           'type' => 'link',
-          'defaultSelectFilters' => []
+          'defaultSelectFilters' => (object) [],
+          'tooltip' => true
         ],
         'isSerialNumber' => (object) [
           'notNull' => true,
@@ -51460,7 +51838,8 @@ výrobce VZV.
           'type' => 'varchar',
           'maxLength' => 150,
           'options' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => false
         ],
         'qrCode' => (object) [
           'type' => 'barcode',
@@ -51470,11 +51849,13 @@ výrobce VZV.
         ],
         'salesPrice' => (object) [
           'type' => 'currency',
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'salesPriceWithTax' => (object) [
           'type' => 'currency',
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'accounts' => (object) [
           'type' => 'linkMultiple',
@@ -51562,11 +51943,20 @@ výrobce VZV.
           'type' => 'varchar',
           'maxLength' => 150,
           'options' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => false
         ],
         'isInvisible' => (object) [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'listPrice' => (object) [
+          'type' => 'currency',
+          'isCustom' => true
+        ],
+        'unitPrice' => (object) [
+          'type' => 'currency',
           'isCustom' => true
         ],
         'addressStreet' => (object) [
@@ -51968,6 +52358,54 @@ výrobce VZV.
           'maxLength' => 3
         ],
         'totalPriceConverted' => (object) [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'listPriceCurrency' => (object) [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'listPriceConverted' => (object) [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'unitPriceCurrency' => (object) [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'unitPriceConverted' => (object) [
           'type' => 'currencyConverted',
           'readOnly' => true,
           'importDisabled' => true,
@@ -57233,7 +57671,7 @@ výrobce VZV.
           'required' => false,
           'type' => 'link',
           'view' => 'views/fields/assigned-user',
-          'defaultSelectFilters' => (object) []
+          'defaultSelectFilters' => []
         ],
         'attachments' => (object) [
           'type' => 'attachmentMultiple'
@@ -57246,7 +57684,7 @@ výrobce VZV.
           'recordListLinkDisabled' => false,
           'type' => 'linkMultiple',
           'recordListButtonsPosition' => 'Top',
-          'defaultSelectFilters' => (object) []
+          'defaultSelectFilters' => []
         ],
         'createdAt' => (object) [
           'readOnly' => true,
@@ -57280,10 +57718,10 @@ výrobce VZV.
           'type' => 'link'
         ],
         'name' => (object) [
-          'pattern' => '$noBadCharacters',
+          'pattern' => NULL,
           'trim' => true,
           'type' => 'varchar',
-          'readOnly' => true,
+          'readOnly' => false,
           'options' => []
         ],
         'operations' => (object) [
@@ -57389,14 +57827,6 @@ výrobce VZV.
           'isCustom' => true,
           'notStorable' => true
         ],
-        'avaliableQuantity' => (object) [
-          'readOnly' => true,
-          'type' => 'foreign',
-          'link' => 'productWarehouse',
-          'field' => 'availableQuantity',
-          'view' => 'views/fields/foreign-float',
-          'isCustom' => true
-        ],
         'stockQuantity' => (object) [
           'readOnly' => true,
           'type' => 'foreignMultiple',
@@ -57422,6 +57852,22 @@ výrobce VZV.
           'maxLength' => 30,
           'readOnly' => true,
           'options' => [],
+          'isCustom' => true
+        ],
+        'availableBrno' => (object) [
+          'readOnly' => true,
+          'type' => 'foreign',
+          'link' => 'productWarehouse',
+          'field' => 'availableBrno',
+          'view' => 'views/fields/foreign-float',
+          'isCustom' => true
+        ],
+        'availablePv' => (object) [
+          'readOnly' => true,
+          'type' => 'foreign',
+          'link' => 'productWarehouse',
+          'field' => 'availablePv',
+          'view' => 'views/fields/foreign-float',
           'isCustom' => true
         ]
       ],
@@ -57503,6 +57949,12 @@ výrobce VZV.
           'type' => 'belongsTo',
           'entity' => 'SalesOrder',
           'foreign' => 'productionOrders'
+        ],
+        'worksPerformed' => (object) [
+          'type' => 'hasChildren',
+          'foreign' => 'parent',
+          'entity' => 'WorkPerformed',
+          'isCustom' => true
         ]
       ],
       'collection' => (object) [
@@ -57604,7 +58056,7 @@ výrobce VZV.
           'type' => 'link',
           'required' => false,
           'view' => 'views/fields/assigned-user',
-          'defaultSelectFilters' => (object) []
+          'defaultSelectFilters' => []
         ],
         'operation' => (object) [
           'type' => 'link',
@@ -57624,7 +58076,9 @@ výrobce VZV.
           'type' => 'datetime',
           'required' => false,
           'view' => 'crm:views/call/fields/date-end',
-          'after' => 'dateStart'
+          'after' => 'dateStart',
+          'default' => 'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);',
+          'minuteStep' => 30
         ],
         'duration' => (object) [
           'type' => 'duration',
@@ -57669,8 +58123,7 @@ výrobce VZV.
         'parent' => (object) [
           'type' => 'linkParent',
           'entityList' => [
-            0 => 'ProductionOrder',
-            1 => 'SalesOrder'
+            0 => 'ProductionOrder'
           ]
         ],
         'stockLocation' => (object) [
@@ -62475,6 +62928,234 @@ výrobce VZV.
       ],
       'optimisticConcurrencyControl' => false
     ],
+    'ItTask' => (object) [
+      'fields' => (object) [
+        'name' => (object) [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'options' => []
+        ],
+        'description' => (object) [
+          'type' => 'text',
+          'required' => true
+        ],
+        'createdAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+          'defaultSelectFilters' => []
+        ],
+        'teams' => (object) [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'status' => (object) [
+          'type' => 'enum',
+          'optionsReference' => NULL,
+          'default' => 'Created',
+          'displayAsLabel' => true,
+          'style' => (object) [
+            'Created' => 'danger',
+            'In Progress' => 'primary',
+            'Testing' => 'warning',
+            'Partially' => 'info',
+            'Done' => 'success',
+            'On hold' => 'warning',
+            'Canceled' => 'danger'
+          ],
+          'isCustom' => true,
+          'options' => [
+            0 => 'Created',
+            1 => 'In Progress',
+            2 => 'Testing',
+            3 => 'Partially',
+            4 => 'Done',
+            5 => 'On hold',
+            6 => 'Canceled'
+          ]
+        ],
+        'start' => (object) [
+          'notNull' => false,
+          'type' => 'datetime',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'finish' => (object) [
+          'notNull' => false,
+          'type' => 'datetime',
+          'after' => 'start',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'url' => (object) [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'attachment' => (object) [
+          'type' => 'attachmentMultiple',
+          'previewSize' => 'small',
+          'sourceList' => [],
+          'accept' => [],
+          'copyAttachmentsEntityList' => [],
+          'isCustom' => true
+        ],
+        'priority' => (object) [
+          'type' => 'enum',
+          'default' => '3',
+          'optionsReference' => NULL,
+          'style' => (object) [
+            1 => 'danger',
+            2 => 'warning',
+            3 => 'primary',
+            4 => 'success',
+            5 => 'info'
+          ],
+          'isCustom' => true,
+          'displayAsLabel' => true,
+          'options' => [
+            0 => '1',
+            1 => '2',
+            2 => '3',
+            3 => '4',
+            4 => '5'
+          ]
+        ],
+        'solution' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'users' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => false,
+          'isCustom' => true
+        ]
+      ],
+      'links' => (object) [
+        'createdBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'meetings' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'calls' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'tasks' => (object) [
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'emails' => (object) [
+          'type' => 'hasChildren',
+          'entity' => 'Email',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'attachment' => (object) [
+          'type' => 'hasChildren',
+          'entity' => 'Attachment',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+          'relationName' => 'attachments',
+          'utility' => true
+        ],
+        'users' => (object) [
+          'type' => 'hasMany',
+          'relationName' => 'itTaskUser',
+          'foreign' => 'itTasks',
+          'entity' => 'User',
+          'audited' => false,
+          'isCustom' => true
+        ]
+      ],
+      'collection' => (object) [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'textFilterFields' => [
+          0 => 'name'
+        ],
+        'fullTextSearch' => false,
+        'countDisabled' => false,
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => (object) [
+        'name' => (object) [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => (object) [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => (object) [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => (object) [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ],
+      'optimisticConcurrencyControl' => false
+    ],
     'JIRA' => (object) [
       'fields' => (object) [
         'name' => (object) [
@@ -62620,7 +63301,8 @@ výrobce VZV.
           'previewSize' => 'small',
           'accept' => [],
           'copyAttachmentsEntityList' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'cRM' => (object) [
           'type' => 'enum',
@@ -62773,6 +63455,589 @@ výrobce VZV.
         ]
       ],
       'optimisticConcurrencyControl' => false
+    ],
+    'Manufacturing' => (object) [
+      'fields' => (object) [
+        'name' => (object) [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters'
+        ],
+        'description' => (object) [
+          'type' => 'text'
+        ],
+        'createdAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => (object) [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'parent' => (object) [
+          'type' => 'linkParent',
+          'entityList' => [
+            0 => 'Quote',
+            1 => 'SalesOrder'
+          ]
+        ],
+        'salesOrder' => (object) [
+          'type' => 'link'
+        ],
+        'bPname' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'bPnumber' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'complaintBanner' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => 'Complaint',
+            2 => 'Special'
+          ],
+          'style' => (object) [
+            '-' => NULL,
+            'Complaint' => 'danger',
+            'Special' => 'primary'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'isCustom' => true
+        ],
+        'complaintProtocol' => (object) [
+          'type' => 'file',
+          'sourceList' => [],
+          'accept' => [],
+          'isCustom' => true
+        ],
+        'deadline' => (object) [
+          'notNull' => false,
+          'type' => 'date',
+          'dateWarning' => true,
+          'useNumericFormat' => true,
+          'isCustom' => true
+        ],
+        'glassPicture' => (object) [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'glassPicture2' => (object) [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'glassPicture3' => (object) [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'isComplaint' => (object) [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'manufacturingBanner' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => 'Materiál',
+            2 => 'Informace',
+            3 => 'Komponenta'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'style' => (object) [
+            '-' => NULL,
+            'Materiál' => 'warning',
+            'Informace' => 'info',
+            'Komponenta' => 'primary'
+          ],
+          'isCustom' => true
+        ],
+        'manufacturingFinished' => (object) [
+          'notNull' => false,
+          'type' => 'datetime',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'nace' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => '1',
+            2 => '2',
+            3 => '3',
+            4 => '5',
+            5 => '8',
+            6 => '13',
+            7 => '21'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'style' => (object) [
+            1 => 'success',
+            2 => 'primary',
+            3 => 'primary',
+            5 => 'info',
+            8 => 'warning',
+            13 => 'danger',
+            21 => 'danger',
+            '-' => NULL
+          ],
+          'isCustom' => true
+        ],
+        'progress' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => '0',
+            1 => '10',
+            2 => '20',
+            3 => '25',
+            4 => '30',
+            5 => '40',
+            6 => '50',
+            7 => '60',
+            8 => '70',
+            9 => '75',
+            10 => '80',
+            11 => '90',
+            12 => '95',
+            13 => '100'
+          ],
+          'default' => '0',
+          'audited' => true,
+          'style' => (object) [
+            0 => NULL,
+            10 => NULL,
+            20 => NULL,
+            25 => NULL,
+            30 => NULL,
+            40 => NULL,
+            50 => NULL,
+            60 => NULL,
+            70 => NULL,
+            75 => NULL,
+            80 => NULL,
+            90 => NULL,
+            95 => NULL,
+            100 => NULL
+          ],
+          'isCustom' => true
+        ],
+        'quoteProducts' => (object) [
+          'type' => 'wysiwyg',
+          'default' => '<table class="table table-bordered" style="margin: 10mm 0; width: 100%; font-size: 14pxt; font-weight: 300;" border="0" cellspacing="5" cellpadding="7">
+<tbody>
+<tr>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 23.1494%;" align="center" width="23%"><span style="font-weight: bold; color: #ffffff;">K&oacute;d produktu</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 1.3459%;" align="center" width="33%"><span style="font-weight: bold; color: #ffffff;">Počet</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 61.2052%;" align="center" width="5.5%"><span style="font-weight: bold; color: #ffffff;">Pozn&aacute;mka</span></th>
+</tr>
+<tr style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+</tbody>
+</table>',
+          'isCustom' => true
+        ],
+        'status' => (object) [
+          'type' => 'enum',
+          'required' => true,
+          'options' => [
+            0 => 'NearLaunch',
+            1 => 'Backlog',
+            2 => 'OnHold',
+            3 => 'ToDo',
+            4 => 'HW',
+            5 => 'SW',
+            6 => 'Testing',
+            7 => 'Done',
+            8 => 'Archive'
+          ],
+          'default' => 'NearLaunch',
+          'displayAsLabel' => true,
+          'audited' => true,
+          'style' => (object) [
+            'NearLaunch' => 'info',
+            'Backlog' => 'info',
+            'OnHold' => 'warning',
+            'ToDo' => 'primary',
+            'HW' => 'info',
+            'SW' => 'info',
+            'Testing' => 'warning',
+            'Done' => 'success',
+            'Archive' => 'danger'
+          ],
+          'isCustom' => true
+        ]
+      ],
+      'links' => (object) [
+        'createdBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'parent' => (object) [
+          'type' => 'belongsToParent',
+          'foreign' => 'manufacturings',
+          'isCustom' => true
+        ],
+        'salesOrder' => (object) [
+          'type' => 'belongsTo',
+          'foreign' => 'manufacturings',
+          'entity' => 'SalesOrder',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'complaintProtocol' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture2' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture3' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ]
+      ],
+      'collection' => (object) [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => (object) [
+        'name' => (object) [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => (object) [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => (object) [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => (object) [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
+    ],
+    'Prospect' => (object) [
+      'fields' => (object) [
+        'name' => (object) [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'options' => []
+        ],
+        'description' => (object) [
+          'type' => 'text'
+        ],
+        'createdAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => (object) [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'url' => (object) [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'linkedIn' => (object) [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'company' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'position' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'emailAddress' => (object) [
+          'notStorable' => false,
+          'type' => 'email',
+          'isCustom' => true,
+          'isPersonalData' => true
+        ],
+        'phoneNumber' => (object) [
+          'type' => 'phone',
+          'typeList' => [
+            0 => 'Mobile',
+            1 => 'Office',
+            2 => 'Home',
+            3 => 'Fax',
+            4 => 'Other'
+          ],
+          'defaultType' => 'Mobile'
+        ],
+        'country' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'fromHunter' => (object) [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'targetLists' => (object) [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => false,
+          'isCustom' => true
+        ],
+        'targetList' => (object) [
+          'type' => 'link',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutFiltersDisabled' => true,
+          'entity' => 'TargetList',
+          'directAccessDisabled' => true
+        ],
+        'targetListIsOptedOut' => (object) [
+          'utility' => true,
+          'type' => 'bool',
+          'readOnly' => true,
+          'isCustom' => true
+        ],
+        'status' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => 'New',
+            1 => 'First contact',
+            2 => 'Second contact',
+            3 => 'Forwarded',
+            4 => 'Converted',
+            5 => 'Lost'
+          ],
+          'style' => (object) [
+            'New' => 'primary',
+            'First contact' => 'primary',
+            'Second contact' => 'info',
+            'Forwarded' => 'warning',
+            'Converted' => 'success',
+            'Lost' => 'danger'
+          ],
+          'default' => 'New',
+          'isCustom' => true
+        ],
+        'emailAddressIsOptedOut' => (object) [
+          'notStorable' => true,
+          'type' => 'bool',
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'emailAddressIsInvalid' => (object) [
+          'notStorable' => true,
+          'type' => 'bool',
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'phoneNumberIsOptedOut' => (object) [
+          'type' => 'bool',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'phoneNumberIsInvalid' => (object) [
+          'type' => 'bool',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ]
+      ],
+      'links' => (object) [
+        'createdBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'targetLists' => (object) [
+          'type' => 'hasMany',
+          'relationName' => 'targetListProspect',
+          'foreign' => 'prospects',
+          'columnAttributeMap' => (object) [
+            'optedOut' => 'targetListIsOptedOut'
+          ],
+          'entity' => 'TargetList',
+          'audited' => false,
+          'isCustom' => true
+        ]
+      ],
+      'collection' => (object) [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => (object) [
+        'name' => (object) [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => (object) [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => (object) [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => (object) [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
     ],
     'ReceivedInvoiceItem' => (object) [
       'collection' => (object) [
@@ -63160,6 +64425,99 @@ výrobce VZV.
         ]
       ],
       'optimisticConcurrencyControl' => false
+    ],
+    'Tax' => (object) [
+      'fields' => (object) [
+        'name' => (object) [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'default' => 'default',
+          'options' => []
+        ],
+        'description' => (object) [
+          'type' => 'text'
+        ],
+        'createdAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => (object) [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => (object) [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ]
+      ],
+      'links' => (object) [
+        'createdBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => (object) [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => (object) [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ]
+      ],
+      'collection' => (object) [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => (object) [
+        'name' => (object) [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => (object) [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => (object) [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => (object) [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
     ],
     'Wiso' => (object) [
       'fields' => (object) [
@@ -67811,9 +69169,36 @@ výrobce VZV.
       'beforeLinkHookClassNameList' => [],
       'beforeUnlinkHookClassNameList' => []
     ],
+    'ItTask' => (object) [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
+      'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
     'JIRA' => (object) [
       'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
+    'Manufacturing' => (object) [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'readLoaderClassNameList' => [],
       'listLoaderClassNameList' => [],
       'saverClassNameList' => [],
@@ -67877,6 +69262,19 @@ výrobce VZV.
       'beforeLinkHookClassNameList' => [],
       'beforeUnlinkHookClassNameList' => []
     ],
+    'Prospect' => (object) [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
     'SalesOrderSummaryItem' => (object) [
       'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'updateDuplicateCheck' => false,
@@ -67921,6 +69319,19 @@ výrobce VZV.
     ],
     'SupplierOrder' => (object) [
       'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
+    'Tax' => (object) [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'readLoaderClassNameList' => [],
       'listLoaderClassNameList' => [],
       'saverClassNameList' => [],
@@ -68648,7 +70059,7 @@ výrobce VZV.
       'acl' => false,
       'notifications' => false,
       'object' => false,
-      'customizable' => false,
+      'customizable' => true,
       'module' => 'Crm',
       'workflow' => true
     ],
@@ -68740,7 +70151,8 @@ výrobce VZV.
         0 => 'accounts',
         1 => 'contacts',
         2 => 'leads',
-        3 => 'users'
+        3 => 'users',
+        4 => 'prospects'
       ],
       'disabled' => false,
       'statusField' => NULL,
@@ -69248,14 +70660,16 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'SalesOrder' => (object) [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => 'recordAllAccountNo',
+      'aclPortal' => 'recordAllAccountContactNo',
       'module' => 'Accounting',
       'customizable' => true,
       'importable' => true,
@@ -69263,6 +70677,7 @@ výrobce VZV.
       'object' => true,
       'stream' => true,
       'statusField' => 'status',
+      'disabledPortal' => false,
       'kanbanStatusIgnoreList' => [
         0 => 'Cancelled'
       ],
@@ -69281,14 +70696,16 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'SupplierInvoice' => (object) [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => 'recordAllAccountNo',
+      'aclPortal' => 'record',
       'module' => 'Accounting',
       'customizable' => true,
       'importable' => true,
@@ -69297,7 +70714,8 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'SupplierInvoiceItem' => (object) [
       'entity' => true,
@@ -69636,7 +71054,7 @@ výrobce VZV.
     ],
     'PriceList' => (object) [
       'acl' => true,
-      'aclPortal' => true,
+      'aclPortal' => 'record',
       'aclPortalLevelList' => [
         0 => 'all',
         1 => 'account',
@@ -69657,6 +71075,7 @@ výrobce VZV.
       'disabled' => false,
       'statusField' => NULL,
       'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false,
       'duplicateCheckFieldList' => []
     ],
     'Reclamation' => (object) [
@@ -69806,7 +71225,9 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'WarehousePosition' => (object) [
       'entity' => true,
@@ -70226,7 +71647,9 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'ProductionModelOperation' => (object) [
       'entity' => true,
@@ -70249,7 +71672,7 @@ výrobce VZV.
       'object' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => false,
+      'aclPortal' => 'record',
       'customizable' => true,
       'importable' => true,
       'notifications' => true,
@@ -70257,7 +71680,8 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'WorkCenter' => (object) [
       'entity' => true,
@@ -70281,7 +71705,7 @@ výrobce VZV.
       'object' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => false,
+      'aclPortal' => 'record',
       'customizable' => true,
       'importable' => true,
       'notifications' => true,
@@ -70289,7 +71713,8 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'XmlTemplate' => (object) [
       'entity' => true,
@@ -70915,6 +72340,32 @@ výrobce VZV.
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
     ],
+    'ItTask' => (object) [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'statusField' => 'status',
+      'kanbanStatusIgnoreList' => NULL,
+      'duplicateCheckFieldList' => []
+    ],
     'JIRA' => (object) [
       'entity' => true,
       'layouts' => true,
@@ -70941,12 +72392,64 @@ výrobce VZV.
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
     ],
-    'SalesOrderSummaryItem' => (object) [
+    'Manufacturing' => (object) [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
       'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true
+    ],
+    'Prospect' => (object) [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'hasPersonalData' => true,
+      'duplicateCheckFieldList' => [
+        0 => 'name',
+        1 => 'emailAddress'
+      ]
+    ],
+    'SalesOrderSummaryItem' => (object) [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => 'record',
+      'disabledPortal' => false,
       'aclPortalLevelList' => [
         0 => 'all',
         1 => 'account',
@@ -71018,6 +72521,29 @@ výrobce VZV.
       'statusField' => NULL,
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
+    ],
+    'Tax' => (object) [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true
     ],
     'Wiso' => (object) [
       'entity' => true,
@@ -72149,6 +73675,7 @@ ifThen(
     ],
     'Warehouse' => (object) [
       'beforeSaveCustomScript' => 'ifThen(name == null, name = product.name);
+ifThen(productName == null, productName = name);
 ifThen(isInfinity == true, quantity = 9999);
 ifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = availableBrno + availablePv);',
       'readLoaderCustomScript' => NULL,
@@ -72156,6 +73683,11 @@ ifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = ava
     ],
     'HumanResource' => (object) [
       'beforeSaveCustomScript' => 'ifThen(vacationTimeCorrection != null, vacationDaysLeft = vacationTimeCorrection);',
+      'readLoaderCustomScript' => NULL,
+      'listLoaderCustomScript' => NULL
+    ],
+    'Product' => (object) [
+      'beforeSaveCustomScript' => 'ifThen(warehouseId != null, defaultWarehouseId = warehouseId);',
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
@@ -72171,9 +73703,18 @@ ifThen(totalProduced == quantityPlanned, status = \'Completed\');
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
+    'SalesOrder' => (object) [
+      'beforeSaveCustomScript' => 'ifThen(complexity == \'Easy\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 28)), deadline = datetime\\addDays(datetime\\today(), 14));
+ifThen(complexity == \'Easy\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 28)), internDeadline = datetime\\addDays(datetime\\today(), 14));
+ifThen(complexity == \'Hard\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 14)), deadline = datetime\\addDays(datetime\\today(), 28));
+ifThen(complexity == \'Hard\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));',
+      'readLoaderCustomScript' => NULL,
+      'listLoaderCustomScript' => NULL
+    ],
     'VacationRequest' => (object) [
       'beforeSaveCustomScript' => 'ifThen(!humanResources, humanResourcesId = assignedUser.humanResourcesId);
 ifThen(statusOfApproval == \'Approved\', isApproved = 1);
+ifThen(name != \'Vacation Request\', name = \'Vacation Request\');
 ',
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL

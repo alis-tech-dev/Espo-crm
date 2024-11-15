@@ -1,6 +1,6 @@
 <?php
 return [
-  'cacheTimestamp' => 1729073886,
+  'cacheTimestamp' => 1731666770,
   'useCache' => true,
   'recordsPerPage' => 100,
   'isDeveloperMode' => false,
@@ -24,15 +24,14 @@ return [
   'currencyRates' => [
     'CZK' => 0.04
   ],
-  'outboundEmailIsShared' => false,
-  'outboundEmailFromName' => 'Info Alistech',
-  'outboundEmailFromAddress' => 'info@alis-tech.com',
-  'smtpServer' => '127.0.0.1',
-  'smtpPort' => 25,
-  'smtpAuth' => false,
-  'smtpSecurity' => '',
-  'smtpUsername' => '',
-  'smtpPassword' => '',
+  'outboundEmailIsShared' => true,
+  'outboundEmailFromName' => 'Alis-Tech s.r.o.',
+  'outboundEmailFromAddress' => 'alis@alis-tech.com',
+  'smtpServer' => 'smtp.gmail.com',
+  'smtpPort' => 587,
+  'smtpAuth' => true,
+  'smtpSecurity' => 'TLS',
+  'smtpUsername' => 'alis@alis-tech.com',
   'languageList' => [
     0 => 'en_GB',
     1 => 'en_US',
@@ -84,10 +83,10 @@ return [
   ],
   'tabList' => [
     0 => 'Task',
-    1 => 'JIRA',
-    2 => 'Selector',
-    3 => 'Email',
-    4 => 'Chat',
+    1 => 'ItTask',
+    2 => 'JIRA',
+    3 => 'Selector',
+    4 => 'Email',
     5 => 'Product',
     6 => (object) [
       'type' => 'group',
@@ -163,7 +162,10 @@ return [
         2 => 'VacationRequest'
       ],
       'id' => '902424'
-    ]
+    ],
+    13 => 'Campaign',
+    14 => 'TargetList',
+    15 => 'Prospect'
   ],
   'quickCreateList' => [
     0 => 'Quote',
@@ -235,44 +237,60 @@ return [
       'name' => 'týmové aktivity',
       'layout' => [
         0 => (object) [
+          'id' => 'd201951',
+          'name' => 'Iframe',
+          'x' => 0,
+          'y' => '0',
+          'width' => 4,
+          'height' => '10'
+        ],
+        1 => (object) [
           'id' => 'd362375',
           'name' => 'Tasks',
           'x' => 0,
-          'y' => '0',
-          'width' => 2,
-          'height' => '2'
-        ],
-        1 => (object) [
-          'id' => 'd80690',
-          'name' => 'Calendar',
-          'x' => 2,
-          'y' => '0',
+          'y' => '10',
           'width' => 2,
           'height' => '2'
         ],
         2 => (object) [
+          'id' => 'd883840',
+          'name' => 'Iframe',
+          'x' => 2,
+          'y' => '10',
+          'width' => 2,
+          'height' => '3'
+        ],
+        3 => (object) [
           'id' => 'd254554',
           'name' => 'Report',
           'x' => 0,
-          'y' => '2',
+          'y' => '12',
           'width' => 2,
           'height' => '2'
         ],
-        3 => (object) [
-          'id' => 'default-activities',
-          'name' => 'Activities',
-          'x' => 2,
-          'y' => '2',
-          'width' => 2,
-          'height' => '5'
-        ],
         4 => (object) [
+          'id' => 'd80690',
+          'name' => 'Calendar',
+          'x' => 2,
+          'y' => '13',
+          'width' => 2,
+          'height' => '2'
+        ],
+        5 => (object) [
           'id' => 'default-stream',
           'name' => 'Stream',
           'x' => 0,
-          'y' => '4',
+          'y' => '14',
           'width' => 2,
           'height' => '4'
+        ],
+        6 => (object) [
+          'id' => 'default-activities',
+          'name' => 'Activities',
+          'x' => 2,
+          'y' => '15',
+          'width' => 2,
+          'height' => '3'
         ]
       ]
     ]
@@ -318,7 +336,7 @@ return [
     0 => 'Totp'
   ],
   'isInstalled' => true,
-  'siteUrl' => 'https://crm.alis-is.com',
+  'siteUrl' => 'https://www.crm.alis-is.com',
   'fullTextSearchMinLength' => 4,
   'actualDatabaseType' => 'mariadb',
   'defaultPortalId' => '5e0cb43a69644a393',
@@ -343,6 +361,16 @@ return [
         0 => 'COUNT:id'
       ],
       'depth' => 1
+    ],
+    'd883840' => (object) [
+      'title' => 'Chat',
+      'url' => 'https://mail.google.com/chat/u/0/#chat/home',
+      'autorefreshInterval' => 0.5
+    ],
+    'd201951' => (object) [
+      'title' => 'alis-is.com',
+      'url' => 'https://alis-is.com',
+      'autorefreshInterval' => 0.5
     ]
   ],
   'companyLogoId' => '65b39c24aebb4e953',
@@ -383,7 +411,7 @@ return [
   ],
   'massEmailVerp' => false,
   'newNotificationCountInTitle' => false,
-  'microtime' => 1729073886.583563,
+  'microtime' => 1731666770.190187,
   'busyRangesEntityList' => [
     0 => 'Meeting',
     1 => 'Call'
@@ -392,10 +420,11 @@ return [
     0 => 'User',
     1 => 'Contact',
     2 => 'Lead',
-    3 => 'Account'
+    3 => 'Account',
+    4 => 'Prospect'
   ],
   'outboundEmailBccAddress' => NULL,
-  'massEmailDisableMandatoryOptOutLink' => false,
+  'massEmailDisableMandatoryOptOutLink' => true,
   'massEmailOpenTracking' => true,
   'defaultTeam' => 'Support',
   'defaultTeamName' => 'Support',
@@ -457,13 +486,15 @@ return [
     0 => 'User',
     1 => 'Contact',
     2 => 'Lead',
-    3 => 'Account'
+    3 => 'Account',
+    4 => 'Prospect'
   ],
   'phoneNumberEntityLookupDefaultOrder' => [
     0 => 'User',
     1 => 'Contact',
     2 => 'Lead',
-    3 => 'Account'
+    3 => 'Account',
+    4 => 'Prospect'
   ],
   'auth2FAInPortal' => false,
   'emailCheckInterval' => 60,

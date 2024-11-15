@@ -20,6 +20,12 @@
         "label": "Quantity"
     },
     {
+        "name": "availableBrno"
+    },
+    {
+        "name": "availablePv"
+    },
+    {
         "name": "availableQuantity",
         "align": "left",
         "label": "Available Quantity"

@@ -12,7 +12,8 @@
         "priceCCurrency": "Cena C (Měna)",
         "priceCConverted": "Cena C (Převedeno)",
         "priceLists": "Price Lists",
-        "account": "Organizace"
+        "account": "Organizace",
+        "useCases": "Use Cases"
     },
     "links": {
         "priceList": "Ceník",
@@ -23,6 +24,8 @@
         "products": "Products",
         "products1": "Products1",
         "priceLists": "Price Lists",
-        "complaintBooks": "Complaint Books"
+        "complaintBooks": "Complaint Books",
+        "useCases": "Use Cases",
+        "manufacturings": "Manufacturing"
     }
 }

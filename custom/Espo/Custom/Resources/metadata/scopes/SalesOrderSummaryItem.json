@@ -3,7 +3,8 @@
     "layouts": true,
     "tab": true,
     "acl": true,
-    "aclPortal": true,
+    "aclPortal": "record",
+    "disabledPortal": false,
     "aclPortalLevelList": [
         "all",
         "account",

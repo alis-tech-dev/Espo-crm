@@ -1,0 +1,25 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "priority"
+    },
+    {
+        "name": "status",
+        "label": "Status"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "createdBy",
+        "label": "Created By"
+    },
+    {
+        "name": "assignedUser",
+        "label": "Assigned User"
+    }
+]

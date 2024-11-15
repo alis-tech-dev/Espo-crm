@@ -2,6 +2,12 @@
     "fields": {
         "complaintBook": {
             "type": "link"
+        },
+        "padName": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
         }
     },
     "links": {

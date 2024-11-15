@@ -3,12 +3,20 @@
     "color": null,
     "iconClass": "fas fa-hammer",
     "isWide": true,
+    "dynamicHandlerList": ["custom-production:handlers/production-order/dynamic-name"],
     "relationshipPanels": {
         "billOfMaterials": {
             "layout": null
         },
         "warehouse": {
             "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "name": {
+                "visible": null
+            }
         }
     }
 }

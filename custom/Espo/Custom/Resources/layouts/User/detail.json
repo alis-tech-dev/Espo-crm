@@ -32,6 +32,12 @@
                 {
                     "name": "isAllowed"
                 }
+            ],
+            [
+                false,
+                {
+                    "name": "isInvisible"
+                }
             ]
         ],
         "style": "default",

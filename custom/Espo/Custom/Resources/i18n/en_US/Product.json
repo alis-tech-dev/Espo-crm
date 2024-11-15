@@ -20,7 +20,14 @@
         "defaultProductionModel": "Production Model",
         "warehouseCategory": "WarehouseCategory",
         "isInvisible": "IsInvisible",
-        "isHidden": "IsHidden"
+        "isHidden": "IsHidden",
+        "defaultWarehouseId": "DefaultWarehouseId",
+        "listPrice": "List Price",
+        "listPriceCurrency": "List Price (Currency)",
+        "listPriceConverted": "List Price (Converted)",
+        "unitPrice": "Unit Price",
+        "unitPriceCurrency": "Unit Price (Currency)",
+        "unitPriceConverted": "Unit Price (Converted)"
     },
     "links": {
         "productDatabases": "Databáze produktů",
@@ -43,6 +50,7 @@
             "set": "set",
             "kg": "kg",
             "g": "g"
-        }
+        },
+        "priceJesenoCurrency": []
     }
 }

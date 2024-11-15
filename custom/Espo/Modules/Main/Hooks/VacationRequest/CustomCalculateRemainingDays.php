@@ -46,45 +46,91 @@ class CustomCalculateRemainingDays extends CalculateRemainingDays
         $dateStart = $entity->getValueObject('dateStart');
         $dateEnd = $entity->getValueObject('dateEnd');
 
-        $diffInSeconds = $dateEnd->getTimestamp() - $dateStart->getTimestamp();
 
-        if ($diffInSeconds < 0) {
-            throw ErrorSilent::createWithBody(
-                'FROM date must be before TO date.',
-                ErrorBody::create()
-                    ->withMessageTranslation(
-                        'fromDateBeforeToDate',
-                        'VacationApproval'
-                    )
-                    ->encode()
-            );
-        }
+//        $workDayStart = 8;
+//        $workDayEnd = 16;
+//        $workingHoursPerDay = $workDayEnd - $workDayStart;
+//
+//        $numberOfHours = 0;
+//
+//        $currentDate = clone $dateStart;
+//
+//        while ($currentDate <= $dateEnd) {
+//            $isLastDay = $currentDate->format('Y-m-d') == $dateEnd->format('Y-m-d');
+//
+//            $dayStartTime = clone $currentDate;
+//            $dayStartTime->setTime($workDayStart, 0);
+//
+//            $dayEndTime = clone $currentDate;
+//            if ($isLastDay) {
+//                $dayEndTime = $dateEnd;
+//            } else {
+//                $dayEndTime->setTime($workDayEnd, 0);
+//            }
+//
+//            if ($dateStart > $dayStartTime && $currentDate == $dateStart) {
+//                $dayStartTime = $dateStart;
+//            }
+//
+//            if ($dayEndTime > $dayStartTime) {
+//                $diffInSeconds = $dayEndTime->getTimestamp() - $dayStartTime->getTimestamp();
+//                $numberOfHours += floor($diffInSeconds / 3600);
+//            }
+//
+//            $currentDate->modify('+1 day');
+//        }
 
-        $numberOfHours = floor($diffInSeconds / 3600);
+//        $diffInSeconds = $dateEnd->getTimestamp() - $dateStart->getTimestamp();
+//        $fullDays = floor($diffInSeconds / (24 * 3600));
+//        $remainingSeconds = $diffInSeconds % (24 * 3600);
+//
+//        $workingHoursPerDay = 8;
+//        $numberOfHours = $fullDays * $workingHoursPerDay;
+//
+//        $hoursInRemainingSeconds = floor($remainingSeconds / 3600);
+//
+//        if ($hoursInRemainingSeconds > 0) {
+//            $hoursInWorkingDay = ($hoursInRemainingSeconds / 24) * $workingHoursPerDay;
+//            $numberOfHours += $hoursInWorkingDay;
+//        }
+
+//        if ($diffInSeconds < 0) {
+//            throw ErrorSilent::createWithBody(
+//                'FROM date must be before TO date.',
+//                ErrorBody::create()
+//                    ->withMessageTranslation(
+//                        'fromDateBeforeToDate',
+//                        'VacationApproval'
+//                    )
+//                    ->encode()
+//            );
+//        }
+
+//        $numberOfHours = floor($diffInSeconds / 3600);
 
 //        if ($numberOfHours < 4 && $type == 'Paid') {
 //            throw new BadRequest("time of Dovolena can not be less then 4 hours. Your request: {$numberOfHours} hours.");
 //        }
 
-        if ($numberOfHours > $hoursLeftBefore) {
-            throw new BadRequest("You don't have available vacation time! Available time: {$hoursLeftBefore} hours, requested time: {$numberOfHours} hours.");
-        } else {
-            $hoursLeftAfter = $hoursLeftBefore - $numberOfHours;
+//        if ($numberOfHours > $hoursLeftBefore) {
+//            throw new BadRequest("You don't have available vacation time! Available time: {$hoursLeftBefore} hours, requested time: {$numberOfHours} hours.");
+//        } else {
+//        $hoursLeftAfter = $hoursLeftBefore - $numberOfHours;
 
-            $vacationDays = round($numberOfHours / 8, 1);
+//        $vacationDays = round($numberOfHours / 8, 1);
 
-            $entity->set('numberOfDaysLeftBefore', $hoursLeftBefore);
-            $entity->set('numberOfDaysLeft', $hoursLeftAfter);
-            $entity->set('numberOfDays', $numberOfHours);
-            $entity->set('vacationDays', $vacationDays);
-            $entity->set('humanResourceId', $hrId);
+//        $entity->set('numberOfDaysLeftBefore', $hoursLeftBefore);
+//        $entity->set('numberOfDaysLeft', $hoursLeftAfter);
+//        $entity->set('numberOfDays', $numberOfHours);
+//        $entity->set('vacationDays', $vacationDays);
+        $entity->set('humanResourceId', $hrId);
 
 
 
-            if ($status == 'Approved') {
-                $hr->set('vacationDaysLeft', $hoursLeftAfter);
-                $this->entityManager->saveEntity($hr);
-            }
+        if ($status == 'Approved') {
+//            $hr->set('vacationDaysLeft', $hoursLeftAfter);
+            $this->entityManager->saveEntity($hr);
         }
     }
+//    }
 }

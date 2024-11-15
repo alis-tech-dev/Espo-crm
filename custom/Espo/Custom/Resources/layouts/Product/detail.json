@@ -68,7 +68,9 @@
                 {
                     "name": "taxClass"
                 },
-                false
+                {
+                    "name": "warehouse"
+                }
             ],
             [
                 {
@@ -99,7 +101,9 @@
                 }
             ],
             [
-                false,
+                {
+                    "name": "priceJesenoCurrency"
+                },
                 {
                     "name": "priceMargin"
                 }

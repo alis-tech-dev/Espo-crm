@@ -279,7 +279,8 @@ div.list-kanban>div>table td.group-column:last-child {
 }
 
 .ui-resizable-disabled .dashlet-body {
-	display: none;	
+	/*display: none;	*/
+	display: block !important;
 }
 
 .truncate {

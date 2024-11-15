@@ -1,0 +1,27 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "padName"
+    },
+    {
+        "name": "account",
+        "width": 25,
+        "label": "Account"
+    },
+    {
+        "name": "emailAddress",
+        "width": 20,
+        "notSortable": true,
+        "label": "Email"
+    },
+    {
+        "name": "phoneNumber",
+        "width": 18,
+        "align": "left",
+        "label": "Phone"
+    }
+]

@@ -3,5 +3,10 @@
     "color": null,
     "iconClass": null,
     "isWide": false,
-    "gridViewMode": false
+    "gridViewMode": false,
+    "relationshipPanels": {
+        "quote1": {
+            "layout": null
+        }
+    }
 }

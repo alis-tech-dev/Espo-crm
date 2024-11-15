@@ -1,12 +1,9 @@
 [
     {
         "name": "type",
-        "label": "Type"
-    },
-    {
-        "name": "name",
         "link": true,
-        "label": "Purpose of Vacation"
+        "align": "left",
+        "label": "Type"
     },
     {
         "name": "dateStart",

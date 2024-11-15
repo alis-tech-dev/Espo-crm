@@ -1,5 +1,5 @@
 {
-    "beforeSaveCustomScript": "ifThen(!humanResources, humanResourcesId = assignedUser.humanResourcesId);\nifThen(statusOfApproval == 'Approved', isApproved = 1);\n",
+    "beforeSaveCustomScript": "ifThen(!humanResources, humanResourcesId = assignedUser.humanResourcesId);\nifThen(statusOfApproval == 'Approved', isApproved = 1);\nifThen(name != 'Vacation Request', name = 'Vacation Request');\n",
     "readLoaderCustomScript": null,
     "listLoaderCustomScript": null
 }

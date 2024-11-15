@@ -29,7 +29,7 @@ class UpdatePerformWork implements Action
                 ->findOne();
 
             $worksPerformed = $this->entityManager->getRDBRepository('WorkPerformed')
-                ->where('parentId', $id)
+                ->where('productionOrderId', $id)
                 ->find();
 
             $totalDays = 0;

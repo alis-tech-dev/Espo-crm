@@ -13214,6 +13214,12 @@ return [
         'fieldType' => 'foreign',
         'foreignType' => 'int'
       ],
+      'isInvisible' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
       'middleName' => [
         'type' => 'varchar',
         'len' => 100,
@@ -14239,6 +14245,24 @@ return [
         'foreign' => 'name',
         'foreignType' => 'varchar'
       ],
+      'itTasksIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'itTasks',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'itTasksNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
       'salesOrdersIds' => [
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14439,6 +14463,40 @@ return [
         'key' => 'avatarId',
         'foreignKey' => 'id',
         'foreign' => NULL
+      ],
+      'itTasks' => [
+        'type' => 'manyMany',
+        'entity' => 'ItTask',
+        'relationName' => 'itTaskUser',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => [
+          0 => 'userId',
+          1 => 'itTaskId'
+        ],
+        'foreign' => 'users',
+        'indexes' => [
+          'userId' => [
+            'columns' => [
+              0 => 'userId'
+            ],
+            'key' => 'IDX_USER_ID'
+          ],
+          'itTaskId' => [
+            'columns' => [
+              0 => 'itTaskId'
+            ],
+            'key' => 'IDX_IT_TASK_ID'
+          ],
+          'userId_itTaskId' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'userId',
+              1 => 'itTaskId'
+            ],
+            'key' => 'UNIQ_USER_ID_IT_TASK_ID'
+          ]
+        ]
       ],
       'humanResources' => [
         'type' => 'belongsTo',
@@ -22207,6 +22265,11 @@ return [
         'fieldType' => 'varchar',
         'len' => 255
       ],
+      'padName' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
       'middleName' => [
         'type' => 'varchar',
         'len' => 100,
@@ -26584,6 +26647,23 @@ return [
         'notNull' => false,
         'unique' => false,
         'fieldType' => 'varchar'
+      ],
+      'noEmail' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
+      'statusPriority' => [
+        'type' => 'varchar',
+        'default' => 'Priority 3',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'lastContacted' => [
+        'type' => 'date',
+        'notNull' => false,
+        'fieldType' => 'date'
       ],
       'middleName' => [
         'type' => 'varchar',
@@ -32290,6 +32370,24 @@ return [
         'fieldType' => 'linkMultiple',
         'isLinkStub' => false
       ],
+      'prospectsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'prospects',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'prospectsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -32387,6 +32485,40 @@ return [
       ]
     ],
     'relations' => [
+      'prospects' => [
+        'type' => 'manyMany',
+        'entity' => 'Prospect',
+        'relationName' => 'targetListProspect',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => [
+          0 => 'targetListId',
+          1 => 'prospectId'
+        ],
+        'foreign' => 'targetLists',
+        'indexes' => [
+          'targetListId' => [
+            'columns' => [
+              0 => 'targetListId'
+            ],
+            'key' => 'IDX_TARGET_LIST_ID'
+          ],
+          'prospectId' => [
+            'columns' => [
+              0 => 'prospectId'
+            ],
+            'key' => 'IDX_PROSPECT_ID'
+          ],
+          'targetListId_prospectId' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'targetListId',
+              1 => 'prospectId'
+            ],
+            'key' => 'UNIQ_TARGET_LIST_ID_PROSPECT_ID'
+          ]
+        ]
+      ],
       'syncWithReports' => [
         'type' => 'manyMany',
         'entity' => 'Report',
@@ -34781,7 +34913,7 @@ return [
         'fieldType' => 'link',
         'relation' => 'tax',
         'foreign' => 'name',
-        'foreignType' => NULL
+        'foreignType' => 'varchar'
       ],
       'taxAmountConverted' => [
         'type' => 'float',
@@ -35549,6 +35681,24 @@ return [
         'foreign' => 'name',
         'foreignType' => 'varchar'
       ],
+      'quote1Id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'quote1Name' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'quote1',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -35580,6 +35730,13 @@ return [
       ]
     ],
     'relations' => [
+      'quote1' => [
+        'type' => 'belongsTo',
+        'entity' => 'Quote',
+        'key' => 'quote1Id',
+        'foreignKey' => 'id',
+        'foreign' => 'useCases'
+      ],
       'account' => [
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -35701,6 +35858,13 @@ return [
           0 => 'modifiedById'
         ],
         'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'quote1Id' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'quote1Id'
+        ],
+        'key' => 'IDX_QUOTE1_ID'
       ]
     ],
     'collection' => [
@@ -36910,7 +37074,7 @@ return [
       ],
       'priceJesenoCurrency' => [
         'type' => 'varchar',
-        'default' => 'EUR',
+        'default' => NULL,
         'fieldType' => 'varchar',
         'len' => 255
       ],
@@ -37026,6 +37190,61 @@ return [
         'fieldType' => 'bool',
         'default' => false
       ],
+      'defaultWarehouseId' => [
+        'type' => 'varchar',
+        'len' => 20,
+        'fieldType' => 'varchar'
+      ],
+      'listPrice' => [
+        'type' => 'float',
+        'fieldType' => 'currency',
+        'attributeRole' => 'value',
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'listPriceCurrencyRate.rate'
+          ]
+        ]
+      ],
+      'unitPrice' => [
+        'type' => 'float',
+        'fieldType' => 'currency',
+        'attributeRole' => 'value',
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'unitPriceCurrencyRate.rate'
+          ]
+        ]
+      ],
       'priceACurrency' => [
         'type' => 'varchar',
         'len' => 3,
@@ -37108,6 +37327,18 @@ return [
         'attributeRole' => 'currency'
       ],
       'priceJesenoConvertedCurrency' => [
+        'type' => 'varchar',
+        'len' => 3,
+        'fieldType' => 'currency',
+        'attributeRole' => 'currency'
+      ],
+      'listPriceCurrency' => [
+        'type' => 'varchar',
+        'len' => 3,
+        'fieldType' => 'currency',
+        'attributeRole' => 'currency'
+      ],
+      'unitPriceCurrency' => [
         'type' => 'varchar',
         'len' => 3,
         'fieldType' => 'currency',
@@ -39186,6 +39417,298 @@ return [
         'relation' => 'warehouse',
         'foreign' => 'name',
         'foreignType' => 'varchar'
+      ],
+      'listPriceConverted' => [
+        'type' => 'float',
+        'select' => [
+          'select' => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'MUL:({alias}.listPrice, listPriceCurrencyRateProduct{alias}Foreign.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRateProduct{alias}Foreign',
+              2 => [
+                'listPriceCurrencyRateProduct{alias}Foreign.id:' => '{alias}.listPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)>' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)<' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)>=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)<=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<>' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)!=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          'IS NULL' => [
+            'whereClause' => [
+              'listPrice=' => NULL
+            ]
+          ],
+          'IS NOT NULL' => [
+            'whereClause' => [
+              'listPrice!=' => NULL
+            ]
+          ]
+        ],
+        'notStorable' => true,
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'listPriceCurrencyRate.rate'
+          ]
+        ],
+        'attributeRole' => 'valueConverted',
+        'fieldType' => 'currency'
+      ],
+      'unitPriceConverted' => [
+        'type' => 'float',
+        'select' => [
+          'select' => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'MUL:({alias}.unitPrice, unitPriceCurrencyRateProduct{alias}Foreign.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRateProduct{alias}Foreign',
+              2 => [
+                'unitPriceCurrencyRateProduct{alias}Foreign.id:' => '{alias}.unitPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)>' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)<' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)>=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)<=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<>' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)!=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          'IS NULL' => [
+            'whereClause' => [
+              'unitPrice=' => NULL
+            ]
+          ],
+          'IS NOT NULL' => [
+            'whereClause' => [
+              'unitPrice!=' => NULL
+            ]
+          ]
+        ],
+        'notStorable' => true,
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'unitPriceCurrencyRate.rate'
+          ]
+        ],
+        'attributeRole' => 'valueConverted',
+        'fieldType' => 'currency'
       ],
       'isFollowed' => [
         'type' => 'varchar',
@@ -53154,6 +53677,24 @@ výrobce VZV.
         'foreign' => 'name',
         'foreignType' => 'varchar'
       ],
+      'useCasesIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'useCases',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'useCasesNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -53168,6 +53709,16 @@ výrobce VZV.
         'type' => 'jsonObject',
         'notStorable' => true,
         'notExportable' => true
+      ],
+      'manufacturingsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'manufacturingsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
       ],
       'complaintBooksIds' => [
         'type' => 'jsonArray',
@@ -53223,6 +53774,19 @@ výrobce VZV.
       ]
     ],
     'relations' => [
+      'manufacturings' => [
+        'type' => 'hasChildren',
+        'entity' => 'Manufacturing',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent'
+      ],
+      'useCases' => [
+        'type' => 'hasMany',
+        'entity' => 'UseCase',
+        'foreignKey' => 'quote1Id',
+        'foreign' => 'quote1'
+      ],
       'complaintBooks' => [
         'type' => 'hasChildren',
         'entity' => 'ComplaintBook',
@@ -55190,6 +55754,7 @@ výrobce VZV.
       ],
       'deadline' => [
         'type' => 'date',
+        'notNull' => false,
         'fieldType' => 'date'
       ],
       'internalDeadline' => [
@@ -57472,6 +58037,24 @@ výrobce VZV.
         'fieldType' => 'linkMultiple',
         'isLinkStub' => false
       ],
+      'manufacturingsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'manufacturings',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'manufacturingsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -57571,6 +58154,12 @@ výrobce VZV.
       ]
     ],
     'relations' => [
+      'manufacturings' => [
+        'type' => 'hasMany',
+        'entity' => 'Manufacturing',
+        'foreignKey' => 'salesOrderId',
+        'foreign' => 'salesOrder'
+      ],
       'wisos' => [
         'type' => 'hasMany',
         'entity' => 'Wiso',
@@ -73606,6 +74195,56 @@ výrobce VZV.
         'fieldType' => 'bool',
         'default' => false
       ],
+      'listPrice' => [
+        'type' => 'float',
+        'fieldType' => 'currency',
+        'attributeRole' => 'value',
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'listPriceCurrencyRate.rate'
+          ]
+        ]
+      ],
+      'unitPrice' => [
+        'type' => 'float',
+        'fieldType' => 'currency',
+        'attributeRole' => 'value',
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'unitPriceCurrencyRate.rate'
+          ]
+        ]
+      ],
       'addressStreet' => [
         'type' => 'text',
         'dbType' => 'varchar',
@@ -73724,6 +74363,18 @@ výrobce VZV.
         'attributeRole' => 'currency'
       ],
       'totalPriceCurrency' => [
+        'type' => 'varchar',
+        'len' => 3,
+        'fieldType' => 'currency',
+        'attributeRole' => 'currency'
+      ],
+      'listPriceCurrency' => [
+        'type' => 'varchar',
+        'len' => 3,
+        'fieldType' => 'currency',
+        'attributeRole' => 'currency'
+      ],
+      'unitPriceCurrency' => [
         'type' => 'varchar',
         'len' => 3,
         'fieldType' => 'currency',
@@ -75973,6 +76624,298 @@ výrobce VZV.
           ],
           'additionalSelect' => [
             0 => 'totalPriceCurrencyRate.rate'
+          ]
+        ],
+        'attributeRole' => 'valueConverted',
+        'fieldType' => 'currency'
+      ],
+      'listPriceConverted' => [
+        'type' => 'float',
+        'select' => [
+          'select' => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'MUL:({alias}.listPrice, listPriceCurrencyRateWarehouse{alias}Foreign.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRateWarehouse{alias}Foreign',
+              2 => [
+                'listPriceCurrencyRateWarehouse{alias}Foreign.id:' => '{alias}.listPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)>' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)<' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)>=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<=' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)<=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<>' => [
+            'whereClause' => [
+              'MUL:(listPrice, listPriceCurrencyRate.rate)!=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'listPriceCurrencyRate',
+                2 => [
+                  'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          'IS NULL' => [
+            'whereClause' => [
+              'listPrice=' => NULL
+            ]
+          ],
+          'IS NOT NULL' => [
+            'whereClause' => [
+              'listPrice!=' => NULL
+            ]
+          ]
+        ],
+        'notStorable' => true,
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(listPrice, listPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'listPriceCurrencyRate',
+              2 => [
+                'listPriceCurrencyRate.id:' => 'listPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'listPriceCurrencyRate.rate'
+          ]
+        ],
+        'attributeRole' => 'valueConverted',
+        'fieldType' => 'currency'
+      ],
+      'unitPriceConverted' => [
+        'type' => 'float',
+        'select' => [
+          'select' => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'MUL:({alias}.unitPrice, unitPriceCurrencyRateWarehouse{alias}Foreign.rate)',
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRateWarehouse{alias}Foreign',
+              2 => [
+                'unitPriceCurrencyRateWarehouse{alias}Foreign.id:' => '{alias}.unitPriceCurrency'
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)>' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)<' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '>=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)>=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<=' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)<=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          '<>' => [
+            'whereClause' => [
+              'MUL:(unitPrice, unitPriceCurrencyRate.rate)!=' => '{value}'
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'Currency',
+                1 => 'unitPriceCurrencyRate',
+                2 => [
+                  'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+                ]
+              ]
+            ]
+          ],
+          'IS NULL' => [
+            'whereClause' => [
+              'unitPrice=' => NULL
+            ]
+          ],
+          'IS NOT NULL' => [
+            'whereClause' => [
+              'unitPrice!=' => NULL
+            ]
+          ]
+        ],
+        'notStorable' => true,
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'MUL:(unitPrice, unitPriceCurrencyRate.rate)',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'Currency',
+              1 => 'unitPriceCurrencyRate',
+              2 => [
+                'unitPriceCurrencyRate.id:' => 'unitPriceCurrency'
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'unitPriceCurrencyRate.rate'
           ]
         ],
         'attributeRole' => 'valueConverted',
@@ -91908,13 +92851,6 @@ výrobce VZV.
         'default' => 0,
         'fieldType' => 'float'
       ],
-      'avaliableQuantity' => [
-        'type' => 'foreign',
-        'relation' => 'productWarehouse',
-        'foreign' => 'availableQuantity',
-        'fieldType' => 'foreign',
-        'foreignType' => 'float'
-      ],
       'stockQuantity' => [
         'type' => 'varchar',
         'relation' => 'billOfMaterials',
@@ -91936,6 +92872,20 @@ výrobce VZV.
         'type' => 'varchar',
         'len' => 30,
         'fieldType' => 'varchar'
+      ],
+      'availableBrno' => [
+        'type' => 'foreign',
+        'relation' => 'productWarehouse',
+        'foreign' => 'availableBrno',
+        'fieldType' => 'foreign',
+        'foreignType' => 'float'
+      ],
+      'availablePv' => [
+        'type' => 'foreign',
+        'relation' => 'productWarehouse',
+        'foreign' => 'availablePv',
+        'fieldType' => 'foreign',
+        'foreignType' => 'float'
       ],
       'assignedUserId' => [
         'len' => 24,
@@ -92217,6 +93167,16 @@ výrobce VZV.
         'notStorable' => true,
         'notExportable' => true
       ],
+      'worksPerformedIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'worksPerformedNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
       'workPerformedIds' => [
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -92243,6 +93203,13 @@ výrobce VZV.
       ]
     ],
     'relations' => [
+      'worksPerformed' => [
+        'type' => 'hasChildren',
+        'entity' => 'WorkPerformed',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent'
+      ],
       'salesOrder' => [
         'type' => 'belongsTo',
         'entity' => 'SalesOrder',
@@ -101494,6 +102461,437 @@ výrobce VZV.
       'order' => 'DESC'
     ]
   ],
+  'ItTask' => [
+    'attributes' => [
+      'id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'id'
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'description' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'createdAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'modifiedAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'default' => 'Created',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'start' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'finish' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'url' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'priority' => [
+        'type' => 'varchar',
+        'default' => '3',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'solution' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'createdById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'createdByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'createdBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'modifiedById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'modifiedByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'modifiedBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'assignedUserId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'assignedUserName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'assignedUser',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'teamsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple'
+      ],
+      'teamsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple'
+      ],
+      'attachmentIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'orderBy' => [
+          0 => [
+            0 => 'createdAt',
+            1 => 'ASC'
+          ],
+          1 => [
+            0 => 'name',
+            1 => 'ASC'
+          ]
+        ],
+        'isLinkMultipleIdList' => true,
+        'relation' => 'attachment',
+        'isLinkStub' => false
+      ],
+      'attachmentNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'isLinkStub' => false
+      ],
+      'usersIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'users',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'usersNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'isFollowed' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'emailsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'emailsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'tasksIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'tasksNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'callsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'callsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'meetingsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'meetingsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkStub' => true
+      ],
+      'attachmentTypes' => [
+        'type' => 'jsonObject',
+        'notStorable' => true
+      ]
+    ],
+    'relations' => [
+      'users' => [
+        'type' => 'manyMany',
+        'entity' => 'User',
+        'relationName' => 'itTaskUser',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => [
+          0 => 'itTaskId',
+          1 => 'userId'
+        ],
+        'foreign' => 'itTasks',
+        'indexes' => [
+          'itTaskId' => [
+            'columns' => [
+              0 => 'itTaskId'
+            ],
+            'key' => 'IDX_IT_TASK_ID'
+          ],
+          'userId' => [
+            'columns' => [
+              0 => 'userId'
+            ],
+            'key' => 'IDX_USER_ID'
+          ],
+          'itTaskId_userId' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'itTaskId',
+              1 => 'userId'
+            ],
+            'key' => 'UNIQ_IT_TASK_ID_USER_ID'
+          ]
+        ]
+      ],
+      'emails' => [
+        'type' => 'hasChildren',
+        'entity' => 'Email',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent'
+      ],
+      'tasks' => [
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent'
+      ],
+      'calls' => [
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent'
+      ],
+      'meetings' => [
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent'
+      ],
+      'teams' => [
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'entityTeam',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'teamId'
+        ],
+        'conditions' => [
+          'entityType' => 'ItTask'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'teamId' => [
+            'columns' => [
+              0 => 'teamId'
+            ],
+            'key' => 'IDX_TEAM_ID'
+          ],
+          'entityId_teamId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'teamId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_TEAM_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'assignedUser' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'modifiedBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'createdBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'attachment' => [
+        'type' => 'hasChildren',
+        'entity' => 'Attachment',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+        'conditions' => [
+          'OR' => [
+            0 => [
+              'field' => NULL
+            ],
+            1 => [
+              'field' => 'attachment'
+            ]
+          ]
+        ],
+        'relationName' => 'attachments'
+      ]
+    ],
+    'indexes' => [
+      'name' => [
+        'columns' => [
+          0 => 'name',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_NAME'
+      ],
+      'assignedUser' => [
+        'columns' => [
+          0 => 'assignedUserId',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_ASSIGNED_USER'
+      ],
+      'createdAt' => [
+        'columns' => [
+          0 => 'createdAt'
+        ],
+        'key' => 'IDX_CREATED_AT'
+      ],
+      'createdAtId' => [
+        'unique' => true,
+        'columns' => [
+          0 => 'createdAt',
+          1 => 'id'
+        ],
+        'key' => 'UNIQ_CREATED_AT_ID'
+      ],
+      'createdById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'createdById'
+        ],
+        'key' => 'IDX_CREATED_BY_ID'
+      ],
+      'modifiedById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'modifiedById'
+        ],
+        'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'assignedUserId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'assignedUserId'
+        ],
+        'key' => 'IDX_ASSIGNED_USER_ID'
+      ]
+    ],
+    'collection' => [
+      'orderBy' => 'createdAt',
+      'order' => 'DESC'
+    ]
+  ],
   'JIRA' => [
     'attributes' => [
       'id' => [
@@ -101808,6 +103206,1838 @@ výrobce VZV.
           ]
         ],
         'relationName' => 'attachments'
+      ]
+    ],
+    'indexes' => [
+      'name' => [
+        'columns' => [
+          0 => 'name',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_NAME'
+      ],
+      'assignedUser' => [
+        'columns' => [
+          0 => 'assignedUserId',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_ASSIGNED_USER'
+      ],
+      'createdAt' => [
+        'columns' => [
+          0 => 'createdAt'
+        ],
+        'key' => 'IDX_CREATED_AT'
+      ],
+      'createdAtId' => [
+        'unique' => true,
+        'columns' => [
+          0 => 'createdAt',
+          1 => 'id'
+        ],
+        'key' => 'UNIQ_CREATED_AT_ID'
+      ],
+      'createdById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'createdById'
+        ],
+        'key' => 'IDX_CREATED_BY_ID'
+      ],
+      'modifiedById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'modifiedById'
+        ],
+        'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'assignedUserId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'assignedUserId'
+        ],
+        'key' => 'IDX_ASSIGNED_USER_ID'
+      ]
+    ],
+    'collection' => [
+      'orderBy' => 'createdAt',
+      'order' => 'DESC'
+    ]
+  ],
+  'Manufacturing' => [
+    'attributes' => [
+      'id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'id'
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'description' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'createdAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'modifiedAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'bPname' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'bPnumber' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'complaintBanner' => [
+        'type' => 'varchar',
+        'default' => '-',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deadline' => [
+        'type' => 'date',
+        'notNull' => false,
+        'fieldType' => 'date'
+      ],
+      'isComplaint' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
+      'manufacturingBanner' => [
+        'type' => 'varchar',
+        'default' => '-',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'manufacturingFinished' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'nace' => [
+        'type' => 'varchar',
+        'default' => '-',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'progress' => [
+        'type' => 'varchar',
+        'default' => '0',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'quoteProducts' => [
+        'type' => 'text',
+        'default' => '<table class="table table-bordered" style="margin: 10mm 0; width: 100%; font-size: 14pxt; font-weight: 300;" border="0" cellspacing="5" cellpadding="7">
+<tbody>
+<tr>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 23.1494%;" align="center" width="23%"><span style="font-weight: bold; color: #ffffff;">K&oacute;d produktu</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 1.3459%;" align="center" width="33%"><span style="font-weight: bold; color: #ffffff;">Počet</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 61.2052%;" align="center" width="5.5%"><span style="font-weight: bold; color: #ffffff;">Pozn&aacute;mka</span></th>
+</tr>
+<tr style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+</tbody>
+</table>',
+        'fieldType' => 'text'
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'default' => 'NearLaunch',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'createdById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'createdByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'createdBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'modifiedById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'modifiedByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'modifiedBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'assignedUserId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'assignedUserName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'assignedUser',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'teamsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple'
+      ],
+      'teamsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple'
+      ],
+      'parentId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => 'parent',
+        'attributeRole' => 'id',
+        'fieldType' => 'linkParent',
+        'notNull' => false
+      ],
+      'parentType' => [
+        'type' => 'foreignType',
+        'notNull' => false,
+        'index' => 'parent',
+        'len' => 100,
+        'attributeRole' => 'type',
+        'fieldType' => 'linkParent',
+        'dbType' => 'string'
+      ],
+      'parentName' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'relation' => 'parent',
+        'isParentName' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'linkParent'
+      ],
+      'salesOrderId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'salesOrderName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'salesOrder',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'complaintProtocolId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => false,
+        'notNull' => false
+      ],
+      'complaintProtocolName' => [
+        'type' => 'foreign',
+        'relation' => 'complaintProtocol',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'glassPictureId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => false,
+        'notNull' => false
+      ],
+      'glassPictureName' => [
+        'type' => 'foreign',
+        'relation' => 'glassPicture',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'glassPicture2Id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => false,
+        'notNull' => false
+      ],
+      'glassPicture2Name' => [
+        'type' => 'foreign',
+        'relation' => 'glassPicture2',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'glassPicture3Id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => false,
+        'notNull' => false
+      ],
+      'glassPicture3Name' => [
+        'type' => 'foreign',
+        'relation' => 'glassPicture3',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'isFollowed' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'notExportable' => true
+      ]
+    ],
+    'relations' => [
+      'complaintProtocol' => [
+        'type' => 'belongsTo',
+        'entity' => 'Attachment',
+        'key' => 'complaintProtocolId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'glassPicture' => [
+        'type' => 'belongsTo',
+        'entity' => 'Attachment',
+        'key' => 'glassPictureId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'glassPicture2' => [
+        'type' => 'belongsTo',
+        'entity' => 'Attachment',
+        'key' => 'glassPicture2Id',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'glassPicture3' => [
+        'type' => 'belongsTo',
+        'entity' => 'Attachment',
+        'key' => 'glassPicture3Id',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'salesOrder' => [
+        'type' => 'belongsTo',
+        'entity' => 'SalesOrder',
+        'key' => 'salesOrderId',
+        'foreignKey' => 'id',
+        'foreign' => 'manufacturings'
+      ],
+      'parent' => [
+        'type' => 'belongsToParent',
+        'key' => 'parentId',
+        'foreign' => 'manufacturings'
+      ],
+      'teams' => [
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'entityTeam',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'teamId'
+        ],
+        'conditions' => [
+          'entityType' => 'Manufacturing'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'teamId' => [
+            'columns' => [
+              0 => 'teamId'
+            ],
+            'key' => 'IDX_TEAM_ID'
+          ],
+          'entityId_teamId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'teamId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_TEAM_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'assignedUser' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'modifiedBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'createdBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ]
+    ],
+    'indexes' => [
+      'name' => [
+        'columns' => [
+          0 => 'name',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_NAME'
+      ],
+      'assignedUser' => [
+        'columns' => [
+          0 => 'assignedUserId',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_ASSIGNED_USER'
+      ],
+      'createdAt' => [
+        'columns' => [
+          0 => 'createdAt'
+        ],
+        'key' => 'IDX_CREATED_AT'
+      ],
+      'createdAtId' => [
+        'unique' => true,
+        'columns' => [
+          0 => 'createdAt',
+          1 => 'id'
+        ],
+        'key' => 'UNIQ_CREATED_AT_ID'
+      ],
+      'createdById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'createdById'
+        ],
+        'key' => 'IDX_CREATED_BY_ID'
+      ],
+      'modifiedById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'modifiedById'
+        ],
+        'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'assignedUserId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'assignedUserId'
+        ],
+        'key' => 'IDX_ASSIGNED_USER_ID'
+      ],
+      'parent' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'parentId',
+          1 => 'parentType'
+        ],
+        'key' => 'IDX_PARENT'
+      ],
+      'salesOrderId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'salesOrderId'
+        ],
+        'key' => 'IDX_SALES_ORDER_ID'
+      ]
+    ],
+    'collection' => [
+      'orderBy' => 'createdAt',
+      'order' => 'DESC'
+    ]
+  ],
+  'Prospect' => [
+    'attributes' => [
+      'id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'id'
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'description' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'createdAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'modifiedAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'url' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'linkedIn' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'company' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'position' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'emailAddress' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'fieldType' => 'email',
+        'select' => [
+          'select' => 'emailAddresses.name',
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'emailAddressProspect{alias}Foreign.name',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityEmailAddress',
+              1 => 'emailAddressProspect{alias}ForeignMiddle',
+              2 => [
+                'emailAddressProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'emailAddressProspect{alias}ForeignMiddle.primary' => true,
+                'emailAddressProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'EmailAddress',
+              1 => 'emailAddressProspect{alias}Foreign',
+              2 => [
+                'emailAddressProspect{alias}Foreign.id:' => 'emailAddressProspect{alias}ForeignMiddle.emailAddressId',
+                'emailAddressProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          'LIKE' => [
+            'whereClause' => [
+              'id=s' => [
+                'from' => 'EntityEmailAddress',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'emailAddress',
+                    1 => 'emailAddress',
+                    2 => [
+                      'emailAddress.id:' => 'emailAddressId',
+                      'emailAddress.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'emailAddress.lower*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          'NOT LIKE' => [
+            'whereClause' => [
+              'id!=s' => [
+                'from' => 'EntityEmailAddress',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'emailAddress',
+                    1 => 'emailAddress',
+                    2 => [
+                      'emailAddress.id:' => 'emailAddressId',
+                      'emailAddress.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'emailAddress.lower*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          '=' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          '<>' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'NOT IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IS NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower=' => NULL
+            ],
+            'distinct' => true
+          ],
+          'IS NOT NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'emailAddressesMultiple.lower!=' => NULL
+            ],
+            'distinct' => true
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'emailAddresses.lower',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'emailAddresses.lower'
+          ]
+        ]
+      ],
+      'phoneNumber' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'fieldType' => 'phone',
+        'select' => [
+          'select' => 'phoneNumbers.name',
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'phoneNumberProspect{alias}Foreign.name',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityPhoneNumber',
+              1 => 'phoneNumberProspect{alias}ForeignMiddle',
+              2 => [
+                'phoneNumberProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'phoneNumberProspect{alias}ForeignMiddle.primary' => true,
+                'phoneNumberProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'PhoneNumber',
+              1 => 'phoneNumberProspect{alias}Foreign',
+              2 => [
+                'phoneNumberProspect{alias}Foreign.id:' => 'phoneNumberProspect{alias}ForeignMiddle.phoneNumberId',
+                'phoneNumberProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          'LIKE' => [
+            'whereClause' => [
+              'id=s' => [
+                'from' => 'EntityPhoneNumber',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'phoneNumber',
+                    1 => 'phoneNumber',
+                    2 => [
+                      'phoneNumber.id:' => 'phoneNumberId',
+                      'phoneNumber.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'phoneNumber.name*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          'NOT LIKE' => [
+            'whereClause' => [
+              'id!=s' => [
+                'from' => 'EntityPhoneNumber',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'phoneNumber',
+                    1 => 'phoneNumber',
+                    2 => [
+                      'phoneNumber.id:' => 'phoneNumberId',
+                      'phoneNumber.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'phoneNumber.name*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          '=' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          '<>' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'NOT IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IS NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name=' => NULL
+            ],
+            'distinct' => true
+          ],
+          'IS NOT NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.name!=' => NULL
+            ],
+            'distinct' => true
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'phoneNumbers.name',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'phoneNumbers.name'
+          ]
+        ]
+      ],
+      'country' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'fromHunter' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
+      'targetListIsOptedOut' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'default' => 'New',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'emailAddressIsOptedOut' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'fieldType' => 'bool',
+        'select' => [
+          'select' => 'emailAddresses.optOut',
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'emailAddressProspect{alias}Foreign.optOut',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityEmailAddress',
+              1 => 'emailAddressProspect{alias}ForeignMiddle',
+              2 => [
+                'emailAddressProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'emailAddressProspect{alias}ForeignMiddle.primary' => true,
+                'emailAddressProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'EmailAddress',
+              1 => 'emailAddressProspect{alias}Foreign',
+              2 => [
+                'emailAddressProspect{alias}Foreign.id:' => 'emailAddressProspect{alias}ForeignMiddle.emailAddressId',
+                'emailAddressProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '= TRUE' => [
+            'whereClause' => [
+              0 => [
+                'emailAddresses.optOut=' => true
+              ],
+              1 => [
+                'emailAddresses.optOut!=' => NULL
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddresses',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ],
+          '= FALSE' => [
+            'whereClause' => [
+              'OR' => [
+                0 => [
+                  'emailAddresses.optOut=' => false
+                ],
+                1 => [
+                  'emailAddresses.optOut=' => NULL
+                ]
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddresses',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'emailAddresses.optOut',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'emailAddresses.optOut'
+          ]
+        ],
+        'default' => false
+      ],
+      'emailAddressIsInvalid' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'fieldType' => 'bool',
+        'select' => [
+          'select' => 'emailAddresses.invalid',
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'emailAddressProspect{alias}Foreign.invalid',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityEmailAddress',
+              1 => 'emailAddressProspect{alias}ForeignMiddle',
+              2 => [
+                'emailAddressProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'emailAddressProspect{alias}ForeignMiddle.primary' => true,
+                'emailAddressProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'EmailAddress',
+              1 => 'emailAddressProspect{alias}Foreign',
+              2 => [
+                'emailAddressProspect{alias}Foreign.id:' => 'emailAddressProspect{alias}ForeignMiddle.emailAddressId',
+                'emailAddressProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '= TRUE' => [
+            'whereClause' => [
+              0 => [
+                'emailAddresses.invalid=' => true
+              ],
+              1 => [
+                'emailAddresses.invalid!=' => NULL
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddresses',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ],
+          '= FALSE' => [
+            'whereClause' => [
+              'OR' => [
+                0 => [
+                  'emailAddresses.invalid=' => false
+                ],
+                1 => [
+                  'emailAddresses.invalid=' => NULL
+                ]
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'emailAddresses',
+                1 => 'emailAddresses',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'emailAddresses.invalid',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'emailAddresses',
+              1 => 'emailAddresses',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'emailAddresses.invalid'
+          ]
+        ],
+        'default' => false
+      ],
+      'phoneNumberIsOptedOut' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'fieldType' => 'bool',
+        'select' => [
+          'select' => 'phoneNumbers.optOut',
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'phoneNumberProspect{alias}Foreign.optOut',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityPhoneNumber',
+              1 => 'phoneNumberProspect{alias}ForeignMiddle',
+              2 => [
+                'phoneNumberProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'phoneNumberProspect{alias}ForeignMiddle.primary' => true,
+                'phoneNumberProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'PhoneNumber',
+              1 => 'phoneNumberProspect{alias}Foreign',
+              2 => [
+                'phoneNumberProspect{alias}Foreign.id:' => 'phoneNumberProspect{alias}ForeignMiddle.phoneNumberId',
+                'phoneNumberProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '= TRUE' => [
+            'whereClause' => [
+              0 => [
+                'phoneNumbers.optOut=' => true
+              ],
+              1 => [
+                'phoneNumbers.optOut!=' => NULL
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbers',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ],
+          '= FALSE' => [
+            'whereClause' => [
+              'OR' => [
+                0 => [
+                  'phoneNumbers.optOut=' => false
+                ],
+                1 => [
+                  'phoneNumbers.optOut=' => NULL
+                ]
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbers',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'phoneNumbers.optOut',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'phoneNumbers.optOut'
+          ]
+        ],
+        'default' => false
+      ],
+      'phoneNumberIsInvalid' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'fieldType' => 'bool',
+        'select' => [
+          'select' => 'phoneNumbers.invalid',
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ]
+        ],
+        'selectForeign' => [
+          'select' => 'phoneNumberProspect{alias}Foreign.invalid',
+          'leftJoins' => [
+            0 => [
+              0 => 'EntityPhoneNumber',
+              1 => 'phoneNumberProspect{alias}ForeignMiddle',
+              2 => [
+                'phoneNumberProspect{alias}ForeignMiddle.entityId:' => '{alias}.id',
+                'phoneNumberProspect{alias}ForeignMiddle.primary' => true,
+                'phoneNumberProspect{alias}ForeignMiddle.deleted' => false
+              ]
+            ],
+            1 => [
+              0 => 'PhoneNumber',
+              1 => 'phoneNumberProspect{alias}Foreign',
+              2 => [
+                'phoneNumberProspect{alias}Foreign.id:' => 'phoneNumberProspect{alias}ForeignMiddle.phoneNumberId',
+                'phoneNumberProspect{alias}Foreign.deleted' => false
+              ]
+            ]
+          ]
+        ],
+        'where' => [
+          '= TRUE' => [
+            'whereClause' => [
+              0 => [
+                'phoneNumbers.invalid=' => true
+              ],
+              1 => [
+                'phoneNumbers.invalid!=' => NULL
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbers',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ],
+          '= FALSE' => [
+            'whereClause' => [
+              'OR' => [
+                0 => [
+                  'phoneNumbers.invalid=' => false
+                ],
+                1 => [
+                  'phoneNumbers.invalid=' => NULL
+                ]
+              ]
+            ],
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbers',
+                2 => [
+                  'primary' => true
+                ]
+              ]
+            ]
+          ]
+        ],
+        'order' => [
+          'order' => [
+            0 => [
+              0 => 'phoneNumbers.invalid',
+              1 => '{direction}'
+            ]
+          ],
+          'leftJoins' => [
+            0 => [
+              0 => 'phoneNumbers',
+              1 => 'phoneNumbers',
+              2 => [
+                'primary' => true
+              ]
+            ]
+          ],
+          'additionalSelect' => [
+            0 => 'phoneNumbers.invalid'
+          ]
+        ],
+        'default' => false
+      ],
+      'createdById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'createdByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'createdBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'modifiedById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'modifiedByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'modifiedBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'assignedUserId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'assignedUserName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'assignedUser',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'teamsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple'
+      ],
+      'teamsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple'
+      ],
+      'emailAddressData' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'notExportable' => true,
+        'isEmailAddressData' => true,
+        'field' => 'emailAddress'
+      ],
+      'phoneNumberData' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'notExportable' => true,
+        'isPhoneNumberData' => true,
+        'field' => 'phoneNumber'
+      ],
+      'phoneNumberNumeric' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'notExportable' => true,
+        'where' => [
+          'LIKE' => [
+            'whereClause' => [
+              'id=s' => [
+                'from' => 'EntityPhoneNumber',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'phoneNumber',
+                    1 => 'phoneNumber',
+                    2 => [
+                      'phoneNumber.id:' => 'phoneNumberId',
+                      'phoneNumber.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'phoneNumber.numeric*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          'NOT LIKE' => [
+            'whereClause' => [
+              'id!=s' => [
+                'from' => 'EntityPhoneNumber',
+                'select' => [
+                  0 => 'entityId'
+                ],
+                'joins' => [
+                  0 => [
+                    0 => 'phoneNumber',
+                    1 => 'phoneNumber',
+                    2 => [
+                      'phoneNumber.id:' => 'phoneNumberId',
+                      'phoneNumber.deleted' => false
+                    ]
+                  ]
+                ],
+                'whereClause' => [
+                  'deleted' => false,
+                  'entityType' => 'Prospect',
+                  'phoneNumber.numeric*' => '{value}'
+                ]
+              ]
+            ]
+          ],
+          '=' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          '<>' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'NOT IN' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric!=' => '{value}'
+            ],
+            'distinct' => true
+          ],
+          'IS NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric=' => NULL
+            ],
+            'distinct' => true
+          ],
+          'IS NOT NULL' => [
+            'leftJoins' => [
+              0 => [
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple'
+              ]
+            ],
+            'whereClause' => [
+              'phoneNumbersMultiple.numeric!=' => NULL
+            ],
+            'distinct' => true
+          ]
+        ]
+      ],
+      'targetListsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'targetLists',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'targetListsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'targetListId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => 'targetList',
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notStorable' => true,
+        'notNull' => false
+      ],
+      'targetListName' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link'
+      ],
+      'isFollowed' => [
+        'type' => 'varchar',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'notExportable' => true
+      ],
+      'followersNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'notExportable' => true
+      ]
+    ],
+    'relations' => [
+      'emailAddresses' => [
+        'type' => 'manyMany',
+        'entity' => 'EmailAddress',
+        'relationName' => 'entityEmailAddress',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'emailAddressId'
+        ],
+        'conditions' => [
+          'entityType' => 'Prospect'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ],
+          'primary' => [
+            'type' => 'bool',
+            'default' => false
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'emailAddressId' => [
+            'columns' => [
+              0 => 'emailAddressId'
+            ],
+            'key' => 'IDX_EMAIL_ADDRESS_ID'
+          ],
+          'entityId_emailAddressId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'emailAddressId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_EMAIL_ADDRESS_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'phoneNumbers' => [
+        'type' => 'manyMany',
+        'entity' => 'PhoneNumber',
+        'relationName' => 'entityPhoneNumber',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'phoneNumberId'
+        ],
+        'conditions' => [
+          'entityType' => 'Prospect'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ],
+          'primary' => [
+            'type' => 'bool',
+            'default' => false
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'phoneNumberId' => [
+            'columns' => [
+              0 => 'phoneNumberId'
+            ],
+            'key' => 'IDX_PHONE_NUMBER_ID'
+          ],
+          'entityId_phoneNumberId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'phoneNumberId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_PHONE_NUMBER_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'targetLists' => [
+        'type' => 'manyMany',
+        'entity' => 'TargetList',
+        'relationName' => 'targetListProspect',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => [
+          0 => 'prospectId',
+          1 => 'targetListId'
+        ],
+        'foreign' => 'prospects',
+        'columnAttributeMap' => [
+          'optedOut' => 'targetListIsOptedOut'
+        ],
+        'indexes' => [
+          'prospectId' => [
+            'columns' => [
+              0 => 'prospectId'
+            ],
+            'key' => 'IDX_PROSPECT_ID'
+          ],
+          'targetListId' => [
+            'columns' => [
+              0 => 'targetListId'
+            ],
+            'key' => 'IDX_TARGET_LIST_ID'
+          ],
+          'prospectId_targetListId' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'prospectId',
+              1 => 'targetListId'
+            ],
+            'key' => 'UNIQ_PROSPECT_ID_TARGET_LIST_ID'
+          ]
+        ]
+      ],
+      'teams' => [
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'entityTeam',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'teamId'
+        ],
+        'conditions' => [
+          'entityType' => 'Prospect'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'teamId' => [
+            'columns' => [
+              0 => 'teamId'
+            ],
+            'key' => 'IDX_TEAM_ID'
+          ],
+          'entityId_teamId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'teamId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_TEAM_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'assignedUser' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'modifiedBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'createdBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
       ]
     ],
     'indexes' => [
@@ -102736,6 +105966,228 @@ výrobce VZV.
         ],
         'conditions' => [
           'entityType' => 'Selector'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'teamId' => [
+            'columns' => [
+              0 => 'teamId'
+            ],
+            'key' => 'IDX_TEAM_ID'
+          ],
+          'entityId_teamId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'teamId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_TEAM_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'assignedUser' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'modifiedBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'createdBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ]
+    ],
+    'indexes' => [
+      'name' => [
+        'columns' => [
+          0 => 'name',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_NAME'
+      ],
+      'assignedUser' => [
+        'columns' => [
+          0 => 'assignedUserId',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_ASSIGNED_USER'
+      ],
+      'createdAt' => [
+        'columns' => [
+          0 => 'createdAt'
+        ],
+        'key' => 'IDX_CREATED_AT'
+      ],
+      'createdAtId' => [
+        'unique' => true,
+        'columns' => [
+          0 => 'createdAt',
+          1 => 'id'
+        ],
+        'key' => 'UNIQ_CREATED_AT_ID'
+      ],
+      'createdById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'createdById'
+        ],
+        'key' => 'IDX_CREATED_BY_ID'
+      ],
+      'modifiedById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'modifiedById'
+        ],
+        'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'assignedUserId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'assignedUserId'
+        ],
+        'key' => 'IDX_ASSIGNED_USER_ID'
+      ]
+    ],
+    'collection' => [
+      'orderBy' => 'createdAt',
+      'order' => 'DESC'
+    ]
+  ],
+  'Tax' => [
+    'attributes' => [
+      'id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'id'
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'default' => 'default',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'description' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'createdAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'modifiedAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'createdById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'createdByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'createdBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'modifiedById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'modifiedByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'modifiedBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'assignedUserId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'assignedUserName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'assignedUser',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'teamsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple'
+      ],
+      'teamsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple'
+      ]
+    ],
+    'relations' => [
+      'teams' => [
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'entityTeam',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'teamId'
+        ],
+        'conditions' => [
+          'entityType' => 'Tax'
         ],
         'additionalColumns' => [
           'entityType' => [
@@ -104492,6 +107944,59 @@ výrobce VZV.
         ],
         'flags' => [],
         'key' => 'UNIQ_USER_ID_TEAM_ID'
+      ]
+    ]
+  ],
+  'ItTaskUser' => [
+    'skipRebuild' => true,
+    'attributes' => [
+      'id' => [
+        'type' => 'id',
+        'autoincrement' => true,
+        'dbType' => 'bigint'
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'userId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'notNull' => false
+      ],
+      'itTaskId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'notNull' => false
+      ]
+    ],
+    'indexes' => [
+      0 => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'itTaskId'
+        ],
+        'flags' => [],
+        'key' => 'IDX_IT_TASK_ID'
+      ],
+      1 => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'userId'
+        ],
+        'flags' => [],
+        'key' => 'IDX_USER_ID'
+      ],
+      2 => [
+        'type' => 'unique',
+        'columns' => [
+          0 => 'itTaskId',
+          1 => 'userId'
+        ],
+        'flags' => [],
+        'key' => 'UNIQ_IT_TASK_ID_USER_ID'
       ]
     ]
   ],
@@ -106302,6 +109807,59 @@ výrobce VZV.
         ],
         'flags' => [],
         'key' => 'UNIQ_TARGET_LIST_ID_MASS_EMAIL_ID'
+      ]
+    ]
+  ],
+  'TargetListProspect' => [
+    'skipRebuild' => true,
+    'attributes' => [
+      'id' => [
+        'type' => 'id',
+        'autoincrement' => true,
+        'dbType' => 'bigint'
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'targetListId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'notNull' => false
+      ],
+      'prospectId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'notNull' => false
+      ]
+    ],
+    'indexes' => [
+      0 => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'prospectId'
+        ],
+        'flags' => [],
+        'key' => 'IDX_PROSPECT_ID'
+      ],
+      1 => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'targetListId'
+        ],
+        'flags' => [],
+        'key' => 'IDX_TARGET_LIST_ID'
+      ],
+      2 => [
+        'type' => 'unique',
+        'columns' => [
+          0 => 'prospectId',
+          1 => 'targetListId'
+        ],
+        'flags' => [],
+        'key' => 'UNIQ_PROSPECT_ID_TARGET_LIST_ID'
       ]
     ]
   ],

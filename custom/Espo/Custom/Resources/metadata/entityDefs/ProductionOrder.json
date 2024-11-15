@@ -27,7 +27,7 @@
         "billOfMaterials": {
             "recordListLayout": "listSmall",
             "recordListButtonsPosition": "Top",
-            "defaultSelectFilters": {},
+            "defaultSelectFilters": [],
             "recordListLinkDisabled": false
         },
         "quantityProduced": {
@@ -57,14 +57,6 @@
             "isCustom": true,
             "notStorable": true
         },
-        "avaliableQuantity": {
-            "readOnly": true,
-            "type": "foreign",
-            "link": "productWarehouse",
-            "field": "availableQuantity",
-            "view": "views/fields/foreign-float",
-            "isCustom": true
-        },
         "stockQuantity": {
             "readOnly": true,
             "type": "foreignMultiple",
@@ -87,7 +79,7 @@
         },
         "assignedUser": {
             "required": false,
-            "defaultSelectFilters": {}
+            "defaultSelectFilters": []
         },
         "performWorkTime": {
             "type": "varchar",
@@ -97,8 +89,25 @@
             "isCustom": true
         },
         "name": {
+            "readOnly": false,
+            "options": [],
+            "pattern": null
+        },
+        "availableBrno": {
             "readOnly": true,
-            "options": []
+            "type": "foreign",
+            "link": "productWarehouse",
+            "field": "availableBrno",
+            "view": "views/fields/foreign-float",
+            "isCustom": true
+        },
+        "availablePv": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "productWarehouse",
+            "field": "availablePv",
+            "view": "views/fields/foreign-float",
+            "isCustom": true
         }
     },
     "collection": {
@@ -114,6 +123,12 @@
     "links": {
         "billOfMaterials": {
             "audited": false
+        },
+        "worksPerformed": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "WorkPerformed",
+            "isCustom": true
         }
     }
 }

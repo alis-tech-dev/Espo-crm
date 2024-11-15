@@ -43,7 +43,8 @@
         "wisos": "Wisos",
         "itemsList": "Warehouse Items",
         "reservedQuantity": "ReservedQuantity",
-        "reservQuantity": "Reserved Quantity"
+        "reservQuantity": "Reserved Quantity",
+        "manufacturings": "Manufacturings"
     },
     "links": {
         "salesOrderSummaryItems": "Položka shrnutí zakázky",
@@ -65,12 +66,16 @@
         "warehouseItems": "Warehouse Items",
         "warehouseItems1": "Warehouse Items1",
         "wiso": "Wiso",
-        "wisos": "Wisos"
+        "wisos": "Wisos",
+        "manufacturings": "Manufacturings"
     },
     "options": {
         "complexity": {
             "Easy": "Easy",
-            "Hard": "Hard"
+            "Hard": "Hard",
+            "": "",
+            "Very Hard": "Very Hard",
+            "Costom": "Costom"
         },
         "priorita": {
             "-": "-",
@@ -95,6 +100,7 @@
         }
     },
     "tooltips": {
-        "productionStatus": "hello"
+        "productionStatus": "hello",
+        "complexity": "Easy - 2 weeks for internal and deadline\nHard - 4 weeks for internal and external deadline\nVery Hard - internal and external deadline must be set manually"
     }
 }

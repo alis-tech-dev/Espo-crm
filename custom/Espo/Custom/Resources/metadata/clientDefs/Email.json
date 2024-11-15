@@ -3,5 +3,10 @@
     "color": "#bd64af",
     "iconClass": "fas fa-envelope",
     "isWide": false,
-    "gridViewMode": false
+    "gridViewMode": false,
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        }
+    }
 }

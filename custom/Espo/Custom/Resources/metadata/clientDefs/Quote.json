@@ -17,6 +17,9 @@
         },
         "product": {
             "layout": null
+        },
+        "useCases": {
+            "layout": null
         }
     },
     "kanbanViewMode": false,

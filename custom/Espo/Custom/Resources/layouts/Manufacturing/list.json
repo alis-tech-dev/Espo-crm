@@ -1,0 +1,25 @@
+[
+    {
+        "name": "status"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "progress"
+    },
+    {
+        "name": "deadline"
+    },
+    {
+        "name": "nace"
+    },
+    {
+        "name": "assignedUser"
+    },
+    {
+        "name": "manufacturingBanner"
+    }
+]

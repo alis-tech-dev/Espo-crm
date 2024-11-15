@@ -10,6 +10,32 @@
             "padLength": 4,
             "reset": "Never",
             "isCustom": true
+        },
+        "noEmail": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "statusPriority": {
+            "type": "enum",
+            "options": [
+                "Priority 1",
+                "Priority 2",
+                "Priority 3"
+            ],
+            "style": {
+                "Priority 1": null,
+                "Priority 2": null,
+                "Priority 3": null
+            },
+            "default": "Priority 3",
+            "isCustom": true
+        },
+        "lastContacted": {
+            "notNull": false,
+            "type": "date",
+            "dateWarning": true,
+            "isCustom": true
         }
     }
 }

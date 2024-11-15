@@ -24,7 +24,7 @@ extend(Dep => {
 			if (this.isListMode() && !this.listEditDisabled) {
 				this.mode = this.MODE_EDITABLE_LIST;
 			}
-			this.setupEventListen();
+			// this.setupEventListen();
 		}
 
 setupEventListen() {

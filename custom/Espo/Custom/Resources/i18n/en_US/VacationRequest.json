@@ -10,7 +10,7 @@
         "timeBeforeVacation": "TimeBeforeVacation",
         "timeAfterVacation": "TimeAfterVacation",
         "timeVacation": "TimeVacation",
-        "vacationDays": "Vacation Days",
+        "vacationDays": "Počet dní",
         "numberOfDaysLeft": "Number of Remaining Vacation Hours for the User After Vacation",
         "numberOfDaysLeftBefore": "Number of Remaining Vacation hours for the User Before Vacation",
         "numberOfDays": "Number of hours",
@@ -39,6 +39,7 @@
     },
     "tooltips": {
         "humanResources": "Your line manager will be set as default if no other approver is selected.",
-        "statusOfApproval": "If status \"Schváleno\", status can't be changed."
+        "statusOfApproval": "If status \"Schváleno\", status can't be changed.",
+        "numberOfDays": "Must be set manually"
     }
 }

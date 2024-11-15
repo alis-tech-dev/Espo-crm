@@ -2,6 +2,7 @@ define(['dynamic-handler'], Dep => {
 	return class extends Dep {
 		init() {
 			this.controlModelFields();
+
 		}
 
 		async onChangeProductionModelId(_model, _val, options) {

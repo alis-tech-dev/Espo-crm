@@ -1,6 +1,7 @@
 {
     "fields": {
-        "complaintBook": "Complaint Book"
+        "complaintBook": "Complaint Book",
+        "padName": "PadName"
     },
     "links": {
         "complaintBook": "Complaint Book"

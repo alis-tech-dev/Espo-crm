@@ -1,0 +1,81 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "salesOrder"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "nace"
+                },
+                {
+                    "name": "manufacturingBanner"
+                }
+            ],
+            [
+                {
+                    "name": "progress"
+                },
+                {
+                    "name": "deadline"
+                },
+                {
+                    "name": "manufacturingFinished"
+                }
+            ],
+            [
+                {
+                    "name": "bPname"
+                },
+                {
+                    "name": "bPnumber"
+                },
+                {
+                    "name": "isComplaint"
+                },
+                {
+                    "name": "parent"
+                }
+            ],
+            [
+                {
+                    "name": "complaintProtocol"
+                },
+                {
+                    "name": "complaintBanner"
+                }
+            ],
+            [
+                {
+                    "name": "quoteProducts"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "glassPicture"
+                },
+                {
+                    "name": "glassPicture2"
+                },
+                {
+                    "name": "glassPicture3"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

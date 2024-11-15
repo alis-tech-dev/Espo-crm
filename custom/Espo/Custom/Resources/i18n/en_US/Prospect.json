@@ -1,0 +1,36 @@
+{
+    "fields": {
+        "url": "URL",
+        "linkedIn": "LinkedIn",
+        "company": "Company",
+        "position": "Position",
+        "email": "Email",
+        "phoneNumber": "PhoneNumber",
+        "country": "Country",
+        "fromHunter": "FromHunter",
+        "targetLists": "Target Lists",
+        "emailAddress": "Email",
+        "targetListIsOptedOut": "Target List (Is Opted Out)",
+        "status": "Status"
+    },
+    "links": {
+        "targetLists": "Target Lists"
+    },
+    "labels": {
+        "Create Prospect": "Create Prospect"
+    },
+    "options": {
+        "status": {
+            "New": "New",
+            "Contacted": "Contacted",
+            "Forwarded": "Forwarded",
+            "In communication": "In communication",
+            "Quoted": "Quoted",
+            "Waitning": "Waitning",
+            "Converted": "Converted",
+            "Lost": "Lost",
+            "First contact": "First contact",
+            "Second contact": "Second contact"
+        }
+    }
+}

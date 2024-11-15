@@ -11,10 +11,10 @@ define(['action-handler'], Dep => {
                             this.view.model.trigger('update-all');
 
                             this.view.model.save({
-                                status: 'In Production',
-                                productionStatus: 'HW',
+                                productionStatus: 'Backlog',
                             }, { patch: true });
                             this.triggerUpdate();
+                            this.view.render();
                             break;
                         case 'NoProducts':
                             this.triggerCancel();

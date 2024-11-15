@@ -1201,7 +1201,28 @@ return (object) [
       'delete' => 'all',
       'create' => 'yes'
     ],
+    'ItTask' => (object) [
+      'read' => 'all',
+      'stream' => 'all',
+      'edit' => 'all',
+      'delete' => 'all',
+      'create' => 'yes'
+    ],
     'JIRA' => (object) [
+      'read' => 'all',
+      'stream' => 'all',
+      'edit' => 'all',
+      'delete' => 'all',
+      'create' => 'yes'
+    ],
+    'Manufacturing' => (object) [
+      'read' => 'all',
+      'stream' => 'all',
+      'edit' => 'all',
+      'delete' => 'all',
+      'create' => 'yes'
+    ],
+    'Prospect' => (object) [
       'read' => 'all',
       'stream' => 'all',
       'edit' => 'all',
@@ -1223,6 +1244,13 @@ return (object) [
       'create' => 'yes'
     ],
     'Selector' => (object) [
+      'read' => 'all',
+      'stream' => 'all',
+      'edit' => 'all',
+      'delete' => 'all',
+      'create' => 'yes'
+    ],
+    'Tax' => (object) [
       'read' => 'all',
       'stream' => 'all',
       'edit' => 'all',

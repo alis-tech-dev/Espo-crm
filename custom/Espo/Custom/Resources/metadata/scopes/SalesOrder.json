@@ -4,5 +4,6 @@
     "statusField": "status",
     "kanbanStatusIgnoreList": [
         "Cancelled"
-    ]
+    ],
+    "aclPortal": "recordAllAccountContactNo"
 }

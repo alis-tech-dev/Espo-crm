@@ -2,6 +2,7 @@
     "fields": {
         "numberOfDaysLeft": "Počet zbývajících hodin dovolené uživatele po dovolené",
         "numberOfDaysLeftBefore": "Počet zbývajících hodin dovolené uživatele před dovolenou",
-        "numberOfDays": "Počet hodin"
+        "numberOfDays": "Počet hodin",
+        "vacationDays": "Počet dní"
     }
 }

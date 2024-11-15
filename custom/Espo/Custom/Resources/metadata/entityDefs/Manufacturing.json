@@ -1,0 +1,319 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "parent": {
+            "type": "linkParent",
+            "entityList": [
+                "Quote",
+                "SalesOrder"
+            ]
+        },
+        "salesOrder": {
+            "type": "link"
+        },
+        "bPname": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "bPnumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "complaintBanner": {
+            "type": "enum",
+            "options": [
+                "-",
+                "Complaint",
+                "Special"
+            ],
+            "style": {
+                "-": null,
+                "Complaint": "danger",
+                "Special": "primary"
+            },
+            "default": "-",
+            "displayAsLabel": true,
+            "isCustom": true
+        },
+        "complaintProtocol": {
+            "type": "file",
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "deadline": {
+            "notNull": false,
+            "type": "date",
+            "dateWarning": true,
+            "useNumericFormat": true,
+            "isCustom": true
+        },
+        "glassPicture": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "glassPicture2": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "glassPicture3": {
+            "type": "image",
+            "previewSize": "small",
+            "isCustom": true
+        },
+        "isComplaint": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "manufacturingBanner": {
+            "type": "enum",
+            "options": [
+                "-",
+                "Materiál",
+                "Informace",
+                "Komponenta"
+            ],
+            "default": "-",
+            "displayAsLabel": true,
+            "style": {
+                "-": null,
+                "Materiál": "warning",
+                "Informace": "info",
+                "Komponenta": "primary"
+            },
+            "isCustom": true
+        },
+        "manufacturingFinished": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "nace": {
+            "type": "enum",
+            "options": [
+                "-",
+                "1",
+                "2",
+                "3",
+                "5",
+                "8",
+                "13",
+                "21"
+            ],
+            "default": "-",
+            "displayAsLabel": true,
+            "style": {
+                "1": "success",
+                "2": "primary",
+                "3": "primary",
+                "5": "info",
+                "8": "warning",
+                "13": "danger",
+                "21": "danger",
+                "-": null
+            },
+            "isCustom": true
+        },
+        "progress": {
+            "type": "enum",
+            "options": [
+                "0",
+                "10",
+                "20",
+                "25",
+                "30",
+                "40",
+                "50",
+                "60",
+                "70",
+                "75",
+                "80",
+                "90",
+                "95",
+                "100"
+            ],
+            "default": "0",
+            "audited": true,
+            "style": {
+                "0": null,
+                "10": null,
+                "20": null,
+                "25": null,
+                "30": null,
+                "40": null,
+                "50": null,
+                "60": null,
+                "70": null,
+                "75": null,
+                "80": null,
+                "90": null,
+                "95": null,
+                "100": null
+            },
+            "isCustom": true
+        },
+        "quoteProducts": {
+            "type": "wysiwyg",
+            "default": "<table class=\"table table-bordered\" style=\"margin: 10mm 0; width: 100%; font-size: 14pxt; font-weight: 300;\" border=\"0\" cellspacing=\"5\" cellpadding=\"7\">\n<tbody>\n<tr>\n<th style=\"text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 23.1494%;\" align=\"center\" width=\"23%\"><span style=\"font-weight: bold; color: #ffffff;\">K&oacute;d produktu</span></th>\n<th style=\"text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 1.3459%;\" align=\"center\" width=\"33%\"><span style=\"font-weight: bold; color: #ffffff;\">Počet</span></th>\n<th style=\"text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 61.2052%;\" align=\"center\" width=\"5.5%\"><span style=\"font-weight: bold; color: #ffffff;\">Pozn&aacute;mka</span></th>\n</tr>\n<tr style=\"font-size: 14px; font-weight: 300;\">\n<td style=\"text-align: center; width: 23.1494%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 1.3459%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 61.2052%;\">&nbsp;</td>\n</tr>\n<tr  style=\"font-size: 14px; font-weight: 300;\">\n<td style=\"text-align: center; width: 23.1494%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 1.3459%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 61.2052%;\">&nbsp;</td>\n</tr>\n<tr  style=\"font-size: 14px; font-weight: 300;\">\n<td style=\"text-align: center; width: 23.1494%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 1.3459%;\">&nbsp;</td>\n<td style=\"text-align: center; width: 61.2052%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "NearLaunch",
+                "Backlog",
+                "OnHold",
+                "ToDo",
+                "HW",
+                "SW",
+                "Testing",
+                "Done",
+                "Archive"
+            ],
+            "default": "NearLaunch",
+            "displayAsLabel": true,
+            "audited": true,
+            "style": {
+                "NearLaunch": "info",
+                "Backlog": "info",
+                "OnHold": "warning",
+                "ToDo": "primary",
+                "HW": "info",
+                "SW": "info",
+                "Testing": "warning",
+                "Done": "success",
+                "Archive": "danger"
+            },
+            "isCustom": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "parent": {
+            "type": "belongsToParent",
+            "foreign": "manufacturings",
+            "isCustom": true
+        },
+        "salesOrder": {
+            "type": "belongsTo",
+            "foreign": "manufacturings",
+            "entity": "SalesOrder",
+            "audited": false,
+            "isCustom": true
+        },
+        "complaintProtocol": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "glassPicture": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "glassPicture2": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "glassPicture3": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

@@ -29,9 +29,10 @@ wipe_all(
     "product",
     "production_model",
     "production_model_item",
-    "quote", "quote_item",
-    "sales_order",
-    "sales_order_item",
+//    "quote",
+//    "quote_item",
+//    "sales_order",
+//    "sales_order_item",
     "production_order",
     "product_database",
     "warehouse",
@@ -72,6 +73,9 @@ foreach ($data as $i => $row) {
 
     $component = $entityManager->getRDBRepository('Product')->where('name', $row[0])->findOne();
 
+    $category = $entityManager->getRDBRepository('ProductCategory')->where('name', 'COMPONENTS')->findOne();
+    $idCategory = $category->getId();
+
     if (!$component) {
         $item = $entityManager->createEntity('Product', [
             'name' => $row[0],
@@ -80,7 +84,7 @@ foreach ($data as $i => $row) {
 //            'pricingType' => 'Profit Margin',
 //            'costPrice' => 0.0,
             'minimumStockQuantity' => $minimumStockQuantity,
-            'categoryId' => '66d9613bcdae9bee8'
+            'categoryId' => $idCategory
         ], ['skipPriceCalculation' => true]);
 
         $entityManager->createEntity('Warehouse', [
@@ -138,13 +142,10 @@ foreach ($products->toArray() as $i => $row) {
             'warehouseId' => $warehouseItemId
         ]);
 
-//         $productAlis->set('costPrice', $row[2]);
-//
-//         echo "productAlis costPrice changed. \n";
-//
-//         $entityManager->saveEntity($productAlis, ['skipPriceCalculation' => true]);
-//
-//         echo "Updated product cost and added to ProductionModelItem.\n";
+         $productAlis->set('costPrice', $row[2]);
+         
+         $entityManager->saveEntity($productAlis, ['skipPriceCalculation' => true]);
+
     } else if (!$product && !str_starts_with($productName, "ALIS")) {
         echo "Creating new product: $productName\n";
 

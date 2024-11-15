@@ -2742,7 +2742,9 @@ return (object) [
         22 => 'totalPriceCurrency',
         23 => 'totalPriceConverted',
         24 => 'priceJesenoConvertedConverted',
-        25 => 'componentsCostConverted'
+        25 => 'componentsCostConverted',
+        26 => 'listPriceConverted',
+        27 => 'unitPriceConverted'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -2780,7 +2782,9 @@ return (object) [
         26 => 'totalPriceCurrency',
         27 => 'totalPriceConverted',
         28 => 'priceJesenoConvertedConverted',
-        29 => 'componentsCostConverted'
+        29 => 'componentsCostConverted',
+        30 => 'listPriceConverted',
+        31 => 'unitPriceConverted'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -4393,12 +4397,11 @@ return (object) [
         1 => 'modifiedAt',
         2 => 'createdBy',
         3 => 'modifiedBy',
-        4 => 'numberOfDays',
-        5 => 'numberOfDaysLeft',
-        6 => 'numberOfDaysLeftBefore',
-        7 => 'humanResource',
-        8 => 'timeBeforeVacation',
-        9 => 'vacationDays'
+        4 => 'numberOfDaysLeft',
+        5 => 'numberOfDaysLeftBefore',
+        6 => 'humanResource',
+        7 => 'timeBeforeVacation',
+        8 => 'vacationDays'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -4413,13 +4416,12 @@ return (object) [
         3 => 'createdByName',
         4 => 'modifiedById',
         5 => 'modifiedByName',
-        6 => 'numberOfDays',
-        7 => 'numberOfDaysLeft',
-        8 => 'numberOfDaysLeftBefore',
-        9 => 'humanResourceId',
-        10 => 'humanResourceName',
-        11 => 'timeBeforeVacation',
-        12 => 'vacationDays'
+        6 => 'numberOfDaysLeft',
+        7 => 'numberOfDaysLeftBefore',
+        8 => 'humanResourceId',
+        9 => 'humanResourceName',
+        10 => 'timeBeforeVacation',
+        11 => 'vacationDays'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -4898,7 +4900,9 @@ return (object) [
         19 => 'priceRentConverted',
         20 => 'salesPriceConverted',
         21 => 'salesPriceWithTaxConverted',
-        22 => 'totalPriceConverted'
+        22 => 'totalPriceConverted',
+        23 => 'listPriceConverted',
+        24 => 'unitPriceConverted'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -4932,7 +4936,9 @@ return (object) [
         22 => 'priceRentConverted',
         23 => 'salesPriceConverted',
         24 => 'salesPriceWithTaxConverted',
-        25 => 'totalPriceConverted'
+        25 => 'totalPriceConverted',
+        26 => 'listPriceConverted',
+        27 => 'unitPriceConverted'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -5914,13 +5920,13 @@ return (object) [
         1 => 'createdBy',
         2 => 'modifiedAt',
         3 => 'modifiedBy',
-        4 => 'name',
-        5 => 'progress',
-        6 => 'quantityProduced',
-        7 => 'itemQuantity',
-        8 => 'avaliableQuantity',
-        9 => 'stockQuantity',
-        10 => 'performWorkTime'
+        4 => 'progress',
+        5 => 'quantityProduced',
+        6 => 'itemQuantity',
+        7 => 'stockQuantity',
+        8 => 'performWorkTime',
+        9 => 'availableBrno',
+        10 => 'availablePv'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -5935,13 +5941,13 @@ return (object) [
         3 => 'modifiedAt',
         4 => 'modifiedById',
         5 => 'modifiedByName',
-        6 => 'name',
-        7 => 'progress',
-        8 => 'quantityProduced',
-        9 => 'itemQuantity',
-        10 => 'avaliableQuantity',
-        11 => 'stockQuantity',
-        12 => 'performWorkTime'
+        6 => 'progress',
+        7 => 'quantityProduced',
+        8 => 'itemQuantity',
+        9 => 'stockQuantity',
+        10 => 'performWorkTime',
+        11 => 'availableBrno',
+        12 => 'availablePv'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -6733,6 +6739,41 @@ return (object) [
       'nonAdminReadOnly' => []
     ]
   ],
+  'ItTask' => (object) [
+    'fields' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdBy',
+        3 => 'modifiedBy'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'attributes' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdById',
+        3 => 'createdByName',
+        4 => 'modifiedById',
+        5 => 'modifiedByName'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'links' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [],
+      'nonAdminReadOnly' => []
+    ]
+  ],
   'JIRA' => (object) [
     'fields' => (object) [
       'forbidden' => [],
@@ -6757,6 +6798,78 @@ return (object) [
         3 => 'createdByName',
         4 => 'modifiedById',
         5 => 'modifiedByName'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'links' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [],
+      'nonAdminReadOnly' => []
+    ]
+  ],
+  'Manufacturing' => (object) [
+    'fields' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdBy',
+        3 => 'modifiedBy'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'attributes' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdById',
+        3 => 'createdByName',
+        4 => 'modifiedById',
+        5 => 'modifiedByName'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'links' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [],
+      'nonAdminReadOnly' => []
+    ]
+  ],
+  'Prospect' => (object) [
+    'fields' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdBy',
+        3 => 'modifiedBy',
+        4 => 'targetListIsOptedOut'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'attributes' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdById',
+        3 => 'createdByName',
+        4 => 'modifiedById',
+        5 => 'modifiedByName',
+        6 => 'targetListIsOptedOut'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -6864,6 +6977,41 @@ return (object) [
         4 => 'modifiedById',
         5 => 'modifiedByName',
         6 => 'priceConverted'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'links' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [],
+      'nonAdminReadOnly' => []
+    ]
+  ],
+  'Tax' => (object) [
+    'fields' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdBy',
+        3 => 'modifiedBy'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'attributes' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdById',
+        3 => 'createdByName',
+        4 => 'modifiedById',
+        5 => 'modifiedByName'
       ],
       'nonAdminReadOnly' => []
     ],

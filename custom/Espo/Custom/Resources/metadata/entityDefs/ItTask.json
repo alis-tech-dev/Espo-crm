@@ -1,0 +1,226 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": true,
+            "view": "views/fields/assigned-user",
+            "defaultSelectFilters": []
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "status": {
+            "type": "enum",
+            "optionsReference": null,
+            "default": "Created",
+            "displayAsLabel": true,
+            "style": {
+                "Created": "danger",
+                "In Progress": "primary",
+                "Testing": "warning",
+                "Partially": "info",
+                "Done": "success",
+                "On hold": "warning",
+                "Canceled": "danger"
+            },
+            "isCustom": true,
+            "options": [
+                "Created",
+                "In Progress",
+                "Testing",
+                "Partially",
+                "Done",
+                "On hold",
+                "Canceled"
+            ]
+        },
+        "start": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "finish": {
+            "notNull": false,
+            "type": "datetime",
+            "after": "start",
+            "minuteStep": 30,
+            "isCustom": true
+        },
+        "url": {
+            "type": "url",
+            "isCustom": true
+        },
+        "attachment": {
+            "type": "attachmentMultiple",
+            "previewSize": "small",
+            "sourceList": [],
+            "accept": [],
+            "copyAttachmentsEntityList": [],
+            "isCustom": true
+        },
+        "priority": {
+            "type": "enum",
+            "default": "3",
+            "optionsReference": null,
+            "style": {
+                "1": "danger",
+                "2": "warning",
+                "3": "primary",
+                "4": "success",
+                "5": "info"
+            },
+            "isCustom": true,
+            "displayAsLabel": true,
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        "solution": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": false,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "emails": {
+            "type": "hasChildren",
+            "entity": "Email",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "attachment": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "users": {
+            "type": "hasMany",
+            "relationName": "itTaskUser",
+            "foreign": "itTasks",
+            "entity": "User",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    },
+    "optimisticConcurrencyControl": false
+}

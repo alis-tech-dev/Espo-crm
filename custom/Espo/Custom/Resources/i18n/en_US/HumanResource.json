@@ -1,7 +1,7 @@
 {
     "fields": {
         "isActual": "IsActive",
-        "vacationTimeCorrection": "VacationTimeCorrection",
+        "vacationTimeCorrection": "Úprava zůstatku dovolené",
         "vacationDays": "Number of Vacation Hours per Year",
         "vacationDaysLeft": "Remaining Number of Vacation Hours"
     },

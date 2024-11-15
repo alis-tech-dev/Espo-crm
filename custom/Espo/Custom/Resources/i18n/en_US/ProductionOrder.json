@@ -6,13 +6,15 @@
         "totalProduced": "Total quantity",
         "quantityPlanned": "Planned",
         "quantityProduced": "Produced",
-        "avaliableQuantity": "AvaliableQuantity",
         "stockQuantity": "StockQuantity",
         "entryKey": "EntryKey",
         "isPerform": "IsPerform",
-        "performWorkTime": "PerformWorkTime"
+        "performWorkTime": "PerformWorkTime",
+        "availableBrno": "In Brno",
+        "availablePv": "In Prostějov"
     },
     "links": {
-        "warehouse": "Warehouse"
+        "warehouse": "Warehouse",
+        "worksPerformed": "WorkPerformed"
     }
 }

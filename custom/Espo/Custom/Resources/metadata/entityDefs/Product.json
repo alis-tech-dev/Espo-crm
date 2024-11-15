@@ -150,7 +150,7 @@
             "isCustom": true
         },
         "defaultProductionModel": {
-            "defaultSelectFilters": {}
+            "defaultSelectFilters": []
         },
         "minimumStockQuantity": {
             "default": 10
@@ -164,6 +164,25 @@
             "notNull": true,
             "type": "bool",
             "isCustom": true
+        },
+        "defaultWarehouseId": {
+            "type": "varchar",
+            "maxLength": 20,
+            "options": [],
+            "isCustom": true
+        },
+        "listPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "unitPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "priceJesenoCurrency": {
+            "options": null,
+            "style": {},
+            "default": null
         }
     },
     "links": {

@@ -13,7 +13,11 @@
         "Selector": "Selector",
         "HumanResource": "HR employee",
         "HumanResources": "HR Manager",
-        "Wiso": "Wiso"
+        "Wiso": "Wiso",
+        "ItTask": "IT Marketing Task",
+        "Tax": "Tax",
+        "Manufacturing": "Manufacturing",
+        "Prospect": "Prospect"
     },
     "scopeNamesPlural": {
         "SupplierReclamation": "Supplier Reclamations",
@@ -28,6 +32,10 @@
         "Selector": "Projector Selector",
         "HumanResource": "HR employers",
         "HumanResources": "HR Managers",
-        "Wiso": "wiso"
+        "Wiso": "wiso",
+        "ItTask": "IT Marketing task",
+        "Tax": "Tax",
+        "Manufacturing": "Manufacturing",
+        "Prospect": "Prospects"
     }
 }

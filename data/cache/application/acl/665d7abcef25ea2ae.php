@@ -357,7 +357,7 @@ return (object) [
       'stream' => 'no',
       'edit' => 'no',
       'delete' => 'no',
-      'create' => 'no'
+      'create' => 'yes'
     ],
     'InternalAgenda' => (object) [
       'read' => 'all',
@@ -470,7 +470,11 @@ return (object) [
     'EspoCRMnvody' => false,
     'QualityReport' => false,
     'ReceivedInvoices' => false,
+    'ItTask' => false,
+    'Manufacturing' => false,
+    'Prospect' => false,
     'SalesOrderSummaryItem' => false,
+    'Tax' => false,
     'Wiso' => false,
     'Target' => false,
     'QuoteEntry' => false,
@@ -861,10 +865,14 @@ return (object) [
     'Smernice' => (object) [],
     'SmerniceItem' => (object) [],
     'ComplaintBook' => (object) [],
+    'ItTask' => (object) [],
     'JIRA' => (object) [],
+    'Manufacturing' => (object) [],
+    'Prospect' => (object) [],
     'SalesOrderSummaryItem' => (object) [],
     'Seeker' => (object) [],
     'Selector' => (object) [],
+    'Tax' => (object) [],
     'Wiso' => (object) [],
     'ActionHistoryRecord' => (object) [
       'authToken' => (object) [

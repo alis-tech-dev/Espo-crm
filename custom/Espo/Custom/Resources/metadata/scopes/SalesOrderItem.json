@@ -2,5 +2,7 @@
     "stream": true,
     "disabled": false,
     "statusField": null,
-    "kanbanStatusIgnoreList": null
+    "kanbanStatusIgnoreList": null,
+    "aclPortal": "record",
+    "disabledPortal": false
 }

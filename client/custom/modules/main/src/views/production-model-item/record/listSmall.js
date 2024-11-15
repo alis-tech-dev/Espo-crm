@@ -2,9 +2,11 @@ define(['views/fields/link-multiple-with-primary'], Dep => {
     return class extends Dep {
         recolorRows() {
             const billOfMaterialsIds = this.model.get('billOfMaterialsIds');
-            const availableQuantity = this.model.get('avaliableQuantity');
+            const brno = this.model.get('availableBrno');
+            const pv = this.model.get('availablePv');
+
             const modelId = this.model.get('id');
-            if (availableQuantity === 0) {
+            if (brno + pv < 1) {
                 const $mainRow = document.querySelector(`a[data-id="${modelId}"]`);
                 if ($mainRow) {
                     $mainRow.style.background = '#ffcccc';

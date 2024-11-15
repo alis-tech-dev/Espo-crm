@@ -1,0 +1,29 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "parent": {
+            "layout": null
+        },
+        "salesOrder": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "complaintProtocol": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "complaintBanner",
+                            "value": "Complaint"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

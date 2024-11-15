@@ -10,5 +10,18 @@
         "fullTextSearch": true,
         "countDisabled": true
     },
-    "optimisticConcurrencyControl": false
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "parent": {
+            "entityList": [
+                "Account",
+                "Lead",
+                "Contact",
+                "Opportunity",
+                "Case",
+                "ItTask",
+                "Prospect"
+            ]
+        }
+    }
 }

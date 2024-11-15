@@ -54,6 +54,17 @@
         },
         "specification": {
             "readOnlyAfterCreate": true
+        },
+        "useCases": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -104,6 +115,19 @@
             "type": "hasChildren",
             "foreign": "parent",
             "entity": "ComplaintBook",
+            "isCustom": true
+        },
+        "useCases": {
+            "type": "hasMany",
+            "foreign": "quote1",
+            "entity": "UseCase",
+            "audited": false,
+            "isCustom": true
+        },
+        "manufacturings": {
+            "type": "hasChildren",
+            "foreign": "parent",
+            "entity": "Manufacturing",
             "isCustom": true
         }
     },

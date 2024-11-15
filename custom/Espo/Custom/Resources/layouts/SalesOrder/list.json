@@ -4,7 +4,8 @@
         "widthPx": 130,
         "link": true,
         "align": "left",
-        "label": "Sales Order Number"
+        "label": "Sales Order Number",
+        "view": "main:views\/sales-order\/record\/list"
     },
     {
         "name": "createdAt",

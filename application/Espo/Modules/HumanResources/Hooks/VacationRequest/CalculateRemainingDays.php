@@ -58,22 +58,22 @@ class CalculateRemainingDays implements \Espo\Core\Hook\Hook\BeforeSave
 
         $numberOfDays = floor($diff / (60 * 60 * 24)) + 1;
 
-        if($numberOfDays > $daysLeftBefore) {
-            throw ErrorSilent::createWithBody(
-				'Not enough vacation days left.',
-				ErrorBody::create()
-					->withMessageTranslation(
-						'notEnoughVacationDaysLeft',
-						'VacationApproval'
-					)
-					->encode()
-			);
-        }
+//        if($numberOfDays > $daysLeftBefore) {
+//            throw ErrorSilent::createWithBody(
+//				'Not enough vacation days left.',
+//				ErrorBody::create()
+//					->withMessageTranslation(
+//						'notEnoughVacationDaysLeft',
+//						'VacationApproval'
+//					)
+//					->encode()
+//			);
+//        }
 
         $daysLeftAfter = $daysLeftBefore - $numberOfDays;
 
         $entity->set('numberOfDaysLeftBefore', $daysLeftBefore);
         $entity->set('numberOfDaysLeft', $daysLeftAfter);
-        $entity->set('numberOfDays', $numberOfDays);
+//        $entity->set('numberOfDays', $numberOfDays);
     }
 }

@@ -6122,7 +6122,12 @@ return [
       'kanbanViewMode' => false,
       'color' => '#bd64af',
       'isWide' => false,
-      'gridViewMode' => false
+      'gridViewMode' => false,
+      'relationshipPanels' => [
+        'parent' => [
+          'layout' => NULL
+        ]
+      ]
     ],
     'EmailAccount' => [
       'controller' => 'controllers/record',
@@ -7469,6 +7474,9 @@ return [
           'layout' => NULL
         ],
         'humanResources' => [
+          'layout' => NULL
+        ],
+        'itTasks' => [
           'layout' => NULL
         ]
       ],
@@ -9595,6 +9603,9 @@ return [
         ],
         'syncWithReports' => [
           'createDisabled' => true
+        ],
+        'prospects' => [
+          'layout' => NULL
         ]
       ],
       'dynamicLogic' => [
@@ -10037,7 +10048,12 @@ return [
       'color' => NULL,
       'iconClass' => NULL,
       'isWide' => false,
-      'gridViewMode' => false
+      'gridViewMode' => false,
+      'relationshipPanels' => [
+        'quote1' => [
+          'layout' => NULL
+        ]
+      ]
     ],
     'UseCaseItem' => [
       'controller' => 'controllers/record',
@@ -14508,6 +14524,9 @@ return [
         ],
         'product' => [
           'layout' => NULL
+        ],
+        'useCases' => [
+          'layout' => NULL
         ]
       ],
       'dynamicHandlerList' => [
@@ -14800,6 +14819,9 @@ return [
         ],
         'wisos' => [
           'layout' => NULL
+        ],
+        'manufacturings' => [
+          'layout' => NULL
         ]
       ],
       'dynamicHandlerList' => [
@@ -14972,6 +14994,51 @@ return [
                 0 => [
                   'type' => 'isTrue',
                   'attribute' => 'accommodation'
+                ]
+              ]
+            ]
+          ],
+          'deadline' => [
+            'readOnly' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'or',
+                  'value' => [
+                    0 => [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Easy'
+                    ],
+                    1 => [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Hard'
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          'complexity' => [
+            'readOnly' => NULL
+          ],
+          'internDeadline' => [
+            'readOnly' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'or',
+                  'value' => [
+                    0 => [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Easy'
+                    ],
+                    1 => [
+                      'type' => 'equals',
+                      'attribute' => 'complexity',
+                      'value' => 'Hard'
+                    ]
+                  ]
                 ]
               ]
             ]
@@ -15557,6 +15624,17 @@ return [
                 0 => [
                   'type' => 'isTrue',
                   'attribute' => 'isApproved'
+                ]
+              ]
+            ]
+          ],
+          'numberOfDays' => [
+            'readOnly' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'equals',
+                  'attribute' => 'statusOfApproval',
+                  'value' => 'Approved'
                 ]
               ]
             ]
@@ -17265,7 +17343,7 @@ return [
       'iconClass' => 'fas fa-hammer',
       'isWide' => true,
       'dynamicHandlerList' => [
-        0 => 'production:handlers/production-order/dynamic'
+        0 => 'custom-production:handlers/production-order/dynamic-name'
       ],
       'recordViews' => [
         'detail' => 'production:views/production-order/detail'
@@ -17303,6 +17381,13 @@ return [
         ],
         'warehouse' => [
           'layout' => NULL
+        ]
+      ],
+      'dynamicLogic' => [
+        'fields' => [
+          'name' => [
+            'visible' => NULL
+          ]
         ]
       ]
     ],
@@ -18363,6 +18448,9 @@ return [
         ],
         'complaintBooks' => [
           'layout' => NULL
+        ],
+        'manufacturings' => [
+          'layout' => NULL
         ]
       ]
     ],
@@ -18388,6 +18476,44 @@ return [
       'isWide' => false,
       'gridViewMode' => false
     ],
+    'ItTask' => [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'sidePanels' => [
+        'detail' => [
+          0 => [
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities'
+          ],
+          1 => [
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities'
+          ],
+          2 => [
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task'
+          ]
+        ]
+      ],
+      'color' => '#4aa7e8',
+      'iconClass' => 'fas fa-laptop-code',
+      'kanbanViewMode' => true,
+      'isWide' => false,
+      'gridViewMode' => false,
+      'relationshipPanels' => [
+        'users' => [
+          'layout' => NULL
+        ]
+      ]
+    ],
     'JIRA' => [
       'controller' => 'controllers/record',
       'boolFilterList' => [
@@ -18404,12 +18530,54 @@ return [
         ]
       ]
     ],
+    'Manufacturing' => [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'relationshipPanels' => [
+        'parent' => [
+          'layout' => NULL
+        ],
+        'salesOrder' => [
+          'layout' => NULL
+        ]
+      ],
+      'dynamicLogic' => [
+        'fields' => [
+          'complaintProtocol' => [
+            'visible' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'equals',
+                  'attribute' => 'complaintBanner',
+                  'value' => 'Complaint'
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
     'OrderItem' => [
       'kanbanViewMode' => false,
       'color' => NULL,
       'iconClass' => NULL,
       'isWide' => false,
       'gridViewMode' => false
+    ],
+    'Prospect' => [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
+      ],
+      'color' => '#1ece99',
+      'iconClass' => 'fas fa-person-booth',
+      'relationshipPanels' => [
+        'targetLists' => [
+          'layout' => NULL
+        ]
+      ]
     ],
     'ReceivedInvoiceItem' => [
       'kanbanViewMode' => false,
@@ -18469,6 +18637,12 @@ return [
             ]
           ]
         ]
+      ]
+    ],
+    'Tax' => [
+      'controller' => 'controllers/record',
+      'boolFilterList' => [
+        0 => 'onlyMy'
       ]
     ],
     'Wiso' => [
@@ -21887,7 +22061,9 @@ return [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask',
+            6 => 'Prospect'
           ]
         ],
         'dateSent' => [
@@ -28198,6 +28374,22 @@ return [
         'humanResources' => [
           'type' => 'link'
         ],
+        'itTasks' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
+        ],
+        'isInvisible' => [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
         'middleName' => [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -28453,6 +28645,14 @@ return [
           'type' => 'belongsTo',
           'foreign' => 'users',
           'entity' => 'HumanResources',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'itTasks' => [
+          'type' => 'hasMany',
+          'relationName' => 'itTaskUser',
+          'foreign' => 'users',
+          'entity' => 'ItTask',
           'audited' => false,
           'isCustom' => true
         ]
@@ -29833,7 +30033,8 @@ return [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask'
           ]
         ],
         'account' => [
@@ -31864,6 +32065,12 @@ return [
         'complaintBook' => [
           'type' => 'link'
         ],
+        'padName' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
         'middleName' => [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -33398,6 +33605,32 @@ return [
           'reset' => 'Never',
           'isCustom' => true
         ],
+        'noEmail' => [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'statusPriority' => [
+          'type' => 'enum',
+          'options' => [
+            0 => 'Priority 1',
+            1 => 'Priority 2',
+            2 => 'Priority 3'
+          ],
+          'style' => [
+            'Priority 1' => NULL,
+            'Priority 2' => NULL,
+            'Priority 3' => NULL
+          ],
+          'default' => 'Priority 3',
+          'isCustom' => true
+        ],
+        'lastContacted' => [
+          'notNull' => false,
+          'type' => 'date',
+          'dateWarning' => true,
+          'isCustom' => true
+        ],
         'middleName' => [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -33904,7 +34137,8 @@ return [
             1 => 'Lead',
             2 => 'Contact',
             3 => 'Opportunity',
-            4 => 'Case'
+            4 => 'Case',
+            5 => 'ItTask'
           ]
         ],
         'account' => [
@@ -35346,6 +35580,17 @@ return [
           'type' => 'bool',
           'layoutAvailabilityList' => [],
           'tooltip' => true
+        ],
+        'prospects' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
         ]
       ],
       'links' => [
@@ -35449,6 +35694,14 @@ return [
           'foreign' => 'syncTargetLists',
           'utility' => true,
           'layoutRelationshipsDisabled' => true
+        ],
+        'prospects' => [
+          'type' => 'hasMany',
+          'relationName' => 'targetListProspect',
+          'foreign' => 'targetLists',
+          'entity' => 'Prospect',
+          'audited' => false,
+          'isCustom' => true
         ]
       ],
       'collection' => [
@@ -35635,7 +35888,8 @@ return [
             2 => 'Lead',
             3 => 'Opportunity',
             4 => 'Case',
-            5 => 'SalesOrder'
+            5 => 'SalesOrder',
+            6 => 'ItTask'
           ],
           'tooltip' => true
         ],
@@ -36522,6 +36776,9 @@ return [
           'type' => 'bool',
           'isCustom' => true
         ],
+        'quote1' => [
+          'type' => 'link'
+        ],
         'taxAmountCurrency' => [
           'layoutDetailDisabled' => true,
           'readOnly' => true,
@@ -36692,6 +36949,13 @@ return [
           'type' => 'belongsTo',
           'entity' => 'Account',
           'foreign' => 'useCaseItems'
+        ],
+        'quote1' => [
+          'type' => 'belongsTo',
+          'foreign' => 'useCases',
+          'entity' => 'Quote',
+          'audited' => false,
+          'isCustom' => true
         ]
       ],
       'collection' => [
@@ -37227,13 +37491,11 @@ return [
         ],
         'priceJesenoCurrency' => [
           'type' => 'enum',
-          'options' => [
-            0 => '0'
-          ],
+          'options' => NULL,
           'style' => [
             0 => NULL
           ],
-          'default' => 'EUR',
+          'default' => NULL,
           'isCustom' => true
         ],
         'priceJesenoConverted' => [
@@ -37387,6 +37649,20 @@ return [
         'isHidden' => [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'defaultWarehouseId' => [
+          'type' => 'varchar',
+          'maxLength' => 20,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'listPrice' => [
+          'type' => 'currency',
+          'isCustom' => true
+        ],
+        'unitPrice' => [
+          'type' => 'currency',
           'isCustom' => true
         ],
         'priceACurrency' => [
@@ -37734,6 +38010,54 @@ return [
           'customizationInlineEditDisabledDisabled' => true
         ],
         'componentsCostConverted' => [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'listPriceCurrency' => [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'listPriceConverted' => [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'unitPriceCurrency' => [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'unitPriceConverted' => [
           'type' => 'currencyConverted',
           'readOnly' => true,
           'importDisabled' => true,
@@ -42973,6 +43297,17 @@ výrobce VZV.
         'product' => [
           'type' => 'link'
         ],
+        'useCases' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
+          'isCustom' => true
+        ],
         'billingAddressStreet' => [
           'type' => 'text',
           'maxLength' => 255,
@@ -43375,6 +43710,19 @@ výrobce VZV.
           'type' => 'hasChildren',
           'foreign' => 'parent',
           'entity' => 'ComplaintBook',
+          'isCustom' => true
+        ],
+        'useCases' => [
+          'type' => 'hasMany',
+          'foreign' => 'quote1',
+          'entity' => 'UseCase',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'manufacturings' => [
+          'type' => 'hasChildren',
+          'foreign' => 'parent',
+          'entity' => 'Manufacturing',
           'isCustom' => true
         ]
       ],
@@ -44052,9 +44400,10 @@ výrobce VZV.
         ],
         'deadline' => [
           'type' => 'date',
-          'required' => true,
+          'required' => false,
           'audited' => true,
-          'default' => 'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');'
+          'default' => 'javascript: return this.dateTime.getToday();',
+          'useNumericFormat' => true
         ],
         'internalDeadline' => [
           'type' => 'date',
@@ -44526,7 +44875,7 @@ výrobce VZV.
         'internDeadline' => [
           'notNull' => false,
           'type' => 'date',
-          'default' => 'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');',
+          'default' => 'javascript: return this.dateTime.getToday();',
           'useNumericFormat' => true,
           'audited' => true,
           'isCustom' => true
@@ -44554,14 +44903,19 @@ výrobce VZV.
           'type' => 'enum',
           'options' => [
             0 => 'Easy',
-            1 => 'Hard'
+            1 => 'Hard',
+            2 => 'Very Hard'
           ],
           'default' => 'Easy',
           'style' => [
             'Easy' => 'success',
-            'Hard' => 'danger'
+            'Hard' => 'warning',
+            'Very Hard' => 'danger'
           ],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true,
+          'tooltip' => true,
+          'displayAsLabel' => true
         ],
         'priceList1' => [
           'type' => 'link',
@@ -44719,6 +45073,17 @@ výrobce VZV.
           'field' => 'quantity',
           'displayAsList' => true,
           'view' => 'autocrm:views/fields/foreign-multiple',
+          'isCustom' => true
+        ],
+        'manufacturings' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => true,
           'isCustom' => true
         ],
         'billingAddressStreet' => [
@@ -45251,6 +45616,13 @@ výrobce VZV.
           'type' => 'hasMany',
           'foreign' => 'salesOrder1',
           'entity' => 'Wiso',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'manufacturings' => [
+          'type' => 'hasMany',
+          'foreign' => 'salesOrder',
+          'entity' => 'Manufacturing',
           'audited' => false,
           'isCustom' => true
         ]
@@ -48192,7 +48564,7 @@ výrobce VZV.
       'fields' => [
         'name' => [
           'type' => 'varchar',
-          'required' => true,
+          'required' => false,
           'pattern' => '$noBadCharacters',
           'options' => []
         ],
@@ -48251,8 +48623,9 @@ výrobce VZV.
         'numberOfDays' => [
           'type' => 'int',
           'isCustom' => false,
-          'required' => false,
-          'readOnly' => true
+          'required' => true,
+          'readOnly' => false,
+          'tooltip' => true
         ],
         'numberOfDaysLeft' => [
           'type' => 'int',
@@ -48351,7 +48724,7 @@ výrobce VZV.
           'notNull' => false,
           'type' => 'datetime',
           'required' => true,
-          'minuteStep' => 30,
+          'minuteStep' => 60,
           'isCustom' => true,
           'useNumericFormat' => true,
           'after' => NULL
@@ -48362,7 +48735,7 @@ výrobce VZV.
           'required' => true,
           'after' => 'dateStart',
           'useNumericFormat' => true,
-          'minuteStep' => 30,
+          'minuteStep' => 60,
           'isCustom' => true
         ],
         'humanResources' => [
@@ -51107,7 +51480,8 @@ výrobce VZV.
           'default' => 0,
           'min' => 0,
           'readOnly' => true,
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'stockLocation' => [
           'type' => 'enum',
@@ -51184,7 +51558,8 @@ výrobce VZV.
         'name' => [
           'type' => 'varchar',
           'required' => true,
-          'trim' => true
+          'trim' => true,
+          'options' => []
         ],
         'description' => [
           'type' => 'text'
@@ -51242,7 +51617,8 @@ výrobce VZV.
         'quantity' => [
           'notNull' => false,
           'type' => 'float',
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'category' => [
           'type' => 'enum',
@@ -51265,7 +51641,8 @@ výrobce VZV.
           'notNull' => false,
           'type' => 'float',
           'isCustom' => true,
-          'readOnly' => true
+          'readOnly' => true,
+          'tooltip' => true
         ],
         'position' => [
           'type' => 'varchar',
@@ -51287,7 +51664,8 @@ výrobce VZV.
         ],
         'productCategory' => [
           'type' => 'link',
-          'defaultSelectFilters' => []
+          'defaultSelectFilters' => [],
+          'tooltip' => true
         ],
         'isSerialNumber' => [
           'notNull' => true,
@@ -51460,7 +51838,8 @@ výrobce VZV.
           'type' => 'varchar',
           'maxLength' => 150,
           'options' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => false
         ],
         'qrCode' => [
           'type' => 'barcode',
@@ -51470,11 +51849,13 @@ výrobce VZV.
         ],
         'salesPrice' => [
           'type' => 'currency',
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'salesPriceWithTax' => [
           'type' => 'currency',
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'accounts' => [
           'type' => 'linkMultiple',
@@ -51562,11 +51943,20 @@ výrobce VZV.
           'type' => 'varchar',
           'maxLength' => 150,
           'options' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => false
         ],
         'isInvisible' => [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'listPrice' => [
+          'type' => 'currency',
+          'isCustom' => true
+        ],
+        'unitPrice' => [
+          'type' => 'currency',
           'isCustom' => true
         ],
         'addressStreet' => [
@@ -51968,6 +52358,54 @@ výrobce VZV.
           'maxLength' => 3
         ],
         'totalPriceConverted' => [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'listPriceCurrency' => [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'listPriceConverted' => [
+          'type' => 'currencyConverted',
+          'readOnly' => true,
+          'importDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'unitPriceCurrency' => [
+          'type' => 'enum',
+          'view' => 'views/fields/currency-list',
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'customizationRequiredDisabled' => true,
+          'customizationOptionsDisabled' => true,
+          'customizationIsSortedDisabled' => true,
+          'customizationDisplayAsLabelDisabled' => true,
+          'customizationAuditedDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true,
+          'customizationDefaultView' => 'views/admin/field-manager/fields/currency-default',
+          'customizationTooltipTextDisabled' => true,
+          'maxLength' => 3
+        ],
+        'unitPriceConverted' => [
           'type' => 'currencyConverted',
           'readOnly' => true,
           'importDisabled' => true,
@@ -57280,10 +57718,10 @@ výrobce VZV.
           'type' => 'link'
         ],
         'name' => [
-          'pattern' => '$noBadCharacters',
+          'pattern' => NULL,
           'trim' => true,
           'type' => 'varchar',
-          'readOnly' => true,
+          'readOnly' => false,
           'options' => []
         ],
         'operations' => [
@@ -57389,14 +57827,6 @@ výrobce VZV.
           'isCustom' => true,
           'notStorable' => true
         ],
-        'avaliableQuantity' => [
-          'readOnly' => true,
-          'type' => 'foreign',
-          'link' => 'productWarehouse',
-          'field' => 'availableQuantity',
-          'view' => 'views/fields/foreign-float',
-          'isCustom' => true
-        ],
         'stockQuantity' => [
           'readOnly' => true,
           'type' => 'foreignMultiple',
@@ -57422,6 +57852,22 @@ výrobce VZV.
           'maxLength' => 30,
           'readOnly' => true,
           'options' => [],
+          'isCustom' => true
+        ],
+        'availableBrno' => [
+          'readOnly' => true,
+          'type' => 'foreign',
+          'link' => 'productWarehouse',
+          'field' => 'availableBrno',
+          'view' => 'views/fields/foreign-float',
+          'isCustom' => true
+        ],
+        'availablePv' => [
+          'readOnly' => true,
+          'type' => 'foreign',
+          'link' => 'productWarehouse',
+          'field' => 'availablePv',
+          'view' => 'views/fields/foreign-float',
           'isCustom' => true
         ]
       ],
@@ -57503,6 +57949,12 @@ výrobce VZV.
           'type' => 'belongsTo',
           'entity' => 'SalesOrder',
           'foreign' => 'productionOrders'
+        ],
+        'worksPerformed' => [
+          'type' => 'hasChildren',
+          'foreign' => 'parent',
+          'entity' => 'WorkPerformed',
+          'isCustom' => true
         ]
       ],
       'collection' => [
@@ -57624,7 +58076,9 @@ výrobce VZV.
           'type' => 'datetime',
           'required' => false,
           'view' => 'crm:views/call/fields/date-end',
-          'after' => 'dateStart'
+          'after' => 'dateStart',
+          'default' => 'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);',
+          'minuteStep' => 30
         ],
         'duration' => [
           'type' => 'duration',
@@ -57669,8 +58123,7 @@ výrobce VZV.
         'parent' => [
           'type' => 'linkParent',
           'entityList' => [
-            0 => 'ProductionOrder',
-            1 => 'SalesOrder'
+            0 => 'ProductionOrder'
           ]
         ],
         'stockLocation' => [
@@ -62475,6 +62928,234 @@ výrobce VZV.
       ],
       'optimisticConcurrencyControl' => false
     ],
+    'ItTask' => [
+      'fields' => [
+        'name' => [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'options' => []
+        ],
+        'description' => [
+          'type' => 'text',
+          'required' => true
+        ],
+        'createdAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => [
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+          'defaultSelectFilters' => []
+        ],
+        'teams' => [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'status' => [
+          'type' => 'enum',
+          'optionsReference' => NULL,
+          'default' => 'Created',
+          'displayAsLabel' => true,
+          'style' => [
+            'Created' => 'danger',
+            'In Progress' => 'primary',
+            'Testing' => 'warning',
+            'Partially' => 'info',
+            'Done' => 'success',
+            'On hold' => 'warning',
+            'Canceled' => 'danger'
+          ],
+          'isCustom' => true,
+          'options' => [
+            0 => 'Created',
+            1 => 'In Progress',
+            2 => 'Testing',
+            3 => 'Partially',
+            4 => 'Done',
+            5 => 'On hold',
+            6 => 'Canceled'
+          ]
+        ],
+        'start' => [
+          'notNull' => false,
+          'type' => 'datetime',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'finish' => [
+          'notNull' => false,
+          'type' => 'datetime',
+          'after' => 'start',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'url' => [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'attachment' => [
+          'type' => 'attachmentMultiple',
+          'previewSize' => 'small',
+          'sourceList' => [],
+          'accept' => [],
+          'copyAttachmentsEntityList' => [],
+          'isCustom' => true
+        ],
+        'priority' => [
+          'type' => 'enum',
+          'default' => '3',
+          'optionsReference' => NULL,
+          'style' => [
+            1 => 'danger',
+            2 => 'warning',
+            3 => 'primary',
+            4 => 'success',
+            5 => 'info'
+          ],
+          'isCustom' => true,
+          'displayAsLabel' => true,
+          'options' => [
+            0 => '1',
+            1 => '2',
+            2 => '3',
+            3 => '4',
+            4 => '5'
+          ]
+        ],
+        'solution' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'users' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => false,
+          'isCustom' => true
+        ]
+      ],
+      'links' => [
+        'createdBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'meetings' => [
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'calls' => [
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'tasks' => [
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'emails' => [
+          'type' => 'hasChildren',
+          'entity' => 'Email',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'attachment' => [
+          'type' => 'hasChildren',
+          'entity' => 'Attachment',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+          'relationName' => 'attachments',
+          'utility' => true
+        ],
+        'users' => [
+          'type' => 'hasMany',
+          'relationName' => 'itTaskUser',
+          'foreign' => 'itTasks',
+          'entity' => 'User',
+          'audited' => false,
+          'isCustom' => true
+        ]
+      ],
+      'collection' => [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'textFilterFields' => [
+          0 => 'name'
+        ],
+        'fullTextSearch' => false,
+        'countDisabled' => false,
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => [
+        'name' => [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ],
+      'optimisticConcurrencyControl' => false
+    ],
     'JIRA' => [
       'fields' => [
         'name' => [
@@ -62620,7 +63301,8 @@ výrobce VZV.
           'previewSize' => 'small',
           'accept' => [],
           'copyAttachmentsEntityList' => [],
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => true
         ],
         'cRM' => [
           'type' => 'enum',
@@ -62773,6 +63455,589 @@ výrobce VZV.
         ]
       ],
       'optimisticConcurrencyControl' => false
+    ],
+    'Manufacturing' => [
+      'fields' => [
+        'name' => [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters'
+        ],
+        'description' => [
+          'type' => 'text'
+        ],
+        'createdAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'parent' => [
+          'type' => 'linkParent',
+          'entityList' => [
+            0 => 'Quote',
+            1 => 'SalesOrder'
+          ]
+        ],
+        'salesOrder' => [
+          'type' => 'link'
+        ],
+        'bPname' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'bPnumber' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'complaintBanner' => [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => 'Complaint',
+            2 => 'Special'
+          ],
+          'style' => [
+            '-' => NULL,
+            'Complaint' => 'danger',
+            'Special' => 'primary'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'isCustom' => true
+        ],
+        'complaintProtocol' => [
+          'type' => 'file',
+          'sourceList' => [],
+          'accept' => [],
+          'isCustom' => true
+        ],
+        'deadline' => [
+          'notNull' => false,
+          'type' => 'date',
+          'dateWarning' => true,
+          'useNumericFormat' => true,
+          'isCustom' => true
+        ],
+        'glassPicture' => [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'glassPicture2' => [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'glassPicture3' => [
+          'type' => 'image',
+          'previewSize' => 'small',
+          'isCustom' => true
+        ],
+        'isComplaint' => [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'manufacturingBanner' => [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => 'Materiál',
+            2 => 'Informace',
+            3 => 'Komponenta'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'style' => [
+            '-' => NULL,
+            'Materiál' => 'warning',
+            'Informace' => 'info',
+            'Komponenta' => 'primary'
+          ],
+          'isCustom' => true
+        ],
+        'manufacturingFinished' => [
+          'notNull' => false,
+          'type' => 'datetime',
+          'minuteStep' => 30,
+          'isCustom' => true
+        ],
+        'nace' => [
+          'type' => 'enum',
+          'options' => [
+            0 => '-',
+            1 => '1',
+            2 => '2',
+            3 => '3',
+            4 => '5',
+            5 => '8',
+            6 => '13',
+            7 => '21'
+          ],
+          'default' => '-',
+          'displayAsLabel' => true,
+          'style' => [
+            1 => 'success',
+            2 => 'primary',
+            3 => 'primary',
+            5 => 'info',
+            8 => 'warning',
+            13 => 'danger',
+            21 => 'danger',
+            '-' => NULL
+          ],
+          'isCustom' => true
+        ],
+        'progress' => [
+          'type' => 'enum',
+          'options' => [
+            0 => '0',
+            1 => '10',
+            2 => '20',
+            3 => '25',
+            4 => '30',
+            5 => '40',
+            6 => '50',
+            7 => '60',
+            8 => '70',
+            9 => '75',
+            10 => '80',
+            11 => '90',
+            12 => '95',
+            13 => '100'
+          ],
+          'default' => '0',
+          'audited' => true,
+          'style' => [
+            0 => NULL,
+            10 => NULL,
+            20 => NULL,
+            25 => NULL,
+            30 => NULL,
+            40 => NULL,
+            50 => NULL,
+            60 => NULL,
+            70 => NULL,
+            75 => NULL,
+            80 => NULL,
+            90 => NULL,
+            95 => NULL,
+            100 => NULL
+          ],
+          'isCustom' => true
+        ],
+        'quoteProducts' => [
+          'type' => 'wysiwyg',
+          'default' => '<table class="table table-bordered" style="margin: 10mm 0; width: 100%; font-size: 14pxt; font-weight: 300;" border="0" cellspacing="5" cellpadding="7">
+<tbody>
+<tr>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 23.1494%;" align="center" width="23%"><span style="font-weight: bold; color: #ffffff;">K&oacute;d produktu</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 1.3459%;" align="center" width="33%"><span style="font-weight: bold; color: #ffffff;">Počet</span></th>
+<th style="text-align: center; background-color: #1a9dd9; font-size: 10pt; font-weight: bold; width: 61.2052%;" align="center" width="5.5%"><span style="font-weight: bold; color: #ffffff;">Pozn&aacute;mka</span></th>
+</tr>
+<tr style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+<tr  style="font-size: 14px; font-weight: 300;">
+<td style="text-align: center; width: 23.1494%;">&nbsp;</td>
+<td style="text-align: center; width: 1.3459%;">&nbsp;</td>
+<td style="text-align: center; width: 61.2052%;">&nbsp;</td>
+</tr>
+</tbody>
+</table>',
+          'isCustom' => true
+        ],
+        'status' => [
+          'type' => 'enum',
+          'required' => true,
+          'options' => [
+            0 => 'NearLaunch',
+            1 => 'Backlog',
+            2 => 'OnHold',
+            3 => 'ToDo',
+            4 => 'HW',
+            5 => 'SW',
+            6 => 'Testing',
+            7 => 'Done',
+            8 => 'Archive'
+          ],
+          'default' => 'NearLaunch',
+          'displayAsLabel' => true,
+          'audited' => true,
+          'style' => [
+            'NearLaunch' => 'info',
+            'Backlog' => 'info',
+            'OnHold' => 'warning',
+            'ToDo' => 'primary',
+            'HW' => 'info',
+            'SW' => 'info',
+            'Testing' => 'warning',
+            'Done' => 'success',
+            'Archive' => 'danger'
+          ],
+          'isCustom' => true
+        ]
+      ],
+      'links' => [
+        'createdBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'parent' => [
+          'type' => 'belongsToParent',
+          'foreign' => 'manufacturings',
+          'isCustom' => true
+        ],
+        'salesOrder' => [
+          'type' => 'belongsTo',
+          'foreign' => 'manufacturings',
+          'entity' => 'SalesOrder',
+          'audited' => false,
+          'isCustom' => true
+        ],
+        'complaintProtocol' => [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture' => [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture2' => [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ],
+        'glassPicture3' => [
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+          'utility' => true
+        ]
+      ],
+      'collection' => [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => [
+        'name' => [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
+    ],
+    'Prospect' => [
+      'fields' => [
+        'name' => [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'options' => []
+        ],
+        'description' => [
+          'type' => 'text'
+        ],
+        'createdAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ],
+        'url' => [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'linkedIn' => [
+          'type' => 'url',
+          'isCustom' => true
+        ],
+        'company' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'position' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'emailAddress' => [
+          'notStorable' => false,
+          'type' => 'email',
+          'isCustom' => true,
+          'isPersonalData' => true
+        ],
+        'phoneNumber' => [
+          'type' => 'phone',
+          'typeList' => [
+            0 => 'Mobile',
+            1 => 'Office',
+            2 => 'Home',
+            3 => 'Fax',
+            4 => 'Other'
+          ],
+          'defaultType' => 'Mobile'
+        ],
+        'country' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'fromHunter' => [
+          'notNull' => true,
+          'type' => 'bool',
+          'isCustom' => true
+        ],
+        'targetLists' => [
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutListDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'exportDisabled' => true,
+          'customizationDisabled' => false,
+          'isCustom' => true
+        ],
+        'targetList' => [
+          'type' => 'link',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutListDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'layoutFiltersDisabled' => true,
+          'entity' => 'TargetList',
+          'directAccessDisabled' => true
+        ],
+        'targetListIsOptedOut' => [
+          'utility' => true,
+          'type' => 'bool',
+          'readOnly' => true,
+          'isCustom' => true
+        ],
+        'status' => [
+          'type' => 'enum',
+          'options' => [
+            0 => 'New',
+            1 => 'First contact',
+            2 => 'Second contact',
+            3 => 'Forwarded',
+            4 => 'Converted',
+            5 => 'Lost'
+          ],
+          'style' => [
+            'New' => 'primary',
+            'First contact' => 'primary',
+            'Second contact' => 'info',
+            'Forwarded' => 'warning',
+            'Converted' => 'success',
+            'Lost' => 'danger'
+          ],
+          'default' => 'New',
+          'isCustom' => true
+        ],
+        'emailAddressIsOptedOut' => [
+          'notStorable' => true,
+          'type' => 'bool',
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'emailAddressIsInvalid' => [
+          'notStorable' => true,
+          'type' => 'bool',
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'phoneNumberIsOptedOut' => [
+          'type' => 'bool',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ],
+        'phoneNumberIsInvalid' => [
+          'type' => 'bool',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'layoutDefaultSidePanelDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+          'customizationInlineEditDisabledDisabled' => true
+        ]
+      ],
+      'links' => [
+        'createdBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ],
+        'targetLists' => [
+          'type' => 'hasMany',
+          'relationName' => 'targetListProspect',
+          'foreign' => 'prospects',
+          'columnAttributeMap' => [
+            'optedOut' => 'targetListIsOptedOut'
+          ],
+          'entity' => 'TargetList',
+          'audited' => false,
+          'isCustom' => true
+        ]
+      ],
+      'collection' => [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => [
+        'name' => [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
     ],
     'ReceivedInvoiceItem' => [
       'collection' => [
@@ -63160,6 +64425,99 @@ výrobce VZV.
         ]
       ],
       'optimisticConcurrencyControl' => false
+    ],
+    'Tax' => [
+      'fields' => [
+        'name' => [
+          'type' => 'varchar',
+          'required' => true,
+          'pattern' => '$noBadCharacters',
+          'default' => 'default',
+          'options' => []
+        ],
+        'description' => [
+          'type' => 'text'
+        ],
+        'createdAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'modifiedAt' => [
+          'type' => 'datetime',
+          'readOnly' => true
+        ],
+        'createdBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'modifiedBy' => [
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user'
+        ],
+        'assignedUser' => [
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user'
+        ],
+        'teams' => [
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams'
+        ]
+      ],
+      'links' => [
+        'createdBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'modifiedBy' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'assignedUser' => [
+          'type' => 'belongsTo',
+          'entity' => 'User'
+        ],
+        'teams' => [
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'entityTeam',
+          'layoutRelationshipsDisabled' => true
+        ]
+      ],
+      'collection' => [
+        'orderBy' => 'createdAt',
+        'order' => 'desc',
+        'sortBy' => 'createdAt',
+        'asc' => false
+      ],
+      'indexes' => [
+        'name' => [
+          'columns' => [
+            0 => 'name',
+            1 => 'deleted'
+          ]
+        ],
+        'assignedUser' => [
+          'columns' => [
+            0 => 'assignedUserId',
+            1 => 'deleted'
+          ]
+        ],
+        'createdAt' => [
+          'columns' => [
+            0 => 'createdAt'
+          ]
+        ],
+        'createdAtId' => [
+          'unique' => true,
+          'columns' => [
+            0 => 'createdAt',
+            1 => 'id'
+          ]
+        ]
+      ]
     ],
     'Wiso' => [
       'fields' => [
@@ -67811,9 +69169,36 @@ výrobce VZV.
       'beforeLinkHookClassNameList' => [],
       'beforeUnlinkHookClassNameList' => []
     ],
+    'ItTask' => [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
+      'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
     'JIRA' => [
       'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
+    'Manufacturing' => [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'readLoaderClassNameList' => [],
       'listLoaderClassNameList' => [],
       'saverClassNameList' => [],
@@ -67877,6 +69262,19 @@ výrobce VZV.
       'beforeLinkHookClassNameList' => [],
       'beforeUnlinkHookClassNameList' => []
     ],
+    'Prospect' => [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
     'SalesOrderSummaryItem' => [
       'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'updateDuplicateCheck' => false,
@@ -67921,6 +69319,19 @@ výrobce VZV.
     ],
     'SupplierOrder' => [
       'updateDuplicateCheck' => false,
+      'readLoaderClassNameList' => [],
+      'listLoaderClassNameList' => [],
+      'saverClassNameList' => [],
+      'selectApplierClassNameList' => [],
+      'beforeReadHookClassNameList' => [],
+      'beforeCreateHookClassNameList' => [],
+      'beforeUpdateHookClassNameList' => [],
+      'beforeDeleteHookClassNameList' => [],
+      'beforeLinkHookClassNameList' => [],
+      'beforeUnlinkHookClassNameList' => []
+    ],
+    'Tax' => [
+      'duplicateWhereBuilderClassName' => 'Espo\\Classes\\DuplicateWhereBuilders\\General',
       'readLoaderClassNameList' => [],
       'listLoaderClassNameList' => [],
       'saverClassNameList' => [],
@@ -68648,7 +70059,7 @@ výrobce VZV.
       'acl' => false,
       'notifications' => false,
       'object' => false,
-      'customizable' => false,
+      'customizable' => true,
       'module' => 'Crm',
       'workflow' => true
     ],
@@ -68740,7 +70151,8 @@ výrobce VZV.
         0 => 'accounts',
         1 => 'contacts',
         2 => 'leads',
-        3 => 'users'
+        3 => 'users',
+        4 => 'prospects'
       ],
       'disabled' => false,
       'statusField' => NULL,
@@ -69248,14 +70660,16 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'SalesOrder' => [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => 'recordAllAccountNo',
+      'aclPortal' => 'recordAllAccountContactNo',
       'module' => 'Accounting',
       'customizable' => true,
       'importable' => true,
@@ -69263,6 +70677,7 @@ výrobce VZV.
       'object' => true,
       'stream' => true,
       'statusField' => 'status',
+      'disabledPortal' => false,
       'kanbanStatusIgnoreList' => [
         0 => 'Cancelled'
       ],
@@ -69281,14 +70696,16 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'SupplierInvoice' => [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => 'recordAllAccountNo',
+      'aclPortal' => 'record',
       'module' => 'Accounting',
       'customizable' => true,
       'importable' => true,
@@ -69297,7 +70714,8 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'SupplierInvoiceItem' => [
       'entity' => true,
@@ -69636,7 +71054,7 @@ výrobce VZV.
     ],
     'PriceList' => [
       'acl' => true,
-      'aclPortal' => true,
+      'aclPortal' => 'record',
       'aclPortalLevelList' => [
         0 => 'all',
         1 => 'account',
@@ -69657,6 +71075,7 @@ výrobce VZV.
       'disabled' => false,
       'statusField' => NULL,
       'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false,
       'duplicateCheckFieldList' => []
     ],
     'Reclamation' => [
@@ -69806,7 +71225,9 @@ výrobce VZV.
       'stream' => true,
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'WarehousePosition' => [
       'entity' => true,
@@ -70226,7 +71647,9 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'aclPortal' => 'record',
+      'disabledPortal' => false
     ],
     'ProductionModelOperation' => [
       'entity' => true,
@@ -70249,7 +71672,7 @@ výrobce VZV.
       'object' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => false,
+      'aclPortal' => 'record',
       'customizable' => true,
       'importable' => true,
       'notifications' => true,
@@ -70257,7 +71680,8 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'WorkCenter' => [
       'entity' => true,
@@ -70281,7 +71705,7 @@ výrobce VZV.
       'object' => true,
       'tab' => true,
       'acl' => true,
-      'aclPortal' => false,
+      'aclPortal' => 'record',
       'customizable' => true,
       'importable' => true,
       'notifications' => true,
@@ -70289,7 +71713,8 @@ výrobce VZV.
       'module' => 'Production',
       'disabled' => false,
       'statusField' => NULL,
-      'kanbanStatusIgnoreList' => NULL
+      'kanbanStatusIgnoreList' => NULL,
+      'disabledPortal' => false
     ],
     'XmlTemplate' => [
       'entity' => true,
@@ -70915,6 +72340,32 @@ výrobce VZV.
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
     ],
+    'ItTask' => [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'statusField' => 'status',
+      'kanbanStatusIgnoreList' => NULL,
+      'duplicateCheckFieldList' => []
+    ],
     'JIRA' => [
       'entity' => true,
       'layouts' => true,
@@ -70941,12 +72392,64 @@ výrobce VZV.
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
     ],
-    'SalesOrderSummaryItem' => [
+    'Manufacturing' => [
       'entity' => true,
       'layouts' => true,
       'tab' => true,
       'acl' => true,
       'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true
+    ],
+    'Prospect' => [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => true,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'hasPersonalData' => true,
+      'duplicateCheckFieldList' => [
+        0 => 'name',
+        1 => 'emailAddress'
+      ]
+    ],
+    'SalesOrderSummaryItem' => [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => 'record',
+      'disabledPortal' => false,
       'aclPortalLevelList' => [
         0 => 'all',
         1 => 'account',
@@ -71018,6 +72521,29 @@ výrobce VZV.
       'statusField' => NULL,
       'kanbanStatusIgnoreList' => NULL,
       'duplicateCheckFieldList' => []
+    ],
+    'Tax' => [
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => [
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no'
+      ],
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true
     ],
     'Wiso' => [
       'entity' => true,
@@ -72149,6 +73675,7 @@ ifThen(
     ],
     'Warehouse' => [
       'beforeSaveCustomScript' => 'ifThen(name == null, name = product.name);
+ifThen(productName == null, productName = name);
 ifThen(isInfinity == true, quantity = 9999);
 ifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = availableBrno + availablePv);',
       'readLoaderCustomScript' => NULL,
@@ -72156,6 +73683,11 @@ ifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = ava
     ],
     'HumanResource' => [
       'beforeSaveCustomScript' => 'ifThen(vacationTimeCorrection != null, vacationDaysLeft = vacationTimeCorrection);',
+      'readLoaderCustomScript' => NULL,
+      'listLoaderCustomScript' => NULL
+    ],
+    'Product' => [
+      'beforeSaveCustomScript' => 'ifThen(warehouseId != null, defaultWarehouseId = warehouseId);',
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
@@ -72171,9 +73703,18 @@ ifThen(totalProduced == quantityPlanned, status = \'Completed\');
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
+    'SalesOrder' => [
+      'beforeSaveCustomScript' => 'ifThen(complexity == \'Easy\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 28)), deadline = datetime\\addDays(datetime\\today(), 14));
+ifThen(complexity == \'Easy\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 28)), internDeadline = datetime\\addDays(datetime\\today(), 14));
+ifThen(complexity == \'Hard\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 14)), deadline = datetime\\addDays(datetime\\today(), 28));
+ifThen(complexity == \'Hard\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));',
+      'readLoaderCustomScript' => NULL,
+      'listLoaderCustomScript' => NULL
+    ],
     'VacationRequest' => [
       'beforeSaveCustomScript' => 'ifThen(!humanResources, humanResourcesId = assignedUser.humanResourcesId);
 ifThen(statusOfApproval == \'Approved\', isApproved = 1);
+ifThen(name != \'Vacation Request\', name = \'Vacation Request\');
 ',
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL

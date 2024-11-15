@@ -5,6 +5,28 @@ define(['accounting:views/invoice-item/fields/name'], Dep => {
 
             this.listenTo(this.model, 'change:discount', this.handleDiscountChange);
             this.listenTo(this.model, 'change', this.handleSelectProductVisibility);
+
+            const priceListValue = this.getPriceListValue();
+            if (priceListValue) {
+                this.handlePriceListChange(priceListValue);
+            }
+        }
+        handlePriceListChange(newPriceListName) {
+            if (this.model && newPriceListName) {
+                this.updatePrice(this.model, newPriceListName);
+            } else {
+                console.error('Model or priceListName is not defined');
+            }
+        }
+        getPriceListValue() {
+            const inputElement = document.querySelector('input[data-name="priceListName"]');
+            if (inputElement) {
+                return inputElement ? inputElement.value : null;
+            } else {
+                const fieldElement = document.querySelector('div.field[data-name="priceList"] a');
+                return fieldElement ? fieldElement.textContent.trim() : null;
+            }
+
         }
 
         selectProduct(model) {
@@ -22,14 +44,14 @@ define(['accounting:views/invoice-item/fields/name'], Dep => {
                 }
             );
 
-            this.listenTo(this.getParentView().getParentView().getParentView(), 'priceTypeChange', (priceType) => {
-                this.updatePrice(model, priceType);
-            });
+            // this.listenTo(this.getParentView().getParentView().getParentView(), 'priceTypeChange', (priceType) => {
+            //     this.updatePrice(model, priceType);
+            // });
 
-            const initialPriceType = this.getParentView()
-                .getParentView()
-                .getParentView().priceType;
-
+            // const initialPriceType = this.getParentView()
+            //     .getParentView()
+            //     .getParentView().priceType;
+            const initialPriceType = this.getPriceListValue();
             this.updatePrice(model, initialPriceType);
 
             this.model.set(setData);

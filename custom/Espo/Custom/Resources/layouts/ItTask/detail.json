@@ -1,0 +1,45 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "url"
+                }
+            ],
+            [
+                {
+                    "name": "priority"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "start"
+                },
+                {
+                    "name": "finish"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "solution"
+                }
+            ],
+            [
+                {
+                    "name": "attachment"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

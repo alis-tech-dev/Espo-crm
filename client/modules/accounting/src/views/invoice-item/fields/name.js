@@ -114,48 +114,39 @@ define('accounting:views/invoice-item/fields/name', [
 			this.once('remove', () => this.$element.autocomplete('dispose'));
 		},
 
-		getAutocompleteOptions: function() {
-			return {
-				minChars: 1,
-				lookup: null,
-				autoSelectFirst: true,
-				noCache: true,
-				triggerSelectOnValidInput: false,
-				beforeRender: $c => {
-					if (this.$element.hasClass('input-sm')) {
-						$c.addClass('small');
-					}
-				},
-				formatResult: suggestion => {
-					return this.getHelper().escapeString(suggestion.value);
-				},
-				lookupFilter: (suggestion, _query, queryLowerCase) => {
-					if (
-						suggestion.value
-							.toLowerCase()
-							.indexOf(queryLowerCase) === 0
-					) {
-						return (
-							suggestion.value.length !== queryLowerCase.length
-						);
-					}
-
-					return false;
-				},
-				onSelect: s => {
-					this.getModelFactory().create('Product', model => {
-						model.set(s.attributes);
-
+        getAutocompleteOptions: function() {
+            return {
+                minChars: 1,
+                lookup: null,
+                autoSelectFirst: true,
+                noCache: true,
+                triggerSelectOnValidInput: false,
+                beforeRender: $c => {
+                    if (this.$element.hasClass('input-sm')) {
+                        $c.addClass('small');
+                    }
+                },
+                formatResult: suggestion => {
+                    return this.getHelper().escapeString(suggestion.value);
+                },
+                lookupFilter: (suggestion, _query, queryLowerCase) => {
+                    if (suggestion.value.toLowerCase().indexOf(queryLowerCase) === 0) {
+                        return suggestion.value.length !== queryLowerCase.length;
+                    }
+                    return false;
+                },
+				onSelect: (suggestion) => {
+					this.getModelFactory().create('Product', (model) => {
+						model.set(suggestion.attributes);
 						this.selectProduct(model);
-
 						this.$element.focus();
 					});
 				},
-				serviceUrl: q => this.getAutocompleteUrl(q),
-				transformResult: response =>
-					this.transformAutocompleteResult(response),
-			};
-		},
+                serviceUrl: q => this.getAutocompleteUrl(q),
+                transformResult: response => this.transformAutocompleteResult(response),
+            };
+        },
+
 
 		getAutocompleteUrl: function(q) {
 			const searchParams = this.getSearchParamsForAutocomplete(q);
@@ -192,7 +183,6 @@ define('accounting:views/invoice-item/fields/name', [
 					}
 				},
 			);
-
 			this.model.set(setData);
 
 			this.handleSelectProductVisibility();

@@ -3,8 +3,7 @@
         "parent": {
             "type": "linkParent",
             "entityList": [
-                "ProductionOrder",
-                "SalesOrder"
+                "ProductionOrder"
             ]
         },
         "producedAmount": {
@@ -21,7 +20,7 @@
         },
         "assignedUser": {
             "required": false,
-            "defaultSelectFilters": {}
+            "defaultSelectFilters": []
         },
         "stockLocation": {
             "type": "enum",
@@ -35,6 +34,10 @@
             },
             "default": "pv",
             "isCustom": true
+        },
+        "dateEnd": {
+            "default": "javascript: return this.dateTime.getDateTimeShiftedFromNow(4, 'hours', 15);",
+            "minuteStep": 30
         }
     },
     "links": {

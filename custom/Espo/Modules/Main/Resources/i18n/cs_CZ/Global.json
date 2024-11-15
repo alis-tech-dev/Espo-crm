@@ -351,12 +351,12 @@
 			"isEmpty": "Je prázdné",
 			"isNotEmpty": "Není prázdné",
 			"isOneOf": "Jeden z",
-			"isFromTeams": "Je z týmu",
+			"isFromTeams": "Je z týmů",
 			"isNot": "Není",
-			"isNotOneOf": "dný z",
+			"isNotOneOf": "Není jeden z",
 			"anyOf": "Kterýkoli z vybraných",
 			"allOf": "Všechny z",
-			"noneOf": "dný z",
+			"noneOf": "Žádný z",
 			"any": "Kterýkoli"
 		},
 		"varcharSearchRanges": {

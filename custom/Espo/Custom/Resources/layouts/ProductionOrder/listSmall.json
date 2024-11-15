@@ -57,12 +57,14 @@
         "label": "PerformWorkTime"
     },
     {
-        "name": "status",
-        "label": "status"
+        "name": "availableBrno"
     },
     {
-        "name": "avaliableQuantity",
-        "label": "AvaliableQuantity"
+        "name": "availablePv"
+    },
+    {
+        "name": "status",
+        "label": "status"
     },
     {
         "name": "quantityPlanned",

@@ -181,9 +181,13 @@ return [
   'Smernice' => 'Espo\\Modules\\Main\\Controllers\\Smernice',
   'SmerniceItem' => 'Espo\\Modules\\Main\\Controllers\\SmerniceItem',
   'ComplaintBook' => 'Espo\\Custom\\Controllers\\ComplaintBook',
+  'ItTask' => 'Espo\\Custom\\Controllers\\ItTask',
   'JIRA' => 'Espo\\Custom\\Controllers\\JIRA',
+  'Manufacturing' => 'Espo\\Custom\\Controllers\\Manufacturing',
+  'Prospect' => 'Espo\\Custom\\Controllers\\Prospect',
   'SalesOrderSummaryItem' => 'Espo\\Custom\\Controllers\\SalesOrderSummaryItem',
   'Seeker' => 'Espo\\Custom\\Controllers\\Seeker',
   'Selector' => 'Espo\\Custom\\Controllers\\Selector',
+  'Tax' => 'Espo\\Custom\\Controllers\\Tax',
   'Wiso' => 'Espo\\Custom\\Controllers\\Wiso'
 ];

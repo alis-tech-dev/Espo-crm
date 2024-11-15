@@ -79,7 +79,13 @@
         "url": "URL",
         "weight": "Weight",
         "productName": "Product  Code",
-        "isInvisible": "IsInvisible"
+        "isInvisible": "IsInvisible",
+        "listPrice": "List Price",
+        "listPriceCurrency": "List Price (Currency)",
+        "listPriceConverted": "List Price (Converted)",
+        "unitPrice": "Unit Price",
+        "unitPriceCurrency": "Unit Price (Currency)",
+        "unitPriceConverted": "Unit Price (Converted)"
     },
     "options": {
         "category": {
@@ -123,5 +129,10 @@
         "productCategory": "Product Category",
         "productionModel": "defaultProductionModel",
         "accounts": "Suppliers"
+    },
+    "tooltips": {
+        "availableQuantity": "Available quantity at the current date and time.",
+        "quantity": "Total produced or stocked quantity during the time.",
+        "productCategory": "When the products has the prefix A, it means Archive. In the folder tree is main folder Archive and inside it subfolders for each product folders as A_Projecotors."
     }
 }

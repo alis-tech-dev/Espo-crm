@@ -63,7 +63,8 @@
         "quantity": {
             "notNull": false,
             "type": "float",
-            "isCustom": true
+            "isCustom": true,
+            "tooltip": true
         },
         "category": {
             "type": "enum",
@@ -86,7 +87,8 @@
             "notNull": false,
             "type": "float",
             "isCustom": true,
-            "readOnly": true
+            "readOnly": true,
+            "tooltip": true
         },
         "position": {
             "type": "varchar",
@@ -108,7 +110,8 @@
         },
         "productCategory": {
             "type": "link",
-            "defaultSelectFilters": []
+            "defaultSelectFilters": {},
+            "tooltip": true
         },
         "isSerialNumber": {
             "notNull": true,
@@ -281,7 +284,8 @@
             "type": "varchar",
             "maxLength": 150,
             "options": [],
-            "isCustom": true
+            "isCustom": true,
+            "required": false
         },
         "qrCode": {
             "type": "barcode",
@@ -291,11 +295,13 @@
         },
         "salesPrice": {
             "type": "currency",
-            "isCustom": true
+            "isCustom": true,
+            "required": true
         },
         "salesPriceWithTax": {
             "type": "currency",
-            "isCustom": true
+            "isCustom": true,
+            "required": true
         },
         "accounts": {
             "type": "linkMultiple",
@@ -383,12 +389,24 @@
             "type": "varchar",
             "maxLength": 150,
             "options": [],
-            "isCustom": true
+            "isCustom": true,
+            "required": false
         },
         "isInvisible": {
             "notNull": true,
             "type": "bool",
             "isCustom": true
+        },
+        "listPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "unitPrice": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "name": {
+            "options": []
         }
     }
 }

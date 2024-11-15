@@ -1,0 +1,5 @@
+{
+    "beforeSaveCustomScript": "ifThen(complexity == 'Easy' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 28)), deadline = datetime\\addDays(datetime\\today(), 14));\nifThen(complexity == 'Easy' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 28)), internDeadline = datetime\\addDays(datetime\\today(), 14));\nifThen(complexity == 'Hard' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 14)), deadline = datetime\\addDays(datetime\\today(), 28));\nifThen(complexity == 'Hard' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));",
+    "readLoaderCustomScript": null,
+    "listLoaderCustomScript": null
+}

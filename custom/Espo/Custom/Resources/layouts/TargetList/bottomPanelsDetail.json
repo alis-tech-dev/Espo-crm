@@ -1,0 +1,24 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "stream": {
+        "sticked": true,
+        "index": 0
+    },
+    "prospects": {
+        "index": 1
+    },
+    "contacts": {
+        "index": 2
+    },
+    "leads": {
+        "index": 3
+    },
+    "accounts": {
+        "index": 4
+    },
+    "users": {
+        "index": 5
+    }
+}

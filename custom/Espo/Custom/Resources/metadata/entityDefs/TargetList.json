@@ -8,5 +8,28 @@
         "fullTextSearch": false,
         "countDisabled": false
     },
-    "optimisticConcurrencyControl": false
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "prospects": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "prospects": {
+            "type": "hasMany",
+            "relationName": "targetListProspect",
+            "foreign": "targetLists",
+            "entity": "Prospect",
+            "audited": false,
+            "isCustom": true
+        }
+    }
 }

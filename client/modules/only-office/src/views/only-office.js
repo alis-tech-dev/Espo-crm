@@ -113,7 +113,7 @@ define(['views/main'], Dep => {
                     customization: {
                         forcesave: true,
                     },
-                    lang: 'cs', //TODO: generalize?
+                    lang: 'en',
                     user: {
                         id: user.get('id'),
                         name: user.get('name'),

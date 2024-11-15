@@ -1,5 +1,5 @@
 {
-    "beforeSaveCustomScript": "ifThen(name == null, name = product.name);\nifThen(isInfinity == true, quantity = 9999);\nifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = availableBrno + availablePv);",
+    "beforeSaveCustomScript": "ifThen(name == null, name = product.name);\nifThen(productName == null, productName = name);\nifThen(isInfinity == true, quantity = 9999);\nifThenElse(isInfinity == true, availableQuantity = 9999, availableQuantity = availableBrno + availablePv);",
     "readLoaderCustomScript": null,
     "listLoaderCustomScript": null
 }

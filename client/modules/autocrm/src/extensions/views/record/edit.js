@@ -1,60 +1,50 @@
 extend(Dep => {
-	return class extends Dep {
-		afterNotValid() {
-			super.afterNotValid();
+    return class extends Dep {
+        afterNotValid() {
+            const firstErrorElement = this.$el.find(`.has-error`).first();
+            const labelText = firstErrorElement.find('.label-text').text();
+            super.afterNotValid();
 
-			// Find all invalid tab buttons
-			const firstInvalidTab = this.$el.find('.middle-tabs button.btn.invalid').first();
+            if (firstErrorElement.length) {
+                setTimeout(() => {
+                    const elementTop = firstErrorElement.offset().top;
+                    const elementHeight = firstErrorElement.outerHeight();
+                    const windowHeight = $(window).height();
 
-			// Click the first invalid tab button
-			if (firstInvalidTab) {
-				const tab = parseInt(firstInvalidTab.data('tab'));
+                    const targetScroll = elementTop - (windowHeight / 2) + (elementHeight / 2);
 
-				const firstErrorElement = this.$el.find(`.panel[data-tab="${tab}"] .has-error`).first();
+                    $('html, body').animate(
+                        {
+                            scrollTop: targetScroll,
+                        },
+                        500
+                    );
+                }, 100);
+            }
+            Espo.Ui.error(`Field "${labelText}" is required!`)
+        }
 
-				// In theory, the tab doesn't have any error fields
-				if (firstErrorElement) {
-					this.selectTab(tab, () => {
-						const elementTop = firstErrorElement.offset().top;
-						const elementHeight = firstErrorElement.outerHeight();
-						const windowHeight = $(window).height();
-						const scrollTop = $(window).scrollTop();
+        selectTab(tab, callback = null) {
+            this.currentTab = tab;
 
-						if (elementTop < scrollTop || elementTop + elementHeight > scrollTop + windowHeight) {
-							// Scroll to bring the element to the middle of the view
-							$('html, body').animate(
-								{
-									scrollTop: elementTop - windowHeight / 2 + elementHeight / 2,
-								},
-								500,
-							);
-						}
-					});
-				}
-			}
-		}
+            $('.popover.in').removeClass('in');
 
-		selectTab(tab, callback = null) {
-			this.currentTab = tab;
+            this.whenRendered().then(() => {
+                this.$el.find('.middle-tabs > button').removeClass('active');
+                this.$el.find(`.middle-tabs > button[data-tab="${tab}"]`).addClass('active');
 
-			$('.popover.in').removeClass('in');
+                this.$el.find('.middle > .panel[data-tab]').addClass('tab-hidden');
+                this.$el.find(`.middle > .panel[data-tab="${tab}"]`).removeClass('tab-hidden');
 
-			this.whenRendered().then(() => {
-				this.$el.find('.middle-tabs > button').removeClass('active');
-				this.$el.find(`.middle-tabs > button[data-tab="${tab}"]`).addClass('active');
+                this.adjustMiddlePanels();
+                this.recordHelper.trigger('panel-show');
 
-				this.$el.find('.middle > .panel[data-tab]').addClass('tab-hidden');
-				this.$el.find(`.middle > .panel[data-tab="${tab}"]`).removeClass('tab-hidden');
+                if (callback) {
+                    callback();
+                }
+            });
 
-				this.adjustMiddlePanels();
-				this.recordHelper.trigger('panel-show');
-
-				if (callback) {
-					callback();
-				}
-			});
-
-			this.storeTab();
-		}
-	};
+            this.storeTab();
+        }
+    };
 });
