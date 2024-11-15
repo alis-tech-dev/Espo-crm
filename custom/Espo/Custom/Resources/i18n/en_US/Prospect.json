@@ -11,10 +11,12 @@
         "targetLists": "Target Lists",
         "emailAddress": "Email",
         "targetListIsOptedOut": "Target List (Is Opted Out)",
-        "status": "Status"
+        "status": "Status",
+        "lead": "Created Lead"
     },
     "links": {
-        "targetLists": "Target Lists"
+        "targetLists": "Target Lists",
+        "lead": "Created Lead"
     },
     "labels": {
         "Create Prospect": "Create Prospect"

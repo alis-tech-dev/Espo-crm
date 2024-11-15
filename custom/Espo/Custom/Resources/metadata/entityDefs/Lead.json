@@ -36,6 +36,49 @@
             "type": "date",
             "dateWarning": true,
             "isCustom": true
+        },
+        "prospect": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "source": {
+            "options": [
+                "",
+                "SEO",
+                "PPC",
+                "LinkedIn",
+                "Call",
+                "Email",
+                "Reference",
+                "Veletrh",
+                "Reklama",
+                "Web Site",
+                "Veletrh 2021",
+                "Prospect search"
+            ],
+            "style": {
+                "": null,
+                "SEO": "success",
+                "PPC": "primary",
+                "LinkedIn": "primary",
+                "Call": "warning",
+                "Email": "info",
+                "Reference": "success",
+                "Veletrh": "info",
+                "Reklama": "primary",
+                "Web Site": "warning",
+                "Veletrh 2021": "danger",
+                "Prospect search": "success"
+            },
+            "displayAsLabel": true
+        }
+    },
+    "links": {
+        "prospect": {
+            "type": "hasOne",
+            "foreign": "lead",
+            "entity": "Prospect",
+            "isCustom": true
         }
     }
 }

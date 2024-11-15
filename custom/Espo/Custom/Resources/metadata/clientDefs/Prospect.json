@@ -8,6 +8,43 @@
     "relationshipPanels": {
         "targetLists": {
             "layout": null
+        },
+        "lead": {
+            "layout": null
+        }
+    },
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Convert to Lead",
+                    "name": "convertToLead",
+                    "action": "convertToLead",
+                    "style": "warning",
+                    "acl": "create",
+                    "aclScope": "Lead",
+                    "data": {
+                        "handler": "main:handlers/prospect/convert-to-lead"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "status": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Converted"
+                        }
+                    ]
+                }
+            }
         }
     }
 }

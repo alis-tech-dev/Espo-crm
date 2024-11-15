@@ -28,6 +28,12 @@
                 {
                     "name": "linkedIn"
                 }
+            ],
+            [
+                {
+                    "name": "lead"
+                },
+                false
             ]
         ],
         "style": "default",

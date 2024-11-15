@@ -131,6 +131,10 @@
             },
             "default": "New",
             "isCustom": true
+        },
+        "lead": {
+            "type": "link",
+            "isCustom": true
         }
     },
     "links": {
@@ -161,6 +165,12 @@
             },
             "entity": "TargetList",
             "audited": false,
+            "isCustom": true
+        },
+        "lead": {
+            "type": "belongsTo",
+            "foreign": "prospect",
+            "entity": "Lead",
             "isCustom": true
         }
     },

@@ -4,13 +4,31 @@
         "jesenoLead": "JesenoLead",
         "noEmail": "NoEmail",
         "statusPriority": "StatusPriority",
-        "lastContacted": "LastContacted"
+        "lastContacted": "LastContacted",
+        "prospect": "Prospect"
     },
     "options": {
         "statusPriority": {
             "Priority 1": "1",
             "Priority 2": "2",
             "Priority 3": "3"
+        },
+        "source": {
+            "": "",
+            "SEO": "SEO",
+            "PPC": "PPC",
+            "LinkedIn": "LinkedIn",
+            "Call": "Call",
+            "Email": "Email",
+            "Reference": "Reference",
+            "Veletrh": "Veletrh",
+            "Reklama": "Reklama",
+            "Web Site": "Web Site",
+            "Veletrh 2021": "Veletrh 2021",
+            "Prospect search": "Prospect search"
         }
+    },
+    "links": {
+        "prospect": "Prospect"
     }
 }
