@@ -73864,11 +73864,7 @@ ifThen(totalProduced == quantityPlanned, status = \'Completed\');
       'listLoaderCustomScript' => NULL
     ],
     'SalesOrder' => [
-      'beforeSaveCustomScript' => 'ifThen(complexity == \'Easy\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 28)), deadline = datetime\\addDays(datetime\\today(), 14));
-ifThen(complexity == \'Easy\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 28)), internDeadline = datetime\\addDays(datetime\\today(), 14));
-ifThen(complexity == \'Hard\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 14)), deadline = datetime\\addDays(datetime\\today(), 28));
-ifThen(complexity == \'Hard\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));
-',
+      'beforeSaveCustomScript' => NULL,
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
