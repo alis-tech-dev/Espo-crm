@@ -44489,13 +44489,13 @@ výrobce VZV.
           'style' => [
             'NearLaunch' => 'info',
             'Backlog' => 'info',
-            'OnHold' => NULL,
+            'OnHold' => 'warning',
             'ToDo' => 'primary',
             'HW' => 'info',
             'SW' => 'info',
             'Testing' => 'warning',
             'Done' => 'success',
-            'Archive' => NULL
+            'Archive' => 'primary'
           ],
           'displayAsLabel' => true,
           'audited' => true,

@@ -60,6 +60,7 @@ define(['action-handler'], Dep => {
         checkProductionStatus() {
             const productionStatus = this.view.model.get('productionStatus');
             const manufacturingReady = this.view.model.get('manufacturingReady');
+            const status = this.view.model.get('status');
 
             if (productionStatus === 'Done') {
                 const productionOrder = this.getOpenProductionOrder();
@@ -69,15 +70,19 @@ define(['action-handler'], Dep => {
                     Espo.Ui.error(`Production Order ${productionOrder.name} must have status "Completed" or\n"Planned Quantity" must be equal "Total Produced Quantity".`)
                     this.triggerCancel();
 
-                } else if (manufacturingReady !== this.getFormattedDate(currentDate)) {
+                } else if (manufacturingReady !== this.getFormattedDate(currentDate) && manufacturingReady === null) {
                     this.view.model.set('manufacturingReady', this.getFormattedDate(currentDate));
+                    this.view.model.set('status', 'Ready To Go');
                 }
 
             } else {
-
+                if (status === 'Ready To Go') {
+                    this.view.model.set('status', 'In Production');
+                }
                 if (manufacturingReady !== null) {
                     this.view.model.set('manufacturingReady', null);
                 }
+
             }
             this.controlVisibility();
         }

@@ -371,7 +371,18 @@
             "isCustom": true
         },
         "productionStatus": {
-            "tooltip": true
+            "tooltip": true,
+            "style": {
+                "NearLaunch": "info",
+                "Backlog": "info",
+                "OnHold": "warning",
+                "ToDo": "primary",
+                "HW": "info",
+                "SW": "info",
+                "Testing": "warning",
+                "Done": "success",
+                "Archive": "primary"
+            }
         },
         "deadline": {
             "default": "javascript: return this.dateTime.getToday();",

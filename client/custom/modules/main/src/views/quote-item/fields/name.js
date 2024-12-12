@@ -4,7 +4,6 @@ define(['accounting:views/invoice-item/fields/name'], Dep => {
             super.setup();
 
             this.listenTo(this.model, 'change:discount', this.handleDiscountChange);
-            this.listenTo(this.model, 'change', this.handleSelectProductVisibility);
 
             const priceListValue = this.getPriceListValue();
             if (priceListValue) {
@@ -44,13 +43,6 @@ define(['accounting:views/invoice-item/fields/name'], Dep => {
                 }
             );
 
-            // this.listenTo(this.getParentView().getParentView().getParentView(), 'priceTypeChange', (priceType) => {
-            //     this.updatePrice(model, priceType);
-            // });
-
-            // const initialPriceType = this.getParentView()
-            //     .getParentView()
-            //     .getParentView().priceType;
             const initialPriceType = this.getPriceListValue();
             this.updatePrice(model, initialPriceType);
 

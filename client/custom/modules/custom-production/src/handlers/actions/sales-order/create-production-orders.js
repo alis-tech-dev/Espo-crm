@@ -2,20 +2,24 @@ define(['action-handler'], Dep => {
     return class extends Dep {
         actionCreateProductionOrders() {
             const id = this.view.model.get('id');
+            const productionStatus = this.view.model.get('productionStatus');
 
             Espo.Ui.warning('Wait...');
             this.view.ajaxPostRequest(`SalesOrder/createProductionOrders/${id}`)
                 .then(response => {
                     switch (response.status) {
                         case 'Success':
-                            this.view.model.trigger('update-all');
-
-                            this.view.model.save({
-                                productionStatus: 'NearLaunch',
-                                status: 'In Production',
-                            }, { patch: true });
+                            // this.view.model.trigger('update-all');
+                            //
+                            // if (productionStatus !== 'NearLaunch')
+                            //
+                            // this.view.model.save({
+                            //     productionStatus: productionStatus,
+                            //     status: 'In Production',
+                            // }, { patch: true });
                             this.triggerUpdate();
-                            this.view.render();
+                            // this.view.render();
+                            // window.location.reload()
                             break;
                         case 'NoProducts':
                             this.triggerCancel();
