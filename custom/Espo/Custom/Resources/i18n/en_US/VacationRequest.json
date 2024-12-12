@@ -24,7 +24,8 @@
             "Medical": "Lékař",
             "Sick": "Sick Day",
             "Illness": "Pracovní neschopnost",
-            "PaidAbsence": "Placené volno "
+            "PaidAbsence": "Placené volno ",
+            "Home office": "Home office"
         },
         "statusOfApproval": {
             "AwaitingApproval": "Čeká na schválení",

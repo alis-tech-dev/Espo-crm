@@ -44,7 +44,8 @@
                 "Medical",
                 "Sick",
                 "Illness",
-                "PaidAbsence"
+                "PaidAbsence",
+                "Home office"
             ],
             "style": {
                 "Paid": null,
@@ -53,7 +54,8 @@
                 "Medical": null,
                 "Sick": null,
                 "Illness": null,
-                "PaidAbsence": null
+                "PaidAbsence": null,
+                "Home office": null
             },
             "default": "Paid",
             "isCustom": true

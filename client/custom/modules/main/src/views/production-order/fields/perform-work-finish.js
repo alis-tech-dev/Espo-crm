@@ -13,6 +13,7 @@ define(['views/fields/base'], Dep => {
 		}
 
         performWorkFinish () {
+            const initialButtonStates = this.toggleButtons(true);
             const id = this.model.get('id');
 
             this.ajaxPostRequest(`ProductionOrder/updatePerformWork/${id}`)
@@ -21,12 +22,20 @@ define(['views/fields/base'], Dep => {
                     if (status === 'Success') {
                         this.model.set('isPerform', false);
                         this.model.save().then(() => {
+                            this.restoreButtonStates(initialButtonStates);
                             this.enablePerformWorkButton();
                             Espo.Ui.success(`Perform work finished.`);
                         });
                     }
-            })
+                })
+                .catch(error => {
+                    console.error('Error during performWorkFinish:', error);
+                    Espo.Ui.error('An error occurred while finishing the work.');
+                })
+
         }
+
+
 
         enablePerformWorkButton () {
             const view = this.getParentView().getParentView().getParentView();
@@ -63,6 +72,30 @@ define(['views/fields/base'], Dep => {
         afterRender () {
             super.afterRender();
             this.enablePerformWorkButton();
+        }
+
+        toggleButtons(disable) {
+            const buttons = document.querySelectorAll(`
+                td[data-name="performWorkButton"] button[data-action="performWork"],
+                td[data-name="performWorkFinishButton"] button[data-action="performWorkFinish"]
+            `);
+
+            const buttonStates = Array.from(buttons).map(button => ({
+                element: button,
+                disabled: button.disabled,
+            }));
+
+            buttons.forEach(button => {
+                button.disabled = disable;
+            });
+
+            return buttonStates;
+        }
+
+        restoreButtonStates(buttonStates) {
+            buttonStates.forEach(({ element, disabled }) => {
+                element.disabled = disabled;
+            });
         }
     }
 });

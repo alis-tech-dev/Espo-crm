@@ -53,7 +53,9 @@
                 {
                     "name": "priceList"
                 },
-                false
+                {
+                    "name": "description"
+                }
             ]
         ],
         "style": "default",

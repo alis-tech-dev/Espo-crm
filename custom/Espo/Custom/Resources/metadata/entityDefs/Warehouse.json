@@ -64,7 +64,8 @@
             "notNull": false,
             "type": "float",
             "isCustom": true,
-            "tooltip": true
+            "tooltip": true,
+            "readOnly": true
         },
         "category": {
             "type": "enum",
@@ -123,14 +124,16 @@
             "type": "float",
             "min": null,
             "isCustom": true,
-            "default": 0
+            "default": 0,
+            "readOnly": true
         },
         "availablePv": {
             "notNull": false,
             "type": "float",
             "isCustom": true,
             "min": null,
-            "default": 0
+            "default": 0,
+            "readOnly": true
         },
         "alisId": {
             "type": "varchar",

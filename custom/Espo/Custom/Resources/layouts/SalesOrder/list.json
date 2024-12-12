@@ -4,8 +4,7 @@
         "widthPx": 130,
         "link": true,
         "align": "left",
-        "label": "Sales Order Number",
-        "view": "main:views\/sales-order\/record\/list"
+        "label": "Sales Order Number"
     },
     {
         "name": "createdAt",
@@ -43,5 +42,13 @@
         "widthPx": 150,
         "align": "left",
         "label": "Amount"
+    },
+    {
+        "name": "color",
+        "widthPx": 1,
+        "align": "left",
+        "view": "main:views\/sales-order\/record\/list",
+        "label": "Color",
+        "hidden": true
     }
 ]

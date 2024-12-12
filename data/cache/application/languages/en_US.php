@@ -1968,7 +1968,7 @@ It will also disable the ability to create a related record from relationship pa
       'ComplaintBook' => 'Complains Book',
       'Selector' => 'Projector Selector',
       'Wiso' => 'wiso',
-      'ItTask' => 'IT Marketing task',
+      'ItTask' => 'IT Tasks',
       'Tax' => 'Tax',
       'Manufacturing' => 'Manufacturing',
       'Prospect' => 'Prospects'
@@ -4623,7 +4623,8 @@ Available placeholders:
       'remainingVacationTime' => 'RemainingVacationTime',
       'jIRA' => 'J IRA',
       'itTasks' => 'It Tasks',
-      'isInvisible' => 'IsInvisible'
+      'isInvisible' => 'IsInvisible',
+      'massEmail' => 'Mass Email'
     ],
     'links' => [
       'defaultTeam' => 'Default Team',
@@ -4655,7 +4656,8 @@ Available placeholders:
       'tasks1' => 'Tasks1',
       'humanResources' => 'Human Resources',
       'jIRA' => 'J IRA',
-      'itTasks' => 'It Tasks'
+      'itTasks' => 'It Tasks',
+      'massEmail' => 'Mass Email'
     ],
     'labels' => [
       'Create User' => 'Create User',
@@ -5703,7 +5705,8 @@ Available placeholders:
       'jesenoLead' => 'JesenoLead',
       'noEmail' => 'NoEmail',
       'statusPriority' => 'StatusPriority',
-      'lastContacted' => 'LastContacted'
+      'lastContacted' => 'LastContacted',
+      'prospect' => 'Prospect'
     ],
     'links' => [
       'targetLists' => 'Target Lists',
@@ -5718,7 +5721,8 @@ Available placeholders:
       'relatedLead' => 'Související lead',
       'originalLead' => 'Originální lead',
       'leadsRight' => 'Leads Right',
-      'leadsLeft' => 'Leads Left'
+      'leadsLeft' => 'Leads Left',
+      'prospect' => 'Prospect'
     ],
     'options' => [
       'status' => [
@@ -5737,7 +5741,16 @@ Available placeholders:
         'Public Relations' => 'Public Relations',
         'Web Site' => 'Web Site',
         'Campaign' => 'Campaign',
-        'Other' => 'Other'
+        'Other' => 'Other',
+        '' => '',
+        'SEO' => 'SEO',
+        'PPC' => 'PPC',
+        'LinkedIn' => 'LinkedIn',
+        'Reference' => 'Reference',
+        'Veletrh' => 'Veletrh',
+        'Reklama' => 'Reklama',
+        'Veletrh 2021' => 'Veletrh 2021',
+        'Prospect search' => 'Prospect search'
       ],
       'convertedTo' => [
         '-' => '-',
@@ -5808,7 +5821,8 @@ Available placeholders:
       'targetLists' => 'Target Lists',
       'excludingTargetLists' => 'Excluding Target Lists',
       'optOutEntirely' => 'Opt-Out Entirely',
-      'smtpAccount' => 'SMTP Account'
+      'smtpAccount' => 'SMTP Account',
+      'user' => 'User'
     ],
     'links' => [
       'targetLists' => 'Target Lists',
@@ -5816,7 +5830,8 @@ Available placeholders:
       'queueItems' => 'Queue Items',
       'campaign' => 'Campaign',
       'emailTemplate' => 'Email Template',
-      'inboundEmail' => 'Email Account'
+      'inboundEmail' => 'Email Account',
+      'user' => 'User'
     ],
     'options' => [
       'status' => [
@@ -7956,6 +7971,16 @@ Example:
         'decimals' => 'decimals',
         'fifties' => 'fifties',
         'whole' => 'whole'
+      ],
+      'paymentMethod' => [
+        'draft' => 'draft',
+        'cash' => 'cash',
+        'postal delivery' => 'postal delivery',
+        'creditcard' => 'creditcard',
+        'advance' => 'advance',
+        'encashment' => 'encashment',
+        'cheque' => 'cheque',
+        'compensation' => 'compensation'
       ]
     ],
     'tooltips' => [
@@ -8419,7 +8444,8 @@ Example:
       'itemsList' => 'Warehouse Items',
       'reservedQuantity' => 'ReservedQuantity',
       'reservQuantity' => 'Reserved Quantity',
-      'manufacturings' => 'Manufacturings'
+      'manufacturings' => 'Manufacturings',
+      'color' => 'Color'
     ],
     'links' => [
       'items' => 'Items',
@@ -8594,7 +8620,8 @@ Very Hard - internal and external deadline must be set manually'
       'processed' => 'Pohoda Import',
       'vatId' => 'VAT ID',
       'sicCode' => 'SIC Code',
-      'salesOrder' => 'Zakázka'
+      'salesOrder' => 'Zakázka',
+      'totalAmount' => 'TotalAmount'
     ],
     'links' => [
       'items' => 'Items',
@@ -8610,6 +8637,19 @@ Very Hard - internal and external deadline must be set manually'
         'Confirmed' => 'Confirmed',
         'Paid' => 'Paid',
         'Rejected' => 'Rejected'
+      ],
+      'paymentMethod' => [
+        'draft' => 'draft',
+        'cash' => 'cash',
+        'postal' => 'postal',
+        'delivery' => 'delivery',
+        'creditcard' => 'creditcard',
+        'advance' => 'advance',
+        'encashment' => 'encashment',
+        'cheque' => 'cheque',
+        'compensation' => 'compensation',
+        'bank' => 'bank',
+        '' => ''
       ]
     ]
   ],
@@ -8925,7 +8965,8 @@ Very Hard - internal and external deadline must be set manually'
         'Medical' => 'Lékař',
         'Sick' => 'Sick Day',
         'Illness' => 'Pracovní neschopnost',
-        'PaidAbsence' => 'Placené volno '
+        'PaidAbsence' => 'Placené volno ',
+        'Home office' => 'Home office'
       ]
     ],
     'tooltips' => [
@@ -11163,7 +11204,8 @@ Very Hard - internal and external deadline must be set manually'
         'crm.alis-is' => 'crm.alis-is',
         'alis-is' => 'alis-is',
         'aledo-de.alis-is' => 'aledo-de',
-        'aledo-holding.alis-is' => 'aledo-holding'
+        'aledo-holding.alis-is' => 'aledo-holding',
+        '' => ''
       ],
       'queue' => [
         1 => '1',
@@ -11344,10 +11386,14 @@ Very Hard - internal and external deadline must be set manually'
       'targetLists' => 'Target Lists',
       'emailAddress' => 'Email',
       'targetListIsOptedOut' => 'Target List (Is Opted Out)',
-      'status' => 'Status'
+      'status' => 'Status',
+      'lead' => 'Created Lead',
+      'emailDb' => 'EmailDb',
+      'isChecked' => 'IsChecked'
     ],
     'links' => [
-      'targetLists' => 'Target Lists'
+      'targetLists' => 'Target Lists',
+      'lead' => 'Created Lead'
     ],
     'labels' => [
       'Create Prospect' => 'Create Prospect'

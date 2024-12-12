@@ -65,7 +65,7 @@ define(['views/modal'], Dep => {
 				entryKeyMap.set(item.entryKey, item);
 			}
 
-			for (const { description, ids } of this.entriesData) {
+			for (const { name, ids } of this.entriesData) {
 				const index = entries.length;
 				const id = `entry-${index}`;
 				const items = [];
@@ -79,7 +79,7 @@ define(['views/modal'], Dep => {
 				}
 
 				if (items.length > 0) {
-					entries.push({ index, id, description, items });
+					entries.push({ index, id, name, items });
 				}
 			}
 

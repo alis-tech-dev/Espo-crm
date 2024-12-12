@@ -153,15 +153,17 @@
                 "crm.alis-is",
                 "alis-is",
                 "aledo-de.alis-is",
-                "aledo-holding.alis-is"
+                "aledo-holding.alis-is",
+                ""
             ],
             "style": {
                 "crm.alis-is": "success",
                 "alis-is": "primary",
                 "aledo-de.alis-is": "warning",
-                "aledo-holding.alis-is": "danger"
+                "aledo-holding.alis-is": "danger",
+                "": null
             },
-            "default": "crm.alis-is",
+            "default": null,
             "isCustom": true
         },
         "queue": {

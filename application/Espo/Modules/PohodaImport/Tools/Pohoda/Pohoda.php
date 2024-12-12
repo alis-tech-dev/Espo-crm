@@ -114,18 +114,17 @@ class Pohoda {
 
 			$invoiceItems .= '
             <inv:invoiceItem>
-					<inv:text>' . $itemName . '</inv:text>
-					<inv:quantity>' . $quantity . '</inv:quantity>
-					<inv:payVAT>' . $withTax .'</inv:payVAT>
-					<inv:rateVAT>' . $rateVAT . '</inv:rateVAT>
-					<inv:unit>' . $unit . '</inv:unit>
-					<inv:discountPercentage>' . $discount . '</inv:discountPercentage>
-					<inv:homeCurrency>
-						<typ:unitPrice>' . $unitPrice . '</typ:unitPrice>
-					</inv:homeCurrency>
-					<inv:note>' . $unitPriceCurrency . '</inv:note>
-				</inv:invoiceItem>'
-			;
+                <inv:text>' . $itemName . '</inv:text>
+                <inv:quantity>' . $quantity . '</inv:quantity>
+                <inv:payVAT>' . $withTax .'</inv:payVAT>
+                <inv:rateVAT>' . $rateVAT . '</inv:rateVAT>
+                <inv:unit>' . $unit . '</inv:unit>
+                <inv:discountPercentage>' . $discount . '</inv:discountPercentage>
+                <inv:homeCurrency>
+                    <typ:unitPrice>' . $unitPrice . '</typ:unitPrice>
+                </inv:homeCurrency>
+                <inv:note>' . $unitPriceCurrency . '</inv:note>
+            </inv:invoiceItem>';
 
 		}
 
@@ -158,9 +157,17 @@ class Pohoda {
 
 		$statusCode = $this->getStatusCodeFromResponse($http_response_header);
 
+        $compressedResponse = $response;
+        $decodedResponse = gzdecode($compressedResponse);
+
 		if ($statusCode !== 200) {
 			throw new \Exception("Failed to send XML to Pohoda. Status code: {$statusCode}, Response: {$response}");
-		}
+		} else {
+            $this->debug('Pohoda Response Headers', ['headers' => $http_response_header]);
+            $this->debug('Pohoda Response Body', ['response' => $decodedResponse]);
+
+        }
+
 	}
 
 	private function getStatusCodeFromResponse(array $responseHeaders): int
@@ -170,6 +177,37 @@ class Pohoda {
 
 		return (int) ($matches[1] ?? 0);
 	}
+
+//    private function getRequestErrors($response)
+//    {
+//        if ($response) {
+////             Завантажуємо XML-рядок
+//            $xml = simplexml_load_string($response);
+//
+//            if ($xml === false) {
+//                // Обробка помилки у разі неможливості розпарсити XML
+//                throw new Exception('Помилка парсингу XML: ' . implode(", ", libxml_get_errors()));
+//            }
+//
+//            // Перевіряємо, чи є помилки в `responsePackItem`
+//            $responsePackItem = $xml->xpath('//rsp:responsePackItem');
+//            if (!empty($responsePackItem)) {
+//                foreach ($responsePackItem as $item) {
+//                    $state = (string)$item['state'];
+//                    $note = (string)$item['note'];
+//
+//                    if ($state === 'error') {
+//                        // Обробка помилок
+//                        echo "Помилка: $note\n";
+//                    }
+//                }
+//            } else {
+//                echo "Помилок немає у відповіді.\n";
+//            }
+//        } else {
+//            echo "Відповідь відсутня.\n";
+//        }
+//    }
 
 
 

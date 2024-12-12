@@ -5,8 +5,7 @@
             "AdvanceDeductionItem": "Invoice",
             "QuoteItem": "Quote",
             "SalesOrderItem": "SalesOrder",
-            "PurchaseOrderItem": "PurchaseOrder",
-            "SupplierInvoiceItem": "SupplierInvoice"
+            "PurchaseOrderItem": "PurchaseOrder"
         }
     }
 }

@@ -274,7 +274,6 @@ return [
           'QuoteItem' => 'Quote',
           'SalesOrderItem' => 'SalesOrder',
           'PurchaseOrderItem' => 'PurchaseOrder',
-          'SupplierInvoiceItem' => 'SupplierInvoice',
           'EducationAndTrainingRecord' => 'HumanResource',
           'MedicalExamination' => 'HumanResource',
           'OtherEvent' => 'HumanResource',
@@ -476,7 +475,6 @@ return [
           'QuoteItem' => 'Quote',
           'SalesOrderItem' => 'SalesOrder',
           'PurchaseOrderItem' => 'PurchaseOrder',
-          'SupplierInvoiceItem' => 'SupplierInvoice',
           'EducationAndTrainingRecord' => 'HumanResource',
           'MedicalExamination' => 'HumanResource',
           'OtherEvent' => 'HumanResource',
@@ -7478,6 +7476,9 @@ return [
         ],
         'itTasks' => [
           'layout' => NULL
+        ],
+        'massEmail' => [
+          'layout' => NULL
         ]
       ],
       'layoutDefaultSidePanelDisabled' => true,
@@ -8947,6 +8948,9 @@ return [
           'rowActionsView' => 'crm:views/record/row-actions/relationship-target',
           'layout' => 'listForTarget',
           'view' => 'crm:views/record/panels/target-lists'
+        ],
+        'prospect' => [
+          'layout' => NULL
         ]
       ],
       'filterList' => [
@@ -9152,6 +9156,11 @@ return [
         1 => [
           'name' => 'complete',
           'style' => 'success'
+        ]
+      ],
+      'relationshipPanels' => [
+        'user' => [
+          'layout' => NULL
         ]
       ]
     ],
@@ -15017,6 +15026,15 @@ return [
                   ]
                 ]
               ]
+            ],
+            'required' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'equals',
+                  'attribute' => 'complexity',
+                  'value' => 'Very Hard'
+                ]
+              ]
             ]
           ],
           'complexity' => [
@@ -15039,6 +15057,15 @@ return [
                       'value' => 'Hard'
                     ]
                   ]
+                ]
+              ]
+            ],
+            'required' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'equals',
+                  'attribute' => 'complexity',
+                  'value' => 'Very Hard'
                 ]
               ]
             ]
@@ -15193,9 +15220,6 @@ return [
     ],
     'SupplierInvoiceItem' => [
       'controller' => 'controllers/record',
-      'acl' => 'accounting:acl/invoice-item',
-      'createDisabled' => true,
-      'removeDisabled' => true,
       'convertCurrencyDisabled' => true,
       'menu' => [
         'list' => [
@@ -18576,6 +18600,42 @@ return [
       'relationshipPanels' => [
         'targetLists' => [
           'layout' => NULL
+        ],
+        'lead' => [
+          'layout' => NULL
+        ]
+      ],
+      'menu' => [
+        'detail' => [
+          'buttons' => [
+            0 => [
+              'label' => 'Convert to Lead',
+              'name' => 'convertToLead',
+              'action' => 'convertToLead',
+              'style' => 'warning',
+              'acl' => 'create',
+              'aclScope' => 'Lead',
+              'data' => [
+                'handler' => 'main:handlers/prospect/convert-to-lead'
+              ],
+              'initFunction' => 'init'
+            ]
+          ]
+        ]
+      ],
+      'dynamicLogic' => [
+        'fields' => [
+          'status' => [
+            'readOnly' => [
+              'conditionGroup' => [
+                0 => [
+                  'type' => 'equals',
+                  'attribute' => 'status',
+                  'value' => 'Converted'
+                ]
+              ]
+            ]
+          ]
         ]
       ]
     ],
@@ -28390,6 +28450,10 @@ return [
           'type' => 'bool',
           'isCustom' => true
         ],
+        'massEmail' => [
+          'type' => 'linkOne',
+          'isCustom' => true
+        ],
         'middleName' => [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -28654,6 +28718,12 @@ return [
           'foreign' => 'users',
           'entity' => 'ItTask',
           'audited' => false,
+          'isCustom' => true
+        ],
+        'massEmail' => [
+          'type' => 'hasOne',
+          'foreign' => 'user',
+          'entity' => 'MassEmail',
           'isCustom' => true
         ]
       ],
@@ -33159,22 +33229,25 @@ return [
             7 => 'Veletrh',
             8 => 'Reklama',
             9 => 'Web Site',
-            10 => 'Veletrh 2021'
+            10 => 'Veletrh 2021',
+            11 => 'Prospect search'
           ],
           'customizationOptionsReferenceDisabled' => true,
           'style' => [
             '' => NULL,
-            'SEO' => NULL,
-            'PPC' => NULL,
-            'LinkedIn' => NULL,
-            'Call' => NULL,
-            'Email' => NULL,
-            'Reference' => NULL,
-            'Veletrh' => NULL,
-            'Reklama' => NULL,
-            'Web Site' => NULL,
-            'Veletrh 2021' => NULL
-          ]
+            'SEO' => 'success',
+            'PPC' => 'primary',
+            'LinkedIn' => 'primary',
+            'Call' => 'warning',
+            'Email' => 'info',
+            'Reference' => 'success',
+            'Veletrh' => 'info',
+            'Reklama' => 'primary',
+            'Web Site' => 'warning',
+            'Veletrh 2021' => 'danger',
+            'Prospect search' => 'success'
+          ],
+          'displayAsLabel' => true
         ],
         'industry' => [
           'type' => 'enum',
@@ -33631,6 +33704,10 @@ return [
           'dateWarning' => true,
           'isCustom' => true
         ],
+        'prospect' => [
+          'type' => 'linkOne',
+          'isCustom' => true
+        ],
         'middleName' => [
           'type' => 'varchar',
           'maxLength' => 100,
@@ -33828,6 +33905,12 @@ return [
           'entity' => 'Lead',
           'audited' => false,
           'isCustom' => true
+        ],
+        'prospect' => [
+          'type' => 'hasOne',
+          'foreign' => 'lead',
+          'entity' => 'Prospect',
+          'isCustom' => true
         ]
       ],
       'convertEntityList' => [
@@ -34000,6 +34083,10 @@ return [
         'modifiedBy' => [
           'type' => 'link',
           'readOnly' => true
+        ],
+        'user' => [
+          'type' => 'link',
+          'isCustom' => true
         ]
       ],
       'links' => [
@@ -34039,6 +34126,12 @@ return [
           'type' => 'hasMany',
           'entity' => 'EmailQueueItem',
           'foreign' => 'massEmail'
+        ],
+        'user' => [
+          'type' => 'belongsTo',
+          'foreign' => 'massEmail',
+          'entity' => 'User',
+          'isCustom' => true
         ]
       ],
       'collection' => [
@@ -41084,7 +41177,7 @@ return [
           'type' => 'sequenceNumber',
           'format' => 'VF{YYYY}-{number}',
           'reset' => 'Yearly',
-          'padLength' => 5,
+          'padLength' => 6,
           'disabled' => true,
           'prefix' => '2020',
           'nextNumber' => 83
@@ -41330,18 +41423,29 @@ return [
         'paymentMethod' => [
           'type' => 'enum',
           'options' => [
-            0 => 'bank',
-            1 => 'card',
-            2 => 'cash',
-            3 => 'cod'
+            0 => 'draft',
+            1 => 'cash',
+            2 => 'postal delivery',
+            3 => 'creditcard',
+            4 => 'advance',
+            5 => 'encashment',
+            6 => 'cheque',
+            7 => 'compensation'
           ],
           'style' => [
             'bank' => NULL,
             'card' => NULL,
             'cash' => NULL,
-            'cod' => NULL
+            'cod' => NULL,
+            'draft' => NULL,
+            'postal delivery' => NULL,
+            'creditcard' => NULL,
+            'advance' => NULL,
+            'encashment' => NULL,
+            'cheque' => NULL,
+            'compensation' => NULL
           ],
-          'default' => 'bank',
+          'default' => 'draft',
           'tooltip' => true
         ],
         'constantSymbol' => [
@@ -44878,7 +44982,8 @@ výrobce VZV.
           'default' => 'javascript: return this.dateTime.getToday();',
           'useNumericFormat' => true,
           'audited' => true,
-          'isCustom' => true
+          'isCustom' => true,
+          'required' => false
         ],
         'quotes' => [
           'type' => 'linkMultiple',
@@ -45085,6 +45190,13 @@ výrobce VZV.
           'exportDisabled' => true,
           'customizationDisabled' => true,
           'isCustom' => true
+        ],
+        'color' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true,
+          'notStorable' => true
         ],
         'billingAddressStreet' => [
           'type' => 'text',
@@ -46059,15 +46171,16 @@ výrobce VZV.
         ],
         'number' => [
           'type' => 'varchar',
-          'maxLength' => '100',
-          'readOnly' => true,
-          'tooltip' => true
+          'maxLength' => 100,
+          'readOnly' => false,
+          'tooltip' => true,
+          'options' => []
         ],
         'numberA' => [
           'type' => 'sequenceNumber',
           'format' => 'PF{YYYY}-{number}',
           'reset' => 'Yearly',
-          'padLength' => 5,
+          'padLength' => 6,
           'disabled' => true
         ],
         'status' => [
@@ -46243,20 +46356,32 @@ výrobce VZV.
         'paymentMethod' => [
           'type' => 'enum',
           'options' => [
-            0 => 'bank',
-            1 => 'card',
-            2 => 'cash',
-            3 => 'cod',
-            4 => 'collection'
+            0 => 'draft',
+            1 => 'cash',
+            2 => 'postal',
+            3 => 'delivery',
+            4 => 'creditcard',
+            5 => 'advance',
+            6 => 'encashment',
+            7 => 'cheque',
+            8 => 'compensation'
           ],
           'style' => [
             'bank' => NULL,
             'card' => NULL,
             'cash' => NULL,
             'cod' => NULL,
-            'collection' => NULL
+            'collection' => NULL,
+            'draft' => NULL,
+            'postal' => NULL,
+            'delivery' => NULL,
+            'creditcard' => NULL,
+            'advance' => NULL,
+            'encashment' => NULL,
+            'cheque' => NULL,
+            'compensation' => NULL
           ],
-          'default' => 'bank',
+          'default' => 'draft',
           'tooltip' => true
         ],
         'constantSymbol' => [
@@ -46373,6 +46498,12 @@ výrobce VZV.
         ],
         'salesOrder' => [
           'type' => 'link'
+        ],
+        'totalAmount' => [
+          'notNull' => false,
+          'type' => 'float',
+          'default' => 0,
+          'isCustom' => true
         ],
         'billingAddressStreet' => [
           'type' => 'text',
@@ -46625,7 +46756,7 @@ výrobce VZV.
         ],
         'supplierInvoice' => [
           'type' => 'link',
-          'readOnly' => true
+          'readOnly' => false
         ],
         'product' => [
           'type' => 'link'
@@ -48706,7 +48837,8 @@ výrobce VZV.
             3 => 'Medical',
             4 => 'Sick',
             5 => 'Illness',
-            6 => 'PaidAbsence'
+            6 => 'PaidAbsence',
+            7 => 'Home office'
           ],
           'style' => [
             'Paid' => NULL,
@@ -48715,7 +48847,8 @@ výrobce VZV.
             'Medical' => NULL,
             'Sick' => NULL,
             'Illness' => NULL,
-            'PaidAbsence' => NULL
+            'PaidAbsence' => NULL,
+            'Home office' => NULL
           ],
           'default' => 'Paid',
           'isCustom' => true
@@ -51618,7 +51751,8 @@ výrobce VZV.
           'notNull' => false,
           'type' => 'float',
           'isCustom' => true,
-          'tooltip' => true
+          'tooltip' => true,
+          'readOnly' => true
         ],
         'category' => [
           'type' => 'enum',
@@ -51677,14 +51811,16 @@ výrobce VZV.
           'type' => 'float',
           'min' => NULL,
           'isCustom' => true,
-          'default' => 0
+          'default' => 0,
+          'readOnly' => true
         ],
         'availablePv' => [
           'notNull' => false,
           'type' => 'float',
           'isCustom' => true,
           'min' => NULL,
-          'default' => 0
+          'default' => 0,
+          'readOnly' => true
         ],
         'alisId' => [
           'type' => 'varchar',
@@ -63311,15 +63447,17 @@ výrobce VZV.
             0 => 'crm.alis-is',
             1 => 'alis-is',
             2 => 'aledo-de.alis-is',
-            3 => 'aledo-holding.alis-is'
+            3 => 'aledo-holding.alis-is',
+            4 => ''
           ],
           'style' => [
             'crm.alis-is' => 'success',
             'alis-is' => 'primary',
             'aledo-de.alis-is' => 'warning',
-            'aledo-holding.alis-is' => 'danger'
+            'aledo-holding.alis-is' => 'danger',
+            '' => NULL
           ],
-          'default' => 'crm.alis-is',
+          'default' => NULL,
           'isCustom' => true
         ],
         'queue' => [
@@ -63932,6 +64070,22 @@ výrobce VZV.
             'Lost' => 'danger'
           ],
           'default' => 'New',
+          'isCustom' => true,
+          'displayAsLabel' => true
+        ],
+        'lead' => [
+          'type' => 'link',
+          'isCustom' => true
+        ],
+        'emailDb' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
+          'isCustom' => true
+        ],
+        'isChecked' => [
+          'notNull' => true,
+          'type' => 'bool',
           'isCustom' => true
         ],
         'emailAddressIsOptedOut' => [
@@ -64003,6 +64157,12 @@ výrobce VZV.
           ],
           'entity' => 'TargetList',
           'audited' => false,
+          'isCustom' => true
+        ],
+        'lead' => [
+          'type' => 'belongsTo',
+          'foreign' => 'prospect',
+          'entity' => 'Lead',
           'isCustom' => true
         ]
       ],
@@ -70720,11 +70880,11 @@ výrobce VZV.
     'SupplierInvoiceItem' => [
       'entity' => true,
       'layouts' => true,
-      'tab' => false,
-      'acl' => false,
+      'tab' => true,
+      'acl' => true,
       'module' => 'Accounting',
       'customizable' => true,
-      'importable' => false,
+      'importable' => true,
       'notifications' => false,
       'object' => true,
       'stream' => true,
@@ -73707,7 +73867,8 @@ ifThen(totalProduced == quantityPlanned, status = \'Completed\');
       'beforeSaveCustomScript' => 'ifThen(complexity == \'Easy\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 28)), deadline = datetime\\addDays(datetime\\today(), 14));
 ifThen(complexity == \'Easy\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 28)), internDeadline = datetime\\addDays(datetime\\today(), 14));
 ifThen(complexity == \'Hard\' && (deadline == datetime\\today() || deadline == null || deadline == datetime\\addDays(datetime\\today(), 14)), deadline = datetime\\addDays(datetime\\today(), 28));
-ifThen(complexity == \'Hard\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));',
+ifThen(complexity == \'Hard\' && (internDeadline == datetime\\today() || internDeadline == null || internDeadline == datetime\\addDays(datetime\\today(), 14)), internDeadline = datetime\\addDays(datetime\\today(), 28));
+',
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ],
@@ -73727,6 +73888,11 @@ ifThen(name != \'Vacation Request\', name = \'Vacation Request\');
     'Wiso' => [
       'beforeSaveCustomScript' => 'ifThen(name == null, name = salesOrder1.name);
 ifThen(itemName == null, itemName = warehouseItem1.name);',
+      'readLoaderCustomScript' => NULL,
+      'listLoaderCustomScript' => NULL
+    ],
+    'WorkPerformed' => [
+      'beforeSaveCustomScript' => NULL,
       'readLoaderCustomScript' => NULL,
       'listLoaderCustomScript' => NULL
     ]

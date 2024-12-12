@@ -53,6 +53,7 @@ define(['views/fields/base'], Dep => {
 				parentId: this.model.id,
 				parentType: 'ProductionOrder',
 				productionOrderId: this.model.id,
+				name: "Perform Work\n" + this.model.get("name")
 			};
 
 			this.createView(
@@ -123,10 +124,7 @@ define(['views/fields/base'], Dep => {
             const remainingQuantity = quantityPlanned - quantityProduced - fromWarehouse;
             let producedAmount = workPerformedModel.get('producedAmount');
 
-			if (!producedAmount && producedAmount !== 0) {
-				const errorMessage = `Produced amount cannot be empty.`;
-				return [false, errorMessage];
-			} else if ((items.length > 0)) {
+			if (items.length > 0) {
 				for (let i = 0; i < items.length; i++) {
 					const item = items[i];
 					if (item.quantity > item.stockQuantity) {
@@ -134,6 +132,11 @@ define(['views/fields/base'], Dep => {
 						return [false, errorMessage];
 					}
 				}
+			}
+
+			if (!producedAmount && producedAmount !== 0) {
+				const errorMessage = `Produced amount cannot be empty.`;
+				return [false, errorMessage];
 			} else if (producedAmount < 1) {
 				const errorMessage = `Produced amount cannot be less than "1".`;
 				workPerformedModel.set('producedAmount', remainingQuantity);

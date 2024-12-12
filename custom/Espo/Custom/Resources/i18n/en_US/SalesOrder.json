@@ -44,7 +44,8 @@
         "itemsList": "Warehouse Items",
         "reservedQuantity": "ReservedQuantity",
         "reservQuantity": "Reserved Quantity",
-        "manufacturings": "Manufacturings"
+        "manufacturings": "Manufacturings",
+        "color": "Color"
     },
     "links": {
         "salesOrderSummaryItems": "Položka shrnutí zakázky",

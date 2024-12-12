@@ -33,6 +33,24 @@ define(['views/fields/base'], Dep => {
             super.afterRender();
             this.checkProductionStatus();
         }
+
+        triggerUpdate() {
+            const updateButton = document.querySelector('.inline-save-link');
+            if (updateButton) {
+                updateButton.click();
+            } else {
+                console.warn('Update button not found.');
+            }
+        }
+
+        triggerCancel() {
+            const cancelButton = document.querySelector('.inline-cancel-link');
+            if (cancelButton) {
+                cancelButton.click();
+            } else {
+                console.warn('Cancel button not found.');
+            }
+        }
     };
 });
 

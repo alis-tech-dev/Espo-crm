@@ -29,6 +29,8 @@
 
 namespace Espo\Modules\Crm\Tools\MassEmail;
 
+use Espo\Core\Exceptions\BadRequest;
+use Espo\Core\Mail\Smtp\HandlerProcessor;
 use Laminas\Mail\Message;
 
 use Espo\Core\Mail\Account\GroupAccount\AccountFactory;
@@ -59,6 +61,7 @@ use Espo\ORM\Entity;
 use Espo\Tools\EmailTemplate\Data as TemplateData;
 use Espo\Tools\EmailTemplate\Params as TemplateParams;
 use Espo\Tools\EmailTemplate\Processor as TemplateProcessor;
+use Espo\Core\Utils\Crypt;
 
 use Exception;
 use DateTime;
@@ -77,7 +80,9 @@ class SendingProcessor
         private AccountFactory $accountFactory,
         private CampaignService $campaignService,
         private MessageHeadersPreparator $headersPreparator,
-        private TemplateProcessor $templateProcessor
+        private TemplateProcessor $templateProcessor,
+        private HandlerProcessor $handlerProcessor,
+        private Crypt $crypt
     ) {}
 
     /**

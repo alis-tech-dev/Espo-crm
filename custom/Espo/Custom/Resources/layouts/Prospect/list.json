@@ -47,5 +47,8 @@
         "widthPx": 90,
         "align": "left",
         "label": "Created At"
+    },
+    {
+        "name": "modifiedAt"
     }
 ]

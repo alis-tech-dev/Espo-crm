@@ -27,12 +27,13 @@
             ],
             [
                 {
-                    "name": "quantityPlanned",
-                    "label": "Quantity Planned"
+                    "name": "quantityPlanned"
                 },
                 {
-                    "name": "quantityProduced",
-                    "label": "Quantity Produced"
+                    "name": "quantityProduced"
+                },
+                {
+                    "name": "isPerform"
                 }
             ],
             [

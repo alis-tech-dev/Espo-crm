@@ -8,7 +8,7 @@
 					class="form-checkbox entry-checkbox"
 					id="{{id}}"
 				>
-				<label for="{{id}}" class="checklist-label entry-label">{{description}}</label>
+				<label for="{{id}}" class="checklist-label entry-label">{{name}}</label>
 			</div>
 			<div class="entry-items">
 				{{#each items}}

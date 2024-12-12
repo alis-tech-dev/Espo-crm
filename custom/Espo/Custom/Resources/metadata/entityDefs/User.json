@@ -61,6 +61,10 @@
             "notNull": true,
             "type": "bool",
             "isCustom": true
+        },
+        "massEmail": {
+            "type": "linkOne",
+            "isCustom": true
         }
     },
     "links": {
@@ -92,6 +96,12 @@
             "foreign": "users",
             "entity": "ItTask",
             "audited": false,
+            "isCustom": true
+        },
+        "massEmail": {
+            "type": "hasOne",
+            "foreign": "user",
+            "entity": "MassEmail",
             "isCustom": true
         }
     }

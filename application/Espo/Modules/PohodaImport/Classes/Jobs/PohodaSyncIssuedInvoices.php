@@ -48,6 +48,7 @@ class PohodaSyncIssuedInvoices implements JobDataLess
 		$shippingAddressStreet = htmlspecialchars($invoice->get('shippingAddressStreet'));
 		$shippingAddressPostalCode = htmlspecialchars($invoice->get('shippingAddressPostalCode'));
 		$company = htmlspecialchars($invoice->get('accountName'));
+        $contact = htmlspecialchars($invoice->get('contactName'));
 
         $invoiceItems = $this->pohoda->getInvoiceItems($invoice, 'InvoiceItem', 'items');
 
@@ -57,6 +58,9 @@ class PohodaSyncIssuedInvoices implements JobDataLess
         else{
             $dueDate = '';
         }
+        $amount = htmlspecialchars($invoice->get('amount'));
+        $totalAmount = htmlspecialchars($invoice->get('totalAmount'));
+        $paymentMethod = htmlspecialchars($invoice->get('paymentMethod'));
 
         $account = $this->entityManager
             ->getRDBRepository('Invoice')
@@ -76,6 +80,12 @@ class PohodaSyncIssuedInvoices implements JobDataLess
 			$phone = htmlspecialchars($account->get('phoneNumber'));
 
 		}
+        if (!$name) {
+            $name = 'Faktura bez názvu';
+        }
+        if (!$symvar) {
+            $symvar = 0;
+        }
 
 		$xmlData = '<?xml version="1.0" encoding="Windows-1250"?>
 <dat:dataPack version="2.0" id="Usr01" ico="11223344" key="521d4e05-f032-465e-8150-f423d1b98197" programVersion="13700.208 (30.5.2024)" application="Transformace" note="Uživatelský export" xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd">
@@ -93,21 +103,17 @@ class PohodaSyncIssuedInvoices implements JobDataLess
 				<inv:partnerIdentity>
 					<typ:address>
 						<typ:company>' . $company . '</typ:company>
+						<typ:name>' . $contact . '</typ:name>
 						<typ:street>' . $billingAddressStreet . '</typ:street>
 						<typ:city>' . $billingAddressCity . '</typ:city>
 						<typ:zip>' . $billingAddressPostalCode . '</typ:zip>
 						<typ:ico>' . $sicCode . '</typ:ico>
 						<typ:dic>' . $vatId . '</typ:dic>
-						<typ:phone>' . $phone . '</typ:phone>
-						<typ:email>' . $email . '</typ:email>
 					</typ:address>
-					<typ:shipToAddress>
-						<typ:company>' . $company . '</typ:company>
-						<typ:street>' . $shippingAddressStreet . '</typ:street>
-						<typ:city>' . $shippingAddressCity . '</typ:city>
-						<typ:zip>' . $shippingAddressPostalCode . '</typ:zip>
-				    </typ:shipToAddress>
 				</inv:partnerIdentity>
+                <inv:paymentType>
+                    <typ:paymentType>' . $paymentMethod . '</typ:paymentType>
+                </inv:paymentType>
 				<inv:numberOrder>' . $orderNumber . '</inv:numberOrder>
 				<inv:symConst>' . $symconst . '</inv:symConst>
 			</inv:invoiceHeader>

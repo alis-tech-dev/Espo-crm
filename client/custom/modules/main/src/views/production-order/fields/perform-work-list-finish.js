@@ -14,6 +14,7 @@ define(['views/fields/base'], Dep => {
 
         performWorkFinish () {
             const id = this.model.id;
+            const initialButtonStates = this.toggleButtons(true);
 
             this.ajaxPostRequest(`ProductionOrder/updatePerformWork/${id}`)
                 .then(_response => {
@@ -21,10 +22,15 @@ define(['views/fields/base'], Dep => {
                     if (status === 'Success') {
                         this.model.set('isPerform', false);
                         this.model.save().then(() => {
+                            this.restoreButtonStates(initialButtonStates);
                             this.enablePerformWorkButton();
                             Espo.Ui.success(`Perform work finished.`);
                         });
                     }
+                })
+                .catch(error => {
+                    console.error('Error during performWorkFinish:', error);
+                    Espo.Ui.error('An error occurred while finishing the work.');
                 })
         }
 
@@ -59,6 +65,30 @@ define(['views/fields/base'], Dep => {
             super.afterRender();
             this.enablePerformWorkButton();
 
+        }
+
+        toggleButtons(disable) {
+            const buttons = document.querySelectorAll(`
+                td[data-name="performWorkButton"] button[data-action="performWork"],
+                td[data-name="performWorkFinishButton"] button[data-action="performWorkFinish"]
+            `);
+
+            const buttonStates = Array.from(buttons).map(button => ({
+                element: button,
+                disabled: button.disabled,
+            }));
+
+            buttons.forEach(button => {
+                button.disabled = disable;
+            });
+
+            return buttonStates;
+        }
+
+        restoreButtonStates(buttonStates) {
+            buttonStates.forEach(({ element, disabled }) => {
+                element.disabled = disabled;
+            });
         }
     }
 });

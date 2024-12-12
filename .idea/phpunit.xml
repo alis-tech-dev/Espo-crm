@@ -38,12 +38,12 @@
         <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/opis/closure/tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/composer/package-versions-deprecated/tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/league/mime-type-detection/tests" />
-        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/dragonmantank/cron-expression/tests" />
+        <option value="$PROJECT_DIR$/application/Espo/Modules/AccountingCz/vendor/cetria/isdoc/Tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/johngrogg/ics-parser/tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/dragonmantank/cron-expression/tests" />
-        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/dragonmantank/cron-expression/tests" />
-        <option value="$PROJECT_DIR$/application/Espo/Modules/AccountingCz/vendor/cetria/isdoc/Tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/5fa66ecd9ab66d4e4/vendorFiles/nikic/fast-route/test" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/645783c62d1164d2b/vendorFiles/dragonmantank/cron-expression/tests" />
+        <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/dragonmantank/cron-expression/tests" />
         <option value="$PROJECT_DIR$/data/upload/upgrades/6454d24441d5cc070/vendorFiles/johngrogg/ics-parser/tests" />
       </list>
     </option>

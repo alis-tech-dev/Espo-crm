@@ -89,6 +89,15 @@
                             ]
                         }
                     ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "complexity",
+                            "value": "Very Hard"
+                        }
+                    ]
                 }
             },
             "complexity": {
@@ -111,6 +120,15 @@
                                     "value": "Hard"
                                 }
                             ]
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "complexity",
+                            "value": "Very Hard"
                         }
                     ]
                 }

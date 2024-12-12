@@ -14263,6 +14263,24 @@ return [
         'fieldType' => 'linkMultiple',
         'isLinkStub' => false
       ],
+      'massEmailId' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'linkOne',
+        'relation' => 'massEmail',
+        'foreign' => 'id',
+        'foreignType' => 'id'
+      ],
+      'massEmailName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'linkOne',
+        'relation' => 'massEmail',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
       'salesOrdersIds' => [
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14463,6 +14481,12 @@ return [
         'key' => 'avatarId',
         'foreignKey' => 'id',
         'foreign' => NULL
+      ],
+      'massEmail' => [
+        'type' => 'hasOne',
+        'entity' => 'MassEmail',
+        'foreignKey' => 'userId',
+        'foreign' => 'user'
       ],
       'itTasks' => [
         'type' => 'manyMany',
@@ -27595,6 +27619,24 @@ return [
         'foreign' => 'name',
         'foreignType' => 'varchar'
       ],
+      'prospectId' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'linkOne',
+        'relation' => 'prospect',
+        'foreign' => 'id',
+        'foreignType' => 'id'
+      ],
+      'prospectName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'linkOne',
+        'relation' => 'prospect',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -27791,6 +27833,12 @@ return [
             'key' => 'UNIQ_ENTITY_ID_PHONE_NUMBER_ID_ENTITY_TYPE'
           ]
         ]
+      ],
+      'prospect' => [
+        'type' => 'hasOne',
+        'entity' => 'Prospect',
+        'foreignKey' => 'leadId',
+        'foreign' => 'lead'
       ],
       'originalLead' => [
         'type' => 'belongsTo',
@@ -28420,6 +28468,24 @@ return [
         'foreign' => 'name',
         'foreignType' => 'varchar'
       ],
+      'userId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'userName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'user',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
       'queueItemsIds' => [
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -28432,6 +28498,13 @@ return [
       ]
     ],
     'relations' => [
+      'user' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'userId',
+        'foreignKey' => 'id',
+        'foreign' => 'massEmail'
+      ],
       'queueItems' => [
         'type' => 'hasMany',
         'entity' => 'EmailQueueItem',
@@ -28577,6 +28650,13 @@ return [
           0 => 'modifiedById'
         ],
         'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'userId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'userId'
+        ],
+        'key' => 'IDX_USER_ID'
       ]
     ],
     'collection' => [
@@ -46113,7 +46193,7 @@ return [
       ],
       'paymentMethod' => [
         'type' => 'varchar',
-        'default' => 'bank',
+        'default' => 'draft',
         'fieldType' => 'varchar',
         'len' => 255
       ],
@@ -56066,6 +56146,12 @@ výrobce VZV.
         'foreign' => 'quantity',
         'fieldType' => 'foreignMultiple'
       ],
+      'color' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'notStorable' => true,
+        'fieldType' => 'varchar'
+      ],
       'billingAddressStreet' => [
         'type' => 'text',
         'dbType' => 'varchar',
@@ -60342,7 +60428,7 @@ výrobce VZV.
       ],
       'number' => [
         'type' => 'varchar',
-        'len' => '100',
+        'len' => 100,
         'fieldType' => 'varchar'
       ],
       'numberA' => [
@@ -60519,7 +60605,7 @@ výrobce VZV.
       ],
       'paymentMethod' => [
         'type' => 'varchar',
-        'default' => 'bank',
+        'default' => 'draft',
         'fieldType' => 'varchar',
         'len' => 255
       ],
@@ -60570,6 +60656,12 @@ výrobce VZV.
         'type' => 'varchar',
         'len' => 20,
         'fieldType' => 'varchar'
+      ],
+      'totalAmount' => [
+        'type' => 'float',
+        'notNull' => false,
+        'default' => 0,
+        'fieldType' => 'float'
       ],
       'billingAddressStreet' => [
         'type' => 'text',
@@ -102952,7 +103044,7 @@ výrobce VZV.
       ],
       'cRM' => [
         'type' => 'varchar',
-        'default' => 'crm.alis-is',
+        'default' => NULL,
         'fieldType' => 'varchar',
         'len' => 255
       ],
@@ -104174,6 +104266,17 @@ výrobce VZV.
         'fieldType' => 'varchar',
         'len' => 255
       ],
+      'emailDb' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
+      'isChecked' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
+      ],
       'emailAddressIsOptedOut' => [
         'type' => 'bool',
         'notNull' => true,
@@ -104833,6 +104936,24 @@ výrobce VZV.
         'attributeRole' => 'name',
         'fieldType' => 'link'
       ],
+      'leadId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'leadName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'lead',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -104939,6 +105060,13 @@ výrobce VZV.
             'key' => 'UNIQ_ENTITY_ID_PHONE_NUMBER_ID_ENTITY_TYPE'
           ]
         ]
+      ],
+      'lead' => [
+        'type' => 'belongsTo',
+        'entity' => 'Lead',
+        'key' => 'leadId',
+        'foreignKey' => 'id',
+        'foreign' => 'prospect'
       ],
       'targetLists' => [
         'type' => 'manyMany',
@@ -105089,6 +105217,13 @@ výrobce VZV.
           0 => 'assignedUserId'
         ],
         'key' => 'IDX_ASSIGNED_USER_ID'
+      ],
+      'leadId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'leadId'
+        ],
+        'key' => 'IDX_LEAD_ID'
       ]
     ],
     'collection' => [

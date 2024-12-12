@@ -342,13 +342,7 @@ return (object) [
       'delete' => 'no',
       'create' => 'yes'
     ],
-    'SupplierInvoiceItem' => (object) [
-      'read' => 'all',
-      'stream' => 'all',
-      'edit' => 'all',
-      'delete' => 'no',
-      'create' => 'yes'
-    ],
+    'SupplierInvoiceItem' => false,
     'UnreliablePayer' => false,
     'VatNumberValidation' => false,
     'Attendance' => false,

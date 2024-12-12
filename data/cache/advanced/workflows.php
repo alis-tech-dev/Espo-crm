@@ -343,6 +343,32 @@ ifThen(status == "New", status = "First contact");
         ],
         'portalOnly' => false
       ]
+    ],
+    'Lead' => [
+      '67375b2bd45d97fa8' => [
+        'actions' => [
+          0 => (object) [
+            'link' => 'prospect',
+            'fieldList' => [
+              0 => 'status'
+            ],
+            'fields' => (object) [
+              'status' => (object) [
+                'subjectType' => 'value',
+                'attributes' => (object) [
+                  'status' => 'Converted'
+                ]
+              ]
+            ],
+            'cid' => 0,
+            'id' => '7h4xnhowhf',
+            'parentEntityType' => NULL,
+            'formula' => NULL,
+            'type' => 'updateRelatedEntity'
+          ]
+        ],
+        'portalOnly' => false
+      ]
     ]
   ],
   'afterRecordUpdated' => [

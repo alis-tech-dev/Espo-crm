@@ -12,7 +12,9 @@
         "emailAddress": "Email",
         "targetListIsOptedOut": "Target List (Is Opted Out)",
         "status": "Status",
-        "lead": "Created Lead"
+        "lead": "Created Lead",
+        "emailDb": "EmailDb",
+        "isChecked": "IsChecked"
     },
     "links": {
         "targetLists": "Target Lists",

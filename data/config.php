@@ -1,6 +1,6 @@
 <?php
 return [
-  'cacheTimestamp' => 1731681708,
+  'cacheTimestamp' => 1733931858,
   'useCache' => true,
   'recordsPerPage' => 100,
   'isDeveloperMode' => false,
@@ -24,7 +24,7 @@ return [
   'currencyRates' => [
     'CZK' => 0.04
   ],
-  'outboundEmailIsShared' => true,
+  'outboundEmailIsShared' => false,
   'outboundEmailFromName' => 'Alis-Tech s.r.o.',
   'outboundEmailFromAddress' => 'alis@alis-tech.com',
   'smtpServer' => 'smtp.gmail.com',
@@ -399,10 +399,10 @@ return [
   'googleMapsApiKey' => NULL,
   'integrations' => (object) [
     'GoogleMaps' => false,
-    'Google' => false,
+    'Google' => true,
     'OnlyOffice' => true,
     'mattermost' => true,
-    'Pohoda' => false,
+    'Pohoda' => true,
     'MoneyS3' => false
   ],
   'personNameFormat' => 'firstLast',
@@ -411,7 +411,7 @@ return [
   ],
   'massEmailVerp' => false,
   'newNotificationCountInTitle' => false,
-  'microtime' => 1731681708.956479,
+  'microtime' => 1733931858.880184,
   'busyRangesEntityList' => [
     0 => 'Meeting',
     1 => 'Call'

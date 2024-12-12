@@ -1,8 +1,24 @@
 {
     "fields": {
-        "salesOrder": "Zakázka"
+        "salesOrder": "Zakázka",
+        "totalAmount": "TotalAmount"
     },
     "links": {
         "salesOrder": "Zakázka"
+    },
+    "options": {
+        "paymentMethod": {
+            "draft": "draft",
+            "cash": "cash",
+            "postal": "postal",
+            "delivery": "delivery",
+            "creditcard": "creditcard",
+            "advance": "advance",
+            "encashment": "encashment",
+            "cheque": "cheque",
+            "compensation": "compensation",
+            "bank": "bank",
+            "": ""
+        }
     }
 }

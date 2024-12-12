@@ -2,6 +2,7 @@
 
 namespace Espo\Modules\Autocrm\Classes\Abstract\Controllers;
 
+use AsyncAws\Core\Sts\ValueObject\Tag;
 use Espo\Core\Api\{
     Request,
     Response,

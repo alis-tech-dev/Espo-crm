@@ -1,11 +1,11 @@
 {
     "entity": true,
     "layouts": true,
-    "tab": false,
-    "acl": false,
+    "tab": true,
+    "acl": true,
     "module": "Accounting",
     "customizable": true,
-    "importable": false,
+    "importable": true,
     "notifications": false,
     "object": true
 }

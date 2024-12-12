@@ -5,6 +5,42 @@
         },
         "dateInvoiced": {
             "required": true
+        },
+        "number": {
+            "maxLength": 100,
+            "readOnly": false,
+            "options": []
+        },
+        "totalAmount": {
+            "notNull": false,
+            "type": "float",
+            "default": 0,
+            "isCustom": true
+        },
+        "paymentMethod": {
+            "options": [
+                "draft",
+                "cash",
+                "postal",
+                "delivery",
+                "creditcard",
+                "advance",
+                "encashment",
+                "cheque",
+                "compensation"
+            ],
+            "style": {
+                "draft": null,
+                "cash": null,
+                "postal": null,
+                "delivery": null,
+                "creditcard": null,
+                "advance": null,
+                "encashment": null,
+                "cheque": null,
+                "compensation": null
+            },
+            "default": "draft"
         }
     },
     "links": {

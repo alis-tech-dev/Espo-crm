@@ -54,7 +54,8 @@
             "crm.alis-is": "crm.alis-is",
             "alis-is": "alis-is",
             "aledo-de.alis-is": "aledo-de",
-            "aledo-holding.alis-is": "aledo-holding"
+            "aledo-holding.alis-is": "aledo-holding",
+            "": ""
         },
         "queue": {
             "1": "1",

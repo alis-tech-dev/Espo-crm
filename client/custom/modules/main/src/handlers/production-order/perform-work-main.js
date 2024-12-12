@@ -52,6 +52,7 @@ define(['action-handler'], Dep => {
                     id: model?.id,
                     attributes: {
                         productionOrderId: this.view.model.id,
+                        name: "Perform Work\n" + this.view.model.get("name")
                     },
                 },
                 modalView => {

@@ -455,6 +455,7 @@ return (object) [
     'TaxClass' => false,
     'DeliveryNote' => false,
     'HandoverProtocol' => false,
+    'SupplierInvoiceItem' => false,
     'UnreliablePayer' => false,
     'VatNumberValidation' => false,
     'Attendance' => false,
@@ -583,13 +584,6 @@ return (object) [
       'create' => 'yes'
     ],
     'PurchaseOrderItem' => false,
-    'SupplierInvoiceItem' => (object) [
-      'read' => 'all',
-      'stream' => 'all',
-      'edit' => 'all',
-      'delete' => 'no',
-      'create' => 'yes'
-    ],
     'EducationAndTrainingRecord' => (object) [
       'read' => 'all',
       'stream' => 'no',

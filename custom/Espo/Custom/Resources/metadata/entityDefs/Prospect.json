@@ -130,10 +130,22 @@
                 "Lost": "danger"
             },
             "default": "New",
-            "isCustom": true
+            "isCustom": true,
+            "displayAsLabel": true
         },
         "lead": {
             "type": "link",
+            "isCustom": true
+        },
+        "emailDb": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "isChecked": {
+            "notNull": true,
+            "type": "bool",
             "isCustom": true
         }
     },

@@ -13,7 +13,7 @@
             "type": "sequenceNumber",
             "format": "I{YYYY}-{number}",
             "reset": "Yearly",
-            "padLength": 5,
+            "padLength": 6,
             "disabled": true
         },
         "status": {

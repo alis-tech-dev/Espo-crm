@@ -9,13 +9,15 @@
         "remainingVacationTime": "RemainingVacationTime",
         "jIRA": "J IRA",
         "itTasks": "It Tasks",
-        "isInvisible": "IsInvisible"
+        "isInvisible": "IsInvisible",
+        "massEmail": "Mass Email"
     },
     "links": {
         "vacationRequest": "Vacation Request",
         "tasks1": "Tasks1",
         "humanResources": "Human Resources",
         "jIRA": "J IRA",
-        "itTasks": "It Tasks"
+        "itTasks": "It Tasks",
+        "massEmail": "Mass Email"
     }
 }

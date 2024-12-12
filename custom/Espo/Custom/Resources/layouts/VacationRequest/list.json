@@ -15,28 +15,28 @@
     },
     {
         "name": "numberOfDays",
-        "label": "Number of hours"
+        "label": "Počet hodin"
     },
     {
         "name": "statusOfApproval",
         "align": "left",
-        "label": "Approval Status",
+        "label": "Stav schválení",
         "isEditable": true
     },
     {
         "name": "createdAt",
-        "label": "Created At"
-    },
-    {
-        "name": "humanResources",
-        "label": "Approved by"
+        "label": "Vytvořeno"
     },
     {
         "name": "assignedUser",
         "label": "Requested by"
     },
     {
+        "name": "humanResources",
+        "label": "Approved by"
+    },
+    {
         "name": "createdBy",
-        "label": "Created By"
+        "label": "Vytvořil"
     }
 ]

@@ -11,7 +11,8 @@ define(['action-handler'], Dep => {
                             this.view.model.trigger('update-all');
 
                             this.view.model.save({
-                                productionStatus: 'Backlog',
+                                productionStatus: 'NearLaunch',
+                                status: 'In Production',
                             }, { patch: true });
                             this.triggerUpdate();
                             this.view.render();

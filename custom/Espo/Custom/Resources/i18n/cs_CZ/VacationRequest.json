@@ -4,5 +4,17 @@
         "numberOfDaysLeftBefore": "Počet zbývajících hodin dovolené uživatele před dovolenou",
         "numberOfDays": "Počet hodin",
         "vacationDays": "Počet dní"
+    },
+    "options": {
+        "type": {
+            "Paid": "Dovolená",
+            "NonPaid": "Neplacené volno",
+            "Exchange": "Náhradní volno",
+            "Medical": "Lékař",
+            "Sick": "Sick Day",
+            "Illness": "Pracovní neschopnost",
+            "PaidAbsence": "Placené volno ",
+            "Home office": "Home office"
+        }
     }
 }

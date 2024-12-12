@@ -7,28 +7,33 @@ define(['action-handler'], Dep => {
                 'change:productionStatus',
                 this.checkProductionStatus.bind(this)
             );
-            // this.view.listenTo(
-            //     this.view.model,
-            //     'change:complexity',
-            //     this.checkComplexity.bind(this)
-            // );
+            this.view.listenTo(this.view.model, 'change:complexity', this.showNotify.bind(this))
         }
+        showNotify() {
+            const complexity = this.view.model.get('complexity');
+
+            if (complexity === "Very Hard") {
+                this.view.model.set('deadline', null)
+                this.view.model.set('internDeadline', null)
+                
+                Espo.Ui.error(this.view.translate('!!! ATTENTION !!!\nFields "Deadline" and "Internal Deadline"\nmust be set manually!'))
+            }
+        }
+
         checkProductionStatus() {
             const productionStatus = this.view.model.get('productionStatus');
             const manufacturingReady = this.view.model.get('manufacturingReady');
+
 
             if (productionStatus === 'Done') {
                 const currentDate = new Date();
                 if (manufacturingReady !== this.getFormattedDate(currentDate)) {
                     this.view.model.set('manufacturingReady', this.getFormattedDate(currentDate));
-                    this.triggerUpdate();
-                    Espo.Ui.success(this.view.translate('Manufacturing ready date updated.'));
                 }
             } else {
                 if (manufacturingReady !== null) {
                     this.view.model.set('manufacturingReady', null);
                 }
-                this.triggerCancel();
             }
             this.controlVisibility();
         }
@@ -39,26 +44,6 @@ define(['action-handler'], Dep => {
             const year = date.getFullYear();
             return `${year}-${month}-${day}`;
         }
-
-        // checkComplexity() {
-        //     const prevComplexity = this.view.model.previous('complexity');
-        //     const complexity = this.view.model.get('complexity');
-        //     const deadline = this.view.model.get('deadline');
-        //     const internDeadline = this.view.model.get('internDeadline');
-        //     const currentDate = new Date();
-        //     const data = {
-        //         'Easy': 14,
-        //         'Hard': 28
-        //     }
-
-        //         currentDate.setDate(currentDate.getDate() + data[complexity]);
-        //         const formattedResultDate = this.getFormattedDate(currentDate);
-        //         this.view.model.set('deadline', formattedResultDate);
-        //         this.view.model.set('internDeadline', formattedResultDate);
-
-        //     this.triggerUpdate();
-        //     this.controlVisibility();
-        // }
 
         triggerUpdate() {
             const updateButton = document.querySelector('.inline-save-link');

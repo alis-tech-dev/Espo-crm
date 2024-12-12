@@ -51,17 +51,21 @@ define(['action-handler'], Dep => {
 			Espo.Ui.notify(' ... ');
 
 			const id = this.view.model.id;
+			const quoteName = this.view.model.get("name")
 			const response = await Espo.Ajax.getRequest(
 				'QuoteConversion/salesOrderAttributes/' + id,
 			);
-    			const priceType = this.view.model.get('priceListId');
+			const priceType = this.view.model.get('priceListId');
+			const priceTypeName = this.view.model.get('priceListName');
 			const attributes = response.attributes;
 
 			attributes['itemsRecordList'] = newItems;
 			attributes['salesOrderEntryData'] = entryData;
 			attributes['status'] = 'Draft';
 			attributes['quoteId'] = id;
-    			attributes['priceList1Id'] = priceType;
+			attributes['quoteName'] = quoteName;
+			attributes['priceList1Id'] = priceType;
+			attributes['priceList1Name'] = priceTypeName;
 
 			const router = this.view.getRouter();
 
