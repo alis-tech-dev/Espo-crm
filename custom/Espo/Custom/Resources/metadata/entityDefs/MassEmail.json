@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "user": {
+            "type": "link",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "user": {
+            "type": "belongsTo",
+            "foreign": "massEmail",
+            "entity": "User",
+            "isCustom": true
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "options": {
+        "paymentMethod": {
+            "draft": "draft",
+            "cash": "cash",
+            "postal delivery": "postal delivery",
+            "creditcard": "creditcard",
+            "advance": "advance",
+            "encashment": "encashment",
+            "cheque": "cheque",
+            "compensation": "compensation"
+        }
+    }
+}

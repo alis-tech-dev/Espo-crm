@@ -1,0 +1,35 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "number",
+        "label": "Number"
+    },
+    {
+        "name": "originalNumber",
+        "label": "originalNumber"
+    },
+    {
+        "name": "account",
+        "label": "Account"
+    },
+    {
+        "name": "status",
+        "label": "Status"
+    },
+    {
+        "name": "dueDate",
+        "label": "dueDate"
+    },
+    {
+        "name": "grandTotalAmount",
+        "align": "right",
+        "label": "Grand Total Amount"
+    },
+    {
+        "name": "totalAmount"
+    }
+]
