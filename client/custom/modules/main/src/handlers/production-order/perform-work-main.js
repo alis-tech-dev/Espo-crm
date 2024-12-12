@@ -93,37 +93,39 @@ define(['action-handler'], Dep => {
             const productionOrderModel = this.view.model;
             const quantityPlanned = productionOrderModel.get('quantityPlanned');
             const quantityProduced = productionOrderModel.get('quantityProduced');
-            const fromWarehouse = productionOrderModel.get('fromWarehouse');
-            const totalQuantity = quantityProduced + fromWarehouse;
+			const fromWarehouse = productionOrderModel.get('fromWarehouse');
+			const totalQuantity = quantityProduced + fromWarehouse;
             const remainingQuantity = quantityPlanned - quantityProduced - fromWarehouse;
             let producedAmount = workPerformedModel.get('producedAmount');
 
-            if (!producedAmount && producedAmount !== 0) {
-                const errorMessage = `Produced amount cannot be empty.`;
-                return [false, errorMessage];
-            } else if ((items.length > 0)) {
-                for (let i = 0; i < items.length; i++) {
-                    const item = items[i];
-                    if (item.quantity > item.stockQuantity) {
-                        const errorMessage = `Not enough "${item.name}" available quantity in the stock for perform work.`;
-                        return [false, errorMessage];
-                    }
-                }
-            } else if (producedAmount < 1) {
-                const errorMessage = `Produced amount cannot be less than "1".`;
-                workPerformedModel.set('producedAmount', remainingQuantity);
-                return [false, errorMessage];
-            } else if (remainingQuantity <= 0) {
-                const errorMessage = `Production order already completed.\n* Planned quantity: ${quantityPlanned} *\n* Total quantity: ${totalQuantity} *`;
-                return [false, errorMessage];
-            } else if (producedAmount > remainingQuantity) {
-                const errorMessage = `Produced amount cannot exceed "${remainingQuantity}".`;
-                workPerformedModel.set('producedAmount', remainingQuantity);
-                return [false, errorMessage];
-            } else {
-                const message = `Perform work successfully created for "${productionOrderModel.get('name')}" with quantity ${producedAmount}.`;
-                return [true, message];
-            }
+			if (items.length > 0) {
+				for (let i = 0; i < items.length; i++) {
+					const item = items[i];
+					if (item.quantity > item.stockQuantity) {
+						const errorMessage = `Not enough "${item.name}" available quantity in the stock for perform work.`;
+						return [false, errorMessage];
+					}
+				}
+			}
+
+			if (!producedAmount && producedAmount !== 0) {
+				const errorMessage = `Produced amount cannot be empty.`;
+				return [false, errorMessage];
+			} else if (producedAmount < 1) {
+				const errorMessage = `Produced amount cannot be less than "1".`;
+				workPerformedModel.set('producedAmount', remainingQuantity);
+				return [false, errorMessage];
+			} else if (remainingQuantity <= 0) {
+				const errorMessage = `Production order already completed.\n* Planned quantity: ${quantityPlanned} *\n* Total quantity: ${totalQuantity} *`;
+				return [false, errorMessage];
+			} else if (producedAmount > remainingQuantity) {
+				const errorMessage = `Produced amount cannot exceed "${remainingQuantity}".`;
+				workPerformedModel.set('producedAmount', remainingQuantity);
+				return [false, errorMessage];
+			} else {
+				const message = `Perform work successfully created for "${productionOrderModel.get('name')}" with quantity ${producedAmount}.`;
+				return [true, message];
+			}
 
         }
     };

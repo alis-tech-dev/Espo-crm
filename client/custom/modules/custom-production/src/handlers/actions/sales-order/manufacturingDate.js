@@ -61,13 +61,20 @@ define(['action-handler'], Dep => {
             const productionStatus = this.view.model.get('productionStatus');
             const manufacturingReady = this.view.model.get('manufacturingReady');
 
-
             if (productionStatus === 'Done') {
+                const productionOrder = this.getOpenProductionOrder();
                 const currentDate = new Date();
-                if (manufacturingReady !== this.getFormattedDate(currentDate)) {
+
+                if (productionOrder) {
+                    Espo.Ui.error(`Production Order ${productionOrder.name} must have status "Completed" or\n"Planned Quantity" must be equal "Total Produced Quantity".`)
+                    this.triggerCancel();
+
+                } else if (manufacturingReady !== this.getFormattedDate(currentDate)) {
                     this.view.model.set('manufacturingReady', this.getFormattedDate(currentDate));
                 }
+
             } else {
+
                 if (manufacturingReady !== null) {
                     this.view.model.set('manufacturingReady', null);
                 }
@@ -100,9 +107,22 @@ define(['action-handler'], Dep => {
             }
         }
 
-       controlVisibility() {
+        controlVisibility() {
             this.view.hideHeaderActionItem('manufacturingDate');
         }
 
+        getOpenProductionOrder() {
+            const orders = this.view.model.get("productionOrdersRecordList");
+            for (const order of orders) {
+                const planned = order.quantityPlanned
+                const produced = order.totalProduced
+
+                const total = produced - planned
+                if (order.status !== 'Completed' || total !== 0) {
+                    return order
+                }
+            }
+            return null;
+        }
     }
 });
