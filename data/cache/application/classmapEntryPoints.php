@@ -20,6 +20,5 @@ return [
   'ViewInBrowser' => 'Espo\\Modules\\Autocrm\\EntryPoints\\ViewInBrowser',
   'MattermostCreateTaskOptions' => 'Espo\\Modules\\Mattermost\\EntryPoints\\MattermostCreateTaskOptions',
   'GetFileOnlyOffice' => 'Espo\\Modules\\OnlyOffice\\EntryPoints\\GetFileOnlyOffice',
-  'Xml' => 'Espo\\Modules\\ExportXml\\EntryPoints\\Xml',
-  'ImageForPdf' => 'Espo\\Modules\\Main\\EntryPoints\\ImageForPdf'
+  'Xml' => 'Espo\\Modules\\ExportXml\\EntryPoints\\Xml'
 ];

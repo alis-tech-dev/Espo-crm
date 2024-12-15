@@ -39,5 +39,16 @@
         ],
         "style": "default",
         "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
     }
 ]

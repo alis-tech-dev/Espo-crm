@@ -43158,7 +43158,7 @@ return (object) [
         ],
         'items' => (object) [
           'type' => 'linkMultiple',
-          'view' => 'accounting:views/fields/items',
+          'view' => 'main:views/quote/fields/entries',
           'recordListEnabled' => true,
           'recordListLayout' => 'listItem',
           'recordListMandatorySelectAttributeList' => [

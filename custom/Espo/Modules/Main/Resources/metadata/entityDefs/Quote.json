@@ -28,6 +28,7 @@
 			"layoutListDisabled": true
 		},
 		"items": {
+            "view": "main:views/quote/fields/entries",
 			"recordListMandatorySelectAttributeList": [
 				"__APPEND__",
 				"entryKey",
