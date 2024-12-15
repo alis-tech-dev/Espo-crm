@@ -41401,7 +41401,8 @@ return [
         'processed' => [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'readOnly' => true
         ],
         'dueDate' => [
           'notNull' => false,
@@ -46328,7 +46329,8 @@ výrobce VZV.
         'processed' => [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'readOnly' => true
         ],
         'originalNumber' => [
           'type' => 'varchar',
@@ -57655,6 +57657,16 @@ výrobce VZV.
           'type' => 'float',
           'isCustom' => true,
           'default' => 0
+        ],
+        'availableBrnoStock' => [
+          'notNull' => false,
+          'type' => 'float',
+          'isCustom' => true
+        ],
+        'availablePvStock' => [
+          'notNull' => false,
+          'type' => 'float',
+          'isCustom' => true
         ]
       ],
       'links' => [
@@ -64086,6 +64098,12 @@ výrobce VZV.
         'isChecked' => [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'region' => [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
           'isCustom' => true
         ],
         'emailAddressIsOptedOut' => [

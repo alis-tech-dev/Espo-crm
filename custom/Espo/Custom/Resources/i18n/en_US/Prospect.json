@@ -14,7 +14,8 @@
         "status": "Status",
         "lead": "Created Lead",
         "emailDb": "EmailDb",
-        "isChecked": "IsChecked"
+        "isChecked": "IsChecked",
+        "region": "Region"
     },
     "links": {
         "targetLists": "Target Lists",

@@ -10,5 +10,8 @@
             "cheque": "cheque",
             "compensation": "compensation"
         }
+    },
+    "fields": {
+        "processed": "Sent to Pohoda"
     }
 }

@@ -147,6 +147,12 @@
             "notNull": true,
             "type": "bool",
             "isCustom": true
+        },
+        "region": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
         }
     },
     "links": {

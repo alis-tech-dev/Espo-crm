@@ -7820,7 +7820,7 @@ Example:
       'grandTotalAmountCurrency' => 'Grand Total Amount Currency',
       'currency' => 'Currency',
       'discount' => 'Discount',
-      'processed' => 'Pohoda Import',
+      'processed' => 'Sent to Pohoda',
       'constantSymbol' => 'Constant symbol',
       'datePaid' => 'Date of payment',
       'dueDate' => 'Due date',
@@ -8617,7 +8617,7 @@ Very Hard - internal and external deadline must be set manually'
       'grandTotalAmountCurrency' => 'Grand Total Amount Currency',
       'currency' => 'Currency',
       'attachments' => 'Attachments',
-      'processed' => 'Pohoda Import',
+      'processed' => 'Sent to Pohoda',
       'vatId' => 'VAT ID',
       'sicCode' => 'SIC Code',
       'salesOrder' => 'Zakázka',
@@ -11342,7 +11342,9 @@ Very Hard - internal and external deadline must be set manually'
       'name' => 'name',
       'warehouse' => 'Warehouse',
       'stock' => 'Stock',
-      'stockQuantity' => 'StockQuantity'
+      'stockQuantity' => 'StockQuantity',
+      'availableBrnoStock' => 'AvailableBrnoStock',
+      'availablePvStock' => 'AvailablePvStock'
     ],
     'links' => [
       'warehouse' => 'Warehouse'
@@ -11389,7 +11391,8 @@ Very Hard - internal and external deadline must be set manually'
       'status' => 'Status',
       'lead' => 'Created Lead',
       'emailDb' => 'EmailDb',
-      'isChecked' => 'IsChecked'
+      'isChecked' => 'IsChecked',
+      'region' => 'Region'
     ],
     'links' => [
       'targetLists' => 'Target Lists',

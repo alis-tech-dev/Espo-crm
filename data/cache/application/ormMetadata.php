@@ -92494,6 +92494,16 @@ výrobce VZV.
         'default' => 0,
         'fieldType' => 'float'
       ],
+      'availableBrnoStock' => [
+        'type' => 'float',
+        'notNull' => false,
+        'fieldType' => 'float'
+      ],
+      'availablePvStock' => [
+        'type' => 'float',
+        'notNull' => false,
+        'fieldType' => 'float'
+      ],
       'productId' => [
         'len' => 24,
         'dbType' => 'string',
@@ -104276,6 +104286,11 @@ výrobce VZV.
         'notNull' => true,
         'fieldType' => 'bool',
         'default' => false
+      ],
+      'region' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
       ],
       'emailAddressIsOptedOut' => [
         'type' => 'bool',

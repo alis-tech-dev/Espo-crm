@@ -12368,6 +12368,8 @@ Very Hard - internal and external deadline must be set manually'
       'warehouse' => 'Warehouse',
       'stock' => 'Stock',
       'stockQuantity' => 'StockQuantity',
+      'availableBrnoStock' => 'AvailableBrnoStock',
+      'availablePvStock' => 'AvailablePvStock',
       'productionModelOperation' => 'Operace',
       'product' => 'Produkt',
       'quantity' => 'Množství',
@@ -12473,7 +12475,8 @@ Very Hard - internal and external deadline must be set manually'
       'status' => 'Status',
       'lead' => 'Created Lead',
       'emailDb' => 'EmailDb',
-      'isChecked' => 'IsChecked'
+      'isChecked' => 'IsChecked',
+      'region' => 'Region'
     ],
     'links' => [
       'targetLists' => 'Target Lists',

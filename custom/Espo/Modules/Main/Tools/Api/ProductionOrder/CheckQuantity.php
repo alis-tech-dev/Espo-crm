@@ -31,8 +31,13 @@ class CheckQuantity implements Action
             ->findOne();
         $warehouseId = $warehouse->getId();
         $availableQuantity = $warehouse->get('availableQuantity');
+        $availablePv = $warehouse->get('availablePv');
+        $availableBrno = $warehouse->get('availableBrno');
+
         $item->set('warehouseId', $warehouseId);
         $item->set('stockQuantity', $availableQuantity);
+        $item->set('availablePvStock', $availablePv);
+        $item->set('availableBrnoStock', $availableBrno);
 
         $quantity = $item->get('quantity');
         $stock = $item->get('stockQuantity');

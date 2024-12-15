@@ -1,7 +1,8 @@
 {
     "fields": {
         "salesOrder": "Zakázka",
-        "totalAmount": "TotalAmount"
+        "totalAmount": "TotalAmount",
+        "processed": "Sent to Pohoda"
     },
     "links": {
         "salesOrder": "Zakázka"

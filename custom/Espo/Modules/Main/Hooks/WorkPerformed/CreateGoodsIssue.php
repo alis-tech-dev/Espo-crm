@@ -19,6 +19,9 @@ class CreateGoodsIssue implements BeforeSave
     ) {
     }
 
+    /**
+     * @throws BadRequest
+     */
     public function beforeSave(Entity $entity, SaveOptions $options): void
     {
         if ($entity->get('processed') || is_null($entity->get('producedAmount')) || $entity->get('producedAmount') == 0) {
@@ -46,7 +49,8 @@ class CreateGoodsIssue implements BeforeSave
         } else {
             $resultStockAvailableQuantity = 'availablePv';
         }
-        $warehouseAvailable = $warehouse->get('$resultStockAvailableQuantity');
+        $warehouseAvailable = $warehouse->get($resultStockAvailableQuantity);
+
         $productId = $productionOrder->get('productId');
         $product = $this->entityManager->getEntityById('Product', $productId);
         $productUnit = $product->get('unit');
@@ -59,130 +63,82 @@ class CreateGoodsIssue implements BeforeSave
                 ->where('parentId', $warehouseId)
                 ->findOne();
 
-
             if (!$warehouseItemsFirst) {
-                $warehouseItemsFirst = $this->entityManager->getNewEntity(WarehouseItem::ENTITY_TYPE);
-                $warehouseItemsFirst->set([
-                    'serialNumber' => $productName,
-                    'productId' => $productId,
-                    'parentType' => Warehouse::ENTITY_TYPE,
-                    'parentId' => $warehouseId,
-                    'isReserved' => 0,
-                    'quantity' => 0,
-                ]);
-                $this->entityManager->saveEntity($warehouseItemsFirst);
-                $warehouse->set([
-                    'quantity' => 0,
-                    $resultStockAvailableQuantity => 0
-                ]);
-                $this->entityManager->saveEntity($warehouse);
+                $warehouseItemsFirst = $this->createWarehouseItem(
+                    $productName,
+                    $productId,
+                    $warehouseId,
+                    $warehouse,
+                    $resultStockAvailableQuantity,
+                );
             }
+
+            $stockQuantity = $warehouseItemsFirst->get('quantity');
+            $totalQuantity = $stockQuantity + $producedAmount;
+
+            $warehouseItemsFirst->set(['quantity' => $totalQuantity,]);
             if (!$salesOderId) {
-                $stockQuantity = $warehouseItemsFirst->get('quantity');
-                $totalQuantity = $stockQuantity + $producedAmount;
+                $warehouse->set($resultStockAvailableQuantity, $warehouseAvailable + $producedAmount);
+            }
+            $warehouse->set('quantity', $totalQuantity);
+            $warehouseItemsMId = $warehouseItemsFirst->getId();
 
-                $warehouseItemsFirst->set([
-                    'quantity' => $totalQuantity,
+            $WarehouseItemSalesOrder = $this->entityManager->getRDBRepository('Wiso')
+                ->where('salesOrder1Id', $salesOderId)
+                ->having('warehouseItem1Id', $warehouseItemsMId)
+                ->findOne();
+
+            if (!$WarehouseItemSalesOrder) {
+                $WarehouseItemSalesOrder = $this->entityManager->createEntity('Wiso', [
+                    'salesOrder1Id' => $salesOderId,
+                    'warehouseItem1Id' => $warehouseItemsMId,
+                    'entryKey' => $entryKey,
+                    'stockLocation' => $stockLocation
                 ]);
-                $warehouse->set([
-                    'quantity' => $totalQuantity,
-                    $resultStockAvailableQuantity => $totalQuantity
-                ]);
-                $this->entityManager->saveEntity($warehouseItemsFirst);
-                $this->entityManager->saveEntity($warehouse);
-
-            } else {
-                $stockQuantity = $warehouseItemsFirst->get('quantity');
-                $warehouseItemsFirst->set([
-                    'quantity' => $stockQuantity + $producedAmount,
-                ]);
-                $warehouse->set([
-                    'quantity' => $stockQuantity + $producedAmount,
-                ]);
-                $this->entityManager->saveEntity($warehouseItemsFirst);
-                $this->entityManager->saveEntity($warehouse);
-
-                $warehouseItemsMId = $warehouseItemsFirst->getId();
-
-                $WarehouseItemSalesOrder = $this->entityManager->getRDBRepository('Wiso')
-                    ->where('salesOrder1Id', $salesOderId)
-                    ->having('warehouseItem1Id', $warehouseItemsMId)
-                    ->findOne();
-
-                if (!$WarehouseItemSalesOrder) {
-                    $WarehouseItemSalesOrder = $this->entityManager->createEntity('Wiso', [
-                        'salesOrder1Id' => $salesOderId,
-                        'warehouseItem1Id' => $warehouseItemsMId,
-                        'entryKey' => $entryKey,
-                        'stockLocation' => $stockLocation
-                    ]);
-                }
-                $soReservedQuantity = $WarehouseItemSalesOrder->get('quantity');
-                if ($soReservedQuantity == 0) {
-                    $WarehouseItemSalesOrder->set('quantity', $producedAmount);
-                } else {
-                    $totalSoQuantity = $soReservedQuantity + $producedAmount;
-                    $WarehouseItemSalesOrder->set('quantity', $totalSoQuantity);
-                }
-                $this->entityManager->saveEntity($WarehouseItemSalesOrder);
             }
 
+            $soReservedQuantity = $WarehouseItemSalesOrder->get('quantity');
+
+            if ($soReservedQuantity == 0) {
+                $WarehouseItemSalesOrder->set('quantity', $producedAmount);
+            } else {
+                $totalSoQuantity = $soReservedQuantity + $producedAmount;
+                $WarehouseItemSalesOrder->set('quantity', $totalSoQuantity);
+            }
+
+            $this->entityManager->saveEntity($WarehouseItemSalesOrder);
+            $this->entityManager->saveEntity($warehouseItemsFirst);
+            $this->entityManager->saveEntity($warehouse);
 
             $model = $this->entityManager->getRDBRepository('ProductionModel')
                 ->where('name', $productName)
                 ->findOne();
             if ($model) {
                 $modelId = $model->getId();
-                $item = $this->entityManager->getRDBRepository('ProductionModelItem')
+
+                $items = $this->entityManager->getRDBRepository('ProductionModelItem')
                     ->where('parentId', $modelId)
-                    ->findOne();
-            }
-            if ($item) {
-                $itemName = $item->get('name');
-                $itemQuantity = $item->get('quantity');
+                    ->find();
 
-                $componentWarehouse = $this->entityManager->getRDBRepository('Warehouse')
-                    ->where('name', $itemName)
-                    ->findOne();
-                $componentWarehouseId = $componentWarehouse->getId();
-                $componentAvailableQuantity = $componentWarehouse->get($resultStockAvailableQuantity);
-
-                $component = $this->entityManager->getRDBRepository('WarehouseItem')
-                    ->where('parentId', $componentWarehouseId)
-                    ->findOne();
-
-                if ($component) {
-
-                    $resultAvailableQuantity = $componentAvailableQuantity - $itemQuantity;
-                    $component->set(['quantity' => $resultAvailableQuantity]);
-                    $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailableQuantity);
-                    $this->entityManager->saveEntity($component);
-                    $this->entityManager->saveEntity($componentWarehouse);
-                } else {
-                    throw new BadRequest("There are not enough components. Available quantity: {$componentAvailableQuantity}, Required quantity: {$itemQuantity}");
+                if (count($items) > 0) {
+                    $this->updateQuantityForModelItems($items, $resultStockAvailableQuantity, $producedAmount);
                 }
             }
+
         } elseif (in_array($productUnit, $singleUnits)) {
             $warehouseItems = $this->entityManager->getRDBRepository('WarehouseItem')
                 ->where('parentId', $warehouseId)
                 ->findOne();
 
             if (!$warehouseItems) {
-                $singleWarehouseItem = $this->entityManager->getNewEntity(WarehouseItem::ENTITY_TYPE);
-                $singleWarehouseItem->set([
-                    'serialNumber' => $productName,
-                    'productId' => $productId,
-                    'parentType' => Warehouse::ENTITY_TYPE,
-                    'parentId' => $warehouseId,
-                    'isReserved' => 0,
-                    'quantity' => 9999,
-                ]);
-                $this->entityManager->saveEntity($singleWarehouseItem);
-                $warehouse->set([
-                    'quantity' => 9999,
-                    'availableQuantity' => 9999
-                ]);
-                $this->entityManager->saveEntity($warehouse);
+                $singleWarehouseItem = $this->createWarehouseItem(
+                    $productName,
+                    $productId,
+                    $warehouseId,
+                    $warehouse,
+                    $resultStockAvailableQuantity,
+                    9999
+                );
             }
             if ($warehouseItems) {
                 $itemId = $warehouseItems->getId();
@@ -259,100 +215,157 @@ class CreateGoodsIssue implements BeforeSave
                     continue;
                 }
 
-                if ($modelItems) {
-                    foreach ($modelItems as $item) {
-                        $itemName = $item->get('name');
-                        $itemQuantity = $item->get('quantity');
-
-                        $componentWarehouse = $this->entityManager->getRDBRepository('Warehouse')
-                            ->where('name', $itemName)
-                            ->findOne();
-                        $componentWarehouseId = $componentWarehouse->getId();
-                        $componentAvailableQuantity = $componentWarehouse->get($resultStockAvailableQuantity);
-
-                        if ($itemQuantity < 1) {
-                            $components = $this->entityManager->getRDBRepository('WarehouseItem')
-                                    ->where('parentId', $componentWarehouseId)
-                                    ->having('isReserved', 0)
-                                    ->order('serialNumber', 'ASC')
-                                    ->limit(2)
-                                    ->find();
-                            $firstComponent = $components[0];
-                            $secondComponent = $components[1];
-
-                            if ($firstComponent) {
-                                $firstComponentQuantity = $firstComponent->get('quantity');
-                                $resultQuantity = $firstComponentQuantity - $itemQuantity;
-
-                                if ($resultQuantity > 0) {
-                                    $firstComponent->set('quantity', $resultQuantity);
-                                    $this->entityManager->saveEntity($firstComponent);
-
-                                    $resultAvailable = $componentAvailableQuantity - $itemQuantity;
-                                    $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
-                                    $this->entityManager->saveEntity($componentWarehouse);
-
-                                } elseif ($resultQuantity == 0) {
-
-                                    $firstComponent->set('quantity', $resultQuantity);
-                                    $firstComponent->set('isReserved', 1);
-                                    $this->entityManager->saveEntity($firstComponent);
-
-                                    $resultAvailable = $componentAvailableQuantity - $itemQuantity;
-                                    $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
-                                    $this->entityManager->saveEntity($componentWarehouse);
-                                } else {
-                                    if ($secondComponent) {
-                                        $secondComponentQuantity = $secondComponent->get('quantity');
-                                        $differentQuantity = $itemQuantity - $firstComponentQuantity;
-
-                                        $firstComponent->set('quantity', 0);
-                                        $firstComponent->set('isReserved', 1);
-                                        $this->entityManager->saveEntity($firstComponent);
-
-                                        $resultSecondComponentQuantity = $secondComponentQuantity - $differentQuantity;
-                                        $secondComponent->set('quantity', $resultSecondComponentQuantity);
-                                        $this->entityManager->saveEntity($secondComponent);
-
-                                        $resultAvailable = $componentAvailableQuantity - $itemQuantity;
-                                        $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
-                                        $this->entityManager->saveEntity($componentWarehouse);
-
-                                    } else {
-                                        throw new BadRequest("The amount of one of the components is not enough. Available quantity: {$firstComponentQuantity}, Required quantity: {$itemQuantity}.");
-                                    }
-                                }
-                            } else {
-                                throw new BadRequest("No components available, Required quantity: {$itemQuantity}");
-                            }
-                        } else {
-                            $components = $this->entityManager->getRDBRepository('WarehouseItem')
-                                ->where('parentId', $componentWarehouseId)
-                                ->having('isReserved', 0)
-                                ->order('serialNumber', 'ASC')
-                                ->find();
-
-                            if ($components) {
-                                $count = 0;
-                                foreach ($components as $component) {
-                                    if ($count >= $itemQuantity) {
-                                        break;
-                                    }
-                                    $component->set(['isReserved' => 1]);
-                                    $this->entityManager->saveEntity($component);
-                                    $count++;
-                                }
-                                $resultAvailableQuantity = $componentAvailableQuantity - $itemQuantity;
-                                $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailableQuantity);
-                                $this->entityManager->saveEntity($componentWarehouse);
-                            } else {
-                                throw new BadRequest("There are not enough components. Available quantity: {$componentAvailableQuantity}, Required quantity: {$itemQuantity}");
-                            }
-                        }
-                    }
+                if (count($modelItems) > 0) {
+                    $this->updateQuantityForModelItems($modelItems, $resultStockAvailableQuantity);
                 }
             }
         }
         $entity->set('processed', true);
+    }
+
+    public function createWarehouseItem(
+        $productName,
+        $productId,
+        $warehouseId,
+        $warehouse,
+        $resultStockAvailableQuantity,
+        $quantity = 0
+    ): Entity
+    {
+        $warehouseItemsFirst = $this->entityManager->getNewEntity(WarehouseItem::ENTITY_TYPE);
+        $warehouseItemsFirst->set([
+            'serialNumber' => $productName,
+            'productId' => $productId,
+            'parentType' => Warehouse::ENTITY_TYPE,
+            'parentId' => $warehouseId,
+            'isReserved' => 0,
+            'quantity' => $quantity,
+        ]);
+        $this->entityManager->saveEntity($warehouseItemsFirst);
+        $warehouse->set([
+            'quantity' => $quantity,
+            $resultStockAvailableQuantity => $quantity
+        ]);
+        $this->entityManager->saveEntity($warehouse);
+        return $warehouseItemsFirst;
+    }
+
+    /**
+     * @throws BadRequest
+     */
+    public function updateQuantityForModelItems($modelItems, $resultStockAvailableQuantity, $producedAmount = 1): void
+    {
+        foreach ($modelItems as $item) {
+            $itemName = $item->get('name');
+            $itemQuantity = $item->get('quantity');
+
+            $componentWarehouse = $this->entityManager->getRDBRepository('Warehouse')
+                ->where('name', $itemName)
+                ->findOne();
+
+            $isSerialNumber = $componentWarehouse->get('isSerialNumber');
+            $componentWarehouseId = $componentWarehouse->getId();
+            $componentAvailableQuantity = $componentWarehouse->get($resultStockAvailableQuantity);
+
+            $warehouseItemComponents = $this->entityManager->getRDBRepository('WarehouseItem')
+                ->where('parentId', $componentWarehouseId)
+                ->find();
+
+            if (!$isSerialNumber) {
+                $component = $warehouseItemComponents[0];
+                $componentQuantity = $component->get('quantity');
+                $totalProduced = $itemQuantity * $producedAmount;
+                $resultComponentQuantity = $componentQuantity - $totalProduced;
+                $component->set(['quantity' => $resultComponentQuantity]);
+                $componentWarehouse->set($resultStockAvailableQuantity, $resultComponentQuantity);
+                $this->entityManager->saveEntity($component);
+                $this->entityManager->saveEntity($componentWarehouse);
+
+            } elseif ($itemQuantity < 1) {
+                $components = $this->entityManager->getRDBRepository('WarehouseItem')
+                    ->where('parentId', $componentWarehouseId)
+                    ->having('isReserved', 0)
+                    ->order('serialNumber', 'ASC')
+                    ->limit(2)
+                    ->find();
+                $firstComponent = $components[0];
+                $secondComponent = $components[1];
+
+                if ($firstComponent) {
+                    $firstComponentQuantity = $firstComponent->get('quantity');
+                    $resultQuantity = $firstComponentQuantity - $itemQuantity;
+
+                    if ($resultQuantity > 0) {
+                        $firstComponent->set('quantity', $resultQuantity);
+                        $this->entityManager->saveEntity($firstComponent);
+
+                        $resultAvailable = $componentAvailableQuantity - $itemQuantity;
+                        $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
+                        $this->entityManager->saveEntity($componentWarehouse);
+
+                    } elseif ($resultQuantity == 0) {
+
+                        $firstComponent->set('quantity', $resultQuantity);
+                        $firstComponent->set('isReserved', 1);
+                        $this->entityManager->saveEntity($firstComponent);
+
+                        $resultAvailable = $componentAvailableQuantity - $itemQuantity;
+                        $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
+                        $this->entityManager->saveEntity($componentWarehouse);
+                    } else {
+                        if ($secondComponent) {
+                            $secondComponentQuantity = $secondComponent->get('quantity');
+                            $differentQuantity = $itemQuantity - $firstComponentQuantity;
+
+                            $firstComponent->set('quantity', 0);
+                            $firstComponent->set('isReserved', 1);
+                            $this->entityManager->saveEntity($firstComponent);
+
+                            $resultSecondComponentQuantity = $secondComponentQuantity - $differentQuantity;
+                            $secondComponent->set('quantity', $resultSecondComponentQuantity);
+                            $this->entityManager->saveEntity($secondComponent);
+
+                            $resultAvailable = $componentAvailableQuantity - $itemQuantity;
+                            $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailable);
+                            $this->entityManager->saveEntity($componentWarehouse);
+
+                        } else {
+                            throw new BadRequest(
+                                "The amount of one of the components is not enough. Available 
+                                    quantity: {$firstComponentQuantity}, Required quantity: {$itemQuantity}."
+                            );
+                        }
+                    }
+                } else {
+                    throw new BadRequest("No components available, Required quantity: {$itemQuantity}");
+                }
+            } else {
+                $components = $this->entityManager->getRDBRepository('WarehouseItem')
+                    ->where('parentId', $componentWarehouseId)
+                    ->having('isReserved', 0)
+                    ->order('serialNumber', 'ASC')
+                    ->find();
+
+                if (count($components) > 0) {
+                    $count = 0;
+                    foreach ($components as $component) {
+                        if ($count >= $itemQuantity) {
+                            break;
+                        }
+                        $component->set(['isReserved' => 1]);
+                        $this->entityManager->saveEntity($component);
+                        $count++;
+                    }
+                    $resultAvailableQuantity = $componentAvailableQuantity - $itemQuantity;
+                    $componentWarehouse->set($resultStockAvailableQuantity, $resultAvailableQuantity);
+                    $this->entityManager->saveEntity($componentWarehouse);
+                } else {
+                    throw new BadRequest(
+                        "There are not enough components. Available quantity: 
+                            {$componentAvailableQuantity}, Required quantity: {$itemQuantity}"
+                    );
+                }
+            }
+        }
     }
 }

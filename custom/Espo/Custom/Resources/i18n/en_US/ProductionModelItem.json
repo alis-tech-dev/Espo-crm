@@ -3,7 +3,9 @@
         "name": "name",
         "warehouse": "Warehouse",
         "stock": "Stock",
-        "stockQuantity": "StockQuantity"
+        "stockQuantity": "StockQuantity",
+        "availableBrnoStock": "AvailableBrnoStock",
+        "availablePvStock": "AvailablePvStock"
     },
     "links": {
         "warehouse": "Warehouse"

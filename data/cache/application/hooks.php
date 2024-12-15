@@ -680,6 +680,18 @@ return [
         'className' => 'Espo\\Modules\\Main\\Hooks\\WorkPerformed\\CreateGoodsIssue',
         'order' => 9
       ]
+    ],
+    'createWarehouseItem' => [
+      0 => [
+        'className' => 'Espo\\Modules\\Main\\Hooks\\WorkPerformed\\CreateGoodsIssue',
+        'order' => 9
+      ]
+    ],
+    'updateQuantityForModelItems' => [
+      0 => [
+        'className' => 'Espo\\Modules\\Main\\Hooks\\WorkPerformed\\CreateGoodsIssue',
+        'order' => 9
+      ]
     ]
   ],
   'GoodsIssue' => [

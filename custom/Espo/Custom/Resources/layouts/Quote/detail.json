@@ -161,5 +161,20 @@
         "style": "default",
         "hidden": false,
         "customLabel": "Transport"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "items",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Items"
     }
 ]

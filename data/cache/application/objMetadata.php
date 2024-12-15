@@ -41401,7 +41401,8 @@ return (object) [
         'processed' => (object) [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'readOnly' => true
         ],
         'dueDate' => (object) [
           'notNull' => false,
@@ -46328,7 +46329,8 @@ výrobce VZV.
         'processed' => (object) [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'readOnly' => true
         ],
         'originalNumber' => (object) [
           'type' => 'varchar',
@@ -57655,6 +57657,16 @@ výrobce VZV.
           'type' => 'float',
           'isCustom' => true,
           'default' => 0
+        ],
+        'availableBrnoStock' => (object) [
+          'notNull' => false,
+          'type' => 'float',
+          'isCustom' => true
+        ],
+        'availablePvStock' => (object) [
+          'notNull' => false,
+          'type' => 'float',
+          'isCustom' => true
         ]
       ],
       'links' => (object) [
@@ -64086,6 +64098,12 @@ výrobce VZV.
         'isChecked' => (object) [
           'notNull' => true,
           'type' => 'bool',
+          'isCustom' => true
+        ],
+        'region' => (object) [
+          'type' => 'varchar',
+          'maxLength' => 150,
+          'options' => [],
           'isCustom' => true
         ],
         'emailAddressIsOptedOut' => (object) [

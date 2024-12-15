@@ -41,6 +41,9 @@
                 "compensation": null
             },
             "default": "draft"
+        },
+        "processed": {
+            "readOnly": true
         }
     },
     "links": {

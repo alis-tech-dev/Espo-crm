@@ -49,6 +49,16 @@
             "type": "float",
             "isCustom": true,
             "default": 0
+        },
+        "availableBrnoStock": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true
+        },
+        "availablePvStock": {
+            "notNull": false,
+            "type": "float",
+            "isCustom": true
         }
     },
     "links": {

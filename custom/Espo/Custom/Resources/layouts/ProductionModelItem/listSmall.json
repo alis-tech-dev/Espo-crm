@@ -10,6 +10,13 @@
         "label": "quantity"
     },
     {
-        "name": "stockQuantity"
+        "name": "stockQuantity",
+        "label": "StockQuantity"
+    },
+    {
+        "name": "availableBrnoStock"
+    },
+    {
+        "name": "availablePvStock"
     }
 ]

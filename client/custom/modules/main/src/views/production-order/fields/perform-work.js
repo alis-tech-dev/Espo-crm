@@ -78,6 +78,8 @@ define(['views/fields/base'], Dep => {
 					});
 					modalView.on('before:save', (view, options) => {
 						const items = this.model.get('billOfMaterialsRecordList');
+
+						console.log("items:", items);
 						const isValid = this.validateProducedAmount(modalView.model, items);
 						if (!isValid[0]) {
 							Espo.Ui.error(isValid[1]);
@@ -124,10 +126,23 @@ define(['views/fields/base'], Dep => {
             const remainingQuantity = quantityPlanned - quantityProduced - fromWarehouse;
             let producedAmount = workPerformedModel.get('producedAmount');
 
+			const stockLocation = workPerformedModel.get('stockLocation');
+
 			if (items.length > 0) {
 				for (let i = 0; i < items.length; i++) {
 					const item = items[i];
-					if (item.quantity > item.stockQuantity) {
+
+					let availableQuantity = null;
+
+					if (stockLocation === "brno") {
+						availableQuantity = item.availableBrnoStock;
+					} else if (stockLocation === "pv") {
+						availableQuantity = item.availablePvStock;
+					}
+					console.log("availableQuantity:", availableQuantity);
+					console.log("item:", item);
+
+					if (item.quantity * producedAmount > availableQuantity) {
 						const errorMessage = `Not enough "${item.name}" available quantity in the stock for perform work.`;
 						return [false, errorMessage];
 					}
