@@ -57,6 +57,20 @@
         "rows": [
             [
                 {
+                    "name": "isIgnored"
+                },
+                {
+                    "name": "isInfinity"
+                },
+                {
+                    "name": "isSerialNumber"
+                },
+                {
+                    "name": "isInvisible"
+                }
+            ],
+            [
+                {
                     "name": "image"
                 },
                 {
@@ -67,20 +81,6 @@
                 },
                 {
                     "name": "unit"
-                }
-            ],
-            [
-                {
-                    "name": "isIgnored"
-                },
-                {
-                    "name": "isArchive"
-                },
-                {
-                    "name": "isSerialNumber"
-                },
-                {
-                    "name": "isInvisible"
                 }
             ],
             [

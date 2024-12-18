@@ -20,7 +20,7 @@ return [
     'printTrace' => true
   ],
   'passwordSalt' => '475745ccff475b59',
-  'microtimeInternal' => 1730879701.248617,
+  'microtimeInternal' => 1734437056.207247,
   'webSocketMessager' => 'ZeroMQ',
   'webSocketPort' => '22335',
   'webSocketZeroMQSubscriberDsn' => 'tcp://127.0.0.1:22336',
@@ -31,7 +31,7 @@ return [
     0 => 'https://maps.googleapis.com',
     1 => 'https://office.alis-is.com:9443'
   ],
-  'actualDatabaseVersion' => '10.11.9',
+  'actualDatabaseVersion' => '10.11.10',
   'defaultPermissions' => [
     'user' => 1107,
     'group' => 1107

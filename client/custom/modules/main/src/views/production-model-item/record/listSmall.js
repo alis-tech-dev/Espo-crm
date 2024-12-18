@@ -4,6 +4,11 @@ define(['views/fields/link-multiple-with-primary'], Dep => {
             const billOfMaterialsIds = this.model.get('billOfMaterialsIds');
             const brno = this.model.get('availableBrno');
             const pv = this.model.get('availablePv');
+            const produced = this.model.get('quantityProduced');
+            const taken = this.model.get('fromWarehouse');
+            const totalProduced = produced + taken;
+            const planned = this.model.get('quantityPlanned');
+
 
             const modelId = this.model.get('id');
             if (brno + pv < 1) {
@@ -14,6 +19,15 @@ define(['views/fields/link-multiple-with-primary'], Dep => {
                     $mainRow.style.padding = '0 5px';
                 }
             }
+            if (planned === totalProduced) {
+                const $mainRow = document.querySelector(`a[data-id="${modelId}"]`);
+                if ($mainRow) {
+                    $mainRow.style.background = '#abf5a2';
+                    $mainRow.style.borderRadius = '5px';
+                    $mainRow.style.padding = '0 5px';
+                }
+            }
+
             if (billOfMaterialsIds) {
                 for (const id of billOfMaterialsIds) {
                     this.ajaxGetRequest(`ProductionOrder/checkQuantity/${id}`)

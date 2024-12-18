@@ -50,6 +50,9 @@ class Pohoda {
 				$this->sendXmlToPohoda($xmlData);
 
 				$entity->set('processed', true);
+                if ($entityType == "Invoice") {
+                    $entity->set('sendStatus', "Sent");
+                }
 				$this->entityManager->saveEntity($entity);
 
 			} catch (\Exception $exception) {

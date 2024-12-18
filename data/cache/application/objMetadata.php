@@ -269,7 +269,6 @@ return (object) [
             'delete' => 'own',
             'create' => 'yes'
           ],
-          'InvoiceItem' => 'Invoice',
           'AdvanceDeductionItem' => 'Invoice',
           'QuoteItem' => 'Quote',
           'SalesOrderItem' => 'SalesOrder',
@@ -281,6 +280,7 @@ return (object) [
           'VacationRequestApprovalItem' => 'VacationRequest',
           'Chat' => true,
           'WarehouseItem' => 'Warehouse',
+          'InvoiceItem' => 'Invoice',
           'ProformaInvoiceItem' => 'ProformaInvoice',
           'CreditNoteItem' => 'CreditNote',
           'IssuedTaxDocumentItem' => 'IssuedTaxDocument',
@@ -14195,6 +14195,16 @@ return (object) [
         'detail' => (object) [
           'buttons' => [
             0 => (object) [
+              'label' => 'Send to Pohoda',
+              'name' => 'SendInvoice',
+              'action' => 'sendInvoice',
+              'style' => 'warning',
+              'data' => (object) [
+                'handler' => 'main:handlers/actions/invoice/send-invoice'
+              ],
+              'initFunction' => 'init'
+            ],
+            1 => (object) [
               'label' => 'Record Payment',
               'name' => 'newPayment',
               'action' => 'newPayment',
@@ -14205,20 +14215,20 @@ return (object) [
               ],
               'initFunction' => 'init'
             ],
-            1 => (object) [
-              'label' => 'Vytvořit opravný daňový doklad',
+            2 => (object) [
+              'label' => 'Opravný daňový doklad',
               'name' => 'createCreditNote',
               'action' => 'createCreditNote',
-              'style' => 'default',
+              'style' => 'info',
               'data' => (object) [
                 'handler' => 'accounting-cz:handlers/actions/invoice/create-credit-note'
               ]
             ],
-            2 => (object) [
-              'label' => 'Vytvořit příjmový doklad',
+            3 => (object) [
+              'label' => 'Příjmový doklad',
               'name' => 'createRevenueReceipt',
               'action' => 'createRevenueReceipt',
-              'style' => 'default',
+              'style' => 'danger',
               'data' => (object) [
                 'handler' => 'accounting-cz:handlers/actions/invoice/create-revenue-receipt'
               ]
@@ -14334,9 +14344,6 @@ return (object) [
     ],
     'InvoiceItem' => (object) [
       'controller' => 'controllers/record',
-      'acl' => 'accounting:acl/invoice-item',
-      'createDisabled' => true,
-      'removeDisabled' => true,
       'convertCurrencyDisabled' => true,
       'menu' => (object) [
         'list' => (object) [
@@ -41402,7 +41409,8 @@ return (object) [
           'notNull' => true,
           'type' => 'bool',
           'isCustom' => true,
-          'readOnly' => true
+          'readOnly' => false,
+          'default' => true
         ],
         'dueDate' => (object) [
           'notNull' => false,
@@ -41831,6 +41839,22 @@ return (object) [
           'default' => 'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');',
           'isCustom' => true
         ],
+        'sendStatus' => (object) [
+          'type' => 'enum',
+          'options' => [
+            0 => 'Not Sent',
+            1 => 'Pending',
+            2 => 'Sent'
+          ],
+          'style' => (object) [
+            'Not Sent' => 'danger',
+            'Pending' => 'warning',
+            'Sent' => 'success'
+          ],
+          'default' => 'Not Sent',
+          'displayAsLabel' => true,
+          'isCustom' => true
+        ],
         'billingAddressStreet' => (object) [
           'type' => 'text',
           'maxLength' => 255,
@@ -42208,7 +42232,7 @@ return (object) [
         ],
         'invoice' => (object) [
           'type' => 'link',
-          'readOnly' => true
+          'readOnly' => false
         ],
         'product' => (object) [
           'type' => 'link'
@@ -51806,7 +51830,8 @@ výrobce VZV.
         'isSerialNumber' => (object) [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'availableBrno' => (object) [
           'notNull' => false,
@@ -51883,7 +51908,8 @@ výrobce VZV.
         'isIgnored' => (object) [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'isModel' => (object) [
           'notNull' => true,
@@ -52087,7 +52113,8 @@ výrobce VZV.
         'isInvisible' => (object) [
           'notNull' => true,
           'type' => 'bool',
-          'isCustom' => true
+          'isCustom' => true,
+          'tooltip' => true
         ],
         'listPrice' => (object) [
           'type' => 'currency',
@@ -52095,6 +52122,12 @@ výrobce VZV.
         ],
         'unitPrice' => (object) [
           'type' => 'currency',
+          'isCustom' => true
+        ],
+        'isInfinity' => (object) [
+          'notNull' => true,
+          'type' => 'bool',
+          'tooltip' => true,
           'isCustom' => true
         ],
         'addressStreet' => (object) [
@@ -70766,11 +70799,11 @@ výrobce VZV.
     'InvoiceItem' => (object) [
       'entity' => true,
       'layouts' => true,
-      'tab' => false,
-      'acl' => false,
+      'tab' => true,
+      'acl' => true,
       'module' => 'Accounting',
       'customizable' => true,
-      'importable' => false,
+      'importable' => true,
       'notifications' => false,
       'object' => true,
       'stream' => true,

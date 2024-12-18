@@ -129,8 +129,8 @@ define(['action-handler'], Dep => {
 			const status = this.view.model.get('status');
 			const itemsRecordList = this.view.model.get('itemsRecordList') || [];
 
-			const hasUnprocessedItems = itemsRecordList.some(item => !item.processed);
-
+			// const hasUnprocessedItems = itemsRecordList.some(item => !item.processed);
+			const hasUnprocessedItems = true;
 			if (status === 'Approved' && hasUnprocessedItems) {
 				this.view.showHeaderActionItem('convertToSalesOrder');
 			} else {

@@ -46174,8 +46174,8 @@ return [
       'processed' => [
         'type' => 'bool',
         'notNull' => true,
-        'fieldType' => 'bool',
-        'default' => false
+        'default' => true,
+        'fieldType' => 'bool'
       ],
       'dueDate' => [
         'type' => 'date',
@@ -46467,6 +46467,12 @@ return [
       'payday' => [
         'type' => 'date',
         'fieldType' => 'date'
+      ],
+      'sendStatus' => [
+        'type' => 'varchar',
+        'default' => 'Not Sent',
+        'fieldType' => 'varchar',
+        'len' => 255
       ],
       'billingAddressStreet' => [
         'type' => 'text',
@@ -74336,6 +74342,12 @@ výrobce VZV.
             0 => 'unitPriceCurrencyRate.rate'
           ]
         ]
+      ],
+      'isInfinity' => [
+        'type' => 'bool',
+        'notNull' => true,
+        'fieldType' => 'bool',
+        'default' => false
       ],
       'addressStreet' => [
         'type' => 'text',

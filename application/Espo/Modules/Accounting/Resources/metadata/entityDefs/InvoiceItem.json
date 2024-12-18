@@ -6,7 +6,7 @@
         },
         "invoice": {
             "type": "link",
-            "readOnly": true
+            "readOnly": false
         },
         "product": {
             "type": "link"

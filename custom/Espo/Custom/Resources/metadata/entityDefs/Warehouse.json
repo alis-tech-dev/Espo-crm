@@ -117,7 +117,8 @@
         "isSerialNumber": {
             "notNull": true,
             "type": "bool",
-            "isCustom": true
+            "isCustom": true,
+            "tooltip": true
         },
         "availableBrno": {
             "notNull": false,
@@ -194,7 +195,8 @@
         "isIgnored": {
             "notNull": true,
             "type": "bool",
-            "isCustom": true
+            "isCustom": true,
+            "tooltip": true
         },
         "isModel": {
             "notNull": true,
@@ -398,7 +400,8 @@
         "isInvisible": {
             "notNull": true,
             "type": "bool",
-            "isCustom": true
+            "isCustom": true,
+            "tooltip": true
         },
         "listPrice": {
             "type": "currency",
@@ -410,6 +413,12 @@
         },
         "name": {
             "options": []
+        },
+        "isInfinity": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
+            "isCustom": true
         }
     }
 }

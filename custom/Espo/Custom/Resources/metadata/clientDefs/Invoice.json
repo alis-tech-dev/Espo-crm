@@ -3,5 +3,51 @@
     "color": null,
     "iconClass": "fas fa-receipt",
     "isWide": true,
-    "gridViewMode": false
+    "gridViewMode": false,
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Send to Pohoda",
+                    "name": "SendInvoice",
+                    "action": "sendInvoice",
+                    "style": "warning",
+                    "data": {
+                        "handler": "main:handlers/actions/invoice/send-invoice"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Record Payment",
+                    "name": "newPayment",
+                    "action": "newPayment",
+                    "style": "success",
+                    "iconHtml": "<span class='fas fa-money-bill-wave small new-payment-icon'></span>",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice-like/new-payment"
+                    },
+                    "initFunction": "init"
+                },
+                {
+                    "label": "Opravný daňový doklad",
+                    "name": "createCreditNote",
+                    "action": "createCreditNote",
+                    "style": "info",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice/create-credit-note"
+                    }
+                },
+                {
+                    "label": "Příjmový doklad",
+                    "name": "createRevenueReceipt",
+                    "action": "createRevenueReceipt",
+                    "style": "danger",
+                    "data": {
+                        "handler": "accounting-cz:handlers/actions/invoice/create-revenue-receipt"
+                    }
+                }
+            ]
+        }
+    }
 }

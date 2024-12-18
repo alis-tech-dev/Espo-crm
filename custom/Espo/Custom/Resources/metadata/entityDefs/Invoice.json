@@ -27,7 +27,24 @@
             "default": "draft"
         },
         "processed": {
-            "readOnly": true
+            "readOnly": false,
+            "default": true
+        },
+        "sendStatus": {
+            "type": "enum",
+            "options": [
+                "Not Sent",
+                "Pending",
+                "Sent"
+            ],
+            "style": {
+                "Not Sent": "danger",
+                "Pending": "warning",
+                "Sent": "success"
+            },
+            "default": "Not Sent",
+            "displayAsLabel": true,
+            "isCustom": true
         }
     },
     "collection": {

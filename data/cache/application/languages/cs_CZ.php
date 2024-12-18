@@ -8266,6 +8266,7 @@ Available placeholders:
       'taxRound' => 'Zaokrouhlení vypočítané hodnoty DPH',
       'amountRoundTo' => 'Zaokrouhlení',
       'payday' => 'Datum splatnosti',
+      'sendStatus' => 'SendStatus',
       'shippingCostTaxRate' => 'Daňová sazba dopravného',
       'billingAddressFirstName' => 'Jméno',
       'billingAddressLastName' => 'Příjmení',
@@ -8399,6 +8400,12 @@ Available placeholders:
         'bank' => 'Převodem',
         'card' => 'Kartou',
         'cod' => 'Dobírka'
+      ],
+      'sendStatus' => [
+        'Panding' => 'Panding',
+        'Sent' => 'Sent',
+        'Pending' => 'Pending',
+        'Not Sent' => 'Not Sent'
       ]
     ],
     'tooltips' => [
@@ -10260,7 +10267,8 @@ Very Hard - internal and external deadline must be set manually'
       'listPriceConverted' => 'List Price (Converted)',
       'unitPrice' => 'Unit Price',
       'unitPriceCurrency' => 'Unit Price (Currency)',
-      'unitPriceConverted' => 'Unit Price (Converted)'
+      'unitPriceConverted' => 'Unit Price (Converted)',
+      'isInfinity' => 'Is Infinity'
     ],
     'links' => [
       'items' => 'Položky',
@@ -10328,7 +10336,11 @@ Very Hard - internal and external deadline must be set manually'
     'tooltips' => [
       'availableQuantity' => 'Available quantity at the current date and time.',
       'quantity' => 'Total produced or stocked quantity during the time.',
-      'productCategory' => 'When the products has the prefix A, it means Archive. In the folder tree is main folder Archive and inside it subfolders for each product folders as A_Projecotors.'
+      'productCategory' => 'When the products has the prefix A, it means Archive. In the folder tree is main folder Archive and inside it subfolders for each product folders as A_Projecotors.',
+      'isSerialNumber' => 'if "is Serial number" checked, warehouse items will be created with serial number.',
+      'isInvisible' => 'if "is invisible" is checked, linked "Product" will be invisible for user everywhere. ',
+      'isIgnored' => 'if "is ignored" is checked, linked "Product" will not be add to "Production Order" from "Sales Order"',
+      'isInfinity' => 'if "is Infinity" is checked, quantity and available quantity always will be 9999.'
     ]
   ],
   'WarehouseItem' => [

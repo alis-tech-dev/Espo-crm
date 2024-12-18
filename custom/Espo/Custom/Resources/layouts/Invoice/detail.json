@@ -17,6 +17,9 @@
                     "name": "status"
                 },
                 {
+                    "name": "sendStatus"
+                },
+                {
                     "name": "account"
                 }
             ],
@@ -42,10 +45,12 @@
                 }
             ],
             [
+                false,
+                false,
+                false,
                 {
-                    "name": "processed"
-                },
-                false
+                    "name": "remainsToPay"
+                }
             ]
         ],
         "style": "default",
@@ -65,10 +70,6 @@
                 {
                     "name": "description"
                 }
-            ],
-            [
-                false,
-                false
             ]
         ],
         "style": "default",

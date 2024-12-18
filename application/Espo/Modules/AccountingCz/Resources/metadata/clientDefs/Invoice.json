@@ -28,42 +28,7 @@
             "selectDisabled": true
         }
     },
-    "menu": {
-        "detail": {
-            "buttons": [
-                "__APPEND__",
-                {
-                    "label": "Record Payment",
-                    "name": "newPayment",
-                    "action": "newPayment",
-                    "style": "success",
-                    "iconHtml": "<span class='fas fa-money-bill-wave small new-payment-icon'></span>",
-                    "data": {
-                        "handler": "accounting-cz:handlers/actions/invoice-like/new-payment"
-                    },
-                    "initFunction": "init"
-                },
-                {
-                    "label": "Vytvořit opravný daňový doklad",
-                    "name": "createCreditNote",
-                    "action": "createCreditNote",
-                    "style": "default",
-                    "data": {
-                        "handler": "accounting-cz:handlers/actions/invoice/create-credit-note"
-                    }
-                },
-                {
-                    "label": "Vytvořit příjmový doklad",
-                    "name": "createRevenueReceipt",
-                    "action": "createRevenueReceipt",
-                    "style": "default",
-                    "data": {
-                        "handler": "accounting-cz:handlers/actions/invoice/create-revenue-receipt"
-                    }
-                }
-            ]
-        }
-    },
+
     "detailActionList": [
         "__APPEND__",
         {

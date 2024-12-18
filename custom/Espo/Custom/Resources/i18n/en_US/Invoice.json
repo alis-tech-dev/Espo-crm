@@ -9,9 +9,16 @@
             "encashment": "encashment",
             "cheque": "cheque",
             "compensation": "compensation"
+        },
+        "sendStatus": {
+            "Panding": "Panding",
+            "Sent": "Sent",
+            "Pending": "Pending",
+            "Not Sent": "Not Sent"
         }
     },
     "fields": {
-        "processed": "Sent to Pohoda"
+        "processed": "Sent to Pohoda",
+        "sendStatus": "SendStatus"
     }
 }
