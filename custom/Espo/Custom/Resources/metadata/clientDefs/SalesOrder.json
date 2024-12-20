@@ -50,6 +50,9 @@
         },
         "manufacturings": {
             "layout": null
+        },
+        "productionUseCases": {
+            "layout": null
         }
     },
     "dynamicLogic": {

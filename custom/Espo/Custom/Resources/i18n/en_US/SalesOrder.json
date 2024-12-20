@@ -45,7 +45,9 @@
         "reservedQuantity": "ReservedQuantity",
         "reservQuantity": "Reserved Quantity",
         "manufacturings": "Manufacturings",
-        "color": "Color"
+        "color": "Color",
+        "productionUseCases": "Production Use Cases",
+        "files": "Přílohy"
     },
     "links": {
         "salesOrderSummaryItems": "Položka shrnutí zakázky",
@@ -68,7 +70,8 @@
         "warehouseItems1": "Warehouse Items1",
         "wiso": "Wiso",
         "wisos": "Wisos",
-        "manufacturings": "Manufacturings"
+        "manufacturings": "Manufacturings",
+        "productionUseCases": "Production Use Cases"
     },
     "options": {
         "complexity": {

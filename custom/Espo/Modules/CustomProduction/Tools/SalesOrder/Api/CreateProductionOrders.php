@@ -26,6 +26,7 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
 
     public function process(Request $request): Response
     {
+        $em = $this->entityManager;
         $id = $request->getRouteParam('id');
 
         if (is_null($id)) {
@@ -41,11 +42,40 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
             throw new NotFound('salesOrder not found');
         }
 
+        $useCaseNames = [];
+        $useCases = $salesOrder->get('productionUseCasesRecordList');
+        if (!is_null($useCases)) {
+            $useCaseNames = $this->getUseCaseNames($useCases);
+        }
+        $createdUseCases = [];
+
+        $entryData = $salesOrder->get('salesOrderEntryData');
+        foreach ($entryData as $entry) {
+            $name = $entry->name;
+            $solution = $entry->solution;
+            $requirements = $entry->description;
+            $attachments = $entry->filesIds;
+            $items = $entry->ids;
+            if (in_array($name, $useCaseNames)) {
+                continue;
+            } else {
+                $payload = [
+                    "name" => $name,
+                    "items" => $items,
+                    "solution" => $solution,
+                    "requirements" => $requirements,
+                    "salesOrderId" => $id
+                ];
+                $useCase = $em->createEntity('ProductionUseCase', $payload);
+                $useCase->set('filesIds', $attachments);
+                $em->saveEntity($useCase);
+                $createdUseCases[] = $useCase;
+            }
+        }
+
 
 
         $items = $salesOrder->get('itemsRecordList') ?? [];
-
-        $em = $this->entityManager;
 
         $hasProducts = false;
 
@@ -55,6 +85,18 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
             foreach ($items as $item) {
                 $productId = $item->productId;
                 $entryKey = $item->entryKey;
+                $useCase = $this->getUseCase($entryKey);
+                if ($useCase) {
+                    $number = $useCase->get('number');
+                } else {
+                    foreach ($createdUseCases as $createdUseCase) {
+                        $items = $createdUseCase->get('items');
+                        if (in_array($entryKey, $items)) {
+                            $number = $createdUseCase->get('number');
+                            break;
+                        }
+                    }
+                }
 
                 if (is_null($productId)) {
                     continue;
@@ -87,7 +129,7 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
                     $hasProducts = true;
                     continue;
                 }
-                $em->createEntity('ProductionOrder', [
+                $newProductionOrder = $em->createEntity('ProductionOrder', [
                     'productId' => $productId,
                     'quantityPlanned' => $item->quantity,
                     'productionModelId' => $productionModelId,
@@ -96,7 +138,9 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
                     'productWarehouseId' => $warehouseId,
                     'materialWarehouseId' => $warehouseId,
                     'entryKey' => $entryKey,
+                    'useCaseNumber' => $number
                 ]);
+                $productionOrderId = $newProductionOrder->getId();
                 $hasProducts = true;
                 
             }
@@ -110,5 +154,18 @@ class CreateProductionOrders implements Action, RecordServiceContainerAware, Use
         return ResponseComposer::json([
             'status' => $result
         ]);
+    }
+    public function getUseCaseNames($useCases): array
+    {
+        $names = [];
+        foreach ($useCases as $useCase) {
+            $names[] = $useCase->name;
+        }
+        return $names;
+    }
+    public function getUseCase($entryKey) {
+        return $this->entityManager->getRDBRepository('ProductionUseCase')
+            ->where('JSON_CONTAINS(items, ?)', ['"' . $entryKey . '"'])
+            ->findOne();
     }
 }

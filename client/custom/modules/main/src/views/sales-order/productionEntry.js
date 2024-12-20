@@ -9,7 +9,7 @@ define(['views/base'], function (Dep) {
             promises.push(
                 this.createView(
                     'productionOrders',
-                    'main:views/sales-order/fields/productionOrders',
+                    'main:views/sales-order/fields/productionOrdersEntries',
                     {
                         el: this.options.el + ` .field-recordList`,
                         model: this.model,

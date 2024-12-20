@@ -49,5 +49,22 @@
                 }
             ]
         }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "salesOrderUrl": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "salesOrderUrl"
+                        }
+                    ]
+                }
+            },
+            "sendStatus": {
+                "readOnly": null
+            }
+        }
     }
 }

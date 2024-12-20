@@ -1,36 +1,39 @@
 [
     {
         "name": "number",
-        "label": "Číslo"
+        "label": "Invoice number"
     },
     {
         "name": "name",
         "link": true,
-        "label": "Název"
+        "label": "Name"
     },
     {
         "name": "account",
         "width": 25,
-        "label": "Organizace"
+        "label": "Account"
+    },
+    {
+        "name": "sendStatus"
     },
     {
         "name": "status",
         "width": 15,
-        "label": "Stav"
+        "label": "Status"
     },
     {
         "name": "payday",
-        "label": "Datum splatnosti (payday)"
+        "label": "Datum splatnosti"
     },
     {
         "name": "createdAt",
         "width": 12,
-        "label": "Vytvořeno"
+        "label": "Created At"
     },
     {
         "name": "amount",
         "width": 12,
         "align": "right",
-        "label": "Částka"
+        "label": "Total without VAT"
     }
 ]

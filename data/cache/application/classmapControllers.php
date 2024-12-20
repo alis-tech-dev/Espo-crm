@@ -184,6 +184,7 @@ return [
   'ItTask' => 'Espo\\Custom\\Controllers\\ItTask',
   'JIRA' => 'Espo\\Custom\\Controllers\\JIRA',
   'Manufacturing' => 'Espo\\Custom\\Controllers\\Manufacturing',
+  'ProductionUseCase' => 'Espo\\Custom\\Controllers\\ProductionUseCase',
   'Prospect' => 'Espo\\Custom\\Controllers\\Prospect',
   'SalesOrderSummaryItem' => 'Espo\\Custom\\Controllers\\SalesOrderSummaryItem',
   'Seeker' => 'Espo\\Custom\\Controllers\\Seeker',

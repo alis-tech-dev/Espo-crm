@@ -17,7 +17,8 @@
         "ItTask": "IT Marketing Task",
         "Tax": "Tax",
         "Manufacturing": "Manufacturing",
-        "Prospect": "Prospect"
+        "Prospect": "Prospect",
+        "ProductionUseCase": "ProductionUseCase"
     },
     "scopeNamesPlural": {
         "SupplierReclamation": "Supplier Reclamations",
@@ -36,6 +37,7 @@
         "ItTask": "IT Tasks",
         "Tax": "Tax",
         "Manufacturing": "Manufacturing",
-        "Prospect": "Prospects"
+        "Prospect": "Prospects",
+        "ProductionUseCase": "ProductionUseCases"
     }
 }

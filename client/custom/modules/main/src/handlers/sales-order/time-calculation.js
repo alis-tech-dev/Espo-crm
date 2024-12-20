@@ -31,9 +31,9 @@ define(['action-handler'], Dep => {
 
 					collection.fetch().then(() => {
 						if (collection.models[0]) {
-							this.view.showHeaderActionItem('timeOff');
+							this.view.hideHeaderActionItem('timeOff');
 						} else {
-							this.view.showHeaderActionItem('timeOn');
+							this.view.hideHeaderActionItem('timeOn');
 						}
 					});
 				});
@@ -43,7 +43,7 @@ define(['action-handler'], Dep => {
 			Espo.Ajax.postRequest(
 				'SalesOrder/timeOn/' + this.view.model.id,
 			).then(() => {
-				this.view.showHeaderActionItem('timeOff');
+				this.view.hideHeaderActionItem('timeOff');
 				this.view.hideHeaderActionItem('timeOn');
 			});
 		}
@@ -52,7 +52,7 @@ define(['action-handler'], Dep => {
 			Espo.Ajax.postRequest(
 				'SalesOrder/timeOff/' + this.view.model.id,
 			).then(() => {
-				this.view.showHeaderActionItem('timeOn');
+				this.view.hideHeaderActionItem('timeOn');
 				this.view.hideHeaderActionItem('timeOff');
 			});
 		}

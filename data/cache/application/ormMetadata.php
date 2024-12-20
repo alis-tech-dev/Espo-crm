@@ -46241,14 +46241,14 @@ return [
       'amountCurrency' => [
         'type' => 'varchar',
         'len' => 3,
-        'default' => 'CZK',
+        'default' => 'EUR',
         'fieldType' => 'currency',
         'attributeRole' => 'currency'
       ],
       'discountAmountCurrency' => [
         'type' => 'varchar',
         'len' => 3,
-        'default' => 'CZK',
+        'default' => 'EUR',
         'fieldType' => 'currency',
         'attributeRole' => 'currency'
       ],
@@ -46312,7 +46312,7 @@ return [
       'grandTotalAmountCurrency' => [
         'type' => 'varchar',
         'len' => 3,
-        'default' => 'CZK',
+        'default' => 'EUR',
         'fieldType' => 'currency',
         'attributeRole' => 'currency'
       ],
@@ -46326,14 +46326,14 @@ return [
       'preDiscountedAmountCurrency' => [
         'type' => 'varchar',
         'len' => 3,
-        'default' => 'CZK',
+        'default' => 'EUR',
         'fieldType' => 'currency',
         'attributeRole' => 'currency'
       ],
       'taxAmountCurrency' => [
         'type' => 'varchar',
         'len' => 3,
-        'default' => 'CZK',
+        'default' => 'EUR',
         'fieldType' => 'currency',
         'attributeRole' => 'currency'
       ],
@@ -46474,6 +46474,18 @@ return [
         'fieldType' => 'varchar',
         'len' => 255
       ],
+      'salesOrderUrl' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'shippingCostCurrency' => [
+        'type' => 'varchar',
+        'len' => 3,
+        'default' => 'EUR',
+        'fieldType' => 'currency',
+        'attributeRole' => 'currency'
+      ],
       'billingAddressStreet' => [
         'type' => 'text',
         'dbType' => 'varchar',
@@ -46537,12 +46549,6 @@ return [
         'notExportable' => true,
         'notStorable' => true,
         'fieldType' => 'map'
-      ],
-      'shippingCostCurrency' => [
-        'type' => 'varchar',
-        'len' => 3,
-        'fieldType' => 'currency',
-        'attributeRole' => 'currency'
       ],
       'remainsToPayCurrency' => [
         'type' => 'varchar',
@@ -58147,6 +58153,52 @@ výrobce VZV.
         'fieldType' => 'linkMultiple',
         'isLinkStub' => false
       ],
+      'productionUseCasesIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'productionUseCases',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'productionUseCasesNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple',
+        'isLinkStub' => false
+      ],
+      'productionUseCasesRecordList' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'attributeRole' => 'recordList'
+      ],
+      'filesIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'orderBy' => [
+          0 => [
+            0 => 'createdAt',
+            1 => 'ASC'
+          ],
+          1 => [
+            0 => 'name',
+            1 => 'ASC'
+          ]
+        ],
+        'isLinkMultipleIdList' => true,
+        'relation' => 'files',
+        'isLinkStub' => false
+      ],
+      'filesNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'isLinkStub' => false
+      ],
       'isFollowed' => [
         'type' => 'varchar',
         'notStorable' => true,
@@ -58243,9 +58295,19 @@ výrobce VZV.
       'attachmentsTypes' => [
         'type' => 'jsonObject',
         'notStorable' => true
+      ],
+      'filesTypes' => [
+        'type' => 'jsonObject',
+        'notStorable' => true
       ]
     ],
     'relations' => [
+      'productionUseCases' => [
+        'type' => 'hasMany',
+        'entity' => 'ProductionUseCase',
+        'foreignKey' => 'salesOrderId',
+        'foreign' => 'salesOrder'
+      ],
       'manufacturings' => [
         'type' => 'hasMany',
         'entity' => 'Manufacturing',
@@ -58681,6 +58743,24 @@ výrobce VZV.
             ],
             1 => [
               'field' => 'attachments'
+            ]
+          ]
+        ],
+        'relationName' => 'attachments'
+      ],
+      'files' => [
+        'type' => 'hasChildren',
+        'entity' => 'Attachment',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+        'conditions' => [
+          'OR' => [
+            0 => [
+              'field' => NULL
+            ],
+            1 => [
+              'field' => 'files'
             ]
           ]
         ],
@@ -93001,6 +93081,18 @@ výrobce VZV.
         'fieldType' => 'foreign',
         'foreignType' => 'float'
       ],
+      'availableQuantity' => [
+        'type' => 'foreign',
+        'relation' => 'productWarehouse',
+        'foreign' => 'availableQuantity',
+        'fieldType' => 'foreign',
+        'foreignType' => 'float'
+      ],
+      'useCaseNumber' => [
+        'type' => 'varchar',
+        'len' => 150,
+        'fieldType' => 'varchar'
+      ],
       'assignedUserId' => [
         'len' => 24,
         'dbType' => 'string',
@@ -93545,7 +93637,7 @@ výrobce VZV.
       ]
     ],
     'collection' => [
-      'orderBy' => 'createdAt',
+      'orderBy' => 'useCaseNumber',
       'order' => 'DESC'
     ]
   ],
@@ -103847,6 +103939,325 @@ výrobce VZV.
     'collection' => [
       'orderBy' => 'createdAt',
       'order' => 'DESC'
+    ]
+  ],
+  'ProductionUseCase' => [
+    'attributes' => [
+      'id' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'id'
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'fieldType' => 'varchar',
+        'len' => 255
+      ],
+      'deleted' => [
+        'type' => 'bool',
+        'default' => false
+      ],
+      'description' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'createdAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'modifiedAt' => [
+        'type' => 'datetime',
+        'notNull' => false,
+        'fieldType' => 'datetime'
+      ],
+      'requirements' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'solution' => [
+        'type' => 'text',
+        'fieldType' => 'text'
+      ],
+      'number' => [
+        'type' => 'varchar',
+        'len' => 36,
+        'notNull' => false,
+        'unique' => false,
+        'fieldType' => 'varchar'
+      ],
+      'items' => [
+        'type' => 'jsonArray',
+        'default' => [],
+        'storeArrayValues' => true,
+        'fieldType' => 'jsonArray'
+      ],
+      'createdById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'createdByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'createdBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'modifiedById' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'modifiedByName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'modifiedBy',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'assignedUserId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'assignedUserName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'assignedUser',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'teamsIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+        'attributeRole' => 'idList',
+        'fieldType' => 'linkMultiple'
+      ],
+      'teamsNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'attributeRole' => 'nameMap',
+        'fieldType' => 'linkMultiple'
+      ],
+      'salesOrderId' => [
+        'len' => 24,
+        'dbType' => 'string',
+        'type' => 'foreignId',
+        'index' => true,
+        'attributeRole' => 'id',
+        'fieldType' => 'link',
+        'notNull' => false
+      ],
+      'salesOrderName' => [
+        'type' => 'foreign',
+        'notStorable' => true,
+        'attributeRole' => 'name',
+        'fieldType' => 'link',
+        'relation' => 'salesOrder',
+        'foreign' => 'name',
+        'foreignType' => 'varchar'
+      ],
+      'filesIds' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'orderBy' => [
+          0 => [
+            0 => 'createdAt',
+            1 => 'ASC'
+          ],
+          1 => [
+            0 => 'name',
+            1 => 'ASC'
+          ]
+        ],
+        'isLinkMultipleIdList' => true,
+        'relation' => 'files',
+        'isLinkStub' => false
+      ],
+      'filesNames' => [
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+        'isLinkStub' => false
+      ],
+      'filesTypes' => [
+        'type' => 'jsonObject',
+        'notStorable' => true
+      ]
+    ],
+    'relations' => [
+      'salesOrder' => [
+        'type' => 'belongsTo',
+        'entity' => 'SalesOrder',
+        'key' => 'salesOrderId',
+        'foreignKey' => 'id',
+        'foreign' => 'productionUseCases'
+      ],
+      'teams' => [
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'entityTeam',
+        'midKeys' => [
+          0 => 'entityId',
+          1 => 'teamId'
+        ],
+        'conditions' => [
+          'entityType' => 'ProductionUseCase'
+        ],
+        'additionalColumns' => [
+          'entityType' => [
+            'type' => 'varchar',
+            'len' => 100
+          ]
+        ],
+        'indexes' => [
+          'entityId' => [
+            'columns' => [
+              0 => 'entityId'
+            ],
+            'key' => 'IDX_ENTITY_ID'
+          ],
+          'teamId' => [
+            'columns' => [
+              0 => 'teamId'
+            ],
+            'key' => 'IDX_TEAM_ID'
+          ],
+          'entityId_teamId_entityType' => [
+            'type' => 'unique',
+            'columns' => [
+              0 => 'entityId',
+              1 => 'teamId',
+              2 => 'entityType'
+            ],
+            'key' => 'UNIQ_ENTITY_ID_TEAM_ID_ENTITY_TYPE'
+          ]
+        ]
+      ],
+      'assignedUser' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'modifiedBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'createdBy' => [
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL
+      ],
+      'files' => [
+        'type' => 'hasChildren',
+        'entity' => 'Attachment',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+        'conditions' => [
+          'OR' => [
+            0 => [
+              'field' => NULL
+            ],
+            1 => [
+              'field' => 'files'
+            ]
+          ]
+        ],
+        'relationName' => 'attachments'
+      ]
+    ],
+    'indexes' => [
+      'name' => [
+        'columns' => [
+          0 => 'name',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_NAME'
+      ],
+      'assignedUser' => [
+        'columns' => [
+          0 => 'assignedUserId',
+          1 => 'deleted'
+        ],
+        'key' => 'IDX_ASSIGNED_USER'
+      ],
+      'createdAt' => [
+        'columns' => [
+          0 => 'createdAt'
+        ],
+        'key' => 'IDX_CREATED_AT'
+      ],
+      'createdAtId' => [
+        'unique' => true,
+        'columns' => [
+          0 => 'createdAt',
+          1 => 'id'
+        ],
+        'key' => 'UNIQ_CREATED_AT_ID'
+      ],
+      'createdById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'createdById'
+        ],
+        'key' => 'IDX_CREATED_BY_ID'
+      ],
+      'modifiedById' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'modifiedById'
+        ],
+        'key' => 'IDX_MODIFIED_BY_ID'
+      ],
+      'assignedUserId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'assignedUserId'
+        ],
+        'key' => 'IDX_ASSIGNED_USER_ID'
+      ],
+      'salesOrderId' => [
+        'type' => 'index',
+        'columns' => [
+          0 => 'salesOrderId'
+        ],
+        'key' => 'IDX_SALES_ORDER_ID'
+      ]
+    ],
+    'collection' => [
+      'orderBy' => 'number',
+      'order' => 'ASC'
     ]
   ],
   'Prospect' => [

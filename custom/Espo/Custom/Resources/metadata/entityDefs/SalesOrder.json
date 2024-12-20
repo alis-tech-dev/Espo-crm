@@ -406,6 +406,32 @@
             "options": [],
             "isCustom": true,
             "notStorable": true
+        },
+        "productionUseCases": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true,
+            "recordListEnabled": true,
+            "recordListRemoveDisabled": true,
+            "recordListLinkDisabled": true,
+            "recordListLayout": "listSmall",
+            "recordListButtonsPosition": "Top",
+            "defaultSelectFilters": {},
+            "createAsModal": true
+        },
+        "files": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "sourceList": [],
+            "accept": [],
+            "copyAttachmentsEntityList": [],
+            "isCustom": true
         }
     },
     "links": {
@@ -534,6 +560,21 @@
             "entity": "Manufacturing",
             "audited": false,
             "isCustom": true
+        },
+        "productionUseCases": {
+            "type": "hasMany",
+            "foreign": "salesOrder",
+            "entity": "ProductionUseCase",
+            "audited": false,
+            "isCustom": true
+        },
+        "files": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
         }
     },
     "collection": {

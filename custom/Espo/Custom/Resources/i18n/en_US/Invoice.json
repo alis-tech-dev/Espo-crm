@@ -18,7 +18,8 @@
         }
     },
     "fields": {
-        "processed": "Sent to Pohoda",
-        "sendStatus": "SendStatus"
+        "processed": "processed",
+        "sendStatus": "Sent to Pohoda",
+        "salesOrderUrl": "Sales Order Url"
     }
 }

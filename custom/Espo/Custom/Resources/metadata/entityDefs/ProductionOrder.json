@@ -25,9 +25,9 @@
             "tooltip": false
         },
         "billOfMaterials": {
-            "recordListLayout": "listSmall",
+            "recordListLayout": "list",
             "recordListButtonsPosition": "Top",
-            "defaultSelectFilters": [],
+            "defaultSelectFilters": {},
             "recordListLinkDisabled": false
         },
         "quantityProduced": {
@@ -108,10 +108,24 @@
             "field": "availablePv",
             "view": "views/fields/foreign-float",
             "isCustom": true
+        },
+        "availableQuantity": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "productWarehouse",
+            "field": "availableQuantity",
+            "view": "views/fields/foreign-float",
+            "isCustom": true
+        },
+        "useCaseNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
         }
     },
     "collection": {
-        "orderBy": "createdAt",
+        "orderBy": "useCaseNumber",
         "order": "desc",
         "textFilterFields": [
             "name"

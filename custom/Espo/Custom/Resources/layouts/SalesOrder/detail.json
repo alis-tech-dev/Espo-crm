@@ -202,7 +202,8 @@
         "rows": [
             [
                 {
-                    "name": "productionOrders"
+                    "name": "productionOrders",
+                    "noLabel": true
                 }
             ]
         ],
@@ -211,6 +212,21 @@
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Production Orders"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "productionUseCases",
+                    "noLabel": true
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Use Cases"
     },
     {
         "rows": [

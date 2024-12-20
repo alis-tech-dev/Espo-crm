@@ -1811,7 +1811,8 @@ It will also disable the ability to create a related record from relationship pa
       'ItTask' => 'IT Marketing Task',
       'Tax' => 'Tax',
       'Manufacturing' => 'Manufacturing',
-      'Prospect' => 'Prospect'
+      'Prospect' => 'Prospect',
+      'ProductionUseCase' => 'ProductionUseCase'
     ],
     'scopeNamesPlural' => [
       'Note' => 'Notes',
@@ -1971,7 +1972,8 @@ It will also disable the ability to create a related record from relationship pa
       'ItTask' => 'IT Tasks',
       'Tax' => 'Tax',
       'Manufacturing' => 'Manufacturing',
-      'Prospect' => 'Prospects'
+      'Prospect' => 'Prospects',
+      'ProductionUseCase' => 'ProductionUseCases'
     ],
     'labels' => [
       'Sort' => 'Sort',
@@ -7820,7 +7822,7 @@ Example:
       'grandTotalAmountCurrency' => 'Grand Total Amount Currency',
       'currency' => 'Currency',
       'discount' => 'Discount',
-      'processed' => 'Sent to Pohoda',
+      'processed' => 'processed',
       'constantSymbol' => 'Constant symbol',
       'datePaid' => 'Date of payment',
       'dueDate' => 'Due date',
@@ -7888,7 +7890,8 @@ Example:
       'taxRound' => 'TaxRound',
       'amountRoundTo' => 'AmountRoundTo',
       'payday' => 'Datum splatnosti',
-      'sendStatus' => 'SendStatus'
+      'sendStatus' => 'Sent to Pohoda',
+      'salesOrderUrl' => 'Sales Order Url'
     ],
     'links' => [
       'items' => 'Items',
@@ -8452,7 +8455,9 @@ Example:
       'reservedQuantity' => 'ReservedQuantity',
       'reservQuantity' => 'Reserved Quantity',
       'manufacturings' => 'Manufacturings',
-      'color' => 'Color'
+      'color' => 'Color',
+      'productionUseCases' => 'Production Use Cases',
+      'files' => 'Přílohy'
     ],
     'links' => [
       'items' => 'Items',
@@ -8482,7 +8487,8 @@ Example:
       'warehouseItems1' => 'Warehouse Items1',
       'wiso' => 'Wiso',
       'wisos' => 'Wisos',
-      'manufacturings' => 'Manufacturings'
+      'manufacturings' => 'Manufacturings',
+      'productionUseCases' => 'Production Use Cases'
     ],
     'options' => [
       'status' => [
@@ -11380,11 +11386,32 @@ Very Hard - internal and external deadline must be set manually'
       'isPerform' => 'IsPerform',
       'performWorkTime' => 'PerformWorkTime',
       'availableBrno' => 'In Brno',
-      'availablePv' => 'In Prostějov'
+      'availablePv' => 'In Prostějov',
+      'availableQuantity' => 'AvailableQuantity',
+      'useCaseNumber' => 'Use Case'
     ],
     'links' => [
       'warehouse' => 'Warehouse',
       'worksPerformed' => 'WorkPerformed'
+    ]
+  ],
+  'ProductionUseCase' => [
+    'fields' => [
+      'requirements' => 'Requirements',
+      'solution' => 'Solution',
+      'salesOrder' => 'Sales Order',
+      'number' => 'Number',
+      'items' => 'Items',
+      'files' => 'Files'
+    ],
+    'links' => [
+      'salesOrder' => 'Sales Order'
+    ],
+    'labels' => [
+      'Create ProductionUseCase' => 'Create ProductionUseCase'
+    ],
+    'options' => [
+      'items' => []
     ]
   ],
   'Prospect' => [

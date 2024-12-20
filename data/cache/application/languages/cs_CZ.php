@@ -1899,6 +1899,7 @@ It will also disable the ability to create a related record from relationship pa
       'Tax' => 'Daň',
       'Manufacturing' => 'Manufacturing',
       'Prospect' => 'Prospect',
+      'ProductionUseCase' => 'ProductionUseCase',
       'AnalyticsPerson' => 'Analytika',
       'AdvanceDeductionItem' => 'Položka odpočtu zálohy',
       'PriceList' => 'Ceník',
@@ -2087,6 +2088,7 @@ It will also disable the ability to create a related record from relationship pa
       'Tax' => 'Daně',
       'Manufacturing' => 'Manufacturing',
       'Prospect' => 'Prospects',
+      'ProductionUseCase' => 'ProductionUseCases',
       'AnalyticsPerson' => 'Analytiky',
       'AdvanceDeductionItem' => 'Položky odpočtů záloh',
       'PriceList' => 'Ceníky',
@@ -8266,7 +8268,8 @@ Available placeholders:
       'taxRound' => 'Zaokrouhlení vypočítané hodnoty DPH',
       'amountRoundTo' => 'Zaokrouhlení',
       'payday' => 'Datum splatnosti',
-      'sendStatus' => 'SendStatus',
+      'sendStatus' => 'Sent to Pohoda',
+      'salesOrderUrl' => 'Sales Order Url',
       'shippingCostTaxRate' => 'Daňová sazba dopravného',
       'billingAddressFirstName' => 'Jméno',
       'billingAddressLastName' => 'Příjmení',
@@ -8922,6 +8925,8 @@ Available placeholders:
       'reservQuantity' => 'Reserved Quantity',
       'manufacturings' => 'Výroba',
       'color' => 'Color',
+      'productionUseCases' => 'Production Use Cases',
+      'files' => 'Přílohy',
       'taxClass' => 'Daňová třída',
       'paymentMethod' => 'Způsob úhrady',
       'billingAddressFirstName' => 'Jméno',
@@ -9046,6 +9051,7 @@ Available placeholders:
       'wiso' => 'Wiso',
       'wisos' => 'Wisos',
       'manufacturings' => 'Manufacturings',
+      'productionUseCases' => 'Production Use Cases',
       'productionOrders' => 'Výrobní příkazy',
       'reclamations' => 'Reklamace'
     ],
@@ -12426,6 +12432,8 @@ Very Hard - internal and external deadline must be set manually'
       'performWorkTime' => 'PerformWorkTime',
       'availableBrno' => 'In Brno',
       'availablePv' => 'In Prostějov',
+      'availableQuantity' => 'AvailableQuantity',
+      'useCaseNumber' => 'Use Case',
       'status' => 'Stav',
       'product' => 'Produkt',
       'productionModel' => 'Technologický postup',
@@ -12469,6 +12477,25 @@ Very Hard - internal and external deadline must be set manually'
     'tooltips' => [
       'productWarehouse' => 'Na tento sklad se přesouvá hotový výrobek.',
       'materialWarehouse' => 'Z tohoto skladu odebíráme materiál pro vytvoření výrobku.'
+    ]
+  ],
+  'ProductionUseCase' => [
+    'fields' => [
+      'requirements' => 'Requirements',
+      'solution' => 'Solution',
+      'salesOrder' => 'Sales Order',
+      'number' => 'Number',
+      'items' => 'Items',
+      'files' => 'Files'
+    ],
+    'links' => [
+      'salesOrder' => 'Sales Order'
+    ],
+    'labels' => [
+      'Create ProductionUseCase' => 'Vytvořit ProductionUseCase'
+    ],
+    'options' => [
+      'items' => []
     ]
   ],
   'Prospect' => [

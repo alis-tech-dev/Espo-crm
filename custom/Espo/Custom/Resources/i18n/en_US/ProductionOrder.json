@@ -11,7 +11,9 @@
         "isPerform": "IsPerform",
         "performWorkTime": "PerformWorkTime",
         "availableBrno": "In Brno",
-        "availablePv": "In Prostějov"
+        "availablePv": "In Prostějov",
+        "availableQuantity": "AvailableQuantity",
+        "useCaseNumber": "Use Case"
     },
     "links": {
         "warehouse": "Warehouse",

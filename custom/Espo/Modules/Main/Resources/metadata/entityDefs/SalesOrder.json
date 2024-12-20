@@ -9,8 +9,9 @@
 			"view": "main:views/sales-order/fields/on-hold-time"
 		},
 		"productionOrders": {
-			"type": "linkMultiple"
-		},
+			"type": "linkMultiple",
+            "recordListMandatorySelectAttributeList": ["__APPEND__", "entryKey"]
+        },
 		"items": {
 			"view": "main:views/sales-order/fields/entries",
 			"recordListMandatorySelectAttributeList": ["__APPEND__", "entryKey"]

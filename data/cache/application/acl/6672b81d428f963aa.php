@@ -1222,6 +1222,13 @@ return (object) [
       'delete' => 'all',
       'create' => 'yes'
     ],
+    'ProductionUseCase' => (object) [
+      'read' => 'all',
+      'stream' => 'all',
+      'edit' => 'all',
+      'delete' => 'all',
+      'create' => 'yes'
+    ],
     'Prospect' => (object) [
       'read' => 'all',
       'stream' => 'all',

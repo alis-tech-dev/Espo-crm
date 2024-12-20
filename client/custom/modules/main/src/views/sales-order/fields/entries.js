@@ -35,7 +35,6 @@ define(['views/fields/base'], Dep => {
             super.setup();
 
             this.entries = this.getEntries();
-
             this.wait(
                 new Promise(resolve => {
                     this.getModelFactory().create('SalesOrder', async seed => {

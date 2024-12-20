@@ -1,5 +1,12 @@
 [
     {
+        "name": "UseCase",
+        "widthPx": 95,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/use-case-number",
+        "label": "UseCase"
+    },
+    {
         "name": "name",
         "widthPx": 160,
         "link": true,
@@ -51,20 +58,8 @@
         "label": "takeFromWarehouseButton"
     },
     {
-        "name": "performWorkTime",
-        "widthPx": 140,
-        "align": "left",
-        "label": "PerformWorkTime"
-    },
-    {
-        "name": "availableBrno"
-    },
-    {
-        "name": "availablePv"
-    },
-    {
-        "name": "status",
-        "label": "status"
+        "name": "availableQuantity",
+        "label": "AvailableQuantity"
     },
     {
         "name": "quantityPlanned",

@@ -5926,7 +5926,8 @@ return (object) [
         7 => 'stockQuantity',
         8 => 'performWorkTime',
         9 => 'availableBrno',
-        10 => 'availablePv'
+        10 => 'availablePv',
+        11 => 'availableQuantity'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -5947,7 +5948,8 @@ return (object) [
         9 => 'stockQuantity',
         10 => 'performWorkTime',
         11 => 'availableBrno',
-        12 => 'availablePv'
+        12 => 'availablePv',
+        13 => 'availableQuantity'
       ],
       'nonAdminReadOnly' => []
     ],
@@ -6810,6 +6812,41 @@ return (object) [
     ]
   ],
   'Manufacturing' => (object) [
+    'fields' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdBy',
+        3 => 'modifiedBy'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'attributes' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [
+        0 => 'createdAt',
+        1 => 'modifiedAt',
+        2 => 'createdById',
+        3 => 'createdByName',
+        4 => 'modifiedById',
+        5 => 'modifiedByName'
+      ],
+      'nonAdminReadOnly' => []
+    ],
+    'links' => (object) [
+      'forbidden' => [],
+      'internal' => [],
+      'onlyAdmin' => [],
+      'readOnly' => [],
+      'nonAdminReadOnly' => []
+    ]
+  ],
+  'ProductionUseCase' => (object) [
     'fields' => (object) [
       'forbidden' => [],
       'internal' => [],

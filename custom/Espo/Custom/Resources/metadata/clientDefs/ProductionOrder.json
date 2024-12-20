@@ -3,7 +3,9 @@
     "color": null,
     "iconClass": "fas fa-hammer",
     "isWide": true,
-    "dynamicHandlerList": ["custom-production:handlers/production-order/dynamic-name"],
+    "dynamicHandlerList": [
+        "custom-production:handlers/production-order/dynamic-name"
+    ],
     "relationshipPanels": {
         "billOfMaterials": {
             "layout": null
@@ -18,5 +20,6 @@
                 "visible": null
             }
         }
-    }
+    },
+    "gridViewMode": false
 }

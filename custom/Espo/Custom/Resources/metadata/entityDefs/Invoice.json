@@ -44,7 +44,30 @@
             },
             "default": "Not Sent",
             "displayAsLabel": true,
+            "isCustom": true,
+            "readOnly": false
+        },
+        "salesOrderUrl": {
+            "type": "url",
             "isCustom": true
+        },
+        "amountCurrency": {
+            "default": "EUR"
+        },
+        "discountAmountCurrency": {
+            "default": "EUR"
+        },
+        "grandTotalAmountCurrency": {
+            "default": "EUR"
+        },
+        "preDiscountedAmountCurrency": {
+            "default": "EUR"
+        },
+        "shippingCostCurrency": {
+            "default": "EUR"
+        },
+        "taxAmountCurrency": {
+            "default": "EUR"
         }
     },
     "collection": {
