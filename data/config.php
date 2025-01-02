@@ -1,6 +1,6 @@
 <?php
 return [
-  'cacheTimestamp' => 1734709378,
+  'cacheTimestamp' => 1735819865,
   'useCache' => true,
   'recordsPerPage' => 100,
   'isDeveloperMode' => false,
@@ -82,28 +82,37 @@ return [
     8 => 'BusinessProject'
   ],
   'tabList' => [
-    0 => 'Task',
-    1 => 'ItTask',
-    2 => 'JIRA',
-    3 => 'Selector',
-    4 => 'Email',
-    5 => 'Product',
-    6 => (object) [
+    0 => (object) [
+      'type' => 'group',
+      'text' => 'Tasks',
+      'iconClass' => 'fas fa-bomb',
+      'color' => '#ff5b5b',
+      'id' => '276178',
+      'itemList' => [
+        0 => 'JIRA',
+        1 => 'ItTask',
+        2 => 'Task'
+      ]
+    ],
+    1 => 'Selector',
+    2 => 'Email',
+    3 => 'Product',
+    4 => (object) [
       'type' => 'group',
       'text' => 'Sales',
       'iconClass' => 'fas fa-money-bill-wave-alt',
       'color' => '#03bf1f',
       'id' => '157063',
       'itemList' => [
-        0 => 'Lead',
-        1 => 'Account',
-        2 => 'Contact',
+        0 => 'SalesOrder',
+        1 => 'Quote',
+        2 => 'Lead',
         3 => 'Opportunity',
-        4 => 'Quote',
-        5 => 'SalesOrder'
+        4 => 'Account',
+        5 => 'Contact'
       ]
     ],
-    7 => (object) [
+    5 => (object) [
       'type' => 'group',
       'text' => 'Warehouse',
       'iconClass' => 'fas fa-warehouse',
@@ -111,15 +120,15 @@ return [
       'id' => '210353',
       'itemList' => [
         0 => 'Warehouse',
-        1 => 'RequestForm',
-        2 => 'SupplierOrder',
-        3 => 'SupplierReclamation',
-        4 => 'Reclamation',
-        5 => 'ProductionModel',
-        6 => 'ProductionOrder'
+        1 => 'ProductionOrder',
+        2 => 'RequestForm',
+        3 => 'SupplierOrder',
+        4 => 'SupplierReclamation',
+        5 => 'Reclamation',
+        6 => 'ProductionModel'
       ]
     ],
-    8 => (object) [
+    6 => (object) [
       'type' => 'group',
       'text' => 'Fakturace',
       'iconClass' => 'fas fa-file-invoice',
@@ -136,7 +145,7 @@ return [
         7 => 'RevenueReceipt'
       ]
     ],
-    9 => (object) [
+    7 => (object) [
       'type' => 'group',
       'text' => 'Documents',
       'iconClass' => 'fas fa-file-alt',
@@ -149,9 +158,9 @@ return [
         3 => 'Case'
       ]
     ],
-    10 => 'Porady',
-    11 => 'Calendar',
-    12 => (object) [
+    8 => 'Porady',
+    9 => 'Calendar',
+    10 => (object) [
       'type' => 'group',
       'text' => 'HR',
       'iconClass' => 'fas fa-users-cog',
@@ -163,9 +172,8 @@ return [
       ],
       'id' => '902424'
     ],
-    13 => 'Campaign',
-    14 => 'TargetList',
-    15 => 'Prospect'
+    11 => 'Campaign',
+    12 => 'Prospect'
   ],
   'quickCreateList' => [
     0 => 'Quote',
@@ -411,7 +419,7 @@ return [
   ],
   'massEmailVerp' => false,
   'newNotificationCountInTitle' => false,
-  'microtime' => 1734709378.211726,
+  'microtime' => 1735819865.788216,
   'busyRangesEntityList' => [
     0 => 'Meeting',
     1 => 'Call'

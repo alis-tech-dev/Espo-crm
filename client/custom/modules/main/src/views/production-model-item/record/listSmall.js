@@ -22,7 +22,7 @@ define(['views/fields/link-multiple-with-primary'], Dep => {
             if (planned === totalProduced) {
                 const $mainRow = document.querySelector(`a[data-id="${modelId}"]`);
                 if ($mainRow) {
-                    $mainRow.style.background = '#abf5a2';
+                    $mainRow.style.background = '#D3F6DB';
                     $mainRow.style.borderRadius = '5px';
                     $mainRow.style.padding = '0 5px';
                 }

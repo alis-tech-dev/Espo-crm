@@ -9,21 +9,18 @@ define(['views/fields/base'], Dep => {
 		};
 
 		CaseNumber(e) {
-			const view = this.getParentView().getParentView().getParentView();
-            const useCases = view.model.get('productionUseCaseRecordList');
-			console.log(this.model);
-			const id = this.model.get('id');
 			const useCaseNumber = this.model.get('useCaseNumber');
 
 			const rows = document.querySelectorAll('.list-row');
 			let targetRow = null;
 
 			rows.forEach(row => {
-				const numberCell = row.querySelector('td[data-name="number"] .cell-wrapper span');
-				if (numberCell && numberCell.textContent.trim() === useCaseNumber) {
+				const numberCell = row.querySelector('td[data-name="number"] .cell-wrapper button');
+				if (numberCell && numberCell.childNodes[0].textContent.trim() === useCaseNumber) {
 					targetRow = row;
 				}
 			});
+
 			if (targetRow) {
 				const rect = targetRow.getBoundingClientRect();
 				const scrollY = window.scrollY || document.documentElement.scrollTop;
@@ -34,8 +31,7 @@ define(['views/fields/base'], Dep => {
 					top: targetY,
 					behavior: 'smooth'
 				});
-				const element = document.querySelector(`td[data-name="number"] .cell-wrapper span[title="${useCaseNumber}"]`);
-				element.classList.add('highlight');
+				targetRow.classList.add('highlight');
 				let blink = true;
 				const interval = setInterval(() => {
 					if (blink) {
@@ -50,7 +46,6 @@ define(['views/fields/base'], Dep => {
 					clearInterval(interval);
 					targetRow.classList.remove('highlight');
 				}, 1000);
-				element.classList.remove('highlight');
 			}
 		}
 

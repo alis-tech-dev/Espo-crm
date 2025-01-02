@@ -3,5 +3,6 @@
     "createdAt",
     "statusOfApproval",
     "dateStart",
-    "dateEnd"
+    "dateEnd",
+    "createdBy"
 ]

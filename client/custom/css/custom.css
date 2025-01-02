@@ -313,7 +313,7 @@ div.list-kanban>div>table td.group-column:last-child {
 /*  height: 100vh;*/
 /*}*/
 
-#takefromwarehouse, #performwork, #performworkfinish, #usecasenumber{
+#takefromwarehouse, #performwork, #performworkfinish, #usecasenumber, #numberusecase{
     width: 80px;
     height: auto;
     padding: 2px;
@@ -338,8 +338,13 @@ div.list-kanban>div>table td.group-column:last-child {
 	background-color: #CCCCFF;
 }
 
+#numberusecase {
+	background-color: #00CCCC;
+	min-width: 80px;
+}
+
 .highlight {
-    background: mistyrose !important;
+    background: #D3F6DB !important;
 	padding: 10px;
 }
 
