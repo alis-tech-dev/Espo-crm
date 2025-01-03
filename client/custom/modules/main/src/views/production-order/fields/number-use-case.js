@@ -90,8 +90,6 @@ define(['views/fields/base'], Dep => {
                 if (button) {
                     button.setAttribute('data-id', `${id}`);
                     button.innerHTML = `${order.number}<br><span>🔍</span>`;
-                } else {
-                    console.warn(`Button not found for ID: ${id}`);
                 }
             })
         }

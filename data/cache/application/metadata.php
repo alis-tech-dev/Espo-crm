@@ -45164,14 +45164,19 @@ výrobce VZV.
         ],
         'warehouseItems' => [
           'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'layoutListDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'exportDisabled' => true,
-          'customizationDisabled' => true,
-          'isCustom' => true
+          'layoutDetailDisabled' => false,
+          'layoutMassUpdateDisabled' => false,
+          'layoutListDisabled' => false,
+          'noLoad' => false,
+          'importDisabled' => false,
+          'exportDisabled' => false,
+          'customizationDisabled' => false,
+          'isCustom' => true,
+          'recordListEnabled' => true,
+          'createAsModal' => true,
+          'recordListLayout' => 'listSmall',
+          'recordListButtonsPosition' => 'Top',
+          'defaultSelectFilters' => []
         ],
         'warehouseItem' => [
           'readOnly' => true,
@@ -62576,7 +62581,7 @@ výrobce VZV.
           'required' => true,
           'default' => NULL,
           'tooltip' => true,
-          'readOnlyAfterCreate' => true
+          'readOnlyAfterCreate' => false
         ],
         'requestItems' => [
           'type' => 'linkMultiple',

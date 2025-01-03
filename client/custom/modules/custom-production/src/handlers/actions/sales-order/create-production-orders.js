@@ -33,7 +33,6 @@ define(['action-handler'], Dep => {
 
         init() {
             this.controlVisibility();
-            console.log("salesOrder", this.view.model)
             this.view.listenTo(
                 this.view.model,
                 'change:status',

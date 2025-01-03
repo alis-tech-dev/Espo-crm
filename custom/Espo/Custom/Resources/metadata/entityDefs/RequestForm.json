@@ -22,7 +22,7 @@
             "required": true,
             "default": null,
             "tooltip": true,
-            "readOnlyAfterCreate": true
+            "readOnlyAfterCreate": false
         },
         "status": {
             "options": [

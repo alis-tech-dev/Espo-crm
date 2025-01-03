@@ -44,9 +44,11 @@ define(['views/fields/base'], Dep => {
             orders.forEach((order) => {
                 const id = order.id;
                 const isPerform = order.isPerform;
+                const availableQuantity = order.availableQuantity;
                 const tr = document.querySelector(`tr[data-id="${id}"]`);
                 const button = tr.querySelector(`td[data-name="performWorkButton"] button[data-action="performWork"]`);
                 const buttonFinish = tr.querySelector(`td[data-name="performWorkFinishButton"] button[data-action="performWorkFinish"]`);
+                const takeFromWarehouse = tr.querySelector(`td[data-name="takeFromWarehouseButton"] button[data-action="takeFromWarehouse"]`);
 
 
                 if (button && buttonFinish) {
@@ -59,8 +61,10 @@ define(['views/fields/base'], Dep => {
                         buttonFinish.disabled = false;
                         button.disabled = true;
                     }
-                } else {
-                    console.warn(`Button not found for ID: ${id}`);
+                }
+                if (takeFromWarehouse) {
+                    takeFromWarehouse.setAttribute('data-id', `${id}`);
+                    takeFromWarehouse.disabled = availableQuantity < 1;
                 }
             })
         }

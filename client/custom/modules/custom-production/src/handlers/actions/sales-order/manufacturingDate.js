@@ -1,5 +1,6 @@
 define(['action-handler'], Dep => {
     return class extends Dep {
+
         init() {
             this.controlVisibility();
             this.view.listenTo(
@@ -7,7 +8,7 @@ define(['action-handler'], Dep => {
                 'change:productionStatus',
                 this.checkProductionStatus.bind(this)
             );
-            this.view.listenTo(this.view.model, 'change:complexity', this.showNotify.bind(this))
+            // this.view.listenTo(this.view.model, 'change:complexity', this.showNotify.bind(this))
         }
 
         showNotify() {

@@ -58081,6 +58081,11 @@ výrobce VZV.
         'fieldType' => 'linkMultiple',
         'isLinkStub' => false
       ],
+      'warehouseItemsRecordList' => [
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'attributeRole' => 'recordList'
+      ],
       'warehouseItems1Ids' => [
         'type' => 'jsonArray',
         'notStorable' => true,

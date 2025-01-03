@@ -76,7 +76,8 @@
                     "name": "reminder"
                 },
                 {
-                    "name": "description"
+                    "name": "description",
+                    "view": "main:views\/sales-order\/fields\/complexity"
                 },
                 {
                     "name": "priceList1"
@@ -236,19 +237,14 @@
                 },
                 {
                     "name": "reservedQuantity"
-                },
-                false,
-                false
+                }
             ],
             [
                 {
-                    "name": "warehouseItem",
-                    "noLabel": true
-                },
-                {
-                    "name": "reservQuantity",
-                    "noLabel": true
-                },
+                    "name": "warehouseItems"
+                }
+            ],
+            [
                 false,
                 false
             ]
