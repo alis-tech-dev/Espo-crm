@@ -1,0 +1,28 @@
+[
+    {
+        "name": "number",
+        "widthPx": 95,
+        "align": "left",
+        "view": "main:views\/production-order\/fields\/number-use-case",
+        "label": "Number"
+    },
+    {
+        "name": "name",
+        "widthPx": 150,
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "requirements",
+        "label": "Requirements"
+    },
+    {
+        "name": "solution",
+        "label": "Solution"
+    },
+    {
+        "name": "files",
+        "notSortable": true,
+        "label": "Files"
+    }
+]

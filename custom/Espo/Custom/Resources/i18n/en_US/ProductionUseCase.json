@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "requirements": "Requirements",
+        "solution": "Solution",
+        "salesOrder": "Sales Order",
+        "number": "Number",
+        "items": "Items",
+        "files": "Files"
+    },
+    "links": {
+        "salesOrder": "Sales Order"
+    },
+    "labels": {
+        "Create ProductionUseCase": "Create ProductionUseCase"
+    },
+    "options": {
+        "items": []
+    }
+}
